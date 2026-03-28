@@ -6,7 +6,7 @@ import { Separator } from '@/components/ui/separator'
 
 const Footer = () => {
   return (
-    <footer className='mt-8 border-t border-border/75 bg-[linear-gradient(180deg,oklch(from_var(--accent)_l_c_h_/_0.22),transparent_45%)]'>
+    <footer className='mt-8 border-t border-border/75 bg-[linear-gradient(180deg,rgba(10,51,114,0.05),transparent_45%)]'>
       <div className='mx-auto flex max-w-7xl flex-col gap-8 px-4 py-8 sm:px-6 md:py-12 lg:px-8'>
         <div className='flex flex-col gap-5 md:flex-row md:items-start md:justify-between'>
           <div className='space-y-3'>

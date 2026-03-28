@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react'
 
-import { Geist_Mono, Merriweather, Roboto } from 'next/font/google'
+import { IBM_Plex_Mono, Inter, Source_Serif_4 } from 'next/font/google'
 import type { Metadata } from 'next'
 
 import { ThemeProvider } from '@/components/theme-provider'
@@ -25,22 +25,20 @@ import { cn } from '@/lib/utils'
 
 import './globals.css'
 
-const roboto = Roboto({
-  variable: '--font-roboto',
-  subsets: ['latin', 'latin-ext'],
-  weight: ['300', '400', '500', '700']
+const inter = Inter({
+  variable: '--font-inter',
+  subsets: ['latin']
 })
 
-const merriweather = Merriweather({
-  variable: '--font-merriweather',
-  subsets: ['latin', 'latin-ext'],
-  weight: ['300', '400', '700', '900']
+const sourceSerif4 = Source_Serif_4({
+  variable: '--font-source-serif-4',
+  subsets: ['latin']
 })
 
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
+const ibmPlexMono = IBM_Plex_Mono({
+  variable: '--font-ibm-plex-mono',
   subsets: ['latin'],
-  weight: ['400', '500', '700']
+  weight: ['300', '400', '500', '600', '700']
 })
 
 export const metadata: Metadata = {
@@ -151,9 +149,9 @@ const RootLayout = ({ children }: Readonly<{ children: ReactNode }>) => {
     <html
       lang={SITE_LANGUAGE}
       className={cn(
-        roboto.variable,
-        merriweather.variable,
-        geistMono.variable,
+        inter.variable,
+        sourceSerif4.variable,
+        ibmPlexMono.variable,
         'flex min-h-full w-full scroll-smooth'
       )}
       suppressHydrationWarning
