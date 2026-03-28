@@ -32,8 +32,24 @@ Recommended Pages settings:
 - Framework preset: `Next.js (Static HTML Export)`
 - Build command: `pnpm build`
 - Build output directory: `out`
+- Production branch: `main`
 
 Custom response headers are defined in `public/_headers`.
+
+## GitHub Actions
+
+The repository includes three workflows:
+
+- `PR Checks` runs `pnpm lint`, `pnpm check-types`, and `pnpm build` for every pull request to `main`.
+- `Auto Merge PR` squashes and merges pull requests to `main` after `PR Checks` succeeds.
+- `Deploy to Cloudflare Pages` builds the site on every push to `main` and deploys the `out/` directory to Cloudflare Pages.
+
+Required GitHub repository secrets:
+
+- `CLOUDFLARE_API_TOKEN`
+- `CLOUDFLARE_ACCOUNT_ID`
+
+The deploy workflow targets the Cloudflare Pages project `aibloghr`.
 
 ## Notes
 
