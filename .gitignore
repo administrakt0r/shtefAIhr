@@ -1,3 +1,11 @@
 /.next
+/out
 /node_modules
 .wrangler
+_next*
+_next
+
+# Derived static assets
+/public/rss.xml
+/public/images/og-image.png
+/public/images/posts/
