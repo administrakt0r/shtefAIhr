@@ -3,9 +3,13 @@
   "version": "1.1.0",
   "license": "MIT",
   "scripts": {
+    "generate:post-images": "node scripts/generate-post-images.mjs",
     "dev": "next dev",
     "generate:rss": "node scripts/generate-rss.mjs",
-    "build": "node scripts/generate-rss.mjs && next build",
+    "generate:derived": "pnpm generate:post-images && pnpm generate:rss",
+    "predev": "pnpm generate:derived",
+    "prebuild": "pnpm generate:derived",
+    "build": "next build",
     "start": "next start",
     "lint": "eslint",
     "lint:fix": "eslint --fix",
@@ -28,6 +32,7 @@
     "radix-ui": "1.4.3",
     "react": "19.2.3",
     "react-dom": "19.2.3",
+    "sharp": "^0.34.5",
     "tailwind-merge": "3.4.0",
     "wrangler": "^4.77.0"
   },

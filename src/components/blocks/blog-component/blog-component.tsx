@@ -86,7 +86,7 @@ const BlogGrid = ({ posts, onCategoryClick }: { posts: BlogPost[]; onCategoryCli
               >
                 <Link href={`/blog-detail/${post.slug}`}>
                   <ArrowRightIcon className='size-4 -rotate-45' />
-                  <span className='sr-only'>Procitaj vise: {post.title}</span>
+                      <span className='sr-only'>Pročitaj više: {post.title}</span>
                 </Link>
               </Button>
             </div>
@@ -170,11 +170,11 @@ const Blog = () => {
           )}
 
           <h2 className='font-serif text-3xl tracking-tight text-foreground md:text-4xl lg:text-5xl'>
-            Najnovije AI vijesti, analize i potezi koji mijenjaju trziste.
+            Najnovije AI vijesti, analize i potezi koji mijenjaju tržište.
           </h2>
           <p className='max-w-3xl text-base leading-7 text-muted-foreground md:text-lg'>
-            Svakodnevno filtriramo hype, objave modela, investicije, regulativu i AI proizvode kako biste brzo vidjeli
-            sto zaista vrijedi pratiti.
+            Svakodnevno filtriramo hype, objave modela, ulaganja, regulativu i AI proizvode kako biste brzo vidjeli
+            što zaista vrijedi pratiti.
           </p>
         </div>
 
@@ -202,11 +202,11 @@ const Blog = () => {
             <div className='relative w-full lg:max-w-sm'>
               <div className='text-muted-foreground pointer-events-none absolute inset-y-0 left-0 flex items-center justify-center pl-4'>
                 <SearchIcon className='size-4' />
-                <span className='sr-only'>Pretrazi</span>
+                <span className='sr-only'>Pretraži</span>
               </div>
               <Input
                 type='text'
-                placeholder='Pretrazi teme, tvrtke i analize'
+                placeholder='Pretraži teme, tvrtke i analize'
                 value={searchQuery}
                 onChange={event => {
                   setSearchQuery(event.target.value)
@@ -224,7 +224,7 @@ const Blog = () => {
                   className='text-muted-foreground hover:text-foreground absolute inset-y-0 right-0 flex items-center justify-center pr-4'
                 >
                   <XIcon className='size-4' />
-                  <span className='sr-only'>Ocisti pretragu</span>
+                  <span className='sr-only'>Očisti pretragu</span>
                 </button>
               ) : null}
             </div>
@@ -268,7 +268,7 @@ const Blog = () => {
                     disabled={currentPage === totalPages}
                   >
                     <ChevronRightIcon className='size-4' />
-                    <span className='sr-only'>Sljedeca stranica</span>
+                    <span className='sr-only'>Sljedeća stranica</span>
                   </Button>
                 </div>
               ) : null}
@@ -277,9 +277,11 @@ const Blog = () => {
             <Card className='border-border/75 bg-card/95 py-0 shadow-sm shadow-brand-blue/5'>
               <CardContent className='space-y-3 px-6 py-10 text-center'>
                 <p className='text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-brand-blue'>Nema rezultata</p>
-                <h3 className='font-serif text-2xl tracking-tight text-foreground'>Nismo pronasli objave za trenutni upit.</h3>
+                <h3 className='font-serif text-2xl tracking-tight text-foreground'>
+                  Nismo pronašli objave za trenutačni upit.
+                </h3>
                 <p className='mx-auto max-w-xl text-sm leading-6 text-muted-foreground'>
-                  Pokusajte s nazivom tvrtke, modela ili sire teme poput regulative, AI agenata ili investicija.
+                  Pokušajte s nazivom tvrtke, modela ili šire teme poput regulative, AI agenata ili ulaganja.
                 </p>
               </CardContent>
             </Card>

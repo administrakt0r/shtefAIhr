@@ -15,7 +15,7 @@ const Logo = ({ className }: { className?: string }) => {
         priority
       />
       <div className='flex flex-col leading-none'>
-        <span className='text-[0.7rem] font-medium tracking-[0.22em] uppercase text-brand-blue'>AI newsroom</span>
+        <span className='text-[0.7rem] font-medium tracking-[0.22em] uppercase text-brand-blue'>AI redakcija</span>
         <span className='text-foreground text-[1.15rem] font-semibold tracking-tight'>ShtefAI blog HR</span>
       </div>
     </div>

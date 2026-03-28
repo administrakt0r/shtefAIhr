@@ -155,7 +155,7 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
           <div className='gap-16 md:grid md:grid-cols-5 lg:grid-cols-[minmax(16rem,18rem)_minmax(0,1fr)]'>
             <aside className='hidden md:block'>
               <div className='sticky top-28 rounded-[1.75rem] border border-border/75 bg-card/92 p-5 shadow-sm shadow-brand-blue/5'>
-                <p className='text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-brand-blue'>Sadrzaj</p>
+                <p className='text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-brand-blue'>Sadržaj</p>
                 <div className='mt-4'>
                   <DynamicToc />
                 </div>
@@ -185,7 +185,7 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
                     {post.category}
                   </Badge>
                   <span className='text-muted-foreground text-xs font-semibold uppercase tracking-[0.18em]'>
-                    {post.readTime} min citanja
+                    {post.readTime} min čitanja
                   </span>
                 </div>
 

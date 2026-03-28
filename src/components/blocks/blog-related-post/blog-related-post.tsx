@@ -21,9 +21,9 @@ const Blog = ({ blogPosts = allBlogPosts.slice(0, 3) }: BlogProps) => {
           <Badge variant='outline' className='rounded-full border-brand-blue/20 bg-brand-blue/10 px-3 py-1 text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-brand-blue'>
             Povezano
           </Badge>
-          <h2 className='font-serif text-3xl tracking-tight text-foreground md:text-4xl'>Procitajte i ovo</h2>
+          <h2 className='font-serif text-3xl tracking-tight text-foreground md:text-4xl'>Pročitajte i ovo</h2>
           <p className='max-w-2xl text-base leading-7 text-muted-foreground'>
-            Jos nekoliko objava koje sire kontekst oko tema, kompanija i AI trendova iz ove price.
+            Još nekoliko objava koje šire kontekst oko tema, kompanija i AI trendova iz ove priče.
           </p>
         </div>
 
@@ -73,7 +73,7 @@ const Blog = ({ blogPosts = allBlogPosts.slice(0, 3) }: BlogProps) => {
                   >
                     <Link href={`/blog-detail/${post.slug}`}>
                       <ArrowRightIcon className='size-4 -rotate-45' />
-                      <span className='sr-only'>Procitaj vise: {post.title}</span>
+                      <span className='sr-only'>Pročitaj više: {post.title}</span>
                     </Link>
                   </Button>
                 </div>

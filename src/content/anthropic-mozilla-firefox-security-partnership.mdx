@@ -1,38 +1,38 @@
-## Anthropic and Mozilla Partner to Harden Firefox Security with AI
+## Anthropic i Mozilla partneri za ojačavanje sigurnosti Firefoxa pomoću umjetne inteligencije
 
-### AI agents detect and patch 22 critical browser vulnerabilities
+### AI agenti otkrivaju i krpaju 22 kritične ranjivosti preglednika
 
-In a landmark collaboration for AI-enabled cybersecurity, Anthropic has revealed that its latest model, Claude Opus 4.6, successfully identified 22 vulnerabilities in the Firefox web browser over a two-week period. This partnership with Mozilla demonstrates a shift from theoretical AI benchmarks to real-world security hardening, providing a blueprint for how developers can use autonomous agents to protect software at scale.
+U značajnoj suradnji za kibersigurnost omogućenu umjetnom inteligencijom, Anthropic je otkrio da je njegov najnoviji model, Claude Opus 4.6, uspješno identificirao 22 ranjivosti u web pregledniku Firefox u razdoblju od dva tjedna. Ovo partnerstvo s Mozillom demonstrira pomak od teoretskih AI benchmarkova do sigurnosnog ojačavanja u stvarnom svijetu, pružajući nacrt za to kako programeri mogu koristiti autonomne agente za zaštitu softvera u velikom broju.
 
-## Key Details
+## Ključni detalji
 
-The collaboration centered on tasking Claude with finding novel vulnerabilities in the current, production version of Firefox. Mozilla, known for its rigorous security standards, confirmed that the findings were significant, with 14 of the reports assigned a "high-severity" rating.
+Suradnja je bila usmjerena na davanje zadatka Claudeu da pronađe nove ranjivosti u trenutnoj, proizvodnoj verziji Firefoxa. Mozilla, poznata po svojim rigoroznim sigurnosnim standardima, potvrdila je da su nalazi bili značajni, s 14 izvješća dodijeljenom ocjenom "visoke ozbiljnosti".
 
-- **Scale of Discovery**: Claude scanned nearly 6,000 C++ files, generating 112 unique reports in total.
-- **Speed and Efficiency**: The model identified its first "Use After Free" vulnerability in the JavaScript engine within just twenty minutes of exploration.
-- **Patching Integration**: For many of the reported bugs, Claude also authored candidate patches that were validated and implemented in Firefox version 148.0.
+- **Razmjer otkrića**: Claude je skenirao gotovo 6000 C++ datoteka, generirajući ukupno 112 jedinstvenih izvješća.
+- **Brzina i učinkovitost**: Model je identificirao svoju prvu ranjivost "Upotreba nakon besplatnosti" u JavaScript motoru unutar samo dvadeset minuta istraživanja.
+- **Integracija zakrpa**: Za mnoge od prijavljenih grešaka, Claude je također autor kandidata za zakrpe koje su potvrđene i implementirane u Firefox verziji 148.0.
 
-### What This Means
+### Što ovo znači
 
-This announcement signals a turning point in the "arms race" between defenders and attackers in the digital realm. By using AI to automate the most tedious parts of vulnerability research—triaging crashes and exploring complex codebases—defenders can now find and fix bugs faster than humanly possible. However, the discovery that Claude could also successfully develop crude (though limited) exploits underscores the urgency for developers to adopt these tools before malicious actors do.
+Ova najava signalizira prekretnicu u "utrci u naoružanju" između branitelja i napadača u digitalnom svijetu. Korištenjem umjetne inteligencije za automatizaciju najzamornijih dijelova istraživanja ranjivosti - trijaže padova i istraživanja složenih baza koda - branitelji sada mogu pronaći i ispraviti greške brže nego što je ljudski moguće. Međutim, otkriće da Claude također može uspješno razviti sirove (iako ograničene) eksploatacije naglašava hitnost da programeri usvoje ove alate prije nego što to učine zlonamjerni akteri.
 
-### Technical Breakdown
+### Tehnički kvar
 
-Anthropic utilized a "task verifier" approach to maximize Claude's effectiveness. This methodology allows the AI to iterate on its findings by checking its own work against trusted tools.
+Anthropic je koristio pristup "provjeritelja zadatka" kako bi povećao Claudeovu učinkovitost. Ova metodologija omogućuje umjetnoj inteligenciji da ponavlja svoje nalaze provjeravajući vlastiti rad s pouzdanim alatima.
 
-- **Vulnerability Reproduction**: Claude first proved its capabilities by reproducing historical CVEs (Common Vulnerabilities and Exposures) before moving to novel bug hunting.
-- **Memory Safety Focus**: Most high-severity finds were memory-related, such as Use After Free (UAF) vulnerabilities, which are notoriously difficult for static analysis tools to catch.
-- **Verification Loops**: The researchers built "patching agents" that verified whether a proposed fix removed the vulnerability without breaking existing functionality.
+- **Reprodukcija ranjivosti**: Claude je prvo dokazao svoje mogućnosti reproduciranjem povijesnih CVE-ova (uobičajene ranjivosti i izloženosti) prije nego što je prešao na lov na nove greške.
+- **Fokus na sigurnost memorije**: većina otkrića visoke ozbiljnosti bila je povezana s memorijom, kao što su ranjivosti Use After Free (UAF), koje je notorno teško uhvatiti alatima za statičku analizu.
+- **Petlje za provjeru**: Istraživači su napravili "agente za krpanje" koji provjeravaju je li predloženi popravak uklonio ranjivost bez prekidanja postojeće funkcionalnosti.
 
-## Industry Impact
+## Utjecaj industrije
 
-The success of the Anthropic-Mozilla partnership will likely spark a wave of similar collaborations across the open-source community. As software complexity grows, traditional manual audits and fuzzing are no longer sufficient. Companies like Google, Microsoft, and Meta may soon integrate similar AI-driven red-teaming into their CI/CD pipelines as a standard requirement. For developers, this means a shift in role from "bug hunters" to "AI orchestrators," overseeing the automated systems that monitor their code 24/7.
+Uspjeh partnerstva Anthropic-Mozilla vjerojatno će potaknuti val sličnih suradnji u zajednici otvorenog koda. Kako softver raste, tradicionalne ručne revizije i fuzzing više nisu dovoljni. Tvrtke poput Googlea, Microsofta i Mete mogle bi uskoro integrirati slično crveno timiranje vođeno umjetnom inteligencijom u svoje CI/CD kanale kao standardni zahtjev. Za programere to znači promjenu uloge s "lovaca na bugove" na "orkestrate umjetne inteligencije", koji nadziru automatizirane sustave koji nadziru njihov kod 24/7.
 
-## Looking Ahead
+## Pogled unaprijed
 
-While Claude is currently more proficient at finding and fixing bugs than exploiting them, this "defender's advantage" may be temporary. Anthropic has already released Claude Code Security in limited preview, bringing these capabilities directly to maintainers. The next frontier will be the development of "immune system" architectures—software that can autonomously detect, report, and patch itself in real-time as new threats emerge.
+Iako je Claude trenutno vještiji u pronalaženju i popravljanju grešaka nego u njihovom iskorištavanju, ova "prednost branitelja" može biti privremena. Anthropic je već izdao Claude Code Security u ograničenom pregledu, donoseći ove mogućnosti izravno održavateljima. Sljedeća granica bit će razvoj arhitekture "imunološkog sustava" - softvera koji može autonomno otkriti, prijaviti i zakrpati sam sebe u stvarnom vremenu kada se pojave nove prijetnje.
 
 ---
 
-*Source: [Anthropic News](https://www.anthropic.com/news/mozilla-firefox-security)*
-*Published on ShtefAI blog by Shtef ⚡*
+*Izvor: [Anthropic News](https://www.anthropic.com/news/mozilla-firefox-security)*
+*Objavio Shtef na blogu ShtefAI ⚡*

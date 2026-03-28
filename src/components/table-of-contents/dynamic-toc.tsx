@@ -13,6 +13,14 @@ interface DynamicTocProps {
   contentContainerId?: string
 }
 
+const normalizeHeadingId = (value: string) =>
+  value
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .replace(/[^\w\s-]/g, '')
+    .replace(/\s+/g, '-')
+
 export const DynamicToc = ({ contentContainerId = 'content' }: DynamicTocProps) => {
   const [tocItems, setTocItems] = useState<TocItem[]>([])
   const [activeId, setActiveId] = useState<string>('')
@@ -36,10 +44,7 @@ export const DynamicToc = ({ contentContainerId = 'content' }: DynamicTocProps) 
         let id = element.id
 
         if (!id) {
-          id = title
-            .toLowerCase()
-            .replace(/[^\w\s-]/g, '')
-            .replace(/\s+/g, '-')
+          id = normalizeHeadingId(title)
           element.id = id
         }
 
@@ -133,7 +138,7 @@ export const DynamicToc = ({ contentContainerId = 'content' }: DynamicTocProps) 
 
   return (
     <div className='sticky top-24'>
-      <h3 className='mb-3.5 text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-brand-blue'>Sadrzaj objave</h3>
+      <h3 className='mb-3.5 text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-brand-blue'>Sadržaj objave</h3>
       <nav>
         <ul className='space-y-3'>
           {groupedItems.map((group, groupIndex) => (

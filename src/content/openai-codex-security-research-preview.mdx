@@ -1,42 +1,42 @@
-## OpenAI Codex Security Launches in Research Preview
+## OpenAI Codex Security pokreće se u pregledu istraživanja
 
-### The new AI security agent scans GitHub code, validates flaws, and proposes patches.
+### Novi AI sigurnosni agent skenira GitHub kod, provjerava nedostatke i predlaže zakrpe.
 
-OpenAI has launched Codex Security, a new application security agent aimed at one of the hardest problems in modern software delivery: finding the bugs that actually matter without drowning teams in false positives. Announced on 6.3.2026., the product is rolling out in research preview through Codex web for ChatGPT Pro, Enterprise, Business, and Edu customers, with free usage for the next month. This is more than another coding helper. It is a direct attempt to turn AI into a practical security reviewer for production code.
+OpenAI je lansirao Codex Security, novog sigurnosnog agenta za aplikacije usmjerenog na jedan od najtežih problema u isporuci modernog softvera: pronalaženje bugova koji su zapravo važni bez utapanja timova u lažno pozitivnim rezultatima. Najavljen 6. 3. 2026., proizvod se pokreće u pretpregledu istraživanja putem Codex weba za korisnike ChatGPT Pro, Enterprise, Business i Edu, uz besplatnu upotrebu sljedećih mjesec dana. Ovo je više od još jednog pomoćnika kodiranja. To je izravan pokušaj da se umjetna inteligencija pretvori u praktičnog recenzenta sigurnosti proizvodnog koda.
 
-## Key Details
+## Ključni detalji
 
-Codex Security is the public debut of what OpenAI previously called Aardvark, an internal and private-beta effort focused on high-signal vulnerability detection. According to OpenAI, the system builds a project-specific threat model, uses that context to search for realistic attack paths, validates findings in isolated environments, and then proposes patches that align with the surrounding codebase.
+Codex Security je javni debi onoga što je OpenAI ranije nazivao Aardvark, internog i privatnog beta napora usmjerenog na otkrivanje ranjivosti visokog signala. Prema OpenAI-ju, sustav gradi model prijetnje specifičan za projekt, koristi taj kontekst za traženje realnih putanja napada, potvrđuje nalaze u izoliranim okruženjima, a zatim predlaže zakrpe koje su usklađene s okolnom bazom koda.
 
-The company says those validation steps materially improved quality during beta. On repeated scans of the same repositories, OpenAI reports that noise dropped by as much as 84 percent from the initial rollout. It also says the rate of findings with overstated severity fell by more than 90 percent, while false positives declined by more than 50 percent across repositories. In a category where noisy alerts are often the reason teams ignore automated tooling, those numbers are the real story.
+Tvrtka kaže da su ti koraci provjere materijalno poboljšali kvalitetu tijekom beta verzije. Pri ponovljenim skeniranjima istih spremišta, OpenAI izvještava da je buka pala za čak 84 posto u odnosu na početno predstavljanje. Također se navodi da je stopa nalaza s prenaglašenom težinom pala za više od 90 posto, dok su lažno pozitivni pali za više od 50 posto u svim repozitorijima. U kategoriji u kojoj su bučna upozorenja često razlog zašto timovi ignoriraju automatske alate, te brojke su prava priča.
 
-OpenAI also shared scale metrics meant to prove this is not a lab demo. Over the last 30 days of its beta cohort, Codex Security scanned more than 1.2 million commits across external repositories, identifying 792 critical findings and 10,561 high-severity findings. Critical issues appeared in under 0.1 percent of scanned commits, suggesting the tool is designed to surface rare but consequential problems instead of flooding teams with low-priority warnings.
+OpenAI je također podijelio metriku razmjera koja je trebala dokazati da ovo nije laboratorijska demonstracija. Tijekom posljednjih 30 dana svoje beta kohorte, Codex Security skenirao je više od 1,2 milijuna obveza u vanjskim spremištima, identificirajući 792 kritična nalaza i 10 561 nalaza visoke ozbiljnosti. Kritični problemi pojavili su se u manje od 0,1 posto skeniranih obveza, što sugerira da je alat dizajniran za otkrivanje rijetkih, ali posljedičnih problema umjesto da zasipa timove upozorenjima niskog prioriteta.
 
-### What This Means
+### Što ovo znači
 
-This launch matters because software security is becoming the next major bottleneck in AI-assisted development. Code generation is getting faster, but review, validation, and remediation still absorb human time. OpenAI is trying to close that gap by moving beyond autocomplete into a workflow that starts with threat modeling and ends with a candidate fix. If that process works reliably, it changes the economics of application security for both startups and large engineering organizations.
+Ovo lansiranje je važno jer sigurnost softvera postaje sljedeće veliko usko grlo u razvoju potpomognutom umjetnom inteligencijom. Generiranje koda postaje sve brže, ali pregled, provjera valjanosti i ispravljanje i dalje oduzimaju ljudsko vrijeme. OpenAI pokušava zatvoriti taj jaz prelazeći dalje od automatskog dovršavanja u tijek rada koji počinje modeliranjem prijetnji i završava ispravkom kandidata. Ako taj proces radi pouzdano, mijenja ekonomiju sigurnosti aplikacija i za startupe i za velike inženjerske organizacije.
 
-### Technical Breakdown
+### Tehnički kvar
 
-- Codex Security connects directly to GitHub repositories and scans commit history in reverse chronological order to build context around how the system is structured.
-- It creates an editable threat model that maps trust boundaries, attacker entry points, sensitive data, and higher-risk code paths so scans are grounded in the real system.
-- Potential vulnerabilities are validated in an isolated environment before they are escalated, which is meant to reduce false positives and give teams stronger evidence.
-- For validated issues, the system proposes a minimal patch that addresses the root cause and can be reviewed in a normal pull request workflow.
-- OpenAI says the product has already helped uncover real issues in both internal deployments and widely used open source projects.
+- Codex Security povezuje se izravno na GitHub repozitorije i skenira povijest predaje obrnutim kronološkim redoslijedom kako bi se izgradio kontekst oko strukture sustava.
+- Stvara model prijetnji koji se može uređivati ​​i koji mapira granice povjerenja, ulazne točke napadača, osjetljive podatke i puteve koda visokog rizika tako da su skeniranja utemeljena na stvarnom sustavu.
+- Potencijalne ranjivosti potvrđuju se u izoliranom okruženju prije nego što se eskaliraju, što je namijenjeno smanjenju lažno pozitivnih i timovima daje snažnije dokaze.
+- Za potvrđene probleme, sustav predlaže minimalnu zakrpu koja rješava glavni uzrok i može se pregledati u normalnom tijeku rada zahtjeva za povlačenjem.
+- OpenAI kaže da je proizvod već pomogao u otkrivanju stvarnih problema u internoj implementaciji i široko korištenim projektima otvorenog koda.
 
-## Industry Impact
+## Utjecaj industrije
 
-The immediate audience is security-conscious development teams, especially enterprises already using GitHub and Codex. For them, the appeal is not just bug detection. It is triage reduction. A security tool that can tell teams which findings are real, why they matter in this architecture, and how to patch them is far closer to operational value than a dashboard full of warnings.
+Neposredna publika su razvojni timovi koji su svjesni sigurnosti, posebno poduzeća koja već koriste GitHub i Codex. Za njih privlačnost nije samo otkrivanje grešaka. To je redukcija trijaže. Sigurnosni alat koji timovima može reći koji su nalazi stvarni, zašto su važni u ovoj arhitekturi i kako ih zakrpati daleko je bliži operativnoj vrijednosti od nadzorne ploče pune upozorenja.
 
-OpenAI is also tying the product to the open source ecosystem. The company says Codex Security has helped report vulnerabilities affecting projects such as OpenSSH, GnuTLS, GOGS, libssh, PHP, and Chromium, and that fourteen CVEs have already been assigned. That matters because open source maintainers do not need more raw reports. They need fewer, higher-confidence findings they can act on quickly. If Codex Security can consistently deliver that, it could become one of the first AI security products that maintainers actually welcome.
+OpenAI također povezuje proizvod s ekosustavom otvorenog koda. Tvrtka kaže da je Codex Security pomogao prijaviti ranjivosti koje utječu na projekte kao što su OpenSSH, GnuTLS, GOGS, libssh, PHP i Chromium te da je već dodijeljeno četrnaest CVE-ova. To je važno jer održavateljima otvorenog koda nije potrebno više neobrađenih izvješća. Treba im manje nalaza s većom pouzdanošću na koje mogu brzo djelovati. Ako Codex Security to može dosljedno isporučivati, mogao bi postati jedan od prvih sigurnosnih proizvoda umjetne inteligencije koje održavatelji zapravo pozdravljaju.
 
-## Looking Ahead
+## Pogled unaprijed
 
-The next question is whether Codex Security can hold up outside curated beta environments. OpenAI is starting with a controlled research preview, GitHub-based integration, and a human review step before patches become pull requests. Over the next few weeks, the most important signals will be precision at scale, adoption by enterprise security teams, and whether the open source cohort reports that the tool saves time instead of creating more review overhead.
+Sljedeće je pitanje može li Codex Security izdržati izvan odabranih beta okruženja. OpenAI počinje s kontroliranim pregledom istraživanja, integracijom temeljenom na GitHubu i korakom ljudskog pregleda prije nego što zakrpe postanu zahtjevi za povlačenje. Tijekom sljedećih nekoliko tjedana najvažniji signali bit će preciznost na razini, usvajanje od strane sigurnosnih timova poduzeća i izvješćuje li kohorta otvorenog koda da alat štedi vrijeme umjesto da stvara dodatne troškove pregleda.
 
-If those signals are positive, Codex Security could mark the start of a new phase in AI software tooling: systems that do not just write code faster, but help ship it more safely.
+Ako su ti signali pozitivni, Codex Security bi mogao označiti početak nove faze u softverskim alatima umjetne inteligencije: sustavi koji ne samo da brže pišu kod, već ga pomažu u sigurnijoj isporuci.
 
 ---
 
-*Source: [OpenAI](https://openai.com/index/codex-security-now-in-research-preview)*
-*Published on ShtefAI blog by Shtef*
+*Izvor: [OpenAI](https://openai.com/index/codex-security-now-in-research-preview)*
+*Objavio Shtef na blogu ShtefAI*

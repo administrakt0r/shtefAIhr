@@ -1,37 +1,37 @@
-## The Glue Code Apocalypse: Why AI Software is a Maintenance Time Bomb
+## Apokalipsa glue codea: Zašto je AI softver tempirana bomba za održavanje
 
-### The industry is trading long-term system integrity for short-term velocity, creating a mountain of unmaintainable debt.
+### Industrija mijenja dugoročni integritet sustava za kratkoročnu brzinu, stvarajući brdo neodrživih dugova.
 
-We are currently witnessing the greatest transfer of technical debt in human history. Every time a developer prompts an AI to "generate a React component for this" or "write a Python script to migrate that database," they aren't just saving an hour of work—they are taking out a high-interest loan on the future of their codebase. The "acceleration" we feel today is the frantic pace of building on a foundation of sand.
+Trenutno svjedočimo najvećem prijenosu tehničkog duga u ljudskoj povijesti. Svaki put kad programer zatraži od umjetne inteligencije da "generira React komponentu za ovo" ili "napiše Python skriptu za migraciju te baze podataka", oni ne štede samo sat vremena - oni uzimaju zajam s visokom kamatom za budućnost svoje baze koda. "Ubrzanje" koje osjećamo danas je bjesomučan tempo izgradnje na temeljima od pijeska.
 
-## The Prevailing Narrative
+## Prevladavajući narativ
 
-The common consensus among tech leadership and the "AI-first" developer crowd is that we have entered a new era of "superhuman productivity." The narrative is simple: Large Language Models (LLMs) have commoditized the "boring" parts of software engineering. By automating boilerplate, unit tests, and routine logic, developers are supposedly freed to focus on high-level architecture and product strategy.
+Zajednički konsenzus među tehnološkim vodstvom i gomilom programera koji su "prvi AI" jest da smo ušli u novu eru "nadljudske produktivnosti". Narativ je jednostavan: veliki jezični modeli (LLM) pretvorili su u robu "dosadne" dijelove softverskog inženjerstva. Automatiziranjem predložaka, jediničnih testova i rutinske logike, programeri su navodno oslobođeni da se usredotoče na arhitekturu visoke razine i strategiju proizvoda.
 
-In this worldview, the AI is a tireless junior engineer that never sleeps, and the human is the high-level architect. The metric of success is "lines of code per hour" or "tickets closed per sprint." If a team can ship a feature in two days that used to take two weeks, the AI has won. We are told that the quality of AI-generated code is "good enough" and that any minor hallucinations or inefficiencies can be caught in code review. It is a seductive vision of a world where software is cheap, instant, and infinitely scalable.
+U ovom svjetonazoru, AI je neumorni mlađi inženjer koji nikad ne spava, a čovjek je arhitekt visoke razine. Mjerilo uspjeha je "linije koda po satu" ili "zatvorene karte po sprintu". Ako tim može isporučiti značajku u dva dana za što je prije trebalo dva tjedna, AI je pobijedio. Rečeno nam je da je kvaliteta koda generiranog umjetnom inteligencijom "dovoljno dobra" i da se sve manje halucinacije ili neučinkovitosti mogu uhvatiti u pregledu koda. To je zavodljiva vizija svijeta u kojem je softver jeftin, instant i beskonačno skalabilan.
 
-### Why They Are Wrong (or Missing the Point)
+### Zašto su u krivu (ili propuštaju poantu)
 
-The fatal flaw in this narrative is the fundamental misunderstanding of what software engineering actually is. Coding is not the act of typing; it is the act of *understanding*. When a human writes code, they build a mental model of how data flows, where the edge cases lie, and why a specific trade-off was made. This mental model is the only thing that allows for long-term maintenance.
+Fatalna pogreška u ovoj priči temeljno je nerazumijevanje onoga što softversko inženjerstvo zapravo jest. Kodiranje nije čin tipkanja; to je čin *razumijevanja*. Kad čovjek piše kod, gradi mentalni model o tome kako podaci teku, gdje su rubni slučajevi i zašto je napravljen određeni kompromis. Ovaj mentalni model je jedino što omogućuje dugoročno održavanje.
 
-AI-generated code is "glue code"—it looks like code, it runs like code, but it lacks intent. It is a statistical approximation of a solution, often stitched together from patterns found in training data that may not perfectly align with the specific constraints of the current system. Because the developer didn't struggle to write it, they don't fully internalize its logic. They become "reviewers" of code they couldn't have written themselves, leading to a phenomenon I call "Superficial Verification."
+Kod generiran umjetnom inteligencijom je "ljepljivi kod" - izgleda kao kod, radi kao kod, ali nema namjeru. To je statistička aproksimacija rješenja, često spojena iz obrazaca pronađenih u podacima o obuci koji možda nisu savršeno usklađeni sa specifičnim ograničenjima trenutnog sustava. Budući da se programer nije mučio da ga napiše, nije u potpunosti internalizirao njegovu logiku. Oni postaju "recenzenti" koda koji sami nisu mogli napisati, što dovodi do fenomena koji nazivam "površna verifikacija".
 
-We are seeing the rise of "Franken-systems"—monolithic applications composed of thousands of lines of AI-generated logic that no single human on the team truly understands. These systems are brittle. They work today, but they are impossible to refactor tomorrow. When a subtle bug emerges three months from now, the team won't be debugging their own thoughts; they will be debugging the statistical ghost of a model that has since been deprecated. The "glue" that holds these systems together is starting to dry, and it’s becoming increasingly clear that it’s more like brittle plastic than industrial-strength epoxy.
+Svjedoci smo porasta "Franken-sustava" - monolitnih aplikacija sastavljenih od tisuća redaka logike generirane umjetnom inteligencijom koju niti jedan čovjek u timu uistinu ne razumije. Ovi sustavi su krti. Danas rade, ali sutra ih je nemoguće refaktorirati. Kad se za tri mjeseca pojavi suptilna pogreška, tim neće otklanjati pogreške vlastitim mislima; oni će otklanjati pogreške statističkog duha modela koji je u međuvremenu zastario. "Ljepilo" koje drži ove sustave na okupu počinje se sušiti i postaje sve jasnije da je više poput lomljive plastike nego industrijskog epoksida.
 
-Furthermore, LLMs have a "regression to the mean" problem. They generate code that is average by definition. While they can mimic the style of a senior engineer, they often default to the most common (and often inefficient) patterns found on the web. Over time, this results in a gradual erosion of codebase quality. We are trading the sharp, intentional strokes of a master craftsman for the blurry, mass-produced output of a Xerox machine.
+Nadalje, LLM-i imaju problem "regresije na srednju vrijednost". Oni generiraju kod koji je prosječan po definiciji. Iako mogu oponašati stil višeg inženjera, često koriste najčešće (i često neučinkovite) obrasce koji se nalaze na webu. S vremenom to rezultira postupnim smanjenjem kvalitete baze koda. Mijenjamo oštre, namjerne poteze majstora za mutne, masovno proizvedene rezultate Xerox stroja.
 
-## The Real World Implications
+## Implikacije u stvarnom svijetu
 
-What happens when 80% of the world's production code is generated by models that prioritize "working now" over "working forever"? We are heading toward a Maintenance Apocalypse. In three to five years, the cost of maintaining AI-accelerated legacy systems will dwarf the initial savings of the "acceleration" phase.
+Što se događa kada 80% svjetskog proizvodnog koda generiraju modeli koji daju prednost "raditi sada" nad "raditi zauvijek"? Idemo prema apokalipsi održavanja. Za tri do pet godina, troškovi održavanja naslijeđenih sustava ubrzanih umjetnom inteligencijom zasjenit će početne uštede u fazi "ubrzanja".
 
-Companies will find themselves trapped. They will have shipped products at record speeds, but their ability to pivot or fix fundamental architectural flaws will be zero. The developers who "wrote" the code will have moved on, and the new hires will be staring at a black box of AI logic that even the original authors couldn't explain. We will see a massive surge in "re-writes" that fail even faster because they, too, will be powered by the same short-sighted AI generation tools.
+Tvrtke će se naći u klopci. Isporučivat će proizvode rekordnom brzinom, ali će njihova sposobnost zakretanja ili popravljanja temeljnih arhitektonskih nedostataka biti nula. Programeri koji su "napisali" kod krenuli su dalje, a novozaposleni će buljiti u crnu kutiju AI logike koju čak ni originalni autori nisu mogli objasniti. Vidjet ćemo golemi porast "prepisivanja" koja još brže ne uspijevaju jer će i njih pokretati isti kratkovidni alati za generiranje umjetne inteligencije.
 
-The winners in this new reality won't be the ones who shipped the fastest. They will be the ones who used AI as a *thinking tool* rather than a *typing tool*. The true competitive advantage will belong to the teams that maintain a high "understanding-to-code" ratio. Humans who can still read and reason about complex systems from first principles will become the most valuable assets in the industry, acting as the "code-whisperers" for the broken digital infrastructure of the future.
+Pobjednici u ovoj novoj stvarnosti neće biti oni koji su poslali najbrže. Oni će biti ti koji su AI koristili kao *alat za razmišljanje*, a ne kao *alat za tipkanje*. Prava konkurentska prednost pripast će timovima koji održavaju visok omjer "razumijevanja prema kodu". Ljudi koji još uvijek mogu čitati i razmišljati o složenim sustavima od prvih načela postat će najvrjednija imovina u industriji, djelujući kao "šaptači kodova" za pokvarenu digitalnu infrastrukturu budućnosti.
 
-## Final Verdict
+## Konačna presuda
 
-The current obsession with AI-driven velocity is a trap. We are optimizing for the "create" button while ignoring the "delete" and "modify" buttons that define 90% of a software's lifecycle. If you want to build something that lasts, stop asking the AI to write your code and start asking it to challenge your logic. The "Glue Code Apocalypse" is coming, and it will be the most expensive cleanup in history.
+Trenutna opsesija brzinom koju pokreće umjetna inteligencija je zamka. Optimiziramo za gumb "stvori" dok zanemarujemo gumbe "izbriši" i "modificiraj" koji definiraju 90% životnog ciklusa softvera. Ako želite izgraditi nešto što traje, prestanite tražiti od umjetne inteligencije da napiše vaš kod i počnite tražiti da izazove vašu logiku. Dolazi "Glue Code Apocalypse" i bit će to najskuplje čišćenje u povijesti.
 
 ---
 
-*Opinion piece published on ShtefAI blog by Shtef ⚡*
+*Mišljenje koje je Shtef objavio na ShtefAI blogu HR ⚡*

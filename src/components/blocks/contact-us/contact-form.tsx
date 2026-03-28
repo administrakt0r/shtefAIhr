@@ -45,7 +45,7 @@ const ContactForm = () => {
             id='name'
             name='name'
             type='text'
-            placeholder='Upisite ime i prezime'
+            placeholder='Upišite ime i prezime'
             autoComplete='name'
             value={name}
             onChange={event => setName(event.target.value)}
@@ -65,7 +65,7 @@ const ContactForm = () => {
             id='email'
             name='email'
             type='email'
-            placeholder='Upisite email adresu'
+            placeholder='Upišite e-mail adresu'
             autoComplete='email'
             value={email}
             onChange={event => setEmail(event.target.value)}
@@ -103,16 +103,18 @@ const ContactForm = () => {
           id='message'
           name='message'
           className='min-h-36 rounded-[1.5rem] border-border/80 bg-background/90 px-4 py-3'
-          placeholder='Napisite sto ste primijetili, koju temu predlazete ili kako vam mozemo pomoci.'
+          placeholder='Napišite što ste primijetili, koju temu predlažete ili kako vam možemo pomoći.'
           value={message}
           onChange={event => setMessage(event.target.value)}
         />
       </div>
 
       <div className='flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between'>
-        <p className='text-sm leading-6 text-muted-foreground'>Klik na gumb otvara vas email klijent s pripremljenom porukom.</p>
+        <p className='text-sm leading-6 text-muted-foreground'>
+          Klik na gumb otvara vaš e-mail klijent s pripremljenom porukom.
+        </p>
         <Button type='submit' size='lg' className='rounded-full px-6 text-xs font-semibold tracking-[0.16em] uppercase'>
-          Posalji email
+          Pošalji e-mail
         </Button>
       </div>
     </form>

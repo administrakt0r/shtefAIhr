@@ -1,22 +1,16 @@
-import fs from 'node:fs/promises'
 import path from 'node:path'
-import vm from 'node:vm'
-import { fileURLToPath } from 'node:url'
 
-import ts from 'typescript'
+import fs from 'node:fs/promises'
 
-const __filename = fileURLToPath(import.meta.url)
-const __dirname = path.dirname(__filename)
-const rootDir = path.resolve(__dirname, '..')
+import { loadBlogPosts, loadBlogUtils, rootDir } from './load-blog-data.mjs'
+
 
 const siteUrl = process.env.NEXT_PUBLIC_APP_URL ?? 'https://aibloghr.pages.dev'
 const siteName = 'ShtefAI blog HR'
 
 const siteDescription =
-  'ShtefAI blog HR svakodnevno donosi AI vijesti, analize i kontekst za Hrvatsku, regiju i siri tech sektor.'
+  'ShtefAI blog HR svakodnevno donosi AI vijesti, analize i kontekst za Hrvatsku, regiju i širi tehnološki sektor.'
 
-const blogPostsPath = path.join(rootDir, 'src', 'assets', 'data', 'blog-posts.tsx')
-const blogUtilsPath = path.join(rootDir, 'src', 'lib', 'blog.ts')
 const outputPath = path.join(rootDir, 'public', 'rss.xml')
 
 const escapeXml = value =>
@@ -26,69 +20,6 @@ const escapeXml = value =>
     .replaceAll('>', '&gt;')
     .replaceAll('"', '&quot;')
     .replaceAll("'", '&apos;')
-
-const loadBlogPosts = async () => {
-  const source = await fs.readFile(blogPostsPath, 'utf8')
-
-  const compiled = ts.transpileModule(source, {
-    compilerOptions: {
-      module: ts.ModuleKind.CommonJS,
-      target: ts.ScriptTarget.ES2020
-    },
-    fileName: blogPostsPath
-  }).outputText
-
-  const cjsModule = { exports: {} }
-
-  const sandbox = {
-    exports: cjsModule.exports,
-    module: cjsModule,
-    require: specifier => {
-      throw new Error(`Unsupported import while generating RSS: ${specifier}`)
-    }
-  }
-
-  vm.runInNewContext(compiled, sandbox, { filename: 'blog-utils.js' })
-
-  if (!Array.isArray(cjsModule.exports.blogPosts)) {
-    throw new Error('Unable to load blog posts for RSS generation.')
-  }
-
-  return cjsModule.exports.blogPosts
-}
-
-const loadBlogUtils = async () => {
-  const source = await fs.readFile(blogUtilsPath, 'utf8')
-
-  const compiled = ts.transpileModule(source, {
-    compilerOptions: {
-      module: ts.ModuleKind.CommonJS,
-      target: ts.ScriptTarget.ES2020
-    },
-    fileName: blogUtilsPath
-  }).outputText
-
-  const cjsModule = { exports: {} }
-
-  const sandbox = {
-    exports: cjsModule.exports,
-    module: cjsModule,
-    require: specifier => {
-      throw new Error(`Unsupported import while generating RSS: ${specifier}`)
-    }
-  }
-
-  vm.runInNewContext(compiled, sandbox, { filename: 'blog-posts.js' })
-
-  if (
-    typeof cjsModule.exports.comparePostsByPublishedAt !== 'function' ||
-    typeof cjsModule.exports.getPostRssDate !== 'function'
-  ) {
-    throw new Error('Unable to load blog helpers for RSS generation.')
-  }
-
-  return cjsModule.exports
-}
 
 const blogPosts = await loadBlogPosts()
 const { comparePostsByPublishedAt, getPostRssDate } = await loadBlogUtils()

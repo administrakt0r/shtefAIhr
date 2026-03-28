@@ -34,7 +34,7 @@ const Home = () => {
         '@type': 'Blog',
         '@id': `${SITE_URL}/#blog`,
         name: SITE_NAME,
-        description: 'Dnevne AI vijesti, analize i kontekst za Hrvatsku, regiju i siri tech sektor.',
+        description: 'Dnevne AI vijesti, analize i kontekst za Hrvatsku, regiju i širi tehnološki sektor.',
         url: SITE_URL,
         inLanguage: SITE_LANGUAGE_TAG,
         isPartOf: { '@id': `${SITE_URL}#website` },

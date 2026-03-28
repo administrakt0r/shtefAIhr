@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react'
 
-import { Inter, Source_Serif_4, IBM_Plex_Mono } from 'next/font/google'
+import { Geist_Mono, Merriweather, Roboto } from 'next/font/google'
 import type { Metadata } from 'next'
 
 import { ThemeProvider } from '@/components/theme-provider'
@@ -18,26 +18,29 @@ import {
   SITE_OG_IMAGE_PATH,
   SITE_OG_LOCALE,
   SITE_SHORT_DESCRIPTION,
+  SITE_THEME_COLOR,
   SITE_URL
 } from '@/lib/site'
 import { cn } from '@/lib/utils'
 
 import './globals.css'
 
-const inter = Inter({
-  variable: '--font-inter',
-  subsets: ['latin']
+const roboto = Roboto({
+  variable: '--font-roboto',
+  subsets: ['latin', 'latin-ext'],
+  weight: ['300', '400', '500', '700']
 })
 
-const sourceSerif4 = Source_Serif_4({
-  variable: '--font-source-serif-4',
-  subsets: ['latin']
+const merriweather = Merriweather({
+  variable: '--font-merriweather',
+  subsets: ['latin', 'latin-ext'],
+  weight: ['300', '400', '700', '900']
 })
 
-const ibmPlexMono = IBM_Plex_Mono({
-  variable: '--font-ibm-plex-mono',
+const geistMono = Geist_Mono({
+  variable: '--font-geist-mono',
   subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700']
+  weight: ['400', '500', '700']
 })
 
 export const metadata: Metadata = {
@@ -65,7 +68,7 @@ export const metadata: Metadata = {
     'AI novosti Hrvatska',
     'AI analize regija',
     'umjetna inteligencija',
-    'strojno ucenje',
+    'strojno učenje',
     'AI alati',
     'AI regulativa',
     'AI startupi',
@@ -74,11 +77,11 @@ export const metadata: Metadata = {
     'Anthropic',
     'OpenAI',
     'Google Gemini',
-    'AI istrazivanja',
+    'AI istraživanja',
     'ShtefAI blog HR',
     'AI portal Hrvatska',
     'dnevne AI vijesti',
-    'tehnoloske analize'
+    'tehnološke analize'
   ],
   authors: [{ name: 'Shtef', url: `${SITE_URL}/about` }],
   creator: 'administraktor.com',
@@ -139,7 +142,7 @@ export const metadata: Metadata = {
   },
   other: {
     'application-name': SITE_NAME,
-    'msapplication-TileColor': '#c61f32'
+    'msapplication-TileColor': SITE_THEME_COLOR
   }
 }
 
@@ -148,9 +151,9 @@ const RootLayout = ({ children }: Readonly<{ children: ReactNode }>) => {
     <html
       lang={SITE_LANGUAGE}
       className={cn(
-        inter.variable,
-        sourceSerif4.variable,
-        ibmPlexMono.variable,
+        roboto.variable,
+        merriweather.variable,
+        geistMono.variable,
         'flex min-h-full w-full scroll-smooth'
       )}
       suppressHydrationWarning

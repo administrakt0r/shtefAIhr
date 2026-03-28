@@ -11,23 +11,26 @@ const HeroSection = ({ blogData }: { blogData: BlogPost[] }) => {
   const [leadPost, ...latestPosts] = [...blogData].sort(comparePostsByPublishedAt).slice(0, 4)
 
   return (
-    <section id='home' className='border-b border-border/70 bg-[linear-gradient(180deg,rgba(10,51,114,0.08),transparent_38%),linear-gradient(135deg,rgba(198,31,50,0.08),transparent_55%)] pt-10 pb-10 sm:pt-14 sm:pb-14'>
+    <section
+      id='home'
+      className='border-b border-border/70 bg-[radial-gradient(circle_at_top_left,oklch(from_var(--accent)_l_c_h_/_0.45),transparent_34%),linear-gradient(180deg,oklch(from_var(--primary)_l_c_h_/_0.08),transparent_38%),linear-gradient(135deg,oklch(from_var(--secondary)_l_c_h_/_0.12),transparent_55%)] pt-10 pb-10 sm:pt-14 sm:pb-14'
+    >
       <div className='mx-auto grid max-w-7xl gap-6 px-4 sm:px-6 lg:grid-cols-[minmax(0,1.45fr)_minmax(18rem,0.95fr)] lg:px-8'>
         <div className='rounded-[2rem] border border-border/80 bg-card/92 p-6 shadow-sm shadow-brand-blue/5 sm:p-8 lg:p-10'>
           <div className='flex flex-wrap items-center gap-3'>
             <Badge variant='outline' className='rounded-full border-primary/20 bg-primary/10 px-3 py-1 text-[0.72rem] font-semibold tracking-[0.18em] uppercase text-primary'>
               Hrvatska | Regija | AI
             </Badge>
-            <span className='text-muted-foreground text-xs font-medium uppercase tracking-[0.16em]'>Azurirano svaki dan</span>
+            <span className='text-muted-foreground text-xs font-medium uppercase tracking-[0.16em]'>Ažurirano svaki dan</span>
           </div>
 
           <div className='mt-6 max-w-3xl space-y-5'>
             <h1 className='font-serif text-4xl leading-none tracking-tight text-balance text-foreground sm:text-5xl lg:text-6xl'>
-              AI vijesti i analize koje odmah objasne sto je vazno za Hrvatsku i regiju.
+              AI vijesti i analize koje odmah objašnjavaju što je važno za Hrvatsku i regiju.
             </h1>
             <p className='max-w-2xl text-base leading-7 text-muted-foreground sm:text-lg'>
-              Pratimo OpenAI, Anthropic, Google, regulativu, investicije i stvarne AI proizvode, pa iz dana u dan
-              pretvaramo buku u citljiv kontekst.
+              Pratimo OpenAI, Anthropic, Google, regulativu, ulaganja i stvarne AI proizvode kako bismo iz dana u dan
+              pretvarali buku u čitljiv kontekst.
             </p>
           </div>
 
@@ -56,11 +59,13 @@ const HeroSection = ({ blogData }: { blogData: BlogPost[] }) => {
 
                   <div className='flex items-center justify-between gap-3 border-t border-border/70 pt-4 sm:flex-col sm:items-end sm:border-t-0 sm:border-l sm:pt-0 sm:pl-5'>
                     <div className='space-y-1 text-right'>
-                      <p className='text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-muted-foreground'>Vrijeme citanja</p>
+                      <p className='text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-muted-foreground'>
+                        Vrijeme čitanja
+                      </p>
                       <p className='text-lg font-semibold text-foreground'>{leadPost.readTime} min</p>
                     </div>
                     <span className='inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.16em] text-primary'>
-                      Procitaj sada
+                      Pročitaj sada
                       <ArrowUpRightIcon className='size-4' />
                     </span>
                   </div>
@@ -74,7 +79,7 @@ const HeroSection = ({ blogData }: { blogData: BlogPost[] }) => {
           <div className='flex items-center justify-between gap-3 border-b border-border/80 pb-4'>
             <div>
               <p className='text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-brand-blue'>Brzo na stol</p>
-              <h2 className='mt-2 font-serif text-2xl tracking-tight text-foreground'>Najsvjezije objave</h2>
+              <h2 className='mt-2 font-serif text-2xl tracking-tight text-foreground'>Najsvježije objave</h2>
             </div>
             <Image src='/shteflogo.svg' alt='ShtefAI newsroom simbol' width={32} height={32} className='h-8 w-8 rounded-sm opacity-90' />
           </div>

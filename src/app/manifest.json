@@ -1,14 +1,14 @@
 {
   "name": "ShtefAI blog HR - AI vijesti i analize za Hrvatsku i regiju",
   "short_name": "ShtefAI HR",
-  "description": "ShtefAI blog HR svakodnevno donosi AI vijesti, analize i kontekst za Hrvatsku, regiju i siri tech sektor.",
+  "description": "ShtefAI blog HR svakodnevno donosi AI vijesti, analize i kontekst za Hrvatsku, regiju i širi tehnološki sektor.",
   "lang": "hr",
   "start_url": "/",
   "scope": "/",
   "id": "/",
   "display": "standalone",
-  "background_color": "#f7f9fc",
-  "theme_color": "#c61f32",
+  "background_color": "#faf7fb",
+  "theme_color": "#7b42e4",
   "orientation": "portrait-primary",
   "categories": ["news", "technology", "education"],
   "icons": [
@@ -44,20 +44,20 @@
   "shortcuts": [
     {
       "name": "Naslovnica",
-      "short_name": "Home",
-      "description": "Otvori dnevni AI newsroom",
+      "short_name": "Početna",
+      "description": "Otvorite dnevni AI pregled",
       "url": "/"
     },
     {
-      "name": "O projektu",
-      "short_name": "O projektu",
+      "name": "O blogu",
+      "short_name": "O blogu",
       "description": "Saznajte kako radi ShtefAI blog HR",
       "url": "/about"
     },
     {
       "name": "Kontakt",
       "short_name": "Kontakt",
-      "description": "Posaljite upit, ispravak ili prijedlog teme",
+      "description": "Pošaljite upit, ispravak ili prijedlog teme",
       "url": "/contact-us"
     }
   ]

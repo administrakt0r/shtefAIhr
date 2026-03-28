@@ -11,8 +11,8 @@ const ContactUs = () => {
           <p className='text-[0.72rem] font-semibold uppercase tracking-[0.2em] text-brand-blue'>Kontakt redakcije</p>
           <h1 className='font-serif text-4xl tracking-tight text-foreground sm:text-5xl'>Javite nam se oko AI tema, ispravaka ili suradnje.</h1>
           <p className='mx-auto max-w-3xl text-base leading-7 text-muted-foreground sm:text-lg'>
-            Ako ste primijetili netocan navod, imate prijedlog teme ili zelite razgovarati o partnerstvu, posaljite
-            poruku i vratit cemo vam se emailom.
+            Ako ste primijetili netočan navod, imate prijedlog teme ili želite razgovarati o partnerstvu, pošaljite
+            poruku i vratit ćemo vam se e-poštom.
           </p>
         </div>
 
@@ -22,20 +22,20 @@ const ContactUs = () => {
               <ContactForm />
             </div>
 
-            <div className='border-t border-border/75 bg-[linear-gradient(180deg,rgba(198,31,50,0.08),rgba(10,51,114,0.12))] p-4 md:border-t-0 md:border-l md:p-6'>
+            <div className='border-t border-border/75 bg-[linear-gradient(180deg,oklch(from_var(--primary)_l_c_h_/_0.12),oklch(from_var(--secondary)_l_c_h_/_0.18))] p-4 md:border-t-0 md:border-l md:p-6'>
               <div className='flex h-full flex-col justify-between gap-6 rounded-[1.6rem] border border-white/50 bg-background/80 p-4 backdrop-blur sm:p-5'>
                 <div className='space-y-4'>
                   <p className='text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-primary'>Brzi kontakt</p>
                   <h2 className='font-serif text-2xl tracking-tight text-foreground'>Od redakcijskih pitanja do ispravaka objava.</h2>
                   <p className='text-sm leading-6 text-muted-foreground'>
-                    Prioritet dajemo prijavama netocnih informacija, upitima za suradnju i konkretnim AI temama koje
-                    zasluzuju obradu.
+                    Prioritet dajemo prijavama netočnih informacija, upitima za suradnju i konkretnim AI temama koje
+                    zaslužuju obradu.
                   </p>
                 </div>
 
                 <Image
                   src='/images/contact-us.webp'
-                  alt='Kontakt i urednicka komunikacija ShtefAI Blog HR'
+                  alt='Kontakt i urednička komunikacija ShtefAI bloga HR'
                   width={1120}
                   height={880}
                   sizes='(min-width: 768px) 26rem, 100vw'

@@ -6,7 +6,7 @@ import { Separator } from '@/components/ui/separator'
 
 const Footer = () => {
   return (
-    <footer className='mt-8 border-t border-border/75 bg-[linear-gradient(180deg,rgba(10,51,114,0.05),transparent_45%)]'>
+    <footer className='mt-8 border-t border-border/75 bg-[linear-gradient(180deg,oklch(from_var(--accent)_l_c_h_/_0.22),transparent_45%)]'>
       <div className='mx-auto flex max-w-7xl flex-col gap-8 px-4 py-8 sm:px-6 md:py-12 lg:px-8'>
         <div className='flex flex-col gap-5 md:flex-row md:items-start md:justify-between'>
           <div className='space-y-3'>
@@ -14,14 +14,14 @@ const Footer = () => {
               <Logo className='gap-3' />
             </Link>
             <p className='max-w-xl text-sm leading-6 text-muted-foreground'>
-              Dnevni AI newsroom za Hrvatsku i regiju. Pratimo modele, proizvode, regulativu, investicije i price koje
-              utjecu na stvarni posao.
+              Dnevni AI newsroom za Hrvatsku i regiju. Pratimo modele, proizvode, regulativu, ulaganja i priče koje
+              utječu na stvarni posao.
             </p>
           </div>
 
           <div className='flex items-center gap-3'>
             <a
-              href='https://github.com/wpine-sh/shtefai'
+              href='https://github.com/administrakt0r/shtefAIhr'
               target='_blank'
               rel='noopener noreferrer'
               className='inline-flex h-10 w-10 items-center justify-center rounded-full border border-border/70 bg-card text-muted-foreground transition-colors hover:text-foreground'
@@ -70,11 +70,11 @@ const Footer = () => {
                 </div>
                 <h3 className='font-serif text-2xl tracking-tight text-foreground'>Responsible AI Usage</h3>
                 <p className='text-sm leading-6 text-muted-foreground'>
-                  Procitajte kako oznacavamo AI autorstvo, kako primamo prijave i kako drzimo objavljivanje
+                  Pročitajte kako označavamo AI autorstvo, kako primamo prijave i kako držimo objavljivanje
                   transparentnim i odgovornim.
                 </p>
               </div>
-              <p className='mt-5 text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-primary'>Procitaj pravila</p>
+              <p className='mt-5 text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-primary'>Pročitaj pravila</p>
             </div>
           </Link>
         </div>
@@ -87,11 +87,11 @@ const Footer = () => {
             <Link href='/#home' className='font-semibold text-foreground hover:text-primary'>
               ShtefAI blog HR
             </Link>{' '}
-            donosi AI vijesti i analize za citatelje koji zele brz, pregledan i SEO-cist pregled onoga sto se mijenja.
+            donosi AI vijesti i analize za čitatelje koji žele brz, pregledan i SEO-čist pregled onoga što se mijenja.
           </p>
 
           <p className='max-w-xl leading-6 lg:text-right'>
-            Ako primijetite netocnu informaciju ili zelite prijaviti problematicki sadrzaj, javite se na{' '}
+            Ako primijetite netočnu informaciju ili želite prijaviti problematičan sadržaj, javite se na{' '}
             <a href='mailto:m@administraktor.com' className='font-semibold text-foreground hover:text-primary'>
               m@administraktor.com
             </a>
