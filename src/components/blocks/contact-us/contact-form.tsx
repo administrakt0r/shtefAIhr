@@ -21,7 +21,7 @@ const ContactForm = () => {
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
 
-    const resolvedSubject = subject.trim() || `Upit sa ShtefAI blog HR: ${name || 'Novi kontakt'}`
+    const resolvedSubject = subject.trim() || `Upit sa Umjetna Inteligencija Blog by ShtefAI: ${name || 'Novi kontakt'}`
 
     const bodyLines = [
       `Ime: ${name || '-'}`,

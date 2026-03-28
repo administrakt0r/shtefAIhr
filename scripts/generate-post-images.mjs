@@ -160,8 +160,8 @@ const getChromeTextSvg = ({ title, logoDataUri, preset, subtitle }) => `<?xml ve
   <rect x="72" y="62" width="416" height="70" rx="35" fill="rgba(255,255,255,0.52)" stroke="rgba(124,58,237,0.18)" />
   <rect x="94" y="75" width="44" height="44" rx="14" fill="rgba(124,58,237,0.12)" />
   <image href="${logoDataUri}" x="103" y="84" width="26" height="26" />
-  <text x="160" y="104" font-family="'Roboto', Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="${preset.accent}">
-    ShtefAI blog HR
+  <text x="160" y="104" font-family="'Roboto', Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="${preset.accent}">
+    Umjetna Inteligencija Blog
   </text>
   <text x="160" y="126" font-family="'Roboto', Arial, Helvetica, sans-serif" font-size="16" font-weight="500" fill="rgba(20,20,20,0.76)">
     ${escapeXml(subtitle)}
@@ -169,8 +169,8 @@ const getChromeTextSvg = ({ title, logoDataUri, preset, subtitle }) => `<?xml ve
   <rect x="70" y="165" width="940" height="330" rx="34" fill="rgba(17,10,29,0.84)" />
   ${getTitleTextSvg(title)}
   <line x1="72" y1="552" x2="1128" y2="552" stroke="rgba(20,20,20,0.12)" />
-  <text x="72" y="589" font-family="'Roboto', Arial, Helvetica, sans-serif" font-size="22" font-weight="500" fill="rgba(20,20,20,0.72)">
-    aibloghr.pages.dev
+  <text x="72" y="589" font-family="'Roboto', Arial, Helvetica, sans-serif" font-size="18" font-weight="500" fill="rgba(20,20,20,0.72)">
+    umjetnainteligencijablog.pages.dev
   </text>
   <text x="1128" y="589" text-anchor="end" font-family="'Roboto', Arial, Helvetica, sans-serif" font-size="22" font-weight="500" fill="rgba(20,20,20,0.72)">
     Hrvatski AI newsroom

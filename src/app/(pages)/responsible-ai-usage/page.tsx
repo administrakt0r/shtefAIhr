@@ -5,7 +5,7 @@ import { CONTACT_EMAIL, RESPONSIBLE_AI_INITIATIVE_URL, SITE_NAME, SITE_URL } fro
 export const metadata: Metadata = {
   title: 'Pravila odgovorne uporabe AI-ja',
   description:
-    'Naša načela za transparentnu, sigurnu i odgovornu uporabu umjetne inteligencije u sklopu ShtefAI blog HR newsrooma.',
+    'Naša načela za transparentnu, sigurnu i odgovornu uporabu umjetne inteligencije u sklopu portala Umjetna Inteligencija Blog by ShtefAI.',
   alternates: {
     canonical: '/responsible-ai-usage'
   },
@@ -23,7 +23,7 @@ export default function ResponsibleAIPage() {
     '@type': 'WebPage',
     name: 'Pravila odgovorne uporabe AI-ja',
     description:
-      'Naša načela za transparentnu, sigurnu i odgovornu uporabu umjetne inteligencije u sklopu bloga ShtefAI blog HR.',
+      'Naša načela za transparentnu, sigurnu i odgovornu uporabu umjetne inteligencije u sklopu portala Umjetna Inteligencija Blog by ShtefAI.',
     url: `${SITE_URL}/responsible-ai-usage`,
     isPartOf: {
       '@type': 'WebSite',

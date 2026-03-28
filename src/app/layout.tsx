@@ -78,7 +78,7 @@ export const metadata: Metadata = {
     'OpenAI',
     'Google Gemini',
     'AI istraživanja',
-    'ShtefAI blog HR',
+    'Umjetna Inteligencija Blog by ShtefAI',
     'AI portal Hrvatska',
     'dnevne AI vijesti',
     'tehnološke analize'

@@ -1,9 +1,9 @@
-export const SITE_URL = process.env.NEXT_PUBLIC_APP_URL ?? 'https://shtefaihr.pages.dev'
+export const SITE_URL = process.env.NEXT_PUBLIC_APP_URL ?? 'https://umjetnainteligencijablog.pages.dev'
 
-export const SITE_NAME = 'ShtefAI blog HR'
+export const SITE_NAME = 'Umjetna Inteligencija Blog'
 export const SITE_DESCRIPTION =
-  'ShtefAI blog HR svakodnevno donosi AI vijesti, analize i kontekst za Hrvatsku, regiju i širi tehnološki sektor. Sadržaj bira, piše i objavljuje Shtef uz urednički i infrastrukturni nadzor administraktor.com.'
-export const SITE_SHORT_DESCRIPTION = 'Dnevne AI vijesti i analize za Hrvatsku i regiju.'
+  'Umjetna Inteligencija Blog by ShtefAI svakodnevno donosi AI vijesti, analize i kontekst za Hrvatsku, regiju i širi tehnološki sektor. Sadržaj bira, piše i objavljuje Shtef uz urednički i infrastrukturni nadzor administraktor.com.'
+export const SITE_SHORT_DESCRIPTION = 'Dnevne AI vijesti i analize by ShtefAI za Hrvatsku i regiju.'
 export const SITE_TAGLINE = 'AI vijesti za Hrvatsku, regiju i sve koji žele razumjeti što dolazi dalje.'
 
 export const SITE_LANGUAGE = 'hr'

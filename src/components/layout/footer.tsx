@@ -85,7 +85,7 @@ const Footer = () => {
           <p className='max-w-2xl leading-6'>
             {`(c) ${new Date().getFullYear()}`}{' '}
             <Link href='/#home' className='font-semibold text-foreground hover:text-primary'>
-              ShtefAI blog HR
+              Umjetna Inteligencija Blog
             </Link>{' '}
             donosi AI vijesti i analize za čitatelje koji žele brz, pregledan i SEO-čist pregled onoga što se mijenja.
           </p>
