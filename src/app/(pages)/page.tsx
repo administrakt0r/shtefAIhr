@@ -6,9 +6,27 @@ import Blog from '@/components/blocks/blog-component/blog-component'
 import { comparePostsByPublishedAt, getPostIsoDateTime } from '@/lib/blog'
 import { SITE_APP_ICON_192_PATH, SITE_LANGUAGE_TAG, SITE_NAME, SITE_SHORT_DESCRIPTION, SITE_URL } from '@/lib/site'
 
-const Home = () => {
-  const sortedPosts = [...blogPosts].sort(comparePostsByPublishedAt)
+const latestPosts = [...blogPosts].sort(comparePostsByPublishedAt).slice(0, 3)
 
+const faqs = [
+  {
+    question: 'Što je Umjetna Inteligencija Blog by ShtefAI?',
+    answer:
+      'To je dnevni AI newsroom koji prati vijesti, lansiranja proizvoda, regulativu, infrastrukturu i kritičke analize kroz statične članke s kanoničnim URL-ovima.'
+  },
+  {
+    question: 'Koliko često objavljujete novi sadržaj?',
+    answer:
+      'Sustav je postavljen za svakodnevno objavljivanje, a novi članci izlaze kroz zasebne /blog-detail URL-ove, RSS i sitemap.'
+  },
+  {
+    question: 'Koji URL treba citirati kao izvor?',
+    answer:
+      'Uvijek pojedinačni članak, ne naslovnicu, jer svaki članak ima vlastite metapodatke, autora i strukturirane podatke.'
+  }
+]
+
+const Home = () => {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@graph': [
@@ -38,7 +56,7 @@ const Home = () => {
         url: SITE_URL,
         inLanguage: SITE_LANGUAGE_TAG,
         isPartOf: { '@id': `${SITE_URL}#website` },
-        blogPost: sortedPosts.map(post => ({
+        blogPost: latestPosts.map(post => ({
           '@type': 'BlogPosting',
           headline: post.title,
           description: post.description,
@@ -52,12 +70,24 @@ const Home = () => {
         }))
       },
       {
+        '@type': 'FAQPage',
+        '@id': `${SITE_URL}#faq`,
+        mainEntity: faqs.map(faq => ({
+          '@type': 'Question',
+          name: faq.question,
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: faq.answer
+          }
+        }))
+      },
+      {
         '@type': 'BreadcrumbList',
         itemListElement: [
           {
             '@type': 'ListItem',
             position: 1,
-            name: 'Naslovnica',
+            name: 'Početna',
             item: SITE_URL
           }
         ]
@@ -69,6 +99,28 @@ const Home = () => {
     <div>
       <HeroSection blogData={blogPosts} />
       <Blog />
+      <section className='border-t py-12 sm:py-16' aria-labelledby='home-faq-heading'>
+        <div className='mx-auto max-w-4xl space-y-8 px-4 sm:px-6 lg:px-8'>
+          <div className='space-y-3'>
+            <p className='text-sm font-medium uppercase tracking-[0.18em]'>Strojno čitljiv pregled</p>
+            <h2 id='home-faq-heading' className='text-2xl font-semibold sm:text-3xl'>
+              Što bi tražilice i AI asistenti trebali znati
+            </h2>
+            <p className='text-muted-foreground text-base sm:text-lg'>
+              Ovaj blok daje izravne odgovore o tome što stranica objavljuje, koliko često se ažurira i koje URL-ove
+              treba tretirati kao izvor istine.
+            </p>
+          </div>
+          <div className='grid gap-6'>
+            {faqs.map(faq => (
+              <article key={faq.question} className='rounded-xl border bg-background p-6'>
+                <h3 className='text-lg font-semibold'>{faq.question}</h3>
+                <p className='text-muted-foreground mt-2 text-base'>{faq.answer}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
       <script
         type='application/ld+json'
         dangerouslySetInnerHTML={{

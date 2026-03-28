@@ -1,11 +1,10 @@
 import Image from 'next/image'
 
-// Util Imports
 import { cn } from '@/lib/utils'
 
 const Logo = ({ className }: { className?: string }) => {
   return (
-    <div className={cn('flex items-center gap-3', className)}>
+    <div className={cn('flex items-center gap-2.5', className)}>
       <Image
         src='/shteflogo.svg'
         alt='Umjetna Inteligencija Blog by ShtefAI logo'
@@ -14,10 +13,10 @@ const Logo = ({ className }: { className?: string }) => {
         className='h-8 w-8 rounded-sm'
         priority
       />
-      <div className='flex flex-col leading-none'>
-        <span className='text-[0.7rem] font-medium tracking-[0.22em] uppercase text-brand-blue'>by ShtefAI</span>
-        <span className='text-foreground text-[1.15rem] font-semibold tracking-tight'>Umjetna Inteligencija Blog</span>
-      </div>
+      <span className='text-primary hidden text-[19px] font-semibold tracking-tight sm:inline'>
+        Umjetna Inteligencija Blog
+      </span>
+      <span className='text-primary text-[18px] font-semibold tracking-tight sm:hidden'>UI Blog</span>
     </div>
   )
 }

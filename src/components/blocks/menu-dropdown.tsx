@@ -3,7 +3,6 @@
 import type { ReactNode } from 'react'
 
 import { ChevronRightIcon, CircleSmallIcon } from 'lucide-react'
-
 import Link from 'next/link'
 
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible'
@@ -14,6 +13,8 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger
 } from '@/components/ui/dropdown-menu'
+
+import { cn } from '@/lib/utils'
 
 export type NavigationItem = {
   title: string
@@ -37,10 +38,11 @@ export type NavigationSection = {
 type Props = {
   trigger: ReactNode
   navigationData: NavigationSection[]
+  activeSection?: string
   align?: 'center' | 'end' | 'start'
 }
 
-const MenuDropdown = ({ trigger, navigationData, align = 'start' }: Props) => {
+const MenuDropdown = ({ trigger, navigationData, activeSection, align = 'start' }: Props) => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>{trigger}</DropdownMenuTrigger>
@@ -50,9 +52,12 @@ const MenuDropdown = ({ trigger, navigationData, align = 'start' }: Props) => {
       >
         {navigationData.map(navItem => {
           if (navItem.href) {
+            const sectionFromHref = navItem.href === '/#' ? 'home' : navItem.href.replace('/#', '')
+            const isActive = sectionFromHref === activeSection
+
             return (
               <DropdownMenuItem key={navItem.title} asChild>
-                <Link href={navItem.href} className='font-medium'>
+                <Link href={navItem.href} className={cn(isActive && 'bg-accent text-accent-foreground font-medium')}>
                   {navItem.icon}
                   {navItem.title}
                 </Link>
