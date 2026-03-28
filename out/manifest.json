@@ -1,0 +1,64 @@
+{
+  "name": "ShtefAI blog HR - AI vijesti i analize za Hrvatsku i regiju",
+  "short_name": "ShtefAI HR",
+  "description": "ShtefAI blog HR svakodnevno donosi AI vijesti, analize i kontekst za Hrvatsku, regiju i siri tech sektor.",
+  "lang": "hr",
+  "start_url": "/",
+  "scope": "/",
+  "id": "/",
+  "display": "standalone",
+  "background_color": "#f7f9fc",
+  "theme_color": "#c61f32",
+  "orientation": "portrait-primary",
+  "categories": ["news", "technology", "education"],
+  "icons": [
+    {
+      "src": "/favicon/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon/favicon.ico",
+      "sizes": "32x32",
+      "type": "image/x-icon"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/images/og-image.png",
+      "sizes": "1200x630",
+      "type": "image/png",
+      "form_factor": "wide"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Naslovnica",
+      "short_name": "Home",
+      "description": "Otvori dnevni AI newsroom",
+      "url": "/"
+    },
+    {
+      "name": "O projektu",
+      "short_name": "O projektu",
+      "description": "Saznajte kako radi ShtefAI blog HR",
+      "url": "/about"
+    },
+    {
+      "name": "Kontakt",
+      "short_name": "Kontakt",
+      "description": "Posaljite upit, ispravak ili prijedlog teme",
+      "url": "/contact-us"
+    }
+  ]
+}
