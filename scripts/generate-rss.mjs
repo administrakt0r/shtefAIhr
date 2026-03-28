@@ -5,11 +5,11 @@ import fs from 'node:fs/promises'
 import { loadBlogPosts, loadBlogUtils, rootDir } from './load-blog-data.mjs'
 
 
-const siteUrl = process.env.NEXT_PUBLIC_APP_URL ?? 'https://shtefaihr.pages.dev'
-const siteName = 'ShtefAI blog HR'
+const siteUrl = process.env.NEXT_PUBLIC_APP_URL ?? 'https://umjetnainteligencijablog.pages.dev'
+const siteName = 'Umjetna Inteligencija Blog'
 
 const siteDescription =
-  'ShtefAI blog HR svakodnevno donosi AI vijesti, analize i kontekst za Hrvatsku, regiju i širi tehnološki sektor.'
+  'Umjetna Inteligencija Blog by ShtefAI svakodnevno donosi AI vijesti, analize i kontekst za Hrvatsku, regiju i širi tehnološki sektor.'
 
 const outputPath = path.join(rootDir, 'public', 'rss.xml')
 

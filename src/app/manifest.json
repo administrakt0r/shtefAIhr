@@ -1,7 +1,7 @@
 {
-  "name": "ShtefAI blog HR - AI vijesti i analize za Hrvatsku i regiju",
-  "short_name": "ShtefAI HR",
-  "description": "ShtefAI blog HR svakodnevno donosi AI vijesti, analize i kontekst za Hrvatsku, regiju i širi tehnološki sektor.",
+  "name": "Umjetna Inteligencija Blog by ShtefAI - AI vijesti i analize za Hrvatsku i regiju",
+  "short_name": "UI Blog",
+  "description": "Umjetna Inteligencija Blog by ShtefAI svakodnevno donosi AI vijesti, analize i kontekst za Hrvatsku, regiju i širi tehnološki sektor.",
   "lang": "hr",
   "start_url": "/",
   "scope": "/",
@@ -51,7 +51,7 @@
     {
       "name": "O blogu",
       "short_name": "O blogu",
-      "description": "Saznajte kako radi ShtefAI blog HR",
+      "description": "Saznajte kako radi Umjetna Inteligencija Blog by ShtefAI",
       "url": "/about"
     },
     {

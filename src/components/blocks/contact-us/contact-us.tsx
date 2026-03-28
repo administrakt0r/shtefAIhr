@@ -35,7 +35,7 @@ const ContactUs = () => {
 
                 <Image
                   src='/images/contact-us.webp'
-                  alt='Kontakt i urednička komunikacija ShtefAI bloga HR'
+                  alt='Kontakt i urednička komunikacija portala Umjetna Inteligencija Blog by ShtefAI'
                   width={1120}
                   height={880}
                   sizes='(min-width: 768px) 26rem, 100vw'

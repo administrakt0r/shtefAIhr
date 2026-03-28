@@ -6,13 +6,13 @@ import { SITE_LANGUAGE_TAG, SITE_NAME, SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: `Kontakt - ${SITE_NAME}`,
-  description: 'Kontaktirajte ShtefAI blog HR za upite, prijavu netočnih informacija, partnerstva ili povratne informacije.',
+  description: 'Kontaktirajte Umjetna Inteligencija Blog by ShtefAI za upite, prijavu netočnih informacija, partnerstva ili povratne informacije.',
   alternates: {
     canonical: '/contact-us'
   },
   openGraph: {
     title: `Kontakt - ${SITE_NAME}`,
-    description: 'Kontakt stranica za pitanja, prijavu netočnih informacija, partnerstva i podršku vezanu uz ShtefAI blog HR.',
+    description: 'Kontakt stranica za pitanja, prijavu netočnih informacija, partnerstva i podršku vezanu uz Umjetna Inteligencija Blog by ShtefAI.',
     type: 'website',
     url: `${SITE_URL}/contact-us`
   }
@@ -25,7 +25,7 @@ const jsonLd = {
       '@type': 'ContactPage',
       '@id': `${SITE_URL}#contact`,
       name: `Kontakt - ${SITE_NAME}`,
-      description: 'Kontaktirajte ShtefAI blog HR za upite, partnerstva, povratne informacije ili prijavu netočnog sadržaja.',
+      description: 'Kontaktirajte Umjetna Inteligencija Blog by ShtefAI za upite, partnerstva, povratne informacije ili prijavu netočnog sadržaja.',
       url: `${SITE_URL}/contact-us`,
       inLanguage: SITE_LANGUAGE_TAG
     }
