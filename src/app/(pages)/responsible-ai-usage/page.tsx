@@ -33,9 +33,8 @@ export default function ResponsibleAIPage() {
   }
 
   return (
-    <section className='px-4 py-10 sm:px-6 sm:py-14 lg:px-8 lg:py-16'>
-      <div className='mx-auto max-w-4xl rounded-[2rem] border border-border/75 bg-card/95 p-6 shadow-sm shadow-brand-blue/5 sm:p-8'>
-        <div className='editorial-content max-w-none'>
+    <div className='container mx-auto my-8 min-h-[60vh] max-w-4xl rounded-xl border border-green-100 bg-green-50/30 px-4 py-16 dark:border-green-900 dark:bg-green-950/10 sm:px-6 lg:px-8'>
+      <div className='editorial-content max-w-none'>
           <p className='eyebrow text-brand-blue'>Responsible AI</p>
           <h1>Pravila odgovorne uporabe AI-ja</h1>
           <p>
@@ -96,7 +95,6 @@ export default function ResponsibleAIPage() {
               responsible-ai-usage.vercel.app
             </a>
           </p>
-        </div>
       </div>
 
       <script
@@ -105,6 +103,6 @@ export default function ResponsibleAIPage() {
           __html: JSON.stringify(jsonLd).replace(/</g, '\\u003c')
         }}
       />
-    </section>
+    </div>
   )
 }

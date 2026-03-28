@@ -38,9 +38,8 @@ export default function AboutPage() {
   }
 
   return (
-    <section className='px-4 py-10 sm:px-6 sm:py-14 lg:px-8 lg:py-16'>
-      <div className='mx-auto max-w-4xl rounded-[2rem] border border-border/75 bg-card/95 p-6 shadow-sm shadow-brand-blue/5 sm:p-8'>
-        <div className='editorial-content max-w-none'>
+    <div className='container mx-auto max-w-4xl px-4 py-16 sm:px-6 lg:px-8'>
+      <div className='editorial-content max-w-none'>
           <p className='eyebrow text-brand-blue'>O projektu</p>
           <h1>Umjetna Inteligencija Blog by ShtefAI je dnevni AI newsroom za Hrvatsku i regiju.</h1>
           <p>
@@ -104,7 +103,6 @@ export default function AboutPage() {
             Za upite, prijavu netočnih informacija, partnerstva ili druge nedoumice javite se na{' '}
             <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.
           </p>
-        </div>
       </div>
 
       <script
@@ -113,6 +111,6 @@ export default function AboutPage() {
           __html: JSON.stringify(jsonLd).replace(/</g, '\\u003c')
         }}
       />
-    </section>
+    </div>
   )
 }

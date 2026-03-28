@@ -33,22 +33,27 @@ export type NavigationSection = {
 
 type MenuNavigationProps = {
   navigationData: NavigationSection[]
+  activeSection?: string
   className?: string
 }
 
-const MenuNavigation = ({ navigationData, className }: MenuNavigationProps) => {
+const MenuNavigation = ({ navigationData, activeSection, className }: MenuNavigationProps) => {
   return (
     <NavigationMenu viewport={false} className={className}>
       <NavigationMenuList className='flex-wrap justify-start gap-3'>
         {navigationData.map(navItem => {
           if (navItem.href) {
+            const sectionFromHref = navItem.href === '/#' ? 'home' : navItem.href.replace('/#', '')
+            const isActive = sectionFromHref === activeSection
+
             return (
               <NavigationMenuItem key={navItem.title}>
                 <NavigationMenuLink
                   href={navItem.href}
                   className={cn(
                     navigationMenuTriggerStyle(),
-                    'text-muted-foreground hover:text-foreground hover:bg-accent/70 bg-transparent px-3 py-1.5 text-sm font-medium uppercase tracking-[0.16em]!'
+                    'hover:text-primary dark:hover:bg-accent/50 bg-transparent px-3 py-1.5 text-base!',
+                    isActive ? 'text-primary bg-accent/50 font-medium' : 'text-muted-foreground'
                   )}
                 >
                   {navItem.title}
@@ -57,10 +62,9 @@ const MenuNavigation = ({ navigationData, className }: MenuNavigationProps) => {
             )
           }
 
-          // Section with dropdown
           return (
             <NavigationMenuItem key={navItem.title}>
-              <NavigationMenuTrigger className='text-muted-foreground hover:text-foreground hover:bg-accent/70 bg-transparent px-3 py-1.5 text-sm font-medium uppercase tracking-[0.16em] [&>svg]:size-4'>
+              <NavigationMenuTrigger className='dark:data-[state=open]:hover:bg-accent/50 text-muted-foreground hover:text-primary dark:hover:bg-accent/50 bg-transparent px-3 py-1.5 text-base [&>svg]:size-4'>
                 {navItem.title}
               </NavigationMenuTrigger>
               <NavigationMenuContent className='data-[motion=from-start]:slide-in-from-left-30! data-[motion=to-start]:slide-out-to-left-30! data-[motion=from-end]:slide-in-from-right-30! data-[motion=to-end]:slide-out-to-right-30! absolute w-auto'>

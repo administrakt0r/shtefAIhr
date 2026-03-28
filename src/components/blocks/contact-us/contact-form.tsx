@@ -21,15 +21,8 @@ const ContactForm = () => {
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
 
-    const resolvedSubject = subject.trim() || `Upit sa Umjetna Inteligencija Blog by ShtefAI: ${name || 'Novi kontakt'}`
-
-    const bodyLines = [
-      `Ime: ${name || '-'}`,
-      `Email: ${email || '-'}`,
-      '',
-      'Poruka:',
-      message || '-'
-    ]
+    const resolvedSubject = subject.trim() || `Upit sa ${name || 'novog kontakta'}`
+    const bodyLines = [`Ime: ${name || '-'}`, `Email: ${email || '-'}`, '', 'Poruka:', message || '-']
 
     window.location.href = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(resolvedSubject)}&body=${encodeURIComponent(
       bodyLines.join('\n')
@@ -39,19 +32,17 @@ const ContactForm = () => {
   return (
     <form className='space-y-6' onSubmit={handleSubmit}>
       <div className='space-y-2'>
-        <Label htmlFor='name'>Ime i prezime</Label>
+        <Label htmlFor='username'>Ime</Label>
         <div className='relative'>
           <Input
-            id='name'
-            name='name'
+            id='username'
             type='text'
-            placeholder='Upišite ime i prezime'
-            autoComplete='name'
+            placeholder='Upišite ime'
             value={name}
             onChange={event => setName(event.target.value)}
-            className='peer h-11 rounded-full pr-10'
+            className='peer h-10 pr-9'
           />
-          <div className='text-muted-foreground pointer-events-none absolute inset-y-0 right-0 flex items-center justify-center pr-4'>
+          <div className='text-muted-foreground pointer-events-none absolute inset-y-0 right-0 flex items-center justify-center pr-3 peer-disabled:opacity-50'>
             <UserIcon className='size-4' />
             <span className='sr-only'>Ime</span>
           </div>
@@ -59,19 +50,17 @@ const ContactForm = () => {
       </div>
 
       <div className='space-y-2'>
-        <Label htmlFor='email'>Email adresa</Label>
+        <Label htmlFor='email'>Email</Label>
         <div className='relative'>
           <Input
             id='email'
-            name='email'
             type='email'
-            placeholder='Upišite e-mail adresu'
-            autoComplete='email'
+            placeholder='Upišite email'
             value={email}
             onChange={event => setEmail(event.target.value)}
-            className='peer h-11 rounded-full pr-10'
+            className='peer h-10 pr-9'
           />
-          <div className='text-muted-foreground pointer-events-none absolute inset-y-0 right-0 flex items-center justify-center pr-4'>
+          <div className='text-muted-foreground pointer-events-none absolute inset-y-0 right-0 flex items-center justify-center pr-3 peer-disabled:opacity-50'>
             <MailIcon className='size-4' />
             <span className='sr-only'>Email</span>
           </div>
@@ -83,14 +72,13 @@ const ContactForm = () => {
         <div className='relative'>
           <Input
             id='subject'
-            name='subject'
             type='text'
-            placeholder='Npr. ispravak objave, partnerstvo ili prijedlog teme'
+            placeholder='O čemu se radi?'
             value={subject}
             onChange={event => setSubject(event.target.value)}
-            className='peer h-11 rounded-full pr-10'
+            className='peer h-10 pr-9'
           />
-          <div className='text-muted-foreground pointer-events-none absolute inset-y-0 right-0 flex items-center justify-center pr-4'>
+          <div className='text-muted-foreground pointer-events-none absolute inset-y-0 right-0 flex items-center justify-center pr-3 peer-disabled:opacity-50'>
             <FileTextIcon className='size-4' />
             <span className='sr-only'>Tema</span>
           </div>
@@ -101,22 +89,16 @@ const ContactForm = () => {
         <Label htmlFor='message'>Poruka</Label>
         <Textarea
           id='message'
-          name='message'
-          className='min-h-36 rounded-[1.5rem] border-border/80 bg-background/90 px-4 py-3'
-          placeholder='Napišite što ste primijetili, koju temu predlažete ili kako vam možemo pomoći.'
+          className='h-28 resize-none'
+          placeholder='Napišite poruku'
           value={message}
           onChange={event => setMessage(event.target.value)}
         />
       </div>
 
-      <div className='flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between'>
-        <p className='text-sm leading-6 text-muted-foreground'>
-          Klik na gumb otvara vaš e-mail klijent s pripremljenom porukom.
-        </p>
-        <Button type='submit' size='lg' className='rounded-full px-6 text-xs font-semibold tracking-[0.16em] uppercase'>
-          Pošalji e-mail
-        </Button>
-      </div>
+      <Button type='submit' size='lg' className='w-full text-base'>
+        Pošalji poruku
+      </Button>
     </form>
   )
 }
