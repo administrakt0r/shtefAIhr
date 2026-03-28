@@ -38,6 +38,31 @@ Your job in this run is to:
 5. Read `published-log.json`.
 6. If the source URL is already listed there, skip it and choose another story.
 
+Approved source list for the run:
+
+- TechCrunch AI — `https://techcrunch.com/category/artificial-intelligence/feed/`
+- The Verge AI — `https://www.theverge.com/rss/ai-artificial-intelligence/index.xml`
+- MIT Technology Review AI — `https://www.technologyreview.com/topic/artificial-intelligence/feed`
+- VentureBeat AI — `https://venturebeat.com/category/ai/feed/`
+- Ars Technica AI — `https://feeds.arstechnica.com/arstechnica/technology-lab`
+- Wired AI — `https://www.wired.com/feed/tag/ai/latest/rss`
+- The Register AI — `https://www.theregister.com/software/ai_ml/headlines.atom`
+- AI News — `https://www.artificialintelligence-news.com/feed/`
+- Google AI Blog — `https://blog.google/technology/ai/rss/`
+- OpenAI Blog — `https://openai.com/blog/rss.xml`
+- Anthropic Blog — `https://www.anthropic.com/feed`
+- Hugging Face Blog — `https://huggingface.co/blog/feed.xml`
+- DeepMind Blog — `https://deepmind.google/blog/rss.xml`
+- The Gradient — `https://thegradient.pub/rss/`
+- Import AI Newsletter — `https://jack-clark.net/feed/`
+- Towards Data Science — `https://towardsdatascience.com/feed`
+
+Source handling rules:
+
+- Prefer the original reporting or original company/lab announcement when available.
+- Do not pull daily news from random sites outside this list unless `rss-feeds.json` was intentionally updated first.
+- If this inline list and `rss-feeds.json` ever differ, treat `rss-feeds.json` as the canonical machine-readable source list.
+
 ## Language and Style
 
 All visible content must be written in **standard Croatian (`hr-HR`)**.

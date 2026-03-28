@@ -1,16 +1,6 @@
 /.next
 /out
 /node_modules
-<<<<<<< HEAD
-.wrangler
-_next*
-_next
-
-# Derived static assets
-/public/rss.xml
-/public/images/og-image.png
-/public/images/posts/
-=======
 /.wrangler
 /out
 
@@ -38,4 +28,3 @@ yarn-error.log*
 
 # TypeScript incremental cache
 tsconfig.tsbuildinfo
->>>>>>> b7ee0e8 (edits deploymentwise)

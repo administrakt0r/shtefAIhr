@@ -48,6 +48,31 @@ All visible article content must be written in **standard Croatian (`hr-HR`)**.
 
 Read `rss-feeds.json` in the repository root. It contains the RSS sources you should scan.
 
+These are the approved news sources for the daily run. Use them as the sourcing pool unless `rss-feeds.json` is intentionally changed:
+
+- TechCrunch AI — `https://techcrunch.com/category/artificial-intelligence/feed/`
+- The Verge AI — `https://www.theverge.com/rss/ai-artificial-intelligence/index.xml`
+- MIT Technology Review AI — `https://www.technologyreview.com/topic/artificial-intelligence/feed`
+- VentureBeat AI — `https://venturebeat.com/category/ai/feed/`
+- Ars Technica AI — `https://feeds.arstechnica.com/arstechnica/technology-lab`
+- Wired AI — `https://www.wired.com/feed/tag/ai/latest/rss`
+- The Register AI — `https://www.theregister.com/software/ai_ml/headlines.atom`
+- AI News — `https://www.artificialintelligence-news.com/feed/`
+- Google AI Blog — `https://blog.google/technology/ai/rss/`
+- OpenAI Blog — `https://openai.com/blog/rss.xml`
+- Anthropic Blog — `https://www.anthropic.com/feed`
+- Hugging Face Blog — `https://huggingface.co/blog/feed.xml`
+- DeepMind Blog — `https://deepmind.google/blog/rss.xml`
+- The Gradient — `https://thegradient.pub/rss/`
+- Import AI Newsletter — `https://jack-clark.net/feed/`
+- Towards Data Science — `https://towardsdatascience.com/feed`
+
+Source handling rules:
+
+- Prefer the original reporting or original company/lab announcement when available.
+- Do not invent new external sources outside this list during the daily run.
+- If this inline list and `rss-feeds.json` ever differ, treat `rss-feeds.json` as the canonical machine-readable source list.
+
 Choose the **single most important AI story** from the last 24 hours. If needed, expand to the last 48 hours.
 
 Use these priority criteria:
