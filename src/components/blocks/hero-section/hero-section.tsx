@@ -13,7 +13,7 @@ const HeroSection = ({ blogData }: { blogData: BlogPost[] }) => {
   return (
     <section
       id='home'
-      className='border-b border-border/70 bg-[radial-gradient(circle_at_top_left,oklch(from_var(--accent)_l_c_h_/_0.45),transparent_34%),linear-gradient(180deg,oklch(from_var(--primary)_l_c_h_/_0.08),transparent_38%),linear-gradient(135deg,oklch(from_var(--secondary)_l_c_h_/_0.12),transparent_55%)] pt-10 pb-10 sm:pt-14 sm:pb-14'
+      className='border-b border-border/70 bg-[linear-gradient(180deg,rgba(10,51,114,0.08),transparent_38%),linear-gradient(135deg,rgba(198,31,50,0.08),transparent_55%)] pt-10 pb-10 sm:pt-14 sm:pb-14'
     >
       <div className='mx-auto grid max-w-7xl gap-6 px-4 sm:px-6 lg:grid-cols-[minmax(0,1.45fr)_minmax(18rem,0.95fr)] lg:px-8'>
         <div className='rounded-[2rem] border border-border/80 bg-card/92 p-6 shadow-sm shadow-brand-blue/5 sm:p-8 lg:p-10'>
