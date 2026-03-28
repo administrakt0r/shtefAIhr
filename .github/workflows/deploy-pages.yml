@@ -21,8 +21,6 @@ jobs:
       url: https://umjetnainteligencijablog.pages.dev
     env:
       NEXT_PUBLIC_APP_URL: https://umjetnainteligencijablog.pages.dev
-      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -41,10 +39,28 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
+      - name: Configure Cloudflare Wrangler OAuth
+        env:
+          CLOUDFLARE_OAUTH_TOKEN: ${{ secrets.CLOUDFLARE_OAUTH_TOKEN }}
+          CLOUDFLARE_OAUTH_EXPIRATION_TIME: ${{ secrets.CLOUDFLARE_OAUTH_EXPIRATION_TIME }}
+          CLOUDFLARE_OAUTH_REFRESH_TOKEN: ${{ secrets.CLOUDFLARE_OAUTH_REFRESH_TOKEN }}
+        run: |
+          test -n "$CLOUDFLARE_OAUTH_TOKEN" || { echo "Missing CLOUDFLARE_OAUTH_TOKEN secret."; exit 1; }
+          test -n "$CLOUDFLARE_OAUTH_EXPIRATION_TIME" || { echo "Missing CLOUDFLARE_OAUTH_EXPIRATION_TIME secret."; exit 1; }
+          test -n "$CLOUDFLARE_OAUTH_REFRESH_TOKEN" || { echo "Missing CLOUDFLARE_OAUTH_REFRESH_TOKEN secret."; exit 1; }
+
+          install -d "$HOME/.config/.wrangler/config"
+
+          printf 'oauth_token = "%s"\nexpiration_time = "%s"\nrefresh_token = "%s"\nscopes = [ "account:read", "user:read", "workers:write", "workers_kv:write", "workers_routes:write", "workers_scripts:write", "workers_tail:read", "d1:write", "pages:write", "zone:read", "ssl_certs:write", "ai:write", "ai-search:write", "ai-search:run", "queues:write", "pipelines:write", "secrets_store:write", "containers:write", "cloudchamber:write", "connectivity:admin", "offline_access" ]\n' \
+            "$CLOUDFLARE_OAUTH_TOKEN" \
+            "$CLOUDFLARE_OAUTH_EXPIRATION_TIME" \
+            "$CLOUDFLARE_OAUTH_REFRESH_TOKEN" \
+            > "$HOME/.config/.wrangler/config/default.toml"
+
       - name: Verify Cloudflare configuration
         run: |
-          test -n "$CLOUDFLARE_API_TOKEN" || { echo "Missing CLOUDFLARE_API_TOKEN secret."; exit 1; }
-          test -n "$CLOUDFLARE_ACCOUNT_ID" || { echo "Missing CLOUDFLARE_ACCOUNT_ID secret."; exit 1; }
+          test -f "$HOME/.config/.wrangler/config/default.toml" || { echo "Missing Wrangler OAuth config."; exit 1; }
+          pnpm exec wrangler pages project list >/dev/null
 
       - name: Build site
         run: pnpm build

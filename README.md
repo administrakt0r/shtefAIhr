@@ -60,8 +60,9 @@ The repository includes three workflows:
 
 Required GitHub repository secrets:
 
-- `CLOUDFLARE_API_TOKEN`
-- `CLOUDFLARE_ACCOUNT_ID`
+- `CLOUDFLARE_OAUTH_TOKEN`
+- `CLOUDFLARE_OAUTH_EXPIRATION_TIME`
+- `CLOUDFLARE_OAUTH_REFRESH_TOKEN`
 
 ## Notes
 
