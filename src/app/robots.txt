@@ -18,4 +18,4 @@ User-Agent: PerplexityBot
 Allow: /
 
 # Sitemap
-Sitemap: https://aibloghr.pages.dev/sitemap.xml
+Sitemap: https://shtefaihr.pages.dev/sitemap.xml

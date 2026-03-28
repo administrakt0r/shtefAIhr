@@ -1,4 +1,4 @@
-export const SITE_URL = process.env.NEXT_PUBLIC_APP_URL ?? 'https://aibloghr.pages.dev'
+export const SITE_URL = process.env.NEXT_PUBLIC_APP_URL ?? 'https://shtefaihr.pages.dev'
 
 export const SITE_NAME = 'ShtefAI blog HR'
 export const SITE_DESCRIPTION =

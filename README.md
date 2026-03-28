@@ -1,6 +1,6 @@
 # ShtefAI blog HR
 
-Public URL: https://aibloghr.pages.dev/
+Public URL: https://shtefaihr.pages.dev/
 
 Static Next.js 16 + MDX AI news blog prepared for Cloudflare Pages Static HTML Export.
 
@@ -49,7 +49,7 @@ Required GitHub repository secrets:
 - `CLOUDFLARE_API_TOKEN`
 - `CLOUDFLARE_ACCOUNT_ID`
 
-The deploy workflow targets the Cloudflare Pages project `aibloghr`.
+The deploy workflow targets the Cloudflare Pages project `shtefaihr`.
 
 ## Notes
 

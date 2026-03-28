@@ -1,6 +1,7 @@
 /.next
 /out
 /node_modules
+<<<<<<< HEAD
 .wrangler
 _next*
 _next
@@ -9,3 +10,32 @@ _next
 /public/rss.xml
 /public/images/og-image.png
 /public/images/posts/
+=======
+/.wrangler
+/out
+
+# Local environment files
+.env
+.env.local
+.env.*.local
+
+# Generated content
+/public/rss.xml
+
+# Package manager logs
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Test and coverage output
+/coverage
+/playwright-report
+/test-results
+
+# OS/editor noise
+.DS_Store
+
+# TypeScript incremental cache
+tsconfig.tsbuildinfo
+>>>>>>> b7ee0e8 (edits deploymentwise)

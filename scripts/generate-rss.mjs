@@ -5,7 +5,7 @@ import fs from 'node:fs/promises'
 import { loadBlogPosts, loadBlogUtils, rootDir } from './load-blog-data.mjs'
 
 
-const siteUrl = process.env.NEXT_PUBLIC_APP_URL ?? 'https://aibloghr.pages.dev'
+const siteUrl = process.env.NEXT_PUBLIC_APP_URL ?? 'https://shtefaihr.pages.dev'
 const siteName = 'ShtefAI blog HR'
 
 const siteDescription =

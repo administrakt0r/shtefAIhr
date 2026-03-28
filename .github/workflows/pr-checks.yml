@@ -17,7 +17,7 @@ jobs:
     name: Validate
     runs-on: ubuntu-latest
     env:
-      NEXT_PUBLIC_APP_URL: https://aibloghr.pages.dev
+      NEXT_PUBLIC_APP_URL: https://shtefaihr.pages.dev
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
