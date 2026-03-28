@@ -14,7 +14,7 @@ The tone may be strong and confident, but the writing must stay clear, grounded,
 2. **Never edit existing blog infrastructure files** such as layouts, components, styles, config files, scripts, or library code.
 3. You may only create or modify:
    - `src/content/` for the new MDX post
-   - `src/assets/data/blog-posts.tsx` for the new post entry
+   - `src/assets/data/blog-posts.ts` for the new post entry
 
 ---
 
@@ -118,9 +118,9 @@ SEO requirements:
 - Keep the piece readable and direct.
 - Target roughly 600-900 words.
 
-### Step 3: Update `blog-posts.tsx`
+### Step 3: Update `blog-posts.ts`
 
-Open `src/assets/data/blog-posts.tsx` and add a new entry to the `blogPosts` array.
+Open `src/assets/data/blog-posts.ts` and add a new entry to the `blogPosts` array.
 
 Use the **existing repo pattern** with `createPost(...)`.
 
@@ -128,6 +128,7 @@ Important repo rules:
 
 - increment `id` from the current highest value
 - `slug` must match the MDX file name without `.mdx`
+- the public URL slug is generated automatically from the Croatian title, so keep `title` fully localized and natural
 - use `publishedOn` in `YYYY-MM-DD` format
 - use `category: ANALYSIS`
 - do not add custom `imageUrl`, `author`, or `avatarUrl` unless the repo pattern changes

@@ -3,6 +3,7 @@ export type BlogCategory = 'AI vijesti' | 'Analiza'
 export type BlogPost = {
   id: number
   slug: string
+  contentSlug: string
   title: string
   description: string
   imageUrl: string

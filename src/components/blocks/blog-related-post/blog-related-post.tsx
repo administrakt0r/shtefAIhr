@@ -14,6 +14,10 @@ interface BlogProps {
 }
 
 const Blog = ({ blogPosts = allBlogPosts.slice(0, 3) }: BlogProps) => {
+  if (blogPosts.length === 0) {
+    return null
+  }
+
   return (
     <section className='border-t border-border/70 py-10 sm:py-16 lg:py-20'>
       <div className='mx-auto max-w-7xl space-y-8 px-4 sm:px-6 lg:px-8'>

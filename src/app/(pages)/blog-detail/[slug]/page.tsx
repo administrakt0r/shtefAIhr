@@ -137,7 +137,7 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
   let Post: ComponentType
 
   try {
-    ;({ default: Post } = await import(`@/content/${slug}.mdx`))
+    ;({ default: Post } = await import(`@/content/${post.contentSlug}.mdx`))
   } catch {
     notFound()
   }

@@ -85,23 +85,32 @@ const HeroSection = ({ blogData }: { blogData: BlogPost[] }) => {
           </div>
 
           <div className='mt-4 space-y-3'>
-            {latestPosts.map(item => (
-              <Link key={item.id} href={`/blog-detail/${item.slug}`} className='group block rounded-[1.25rem] border border-transparent bg-background/85 p-4 transition-all hover:border-brand-blue/20 hover:bg-background'>
-                <div className='flex items-start justify-between gap-4'>
-                  <div className='min-w-0 space-y-2'>
-                    <div className='flex flex-wrap items-center gap-2 text-xs font-medium uppercase tracking-[0.16em] text-muted-foreground'>
-                      <span>{item.category}</span>
-                      <span className='h-1 w-1 rounded-full bg-border' />
-                      <time dateTime={item.publishedOn}>{formatPostDisplayDate(item)}</time>
+            {latestPosts.length > 0 ? (
+              latestPosts.map(item => (
+                <Link key={item.id} href={`/blog-detail/${item.slug}`} className='group block rounded-[1.25rem] border border-transparent bg-background/85 p-4 transition-all hover:border-brand-blue/20 hover:bg-background'>
+                  <div className='flex items-start justify-between gap-4'>
+                    <div className='min-w-0 space-y-2'>
+                      <div className='flex flex-wrap items-center gap-2 text-xs font-medium uppercase tracking-[0.16em] text-muted-foreground'>
+                        <span>{item.category}</span>
+                        <span className='h-1 w-1 rounded-full bg-border' />
+                        <time dateTime={item.publishedOn}>{formatPostDisplayDate(item)}</time>
+                      </div>
+                      <h3 className='line-clamp-3 text-base leading-6 font-semibold text-foreground transition-colors group-hover:text-primary'>
+                        {item.title}
+                      </h3>
                     </div>
-                    <h3 className='line-clamp-3 text-base leading-6 font-semibold text-foreground transition-colors group-hover:text-primary'>
-                      {item.title}
-                    </h3>
+                    <ArrowUpRightIcon className='mt-1 size-4 shrink-0 text-muted-foreground transition-colors group-hover:text-primary' />
                   </div>
-                  <ArrowUpRightIcon className='mt-1 size-4 shrink-0 text-muted-foreground transition-colors group-hover:text-primary' />
-                </div>
-              </Link>
-            ))}
+                </Link>
+              ))
+            ) : (
+              <div className='rounded-[1.25rem] border border-dashed border-border bg-background/70 p-4'>
+                <p className='text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-brand-blue'>Novi početak arhiva</p>
+                <p className='mt-2 text-sm leading-6 text-muted-foreground'>
+                  Današnje generacije upravo otvaraju novi niz objava. Sljedeći članci pojavljivat će se ovdje kako budu objavljeni.
+                </p>
+              </div>
+            )}
           </div>
         </aside>
       </div>
