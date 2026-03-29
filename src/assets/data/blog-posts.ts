@@ -7,7 +7,7 @@ const NEWS = "AI vijesti" as const;
 
 export const getPostImagePath = (slug: string) => `/images/posts/${slug}.png`;
 
-const slugifyCroatian = (value: string) =>
+export const slugifyCroatian = (value: string) =>
   value
     .trim()
     .toLowerCase()
@@ -62,14 +62,18 @@ export const blogPosts: BlogPost[] = [
   }),
 ];
 
-const postSlugs = new Set<string>();
+export const assertUniqueSlugs = (posts: BlogPost[]) => {
+  const postSlugs = new Set<string>()
 
-for (const post of blogPosts) {
-  if (postSlugs.has(post.slug)) {
-    throw new Error(`Duplicate Croatian post slug detected: ${post.slug}`);
+  for (const post of posts) {
+    if (postSlugs.has(post.slug)) {
+      throw new Error(`Duplicate Croatian post slug detected: ${post.slug}`)
+    }
+
+    postSlugs.add(post.slug)
   }
-
-  postSlugs.add(post.slug);
 }
 
-export const sortedBlogPosts = [...blogPosts].sort(comparePostsByPublishedAt);
+assertUniqueSlugs(blogPosts)
+
+export const sortedBlogPosts = [...blogPosts].sort(comparePostsByPublishedAt)
