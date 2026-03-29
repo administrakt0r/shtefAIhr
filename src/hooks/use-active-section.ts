@@ -46,7 +46,7 @@ export const useActiveSection = () => {
     return () => {
       window.removeEventListener("scroll", handleSectionTracking);
     };
-  }, []);
+  }, [activeSection]);
 
   return activeSection;
 };
