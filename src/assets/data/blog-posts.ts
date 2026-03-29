@@ -73,6 +73,19 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false,
   }),
+  createPost({
+    id: 2,
+    slug: "ai-generirani-kod-ne-rjesava-problem-odrzavanja-sustava",
+    title: "AI generirani kod ne rješava problem održavanja sustava",
+    description:
+      "Svi govore o tome kako AI brzo piše kod. No, zanemaruje se činjenica da je taj kod često teže čitati i održavati, što stvara novi oblik tehničkog duga.",
+    imageAlt:
+      "Ilustracija uz članak: AI generirani kod ne rješava problem održavanja sustava",
+    publishedOn: "2026-03-29",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 export const assertUniqueSlugs = (posts: BlogPost[]) => {
