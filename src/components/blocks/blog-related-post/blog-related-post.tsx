@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowRightIcon, CalendarDaysIcon } from 'lucide-react'
 
-import { blogPosts as allBlogPosts } from '@/assets/data/blog-posts'
+import { sortedBlogPosts as allBlogPosts } from '@/assets/data/blog-posts'
 import { formatPostDisplayDate } from '@/lib/blog'
 
 import { Badge } from '@/components/ui/badge'

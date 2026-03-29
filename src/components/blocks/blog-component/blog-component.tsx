@@ -13,8 +13,8 @@ import {
   XIcon
 } from 'lucide-react'
 
-import { blogPosts } from '@/assets/data/blog-posts'
-import { comparePostsByPublishedAt, formatPostDisplayDate, type BlogPost } from '@/lib/blog'
+import { sortedBlogPosts } from '@/assets/data/blog-posts'
+import { formatPostDisplayDate, type BlogPost } from '@/lib/blog'
 
 import {
   Breadcrumb,
@@ -31,7 +31,10 @@ import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { ScrollArea, ScrollBar } from '@/components/ui/scroll-area'
 
-const getAvailableBlogPosts = () => blogPosts
+const allCategoryLabel = 'Sve'
+const nonFeaturedPosts = sortedBlogPosts.filter(post => !post.featured)
+const uniqueCategories = [...new Set(nonFeaturedPosts.map(post => post.category))]
+const categories = [allCategoryLabel, ...uniqueCategories.sort()]
 
 const BlogGrid = ({ posts, onCategoryClick }: { posts: BlogPost[]; onCategoryClick: (category: string) => void }) => {
   return (
@@ -91,17 +94,10 @@ const BlogGrid = ({ posts, onCategoryClick }: { posts: BlogPost[]; onCategoryCli
 }
 
 const Blog = () => {
-  const allCategoryLabel = 'Sve'
   const [selectedTab, setSelectedTab] = useState(allCategoryLabel)
   const [searchQuery, setSearchQuery] = useState('')
   const [currentPage, setCurrentPage] = useState(1)
   const POSTS_PER_PAGE = 9
-
-  const availableBlogPosts = getAvailableBlogPosts()
-  const nonFeaturedPosts = availableBlogPosts.filter(post => !post.featured).sort(comparePostsByPublishedAt)
-
-  const uniqueCategories = [...new Set(nonFeaturedPosts.map(post => post.category))]
-  const categories = [allCategoryLabel, ...uniqueCategories.sort()]
 
   const filteredPosts = nonFeaturedPosts.filter(post => {
     const matchesCategory = selectedTab === allCategoryLabel || post.category === selectedTab

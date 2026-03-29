@@ -1,4 +1,4 @@
-import { blogPosts, sortedBlogPosts } from '@/assets/data/blog-posts'
+import { sortedBlogPosts } from '@/assets/data/blog-posts'
 
 import HeroSection from '@/components/blocks/hero-section/hero-section'
 import Blog from '@/components/blocks/blog-component/blog-component'
@@ -97,7 +97,7 @@ const Home = () => {
 
   return (
     <div>
-      <HeroSection blogData={blogPosts} />
+      <HeroSection blogData={sortedBlogPosts} />
       <Blog />
       <section className='border-t py-12 sm:py-16' aria-labelledby='home-faq-heading'>
         <div className='mx-auto max-w-4xl space-y-8 px-4 sm:px-6 lg:px-8'>

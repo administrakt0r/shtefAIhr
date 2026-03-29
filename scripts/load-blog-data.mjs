@@ -22,13 +22,17 @@ const compileModule = async filePath => {
   }).outputText
 }
 
-const executeCommonJsModule = (compiled, filename) => {
+const executeCommonJsModule = (compiled, filename, preloads = {}) => {
   const cjsModule = { exports: {} }
 
   const sandbox = {
     exports: cjsModule.exports,
     module: cjsModule,
     require: specifier => {
+      if (preloads[specifier]) {
+        return preloads[specifier]
+      }
+
       throw new Error(`Unsupported import while loading derived data: ${specifier}`)
     }
   }
@@ -39,9 +43,10 @@ const executeCommonJsModule = (compiled, filename) => {
 }
 
 export const loadBlogPosts = async () => {
+  const utils = await loadBlogUtils()
   const filePath = path.join(rootDir, 'src', 'assets', 'data', 'blog-posts.ts')
   const compiled = await compileModule(filePath)
-  const exports = executeCommonJsModule(compiled, 'blog-posts.js')
+  const exports = executeCommonJsModule(compiled, 'blog-posts.js', { '@/lib/blog': utils })
 
   if (!Array.isArray(exports.blogPosts)) {
     throw new Error('Unable to load blog posts for derived asset generation.')
