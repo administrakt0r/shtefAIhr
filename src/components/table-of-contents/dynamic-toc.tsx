@@ -13,11 +13,6 @@ interface DynamicTocProps {
   contentContainerId?: string;
 }
 
-interface TocGroup {
-  main: TocItem;
-  subs: TocItem[];
-}
-
 const normalizeHeadingId = (value: string) =>
   value
     .normalize("NFD")
@@ -139,44 +134,6 @@ export const groupTocItems = (tocItems: TocItem[]): TocGroup[] => {
   if (currentGroup) {
     groupedItems.push(currentGroup);
   }
-
-  return groupedItems;
-};
-
-interface TocItemButtonProps {
-  id: string;
-  title: string;
-  isActive: boolean;
-  onClick: (id: string) => void;
-}
-
-const TocItemButton = ({ id, title, isActive, onClick }: TocItemButtonProps) => (
-  <button
-    type="button"
-    onClick={() => onClick(id)}
-    className={`flex items-start gap-2 text-left transition-colors ${
-      isActive
-        ? "text-foreground font-medium"
-        : "text-muted-foreground hover:text-foreground"
-    }`}
-  >
-    <span
-      className={`mt-2.5 inline-block h-0.5 w-3 shrink-0 transition-colors ${
-        isActive ? "bg-primary" : "bg-primary/40"
-      }`}
-    ></span>
-    <span>{title}</span>
-  </button>
-);
-
-export const DynamicToc = ({ contentContainerId = "content" }: DynamicTocProps) => {
-  const { tocItems, activeId, handleClick } = useDynamicToc(contentContainerId);
-
-  if (tocItems.length === 0) {
-    return null;
-  }
-
-  const groupedItems = groupTocItems(tocItems);
 
   return (
     <div className="sticky top-24">

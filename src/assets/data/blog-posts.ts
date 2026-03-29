@@ -75,15 +75,15 @@ export const blogPosts: BlogPost[] = [
   }),
   createPost({
     id: 2,
-    slug: "ai-generirani-kod-ne-rjesava-problem-odrzavanja-sustava",
-    title: "AI generirani kod ne rješava problem održavanja sustava",
+    slug: "zasto-je-openai-ugasio-soru",
+    title: "Zašto je OpenAI iznenada ugasio Soru",
     description:
-      "Svi govore o tome kako AI brzo piše kod. No, zanemaruje se činjenica da je taj kod često teže čitati i održavati, što stvara novi oblik tehničkog duga.",
+      "OpenAI odustaje od svog modela za generiranje videa zbog visokih troškova i snažne konkurencije, fokusirajući se na poslovne alate.",
     imageAlt:
-      "Ilustracija uz članak: AI generirani kod ne rješava problem održavanja sustava",
+      "Ilustracija uz članak: Zašto je OpenAI iznenada ugasio Soru",
     publishedOn: "2026-03-29",
-    category: ANALYSIS,
-    readTime: 4,
+    category: NEWS,
+    readTime: 3,
     featured: false,
   }),
 ];
