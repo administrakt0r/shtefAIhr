@@ -1,4 +1,4 @@
-import type { BlogPost } from '@/lib/blog'
+import { type BlogPost, comparePostsByPublishedAt } from '@/lib/blog'
 
 const DEFAULT_AUTHOR = 'Shtef'
 const DEFAULT_AVATAR = '/images/avatars/1.webp'
@@ -67,3 +67,5 @@ for (const post of blogPosts) {
 
   postSlugs.add(post.slug)
 }
+
+export const sortedBlogPosts = [...blogPosts].sort(comparePostsByPublishedAt)

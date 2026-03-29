@@ -1,12 +1,12 @@
-import { blogPosts } from '@/assets/data/blog-posts'
+import { blogPosts, sortedBlogPosts } from '@/assets/data/blog-posts'
 
 import HeroSection from '@/components/blocks/hero-section/hero-section'
 import Blog from '@/components/blocks/blog-component/blog-component'
 
-import { comparePostsByPublishedAt, getPostIsoDateTime } from '@/lib/blog'
+import { getPostIsoDateTime } from '@/lib/blog'
 import { SITE_APP_ICON_192_PATH, SITE_LANGUAGE_TAG, SITE_NAME, SITE_SHORT_DESCRIPTION, SITE_URL } from '@/lib/site'
 
-const latestPosts = [...blogPosts].sort(comparePostsByPublishedAt).slice(0, 3)
+const latestPosts = sortedBlogPosts.slice(0, 3)
 
 const faqs = [
   {

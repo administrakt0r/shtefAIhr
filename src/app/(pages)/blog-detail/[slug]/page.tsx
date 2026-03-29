@@ -6,9 +6,8 @@ import { ChevronLeftIcon, ChevronRightIcon } from 'lucide-react'
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 
-import { blogPosts } from '@/assets/data/blog-posts'
+import { blogPosts, sortedBlogPosts } from '@/assets/data/blog-posts'
 import {
-  comparePostsByPublishedAt,
   formatDisplayTime,
   formatPostDisplayDate,
   getPostIsoDateTime
@@ -79,11 +78,10 @@ export async function generateStaticParams() {
 }
 
 const PostNavigation = ({ currentPost }: { currentPost: (typeof blogPosts)[0] }) => {
-  const sortedPosts = [...blogPosts].sort(comparePostsByPublishedAt)
-  const currentIndex = sortedPosts.findIndex(post => post.id === currentPost.id)
+  const currentIndex = sortedBlogPosts.findIndex(post => post.id === currentPost.id)
 
-  const newerPost = currentIndex > 0 ? sortedPosts[currentIndex - 1] : null
-  const olderPost = currentIndex < sortedPosts.length - 1 ? sortedPosts[currentIndex + 1] : null
+  const newerPost = currentIndex > 0 ? sortedBlogPosts[currentIndex - 1] : null
+  const olderPost = currentIndex < sortedBlogPosts.length - 1 ? sortedBlogPosts[currentIndex + 1] : null
 
   return (
     <div className='flex w-full flex-col gap-3 sm:flex-row sm:justify-between'>
@@ -142,9 +140,7 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
     notFound()
   }
 
-  const sameCategoryPosts = blogPosts.filter(candidate => candidate.category === post.category && candidate.slug !== post.slug)
-  const otherPosts = blogPosts.filter(candidate => candidate.category !== post.category && candidate.slug !== post.slug)
-  const relatedPosts = [...sameCategoryPosts, ...otherPosts].sort(comparePostsByPublishedAt).slice(0, 3)
+  const relatedPosts = sortedBlogPosts.filter(candidate => candidate.slug !== post.slug).slice(0, 3)
   const displayTime = formatDisplayTime(post.publishedTime)
   const publishedIso = getPostIsoDateTime(post)
 
