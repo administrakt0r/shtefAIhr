@@ -1,15 +1,14 @@
 import type { MetadataRoute } from 'next'
 
-import { blogPosts } from '@/assets/data/blog-posts'
+import { sortedBlogPosts } from '@/assets/data/blog-posts'
 
-import { comparePostsByPublishedAt, getPostMachineDate } from '@/lib/blog'
+import { getPostMachineDate } from '@/lib/blog'
 import { SITE_URL } from '@/lib/site'
 
 export const dynamic = 'force-static'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const sortedPosts = [...blogPosts].sort(comparePostsByPublishedAt)
-  const latestPublishedAt = sortedPosts.length > 0 ? getPostMachineDate(sortedPosts[0]) : new Date()
+  const latestPublishedAt = sortedBlogPosts.length > 0 ? getPostMachineDate(sortedBlogPosts[0]) : new Date()
 
   const staticRoutes: MetadataRoute.Sitemap = [
     {
@@ -38,7 +37,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     }
   ]
 
-  const blogRoutes: MetadataRoute.Sitemap = sortedPosts.map(post => ({
+  const blogRoutes: MetadataRoute.Sitemap = sortedBlogPosts.map(post => ({
     url: `${SITE_URL}/blog-detail/${post.slug}`,
     lastModified: getPostMachineDate(post),
     changeFrequency: 'weekly' as const,
