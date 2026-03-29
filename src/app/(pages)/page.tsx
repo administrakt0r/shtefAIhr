@@ -26,75 +26,75 @@ const faqs = [
   }
 ]
 
-const Home = () => {
-  const jsonLd = {
-    '@context': 'https://schema.org',
-    '@graph': [
-      {
-        '@type': 'WebSite',
-        '@id': `${SITE_URL}#website`,
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebSite',
+      '@id': `${SITE_URL}#website`,
+      name: SITE_NAME,
+      description: SITE_SHORT_DESCRIPTION,
+      url: SITE_URL,
+      inLanguage: SITE_LANGUAGE_TAG,
+      publisher: {
+        '@type': 'Organization',
         name: SITE_NAME,
-        description: SITE_SHORT_DESCRIPTION,
         url: SITE_URL,
-        inLanguage: SITE_LANGUAGE_TAG,
-        publisher: {
-          '@type': 'Organization',
-          name: SITE_NAME,
-          url: SITE_URL,
-          logo: {
-            '@type': 'ImageObject',
-            url: `${SITE_URL}${SITE_APP_ICON_192_PATH}`
-          },
-          sameAs: ['https://administraktor.com', 'https://llm.kiwi', 'https://wpineu.com']
-        }
-      },
-      {
-        '@type': 'Blog',
-        '@id': `${SITE_URL}/#blog`,
-        name: SITE_NAME,
-        description: 'Dnevne AI vijesti, analize i kontekst za Hrvatsku, regiju i širi tehnološki sektor.',
-        url: SITE_URL,
-        inLanguage: SITE_LANGUAGE_TAG,
-        isPartOf: { '@id': `${SITE_URL}#website` },
-        blogPost: latestPosts.map(post => ({
-          '@type': 'BlogPosting',
-          headline: post.title,
-          description: post.description,
-          url: `${SITE_URL}/blog-detail/${post.slug}`,
-          datePublished: getPostIsoDateTime(post),
-          author: {
-            '@type': 'Person',
-            name: post.author
-          },
-          image: `${SITE_URL}${post.imageUrl}`
-        }))
-      },
-      {
-        '@type': 'FAQPage',
-        '@id': `${SITE_URL}#faq`,
-        mainEntity: faqs.map(faq => ({
-          '@type': 'Question',
-          name: faq.question,
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: faq.answer
-          }
-        }))
-      },
-      {
-        '@type': 'BreadcrumbList',
-        itemListElement: [
-          {
-            '@type': 'ListItem',
-            position: 1,
-            name: 'Početna',
-            item: SITE_URL
-          }
-        ]
+        logo: {
+          '@type': 'ImageObject',
+          url: `${SITE_URL}${SITE_APP_ICON_192_PATH}`
+        },
+        sameAs: ['https://administraktor.com', 'https://llm.kiwi', 'https://wpineu.com']
       }
-    ]
-  }
+    },
+    {
+      '@type': 'Blog',
+      '@id': `${SITE_URL}/#blog`,
+      name: SITE_NAME,
+      description: 'Dnevne AI vijesti, analize i kontekst za Hrvatsku, regiju i širi tehnološki sektor.',
+      url: SITE_URL,
+      inLanguage: SITE_LANGUAGE_TAG,
+      isPartOf: { '@id': `${SITE_URL}#website` },
+      blogPost: latestPosts.map(post => ({
+        '@type': 'BlogPosting',
+        headline: post.title,
+        description: post.description,
+        url: `${SITE_URL}/blog-detail/${post.slug}`,
+        datePublished: getPostIsoDateTime(post),
+        author: {
+          '@type': 'Person',
+          name: post.author
+        },
+        image: `${SITE_URL}${post.imageUrl}`
+      }))
+    },
+    {
+      '@type': 'FAQPage',
+      '@id': `${SITE_URL}#faq`,
+      mainEntity: faqs.map(faq => ({
+        '@type': 'Question',
+        name: faq.question,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: faq.answer
+        }
+      }))
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          name: 'Početna',
+          item: SITE_URL
+        }
+      ]
+    }
+  ]
+}
 
+const Home = () => {
   return (
     <div>
       <HeroSection blogData={blogPosts} />
