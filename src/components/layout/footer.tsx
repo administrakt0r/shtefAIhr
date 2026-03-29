@@ -40,6 +40,60 @@ const FooterTop = () => (
   </div>
 );
 
+const colorStyles = {
+  blue: "border-blue-100 bg-blue-50/50 hover:border-blue-300 hover:shadow-blue-500/10 dark:border-blue-900/50 dark:bg-blue-950/20 dark:hover:border-blue-700/50",
+  purple: "border-purple-100 bg-purple-50/50 hover:border-purple-300 hover:shadow-purple-500/10 dark:border-purple-900/50 dark:bg-purple-950/20 dark:hover:border-purple-700/50",
+};
+
+const accentStyles = {
+  blue: "bg-blue-500",
+  purple: "bg-purple-500",
+};
+
+const textStyles = {
+  blue: "text-blue-700 dark:text-blue-400",
+  purple: "text-purple-700 dark:text-purple-400",
+};
+
+const NetworkCard = ({
+  href,
+  colorScheme,
+  icon,
+  title,
+  description,
+}: {
+  href: string;
+  colorScheme: "blue" | "purple";
+  icon: string;
+  title: string;
+  description: string;
+}) => {
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="group block"
+    >
+      <div
+        className={`relative overflow-hidden rounded-xl border p-4 transition-all duration-300 hover:shadow-lg ${colorStyles[colorScheme]}`}
+      >
+        <div
+          className={`absolute top-0 left-0 h-full w-1 rounded-l-xl ${accentStyles[colorScheme]}`}
+        />
+        <div
+          className={`mb-1.5 flex items-center gap-2 pl-2 font-bold ${textStyles[colorScheme]}`}
+        >
+          <span className="text-lg">{icon}</span> {title}
+        </div>
+        <p className="pl-2 text-xs leading-relaxed text-slate-600 transition-colors group-hover:text-slate-900 dark:text-slate-400 dark:group-hover:text-slate-300">
+          {description}
+        </p>
+      </div>
+    </a>
+  );
+};
+
 const FooterMiddle = () => (
   <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
     <div className="flex flex-col gap-4">
@@ -47,41 +101,21 @@ const FooterMiddle = () => (
         Administrakt0r mreža
       </h3>
 
-      <a
+      <NetworkCard
         href="https://wpineu.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="group block"
-      >
-        <div className="relative overflow-hidden rounded-xl border border-blue-100 bg-blue-50/50 p-4 transition-all duration-300 hover:border-blue-300 hover:shadow-lg hover:shadow-blue-500/10 dark:border-blue-900/50 dark:bg-blue-950/20 dark:hover:border-blue-700/50">
-          <div className="absolute top-0 left-0 h-full w-1 rounded-l-xl bg-blue-500" />
-          <div className="mb-1.5 flex items-center gap-2 pl-2 font-bold text-blue-700 dark:text-blue-400">
-            <span className="text-lg">🌐</span> WPinEU.com
-          </div>
-          <p className="pl-2 text-xs leading-relaxed text-slate-600 transition-colors group-hover:text-slate-900 dark:text-slate-400 dark:group-hover:text-slate-300">
-            Brza digitalna arhitektura i WordPress hosting inicijativa za
-            europsko tržište.
-          </p>
-        </div>
-      </a>
+        colorScheme="blue"
+        icon="🌐"
+        title="WPinEU.com"
+        description="Brza digitalna arhitektura i WordPress hosting inicijativa za europsko tržište."
+      />
 
-      <a
+      <NetworkCard
         href="https://llm.kiwi"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="group block"
-      >
-        <div className="relative overflow-hidden rounded-xl border border-purple-100 bg-purple-50/50 p-4 transition-all duration-300 hover:border-purple-300 hover:shadow-lg hover:shadow-purple-500/10 dark:border-purple-900/50 dark:bg-purple-950/20 dark:hover:border-purple-700/50">
-          <div className="absolute top-0 left-0 h-full w-1 rounded-l-xl bg-purple-500" />
-          <div className="mb-1.5 flex items-center gap-2 pl-2 font-bold text-purple-700 dark:text-purple-400">
-            <span className="text-lg">🥝</span> LLM.kiwi
-          </div>
-          <p className="pl-2 text-xs leading-relaxed text-slate-600 transition-colors group-hover:text-slate-900 dark:text-slate-400 dark:group-hover:text-slate-300">
-            Platforma za rad s LLM API-jima, agentima i AI workflowima bez
-            nepotrebne operativne buke.
-          </p>
-        </div>
-      </a>
+        colorScheme="purple"
+        icon="🥝"
+        title="LLM.kiwi"
+        description="Platforma za rad s LLM API-jima, agentima i AI workflowima bez nepotrebne operativne buke."
+      />
     </div>
 
     <div className="flex md:col-span-1 lg:col-span-2">
