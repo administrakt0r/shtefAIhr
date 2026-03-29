@@ -1,7 +1,5 @@
 "use client";
 
-import { useEffect, useState } from "react";
-
 import Link from "next/link";
 import { MailIcon, MenuIcon } from "lucide-react";
 
@@ -16,6 +14,8 @@ import {
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import { useActiveSection } from "@/hooks/use-active-section";
+import { useScrollState } from "@/hooks/use-scroll-state";
 import { cn } from "@/lib/utils";
 
 type HeaderProps = {
@@ -24,66 +24,8 @@ type HeaderProps = {
 };
 
 const Header = ({ navigationData, className }: HeaderProps) => {
-  const [isScrolled, setIsScrolled] = useState(false);
-  const [activeSection, setActiveSection] = useState("");
-
-  useEffect(() => {
-    const handleScrollState = () => {
-      setIsScrolled(window.scrollY > 0);
-    };
-
-    window.addEventListener("scroll", handleScrollState);
-    handleScrollState();
-
-    return () => {
-      window.removeEventListener("scroll", handleScrollState);
-    };
-  }, []);
-
-  useEffect(() => {
-    const handleSectionTracking = () => {
-      const sections = document.querySelectorAll("section[id]");
-      const scrollPosition = window.scrollY + window.innerHeight / 2;
-
-      if (sections.length === 0) {
-        if (activeSection !== "") {
-          setActiveSection("");
-        }
-
-        return;
-      }
-
-      let foundSection = false;
-
-      for (const section of sections) {
-        const element = section as HTMLElement;
-        const { offsetTop, offsetHeight } = element;
-
-        if (
-          scrollPosition >= offsetTop &&
-          scrollPosition < offsetTop + offsetHeight
-        ) {
-          if (element.id !== activeSection) {
-            setActiveSection(element.id);
-          }
-
-          foundSection = true;
-          break;
-        }
-      }
-
-      if (!foundSection && activeSection !== "") {
-        setActiveSection("");
-      }
-    };
-
-    handleSectionTracking();
-    window.addEventListener("scroll", handleSectionTracking, { passive: true });
-
-    return () => {
-      window.removeEventListener("scroll", handleSectionTracking);
-    };
-  }, [activeSection]);
+  const isScrolled = useScrollState();
+  const activeSection = useActiveSection();
 
   return (
     <header
