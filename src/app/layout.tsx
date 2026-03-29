@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react'
 
-import { IBM_Plex_Mono, Inter, Source_Serif_4 } from 'next/font/google'
+import { Geist_Mono, Merriweather, Outfit } from 'next/font/google'
 import type { Metadata } from 'next'
 
 import { ThemeProvider } from '@/components/theme-provider'
@@ -25,18 +25,18 @@ import { cn } from '@/lib/utils'
 
 import './globals.css'
 
-const inter = Inter({
-  variable: '--font-inter',
+const outfit = Outfit({
+  variable: '--font-outfit',
   subsets: ['latin']
 })
 
-const sourceSerif4 = Source_Serif_4({
-  variable: '--font-source-serif-4',
+const merriweather = Merriweather({
+  variable: '--font-merriweather',
   subsets: ['latin']
 })
 
-const ibmPlexMono = IBM_Plex_Mono({
-  variable: '--font-ibm-plex-mono',
+const geistMono = Geist_Mono({
+  variable: '--font-geist-mono',
   subsets: ['latin'],
   weight: ['300', '400', '500', '600', '700']
 })
@@ -149,9 +149,9 @@ const RootLayout = ({ children }: Readonly<{ children: ReactNode }>) => {
     <html
       lang={SITE_LANGUAGE}
       className={cn(
-        inter.variable,
-        sourceSerif4.variable,
-        ibmPlexMono.variable,
+        outfit.variable,
+        merriweather.variable,
+        geistMono.variable,
         'flex min-h-full w-full scroll-smooth'
       )}
       suppressHydrationWarning

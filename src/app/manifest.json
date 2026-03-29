@@ -7,8 +7,8 @@
   "scope": "/",
   "id": "/",
   "display": "standalone",
-  "background_color": "#f7f9fc",
-  "theme_color": "#c61f32",
+  "background_color": "#fff6f5",
+  "theme_color": "#d40c1a",
   "orientation": "portrait-primary",
   "categories": ["news", "technology", "education"],
   "icons": [
