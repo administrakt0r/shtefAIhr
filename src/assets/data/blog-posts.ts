@@ -58,14 +58,18 @@ export const blogPosts: BlogPost[] = [
   })
 ]
 
-const postSlugs = new Set<string>()
+export const assertUniqueSlugs = (posts: BlogPost[]) => {
+  const postSlugs = new Set<string>()
 
-for (const post of blogPosts) {
-  if (postSlugs.has(post.slug)) {
-    throw new Error(`Duplicate Croatian post slug detected: ${post.slug}`)
+  for (const post of posts) {
+    if (postSlugs.has(post.slug)) {
+      throw new Error(`Duplicate Croatian post slug detected: ${post.slug}`)
+    }
+
+    postSlugs.add(post.slug)
   }
-
-  postSlugs.add(post.slug)
 }
+
+assertUniqueSlugs(blogPosts)
 
 export const sortedBlogPosts = [...blogPosts].sort(comparePostsByPublishedAt)
