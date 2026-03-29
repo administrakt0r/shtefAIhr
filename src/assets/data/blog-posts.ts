@@ -60,6 +60,19 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false,
   }),
+  createPost({
+    id: 2,
+    slug: "zasto-je-openai-ugasio-soru",
+    title: "Zašto je OpenAI iznenada ugasio Soru",
+    description:
+      "OpenAI odustaje od svog modela za generiranje videa zbog visokih troškova i snažne konkurencije, fokusirajući se na poslovne alate.",
+    imageAlt:
+      "Ilustracija uz članak: Zašto je OpenAI iznenada ugasio Soru",
+    publishedOn: "2026-03-29",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+  }),
 ];
 
 export const assertUniqueSlugs = (posts: BlogPost[]) => {

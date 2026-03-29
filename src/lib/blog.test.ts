@@ -37,12 +37,6 @@ describe('blog utility functions', () => {
     publishedTime: '08:00',
   } as BlogPost;
 
-  const mockPost5 = {
-    id: 5,
-    publishedOn: '2023-10-14',
-    publishedTime: '14:30',
-  } as BlogPost;
-
   describe('getPostMachineDate', () => {
     it('returns correct Date object with publishedTime', () => {
       const date = getPostMachineDate(mockPost1);
