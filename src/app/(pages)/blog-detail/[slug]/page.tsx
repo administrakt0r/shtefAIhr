@@ -140,7 +140,17 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
     notFound()
   }
 
-  const relatedPosts = sortedBlogPosts.filter(candidate => candidate.slug !== post.slug).slice(0, 3)
+  const sameCategoryPosts = []
+  const otherPosts = []
+  for (const candidate of sortedBlogPosts) {
+    if (candidate.slug === post.slug) continue
+    if (candidate.category === post.category) {
+      sameCategoryPosts.push(candidate)
+    } else {
+      otherPosts.push(candidate)
+    }
+  }
+  const relatedPosts = [...sameCategoryPosts, ...otherPosts].slice(0, 3)
   const displayTime = formatDisplayTime(post.publishedTime)
   const publishedIso = getPostIsoDateTime(post)
 
