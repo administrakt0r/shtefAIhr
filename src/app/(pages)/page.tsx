@@ -105,7 +105,6 @@ const Home = () => {
     ],
   };
 
-const Home = () => {
   return (
     <div>
       <HeroSection blogData={sortedBlogPosts} />
