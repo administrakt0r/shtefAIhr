@@ -56,11 +56,25 @@ jobs:
             exit 0
           fi
 
+          protection_json="$(gh api "repos/$REPO/branches/main/protection" 2>/dev/null || true)"
+          if [ -z "$protection_json" ]; then
+            echo "Unable to confirm branch protection for main; skipping auto-merge."
+            exit 0
+          fi
+
+          if ! printf '%s' "$protection_json" | jq -e '.required_status_checks.contexts // [] | index("PR Checks / Validate") != null' >/dev/null; then
+            echo "Branch protection for main does not require 'PR Checks / Validate'; skipping auto-merge."
+            exit 0
+          fi
+
           case "$merge_state" in
-            CLEAN|HAS_HOOKS|UNSTABLE)
+            CLEAN|HAS_HOOKS)
               ;;
             *)
-              echo "Pull request #$pr_number is not mergeable right now (state: $merge_state)."
+              # Reject UNSTABLE and every non-clean state to prevent race conditions and
+              # premature merges that should instead require manual intervention.
+              echo "Current merge_state for #$pr_number: $merge_state"
+              echo "Exiting without merge because merge_state is not clean."
               exit 0
               ;;
           esac
