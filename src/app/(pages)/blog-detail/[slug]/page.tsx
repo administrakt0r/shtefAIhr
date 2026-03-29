@@ -1,53 +1,62 @@
-import type { ComponentType } from 'react'
+import type { ComponentType } from "react";
 
-import Image from 'next/image'
-import Link from 'next/link'
-import { ChevronLeftIcon, ChevronRightIcon } from 'lucide-react'
-import type { Metadata } from 'next'
-import { notFound } from 'next/navigation'
+import Image from "next/image";
+import Link from "next/link";
+import { ChevronLeftIcon, ChevronRightIcon } from "lucide-react";
+import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 
-import { blogPosts, sortedBlogPosts } from '@/assets/data/blog-posts'
+import { blogPosts, sortedBlogPosts } from "@/assets/data/blog-posts";
 import {
   formatDisplayTime,
   formatPostDisplayDate,
-  getPostIsoDateTime
-} from '@/lib/blog'
-import { SITE_APP_ICON_192_PATH, SITE_LANGUAGE_TAG, SITE_NAME, SITE_URL } from '@/lib/site'
+  getPostIsoDateTime,
+} from "@/lib/blog";
+import {
+  SITE_APP_ICON_192_PATH,
+  SITE_LANGUAGE_TAG,
+  SITE_NAME,
+  SITE_URL,
+} from "@/lib/site";
 
-import Blog from '@/components/blocks/blog-related-post/blog-related-post'
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
-import { Badge } from '@/components/ui/badge'
+import Blog from "@/components/blocks/blog-related-post/blog-related-post";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Badge } from "@/components/ui/badge";
 import {
   Breadcrumb,
   BreadcrumbItem,
   BreadcrumbLink,
   BreadcrumbList,
   BreadcrumbPage,
-  BreadcrumbSeparator
-} from '@/components/ui/breadcrumb'
-import { Button } from '@/components/ui/button'
-import { Separator } from '@/components/ui/separator'
-import { DynamicToc } from '@/components/table-of-contents/dynamic-toc'
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb";
+import { Button } from "@/components/ui/button";
+import { Separator } from "@/components/ui/separator";
+import { DynamicToc } from "@/components/table-of-contents/dynamic-toc";
 
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
-  const { slug } = await params
-  const post = blogPosts.find(candidate => candidate.slug === slug)
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const post = blogPosts.find((candidate) => candidate.slug === slug);
 
-  if (!post) return {}
+  if (!post) return {};
 
-  const postUrl = `${SITE_URL}/blog-detail/${post.slug}`
+  const postUrl = `${SITE_URL}/blog-detail/${post.slug}`;
 
   return {
     title: post.title,
     description: post.description,
     authors: [{ name: post.author }],
     alternates: {
-      canonical: `/blog-detail/${post.slug}`
+      canonical: `/blog-detail/${post.slug}`,
     },
     openGraph: {
       title: post.title,
       description: post.description,
-      type: 'article',
+      type: "article",
       publishedTime: getPostIsoDateTime(post),
       authors: [post.author],
       section: post.category,
@@ -58,126 +67,145 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
           url: `${SITE_URL}${post.imageUrl}`,
           width: 1200,
           height: 630,
-          alt: post.imageAlt
-        }
-      ]
+          alt: post.imageAlt,
+        },
+      ],
     },
     twitter: {
-      card: 'summary_large_image',
+      card: "summary_large_image",
       title: post.title,
       description: post.description,
-      images: [`${SITE_URL}${post.imageUrl}`]
-    }
-  }
+      images: [`${SITE_URL}${post.imageUrl}`],
+    },
+  };
 }
 
 export async function generateStaticParams() {
-  return blogPosts.map(post => ({
-    slug: post.slug
-  }))
+  return blogPosts.map((post) => ({
+    slug: post.slug,
+  }));
 }
 
-const PostNavigation = ({ currentPost }: { currentPost: (typeof blogPosts)[0] }) => {
-  const currentIndex = sortedBlogPosts.findIndex(post => post.id === currentPost.id)
+const PostNavigation = ({
+  currentPost,
+}: {
+  currentPost: (typeof blogPosts)[0];
+}) => {
+  const currentIndex = sortedBlogPosts.findIndex(
+    (post) => post.id === currentPost.id,
+  );
 
-  const newerPost = currentIndex > 0 ? sortedBlogPosts[currentIndex - 1] : null
-  const olderPost = currentIndex < sortedBlogPosts.length - 1 ? sortedBlogPosts[currentIndex + 1] : null
+  const newerPost = currentIndex > 0 ? sortedBlogPosts[currentIndex - 1] : null;
+
+  const olderPost =
+    currentIndex < sortedBlogPosts.length - 1
+      ? sortedBlogPosts[currentIndex + 1]
+      : null;
 
   return (
-    <div className='flex w-full flex-col gap-3 sm:flex-row sm:justify-between'>
+    <div className="flex w-full flex-col gap-3 sm:flex-row sm:justify-between">
       {newerPost ? (
-        <Button className='justify-start rounded-full' variant='outline' asChild>
+        <Button
+          className="justify-start rounded-full"
+          variant="outline"
+          asChild
+        >
           <Link href={`/blog-detail/${newerPost.slug}`}>
-            <ChevronLeftIcon className='size-4' />
+            <ChevronLeftIcon className="size-4" />
             Novija objava
           </Link>
         </Button>
       ) : (
-        <Button className='justify-start rounded-full' variant='outline' disabled>
-          <ChevronLeftIcon className='size-4' />
+        <Button
+          className="justify-start rounded-full"
+          variant="outline"
+          disabled
+        >
+          <ChevronLeftIcon className="size-4" />
           Novija objava
         </Button>
       )}
 
       {olderPost ? (
         <Button
-          className='justify-end rounded-full border-primary/20 bg-primary/10 text-primary hover:bg-primary hover:text-primary-foreground sm:ml-auto'
-          variant='outline'
+          className="justify-end rounded-full border-primary/20 bg-primary/10 text-primary hover:bg-primary hover:text-primary-foreground sm:ml-auto"
+          variant="outline"
           asChild
         >
           <Link href={`/blog-detail/${olderPost.slug}`}>
             Starija objava
-            <ChevronRightIcon className='size-4' />
+            <ChevronRightIcon className="size-4" />
           </Link>
         </Button>
       ) : (
         <Button
-          className='justify-end rounded-full border-primary/20 bg-primary/10 text-primary sm:ml-auto'
-          variant='outline'
+          className="justify-end rounded-full border-primary/20 bg-primary/10 text-primary sm:ml-auto"
+          variant="outline"
           disabled
         >
           Starija objava
-          <ChevronRightIcon className='size-4' />
+          <ChevronRightIcon className="size-4" />
         </Button>
       )}
     </div>
-  )
-}
+  );
+};
 
-export default async function BlogDetailPage({ params }: { params: Promise<{ slug: string }> }) {
-  const { slug } = await params
-  const post = blogPosts.find(candidate => candidate.slug === slug)
+export default async function BlogDetailPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+  const post = blogPosts.find((candidate) => candidate.slug === slug);
 
   if (!post) {
-    notFound()
+    notFound();
   }
 
-  let Post: ComponentType
+  let Post: ComponentType;
 
   try {
-    ;({ default: Post } = await import(`@/content/${post.contentSlug}.mdx`))
+    ({ default: Post } = await import(`@/content/${post.contentSlug}.mdx`));
   } catch {
-    notFound()
+    notFound();
   }
 
-  const sameCategoryPosts = []
-  const otherPosts = []
-  for (const candidate of sortedBlogPosts) {
-    if (candidate.slug === post.slug) continue
-    if (candidate.category === post.category) {
-      sameCategoryPosts.push(candidate)
-    } else {
-      otherPosts.push(candidate)
-    }
-  }
-  const relatedPosts = [...sameCategoryPosts, ...otherPosts].slice(0, 3)
-  const displayTime = formatDisplayTime(post.publishedTime)
-  const publishedIso = getPostIsoDateTime(post)
+  const relatedPosts = sortedBlogPosts
+    .filter((candidate) => candidate.slug !== post.slug)
+    .slice(0, 3);
+
+  const displayTime = formatDisplayTime(post.publishedTime);
+  const publishedIso = getPostIsoDateTime(post);
 
   return (
     <div>
-      <section className='py-8 sm:py-12 lg:py-16'>
-        <div className='mx-auto max-w-7xl space-y-8 px-4 sm:px-6 lg:px-8'>
-          <div className='gap-16 md:grid md:grid-cols-5 lg:grid-cols-[minmax(16rem,18rem)_minmax(0,1fr)]'>
-            <aside className='hidden md:block'>
-              <div className='sticky top-28 rounded-[1.75rem] border border-border/75 bg-card/92 p-5 shadow-sm shadow-brand-blue/5'>
-                <p className='text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-brand-blue'>Sadržaj</p>
-                <div className='mt-4'>
+      <section className="py-8 sm:py-12 lg:py-16">
+        <div className="mx-auto max-w-7xl space-y-8 px-4 sm:px-6 lg:px-8">
+          <div className="gap-16 md:grid md:grid-cols-5 lg:grid-cols-[minmax(16rem,18rem)_minmax(0,1fr)]">
+            <aside className="hidden md:block">
+              <div className="sticky top-28 rounded-[1.75rem] border border-border/75 bg-card/92 p-5 shadow-sm shadow-brand-blue/5">
+                <p className="text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-brand-blue">
+                  Sadržaj
+                </p>
+                <div className="mt-4">
                   <DynamicToc />
                 </div>
               </div>
             </aside>
 
-            <div className='space-y-10'>
-              <header className='space-y-6 rounded-[2rem] border border-border/75 bg-card/95 p-6 shadow-sm shadow-brand-blue/5 sm:p-8'>
+            <div className="space-y-10">
+              <header className="space-y-6 rounded-[2rem] border border-border/75 bg-card/95 p-6 shadow-sm shadow-brand-blue/5 sm:p-8">
                 <Breadcrumb>
                   <BreadcrumbList>
                     <BreadcrumbItem>
-                      <BreadcrumbLink href='/'>Naslovnica</BreadcrumbLink>
+                      <BreadcrumbLink href="/">Naslovnica</BreadcrumbLink>
                     </BreadcrumbItem>
                     <BreadcrumbSeparator />
                     <BreadcrumbItem>
-                      <BreadcrumbLink href='/#categories'>AI vijesti i analize</BreadcrumbLink>
+                      <BreadcrumbLink href="/#categories">
+                        AI vijesti i analize
+                      </BreadcrumbLink>
                     </BreadcrumbItem>
                     <BreadcrumbSeparator />
                     <BreadcrumbItem>
@@ -186,64 +214,80 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
                   </BreadcrumbList>
                 </Breadcrumb>
 
-                <div className='flex flex-wrap items-center gap-3'>
-                  <Badge className='rounded-full bg-brand-blue/10 text-brand-blue border-0 px-3 py-1 text-[0.72rem] font-semibold uppercase tracking-[0.16em]'>
+                <div className="flex flex-wrap items-center gap-3">
+                  <Badge className="rounded-full bg-brand-blue/10 text-brand-blue border-0 px-3 py-1 text-[0.72rem] font-semibold uppercase tracking-[0.16em]">
                     {post.category}
                   </Badge>
-                  <span className='text-muted-foreground text-xs font-semibold uppercase tracking-[0.18em]'>
+                  <span className="text-muted-foreground text-xs font-semibold uppercase tracking-[0.18em]">
                     {post.readTime} min čitanja
                   </span>
                 </div>
 
-                <div className='space-y-4'>
-                  <h1 className='font-serif text-4xl leading-none tracking-tight text-balance text-foreground sm:text-5xl'>
+                <div className="space-y-4">
+                  <h1 className="font-serif text-4xl leading-none tracking-tight text-balance text-foreground sm:text-5xl">
                     {post.title}
                   </h1>
-                  <p className='max-w-3xl text-lg leading-8 text-muted-foreground'>{post.description}</p>
+                  <p className="max-w-3xl text-lg leading-8 text-muted-foreground">
+                    {post.description}
+                  </p>
                 </div>
 
                 <Separator />
 
-                <div className='flex flex-wrap items-center justify-between gap-4'>
-                  <div className='flex items-center gap-3'>
-                    <Avatar className='size-11 border border-border/70'>
+                <div className="flex flex-wrap items-center justify-between gap-4">
+                  <div className="flex items-center gap-3">
+                    <Avatar className="size-11 border border-border/70">
                       <AvatarImage src={post.avatarUrl} alt={post.author} />
-                      <AvatarFallback className='text-xs'>
+                      <AvatarFallback className="text-xs">
                         {post.author
-                          .split(' ')
-                          .map(name => name[0])
-                          .join('')
+                          .split(" ")
+                          .map((name) => name[0])
+                          .join("")
                           .toUpperCase()}
                       </AvatarFallback>
                     </Avatar>
-                    <div className='space-y-1'>
-                      <p className='text-[0.7rem] font-semibold uppercase tracking-[0.16em] text-muted-foreground'>Autor</p>
-                      <p className='text-sm font-semibold text-foreground'>{post.author}</p>
+                    <div className="space-y-1">
+                      <p className="text-[0.7rem] font-semibold uppercase tracking-[0.16em] text-muted-foreground">
+                        Autor
+                      </p>
+                      <p className="text-sm font-semibold text-foreground">
+                        {post.author}
+                      </p>
                     </div>
                   </div>
 
-                  <div className='space-y-1 text-left sm:text-right'>
-                    <p className='text-[0.7rem] font-semibold uppercase tracking-[0.16em] text-muted-foreground'>Objavljeno</p>
-                    <time dateTime={publishedIso} className='text-sm font-semibold text-foreground'>
-                      {displayTime ? `${formatPostDisplayDate(post)} u ${displayTime}` : formatPostDisplayDate(post)}
+                  <div className="space-y-1 text-left sm:text-right">
+                    <p className="text-[0.7rem] font-semibold uppercase tracking-[0.16em] text-muted-foreground">
+                      Objavljeno
+                    </p>
+                    <time
+                      dateTime={publishedIso}
+                      className="text-sm font-semibold text-foreground"
+                    >
+                      {displayTime
+                        ? `${formatPostDisplayDate(post)} u ${displayTime}`
+                        : formatPostDisplayDate(post)}
                     </time>
                   </div>
                 </div>
               </header>
 
-              <div className='overflow-hidden rounded-[2rem] border border-border/75 bg-card/90 p-2 shadow-sm shadow-brand-blue/5'>
+              <div className="overflow-hidden rounded-[2rem] border border-border/75 bg-card/90 p-2 shadow-sm shadow-brand-blue/5">
                 <Image
                   src={post.imageUrl}
                   alt={post.imageAlt}
                   width={1200}
                   height={630}
                   priority
-                  sizes='(min-width: 1024px) 66vw, 100vw'
-                  className='h-auto w-full rounded-[1.5rem] object-cover'
+                  sizes="(min-width: 1024px) 66vw, 100vw"
+                  className="h-auto w-full rounded-[1.5rem] object-cover"
                 />
               </div>
 
-              <article id='content' className='editorial-content rounded-[2rem] border border-border/75 bg-card/95 p-6 shadow-sm shadow-brand-blue/5 sm:p-8'>
+              <article
+                id="content"
+                className="editorial-content rounded-[2rem] border border-border/75 bg-card/95 p-6 shadow-sm shadow-brand-blue/5 sm:p-8"
+              >
                 <Post />
               </article>
 
@@ -256,73 +300,73 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
       <Blog blogPosts={relatedPosts} />
 
       <script
-        type='application/ld+json'
+        type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@graph': [
+            "@context": "https://schema.org",
+            "@graph": [
               {
-                '@type': 'BlogPosting',
-                '@id': `${SITE_URL}/blog-detail/${post.slug}#article`,
+                "@type": "BlogPosting",
+                "@id": `${SITE_URL}/blog-detail/${post.slug}#article`,
                 headline: post.title,
                 description: post.description,
                 image: `${SITE_URL}${post.imageUrl}`,
                 datePublished: publishedIso,
                 dateModified: publishedIso,
                 author: {
-                  '@type': 'Person',
+                  "@type": "Person",
                   name: post.author,
-                  url: `${SITE_URL}/about`
+                  url: `${SITE_URL}/about`,
                 },
                 publisher: {
-                  '@type': 'Organization',
+                  "@type": "Organization",
                   name: SITE_NAME,
                   url: SITE_URL,
                   logo: {
-                    '@type': 'ImageObject',
-                    url: `${SITE_URL}${SITE_APP_ICON_192_PATH}`
-                  }
+                    "@type": "ImageObject",
+                    url: `${SITE_URL}${SITE_APP_ICON_192_PATH}`,
+                  },
                 },
                 mainEntityOfPage: {
-                  '@type': 'WebPage',
-                  '@id': `${SITE_URL}/blog-detail/${post.slug}`
+                  "@type": "WebPage",
+                  "@id": `${SITE_URL}/blog-detail/${post.slug}`,
                 },
                 articleSection: post.category,
                 wordCount: post.readTime * 200,
                 inLanguage: SITE_LANGUAGE_TAG,
                 isPartOf: {
-                  '@type': 'Blog',
-                  '@id': `${SITE_URL}/#blog`,
+                  "@type": "Blog",
+                  "@id": `${SITE_URL}/#blog`,
                   name: SITE_NAME,
-                  url: SITE_URL
-                }
+                  url: SITE_URL,
+                },
               },
               {
-                '@type': 'BreadcrumbList',
+                "@type": "BreadcrumbList",
                 itemListElement: [
                   {
-                    '@type': 'ListItem',
+                    "@type": "ListItem",
                     position: 1,
-                    name: 'Naslovnica',
-                    item: SITE_URL
+                    name: "Naslovnica",
+                    item: SITE_URL,
                   },
                   {
-                    '@type': 'ListItem',
+                    "@type": "ListItem",
                     position: 2,
-                    name: 'AI vijesti i analize',
-                    item: `${SITE_URL}/#categories`
+                    name: "AI vijesti i analize",
+                    item: `${SITE_URL}/#categories`,
                   },
                   {
-                    '@type': 'ListItem',
+                    "@type": "ListItem",
                     position: 3,
-                    name: post.category
-                  }
-                ]
-              }
-            ]
-          }).replace(/</g, '\\u003c')
+                    name: post.category,
+                  },
+                ],
+              },
+            ],
+          }).replace(/</g, "\\u003c"),
         }}
       />
     </div>
-  )
+  );
 }
