@@ -173,7 +173,7 @@ const getChromeTextSvg = ({ title, logoDataUri, preset, subtitle }) => `<?xml ve
     umjetnainteligencijablog.pages.dev
   </text>
   <text x="1128" y="589" text-anchor="end" font-family="'Roboto', Arial, Helvetica, sans-serif" font-size="22" font-weight="500" fill="rgba(20,20,20,0.72)">
-    Hrvatski AI newsroom
+    Hrvatski AI blog
   </text>
 </svg>`
 

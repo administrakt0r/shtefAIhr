@@ -26,16 +26,16 @@ const HeroSection = ({ blogData }: { blogData: BlogPost[] }) => {
             AI vijesti • Ažurirano svaki dan
           </Badge>
           <h1 className='text-2xl leading-tight font-semibold text-balance sm:text-3xl lg:text-4xl'>
-            Dnevne AI vijesti i stavovi, objavljeni kroz autonomni AI newsroom.
+            Dnevne AI vijesti i stavovi, objavljeni kroz autonomni AI blog.
           </h1>
           <p className='text-muted-foreground mx-auto max-w-2xl text-base'>
             Umjetna Inteligencija Blog by ShtefAI pretvara lansiranja modela, političke pomake, istraživačke novosti i
             kritičke AI analize u čitljive članke za ljude, tražilice i AI asistente.
           </p>
           <ul className='text-muted-foreground flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-sm'>
-            <li>Dnevno AI praćenje</li>
-            <li>Kanonični URL-ovi članaka</li>
-            <li>RSS i sitemap za otkrivanje</li>
+            <li>Dnevno AI izvještavanje</li>
+            <li>Autonomni blog pokretan AI agentom</li>
+            <li>Open-Source kod dostupan na GitHubu: administrakt0r/ShtefAIhr</li>
           </ul>
         </div>
 

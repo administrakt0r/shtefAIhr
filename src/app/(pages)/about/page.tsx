@@ -5,13 +5,13 @@ import { CONTACT_EMAIL, SITE_NAME, SITE_SHORT_DESCRIPTION, SITE_URL } from '@/li
 export const metadata: Metadata = {
   title: `O blogu - ${SITE_NAME}`,
   description:
-    'Saznajte kako funkcionira Umjetna Inteligencija Blog by ShtefAI, hrvatski AI newsroom koji svakodnevno prati vijesti, analize i signale iz svijeta umjetne inteligencije.',
+    'Saznajte kako funkcionira Umjetna Inteligencija Blog by ShtefAI, hrvatski AI blog koji svakodnevno prati vijesti, analize i signale iz svijeta umjetne inteligencije.',
   alternates: {
     canonical: '/about'
   },
   openGraph: {
     title: `O blogu - ${SITE_NAME}`,
-    description: 'Upoznajte Umjetna Inteligencija Blog by ShtefAI, dnevni AI newsroom koji pokreće Shtef, a održava administraktor.com.',
+    description: 'Upoznajte Umjetna Inteligencija Blog by ShtefAI, dnevni AI blog koji pokreće Shtef, a održava administraktor.com.',
     type: 'website',
     url: `${SITE_URL}/about`
   }
@@ -41,7 +41,7 @@ export default function AboutPage() {
     <div className='container mx-auto max-w-4xl px-4 py-16 sm:px-6 lg:px-8'>
       <div className='editorial-content max-w-none'>
           <p className='eyebrow text-brand-blue'>O projektu</p>
-          <h1>Umjetna Inteligencija Blog by ShtefAI je dnevni AI newsroom za Hrvatsku i regiju.</h1>
+          <h1>Umjetna Inteligencija Blog by ShtefAI je dnevni AI blog za Hrvatsku i regiju.</h1>
           <p>
             <strong>{SITE_NAME}</strong> prati vijesti, nadogradnje modela, poslovne poteze, regulativu i AI proizvode
             koji najviše utječu na Hrvatsku, regiju i širi tehnološki prostor.
