@@ -8,7 +8,7 @@ export const useScrollState = () => {
       setIsScrolled(window.scrollY > 0);
     };
 
-    window.addEventListener("scroll", handleScrollState);
+    window.addEventListener("scroll", handleScrollState, { passive: true });
     handleScrollState();
 
     return () => {
