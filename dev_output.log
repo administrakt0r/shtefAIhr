@@ -1,0 +1,31 @@
+
+> umjetnainteligencijablog@1.1.0 predev /app
+> pnpm generate:derived
+
+
+> umjetnainteligencijablog@1.1.0 generate:derived /app
+> pnpm generate:post-images && pnpm generate:rss
+
+
+> umjetnainteligencijablog@1.1.0 generate:post-images /app
+> node scripts/generate-post-images.mjs
+
+file:///app/scripts/load-blog-data.mjs:32
+      throw new Error(`Unsupported import while loading derived data: ${specifier}`)
+      ^
+
+Error: Unsupported import while loading derived data: @/lib/blog
+    at require (file:///app/scripts/load-blog-data.mjs:32:13)
+    at blog-posts.js:4:16
+    at Script.runInContext (node:vm:149:12)
+    at Script.runInNewContext (node:vm:154:17)
+    at Object.runInNewContext (node:vm:310:38)
+    at executeCommonJsModule (file:///app/scripts/load-blog-data.mjs:36:6)
+    at loadBlogPosts (file:///app/scripts/load-blog-data.mjs:44:19)
+    at async generatePostImages (file:///app/scripts/generate-post-images.mjs:200:21)
+    at async file:///app/scripts/generate-post-images.mjs:233:1
+
+Node.js v22.22.1
+ ELIFECYCLE  Command failed with exit code 1.
+ ELIFECYCLE  Command failed with exit code 1.
+ ELIFECYCLE  Command failed with exit code 1.

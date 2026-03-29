@@ -13,6 +13,11 @@ interface DynamicTocProps {
   contentContainerId?: string
 }
 
+interface TocGroup {
+  main: TocItem
+  subs: TocItem[]
+}
+
 const normalizeHeadingId = (value: string) =>
   value
     .normalize('NFD')
@@ -21,7 +26,7 @@ const normalizeHeadingId = (value: string) =>
     .replace(/[^\w\s-]/g, '')
     .replace(/\s+/g, '-')
 
-export const DynamicToc = ({ contentContainerId = 'content' }: DynamicTocProps) => {
+function useDynamicToc(contentContainerId: string) {
   const [tocItems, setTocItems] = useState<TocItem[]>([])
   const [activeId, setActiveId] = useState<string>('')
 
@@ -109,15 +114,14 @@ export const DynamicToc = ({ contentContainerId = 'content' }: DynamicTocProps) 
     }
   }
 
-  if (tocItems.length === 0) {
-    return null
-  }
+  return { tocItems, activeId, handleClick }
+}
 
-  // Group items: create structure where h2 items have their following h3 items
-  const groupedItems: Array<{ main: TocItem; subs: TocItem[] }> = []
-  let currentGroup: { main: TocItem; subs: TocItem[] } | null = null
+const groupTocItems = (items: TocItem[]): TocGroup[] => {
+  const groupedItems: TocGroup[] = []
+  let currentGroup: TocGroup | null = null
 
-  tocItems.forEach(item => {
+  items.forEach(item => {
     if (item.level === 2) {
       // This is a main title, start a new group
       if (currentGroup) {
@@ -136,6 +140,44 @@ export const DynamicToc = ({ contentContainerId = 'content' }: DynamicTocProps) 
     groupedItems.push(currentGroup)
   }
 
+  return groupedItems
+}
+
+interface TocItemButtonProps {
+  id: string
+  title: string
+  isActive: boolean
+  onClick: (id: string) => void
+}
+
+const TocItemButton = ({ id, title, isActive, onClick }: TocItemButtonProps) => (
+  <button
+    type='button'
+    onClick={() => onClick(id)}
+    className={`flex items-start gap-2 text-left transition-colors ${
+      isActive
+        ? 'text-foreground font-medium'
+        : 'text-muted-foreground hover:text-foreground'
+    }`}
+  >
+    <span
+      className={`mt-2.5 inline-block h-0.5 w-3 shrink-0 transition-colors ${
+        isActive ? 'bg-primary' : 'bg-primary/40'
+      }`}
+    ></span>
+    <span>{title}</span>
+  </button>
+)
+
+export const DynamicToc = ({ contentContainerId = 'content' }: DynamicTocProps) => {
+  const { tocItems, activeId, handleClick } = useDynamicToc(contentContainerId)
+
+  if (tocItems.length === 0) {
+    return null
+  }
+
+  const groupedItems = groupTocItems(tocItems)
+
   return (
     <div className='sticky top-24'>
       <h3 className='mb-3.5 text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-brand-blue'>Sadržaj objave</h3>
@@ -143,44 +185,24 @@ export const DynamicToc = ({ contentContainerId = 'content' }: DynamicTocProps) 
         <ul className='space-y-3'>
           {groupedItems.map((group, groupIndex) => (
             <li key={`toc-group-${group.main.id}-${groupIndex}`}>
-              <button
-                type='button'
-                onClick={() => handleClick(group.main.id)}
-                className={`flex items-start gap-2 text-left transition-colors ${
-                  activeId === group.main.id
-                    ? 'text-foreground font-medium'
-                    : 'text-muted-foreground hover:text-foreground'
-                }`}
-              >
-                <span
-                  className={`mt-2.5 inline-block h-0.5 w-3 shrink-0 transition-colors ${
-                    activeId === group.main.id ? 'bg-primary' : 'bg-primary/40'
-                  }`}
-                ></span>
-                <span>{group.main.title}</span>
-              </button>
+              <TocItemButton
+                id={group.main.id}
+                title={group.main.title}
+                isActive={activeId === group.main.id}
+                onClick={handleClick}
+              />
 
               {/* Nested subtitles */}
               {group.subs.length > 0 && (
                 <ul className='mt-3 ml-5 space-y-3'>
                   {group.subs.map((subtitle, subIndex) => (
                     <li key={`toc-sub-${subtitle.id}-${groupIndex}-${subIndex}`}>
-                      <button
-                        type='button'
-                        onClick={() => handleClick(subtitle.id)}
-                        className={`flex items-start gap-2 text-left transition-colors ${
-                          activeId === subtitle.id
-                            ? 'text-foreground font-medium'
-                            : 'text-muted-foreground hover:text-foreground'
-                        }`}
-                      >
-                        <span
-                          className={`mt-2.5 inline-block h-0.5 w-3 shrink-0 transition-colors ${
-                            activeId === subtitle.id ? 'bg-primary' : 'bg-primary/40'
-                          }`}
-                        ></span>
-                        <span>{subtitle.title}</span>
-                      </button>
+                      <TocItemButton
+                        id={subtitle.id}
+                        title={subtitle.title}
+                        isActive={activeId === subtitle.id}
+                        onClick={handleClick}
+                      />
                     </li>
                   ))}
                 </ul>
