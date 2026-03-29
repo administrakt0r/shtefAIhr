@@ -22,18 +22,52 @@ const compileModule = async filePath => {
   }).outputText
 }
 
-const executeCommonJsModule = (compiled, filename, customRequires = {}) => {
+const normalizeSpecifier = specifier =>
+  specifier.replaceAll('\\', '/').replace(/\.(?:[cm]?js|tsx?)$/, '')
+
+const getEquivalentSpecifiers = specifier => {
+  const normalized = normalizeSpecifier(specifier)
+  const equivalents = new Set([normalized])
+
+  if (normalized === '@/lib/blog' || normalized.endsWith('/lib/blog')) {
+    equivalents.add('@/lib/blog')
+    equivalents.add('@/lib/blog.ts')
+    equivalents.add('../lib/blog')
+    equivalents.add('../lib/blog.ts')
+    equivalents.add('./lib/blog')
+    equivalents.add('./lib/blog.ts')
+  }
+
+  return [...equivalents].map(normalizeSpecifier)
+}
+
+export const executeCommonJsModule = (compiled, filename, customRequires = {}) => {
   const cjsModule = { exports: {} }
+
+  const normalizedRequires = Object.entries(customRequires).reduce(
+    (accumulator, [specifier, value]) => {
+      for (const equivalent of getEquivalentSpecifiers(specifier)) {
+        accumulator[equivalent] = value
+      }
+
+      return accumulator
+    },
+    {}
+  )
 
   const sandbox = {
     exports: cjsModule.exports,
     module: cjsModule,
     require: specifier => {
-      if (customRequires[specifier]) {
-        return customRequires[specifier]
+      const normalizedSpecifier = normalizeSpecifier(specifier)
+
+      if (normalizedRequires[normalizedSpecifier]) {
+        return normalizedRequires[normalizedSpecifier]
       }
 
-      throw new Error(`Unsupported import while loading derived data: ${specifier}`)
+      throw new Error(
+        `Unsupported import while loading derived data in ${filename}: ${specifier} (normalized: ${normalizedSpecifier})`
+      )
     }
   }
 
