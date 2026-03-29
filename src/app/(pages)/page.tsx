@@ -8,7 +8,6 @@ import {
   SITE_APP_ICON_192_PATH,
   SITE_LANGUAGE_TAG,
   SITE_NAME,
-  SITE_SHORT_DESCRIPTION,
   SITE_URL,
 } from "@/lib/site";
 
