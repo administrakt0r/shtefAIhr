@@ -2,14 +2,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRightIcon, CalendarDaysIcon } from "lucide-react";
 
-import type { BlogPost } from "@/lib/blog";
-import { comparePostsByPublishedAt, formatPostDisplayDate } from "@/lib/blog";
+import type { BlogPost } from '@/lib/blog'
+import { formatPostDisplayDate } from '@/lib/blog'
 
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 
 const HeroSection = ({ blogData }: { blogData: BlogPost[] }) => {
-  const latestPosts = [...blogData].sort(comparePostsByPublishedAt).slice(0, 3);
+  const latestPosts = blogData.slice(0, 3)
 
   return (
     <section id="home" className="bg-muted -mt-16 pt-28 pb-8 sm:pb-10">

@@ -1,4 +1,4 @@
-import { blogPosts, sortedBlogPosts } from "@/assets/data/blog-posts";
+import { sortedBlogPosts } from '@/assets/data/blog-posts'
 
 import HeroSection from "@/components/blocks/hero-section/hero-section";
 import Blog from "@/components/blocks/blog-component/blog-component";
@@ -108,7 +108,7 @@ const Home = () => {
 const Home = () => {
   return (
     <div>
-      <HeroSection blogData={blogPosts} />
+      <HeroSection blogData={sortedBlogPosts} />
       <Blog />
       <section
         className="border-t py-12 sm:py-16"

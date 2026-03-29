@@ -13,12 +13,8 @@ import {
   XIcon,
 } from "lucide-react";
 
-import { blogPosts } from "@/assets/data/blog-posts";
-import {
-  comparePostsByPublishedAt,
-  formatPostDisplayDate,
-  type BlogPost,
-} from "@/lib/blog";
+import { sortedBlogPosts } from '@/assets/data/blog-posts'
+import { formatPostDisplayDate, type BlogPost } from '@/lib/blog'
 
 import {
   Breadcrumb,
@@ -26,24 +22,21 @@ import {
   BreadcrumbLink,
   BreadcrumbList,
   BreadcrumbPage,
-  BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
+  BreadcrumbSeparator
+} from '@/components/ui/breadcrumb'
+import { Badge } from '@/components/ui/badge'
+import { Button } from '@/components/ui/button'
+import { Card, CardContent } from '@/components/ui/card'
+import { Input } from '@/components/ui/input'
+import { Label } from '@/components/ui/label'
+import { ScrollArea, ScrollBar } from '@/components/ui/scroll-area'
 
-const getAvailableBlogPosts = () => blogPosts;
+const allCategoryLabel = 'Sve'
+const nonFeaturedPosts = sortedBlogPosts.filter(post => !post.featured)
+const uniqueCategories = [...new Set(nonFeaturedPosts.map(post => post.category))]
+const categories = [allCategoryLabel, ...uniqueCategories.sort()]
 
-const BlogGrid = ({
-  posts,
-  onCategoryClick,
-}: {
-  posts: BlogPost[];
-  onCategoryClick: (category: string) => void;
-}) => {
+const BlogGrid = ({ posts, onCategoryClick }: { posts: BlogPost[]; onCategoryClick: (category: string) => void }) => {
   return (
     <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
       {posts.map((post) => (
@@ -291,29 +284,14 @@ const BlogPagination = ({
 }
 
 const Blog = () => {
-  const allCategoryLabel = "Sve";
-  const [selectedTab, setSelectedTab] = useState(allCategoryLabel);
-  const [searchQuery, setSearchQuery] = useState("");
-  const [currentPage, setCurrentPage] = useState(1);
-  const POSTS_PER_PAGE = 9;
+  const [selectedTab, setSelectedTab] = useState(allCategoryLabel)
+  const [searchQuery, setSearchQuery] = useState('')
+  const [currentPage, setCurrentPage] = useState(1)
+  const POSTS_PER_PAGE = 9
 
-  const availableBlogPosts = getAvailableBlogPosts();
-
-  const nonFeaturedPosts = availableBlogPosts
-    .filter((post) => !post.featured)
-    .sort(comparePostsByPublishedAt);
-
-  const uniqueCategories = [
-    ...new Set(nonFeaturedPosts.map((post) => post.category)),
-  ];
-
-  const categories = [allCategoryLabel, ...uniqueCategories.sort()];
-
-  const filteredPosts = nonFeaturedPosts.filter((post) => {
-    const matchesCategory =
-      selectedTab === allCategoryLabel || post.category === selectedTab;
-
-    const normalizedQuery = searchQuery.trim().toLowerCase();
+  const filteredPosts = nonFeaturedPosts.filter(post => {
+    const matchesCategory = selectedTab === allCategoryLabel || post.category === selectedTab
+    const normalizedQuery = searchQuery.trim().toLowerCase()
 
     if (!normalizedQuery) {
       return matchesCategory;
