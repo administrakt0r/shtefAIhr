@@ -7,7 +7,7 @@ const NEWS = "AI vijesti" as const;
 
 export const getPostImagePath = (slug: string) => `/images/posts/${slug}.png`;
 
-const slugifyCroatian = (value: string) =>
+export const slugifyCroatian = (value: string) =>
   value
     .trim()
     .toLowerCase()
