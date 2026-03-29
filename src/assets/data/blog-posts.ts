@@ -4,6 +4,7 @@ const DEFAULT_AUTHOR = "Shtef";
 const DEFAULT_AVATAR = "/images/avatars/1.webp";
 
 const NEWS = "AI vijesti" as const;
+const ANALYSIS = "Analiza" as const;
 
 export const getPostImagePath = (slug: string) => `/images/posts/${slug}.png`;
 
@@ -47,6 +48,18 @@ const createPost = (post: SourcePost): BlogPost => {
 };
 
 export const blogPosts: BlogPost[] = [
+  createPost({
+    id: 2,
+    slug: "zasto-je-agi-obicna-distrakcija-od-stvarnih-problema",
+    title: "Zašto je AGI obična distrakcija od stvarnih problema",
+    description:
+      "Opsesija umjetnom općom inteligencijom (AGI) skreće pozornost s ključnih problema današnjih modela, poput pouzdanosti, sigurnosti i stvarne primjenjivosti.",
+    imageAlt: "Ilustracija uz članak: Zašto je AGI obična distrakcija od stvarnih problema",
+    publishedOn: "2026-03-29",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
   createPost({
     id: 1,
     slug: "google-predstavlja-gemini-3-1-flash-live-za-glasovni-ai",
