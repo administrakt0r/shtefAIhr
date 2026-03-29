@@ -1,26 +1,29 @@
-import { type BlogPost, comparePostsByPublishedAt } from '@/lib/blog'
+import { type BlogPost, comparePostsByPublishedAt } from "@/lib/blog";
 
-const DEFAULT_AUTHOR = 'Shtef'
-const DEFAULT_AVATAR = '/images/avatars/1.webp'
+const DEFAULT_AUTHOR = "Shtef";
+const DEFAULT_AVATAR = "/images/avatars/1.webp";
 
-const NEWS = 'AI vijesti' as const
+const NEWS = "AI vijesti" as const;
 
-export const getPostImagePath = (slug: string) => `/images/posts/${slug}.png`
+export const getPostImagePath = (slug: string) => `/images/posts/${slug}.png`;
 
 const slugifyCroatian = (value: string) =>
   value
     .trim()
     .toLowerCase()
-    .replaceAll('đ', 'dj')
-    .normalize('NFKD')
-    .replaceAll(/[\u0300-\u036f]/g, '')
-    .replaceAll(/[^a-z0-9]+/g, '-')
-    .replaceAll(/^-+|-+$/g, '')
-    .replaceAll(/-{2,}/g, '-')
+    .replaceAll("đ", "dj")
+    .normalize("NFKD")
+    .replaceAll(/[\u0300-\u036f]/g, "")
+    .replaceAll(/[^a-z0-9]+/g, "-")
+    .replaceAll(/^-+|-+$/g, "")
+    .replaceAll(/-{2,}/g, "-");
 
-type SourcePost = Omit<BlogPost, 'author' | 'avatarUrl' | 'imageUrl' | 'slug' | 'contentSlug'> & {
-  slug: string
-} & Partial<Pick<BlogPost, 'author' | 'avatarUrl' | 'imageUrl'>>
+type SourcePost = Omit<
+  BlogPost,
+  "author" | "avatarUrl" | "imageUrl" | "slug" | "contentSlug"
+> & {
+  slug: string;
+} & Partial<Pick<BlogPost, "author" | "avatarUrl" | "imageUrl">>;
 
 const createPost = (post: SourcePost): BlogPost => {
   const {
@@ -29,9 +32,9 @@ const createPost = (post: SourcePost): BlogPost => {
     avatarUrl = DEFAULT_AVATAR,
     imageUrl,
     ...rest
-  } = post
+  } = post;
 
-  const slug = slugifyCroatian(post.title)
+  const slug = slugifyCroatian(post.title);
 
   return {
     author,
@@ -39,24 +42,25 @@ const createPost = (post: SourcePost): BlogPost => {
     contentSlug,
     slug,
     imageUrl: imageUrl ?? getPostImagePath(slug),
-    ...rest
-  }
-}
+    ...rest,
+  };
+};
 
 export const blogPosts: BlogPost[] = [
   createPost({
     id: 1,
-    slug: 'google-predstavlja-gemini-3-1-flash-live-za-glasovni-ai',
-    title: 'Google predstavlja Gemini 3.1 Flash Live za glasovni AI',
+    slug: "google-predstavlja-gemini-3-1-flash-live-za-glasovni-ai",
+    title: "Google predstavlja Gemini 3.1 Flash Live za glasovni AI",
     description:
-      'Novi Googleov audio model ubrzava razgovor s AI-jem, bolje prati ton govora i cilja agente koji moraju pouzdano odraditi složenije zadatke.',
-    imageAlt: 'Ilustracija uz članak: Google predstavlja Gemini 3.1 Flash Live za glasovni AI',
-    publishedOn: '2026-03-28',
+      "Novi Googleov audio model ubrzava razgovor s AI-jem, bolje prati ton govora i cilja agente koji moraju pouzdano odraditi složenije zadatke.",
+    imageAlt:
+      "Ilustracija uz članak: Google predstavlja Gemini 3.1 Flash Live za glasovni AI",
+    publishedOn: "2026-03-28",
     category: NEWS,
     readTime: 3,
-    featured: false
-  })
-]
+    featured: false,
+  }),
+];
 
 export const assertUniqueSlugs = (posts: BlogPost[]) => {
   const postSlugs = new Set<string>()
