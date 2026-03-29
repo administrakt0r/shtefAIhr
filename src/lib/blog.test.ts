@@ -37,20 +37,16 @@ describe('blog utility functions', () => {
     publishedTime: '08:00',
   } as BlogPost;
 
-  const mockPost5 = {
-    id: 5,
-    publishedOn: '2023-10-14',
-    publishedTime: '14:30',
-  } as BlogPost;
-
   describe('getPostMachineDate', () => {
     it('returns correct Date object with publishedTime', () => {
       const date = getPostMachineDate(mockPost1);
+
       assert.equal(date.getTime(), new Date(Date.UTC(2023, 9, 15, 14, 30)).getTime());
     });
 
     it('returns correct Date object with default time when publishedTime is missing', () => {
       const date = getPostMachineDate(mockPost3);
+
       assert.equal(date.getTime(), new Date(Date.UTC(2023, 9, 15, 8, 0)).getTime());
     });
   });

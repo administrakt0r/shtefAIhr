@@ -32,6 +32,7 @@ const executeCommonJsModule = (compiled, filename, customRequires = {}) => {
       if (customRequires[specifier]) {
         return customRequires[specifier]
       }
+
       throw new Error(`Unsupported import while loading derived data: ${specifier}`)
     }
   }
@@ -61,6 +62,7 @@ export const loadBlogPosts = async () => {
 
   const filePath = path.join(rootDir, 'src', 'assets', 'data', 'blog-posts.ts')
   const compiled = await compileModule(filePath)
+
   const exports = executeCommonJsModule(compiled, 'blog-posts.js', {
     '@/lib/blog': blogUtils
   })

@@ -14,8 +14,8 @@ interface DynamicTocProps {
 }
 
 interface TocGroup {
-  main: TocItem
-  subs: TocItem[]
+  main: TocItem;
+  subs: TocItem[];
 }
 
 const normalizeHeadingId = (value: string) =>
@@ -26,9 +26,7 @@ const normalizeHeadingId = (value: string) =>
     .replace(/[^\w\s-]/g, "")
     .replace(/\s+/g, "-");
 
-export const DynamicToc = ({
-  contentContainerId = "content",
-}: DynamicTocProps) => {
+export const useDynamicToc = (contentContainerId: string = "content") => {
   const [tocItems, setTocItems] = useState<TocItem[]>([]);
   const [activeId, setActiveId] = useState<string>("");
 
@@ -119,70 +117,66 @@ export const DynamicToc = ({
     }
   };
 
-  if (tocItems.length === 0) {
-    return null;
-  }
+  return { tocItems, activeId, handleClick };
+};
 
-  // Group items: create structure where h2 items have their following h3 items
+export const groupTocItems = (tocItems: TocItem[]): TocGroup[] => {
   const groupedItems: Array<{ main: TocItem; subs: TocItem[] }> = [];
   let currentGroup: { main: TocItem; subs: TocItem[] } | null = null;
 
   tocItems.forEach((item) => {
     if (item.level === 2) {
-      // This is a main title, start a new group
       if (currentGroup) {
         groupedItems.push(currentGroup);
       }
 
       currentGroup = { main: item, subs: [] };
     } else if (item.level === 3 && currentGroup) {
-      // This is a subtitle, add to current group
       currentGroup.subs.push(item);
     }
   });
 
-  // Don't forget the last group
   if (currentGroup) {
     groupedItems.push(currentGroup);
   }
 
-  return groupedItems
-}
+  return groupedItems;
+};
 
 interface TocItemButtonProps {
-  id: string
-  title: string
-  isActive: boolean
-  onClick: (id: string) => void
+  id: string;
+  title: string;
+  isActive: boolean;
+  onClick: (id: string) => void;
 }
 
 const TocItemButton = ({ id, title, isActive, onClick }: TocItemButtonProps) => (
   <button
-    type='button'
+    type="button"
     onClick={() => onClick(id)}
     className={`flex items-start gap-2 text-left transition-colors ${
       isActive
-        ? 'text-foreground font-medium'
-        : 'text-muted-foreground hover:text-foreground'
+        ? "text-foreground font-medium"
+        : "text-muted-foreground hover:text-foreground"
     }`}
   >
     <span
       className={`mt-2.5 inline-block h-0.5 w-3 shrink-0 transition-colors ${
-        isActive ? 'bg-primary' : 'bg-primary/40'
+        isActive ? "bg-primary" : "bg-primary/40"
       }`}
     ></span>
     <span>{title}</span>
   </button>
-)
+);
 
-export const DynamicToc = ({ contentContainerId = 'content' }: DynamicTocProps) => {
-  const { tocItems, activeId, handleClick } = useDynamicToc(contentContainerId)
+export const DynamicToc = ({ contentContainerId = "content" }: DynamicTocProps) => {
+  const { tocItems, activeId, handleClick } = useDynamicToc(contentContainerId);
 
   if (tocItems.length === 0) {
-    return null
+    return null;
   }
 
-  const groupedItems = groupTocItems(tocItems)
+  const groupedItems = groupTocItems(tocItems);
 
   return (
     <div className="sticky top-24">
@@ -193,48 +187,24 @@ export const DynamicToc = ({ contentContainerId = 'content' }: DynamicTocProps) 
         <ul className="space-y-3">
           {groupedItems.map((group, groupIndex) => (
             <li key={`toc-group-${group.main.id}-${groupIndex}`}>
-              <button
-                type="button"
-                onClick={() => handleClick(group.main.id)}
-                className={`flex items-start gap-2 text-left transition-colors ${
-                  activeId === group.main.id
-                    ? "text-foreground font-medium"
-                    : "text-muted-foreground hover:text-foreground"
-                }`}
-              >
-                <span
-                  className={`mt-2.5 inline-block h-0.5 w-3 shrink-0 transition-colors ${
-                    activeId === group.main.id ? "bg-primary" : "bg-primary/40"
-                  }`}
-                ></span>
-                <span>{group.main.title}</span>
-              </button>
+              <TocItemButton
+                id={group.main.id}
+                title={group.main.title}
+                isActive={activeId === group.main.id}
+                onClick={handleClick}
+              />
 
               {/* Nested subtitles */}
               {group.subs.length > 0 && (
                 <ul className="mt-3 ml-5 space-y-3">
                   {group.subs.map((subtitle, subIndex) => (
-                    <li
-                      key={`toc-sub-${subtitle.id}-${groupIndex}-${subIndex}`}
-                    >
-                      <button
-                        type="button"
-                        onClick={() => handleClick(subtitle.id)}
-                        className={`flex items-start gap-2 text-left transition-colors ${
-                          activeId === subtitle.id
-                            ? "text-foreground font-medium"
-                            : "text-muted-foreground hover:text-foreground"
-                        }`}
-                      >
-                        <span
-                          className={`mt-2.5 inline-block h-0.5 w-3 shrink-0 transition-colors ${
-                            activeId === subtitle.id
-                              ? "bg-primary"
-                              : "bg-primary/40"
-                          }`}
-                        ></span>
-                        <span>{subtitle.title}</span>
-                      </button>
+                    <li key={`toc-sub-${subtitle.id}-${groupIndex}-${subIndex}`}>
+                      <TocItemButton
+                        id={subtitle.id}
+                        title={subtitle.title}
+                        isActive={activeId === subtitle.id}
+                        onClick={handleClick}
+                      />
                     </li>
                   ))}
                 </ul>
