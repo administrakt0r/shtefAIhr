@@ -55,6 +55,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 2,
+    slug: 'bluesky-predstavlja-ai-aplikaciju-attie-za-prilagodene-feedove',
+    title: 'Bluesky predstavlja AI aplikaciju Attie za prilagođene feedove',
+    description: 'Nova aplikacija Attie koristi umjetnu inteligenciju kako bi korisnicima omogućila jednostavno kreiranje vlastitih prilagođenih feedova na atproto mreži.',
+    imageAlt: 'Ilustracija uz članak: Bluesky predstavlja AI aplikaciju Attie za prilagođene feedove',
+    publishedOn: '2026-03-29',
+    category: NEWS,
+    readTime: 3,
+    featured: false
   })
 ]
 
