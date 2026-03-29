@@ -1,0 +1,14 @@
+▲ Next.js 16.1.1 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.0.2:3000
+
+✓ Starting...
+Attention: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://nextjs.org/telemetry
+
+✓ Ready in 1270ms
+○ Compiling /blog-detail/[slug] ...
+ GET /blog-detail/google-predstavlja-gemini-3-1-flash-live-za-glasovni-ai 200 in 17.5s (compile: 14.1s, generate-params: 1719ms, render: 3.4s)
+ GET /blog-detail/google-predstavlja-gemini-3-1-flash-live-za-glasovni-ai 200 in 544ms (compile: 30ms, generate-params: 24ms, render: 513ms)

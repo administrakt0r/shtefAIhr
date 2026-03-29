@@ -40,7 +40,6 @@ const Home = () => {
         "@type": "WebSite",
         "@id": `${SITE_URL}#website`,
         name: SITE_NAME,
-        description: SITE_SHORT_DESCRIPTION,
         url: SITE_URL,
         inLanguage: SITE_LANGUAGE_TAG,
         publisher: {
@@ -106,6 +105,7 @@ const Home = () => {
     ],
   };
 
+const Home = () => {
   return (
     <div>
       <HeroSection blogData={blogPosts} />
