@@ -46,16 +46,21 @@ jobs:
           pr_json=''
           merge_state='UNKNOWN'
 
+          # GitHub can briefly report UNKNOWN or UNSTABLE immediately after a
+          # successful workflow_run before the PR becomes mergeable.
           for attempt in 1 2 3 4 5 6; do
             pr_json="$(gh pr view "$pr_number" --repo "$REPO" --json state,baseRefName,isDraft,mergeStateStatus,headRefName,headRefOid)"
             merge_state="$(printf '%s' "$pr_json" | jq -r '.mergeStateStatus')"
 
-            if [ "$merge_state" != "UNKNOWN" ]; then
-              break
-            fi
-
-            echo "mergeStateStatus is still UNKNOWN for #$pr_number (attempt $attempt)."
-            sleep 10
+            case "$merge_state" in
+              UNKNOWN|UNSTABLE)
+                echo "mergeStateStatus is still $merge_state for #$pr_number (attempt $attempt)."
+                sleep 10
+                ;;
+              *)
+                break
+                ;;
+            esac
           done
 
           state="$(printf '%s' "$pr_json" | jq -r '.state')"
