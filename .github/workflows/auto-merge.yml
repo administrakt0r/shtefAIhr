@@ -20,12 +20,21 @@ jobs:
     steps:
       - name: Merge eligible pull request
         env:
-          GH_TOKEN: ${{ github.token }}
+          AUTO_MERGE_TOKEN: ${{ secrets.AUTO_MERGE_TOKEN }}
+          FALLBACK_GITHUB_TOKEN: ${{ github.token }}
           REPO: ${{ github.repository }}
           RUN_HEAD_SHA: ${{ github.event.workflow_run.head_sha }}
           RUN_ID: ${{ github.event.workflow_run.id }}
         run: |
           set -euo pipefail
+
+          # Prefer a dedicated PAT because GitHub's workflow token can be
+          # blocked from merging PRs in private repositories.
+          if [ -n "${AUTO_MERGE_TOKEN:-}" ]; then
+            export GH_TOKEN="$AUTO_MERGE_TOKEN"
+          else
+            export GH_TOKEN="$FALLBACK_GITHUB_TOKEN"
+          fi
 
           pr_number="$(gh api "repos/$REPO/actions/runs/$RUN_ID" --jq '.pull_requests[0].number // empty')"
 
