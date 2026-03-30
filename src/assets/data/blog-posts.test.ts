@@ -1,7 +1,7 @@
 import { describe, it } from 'node:test';
 import assert from 'node:assert/strict';
 
-import { slugifyCroatian } from './blog-posts.ts';
+import { assertUniqueBlogPosts, slugifyCroatian } from './blog-posts.ts';
 
 describe('slugifyCroatian function', () => {
   it('handles basic lowercasing and trimming', () => {
@@ -61,6 +61,41 @@ describe('slugifyCroatian function', () => {
     assert.equal(
       slugifyCroatian('Zašto je đumbir dobar za zdravlje - top 10 razloga!'),
       'zasto-je-djumbir-dobar-za-zdravlje-top-10-razloga'
+    );
+  });
+});
+
+describe('assertUniqueBlogPosts', () => {
+  it('throws when ids are duplicated', () => {
+    assert.throws(
+      () =>
+        assertUniqueBlogPosts([
+          { id: 1, slug: 'a', contentSlug: 'a' },
+          { id: 1, slug: 'b', contentSlug: 'b' },
+        ] as never),
+      /Duplicate blog post id detected: 1/
+    );
+  });
+
+  it('throws when slugs are duplicated', () => {
+    assert.throws(
+      () =>
+        assertUniqueBlogPosts([
+          { id: 1, slug: 'a', contentSlug: 'a' },
+          { id: 2, slug: 'a', contentSlug: 'b' },
+        ] as never),
+      /Duplicate blog post slug detected: a/
+    );
+  });
+
+  it('throws when content slugs are duplicated', () => {
+    assert.throws(
+      () =>
+        assertUniqueBlogPosts([
+          { id: 1, slug: 'a', contentSlug: 'shared' },
+          { id: 2, slug: 'b', contentSlug: 'shared' },
+        ] as never),
+      /Duplicate blog post contentSlug detected: shared/
     );
   });
 });

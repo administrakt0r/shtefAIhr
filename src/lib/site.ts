@@ -1,5 +1,10 @@
+const previewSiteUrl = process.env.CF_PAGES_URL
+  ? `https://${process.env.CF_PAGES_URL}`
+  : undefined;
+
 export const SITE_URL =
   process.env.NEXT_PUBLIC_APP_URL ??
+  previewSiteUrl ??
   "https://umjetnainteligencijablog.pages.dev";
 
 export const SITE_NAME = "Umjetna Inteligencija Blog";

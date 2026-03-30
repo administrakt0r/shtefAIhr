@@ -6,11 +6,22 @@ interface TocItem {
   id: string;
   title: string;
   level: number;
-  icon?: string;
+}
+
+interface TocGroup {
+  main: TocItem;
+  subs: TocItem[];
 }
 
 interface DynamicTocProps {
   contentContainerId?: string;
+}
+
+interface TocItemButtonProps {
+  id: string;
+  title: string;
+  isActive: boolean;
+  onClick: (id: string) => void;
 }
 
 const normalizeHeadingId = (value: string) =>
@@ -40,7 +51,6 @@ export const useDynamicToc = (contentContainerId: string = "content") => {
 
         if (!title) return;
 
-        // Create or use existing ID
         let id = element.id;
 
         if (!id) {
@@ -48,7 +58,6 @@ export const useDynamicToc = (contentContainerId: string = "content") => {
           element.id = id;
         }
 
-        // Determine level based on tag name
         const level = element.tagName === "H2" ? 2 : 3;
 
         items.push({ id, title, level });
@@ -57,13 +66,11 @@ export const useDynamicToc = (contentContainerId: string = "content") => {
       return items;
     };
 
-    // Extract headings after a short delay to ensure content is rendered
     const timer = setTimeout(() => {
       const items = extractHeadings();
 
       setTocItems(items);
 
-      // Set initial active heading
       if (items.length > 0) {
         setActiveId(items[0].id);
       }
@@ -83,7 +90,7 @@ export const useDynamicToc = (contentContainerId: string = "content") => {
 
     const observerOptions = {
       root: null,
-      rootMargin: "-20% 0px -70% 0px", // Trigger when element is near top of viewport
+      rootMargin: "-20% 0px -70% 0px",
       threshold: 0,
     };
 
@@ -116,8 +123,8 @@ export const useDynamicToc = (contentContainerId: string = "content") => {
 };
 
 export const groupTocItems = (tocItems: TocItem[]): TocGroup[] => {
-  const groupedItems: Array<{ main: TocItem; subs: TocItem[] }> = [];
-  let currentGroup: { main: TocItem; subs: TocItem[] } | null = null;
+  const groupedItems: TocGroup[] = [];
+  let currentGroup: TocGroup | null = null;
 
   tocItems.forEach((item) => {
     if (item.level === 2) {
@@ -126,7 +133,11 @@ export const groupTocItems = (tocItems: TocItem[]): TocGroup[] => {
       }
 
       currentGroup = { main: item, subs: [] };
-    } else if (item.level === 3 && currentGroup) {
+
+      return;
+    }
+
+    if (item.level === 3 && currentGroup) {
       currentGroup.subs.push(item);
     }
   });
@@ -134,6 +145,44 @@ export const groupTocItems = (tocItems: TocItem[]): TocGroup[] => {
   if (currentGroup) {
     groupedItems.push(currentGroup);
   }
+
+  return groupedItems;
+};
+
+const TocItemButton = ({
+  id,
+  title,
+  isActive,
+  onClick,
+}: TocItemButtonProps) => (
+  <button
+    type="button"
+    onClick={() => onClick(id)}
+    className={`flex items-start gap-2 text-left transition-colors ${
+      isActive
+        ? "font-medium text-foreground"
+        : "text-muted-foreground hover:text-foreground"
+    }`}
+  >
+    <span
+      className={`mt-2.5 inline-block h-0.5 w-3 shrink-0 transition-colors ${
+        isActive ? "bg-primary" : "bg-primary/40"
+      }`}
+    />
+    <span>{title}</span>
+  </button>
+);
+
+export const DynamicToc = ({
+  contentContainerId = "content",
+}: DynamicTocProps) => {
+  const { tocItems, activeId, handleClick } = useDynamicToc(contentContainerId);
+
+  if (tocItems.length === 0) {
+    return null;
+  }
+
+  const groupedItems = groupTocItems(tocItems);
 
   return (
     <div className="sticky top-24">
@@ -151,8 +200,7 @@ export const groupTocItems = (tocItems: TocItem[]): TocGroup[] => {
                 onClick={handleClick}
               />
 
-              {/* Nested subtitles */}
-              {group.subs.length > 0 && (
+              {group.subs.length > 0 ? (
                 <ul className="mt-3 ml-5 space-y-3">
                   {group.subs.map((subtitle, subIndex) => (
                     <li key={`toc-sub-${subtitle.id}-${groupIndex}-${subIndex}`}>
@@ -165,7 +213,7 @@ export const groupTocItems = (tocItems: TocItem[]): TocGroup[] => {
                     </li>
                   ))}
                 </ul>
-              )}
+              ) : null}
             </li>
           ))}
         </ul>

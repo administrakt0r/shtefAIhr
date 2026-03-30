@@ -21,6 +21,8 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up pnpm
         uses: pnpm/action-setup@v4
@@ -36,11 +38,17 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
+      - name: Validate bot PR scope
+        run: pnpm validate:bot-pr
+
       - name: Run ESLint
         run: pnpm lint
 
       - name: Run type check
         run: pnpm check-types
+
+      - name: Run tests
+        run: pnpm test
 
       - name: Build site
         run: pnpm build

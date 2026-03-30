@@ -8,7 +8,6 @@ on:
       - completed
 
 permissions:
-  actions: write
   contents: write
   pull-requests: write
 
@@ -23,6 +22,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           REPO: ${{ github.repository }}
+          RUN_HEAD_SHA: ${{ github.event.workflow_run.head_sha }}
           RUN_ID: ${{ github.event.workflow_run.id }}
         run: |
           set -euo pipefail
@@ -34,12 +34,26 @@ jobs:
             exit 0
           fi
 
-          pr_json="$(gh pr view "$pr_number" --repo "$REPO" --json state,baseRefName,isDraft,mergeStateStatus)"
+          pr_json=''
+          merge_state='UNKNOWN'
+
+          for attempt in 1 2 3 4 5 6; do
+            pr_json="$(gh pr view "$pr_number" --repo "$REPO" --json state,baseRefName,isDraft,mergeStateStatus,headRefName,headRefOid)"
+            merge_state="$(printf '%s' "$pr_json" | jq -r '.mergeStateStatus')"
+
+            if [ "$merge_state" != "UNKNOWN" ]; then
+              break
+            fi
+
+            echo "mergeStateStatus is still UNKNOWN for #$pr_number (attempt $attempt)."
+            sleep 10
+          done
 
           state="$(printf '%s' "$pr_json" | jq -r '.state')"
           base_ref="$(printf '%s' "$pr_json" | jq -r '.baseRefName')"
           is_draft="$(printf '%s' "$pr_json" | jq -r '.isDraft')"
-          merge_state="$(printf '%s' "$pr_json" | jq -r '.mergeStateStatus')"
+          head_ref="$(printf '%s' "$pr_json" | jq -r '.headRefName')"
+          head_sha="$(printf '%s' "$pr_json" | jq -r '.headRefOid')"
 
           if [ "$state" != "OPEN" ]; then
             echo "Pull request #$pr_number is not open."
@@ -56,14 +70,17 @@ jobs:
             exit 0
           fi
 
-          protection_json="$(gh api "repos/$REPO/branches/main/protection" 2>/dev/null || true)"
-          if [ -z "$protection_json" ]; then
-            echo "Unable to confirm branch protection for main; skipping auto-merge."
-            exit 0
-          fi
+          case "$head_ref" in
+            post/*|opinion/*)
+              ;;
+            *)
+              echo "Pull request #$pr_number uses branch '$head_ref', which is not auto-merge eligible."
+              exit 0
+              ;;
+          esac
 
-          if ! printf '%s' "$protection_json" | jq -e '.required_status_checks.contexts // [] | index("PR Checks / Validate") != null' >/dev/null; then
-            echo "Branch protection for main does not require 'PR Checks / Validate'; skipping auto-merge."
+          if [ "$head_sha" != "$RUN_HEAD_SHA" ]; then
+            echo "Workflow run SHA $RUN_HEAD_SHA is stale for #$pr_number; current PR head is $head_sha."
             exit 0
           fi
 
@@ -71,8 +88,6 @@ jobs:
             CLEAN|HAS_HOOKS)
               ;;
             *)
-              # Reject UNSTABLE and every non-clean state to prevent race conditions and
-              # premature merges that should instead require manual intervention.
               echo "Current merge_state for #$pr_number: $merge_state"
               echo "Exiting without merge because merge_state is not clean."
               exit 0
@@ -80,4 +95,3 @@ jobs:
           esac
 
           gh pr merge "$pr_number" --repo "$REPO" --squash --delete-branch
-          gh workflow run deploy-pages.yml --repo "$REPO" --ref main

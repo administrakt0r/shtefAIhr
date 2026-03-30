@@ -92,7 +92,7 @@ const PostNavigation = ({
   currentPost: (typeof blogPosts)[0];
 }) => {
   const currentIndex = sortedBlogPosts.findIndex(
-    (post) => post.id === currentPost.id,
+    (post) => post.slug === currentPost.slug,
   );
 
   const newerPost = currentIndex > 0 ? sortedBlogPosts[currentIndex - 1] : null;

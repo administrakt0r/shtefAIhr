@@ -40,7 +40,7 @@ const Blog = ({ blogPosts = allBlogPosts.slice(0, 3) }: BlogProps) => {
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {blogPosts.map((post) => (
             <Card
-              key={post.id}
+              key={post.slug}
               className="group h-full overflow-hidden border-border/75 bg-card/95 py-0 shadow-sm shadow-brand-blue/5 transition-all duration-300 hover:-translate-y-1 hover:border-brand-blue/25 hover:shadow-lg hover:shadow-brand-blue/10"
             >
               <CardContent className="flex h-full flex-col gap-4 px-5 py-5">
