@@ -138,6 +138,19 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false,
   }),
+  createPost({
+    id: 8,
+    slug: "google-ubrzava-pripreme-za-q-day",
+    title: "Google ubrzava pripreme za Q Day na 2029. godinu",
+    description:
+      "Google je značajno skratio rok za pripremu na Q Day, najavljujući integraciju post-kvantne kriptografije u Android do 2029. godine.",
+    imageAlt:
+      "Ilustracija uz članak: Google ubrzava pripreme za Q Day na 2029. godinu",
+    publishedOn: "2026-03-30",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (

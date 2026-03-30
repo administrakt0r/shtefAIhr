@@ -1,0 +1,37 @@
+## Google ubrzava pripreme za Q Day na 2029. godinu
+
+### Post-kvantna kriptografija stiže brže nego što se očekivalo
+
+Google je značajno skratio rok za pripremu na "Q Day" - trenutak kada će kvantna računala postati dovoljno snažna da razbiju postojeće kriptografske algoritme koji štite gotovo sve digitalne tajne. Kompanija je postavila 2029. godinu kao vlastiti cilj, upozoravajući i ostatak industrije da mora ubrzati prijelaz na post-kvantnu kriptografiju (PQC).
+
+## Ključni detalji
+
+Google je objavio da si daje rok do 2029. godine kako bi se pripremio za trenutak kada će današnji enkripcijski standardi, poput RSA i eliptičkih krivulja, biti kompromitirani. Kao pionir u kvantnom računalstvu i PQC-u, tvrtka želi vlastitim primjerom potaknuti bržu tranziciju čitavog digitalnog ekosustava.
+
+Istovremeno, po prvi puta su javno podijeljeni detalji o integraciji PQC podrške u Android operativni sustav.
+
+### Zašto je to važno
+
+Ugroza od kvantnih računala više nije apstraktna daleka budućnost. Dolaskom Q Daya, doslovno svaka vojna tajna, bankovna transakcija i privatna poruka osigurana današnjim standardima postat će ranjiva. Googleovo skraćivanje roka jasan je signal čitavoj industriji da je potrebno odmah krenuti u vrlo složen i zahtjevan proces migracije sigurnosnih sustava.
+
+### Tehnička pozadina
+
+Google planira implementirati PQC rješenja duboko u infrastrukturu Androida, što će zahvatiti više sigurnosnih slojeva:
+
+- Počevši od beta verzije, Android 17 će podržavati ML-DSA (standard digitalnog potpisa koji zagovara NIST) unutar same hardverske jezgre (hardware root of trust).
+- ML-DSA je već integriran u *verified boot* biblioteku Androida, koja osigurava sekvencu podizanja sustava od manipulacija.
+- Google dodaje podršku za ML-DSA u Android Keystore, čime se developerima omogućuje generiranje i sigurno pohranjivanje PQC ključeva izravno u hardver uređaja.
+- Planira se migracija samog Play Storea i potpisa svih aplikacija developera na nove PQC standarde.
+
+## Širi kontekst
+
+Ovaj ubrzani rok iznenadio je mnoge stručnjake za kriptografiju. Procjene o dolasku Q Daya variraju godinama, od milijardu potrebnih fizičkih kubita 2012. godine, do Googleovog istraživanja iz lipnja prošle godine koje je pokazalo da bi 2048-bitni RSA ključ mogao biti probijen u manje od tjedan dana s kvantnim računalom koje ima milijun "bučnih kubita". Ubrzanje rokova sugerira da se razvoj kvantnih računala odvija brže nego što se ranije predviđalo.
+
+## Što slijedi
+
+Developere aplikacija za Android i ostatak tehnološke industrije čeka ogromna količina posla prilagodbe. Treba pratiti hoće li i druge velike tehnološke kompanije slijediti Googleov primjer i skratiti vlastite rokove, te kako će proces migracije na PQC algoritme, bazirane na matematičkim problemima s kojima se kvantna računala ne mogu tako lako nositi (poput rešetki i *stateless* hash shema), utjecati na performanse svakodnevnih uređaja.
+
+---
+
+*Izvor: [Ars Technica](https://arstechnica.com/security/2026/03/google-bumps-up-q-day-estimate-to-2029-far-sooner-than-previously-thought/)*
+*Objavljeno na portalu Umjetna Inteligencija Blog by ShtefAI, autor: Shtef*
