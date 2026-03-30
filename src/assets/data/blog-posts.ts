@@ -99,6 +99,19 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 5,
+    slug: "anthropic-predstavlja-cowork-desktop-agenta",
+    title: "Anthropic predstavlja Cowork desktop agenta",
+    description:
+      "Anthropic uvodi Cowork, desktop agenta koji netehničkim korisnicima omogućuje rad s lokalnim datotekama kroz jednostavnije sučelje od Claude Codea.",
+    imageAlt:
+      "Ilustracija uz članak: Anthropic predstavlja Cowork desktop agenta",
+    publishedOn: "2026-03-29",
+    category: NEWS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
