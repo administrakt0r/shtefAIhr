@@ -94,4 +94,16 @@ jobs:
               ;;
           esac
 
-          gh pr merge "$pr_number" --repo "$REPO" --squash --delete-branch
+          gh api \
+            --method PUT \
+            -H "Accept: application/vnd.github+json" \
+            "repos/$REPO/pulls/$pr_number/merge" \
+            -f merge_method='squash' \
+            -f sha="$head_sha"
+
+          if ! gh api \
+            --method DELETE \
+            -H "Accept: application/vnd.github+json" \
+            "repos/$REPO/git/refs/heads/$head_ref" >/dev/null 2>&1; then
+            echo "Merged #$pr_number, but branch deletion was skipped."
+          fi
