@@ -12,6 +12,7 @@
     "prebuild": "pnpm generate:derived",
     "build": "next build",
     "start": "next start",
+    "validate:bot-pr": "node scripts/validate-bot-pr.mjs",
     "lint": "eslint src scripts next.config.ts postcss.config.mjs",
     "lint:fix": "eslint src scripts next.config.ts postcss.config.mjs --fix",
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",

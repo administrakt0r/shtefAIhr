@@ -41,7 +41,7 @@ const BlogGrid = ({ posts, onCategoryClick }: { posts: BlogPost[]; onCategoryCli
     <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
       {posts.map((post) => (
         <Card
-          key={post.id}
+          key={post.slug}
           className="group h-full cursor-pointer overflow-hidden shadow-none transition-all duration-300"
         >
           <CardContent className="space-y-3.5">

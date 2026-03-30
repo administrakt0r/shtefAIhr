@@ -11,7 +11,7 @@ describe('executeCommonJsModule', () => {
       {
         '@/lib/blog': { loadBlogPosts: () => [] },
       }
-    );
+    ) as { loadBlogPosts: () => [] };
 
     assert.equal(typeof exports.loadBlogPosts, 'function');
   });

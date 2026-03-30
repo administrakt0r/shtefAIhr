@@ -1,10 +1,12 @@
-name: Deploy to Cloudflare Pages
+name: Manual Cloudflare Pages Fallback Deploy
 
 on:
-  push:
-    branches:
-      - main
   workflow_dispatch:
+    inputs:
+      ref:
+        description: Git ref to deploy directly with Wrangler as a fallback
+        required: false
+        default: main
 
 permissions:
   contents: read
@@ -26,6 +28,8 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.ref }}
 
       - name: Set up pnpm
         uses: pnpm/action-setup@v4
