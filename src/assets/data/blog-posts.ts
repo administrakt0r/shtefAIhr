@@ -112,6 +112,19 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 6,
+    slug: "gasenje-sore-otrijeznjenje-za-ai-video",
+    title: "Gašenje Sore moglo bi biti trenutak otriježnjenja za AI video",
+    description:
+      "Gašenje Sore pokazuje koliko je teško pretvoriti generativni video u održiv proizvod, čak i kada iza njega stoji OpenAI.",
+    imageAlt:
+      "Ilustracija uz članak: Gašenje Sore moglo bi biti trenutak otriježnjenja za AI video",
+    publishedOn: "2026-03-30",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
