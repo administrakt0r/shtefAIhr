@@ -86,6 +86,19 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false,
   }),
+  createPost({
+    id: 3,
+    slug: "hype-oko-ai-agenata-ne-prati-stvarnost",
+    title: "Hype oko AI agenata još uvijek ne prati stvarnost",
+    description:
+      "Unatoč obećanjima o potpuno autonomnim sustavima, pravi razvojni proces s AI agentima i dalje zahtijeva intenzivan nadzor i rješavanje rubnih slučajeva.",
+    imageAlt:
+      "Ilustracija uz članak: Hype oko AI agenata još uvijek ne prati stvarnost",
+    publishedOn: "2026-03-30",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 export const assertUniqueSlugs = (posts: BlogPost[]) => {
