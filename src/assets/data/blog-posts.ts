@@ -151,6 +151,19 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false,
   }),
+  createPost({
+    id: 9,
+    slug: "github-povlaci-reklame-iz-copilot-pull-requestova",
+    title: "GitHub povlači reklame iz Copilot pull requestova nakon pritužbi",
+    description:
+      "Nakon burnih reakcija korisnika, GitHub je onemogućio funkcionalnost kojom je AI alat Copilot umetao reklamne poruke u pull requestove drugih developera.",
+    imageAlt:
+      "Ilustracija uz članak: GitHub povlači reklame iz Copilot pull requestova",
+    publishedOn: "2026-03-31",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
