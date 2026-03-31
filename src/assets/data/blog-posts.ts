@@ -177,6 +177,19 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 11,
+    slug: "ai-ne-donosi-novu-kreativnost-vec-masovnu-prosjecnost",
+    title: "AI ne donosi novu kreativnost, već masovnu prosječnost",
+    description:
+      "Generativni alati obećavali su renesansu mašte, ali zapravo stvaraju beskrajno more predvidljivog i osrednjeg sadržaja na uštrb prave ljudske inovacije.",
+    imageAlt:
+      "Ilustracija uz članak: AI ne donosi novu kreativnost, već masovnu prosječnost",
+    publishedOn: "2026-03-31",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
