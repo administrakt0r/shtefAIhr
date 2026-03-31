@@ -1,0 +1,36 @@
+## GitHub povlači reklame iz Copilot pull requestova na platformi
+
+### Burna reakcija developera na neočekivane AI "savjete"
+
+Microsoftov GitHub napravio je brzi zaokret nakon što su se brojni developeri pobunili protiv nedavne promjene. Korisnici su primijetili da AI alat Copilot samostalno umeće reklamne poruke u njihove pull requestove bez prethodnog upozorenja.
+
+## Ključni detalji
+
+Australski developer Zach Manson prvi je podigao uzbunu kada je zatražio od Copilota da ispravi tipfeler u njegovom kodu. Uz ispravak, Copilot je u pull request dodao i preporuku za instalaciju aplikacije za produktivnost Raycast, popraćenu poveznicom i emotikonom. Nakon njegovog otkrića, pretragom GitHuba pronađeno je više od 11,400 pull requestova s identičnim "savjetom".
+
+Zanimljivo je da su ovi savjeti dodavani čak i u pull requestove koje su napisali ljudi, a gdje je Copilot bio samo pozvan u komentarima. Mnogi su isprva mislili da se radi o trovanju podataka za treniranje ili složenom prompt injection napadu, no ispostavilo se da je riječ o namjernoj funkcionalnosti.
+
+### Zašto je to važno
+
+Umetanje reklama ili "savjeta" u privatne radne procese developera ozbiljno narušava povjerenje u AI alate. Developeri očekuju da asistenti u pisanju koda strogo prate upute, a ne da samovoljno mijenjaju opise i komentare na njihovom kodu, pogotovo kada te promjene promoviraju alate trećih strana.
+
+### Tehnička pozadina
+
+Ova situacija nastala je zbog namjernog ažuriranja koje je pošlo po zlu.
+
+- Funkcionalnost je trebala pomoći developerima da nauče nove načine korištenja AI agenata.
+- Značajka je aktivirana za sve pull requestove koji su na bilo koji način spomenuli Copilot, čak i ako ih model nije sam generirao.
+- Otkriven je problem u programskoj logici zbog kojeg su se "savjeti" agenta pojavljivali u pogrešnom kontekstu unutar komentara.
+
+## Širi kontekst
+
+Ovaj incident ukazuje na sve veću osjetljivost zajednice otvorenog koda prema načinima na koje se AI integrira u njihove svakodnevne alate. Iako je GitHub potvrdio da ne planira uvoditi pravo oglašavanje na svoju platformu, brza reakcija na pritužbe korisnika pokazuje da tvrtke moraju biti iznimno oprezne kada mijenjaju zadano ponašanje svojih AI modela unutar profesionalnih razvojnih okruženja.
+
+## Što slijedi
+
+Predstavnici GitHuba su priznali da je ovakva implementacija bila pogrešna procjena. Značajka dodavanja savjeta u pull requestove koje je kreirao ili dodirnuo Copilot je sada potpuno onemogućena. Platforma će ubuduće morati biti znatno transparentnija oko toga što točno njihovi AI alati smiju mijenjati u kodu i komentarima developera.
+
+---
+
+*Izvor: [The Register](https://www.theregister.com/2026/03/30/github_copilot_ads_pull_requests/)*
+*Objavljeno na portalu Umjetna Inteligencija Blog by ShtefAI, autor: Shtef*
