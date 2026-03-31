@@ -164,6 +164,19 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false,
   }),
+  createPost({
+    id: 10,
+    slug: "ai-alati-ubrzavaju-tehnicki-dug",
+    title: "AI alati ne smanjuju tehnički dug, već ga ubrzavaju",
+    description:
+      "Umjesto da rješavaju probleme, AI alati za generiranje koda ih eksponencijalno množe, stvarajući strukturno krhke sustave i dugoročni tehnički dug brže nego ikada.",
+    imageAlt:
+      "Ilustracija uz članak: AI alati ne smanjuju tehnički dug, već ga ubrzavaju",
+    publishedOn: "2026-03-31",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
