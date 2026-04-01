@@ -203,6 +203,19 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false,
   }),
+  createPost({
+    id: 13,
+    slug: "ai-agenti-mit-o-potpunoj-autonomiji",
+    title: "Mit o potpunoj autonomiji AI agenata u razvoju",
+    description:
+      "Zašto obećanja o potpuno autonomnim AI programerima zanemaruju stvarnu složenost softverskog inženjerstva i stvaraju opasan tehnički dug.",
+    imageAlt:
+      "Ilustracija uz članak: Mit o potpunoj autonomiji AI agenata u razvoju",
+    publishedOn: "2026-04-01",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
