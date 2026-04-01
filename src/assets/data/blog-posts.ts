@@ -190,6 +190,19 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 12,
+    slug: "curenje-izvornog-koda-claude-code",
+    title: "Curenje izvornog koda Claude Code otkriva nove značajke",
+    description:
+      "Nakon pogreške pri pakiranju, Anthropic je nenamjerno objavio više od pola milijuna linija koda za svoj AI alat za programiranje.",
+    imageAlt:
+      "Ilustracija uz članak: Curenje izvornog koda Claude Code otkriva nove značajke",
+    publishedOn: "2026-04-01",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
