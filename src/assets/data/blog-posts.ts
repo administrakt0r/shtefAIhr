@@ -216,6 +216,19 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 14,
+    slug: "anthropic-slucajno-uklonio-tisuce-github-repozitorija",
+    title: "Anthropic slučajno uklonio tisuće GitHub repozitorija zbog koda",
+    description:
+      "Anthropic je greškom uzrokovao uklanjanje tisuća repozitorija koda na platformi GitHub prilikom pokušaja da s interneta ukloni procurjele kopije izvornog koda svog Claude Code alata.",
+    imageAlt:
+      "Ilustracija uz članak: Anthropic slučajno uklonio tisuće GitHub repozitorija zbog koda",
+    publishedOn: "2026-04-01",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
