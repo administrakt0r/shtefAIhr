@@ -229,6 +229,18 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false,
   }),
+  createPost({
+    id: 15,
+    slug: "openai-kupio-tbpn",
+    title: "OpenAI kupio popularnu tehnološku emisiju TBPN",
+    description:
+      "OpenAI preuzeo popularnu poslovnu talk-show emisiju TBPN u nastojanju da poboljša svoj javni imidž narušen nedavnim kontroverzama.",
+    imageAlt: "Ilustracija mikrofona s logotipom OpenAI-ja",
+    publishedOn: "2026-04-02",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
