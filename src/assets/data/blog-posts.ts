@@ -241,6 +241,18 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false,
   }),
+  createPost({
+    id: 16,
+    slug: "zasto-prompt-inzenjering-nece-biti-posao-buducnosti",
+    title: "Zašto prompt inženjering neće biti posao budućnosti",
+    description:
+      "Pisanje uputa za AI je prolazna vještina, a ne dugoročna karijera. Sposobnost strukturiranja specifičnih uputa za modele samo je privremena zakrpa za nesavršenosti sučelja.",
+    imageAlt: "Ilustracija: Zašto prompt inženjering neće biti posao budućnosti",
+    publishedOn: "2026-04-03",
+    category: ANALYSIS,
+    readTime: 5,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
