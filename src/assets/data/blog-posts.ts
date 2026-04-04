@@ -265,6 +265,18 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false,
   }),
+  createPost({
+    id: 18,
+    slug: "zasto-je-dosada-najbolja-stvar-za-ai",
+    title: "Zašto je dosada najbolja stvar koja se mogla dogoditi AI-ju",
+    description:
+      "Usporavanje tempa inovacija kod velikih jezičnih modela i pad medijskog entuzijazma zapravo označavaju prelazak AI-ja iz eksperimentalne faze u zrelu, pouzdanu infrastrukturu.",
+    imageAlt: "Ilustracija: Zašto je dosada najbolja stvar koja se mogla dogoditi AI-ju",
+    publishedOn: "2026-04-04",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
