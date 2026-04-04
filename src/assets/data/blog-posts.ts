@@ -253,6 +253,18 @@ export const blogPosts: BlogPost[] = [
     readTime: 5,
     featured: false,
   }),
+  createPost({
+    id: 17,
+    slug: "anthropic-kupio-biotech-startup-coefficient-bio",
+    title: "Anthropic kupio biotech startup Coefficient Bio u poslu od 400 milijuna",
+    description:
+      "Anthropic je kupio Coefficient Bio, biotehnološki AI startup koji je dosad djelovao u tajnosti, u poslu vrijednom oko 400 milijuna dolara u dionicama.",
+    imageAlt: "Ilustracija: Anthropic kupio biotech startup Coefficient Bio",
+    publishedOn: "2026-04-03",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
