@@ -277,6 +277,18 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 19,
+    slug: "openai-agi-sefica-uzima-bolovanje-promjene-u-vodstvu",
+    title: "OpenAI prolazi kroz nove promjene u vodstvu",
+    description:
+      "Čelnica za implementaciju AGI-ja u OpenAI-ju uzima višetjedno bolovanje, što pokreće niz promjena u višem menadžmentu.",
+    imageAlt: "Ilustracija: OpenAI prolazi kroz nove promjene u vodstvu",
+    publishedOn: "2026-04-04",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
