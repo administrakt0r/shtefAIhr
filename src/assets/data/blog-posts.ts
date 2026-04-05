@@ -289,6 +289,18 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false,
   }),
+  createPost({
+    id: 20,
+    slug: "ai-alati-pretvaraju-seniore-u-ispravljace-gresaka",
+    title: "AI alati pretvaraju seniore u ispravljače tuđih grešaka",
+    description:
+      "Umjesto da zamijene juniore, generativni AI alati prisiljavaju najiskusnije inženjere na neprekidno ispravljanje osrednjeg koda.",
+    imageAlt: "Ilustracija: AI alati pretvaraju seniore u ispravljače tuđih grešaka",
+    publishedOn: "2026-04-05",
+    category: ANALYSIS,
+    readTime: 5,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
