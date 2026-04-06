@@ -312,6 +312,18 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false,
   }),
+  createPost({
+    id: 22,
+    slug: "umjetna-inteligencija-nece-zamijeniti-prave-softverske-inzenjere",
+    title: "Umjetna inteligencija neće zamijeniti prave softverske inženjere",
+    description:
+      "Pisanje koda zapravo je najlakši dio softverskog inženjerstva, a generativni AI alati ne mogu zamijeniti ljudsko razumijevanje poslovnog konteksta.",
+    imageAlt: "Ilustracija: Umjetna inteligencija neće zamijeniti prave softverske inženjere",
+    category: ANALYSIS,
+    publishedOn: "2026-04-06",
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
