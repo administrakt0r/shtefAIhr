@@ -301,6 +301,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 5,
     featured: false,
   }),
+  createPost({
+    id: 21,
+    slug: "copilot-entertainment-purposes-only",
+    title: "Microsoft priznaje: Copilot služi samo za zabavu",
+    description: "Uvjeti korištenja otkrivaju stvarno stanje Microsoftovog AI alata. Tvrtka upozorava da se ne oslanjate na Copilot za važne savjete.",
+    category: NEWS,
+    imageAlt: "Microsoft Copilot logo uz tekst upozorenja",
+    publishedOn: "2026-04-05",
+    readTime: 3,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
