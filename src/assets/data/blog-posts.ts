@@ -324,6 +324,18 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 23,
+    slug: "google-gemma-4-otvoreni-modeli",
+    title: "Google predstavlja Gemma 4: Najinteligentniji otvoreni modeli do sada",
+    description:
+      "Google je predstavio Gemma 4 obitelj otvorenih jezičnih modela, optimiziranih za složeno rasuđivanje i lokalno izvođenje pod Apache 2.0 licencom.",
+    imageAlt: "Ilustracija uz članak: Google predstavlja Gemma 4 otvorene modele",
+    category: NEWS,
+    publishedOn: "2026-04-06",
+    readTime: 3,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
