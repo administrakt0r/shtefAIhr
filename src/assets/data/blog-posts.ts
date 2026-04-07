@@ -336,6 +336,18 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false,
   }),
+
+  createPost({
+    id: 24,
+    slug: "prava-cijena-ai-koda-jeftino-pisanje-skupo-citanje",
+    title: "Prava cijena AI koda: Jeftino pisanje, skupo čitanje",
+    description: "Alati za generiranje koda ubrzavaju početni razvoj, ali stvaraju nepregledne sustave koji dugoročno višestruko povećavaju troškove održavanja.",
+    imageAlt: "Ilustracija uz članak: Prava cijena AI koda: Jeftino pisanje, skupo čitanje",
+    publishedOn: "2026-04-07",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
