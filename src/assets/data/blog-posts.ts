@@ -359,6 +359,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false,
   }),
+  createPost({
+    id: 26,
+    slug: "ai-kodiranje-unistava-vjestinu-softverske-arhitekture",
+    title: "Umjetna inteligencija uništava vještinu softverske arhitekture",
+    description: "Alati za generiranje koda potiču brza rješenja umjesto promišljenog dizajna sustava, što dugoročno rezultira krhkim i neodrživim aplikacijama.",
+    imageAlt: "Ilustracija uz članak: Umjetna inteligencija uništava vještinu softverske arhitekture",
+    publishedOn: "2026-04-08",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
