@@ -1,0 +1,32 @@
+## Anthropic predstavio AI model Mythos koji generira zero-day ranjivosti
+
+### Novi model može pronaći i iskoristiti sigurnosne propuste u svim glavnim operativnim sustavima i preglednicima
+
+Tvrtka Anthropic razvila je novi AI model nazvan Mythos, sposoban za generiranje zero-day ranjivosti. Unatoč njegovim mogućnostima, tvrtka je odlučila da model neće javno objaviti jer bi njegovo izdavanje moglo predstavljati ozbiljnu prijetnju sigurnosti interneta.
+
+## Ključni detalji
+
+Anthropic navodi da su AI modeli dosegli razinu sposobnosti pisanja koda na kojoj mogu nadmašiti sve osim najvještijih ljudi u pronalaženju i iskorištavanju softverskih ranjivosti. Dok je prethodni model Claude Opus 4.6 imao stopu uspješnosti blizu nule u razvoju funkcionalnog koda za iskorištavanje propusta, Mythos Preview je generirao funkcionalni exploit u 72,4 posto slučajeva. Tijekom testiranja, model je uspio identificirati i iskoristiti zero-day ranjivosti u svakom glavnom operativnom sustavu i web pregledniku kada mu je to bilo naređeno. Neke od pronađenih ranjivosti stare su i desetljećima.
+
+### Zašto je to važno
+
+Godinama je najveća briga informacijske sigurnosti bila pojava kvantnih računala koja bi mogla probiti klasičnu enkripciju. Sada, s modelima poput Mythosa, pojavljuje se nova prijetnja: umjetna inteligencija koja može automatski generirati exploit kod za nepoznate ranjivosti brže nego što se sustavi mogu zaštititi, što značajno mijenja dinamiku kibernetičke sigurnosti.
+
+### Tehnička pozadina
+
+- U jednom slučaju, Mythos Preview je napisao exploit za web preglednik koji je ulančao četiri ranjivosti, zaobilazeći zaštite na razini renderera i operativnog sustava.
+- Samostalno je uspio povećati lokalne privilegije na Linuxu iskorištavanjem suptilnih problema poput stanja utrke (race conditions) i zaobilaženjem KASLR-a.
+- Generirao je exploit za udaljeno izvršavanje koda (RCE) na FreeBSD NFS poslužitelju, dajući potpuni root pristup neautentificiranim korisnicima.
+
+## Širi kontekst
+
+Umjesto javnog izdanja, Anthropic je omogućio pristup pregledu modela odabranim industrijskim partnerima kako bi pronašli propuste u vlastitim sustavima prije potencijalnih napadača. Ova inicijativa, nazvana Project Glasswing, uključuje tvrtke poput Amazon Web Services, Apple, Broadcom, Cisco, CrowdStrike, Google, Microsoft, NVIDIA i Palo Alto Networks. Također su pozvali dodatne organizacije da sudjeluju u pronalaženju bugova, sufinancirano višemilijunskim donacijama organizacijama za sigurnost otvorenog koda.
+
+## Što slijedi
+
+Anthropic je pomoću Mythosa identificirao tisuće dodatnih ranjivosti visoke i kritične ozbiljnosti te ih trenutno odgovorno prijavljuje nadležnim stranama. Stručnjaci za sigurnost nastavit će pratiti razvoj ovakvih alata i njihovu primjenu u proaktivnom pronalaženju propusta prije nego što padnu u pogrešne ruke.
+
+---
+
+*Izvor: [The Register](https://www.theregister.com/2026/04/07/anthropic_all_your_zerodays_are_belong_to_us/)*
+*Objavljeno na portalu Umjetna Inteligencija Blog by ShtefAI, autor: Shtef*

@@ -348,6 +348,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 25,
+    slug: "anthropic-mythos-zero-day",
+    title: "Anthropic predstavio AI model Mythos koji generira zero-day ranjivosti",
+    description: "Anthropic je stvorio novi AI model nazvan Mythos, sposoban za pronalaženje i iskorištavanje zero-day ranjivosti, ali ga je odlučio ne objaviti javnosti.",
+    imageAlt: "Ilustracija uz članak: Anthropic predstavio AI model Mythos koji generira zero-day ranjivosti",
+    publishedOn: "2026-04-08",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
