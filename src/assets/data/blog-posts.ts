@@ -381,7 +381,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false,
   }),
-
+  createPost({
+    id: 28,
+    slug: "opsesija-agi-jem-unistava-stvarne-inovacije",
+    title: "Opsesija AGI-jem uništava rješavanje stvarnih problema",
+    description: "Zašto stalna potraga za općom umjetnom inteligencijom zanemaruje stvarne poslovne potrebe i stvara jaz između obećanja AI tvrtki i stvarne ekonomije.",
+    imageAlt: "Ilustracija uz članak: Opsesija AGI-jem uništava rješavanje stvarnih problema",
+    publishedOn: "2026-04-09",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
