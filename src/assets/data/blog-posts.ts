@@ -370,6 +370,18 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 27,
+    slug: "poke-ai-agenti-putem-poruka",
+    title: "Startup Poke donosi AI agente u obliku tekstualnih poruka",
+    description: "Nova platforma omogućava pristup AI asistentima za svakodnevne zadatke direktno putem SMS-a, iMessagea i drugih aplikacija za poruke.",
+    imageAlt: "Ilustracija uz članak: Startup Poke donosi AI agente u obliku tekstualnih poruka",
+    publishedOn: "2026-04-08",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+  }),
+
 ];
 
 const assertUniqueField = (
