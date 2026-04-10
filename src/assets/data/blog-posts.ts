@@ -392,6 +392,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 29,
+    slug: "chatgpt-pro-subscription-new",
+    title: "OpenAI uveo ChatGPT Pro pretplatu za 100 dolara mjesečno",
+    description: "Nova razina pretplate cilja na intenzivne korisnike alata Codex i izravno konkurira Anthropicovoj ponudi.",
+    imageAlt: "Ilustracija uz članak: OpenAI uveo ChatGPT Pro pretplatu za 100 dolara mjesečno",
+    publishedOn: "2026-04-10",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
