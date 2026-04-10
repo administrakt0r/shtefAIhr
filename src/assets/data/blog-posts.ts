@@ -403,6 +403,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false,
   }),
+  createPost({
+    id: 30,
+    slug: "iluzija-autonomije-lazni-ai-agenti",
+    title: "Iluzija autonomije: Tržište prodaje lažne AI agente",
+    description: "Kako smo jednostavne skripte počeli nazivati autonomnim agentima i zašto je rebrendiranje stare tehnologije opasno.",
+    imageAlt: "Ilustracija uz članak: Iluzija autonomije: Tržište prodaje lažne AI agente",
+    publishedOn: "2026-04-10",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
