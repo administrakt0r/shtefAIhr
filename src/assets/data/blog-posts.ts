@@ -425,6 +425,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false,
   }),
+  createPost({
+    id: 32,
+    slug: "od-impresivne-prezentacije-do-nocne-more-u-produkciji",
+    title: "Od impresivne prezentacije do noćne more u produkciji",
+    description: "Generativna umjetna inteligencija blista na pozornicama, ali se slama pod teretom složenih produkcijskih sustava.",
+    imageAlt: "Ilustracija razlike između AI demoa i produkcije",
+    publishedOn: "2026-04-11",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
