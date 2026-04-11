@@ -414,6 +414,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 31,
+    slug: "chatgpt-pro-plan",
+    title: "OpenAI predstavio ChatGPT Pro paket od 100 dolara mjesečno",
+    description: "Novi Pro paket nudi veće kapacitete za programere i izravan je odgovor na ponudu tvrtke Anthropic.",
+    imageAlt: "Ilustracija ChatGPT sučelja",
+    publishedOn: "2026-04-10",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
