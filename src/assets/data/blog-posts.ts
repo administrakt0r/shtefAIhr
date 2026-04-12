@@ -436,6 +436,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 33,
+    slug: "florida-launches-investigation-openai",
+    title: "Florida pokreće istragu protiv OpenAI-ja zbog sigurnosnih rizika",
+    description: "Državna odvjetništva istražuju OpenAI zbog navodnih veza s kriminalnim ponašanjem i nacionalnim sigurnosnim rizicima.",
+    imageAlt: "Ilustracija istrage protiv OpenAI-ja",
+    publishedOn: "2026-04-12",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
