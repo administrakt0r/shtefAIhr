@@ -447,6 +447,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false,
   }),
+  createPost({
+    id: 34,
+    slug: "ai-alati-za-kodiranje-iluzija-brzine",
+    title: "AI alati za kodiranje: Iluzija brzine i produktivnosti",
+    description: "Svi tvrde da uz umjetnu inteligenciju pišu kod brže, no pravi problemi i tehnički dug nastaju nakon generiranja koda.",
+    imageAlt: "Ilustracija AI alata za programiranje",
+    publishedOn: "2026-04-12",
+    category: ANALYSIS,
+    readTime: 5,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
