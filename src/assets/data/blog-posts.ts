@@ -458,6 +458,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 5,
     featured: false,
   }),
+  createPost({
+    id: 35,
+    slug: "trump-duznosnici-poticu-banke-testiranje-anthropic-mythos",
+    title: "Trumpovi dužnosnici potiču banke na testiranje Anthropic Mythos modela",
+    description: "Američki državni dužnosnici preporučili su vodećim bankama testiranje novog AI modela tvrtke Anthropic za otkrivanje sigurnosnih ranjivosti, unatoč pravnom sporu.",
+    imageAlt: "Zgrada banke i digitalna sigurnosna mreža",
+    publishedOn: "2026-04-13",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
