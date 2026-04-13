@@ -469,6 +469,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false,
   }),
+  createPost({
+    id: 36,
+    slug: "balon-ai-infrastrukture-gradimo-autoceste",
+    title: "Balon AI infrastrukture: Gradimo autoceste bez vozila",
+    description: "Milijarde se ulažu u data centre i čipove, dok pravi softverski proizvodi koji donose vrijednost još uvijek ozbiljno kaskaju za infrastrukturom.",
+    imageAlt: "Ilustracija balona AI infrastrukture",
+    publishedOn: "2026-04-13",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
