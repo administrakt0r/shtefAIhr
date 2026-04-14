@@ -480,6 +480,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 37,
+    slug: "openai-kupuje-startup-hiro-finance",
+    title: "OpenAI kupuje startup Hiro Finance i jača financijski tim",
+    description: "OpenAI je preuzeo startup Hiro Finance u obliku akvizicije stručnog kadra, čime jača svoje kapacitete na području financijske matematike i planiranja.",
+    imageAlt: "Ilustracija financijskog planiranja i umjetne inteligencije",
+    publishedOn: "2026-04-14",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
