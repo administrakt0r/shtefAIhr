@@ -6,7 +6,9 @@ const DEFAULT_AVATAR = "/images/avatars/1.webp";
 const NEWS = "AI vijesti" as const;
 const ANALYSIS = "Analiza" as const;
 
-export const getPostImagePath = (slug: string) => `/images/posts/${slug}.png`;
+export const getPostImagePath = (slug: string) => `/images/posts/${slug}.webp`;
+export const getPostSocialImagePath = (slug: string) =>
+  `/images/posts/${slug}.png`;
 
 export const slugifyCroatian = (value: string) =>
   value
@@ -21,7 +23,7 @@ export const slugifyCroatian = (value: string) =>
 
 type SourcePost = Omit<
   BlogPost,
-  "author" | "avatarUrl" | "imageUrl" | "slug" | "contentSlug"
+  "author" | "avatarUrl" | "imageUrl" | "socialImageUrl" | "slug" | "contentSlug"
 > & {
   slug: string;
 } & Partial<Pick<BlogPost, "author" | "avatarUrl" | "imageUrl">>;
@@ -43,6 +45,7 @@ const createPost = (post: SourcePost): BlogPost => {
     contentSlug,
     slug,
     imageUrl: imageUrl ?? getPostImagePath(slug),
+    socialImageUrl: getPostSocialImagePath(slug),
     ...rest,
   };
 };

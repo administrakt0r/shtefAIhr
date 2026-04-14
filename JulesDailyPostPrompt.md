@@ -22,6 +22,7 @@ Your job in this run is to:
   - `published-log.json`
 - Do not rewrite or delete existing posts during the daily run.
 - Do not commit generated assets:
+  - `public/images/posts/*.webp`
   - `public/images/posts/*.png`
   - `public/images/og-image.png`
   - `public/rss.xml`

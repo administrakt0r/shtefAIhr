@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { MailIcon, MenuIcon } from "lucide-react";
+import { GithubIcon, MailIcon, MenuIcon } from "lucide-react";
 
 import type { NavigationSection } from "@/components/blocks/menu-navigation";
 import MenuDropdown from "@/components/blocks/menu-dropdown";
@@ -48,11 +48,42 @@ const Header = ({ navigationData, className }: HeaderProps) => {
 
         <div className="flex gap-3">
           <ModeToggle />
+          <Button variant="outline" className="max-md:hidden" asChild>
+            <a
+              href="https://github.com/administrakt0r/shtefAIhr"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <GithubIcon className="size-4" />
+              GitHub
+            </a>
+          </Button>
           <Button variant="outline" className="max-sm:hidden" asChild>
             <Link href="/contact-us">Kontakt</Link>
           </Button>
 
           <div className="flex gap-3">
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Button
+                  variant="outline"
+                  size="icon"
+                  className="md:hidden"
+                  asChild
+                >
+                  <a
+                    href="https://github.com/administrakt0r/shtefAIhr"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <GithubIcon />
+                    <span className="sr-only">GitHub repo</span>
+                  </a>
+                </Button>
+              </TooltipTrigger>
+              <TooltipContent>GitHub repo</TooltipContent>
+            </Tooltip>
+
             <Tooltip>
               <TooltipTrigger asChild>
                 <Button

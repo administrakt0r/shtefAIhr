@@ -7,6 +7,7 @@ export type BlogPost = {
   title: string;
   description: string;
   imageUrl: string;
+  socialImageUrl: string;
   imageAlt: string;
   publishedOn: string;
   publishedTime?: string;

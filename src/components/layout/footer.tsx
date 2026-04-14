@@ -2,6 +2,7 @@ import Link from "next/link";
 import { GithubIcon, LeafIcon, RssIcon } from "lucide-react";
 
 import Logo from "@/components/logo";
+import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { CONTACT_EMAIL, SITE_NAME } from "@/lib/site";
 
@@ -19,16 +20,17 @@ const FooterTop = () => (
       </span>
     </div>
 
-    <div className="flex items-center gap-4">
-      <a
-        href="https://github.com/administrakt0r/shtefAIhr"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-muted-foreground hover:text-foreground"
-      >
-        <GithubIcon className="size-5" />
-        <span className="sr-only">GitHub</span>
-      </a>
+    <div className="flex items-center gap-3">
+      <Button variant="outline" asChild>
+        <a
+          href="https://github.com/administrakt0r/shtefAIhr"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <GithubIcon className="size-4" />
+          GitHub repo
+        </a>
+      </Button>
       <Link
         href="/rss.xml"
         className="text-muted-foreground hover:text-foreground"
@@ -43,16 +45,19 @@ const FooterTop = () => (
 const colorStyles = {
   blue: "border-blue-100 bg-blue-50/50 hover:border-blue-300 hover:shadow-blue-500/10 dark:border-blue-900/50 dark:bg-blue-950/20 dark:hover:border-blue-700/50",
   purple: "border-purple-100 bg-purple-50/50 hover:border-purple-300 hover:shadow-purple-500/10 dark:border-purple-900/50 dark:bg-purple-950/20 dark:hover:border-purple-700/50",
+  red: "border-rose-100 bg-rose-50/50 hover:border-rose-300 hover:shadow-rose-500/10 dark:border-rose-900/50 dark:bg-rose-950/20 dark:hover:border-rose-700/50",
 };
 
 const accentStyles = {
   blue: "bg-blue-500",
   purple: "bg-purple-500",
+  red: "bg-rose-500",
 };
 
 const textStyles = {
   blue: "text-blue-700 dark:text-blue-400",
   purple: "text-purple-700 dark:text-purple-400",
+  red: "text-rose-700 dark:text-rose-400",
 };
 
 const NetworkCard = ({
@@ -63,7 +68,7 @@ const NetworkCard = ({
   description,
 }: {
   href: string;
-  colorScheme: "blue" | "purple";
+  colorScheme: "blue" | "purple" | "red";
   icon: string;
   title: string;
   description: string;
@@ -106,7 +111,7 @@ const FooterMiddle = () => (
         colorScheme="blue"
         icon="🌐"
         title="WPinEU.com"
-        description="Brza digitalna arhitektura i WordPress hosting inicijativa za europsko tržište."
+        description="Besplatni Web Hosting u Europi optimiziran za WordPress i LLM."
       />
 
       <NetworkCard
@@ -114,7 +119,15 @@ const FooterMiddle = () => (
         colorScheme="purple"
         icon="🥝"
         title="LLM.kiwi"
-        description="Platforma za rad s LLM API-jima, agentima i AI workflowima bez nepotrebne operativne buke."
+        description="Besplatan API pristup AI modelima i besplatni AI alati."
+      />
+
+      <NetworkCard
+        href="https://llm.com.hr"
+        colorScheme="red"
+        icon="🚀"
+        title="LLM.com.hr"
+        description="Besplatni generator web stranica i besplatni AI alati za poduzetnike i pojedince."
       />
     </div>
 

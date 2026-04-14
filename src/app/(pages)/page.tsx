@@ -75,7 +75,7 @@ const Home = () => {
             "@type": "Person",
             name: post.author,
           },
-          image: `${SITE_URL}${post.imageUrl}`,
+          image: `${SITE_URL}${post.socialImageUrl}`,
         })),
       },
       {

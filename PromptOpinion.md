@@ -29,6 +29,7 @@ You must never edit:
 
 You must never commit generated build artifacts:
 
+- `public/images/posts/*.webp`
 - `public/images/posts/*.png`
 - `public/images/og-image.png`
 - `public/rss.xml`

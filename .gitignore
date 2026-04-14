@@ -10,9 +10,14 @@
 .env.*.local
 
 # Generated content
+/public/images/posts/*.webp
 /public/images/posts/*.png
 /public/images/og-image.png
 /public/rss.xml
+/dev_output.log
+/dev_server.log
+/next_dev_output.log
+/verification.png
 
 # Package manager logs
 npm-debug.log*
@@ -24,6 +29,7 @@ yarn-error.log*
 /coverage
 /playwright-report
 /test-results
+/.tools
 
 # OS/editor noise
 .DS_Store

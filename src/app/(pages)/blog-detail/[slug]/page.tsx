@@ -64,7 +64,7 @@ export async function generateMetadata({
       siteName: SITE_NAME,
       images: [
         {
-          url: `${SITE_URL}${post.imageUrl}`,
+          url: `${SITE_URL}${post.socialImageUrl}`,
           width: 1200,
           height: 630,
           alt: post.imageAlt,
@@ -75,7 +75,7 @@ export async function generateMetadata({
       card: "summary_large_image",
       title: post.title,
       description: post.description,
-      images: [`${SITE_URL}${post.imageUrl}`],
+      images: [`${SITE_URL}${post.socialImageUrl}`],
     },
   };
 }
@@ -310,7 +310,7 @@ export default async function BlogDetailPage({
                 "@id": `${SITE_URL}/blog-detail/${post.slug}#article`,
                 headline: post.title,
                 description: post.description,
-                image: `${SITE_URL}${post.imageUrl}`,
+                image: `${SITE_URL}${post.socialImageUrl}`,
                 datePublished: publishedIso,
                 dateModified: publishedIso,
                 author: {
