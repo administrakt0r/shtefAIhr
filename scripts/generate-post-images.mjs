@@ -121,8 +121,15 @@ const getTitleLines = title => {
   return [...lines.slice(0, 3), lines.slice(3).join(' ')]
 }
 
-const getTitleFontSize = lines => {
+const getTitleFontSize = (lines, variant = 'default') => {
   const longestLine = Math.max(...lines.map(line => line.length))
+
+  if (variant === 'news') {
+    if (lines.length >= 4 || longestLine > 30) return 44
+    if (lines.length === 3 || longestLine > 24) return 52
+
+    return 60
+  }
 
   if (lines.length >= 4 || longestLine > 30) return 48
   if (lines.length === 3 || longestLine > 24) return 56
@@ -132,14 +139,14 @@ const getTitleFontSize = lines => {
 
 const getTitleTextSvg = ({
   title,
+  lines = getTitleLines(title),
+  fontSize = getTitleFontSize(lines),
   x,
   firstLineY,
   fill = '#ffffff',
   fontFamily = "'Arial', 'Helvetica Neue', sans-serif",
   shadowFilter = 'url(#title-shadow)'
 }) => {
-  const lines = getTitleLines(title)
-  const fontSize = getTitleFontSize(lines)
   const lineHeight = Math.round(fontSize * 1.18)
 
   return lines
@@ -161,9 +168,9 @@ const getTitleTextSvg = ({
 
 const getNewsPostSvg = ({ title, logoDataUri, preset, subtitle }) => {
   const lines = getTitleLines(title)
-  const fontSize = getTitleFontSize(lines)
+  const fontSize = getTitleFontSize(lines, 'news')
   const lineHeight = Math.round(fontSize * 1.18)
-  const firstLineY = 320 - ((lines.length - 1) * lineHeight) / 2
+  const firstLineY = 332 - ((lines.length - 1) * lineHeight) / 2
 
   return `<?xml version="1.0" encoding="UTF-8"?>
 <svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -196,7 +203,7 @@ const getNewsPostSvg = ({ title, logoDataUri, preset, subtitle }) => {
   <text x="104" y="203" font-family="'Arial', 'Helvetica Neue', sans-serif" font-size="18" font-weight="800" fill="#ffffff" letter-spacing="1.8">AI VIJESTI</text>
   <rect x="72" y="236" width="962" height="286" rx="38" fill="${preset.heroPanel}" />
   <rect x="1030" y="236" width="98" height="286" rx="28" fill="${preset.accentTwo}" opacity="0.92" />
-  ${getTitleTextSvg({ title, x: 110, firstLineY })}
+  ${getTitleTextSvg({ title, lines, fontSize, x: 110, firstLineY })}
   <line x1="72" y1="552" x2="1128" y2="552" stroke="rgba(20,20,20,0.12)" />
   <text x="72" y="589" font-family="'Arial', 'Helvetica Neue', sans-serif" font-size="18" font-weight="600" fill="rgba(20,20,20,0.72)">
     umjetnainteligencijablog.pages.dev
@@ -241,10 +248,10 @@ const getAnalysisPostSvg = ({ title, logoDataUri, preset, subtitle }) => {
   </text>
   <path d="M76 188H1124L1054 522H76V188Z" fill="${preset.heroPanel}" />
   <path d="M902 188H1124L1054 522H832L902 188Z" fill="${preset.accentTwo}" opacity="0.96" />
-  <rect x="108" y="214" width="184" height="42" rx="8" fill="rgba(255,255,255,0.12)" />
-  <text x="132" y="241" font-family="'Arial', 'Helvetica Neue', sans-serif" font-size="18" font-weight="800" fill="#ffe8a3" letter-spacing="1.8">ANALIZA</text>
   ${getTitleTextSvg({
     title,
+    lines,
+    fontSize,
     x: 110,
     firstLineY,
     fill: '#fef3c7',
@@ -253,10 +260,10 @@ const getAnalysisPostSvg = ({ title, logoDataUri, preset, subtitle }) => {
   })}
   <line x1="76" y1="552" x2="1128" y2="552" stroke="rgba(8,17,31,0.14)" />
   <text x="76" y="589" font-family="'Arial', 'Helvetica Neue', sans-serif" font-size="18" font-weight="700" fill="rgba(8,17,31,0.68)">
-    umjetnainteligencijablog.pages.dev
+    https://UmjetnaInteligencijaBlog.pages.dev
   </text>
   <text x="1128" y="589" text-anchor="end" font-family="'Arial', 'Helvetica Neue', sans-serif" font-size="22" font-weight="800" fill="${preset.accent}">
-    Stav, kontekst i argument
+    Autonomni AI blog - shtefAI
   </text>
 </svg>`
 }
