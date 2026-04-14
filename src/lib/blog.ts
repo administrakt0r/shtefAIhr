@@ -1,4 +1,8 @@
 export type BlogCategory = "AI vijesti" | "Analiza";
+export type BlogStats = {
+  postCount: number;
+  daysRunning: number;
+};
 
 export type BlogPost = {
   id: number;
@@ -20,8 +24,10 @@ export type BlogPost = {
 
 type PostDateSource = Pick<BlogPost, "publishedOn" | "publishedTime">;
 type SortablePost = Pick<BlogPost, "id" | "publishedOn" | "publishedTime">;
+type PublishedDateSource = Pick<BlogPost, "publishedOn">;
 
 const DEFAULT_MACHINE_TIME = "08:00";
+const MS_PER_DAY = 24 * 60 * 60 * 1000;
 
 const padTime = (value: number) => String(value).padStart(2, "0");
 
@@ -71,6 +77,82 @@ export const formatPostDisplayDateTime = (post: PostDateSource) => {
   const displayTime = formatDisplayTime(post.publishedTime);
 
   return displayTime ? `${displayDate} u ${displayTime}` : displayDate;
+};
+
+const parseCalendarDate = (value: string) => {
+  const [year, month, day] = value.split("-").map(Number);
+
+  return { year, month, day };
+};
+
+const getFormatterDateParts = (date: Date, timeZone: string) => {
+  const formatter = new Intl.DateTimeFormat("en-CA", {
+    timeZone,
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  });
+
+  const parts = formatter.formatToParts(date);
+
+  return {
+    year: Number(parts.find((part) => part.type === "year")?.value),
+    month: Number(parts.find((part) => part.type === "month")?.value),
+    day: Number(parts.find((part) => part.type === "day")?.value),
+  };
+};
+
+export const getCurrentDateInTimeZone = (
+  timeZone: string,
+  now = new Date(),
+) => {
+  const { year, month, day } = getFormatterDateParts(now, timeZone);
+
+  return `${year}-${padTime(month)}-${padTime(day)}`;
+};
+
+export const getCalendarDayDifference = (
+  startDate: string,
+  endDate: string,
+) => {
+  const start = parseCalendarDate(startDate);
+  const end = parseCalendarDate(endDate);
+
+  return Math.floor(
+    (Date.UTC(end.year, end.month - 1, end.day) -
+      Date.UTC(start.year, start.month - 1, start.day)) /
+      MS_PER_DAY,
+  );
+};
+
+export const getFirstPublishedOn = (posts: PublishedDateSource[]) => {
+  if (posts.length === 0) {
+    return null;
+  }
+
+  return posts.reduce(
+    (earliest, post) =>
+      post.publishedOn < earliest ? post.publishedOn : earliest,
+    posts[0].publishedOn,
+  );
+};
+
+export const getBlogStats = (
+  posts: PublishedDateSource[],
+  options: { now?: Date; timeZone?: string } = {},
+): BlogStats => {
+  const { now = new Date(), timeZone = "Europe/Zagreb" } = options;
+  const firstPublishedOn = getFirstPublishedOn(posts);
+
+  return {
+    postCount: posts.length,
+    daysRunning: firstPublishedOn
+      ? getCalendarDayDifference(
+          firstPublishedOn,
+          getCurrentDateInTimeZone(timeZone, now),
+        )
+      : 0,
+  };
 };
 
 export const comparePostsByPublishedAt = (

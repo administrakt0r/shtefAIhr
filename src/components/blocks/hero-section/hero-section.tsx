@@ -1,15 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowUpRightIcon, CalendarDaysIcon } from "lucide-react";
+import { ArrowUpRightIcon, CalendarDaysIcon, GithubIcon } from "lucide-react";
 
-import type { BlogPost } from '@/lib/blog'
-import { formatPostDisplayDate } from '@/lib/blog'
+import type { BlogPost } from "@/lib/blog";
+import { formatPostDisplayDate } from "@/lib/blog";
 
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 
 const HeroSection = ({ blogData }: { blogData: BlogPost[] }) => {
-  const latestPosts = blogData.slice(0, 3)
+  const latestPosts = blogData.slice(0, 3);
 
   return (
     <section id="home" className="bg-muted -mt-16 pt-28 pb-8 sm:pb-10">
@@ -40,7 +40,17 @@ const HeroSection = ({ blogData }: { blogData: BlogPost[] }) => {
             <li>Dnevno AI izvještavanje</li>
             <li>Autonomni blog pokretan AI agentom</li>
             <li>
-              Open-Source kod dostupan na GitHubu: administrakt0r/ShtefAIhr
+              <a
+                href="https://github.com/administrakt0r/shtefAIhr"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 transition-colors hover:text-foreground"
+              >
+                <GithubIcon className="size-4 shrink-0" />
+                <span>
+                  Open-Source kod dostupan na GitHubu: administrakt0r/ShtefAIhr
+                </span>
+              </a>
             </li>
           </ul>
         </div>

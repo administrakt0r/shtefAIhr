@@ -1,9 +1,9 @@
-import { sortedBlogPosts } from '@/assets/data/blog-posts'
+import { sortedBlogPosts } from "@/assets/data/blog-posts";
 
 import HeroSection from "@/components/blocks/hero-section/hero-section";
 import Blog from "@/components/blocks/blog-component/blog-component";
 
-import { getPostIsoDateTime } from "@/lib/blog";
+import { getBlogStats, getPostIsoDateTime } from "@/lib/blog";
 import {
   SITE_APP_ICON_192_PATH,
   SITE_LANGUAGE_TAG,
@@ -12,6 +12,7 @@ import {
 } from "@/lib/site";
 
 const latestPosts = sortedBlogPosts.slice(0, 3);
+const homepageStats = getBlogStats(sortedBlogPosts);
 
 const faqs = [
   {
@@ -107,7 +108,7 @@ const Home = () => {
   return (
     <div>
       <HeroSection blogData={sortedBlogPosts} />
-      <Blog />
+      <Blog stats={homepageStats} />
       <section
         className="border-t py-12 sm:py-16"
         aria-labelledby="home-faq-heading"

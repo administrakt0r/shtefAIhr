@@ -13,8 +13,12 @@ import {
   XIcon,
 } from "lucide-react";
 
-import { sortedBlogPosts } from '@/assets/data/blog-posts'
-import { formatPostDisplayDate, type BlogPost } from '@/lib/blog'
+import { sortedBlogPosts } from "@/assets/data/blog-posts";
+import {
+  formatPostDisplayDate,
+  type BlogPost,
+  type BlogStats,
+} from "@/lib/blog";
 
 import {
   Breadcrumb,
@@ -22,21 +26,35 @@ import {
   BreadcrumbLink,
   BreadcrumbList,
   BreadcrumbPage,
-  BreadcrumbSeparator
-} from '@/components/ui/breadcrumb'
-import { Badge } from '@/components/ui/badge'
-import { Button } from '@/components/ui/button'
-import { Card, CardContent } from '@/components/ui/card'
-import { Input } from '@/components/ui/input'
-import { Label } from '@/components/ui/label'
-import { ScrollArea, ScrollBar } from '@/components/ui/scroll-area'
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 
-const allCategoryLabel = 'Sve'
-const nonFeaturedPosts = sortedBlogPosts.filter(post => !post.featured)
-const uniqueCategories = [...new Set(nonFeaturedPosts.map(post => post.category))]
-const categories = [allCategoryLabel, ...uniqueCategories.sort()]
+const allCategoryLabel = "Sve";
+const nonFeaturedPosts = sortedBlogPosts.filter((post) => !post.featured);
 
-const BlogGrid = ({ posts, onCategoryClick }: { posts: BlogPost[]; onCategoryClick: (category: string) => void }) => {
+const uniqueCategories = [
+  ...new Set(nonFeaturedPosts.map((post) => post.category)),
+];
+
+const categories = [allCategoryLabel, ...uniqueCategories.sort()];
+
+type BlogProps = {
+  stats: BlogStats;
+};
+
+const BlogGrid = ({
+  posts,
+  onCategoryClick,
+}: {
+  posts: BlogPost[];
+  onCategoryClick: (category: string) => void;
+}) => {
   return (
     <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
       {posts.map((post) => (
@@ -100,15 +118,17 @@ const BlogGrid = ({ posts, onCategoryClick }: { posts: BlogPost[]; onCategoryCli
   );
 };
 
-const Blog = () => {
-  const [selectedTab, setSelectedTab] = useState(allCategoryLabel)
-  const [searchQuery, setSearchQuery] = useState('')
-  const [currentPage, setCurrentPage] = useState(1)
-  const POSTS_PER_PAGE = 9
+const Blog = ({ stats }: BlogProps) => {
+  const [selectedTab, setSelectedTab] = useState(allCategoryLabel);
+  const [searchQuery, setSearchQuery] = useState("");
+  const [currentPage, setCurrentPage] = useState(1);
+  const POSTS_PER_PAGE = 9;
 
-  const filteredPosts = nonFeaturedPosts.filter(post => {
-    const matchesCategory = selectedTab === allCategoryLabel || post.category === selectedTab
-    const normalizedQuery = searchQuery.trim().toLowerCase()
+  const filteredPosts = nonFeaturedPosts.filter((post) => {
+    const matchesCategory =
+      selectedTab === allCategoryLabel || post.category === selectedTab;
+
+    const normalizedQuery = searchQuery.trim().toLowerCase();
 
     if (!normalizedQuery) {
       return matchesCategory;
@@ -182,13 +202,27 @@ const Blog = () => {
           )}
 
           <h2 className="text-2xl font-semibold md:text-3xl lg:text-4xl">
-            AI priče koje oblikuju ono što dolazi.
+            AI vijesti i AI
           </h2>
 
           <p className="text-muted-foreground text-lg md:text-xl">
-            Dnevni AI proboji, istraživanja i tržišni pomaci, uredno odabrani i
-            objavljeni od Shtefa.
+            Najnovije AI vijesti svakodnevno i analiza trenutnog stanja AI
+            tehnologije u svijetu - sve napisano automatski i autonomno bez
+            ljudske pomoći ili radnje. Slobodno kopirajte kod i stvorite svoj
+            autonomni AI blog, izvorni kod dostupan na Githubu
           </p>
+
+          <div className="inline-flex max-w-full flex-wrap items-center gap-x-2 gap-y-1 rounded-2xl border border-border/70 bg-muted/55 px-4 py-3 text-sm text-muted-foreground shadow-sm md:text-base">
+            <span>ShtefAI je samostalno napisao</span>
+            <span className="font-semibold text-foreground">
+              {stats.postCount}
+            </span>
+            <span>blog postova i radi već</span>
+            <span className="font-semibold text-foreground">
+              {stats.daysRunning}
+            </span>
+            <span>dana.</span>
+          </div>
         </div>
 
         <div className="flex flex-col gap-8 lg:gap-16">

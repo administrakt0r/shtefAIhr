@@ -1,141 +1,142 @@
-import fs from 'node:fs/promises'
-import path from 'node:path'
+import fs from "node:fs/promises";
+import path from "node:path";
 
-import sharp from 'sharp'
+import sharp from "sharp";
 
-import { loadBlogPosts, rootDir } from './load-blog-data.mjs'
+import { loadBlogPosts, rootDir } from "./load-blog-data.mjs";
 
-const publicDir = path.join(rootDir, 'public')
-const outputDir = path.join(publicDir, 'images', 'posts')
-const sharedOgPath = path.join(publicDir, 'images', 'og-image.png')
-const logoPath = path.join(publicDir, 'shteflogo.svg')
+const publicDir = path.join(rootDir, "public");
+const outputDir = path.join(publicDir, "images", "posts");
+const sharedOgPath = path.join(publicDir, "images", "og-image.png");
+const logoPath = path.join(publicDir, "shteflogo.svg");
 
 const newsPresets = [
   {
-    backgroundStart: '#fff7f1',
-    backgroundEnd: '#ffe0d6',
-    accent: '#d40c1a',
-    accentTwo: '#153a75',
-    panel: 'rgba(255,255,255,0.78)',
-    heroPanel: 'rgba(16,24,40,0.92)',
-    glowOne: 'rgba(212, 12, 26, 0.16)',
-    glowTwo: 'rgba(21, 58, 117, 0.18)'
+    backgroundStart: "#fff7f1",
+    backgroundEnd: "#ffe0d6",
+    accent: "#d40c1a",
+    accentTwo: "#153a75",
+    panel: "rgba(255,255,255,0.78)",
+    heroPanel: "rgba(16,24,40,0.92)",
+    glowOne: "rgba(212, 12, 26, 0.16)",
+    glowTwo: "rgba(21, 58, 117, 0.18)",
   },
   {
-    backgroundStart: '#fff7ed',
-    backgroundEnd: '#ffd8c2',
-    accent: '#c8102e',
-    accentTwo: '#0f4c81',
-    panel: 'rgba(255,255,255,0.8)',
-    heroPanel: 'rgba(15,23,42,0.93)',
-    glowOne: 'rgba(200, 16, 46, 0.15)',
-    glowTwo: 'rgba(15, 76, 129, 0.18)'
+    backgroundStart: "#fff7ed",
+    backgroundEnd: "#ffd8c2",
+    accent: "#c8102e",
+    accentTwo: "#0f4c81",
+    panel: "rgba(255,255,255,0.8)",
+    heroPanel: "rgba(15,23,42,0.93)",
+    glowOne: "rgba(200, 16, 46, 0.15)",
+    glowTwo: "rgba(15, 76, 129, 0.18)",
   },
   {
-    backgroundStart: '#fffaf2',
-    backgroundEnd: '#ffe7d1',
-    accent: '#db1f29',
-    accentTwo: '#0b5cad',
-    panel: 'rgba(255,255,255,0.82)',
-    heroPanel: 'rgba(17,24,39,0.93)',
-    glowOne: 'rgba(219, 31, 41, 0.15)',
-    glowTwo: 'rgba(11, 92, 173, 0.17)'
-  }
-]
+    backgroundStart: "#fffaf2",
+    backgroundEnd: "#ffe7d1",
+    accent: "#db1f29",
+    accentTwo: "#0b5cad",
+    panel: "rgba(255,255,255,0.82)",
+    heroPanel: "rgba(17,24,39,0.93)",
+    glowOne: "rgba(219, 31, 41, 0.15)",
+    glowTwo: "rgba(11, 92, 173, 0.17)",
+  },
+];
 
 const analysisPresets = [
   {
-    backgroundStart: '#fff6d6',
-    backgroundEnd: '#ffd55a',
-    accent: '#0f2442',
-    accentTwo: '#d40c1a',
-    panel: 'rgba(255,248,220,0.76)',
-    heroPanel: 'rgba(11,22,41,0.95)',
-    glowOne: 'rgba(255, 213, 90, 0.24)',
-    glowTwo: 'rgba(212, 12, 26, 0.16)'
+    backgroundStart: "#fff6d6",
+    backgroundEnd: "#ffd55a",
+    accent: "#0f2442",
+    accentTwo: "#d40c1a",
+    panel: "rgba(255,248,220,0.76)",
+    heroPanel: "rgba(11,22,41,0.95)",
+    glowOne: "rgba(255, 213, 90, 0.24)",
+    glowTwo: "rgba(212, 12, 26, 0.16)",
   },
   {
-    backgroundStart: '#fff4c7',
-    backgroundEnd: '#ffd24f',
-    accent: '#102a4a',
-    accentTwo: '#be123c',
-    panel: 'rgba(255,249,221,0.78)',
-    heroPanel: 'rgba(15,23,42,0.95)',
-    glowOne: 'rgba(255, 210, 79, 0.24)',
-    glowTwo: 'rgba(190, 18, 60, 0.16)'
-  }
-]
+    backgroundStart: "#fff4c7",
+    backgroundEnd: "#ffd24f",
+    accent: "#102a4a",
+    accentTwo: "#be123c",
+    panel: "rgba(255,249,221,0.78)",
+    heroPanel: "rgba(15,23,42,0.95)",
+    glowOne: "rgba(255, 210, 79, 0.24)",
+    glowTwo: "rgba(190, 18, 60, 0.16)",
+  },
+];
 
-const sitePreset = newsPresets[0]
+const sitePreset = newsPresets[0];
+const NEWS_TITLE_Y_OFFSET = 18;
 
-const escapeXml = value =>
+const escapeXml = (value) =>
   String(value)
-    .replaceAll('&', '&amp;')
-    .replaceAll('<', '&lt;')
-    .replaceAll('>', '&gt;')
-    .replaceAll('"', '&quot;')
-    .replaceAll("'", '&apos;')
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&apos;");
 
-const hashString = value => {
-  let hash = 0
+const hashString = (value) => {
+  let hash = 0;
 
   for (let index = 0; index < value.length; index += 1) {
-    hash = value.charCodeAt(index) + ((hash << 5) - hash)
+    hash = value.charCodeAt(index) + ((hash << 5) - hash);
   }
 
-  return Math.abs(hash)
-}
+  return Math.abs(hash);
+};
 
 const wrapText = (text, maxCharsPerLine) => {
-  const words = text.split(/\s+/u)
-  const lines = []
-  let currentLine = ''
+  const words = text.split(/\s+/u);
+  const lines = [];
+  let currentLine = "";
 
   for (const word of words) {
-    const nextLine = currentLine ? `${currentLine} ${word}` : word
+    const nextLine = currentLine ? `${currentLine} ${word}` : word;
 
     if (nextLine.length <= maxCharsPerLine || currentLine.length === 0) {
-      currentLine = nextLine
-      continue
+      currentLine = nextLine;
+      continue;
     }
 
-    lines.push(currentLine)
-    currentLine = word
+    lines.push(currentLine);
+    currentLine = word;
   }
 
   if (currentLine) {
-    lines.push(currentLine)
+    lines.push(currentLine);
   }
 
-  return lines
-}
+  return lines;
+};
 
-const getTitleLines = title => {
-  const initialMaxChars = title.length > 96 ? 20 : title.length > 72 ? 24 : 28
-  const lines = wrapText(title, initialMaxChars)
+const getTitleLines = (title) => {
+  const initialMaxChars = title.length > 96 ? 20 : title.length > 72 ? 24 : 28;
+  const lines = wrapText(title, initialMaxChars);
 
   if (lines.length <= 4) {
-    return lines
+    return lines;
   }
 
-  return [...lines.slice(0, 3), lines.slice(3).join(' ')]
-}
+  return [...lines.slice(0, 3), lines.slice(3).join(" ")];
+};
 
-const getTitleFontSize = (lines, variant = 'default') => {
-  const longestLine = Math.max(...lines.map(line => line.length))
+const getTitleFontSize = (lines, variant = "default") => {
+  const longestLine = Math.max(...lines.map((line) => line.length));
 
-  if (variant === 'news') {
-    if (lines.length >= 4 || longestLine > 30) return 44
-    if (lines.length === 3 || longestLine > 24) return 52
+  if (variant === "news") {
+    if (lines.length >= 4 || longestLine > 30) return 44;
+    if (lines.length === 3 || longestLine > 24) return 52;
 
-    return 60
+    return 60;
   }
 
-  if (lines.length >= 4 || longestLine > 30) return 48
-  if (lines.length === 3 || longestLine > 24) return 56
+  if (lines.length >= 4 || longestLine > 30) return 48;
+  if (lines.length === 3 || longestLine > 24) return 56;
 
-  return 66
-}
+  return 66;
+};
 
 const getTitleTextSvg = ({
   title,
@@ -143,11 +144,11 @@ const getTitleTextSvg = ({
   fontSize = getTitleFontSize(lines),
   x,
   firstLineY,
-  fill = '#ffffff',
+  fill = "#ffffff",
   fontFamily = "'Arial', 'Helvetica Neue', sans-serif",
-  shadowFilter = 'url(#title-shadow)'
+  shadowFilter = "url(#title-shadow)",
 }) => {
-  const lineHeight = Math.round(fontSize * 1.18)
+  const lineHeight = Math.round(fontSize * 1.18);
 
   return lines
     .map(
@@ -161,16 +162,18 @@ const getTitleTextSvg = ({
     fill="${fill}"
     letter-spacing="-1.2"
     filter="${shadowFilter}"
-  >${escapeXml(line)}</text>`
+  >${escapeXml(line)}</text>`,
     )
-    .join('')
-}
+    .join("");
+};
 
 const getNewsPostSvg = ({ title, logoDataUri, preset, subtitle }) => {
-  const lines = getTitleLines(title)
-  const fontSize = getTitleFontSize(lines, 'news')
-  const lineHeight = Math.round(fontSize * 1.18)
-  const firstLineY = 332 - ((lines.length - 1) * lineHeight) / 2
+  const lines = getTitleLines(title);
+  const fontSize = getTitleFontSize(lines, "news");
+  const lineHeight = Math.round(fontSize * 1.18);
+
+  const firstLineY =
+    332 - ((lines.length - 1) * lineHeight) / 2 + NEWS_TITLE_Y_OFFSET;
 
   return `<?xml version="1.0" encoding="UTF-8"?>
 <svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -211,14 +214,14 @@ const getNewsPostSvg = ({ title, logoDataUri, preset, subtitle }) => {
   <text x="1128" y="589" text-anchor="end" font-family="'Arial', 'Helvetica Neue', sans-serif" font-size="22" font-weight="700" fill="${preset.accentTwo}">
     Hrvatski AI blog
   </text>
-</svg>`
-}
+</svg>`;
+};
 
 const getAnalysisPostSvg = ({ title, logoDataUri, preset, subtitle }) => {
-  const lines = getTitleLines(title)
-  const fontSize = getTitleFontSize(lines)
-  const lineHeight = Math.round(fontSize * 1.18)
-  const firstLineY = 326 - ((lines.length - 1) * lineHeight) / 2
+  const lines = getTitleLines(title);
+  const fontSize = getTitleFontSize(lines);
+  const lineHeight = Math.round(fontSize * 1.18);
+  const firstLineY = 326 - ((lines.length - 1) * lineHeight) / 2;
 
   return `<?xml version="1.0" encoding="UTF-8"?>
 <svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -254,9 +257,9 @@ const getAnalysisPostSvg = ({ title, logoDataUri, preset, subtitle }) => {
     fontSize,
     x: 110,
     firstLineY,
-    fill: '#fef3c7',
+    fill: "#fef3c7",
     fontFamily: "'Georgia', 'Times New Roman', serif",
-    shadowFilter: 'url(#analysis-shadow)'
+    shadowFilter: "url(#analysis-shadow)",
   })}
   <line x1="76" y1="552" x2="1128" y2="552" stroke="rgba(8,17,31,0.14)" />
   <text x="76" y="589" font-family="'Arial', 'Helvetica Neue', sans-serif" font-size="18" font-weight="700" fill="rgba(8,17,31,0.68)">
@@ -265,96 +268,96 @@ const getAnalysisPostSvg = ({ title, logoDataUri, preset, subtitle }) => {
   <text x="1128" y="589" text-anchor="end" font-family="'Arial', 'Helvetica Neue', sans-serif" font-size="22" font-weight="800" fill="${preset.accent}">
     Autonomni AI blog - shtefAI
   </text>
-</svg>`
-}
+</svg>`;
+};
 
 const ensureOutputDirectory = async () => {
-  await fs.mkdir(outputDir, { recursive: true })
-}
+  await fs.mkdir(outputDir, { recursive: true });
+};
 
-const removeStaleImages = async validSlugs => {
-  const currentFiles = await fs.readdir(outputDir)
+const removeStaleImages = async (validSlugs) => {
+  const currentFiles = await fs.readdir(outputDir);
 
   const validFiles = new Set(
-    validSlugs.flatMap(slug => [`${slug}.png`, `${slug}.webp`])
-  )
+    validSlugs.flatMap((slug) => [`${slug}.png`, `${slug}.webp`]),
+  );
 
   await Promise.all(
     currentFiles
       .filter(
-        fileName =>
-          (fileName.endsWith('.png') || fileName.endsWith('.webp')) &&
-          !validFiles.has(fileName)
+        (fileName) =>
+          (fileName.endsWith(".png") || fileName.endsWith(".webp")) &&
+          !validFiles.has(fileName),
       )
-      .map(fileName => fs.unlink(path.join(outputDir, fileName)))
-  )
-}
+      .map((fileName) => fs.unlink(path.join(outputDir, fileName))),
+  );
+};
 
 const renderImage = async (svg, outputPath, format) => {
-  const renderer = sharp(Buffer.from(svg))
+  const renderer = sharp(Buffer.from(svg));
 
-  if (format === 'webp') {
-    await renderer.webp({ quality: 82, effort: 6 }).toFile(outputPath)
+  if (format === "webp") {
+    await renderer.webp({ quality: 82, effort: 6 }).toFile(outputPath);
 
-    return
+    return;
   }
 
   await renderer
     .png({ compressionLevel: 9, effort: 8, palette: true })
-    .toFile(outputPath)
-}
+    .toFile(outputPath);
+};
 
 const generatePostImages = async () => {
-  const blogPosts = await loadBlogPosts()
+  const blogPosts = await loadBlogPosts();
 
-  await ensureOutputDirectory()
+  await ensureOutputDirectory();
 
-  const logoSvg = await fs.readFile(logoPath, 'utf8')
-  const logoDataUri = `data:image/svg+xml;base64,${Buffer.from(logoSvg).toString('base64')}`
+  const logoSvg = await fs.readFile(logoPath, "utf8");
+  const logoDataUri = `data:image/svg+xml;base64,${Buffer.from(logoSvg).toString("base64")}`;
 
   await Promise.all(
-    blogPosts.map(async post => {
+    blogPosts.map(async (post) => {
       const collection =
-        post.category === 'Analiza' ? analysisPresets : newsPresets
+        post.category === "Analiza" ? analysisPresets : newsPresets;
 
-      const preset = collection[hashString(post.slug) % collection.length]
+      const preset = collection[hashString(post.slug) % collection.length];
 
       const subtitle =
-        post.category === 'Analiza'
-          ? 'Komentar, kontekst i argument'
-          : 'Vijesti koje odmah hvataju bit'
+        post.category === "Analiza"
+          ? "Komentar, kontekst i argument"
+          : "Vijesti koje odmah hvataju bit";
 
       const svg =
-        post.category === 'Analiza'
+        post.category === "Analiza"
           ? getAnalysisPostSvg({
               title: post.title,
               logoDataUri,
               preset,
-              subtitle
+              subtitle,
             })
           : getNewsPostSvg({
               title: post.title,
               logoDataUri,
               preset,
-              subtitle
-            })
+              subtitle,
+            });
 
       await Promise.all([
-        renderImage(svg, path.join(outputDir, `${post.slug}.png`), 'png'),
-        renderImage(svg, path.join(outputDir, `${post.slug}.webp`), 'webp')
-      ])
-    })
-  )
+        renderImage(svg, path.join(outputDir, `${post.slug}.png`), "png"),
+        renderImage(svg, path.join(outputDir, `${post.slug}.webp`), "webp"),
+      ]);
+    }),
+  );
 
   const siteSvg = getNewsPostSvg({
-    title: 'AI vijesti, analize i signal za Hrvatsku i regiju',
+    title: "AI vijesti, analize i signal za Hrvatsku i regiju",
     logoDataUri,
     preset: sitePreset,
-    subtitle: 'Dnevni pregled umjetne inteligencije'
-  })
+    subtitle: "Dnevni pregled umjetne inteligencije",
+  });
 
-  await renderImage(siteSvg, sharedOgPath, 'png')
-  await removeStaleImages(blogPosts.map(post => post.slug))
-}
+  await renderImage(siteSvg, sharedOgPath, "png");
+  await removeStaleImages(blogPosts.map((post) => post.slug));
+};
 
-await generatePostImages()
+await generatePostImages();
