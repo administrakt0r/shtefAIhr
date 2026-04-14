@@ -24,7 +24,7 @@ const HeroSection = ({ blogData }: { blogData: BlogPost[] }) => {
               alt="ShtefAI logo"
               width={16}
               height={16}
-              className="h-4 w-4 rounded-sm"
+              className="h-4 w-4 rounded-sm transition-[filter] dark:brightness-0 dark:invert"
             />
             AI vijesti • Ažurirano svaki dan
           </Badge>

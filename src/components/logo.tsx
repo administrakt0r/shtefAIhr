@@ -10,7 +10,7 @@ const Logo = ({ className }: { className?: string }) => {
         alt="Umjetna Inteligencija Blog by ShtefAI logo"
         width={32}
         height={32}
-        className="h-8 w-8 rounded-sm"
+        className="h-8 w-8 rounded-sm transition-[filter] dark:brightness-0 dark:invert"
         priority
       />
       <span className="text-primary hidden text-[19px] font-semibold tracking-tight sm:inline">

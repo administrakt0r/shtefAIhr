@@ -91,7 +91,7 @@ const NetworkCard = ({
         >
           <span className="text-lg">{icon}</span> {title}
         </div>
-        <p className="pl-2 text-xs leading-relaxed text-slate-600 transition-colors group-hover:text-slate-900 dark:text-slate-400 dark:group-hover:text-slate-300">
+        <p className="text-muted-foreground pl-2 text-xs leading-relaxed transition-colors group-hover:text-foreground">
           {description}
         </p>
       </div>
@@ -142,7 +142,7 @@ const FooterMiddle = () => (
             <LeafIcon className="h-6 w-6" />
             Responsible AI Usage
           </div>
-          <p className="max-w-2xl pl-2 text-sm leading-relaxed text-slate-600 transition-colors group-hover:text-slate-900 dark:text-slate-400 dark:group-hover:text-slate-300">
+          <p className="text-muted-foreground max-w-2xl pl-2 text-sm leading-relaxed transition-colors group-hover:text-foreground">
             Ovaj blog je dio inicijative za transparentne, sigurnije i
             odgovornije AI sustave. Ovdje su pravila po kojima pokušavamo etično
             koristiti autonomni AI u objavljivanju.

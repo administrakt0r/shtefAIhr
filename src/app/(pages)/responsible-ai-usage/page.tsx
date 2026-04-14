@@ -39,7 +39,7 @@ export default function ResponsibleAIPage() {
   };
 
   return (
-    <div className="container mx-auto my-8 min-h-[60vh] max-w-4xl rounded-xl border border-green-100 bg-green-50/30 px-4 py-16 dark:border-green-900 dark:bg-green-950/10 sm:px-6 lg:px-8">
+    <div className="container mx-auto my-8 min-h-[60vh] max-w-4xl rounded-xl border border-border/75 bg-card/85 px-4 py-16 shadow-sm shadow-brand-blue/5 ring-1 ring-green-500/10 dark:ring-green-400/15 sm:px-6 lg:px-8">
       <div className="editorial-content max-w-none">
         <p className="eyebrow text-brand-blue">Responsible AI</p>
         <h1>Pravila odgovorne uporabe AI-ja</h1>
