@@ -491,6 +491,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false,
   }),
+  createPost({
+    id: 38,
+    slug: "od-programera-do-recenzenta",
+    title: "Od programera do glavnog recenzenta koda: Stvarnost AI alata",
+    description: "Umjetna inteligencija mijenja naš posao iz pisanja koda u njegovo kritičko vrednovanje. AI alati mijenjaju ulogu programera iz onih koji pišu kod u one koji ga pregledavaju.",
+    publishedOn: "2026-04-14",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+    imageAlt: "Od programera do recenzenta koda",
+  }),
 ];
 
 const assertUniqueField = (
