@@ -505,6 +505,17 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     imageAlt: "Od programera do recenzenta koda",
   }),
+  createPost({
+    id: 39,
+    slug: "anthropic-uspon-brine-openai-investitore",
+    title: "Uspon Anthropica brine OpenAI investitore",
+    description: "Neki investitori u OpenAI počinju sumnjati u procjenu vrijednosti tvrtke od 852 milijarde dolara zbog brzog uspona Anthropica.",
+    publishedOn: "2026-04-15",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+    imageAlt: "Ilustracija ulaganja u AI tvrtke i financijskog rasta",
+  }),
 ];
 
 const assertUniqueField = (
