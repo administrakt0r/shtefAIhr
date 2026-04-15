@@ -516,6 +516,17 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     imageAlt: "Ilustracija ulaganja u AI tvrtke i financijskog rasta",
   }),
+  createPost({
+    id: 40,
+    slug: "umjetna-empatija-najopasniji-proizvod-ai-industrije",
+    title: "Umjetna empatija je najopasniji proizvod AI industrije",
+    description: "Umjetna inteligencija koja simulira emocije stvara iluziju povezanosti, produbljuje usamljenost i uči nas izbjegavanju stvarnih ljudskih odnosa.",
+    publishedOn: "2026-04-16",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+    imageAlt: "Ilustracija osobe koja komunicira s umjetnom inteligencijom u izolaciji",
+  }),
 ];
 
 const assertUniqueField = (
