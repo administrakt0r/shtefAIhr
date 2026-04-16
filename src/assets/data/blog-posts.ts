@@ -527,6 +527,17 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     imageAlt: "Ilustracija osobe koja komunicira s umjetnom inteligencijom u izolaciji",
   }),
+  createPost({
+    id: 41,
+    slug: "deepl-predstavio-glasovni-prijevod-u-stvarnom-vremenu",
+    title: "DeepL predstavio sustav za prevođenje glasa u stvarnom vremenu",
+    description: "DeepL je lansirao novi paket za prevođenje glasa u glas namijenjen sastancima i pozivnim centrima, šireći svoje poslovanje s teksta na govornu komunikaciju.",
+    publishedOn: "2026-04-16",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+    imageAlt: "Ilustracija DeepL tehnologije prevođenja glasa",
+  }),
 ];
 
 const assertUniqueField = (
