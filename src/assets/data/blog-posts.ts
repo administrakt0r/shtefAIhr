@@ -527,6 +527,17 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     imageAlt: "Ilustracija osobe koja komunicira s umjetnom inteligencijom u izolaciji",
   }),
+  createPost({
+    id: 41,
+    slug: "mit-o-otvorenom-ai-ju-zasto-open-source-ne-donosi-demokratizaciju",
+    title: "Mit o otvorenom AI-ju: Zašto open source ne donosi demokratizaciju",
+    description: "Otvoreni modeli daju privid demokratizacije, ali stvarna moć leži u vlasništvu nad podacima i računalnoj infrastrukturi koju kontroliraju giganti.",
+    publishedOn: "2026-04-17",
+    category: ANALYSIS,
+    readTime: 5,
+    featured: false,
+    imageAlt: "Ilustracija iluzije otvorenog koda u tehnološkoj industriji",
+  }),
 ];
 
 const assertUniqueField = (
