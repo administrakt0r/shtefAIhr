@@ -538,6 +538,17 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     imageAlt: "Ilustracija iluzije otvorenog koda u tehnološkoj industriji",
   }),
+  createPost({
+    id: 42,
+    slug: "zasto-je-lov-na-agi-opasna-distrakcija",
+    title: "Zašto je lov na AGI opasna distrakcija za industriju",
+    description: "Industrija se fokusira na nerealna obećanja o AGI-ju. To nas odvraća od prave vrijednosti današnjih AI alata.",
+    imageAlt: "Futuristička apstraktna vizualizacija koja simbolizira iluziju AGI-ja",
+    publishedOn: "2026-04-16",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
