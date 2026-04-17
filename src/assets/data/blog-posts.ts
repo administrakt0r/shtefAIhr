@@ -560,6 +560,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false,
   }),
+  createPost({
+    id: 44,
+    slug: "paradoks-produktivnosti-ai",
+    title: "AI je trebao donijeti slobodno vrijeme, donio je više posla",
+    description: "Alati za produktivnost koji su nas trebali osloboditi rutine samo su podigli ljestvicu očekivanja i ubrzali tempo rada.",
+    imageAlt: "Ilustracija osobe preopterećene tehnologijom i brzim tempom rada",
+    publishedOn: "2026-04-18",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
