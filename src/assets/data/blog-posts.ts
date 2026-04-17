@@ -549,6 +549,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 43,
+    slug: "openai-codex-updates-use-macos",
+    title: "OpenAI Codex sada može samostalno upravljati macOS aplikacijama",
+    description: "OpenAI je značajno nadogradio Codex paketom novih agenatskih mogućnosti koje omogućuju izravno korištenje desktop aplikacija.",
+    imageAlt: "Ilustracija umjetne inteligencije koja upravlja računalom i programira",
+    publishedOn: "2026-04-16",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
