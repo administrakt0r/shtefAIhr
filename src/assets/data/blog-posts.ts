@@ -571,6 +571,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 45,
+    slug: "opsesija-agijem-zamagljuje-pravu-vrijednost-ai",
+    title: "Opsesija AGI-jem zamagljuje pravu vrijednost umjetne inteligencije",
+    description: "Stalno obećavanje opće umjetne inteligencije stvara nerealna očekivanja i zanemaruje stvarne probleme koje trenutni alati već mogu riješiti.",
+    imageAlt: "Ilustracija koja prikazuje fokus na futuristički AGI umjesto na praktične alate",
+    publishedOn: "2026-04-18",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
