@@ -593,6 +593,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false,
   }),
+  createPost({
+    id: 47,
+    slug: "zasto-je-opsesija-agi-jem-opasna-distrakcija",
+    title: "Zašto je opsesija AGI-jem zapravo opasna distrakcija",
+    description: "Fokus na umjetnu opću inteligenciju omogućava tehnološkim divovima da izbjegnu odgovornost za stvarne probleme današnjice.",
+    imageAlt: "Apstraktni prikaz umjetne inteligencije i čovječanstva.",
+    publishedOn: "2026-04-18",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
