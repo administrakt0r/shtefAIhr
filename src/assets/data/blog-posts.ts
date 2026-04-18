@@ -582,6 +582,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 46,
+    slug: "openai-gubi-kljucne-ljude",
+    title: "OpenAI nastavlja sa zatvaranjem sporednih projekata i gubi ključne ljude",
+    description: "Kevin Weil i Bill Peebles napuštaju tvrtku uslijed konsolidacije oko poslovne umjetne inteligencije.",
+    imageAlt: "Logotip tvrtke OpenAI",
+    publishedOn: "2026-04-17",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
