@@ -615,6 +615,18 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false,
   }),
+
+  createPost({
+    id: 49,
+    slug: 'zasto-je-chat-sucelje-pogresan-smjer-za-vecinu-ai-alata',
+    title: 'Zašto je chat sučelje pogrešan smjer za većinu AI alata',
+    description: 'Razgovorni agenti stvaraju preveliki kognitivni teret jer skrivaju opcije i prisiljavaju korisnika na složene upute.',
+    imageAlt: 'Ilustracija korisnika koji gleda u prazno tekstualno polje chatbota',
+    publishedOn: '2026-04-19',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
+  })
 ];
 
 const assertUniqueField = (
