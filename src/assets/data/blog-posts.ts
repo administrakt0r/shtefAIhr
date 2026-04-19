@@ -604,6 +604,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 48,
+    slug: 'cursor-u-pregovorima-za-2-milijarde-dolara',
+    title: 'Cursor u pregovorima za novih 2 milijarde dolara uz procjenu od 50 milijardi',
+    description: 'Startup za AI kodiranje Cursor, poznat i kao Anysphere, blizu je novog kruga financiranja u kojem bi trebao prikupiti najmanje 2 milijarde dolara, uz udvostručenje vrijednosti na 50 milijardi dolara.',
+    imageAlt: 'Cursor u pregovorima za novo financiranje',
+    publishedOn: '2026-04-17',
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
