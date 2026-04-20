@@ -626,8 +626,8 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
-  })
-,
+  }),
+
   createPost({
     id: 50,
     slug: 'sinteticki-podaci-kako-ai-truje-vlastiti-izvor',
@@ -650,6 +650,18 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 3,
     featured: false
+  }),
+
+  createPost({
+    id: 52,
+    slug: 'stvarnost-razvoja-s-ai-alatima',
+    title: 'Stvarnost razvoja s AI alatima: Pogled iza blještavila',
+    description: 'Umjetna inteligencija ne zamjenjuje programere, već mijenja način razvoja softvera u asistentni model.',
+    imageAlt: 'Apstraktna ilustracija programera koji radi s umjetnom inteligencijom',
+    publishedOn: '2026-04-20',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
   })
 ];
 
