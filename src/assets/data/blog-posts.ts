@@ -627,6 +627,18 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false
   })
+,
+  createPost({
+    id: 50,
+    slug: 'sinteticki-podaci-kako-ai-truje-vlastiti-izvor',
+    title: 'Sintetički podaci: Kako umjetna inteligencija truje vlastiti izvor',
+    description: 'Oslanjanje na umjetno generirane podatke za trening novih modela vodi nas u tehnološku slijepu ulicu.',
+    imageAlt: 'Ilustracija beskonačnog recikliranja podataka u AI sustavima',
+    publishedOn: '2026-04-20',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
+  })
 ];
 
 const assertUniqueField = (
