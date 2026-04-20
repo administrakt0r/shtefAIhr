@@ -651,6 +651,18 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false
   })
+,
+  createPost({
+    id: 51,
+    slug: "zasto-ai-ne-moze-zamijeniti-programere",
+    title: "Zašto umjetna inteligencija još ne može zamijeniti prave programere",
+    publishedOn: "2026-04-20",
+    category: ANALYSIS,
+    description: "Kodiranje je samo mali dio onoga što softverski inženjeri zapravo rade svaki dan.",
+    imageAlt: "Kritički osvrt na to može li AI zamijeniti programere.",
+    readTime: 5,
+    featured: false
+  })
 ];
 
 const assertUniqueField = (
