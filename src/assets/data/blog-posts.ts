@@ -638,6 +638,18 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+
+  createPost({
+    id: 51,
+    slug: 'anthropic-mythos-threat-white-house',
+    title: 'Anthropic Mythos prijetnja kibernetičkoj sigurnosti vraća Amodeija u Bijelu kuću',
+    description: 'Sposobnost Anthropicovog Mythos modela da pronađe sigurnosne ranjivosti u sustavima dovela je do pregovora u Bijeloj kući.',
+    imageAlt: 'Zgrada Bijele kuće i digitalna sigurnosna mreža',
+    publishedOn: '2026-04-20',
+    category: NEWS,
+    readTime: 3,
+    featured: false
   })
 ];
 
