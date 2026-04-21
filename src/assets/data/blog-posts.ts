@@ -662,6 +662,18 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false,
+  }),
+
+  createPost({
+    id: 53,
+    slug: 'ai-i-problem-nove-digitalne-birokracije',
+    title: 'Umjetna inteligencija i problem nove digitalne birokracije',
+    description: 'Umjesto da nas oslobode posla, AI agenti stvaraju novu vrstu iscrpljujuće digitalne birokracije u kojoj ljudi postaju tek provjeravatelji.',
+    imageAlt: 'Apstraktna ilustracija ljudi koji rade unutar birokratskog sustava kojim upravlja tehnologija i umjetna inteligencija.',
+    publishedOn: '2026-04-21',
+    category: ANALYSIS,
+    readTime: 5,
+    featured: false,
   })
 ];
 
