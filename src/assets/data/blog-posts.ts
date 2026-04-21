@@ -674,6 +674,18 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 5,
     featured: false,
+  }),
+
+  createPost({
+    id: 54,
+    slug: 'paradoks-brzine-ai-utrka-usporava-inovacije',
+    title: 'Paradoks brzine: Zašto stalna utrka usporava prave AI inovacije',
+    description: 'Opsesivno izbacivanje novih jezičnih modela sprječava stvaranje trajnih i pouzdanih softverskih rješenja.',
+    imageAlt: 'Apstraktna ilustracija brzine i tehnologije koja nadmašuje ljudsku kontrolu.',
+    publishedOn: '2026-04-21',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
   })
 ];
 
