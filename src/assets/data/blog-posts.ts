@@ -686,7 +686,19 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false,
-  })
+  }),
+  createPost({
+    id: 55,
+    slug: "iluzija-potpuno-autonomnih-ai-agenata-u-poslovanju",
+    title: "Iluzija potpuno autonomnih AI agenata u poslovanju",
+    description:
+      "Opsesija potpunom automatizacijom stvara lažna očekivanja i ignorira stvarnu vrijednost koju donosi suradnja čovjeka i stroja.",
+    imageAlt: "Ilustracija uz članak: Iluzija potpuno autonomnih AI agenata u poslovanju",
+    publishedOn: "2026-04-22",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
