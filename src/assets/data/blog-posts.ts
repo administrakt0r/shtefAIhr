@@ -686,8 +686,21 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false,
-  })
+  }),
+
+  createPost({
+    id: 55,
+    slug: 'anthropic-mythos-neovlasteni-pristup',
+    title: 'Anthropicov najopasniji AI model dospio u pogrešne ruke',
+    publishedOn: '2026-04-22',
+    category: NEWS,
+    description: 'Neovlašteni korisnici uspjeli su pristupiti Anthropicovom modelu za kibernetičku sigurnost Claude Mythos Preview.',
+    readTime: 3,
+    imageAlt: 'Grafički prikaz kibernetičke sigurnosti i umjetne inteligencije',
+    featured: false,
+  }),
 ];
+
 
 const assertUniqueField = (
   posts: BlogPost[],
