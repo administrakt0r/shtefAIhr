@@ -699,6 +699,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 56,
+    slug: "kraj-prosjecnosti-kako-ai-kaznjava-osrednji-rad",
+    title: "Kraj prosječnosti: Kako umjetna inteligencija kažnjava osrednji rad",
+    description: "Umjetna inteligencija drastično smanjuje vrijednost rutinskog i osrednjeg rada, pretvarajući ga u robu bez pokrića.",
+    imageAlt: "Ilustracija utjecaja umjetne inteligencije na rad",
+    publishedOn: "2026-04-23",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
