@@ -710,6 +710,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 57,
+    slug: 'openai-infosys-partnerstvo',
+    title: 'OpenAI i Infosys sklapaju partnerstvo za širenje AI alata',
+    description: 'OpenAI se udružio s Infosysom kako bi integrirao svoje umjetno inteligentne alate, uključujući Codex, u platformu Topaz.',
+    imageAlt: 'Ilustracija suradnje OpenAI-a i Infosysa',
+    publishedOn: '2026-04-22',
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
