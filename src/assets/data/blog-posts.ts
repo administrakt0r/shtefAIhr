@@ -721,6 +721,18 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false,
   }),
+  createPost({
+    id: 58,
+    slug: "ai-modeli-postaju-obicna-roba-prava-vrijednost-je-u-primjeni",
+    title: "AI modeli postaju obična roba: prava vrijednost je u primjeni",
+    description: "Razvoj jezičnih modela ubrzava njihovu komoditizaciju, pa se istinska vrijednost seli iz samog modela u primjenu i korisničko iskustvo.",
+    publishedOn: "2026-04-24",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+    imageAlt: "AI modeli",
+  }),
+
 ];
 
 const assertUniqueField = (
