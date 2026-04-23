@@ -733,6 +733,17 @@ export const blogPosts: BlogPost[] = [
     imageAlt: "AI modeli",
   }),
 
+  createPost({
+    id: 59,
+    slug: 'zabluda-o-ai-agentima',
+    title: 'Zabluda o AI agentima: Stvarnost iza tehnološkog marketinga',
+    description: 'Zašto nas narativ o potpuno autonomnim AI agentima udaljava od stvarnih poslovnih vrijednosti i kako umjetna inteligencija zapravo može pomoći.',
+    imageAlt: 'Ilustracija koja prikazuje jaz između očekivanja autonomnih AI agenata i stvarne inženjerske primjene',
+    publishedOn: '2026-04-25',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
+  }),
 ];
 
 const assertUniqueField = (
