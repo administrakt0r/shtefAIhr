@@ -744,6 +744,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false
   }),
+  createPost({
+    id: 60,
+    slug: "openai-gpt-5-5-super-app",
+    title: "OpenAI lansirao GPT-5.5 - korak bliže 'super aplikaciji'",
+    description: "Novi model donosi naprednije sposobnosti i brže razmišljanje za manji broj tokena, približavajući OpenAI stvaranju ultimativne višenamjenske aplikacije.",
+    imageAlt: "Ilustracija umjetne inteligencije i digitalnih aplikacija",
+    publishedOn: "2026-04-23",
+    category: NEWS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
