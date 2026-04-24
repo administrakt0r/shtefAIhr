@@ -766,6 +766,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 62,
+    slug: 'zasto-open-source-ai-ne-donosi-pravu-demokratizaciju',
+    title: 'Zašto open-source AI ne donosi pravu demokratizaciju',
+    description: 'Ovaj komentar objašnjava zašto open-source modeli sami po sebi ne donose stvarnu demokratizaciju umjetne inteligencije.',
+    imageAlt: 'Ilustracija hardvera u podatkovnom centru',
+    publishedOn: '2026-04-27',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
+  })
 ];
 
 const assertUniqueField = (
