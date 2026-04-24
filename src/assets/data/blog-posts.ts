@@ -755,6 +755,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 61,
+    slug: "hype-oko-agi-ja-skriva-stvarne-probleme",
+    title: "Hype oko opće umjetne inteligencije skriva stvarne probleme",
+    description: "Opsesija superinteligencijom i narativ o AGI-ju služe kao dimna zavjesa koja nas sprečava da se fokusiramo na stvarne probleme današnjice.",
+    category: ANALYSIS,
+    publishedOn: "2026-04-26",
+    imageAlt: "Ilustracija koja prikazuje hype oko opće umjetne inteligencije nasuprot stvarnim problemima.",
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
