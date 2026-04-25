@@ -799,6 +799,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 65,
+    slug: "sindrom-sintetickog-weba",
+    title: "Sindrom sintetičkog weba: Kako AI pretvara internet u sterilno mjesto",
+    description: "Umjetna inteligencija obećala je kreativnu renesansu, no u stvarnosti stvara sterilni internet kroz beskrajno recikliranje sintetičkog sadržaja.",
+    imageAlt: "Ilustracija koja prikazuje recikliranje i generiranje sintetičkog sadržaja na internetu.",
+    publishedOn: "2026-04-29",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
