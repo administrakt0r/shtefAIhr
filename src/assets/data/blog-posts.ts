@@ -776,7 +776,18 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
-  })
+  }),
+  createPost({
+    id: 63,
+    slug: 'google-anthropic-40b-investment',
+    title: 'Google ulaže do 40 milijardi dolara u Anthropic',
+    description: 'Google planira uložiti do 40 milijardi dolara u AI tvrtku Anthropic, osiguravajući im ključnu infrastrukturu za razvoj novih modela.',
+    imageAlt: 'Logotipi Googlea i Anthropica na apstraktnoj pozadini koja prikazuje umjetnu inteligenciju.',
+    publishedOn: '2026-04-24',
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
