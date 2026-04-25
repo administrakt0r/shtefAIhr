@@ -788,6 +788,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false,
   }),
+  createPost({
+    id: 64,
+    slug: "ai-alati-stvarnost-developera",
+    title: "AI alati za programere: Od čarolije do beskrajnog debugiranja",
+    description: "AI alati za programere predstavljaju se kao čarobna rješenja, no u stvarnosti developere pretvaraju u recenzente koda. Umjesto da sami pišu softver, programeri sve više vremena provode pronalazeći i popravljajući suptilne pogreške u generiranom kodu.",
+    imageAlt: "Ilustracija uz članak: AI alati za programere: Od čarolije do beskrajnog debugiranja",
+    publishedOn: "2026-04-28",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
