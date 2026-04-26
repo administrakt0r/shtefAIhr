@@ -810,6 +810,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 66,
+    slug: 'anthropic-testirao-trznicu-za-agente',
+    title: 'Anthropic testirao tržnicu za autonomnu trgovinu između AI agenata',
+    description: 'Anthropic je proveo pilot eksperiment s AI agentima koji su samostalno pregovarali i sklapali stvarne financijske poslove u ime zaposlenika.',
+    imageAlt: 'Ilustracija dvaju robota koji obavljaju transakciju u digitalnom okruženju tržnice',
+    publishedOn: '2026-04-25',
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
