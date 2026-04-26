@@ -4,6 +4,7 @@
 /.wrangler
 /out
 .omx
+.omx/
 
 # Local environment files
 .env
