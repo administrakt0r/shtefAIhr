@@ -91,6 +91,9 @@ const getFormatterDateParts = (date: Date, timeZone: string) => {
     year: "numeric",
     month: "2-digit",
     day: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+    hourCycle: "h23",
   });
 
   const parts = formatter.formatToParts(date);
@@ -99,6 +102,8 @@ const getFormatterDateParts = (date: Date, timeZone: string) => {
     year: Number(parts.find((part) => part.type === "year")?.value),
     month: Number(parts.find((part) => part.type === "month")?.value),
     day: Number(parts.find((part) => part.type === "day")?.value),
+    hour: Number(parts.find((part) => part.type === "hour")?.value),
+    minute: Number(parts.find((part) => part.type === "minute")?.value),
   };
 };
 
@@ -109,6 +114,33 @@ export const getCurrentDateInTimeZone = (
   const { year, month, day } = getFormatterDateParts(now, timeZone);
 
   return `${year}-${padTime(month)}-${padTime(day)}`;
+};
+
+export const isPostPublished = (
+  post: PostDateSource,
+  options: { now?: Date; timeZone?: string } = {},
+) => {
+  const { now = new Date(), timeZone = "Europe/Zagreb" } = options;
+  const currentDate = getCurrentDateInTimeZone(timeZone, now);
+
+  if (post.publishedOn < currentDate) {
+    return true;
+  }
+
+  if (post.publishedOn > currentDate) {
+    return false;
+  }
+
+  if (!post.publishedTime) {
+    return true;
+  }
+
+  const { hour, minute } = getFormatterDateParts(now, timeZone);
+  const currentMinutes = hour * 60 + minute;
+  const [postHour, postMinute] = post.publishedTime.split(":").map(Number);
+  const publishedMinutes = postHour * 60 + postMinute;
+
+  return publishedMinutes <= currentMinutes;
 };
 
 export const getCalendarDayDifference = (

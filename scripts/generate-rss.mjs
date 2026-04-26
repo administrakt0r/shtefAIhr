@@ -26,8 +26,11 @@ const escapeXml = value =>
     .replaceAll("'", '&apos;')
 
 const blogPosts = await loadBlogPosts()
-const { comparePostsByPublishedAt, getPostRssDate } = await loadBlogUtils()
-const sortedPosts = [...blogPosts].sort(comparePostsByPublishedAt)
+const { comparePostsByPublishedAt, getPostRssDate, isPostPublished } = await loadBlogUtils()
+
+const sortedPosts = blogPosts
+  .filter(post => isPostPublished(post))
+  .sort(comparePostsByPublishedAt)
 
 const itemsXml = sortedPosts
   .map(post => {

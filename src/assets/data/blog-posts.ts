@@ -1,4 +1,8 @@
-import { type BlogPost, comparePostsByPublishedAt } from "@/lib/blog";
+import {
+  type BlogPost,
+  comparePostsByPublishedAt,
+  isPostPublished,
+} from "@/lib/blog";
 
 const DEFAULT_AUTHOR = "Shtef";
 const DEFAULT_AVATAR = "/images/avatars/1.webp";
@@ -848,4 +852,6 @@ export const assertUniqueBlogPosts = (posts: BlogPost[]) => {
 
 assertUniqueBlogPosts(blogPosts);
 
-export const sortedBlogPosts = [...blogPosts].sort(comparePostsByPublishedAt);
+export const sortedBlogPosts = blogPosts
+  .filter((post) => isPostPublished(post))
+  .sort(comparePostsByPublishedAt);

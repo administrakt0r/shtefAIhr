@@ -17,6 +17,22 @@ const fail = message => {
   throw new Error(message)
 }
 
+const getCurrentDateInTimeZone = (timeZone, now = new Date()) => {
+  const formatter = new Intl.DateTimeFormat('en-CA', {
+    timeZone,
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit'
+  })
+
+  const parts = formatter.formatToParts(now)
+  const year = parts.find(part => part.type === 'year')?.value
+  const month = parts.find(part => part.type === 'month')?.value
+  const day = parts.find(part => part.type === 'day')?.value
+
+  return `${year}-${month}-${day}`
+}
+
 const git = (...args) =>
   execFileSync('git', args, {
     cwd: rootDir,
@@ -169,7 +185,8 @@ const loadBlogPostsFromSource = (source, filename) => {
 
   const exports = executeCommonJsModule(compiled, filename, {
     '@/lib/blog': {
-      comparePostsByPublishedAt: () => 0
+      comparePostsByPublishedAt: () => 0,
+      isPostPublished: () => true
     }
   })
 
@@ -377,6 +394,14 @@ const main = async () => {
   if (!/^\d{4}-\d{2}-\d{2}$/u.test(newPost.publishedOn)) {
     fail(
       `The new blog post publishedOn must use YYYY-MM-DD format. Received "${newPost.publishedOn}".`
+    )
+  }
+
+  const todayInZagreb = getCurrentDateInTimeZone('Europe/Zagreb')
+
+  if (newPost.publishedOn > todayInZagreb) {
+    fail(
+      `The new blog post publishedOn must not be in the future. Received "${newPost.publishedOn}" but today in Europe/Zagreb is "${todayInZagreb}".`
     )
   }
 

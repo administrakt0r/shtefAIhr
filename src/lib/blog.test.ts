@@ -9,6 +9,7 @@ import {
   getPostMachineDate,
   getPostIsoDateTime,
   getPostRssDate,
+  isPostPublished,
   formatDisplayDate,
   formatDisplayTime,
   formatPostDisplayDate,
@@ -144,6 +145,47 @@ describe("blog utility functions", () => {
           new Date("2026-04-13T22:30:00.000Z"),
         ),
         "2026-04-14",
+      );
+    });
+  });
+
+  describe("isPostPublished", () => {
+    it("returns false for posts dated after the current Zagreb date", () => {
+      assert.equal(
+        isPostPublished(
+          { publishedOn: "2026-04-29" },
+          {
+            now: new Date("2026-04-26T10:00:00.000Z"),
+            timeZone: "Europe/Zagreb",
+          },
+        ),
+        false,
+      );
+    });
+
+    it("returns false for posts scheduled later today with a publishedTime", () => {
+      assert.equal(
+        isPostPublished(
+          { publishedOn: "2026-04-26", publishedTime: "14:00" },
+          {
+            now: new Date("2026-04-26T11:30:00.000Z"),
+            timeZone: "Europe/Zagreb",
+          },
+        ),
+        false,
+      );
+    });
+
+    it("returns true for posts already published today", () => {
+      assert.equal(
+        isPostPublished(
+          { publishedOn: "2026-04-26", publishedTime: "12:00" },
+          {
+            now: new Date("2026-04-26T11:30:00.000Z"),
+            timeZone: "Europe/Zagreb",
+          },
+        ),
+        true,
       );
     });
   });

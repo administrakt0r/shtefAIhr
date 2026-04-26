@@ -6,8 +6,9 @@ import { ChevronLeftIcon, ChevronRightIcon } from "lucide-react";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
-import { blogPosts, sortedBlogPosts } from "@/assets/data/blog-posts";
+import { sortedBlogPosts } from "@/assets/data/blog-posts";
 import {
+  type BlogPost,
   formatDisplayTime,
   formatPostDisplayDate,
   getPostIsoDateTime,
@@ -40,7 +41,7 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const post = blogPosts.find((candidate) => candidate.slug === slug);
+  const post = sortedBlogPosts.find((candidate) => candidate.slug === slug);
 
   if (!post) return {};
 
@@ -81,7 +82,7 @@ export async function generateMetadata({
 }
 
 export async function generateStaticParams() {
-  return blogPosts.map((post) => ({
+  return sortedBlogPosts.map((post) => ({
     slug: post.slug,
   }));
 }
@@ -89,7 +90,7 @@ export async function generateStaticParams() {
 const PostNavigation = ({
   currentPost,
 }: {
-  currentPost: (typeof blogPosts)[0];
+  currentPost: BlogPost;
 }) => {
   const currentIndex = sortedBlogPosts.findIndex(
     (post) => post.slug === currentPost.slug,
@@ -157,7 +158,7 @@ export default async function BlogDetailPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const post = blogPosts.find((candidate) => candidate.slug === slug);
+  const post = sortedBlogPosts.find((candidate) => candidate.slug === slug);
 
   if (!post) {
     notFound();

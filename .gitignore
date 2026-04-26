@@ -3,6 +3,7 @@
 /node_modules
 /.wrangler
 /out
+.omx
 
 # Local environment files
 .env
