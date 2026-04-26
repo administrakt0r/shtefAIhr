@@ -825,6 +825,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false,
   }),
+  createPost({
+    id: 67,
+    slug: 'ai-alati-nece-zamijeniti-programere',
+    title: 'AI alati neće zamijeniti programere: Stvarnost iza hypea',
+    description: 'AI alati funkcioniraju kao napredno automatsko dopunjavanje koda, ali ne posjeduju inženjersko razumijevanje. Arhitektura postaje još važnija.',
+    imageAlt: 'Umjetna inteligencija i kodiranje u praksi',
+    publishedOn: '2026-04-30',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
