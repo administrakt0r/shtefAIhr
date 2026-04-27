@@ -836,6 +836,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 2,
     featured: false,
   }),
+  createPost({
+    id: 68,
+    slug: "hype-oko-ai-agenata-zasto-autonomija-jos-uvijek-nije-stvarnost",
+    title: "Hype oko AI agenata: Zašto autonomija još uvijek nije stvarnost",
+    description: "Unatoč ogromnim obećanjima o potpuno samostalnim sustavima, industrija trenutno isporučuje samo malo naprednije automatizirane skripte.",
+    imageAlt: "Ilustracija uz članak: Hype oko AI agenata: Zašto autonomija još uvijek nije stvarnost",
+    publishedOn: "2026-04-27",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
