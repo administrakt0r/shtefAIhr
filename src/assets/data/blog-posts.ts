@@ -825,6 +825,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false,
   }),
+  createPost({
+    id: 67,
+    slug: 'google-deepmind-partnerstvo-juzna-koreja',
+    title: 'Google DeepMind i Južna Koreja sklapaju AI partnerstvo',
+    description: 'Novi AI Campus u Seoulu omogućit će direktnu suradnju korejskih znanstvenika s vodećim stručnjacima iz Google DeepMinda u području AI modela za znanost.',
+    imageAlt: 'Ilustracija moderne zgrade istraživačkog centra u Seoulu',
+    publishedOn: '2026-04-27',
+    category: NEWS,
+    readTime: 2,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
