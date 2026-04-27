@@ -1,0 +1,35 @@
+## Iluzija jednostavne implementacije: Skriveni dug AI alata
+
+### Brzi prototipovi skrivaju masovni tehnički dug i operativni kaos produkcije
+
+Danas je lakše nego ikad prije napraviti prototip aplikacije koja koristi umjetnu inteligenciju. Dovoljno je svega nekoliko linija koda, jedan API ključ i osnovno razumijevanje pozivanja udaljenih poslužitelja kako bi vaš sustav počeo generirati naizgled impresivne odgovore i rješavati zadatke koji su se do jučer činili čistom znanstvenom fantastikom. Taj prvi doticaj s tehnologijom nevjerojatno je osnažujući. Međutim, taj prvi korak stvara opasnu iluziju. Iza privlačne i jednostavne fasade brze implementacije krije se rastuća planina nevidljivog tehničkog duga s kojom će se inženjerski timovi tek morati suočiti na teži način.
+
+## Prevladavajuća priča
+
+Trenutni narativ u tehnološkoj industriji, uvelike potican od strane pružatelja AI usluga, velikih korporacija i marketinških timova, snažno naglašava apsolutnu dostupnost i nevjerojatnu brzinu integracije novih modela. Na svakom koraku slušamo priče o tome kako svaki developer, bez obzira na formalno predznanje o strojnom učenju, može ugraditi napredne velike jezične modele (LLM) u svoje postojeće proizvode unutar samo jednog jedinog vikenda. Demo prikazi na tehnološkim konferencijama i u viralnim videima su besprijekorni. U njima vidimo kako softver bez greške rješava kompleksne korisničke probleme u nekoliko sekundi, ostavljajući dojam da je umjetna inteligencija postala "plug-and-play" tehnologija koja nikada ne griješi.
+
+Sveprisutni alati i radni okviri omogućavaju nam da apstrahiramo gotovo svu temeljnu složenost. Različite platforme nude gotova, unaprijed konfigurirana rješenja za pametne agente, automatsko generiranje koda, naprednu analizu podataka i visoko personalizirane chat sustave. Cjelokupan industrijski fokus usmjeren je isključivo na drastično smanjenje vremena potrebnog za izlazak na tržište (time-to-market), dok se dugoročna tehnička stabilnost sustava gotovo podrazumijeva sama po sebi. Taj zavodljivi narativ o magičnoj kutiji koja samostalno rješava sve probleme postao je standardna prodajna priča za privlačenje investitora u startup ekosustavu, ali i unutar velikih enterprise korporacija.
+
+### Zašto je ta priča pogrešna ili nepotpuna
+
+Stvarni problem nastaje onog trenutka kada taj na brzinu sklepani "vikend projekt" pokuša preživjeti u stvarnom produkcijskom okruženju, izložen nemilosrdnim stvarnim korisnicima i beskrajnom nizu nepredviđenih rubnih slučajeva. Prevladavajući marketinški narativ potpuno ignorira ključnu inženjersku činjenicu: integracija jezičnih modela unosi temeljnu nepredvidljivost u softverske sustave koji su desetljećima tradicionalno dizajnirani da budu strogo deterministički.
+
+Dok standardni softverski kod gotovo uvijek vraća isti, predvidljivi rezultat za iste ulazne podatke, današnji AI sustavi su stohastičke prirode. Inženjerski timovi odjednom moraju upravljati opasnim halucinacijama modela koji samouvjereno izmišljaju činjenice. Moraju krpati ogromne sigurnosne propuste i braniti sustave od prompt injection napada, gdje zlonamjerni korisnici preuzimaju kontrolu nad asistentom. Uz to, tu su i drastične varijacije u vremenu odziva (latenciji) te stalne, nenajavljene promjene u ponašanju i kvaliteti samog modela s druge strane API-ja koji se tiho ažurira bez ikakve najave.
+
+Da bi se sva ta inherentna nepredvidljivost barem djelomično obuzdala, developeri su ubrzo prisiljeni graditi nevjerojatno slojevite i skupe arhitekture. Započinje se s dodavanjem sustava za praćenje i evaluaciju odgovora, zatim se implementiraju napredni mehanizmi za ponovne pokušaje i spašavanje stanja. Uskoro se dodaju lokalne baze vektorskog znanja i iznimno kompleksni RAG (Retrieval-Augmented Generation) cjevovodi kako bi model uopće dobio točne informacije. Ono što je na samom početku bio jedan trivijalan API poziv od nekoliko linija koda, sada se pretvorilo u ogromnu, zapetljanu mrežu mikrousluga, zaštitnih mehanizama i krhkih heuristika. Umjesto da AI smanjuje inženjerski napor kako se obećavalo, on ga zapravo eksponencijalno povećava, drastično prebacujući teret s pukog pisanja koda na opskurno upravljanje podacima, stalnu evaluaciju i zamornu sanaciju nepredvidivih grešaka. Sve to stvara jedan sasvim novi, visoko specifičan oblik tehničkog duga koji je apsolutno nevidljiv u demo verzijama, ali potpuno paralizirajući u ozbiljnoj produkciji.
+
+## Posljedice u stvarnom svijetu
+
+Ako se ova iluzija o jednostavnosti nastavi nekritički prihvaćati u tehnološkoj zajednici, posljedice za mnoge razvojne timove i kompanije bit će iznimno bolne i skupe. Najveći gubitnici zasigurno će biti one organizacije koje naivno podcijene stvarne dugoročne operativne troškove održavanja ovakvih naprednih sustava. Njihovi će najbolji inženjeri provoditi tjedne i mjesece "gaseći požare" i pokušavajući očajnički ukrotiti sustave koji se potpuno raspadaju čim korisnik unese imalo neočekivan upit.
+
+Troškovi API poziva, održavanje nove infrastrukture za praćenje kvalitete i nebrojeni sati utrošeni na rješavanje bizarnih i neponovljivih grešaka u kratkom će roku nadmašiti sve početne procjene o isplativosti tehnologije. Svi oni startupovi koji su svoju kompletnu poslovnu vrijednost izgradili isključivo na iznimno tankom sloju sučelja iznad tuđeg AI modela naći će se u nezavidnoj situaciji. Shvatit će da njihov proizvod više nije ni tehnički, ni financijski održiv, te da pritom ne posjeduju nikakav jasan zaštitni znak ili intelektualno vlasništvo koje bi ih štitilo od snažne konkurencije.
+
+S druge strane, stvarni pobjednici u ovoj kaotičnoj tranziciji bit će oni iskusni timovi koji od samog početka novu AI tehnologiju tretiraju s maksimalnom inženjerskom strogošću. Timovi koji marljivo grade robusne okvire za kontinuirano testiranje modela, koji dubinski razumiju stvarne granice ove tehnologije i koji ne pokušavaju svaki, pa i najmanji korisnički problem riješiti nepotrebnim ubacivanjem najnovijeg masivnog jezičnog modela. Pravu, održivu prednost ostvarit će samo one organizacije koje prihvate i integriraju činjenicu da je implementacija umjetne inteligencije zapravo jedan iscrpljujući maraton održavanja, optimizacije i nadzora, a nipošto brzi sprint do prvog medijski popraćenog lansiranja.
+
+## Završni stav
+
+Umjetna inteligencija bez ikakve sumnje nepovratno transformira način na koji danas razvijamo softver i rješavamo probleme, ali pritom nimalo ne eliminira temeljnu tehničku složenost, već je samo pritajeno premješta na druga, mračnija mjesta u sustavu. Krajnje je vrijeme da se cijela industrija prestane opijati brzim i površnim prototipovima te se konačno ozbiljno suoči sa stvarnim, iznimno teškim inženjerskim izazovima produkcije. Samo kroz beskompromisnu demistifikaciju novih alata i hrabro prihvaćanje neizbježnog tereta održavanja, zaista možemo izgraditi AI sustave koji su korisni, pouzdani i dugoročno održivi, umjesto sustava koji su tu samo da budu privremeno impresivni.
+
+---
+
+*Komentar objavljen na portalu Umjetna Inteligencija Blog by ShtefAI, autor: Shtef*

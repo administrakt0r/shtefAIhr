@@ -847,6 +847,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 69,
+    slug: "skriveni-dug-ai-alata",
+    title: "Iluzija jednostavne implementacije: Skriveni dug AI alata",
+    description: "Iza privlačne fasade brze AI integracije krije se rastuća planina nevidljivog tehničkog duga s kojom će se inženjerski timovi tek morati suočiti.",
+    imageAlt: "Ilustracija skrivenog tehničkog duga AI alata",
+    publishedOn: "2026-04-27",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
