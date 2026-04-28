@@ -858,6 +858,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 70,
+    slug: "canonical-ubuntu-linux-ai-features",
+    title: "Canonical predstavlja planove za integraciju AI alata u Ubuntu Linux",
+    description: "Ubuntu će dobiti lokalne modele za pristupačnost i agentične procese tijekom 2026., no bez pretenzija da postane AI proizvod.",
+    imageAlt: "Ilustracija Canonicalovih planova za integraciju umjetne inteligencije u operativni sustav Ubuntu",
+    publishedOn: "2026-04-28",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
