@@ -880,6 +880,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 5,
     featured: false,
   }),
+  createPost({
+    id: 72,
+    slug: "ai-unistava-sposobnost-dubokog-promisljanja",
+    title: "Umjetna inteligencija uništava našu sposobnost dubokog promišljanja",
+    description: "Oslanjanje na AI alate za sažimanje informacija i rješavanje problema dugoročno uništava našu sposobnost dubokog promišljanja i analize.",
+    imageAlt: "Ilustracija umjetne inteligencije i mozga koja simbolizira gubitak sposobnosti dubokog promišljanja",
+    publishedOn: "2026-04-28",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
