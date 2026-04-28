@@ -869,6 +869,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false,
   }),
+  createPost({
+    id: 71,
+    slug: "kraj-institucionalnog-znanja-ai-produktivnost",
+    title: "Kraj institucionalnog znanja: Kako nas AI čini dugoročno nesposobnima",
+    description: "Umjetna inteligencija pruža iluziju brzog rješavanja problema, no dugoročno stvara generaciju stručnjaka bez razumijevanja temeljnih sustava.",
+    imageAlt: "Ilustracija gubitka institucionalnog znanja uslijed pretjerane ovisnosti o AI alatima",
+    publishedOn: "2026-04-28",
+    category: ANALYSIS,
+    readTime: 5,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
