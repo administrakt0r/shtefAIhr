@@ -913,6 +913,18 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 75,
+    slug: "ai-ne-rjesava-lose-poslovne-procese-samo-ih-ubrzava",
+    title: "AI ne rješava loše poslovne procese, samo ih ubrzava",
+    description:
+      "Automatizacija loše organizacije uz pomoć umjetne inteligencije stvara samo brži birokratski kaos. Zašto AI nije rješenje za duboke poslovne probleme.",
+    imageAlt: "Zbrka papira i digitalnih ekrana koji simboliziraju ubrzani birokratski kaos",
+    publishedOn: "2026-04-29",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
