@@ -902,6 +902,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false,
   }),
+  createPost({
+    id: 74,
+    slug: "ai-iluzija-kompetencije-i-kraj-razumijevanja-koda",
+    title: "Umjetna inteligencija i iluzija kompetencije u programiranju",
+    description: "Kratki komentar koji ističe kako korištenje AI asistenata za generiranje koda stvara privid visoke produktivnosti, dok istovremeno uništava sposobnost programera da uistinu razumiju i dugoročno održavaju softver koji grade.",
+    imageAlt: "Ilustracija programera i umjetne inteligencije",
+    publishedOn: "2026-04-29",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
