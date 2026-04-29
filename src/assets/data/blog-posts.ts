@@ -891,6 +891,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 73,
+    slug: "google-expands-pentagon-ai-access",
+    title: "Google proširuje pristup umjetnoj inteligenciji za Pentagon",
+    description: "Google je odobrio Ministarstvu obrane SAD-a pristup svojim AI modelima, pridruživši se kompanijama koje surađuju s vladom, dok se interna previranja nastavljaju.",
+    imageAlt: "Zgrada Pentagona s digitalnim overlayem koji simbolizira umjetnu inteligenciju i tehnologiju",
+    publishedOn: "2026-04-29",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
