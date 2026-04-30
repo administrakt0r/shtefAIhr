@@ -936,6 +936,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 77,
+    slug: "zabluda-ai-kao-zamjena-za-juniore",
+    title: "Zabluda \"AI kao zamjena za juniore\" i kraj seniora",
+    description: "Kompanije koje štede mijenjajući juniore AI alatima dugoročno uništavaju mehanizam kojim industrija stvara vrhunske seniore.",
+    imageAlt: "Ilustracija koja prikazuje junior developera i umjetnu inteligenciju",
+    publishedOn: "2026-04-30",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
