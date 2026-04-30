@@ -925,6 +925,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 76,
+    slug: "anthropic-valuation-900-billion",
+    title: "Anthropic cilja na novu procjenu od 900 milijardi dolara",
+    description: "Anthropic razmatra ponude za novo financiranje od oko 50 milijardi dolara, što bi moglo podići ukupnu tržišnu procjenu tvrtke na 900 milijardi dolara.",
+    imageAlt: "Futuristička apstraktna grafika koja prikazuje ogroman financijski rast umjetne inteligencije",
+    publishedOn: "2026-04-30",
+    category: NEWS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
