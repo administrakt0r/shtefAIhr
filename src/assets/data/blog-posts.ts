@@ -947,6 +947,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 78,
+    slug: "open-source-ai-is-not-the-answer-to-monopolies",
+    title: "Otvoreni kod u umjetnoj inteligenciji neće srušiti monopole",
+    description: "Otvoreni modeli samo preusmjeravaju ovisnost s modela na infrastrukturu koju kontroliraju tehnološki divovi.",
+    imageAlt: "Ilustracija tehnološkog monopola i infrastrukture",
+    publishedOn: "2026-04-30",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
