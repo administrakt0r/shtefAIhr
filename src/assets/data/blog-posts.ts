@@ -969,6 +969,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false,
   }),
+  createPost({
+    id: 80,
+    slug: 'ai-agenti-u-korisnickoj-podrsci-nocna-mora',
+    title: 'Kraj korisničke podrške: AI agenti i povratak u noćnu moru',
+    description: 'Zamjena ljudi botovima u korisničkoj podršci ne unapređuje uslugu, već gradi neprobojni digitalni zid između tvrtke i njenih nezadovoljnih korisnika.',
+    imageAlt: 'Ilustracija AI agenata u korisničkoj podršci koji stvaraju digitalni zid',
+    publishedOn: '2026-05-01',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
