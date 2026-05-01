@@ -958,6 +958,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 79,
+    slug: 'musk-testifies-xai-trained-grok-on-openai-models',
+    title: 'Elon Musk svjedočio da je xAI trenirao Grok na OpenAI modelima',
+    description: 'Elon Musk na sudu priznao da je xAI koristio OpenAI modele za treniranje svog Grok AI sustava kroz proces zvan destilacija.',
+    imageAlt: 'Elon Musk na sudu',
+    publishedOn: '2026-05-01',
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
