@@ -980,6 +980,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 81,
+    slug: 'cijena-ai-iluzije-neodrziva-racunica',
+    title: 'Cijena AI iluzije: Zašto je trenutna računica potpuno neodrživa',
+    description: 'Ogromni troškovi infrastrukture za AI ne prate stvarnu poslovnu vrijednost koju ti alati donose. Rješavamo trivijalne zadatke najskupljom tehnologijom ikad izgrađenom.',
+    imageAlt: 'Ilustracija balona troškova AI infrastrukture u usporedbi s vrijednošću',
+    publishedOn: '2026-05-01',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
