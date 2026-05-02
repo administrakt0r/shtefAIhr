@@ -1013,6 +1013,17 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     imageAlt: "Ilustracija koja prikazuje bijeg od odgovornosti",
   }),
+  createPost({
+    id: 84,
+    slug: "mit-o-jednostavnoj-integraciji-ai-alata",
+    title: "Mit o jednostavnoj integraciji: Zašto AI zahtijeva vrhunske inženjere",
+    description: "Kratki komentar koji demistificira ideju da su AI alati jednostavni za implementaciju i naglašava kritičnu potrebu za iskusnim inženjerima pri integraciji u ozbiljne sustave.",
+    publishedOn: "2026-05-02",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+    imageAlt: "Ilustracija kompleksne mrežne arhitekture koja povezuje AI model sa stabilnim inženjerskim sustavom",
+  }),
 ];
 
 const assertUniqueField = (
