@@ -991,6 +991,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 82,
+    slug: 'musk-v-altman-sudenje-otkriva-xai-koristi-openai-modele',
+    title: 'Suđenje Muska i Altmana: Musk priznao da xAI koristi OpenAI modele',
+    description: 'Prvi tjedan suđenja između Elona Muska i OpenAI-ja donio je neočekivano priznanje. Musk je svjedočio da njegov startup xAI djelomično destilira modele OpenAI-ja.',
+    imageAlt: 'Ilustracija sudnice s Elonom Muskom i Samom Altmanom uz digitalne AI elemente',
+    publishedOn: '2026-05-02',
+    category: NEWS,
+    readTime: 5,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
