@@ -1002,6 +1002,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 5,
     featured: false,
   }),
+  createPost({
+    id: 83,
+    slug: "sindrom-carobnog-stapica-kako-ai-unistava-odgovornost",
+    title: "Sindrom čarobnog štapića: Kako AI uništava odgovornost",
+    description: "Komentar o tome kako se umjetna inteligencija sve više koristi kao alibi za prebacivanje odgovornosti za loše odluke.",
+    publishedOn: "2026-05-02",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+    imageAlt: "Ilustracija koja prikazuje bijeg od odgovornosti",
+  }),
 ];
 
 const assertUniqueField = (
