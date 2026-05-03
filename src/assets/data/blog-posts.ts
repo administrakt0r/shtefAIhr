@@ -1035,6 +1035,20 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     imageAlt: "Zlatni kipić Oscara uz digitalni kod",
   }),
+
+  createPost({
+    id: 86,
+    slug: "ai-alati-mijenjaju-usko-grlo",
+    title: "AI alati ne zamjenjuju developere, već mijenjaju usko grlo",
+    description: "Iako AI alati nevjerojatno ubrzavaju proces pisanja koda, oni ne rješavaju, već samo premještaju glavno usko grlo u razvoju softvera s pisanja na čitanje i održavanje.",
+    publishedOn: "2026-05-03",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+    imageAlt: "AI alati u programiranju",
+  }),
+
+
 ];
 
 const assertUniqueField = (
