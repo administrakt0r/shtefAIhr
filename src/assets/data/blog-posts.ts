@@ -1024,6 +1024,17 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     imageAlt: "Ilustracija kompleksne mrežne arhitekture koja povezuje AI model sa stabilnim inženjerskim sustavom",
   }),
+  createPost({
+    id: 85,
+    slug: "ai-actors-oscars-ineligible",
+    title: "Akademija mijenja pravila: AI glumci i scenariji više ne mogu osvojiti Oscara",
+    publishedOn: "2026-05-03",
+    category: NEWS,
+    description: "Filmska akademija donijela je nova pravila prema kojima samo ljudi mogu biti nominirani i osvojiti Oscara, čime se isključuju AI generirani glumci i scenariji.",
+    readTime: 4,
+    featured: false,
+    imageAlt: "Zlatni kipić Oscara uz digitalni kod",
+  }),
 ];
 
 const assertUniqueField = (
