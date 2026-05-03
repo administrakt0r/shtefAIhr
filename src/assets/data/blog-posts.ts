@@ -1047,7 +1047,17 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     imageAlt: "AI alati u programiranju",
   }),
-
+  createPost({
+    id: 87,
+    slug: "zasto-je-fokus-na-agi-opasna-iluzija",
+    title: "Zašto je fokus na AGI opasna iluzija i distrakcija",
+    description: "Opsesija stvaranjem Umjetne opće inteligencije (AGI) sprječava industriju da rješava stvarne probleme usko specijaliziranim alatima.",
+    publishedOn: "2026-05-03",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+    imageAlt: "Ilustracija osobe koja gleda utopijski svijet umjetne inteligencije kroz povećalo",
+  }),
 
 ];
 
