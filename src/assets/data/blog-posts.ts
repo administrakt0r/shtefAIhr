@@ -1069,6 +1069,17 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     imageAlt: "Ilustracija umjetne inteligencije i liječnika u bolnici",
   }),
+  createPost({
+    id: 89,
+    slug: "povratak-majstorstvu-zasto-je-tezi-put-jedini-odrziv",
+    title: "Povratak majstorstvu: Zašto je teži put jedini održiv",
+    description: "Kritički osvrt na trend pretjeranog oslanjanja na AI alate u programiranju. Tvrdi se da, iako AI pruža kratkoročno ubrzanje, dugoročno stvara tehnički dug i onemogućuje razvoj istinskog inženjerskog majstorstva.",
+    imageAlt: "Ilustracija programera pred računalom koji odabire teži, intelektualno zahtjevniji put do rješenja",
+    publishedOn: "2026-05-04",
+    category: ANALYSIS,
+    readTime: 5,
+    featured: false,
+  }),
 
 ];
 
