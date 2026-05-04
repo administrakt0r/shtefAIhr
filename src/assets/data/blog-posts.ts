@@ -1058,6 +1058,17 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     imageAlt: "Ilustracija osobe koja gleda utopijski svijet umjetne inteligencije kroz povećalo",
   }),
+  createPost({
+    id: 88,
+    slug: "harvard-studija-ai-precizniji-od-lijecnika-u-hitnoj",
+    title: "Nova studija s Harvarda: AI precizniji od liječnika u hitnoj",
+    description: "OpenAI-jevi modeli pokazali se točnijim od liječnika interne medicine u postavljanju dijagnoza pacijenata na hitnom prijemu.",
+    publishedOn: "2026-05-04",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+    imageAlt: "Ilustracija umjetne inteligencije i liječnika u bolnici",
+  }),
 
 ];
 
