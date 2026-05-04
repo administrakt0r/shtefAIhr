@@ -1081,6 +1081,18 @@ export const blogPosts: BlogPost[] = [
     featured: false,
   }),
 
+  createPost({
+    id: 90,
+    slug: 'vecini-tvrtki-treba-bolji-rag-a-ne-vlastiti-ai-model',
+    title: 'Većini tvrtki treba bolji RAG, a ne vlastiti AI model',
+    description: 'Tvrtke troše previše vremena i resursa na treniranje vlastitih modela, dok bi im kvalitetno implementiran RAG sustav donio puno više vrijednosti uz manje troškove i rizike.',
+    imageAlt: 'Grafika koja prikazuje povezivanje baze podataka s AI sustavom',
+    publishedOn: '2026-05-04',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
+
 ];
 
 const assertUniqueField = (
