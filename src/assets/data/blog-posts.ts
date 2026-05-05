@@ -1092,6 +1092,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 91,
+    slug: 'nvidia-jensen-huang-ai-jobs',
+    title: 'Jensen Huang: Umjetna inteligencija stvara golem broj poslova',
+    description: 'Izvršni direktor Nvidije odbacuje strahove o gubitku radnih mjesta i smatra da AI potiče reindustrijalizaciju.',
+    imageAlt: 'Jensen Huang iz Nvidije',
+    publishedOn: '2026-05-05',
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+  }),
 
 ];
 
