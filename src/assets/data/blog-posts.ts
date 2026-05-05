@@ -1103,7 +1103,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false,
   }),
-
+  createPost({
+    id: 92,
+    slug: "ai-ne-pise-kod-samo-predlaze-sintaksu",
+    title: "Umjetna inteligencija ne piše kod, ona predlaže sintaksu",
+    description: "Priče o propasti programiranja su pretjerane jer AI ne rješava inženjerske probleme, već samo automatizira tipkanje.",
+    imageAlt: "Ilustracija uz članak: Umjetna inteligencija ne piše kod, ona predlaže sintaksu",
+    publishedOn: "2026-05-05",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
