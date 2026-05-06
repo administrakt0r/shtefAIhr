@@ -1114,6 +1114,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 93,
+    slug: "zabluda-kratkorocnog-ai-ubrzanja",
+    title: "Zabluda kratkoročnog AI ubrzanja",
+    description: "Brzina koju donose AI alati u programiranju stvara privid napretka, dok zapravo dugoročno gomila tehnički dug jer se preskače ključna faza promišljanja i dizajniranja sustava.",
+    imageAlt: "Ilustracija brzog tipkanja na tipkovnici naspram promišljanja",
+    publishedOn: "2026-05-06",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
