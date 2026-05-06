@@ -1125,6 +1125,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 94,
+    slug: "zasto-prompt-inzenjering-nije-karijera",
+    title: "Zašto prompt inženjering nije stvarna karijera budućnosti",
+    description: "Vještina pisanja uputa za AI modele nestat će jednako brzo kao što je i nastala, a budućnost pripada stručnjacima s domenskim znanjem.",
+    publishedOn: "2026-05-06",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+    imageAlt: "Ilustracija koja prikazuje prolaznost prompt inženjeringa i važnost domenskog znanja",
+  }),
 ];
 
 const assertUniqueField = (
