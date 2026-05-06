@@ -1114,6 +1114,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 93,
+    slug: "deepmind-ai-co-clinician",
+    title: "Google DeepMind predstavlja AI Co-Clinician za zdravstvo",
+    description: "Novi AI sustav osmišljen je kao suradnik u liječničkom timu koji pomaže pri sintezi dokaza i odgovaranju na složena medicinska pitanja.",
+    imageAlt: "Ilustracija uz članak: Google DeepMind predstavlja AI Co-Clinician za zdravstvo",
+    publishedOn: "2026-05-06",
+    category: NEWS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
