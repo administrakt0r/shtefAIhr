@@ -1147,6 +1147,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 96,
+    slug: "mrtvi-internet-kada-strojevi-pricaju",
+    title: "Mrtvi internet: Kada strojevi počnu pričati sami sa sobom",
+    description: "AI agenti na internetu počinju komunicirati jedni s drugima umjesto s ljudima, stvarajući zatvorenu petlju sintetičkog sadržaja koja degradira kvalitetu informacija.",
+    imageAlt: "Ilustracija robota koji komuniciraju u zatvorenom krugu bez prisutnosti ljudi",
+    publishedOn: "2026-05-07",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
