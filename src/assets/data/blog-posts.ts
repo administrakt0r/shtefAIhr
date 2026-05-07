@@ -1136,6 +1136,17 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     imageAlt: "Ilustracija koja prikazuje prolaznost prompt inženjeringa i važnost domenskog znanja",
   }),
+  createPost({
+    id: 95,
+    slug: "decoupled-diloco-novi-pristup-treningu-modela",
+    title: "Decoupled DiLoCo: Novi otporni pristup za trening AI modela",
+    description: "Google DeepMind predstavlja novu distribuiranu arhitekturu koja omogućuje otporniji i fleksibilniji trening AI modela na različitim hardverskim generacijama.",
+    imageAlt: "Ilustracija distribuiranog treninga umjetne inteligencije",
+    publishedOn: "2026-05-07",
+    category: NEWS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (

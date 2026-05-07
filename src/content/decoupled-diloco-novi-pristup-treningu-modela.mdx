@@ -1,0 +1,34 @@
+## Decoupled DiLoCo: Novi otporni pristup za trening AI modela
+
+### Google DeepMind predstavlja arhitekturu za efikasniji distribuirani trening velikih jezičnih modela
+
+Google DeepMind objavio je rad koji predstavlja Decoupled DiLoCo (Distributed Low-Communication), novi pristup distribuiranom treniranju naprednih AI modela. Ova inovativna arhitektura rješava problem osjetljivosti treninga na kvarove hardvera dijeljenjem procesa na odvojene "otoke" računanja.
+
+## Ključni detalji
+
+Tradicionalno treniranje najnaprednijih modela oslanja se na visoko sinkronizirane sustave u kojima identični čipovi moraju raditi u savršenom skladu. S rastom modela, održavanje takve sinkronizacije na tisućama čipova postaje veliki logistički izazov i rizik.
+
+### Zašto je to važno
+
+Decoupled DiLoCo rješava te probleme izolirajući lokalne kvarove. Ako na jednom dijelu infrastrukture dođe do kvara čipa, ostali dijelovi sustava mogu nesmetano nastaviti s učenjem, što proces treniranja čini mnogo otpornijim na tehničke pogreške i prekide.
+
+### Tehnička pozadina
+
+Sustav nadograđuje prijašnje inovacije, kombinirajući asinkroni protok podataka s drastično smanjenom potrebom za propusnosti između podatkovnih centara:
+
+- Oslanja se na asinkroni protok podataka između izoliranih jedinica ("otoka") računanja.
+- Posjeduje sposobnost "samozacjeljivanja" — tijekom testiranja s Gemma 4 modelima, umjetno izazvani hardverski kvarovi nisu zaustavili treniranje; oštećene jedinice su se nakon popravka neprimjetno integrirale natrag.
+- Sustav može koristiti značajno manju propusnost mreže u usporedbi s konvencionalnim metodama.
+
+## Širi kontekst
+
+Sustav otvara vrata potpuno novim mogućnostima, uključujući iskorištavanje neiskorištenih računalnih resursa diljem svijeta zahvaljujući minimalnim zahtjevima za propusnost. Posebno je značajna i mogućnost miješanja različitih generacija hardvera u istom treningu, na primjer istovremeno korištenje TPU v6e i TPU v5p čipova, bez narušavanja performansi.
+
+## Što slijedi
+
+Ova tehnologija ne samo da povećava efikasnost i produljuje životni vijek starijeg hardvera, nego je i jasan signal smjera u kojem se razvija infrastruktura za sljedeću generaciju umjetne opće inteligencije, gdje su prilagodljivost i asinkronost ključni.
+
+---
+
+*Izvor: [Google DeepMind Blog](https://deepmind.google/blog/decoupled-diloco/)*
+*Objavljeno na portalu Umjetna Inteligencija Blog by ShtefAI, autor: Shtef*
