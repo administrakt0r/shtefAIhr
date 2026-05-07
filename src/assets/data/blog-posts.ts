@@ -1158,6 +1158,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 97,
+    slug: "kraj-iluzije-zasto-open-source-ai-gubi",
+    title: "Kraj iluzije: Zašto open-source AI modeli gube bitku protiv giganata",
+    description: "Komentar o tome zašto open-source zajednica dugoročno gubi utrku u razvoju umjetne inteligencije i zašto stvarna moć leži u vlasništvu nad infrastrukturom i energijom.",
+    publishedOn: "2026-05-07",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+    imageAlt: "Ilustracija borbe malog open-source developera protiv tehnoloških giganata",
+  }),
 ];
 
 const assertUniqueField = (
