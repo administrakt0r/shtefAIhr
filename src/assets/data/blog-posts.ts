@@ -1180,6 +1180,17 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     imageAlt: "Ilustracija učenika koji prepušta učenje i razmišljanje strojevima",
   }),
+  createPost({
+    id: 99,
+    slug: "divlji-zapad-ai-igracaka",
+    title: "Novi divlji zapad pametnih AI igračaka donosi brojne dječje rizike",
+    description: "Tržište AI igračaka ubrzano raste, no stručnjaci i udruge upozoravaju na sigurnosne propuste, neprimjeren sadržaj te negativan utjecaj na društveni razvoj i dječju igru.",
+    publishedOn: "2026-05-08",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+    imageAlt: "Ilustracija pametnih AI igračaka oko djeteta",
+  }),
 ];
 
 const assertUniqueField = (
