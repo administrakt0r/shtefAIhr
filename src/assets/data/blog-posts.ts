@@ -1169,6 +1169,17 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     imageAlt: "Ilustracija borbe malog open-source developera protiv tehnoloških giganata",
   }),
+  createPost({
+    id: 98,
+    slug: "ai-u-obrazovanju-generacija-koja-ne-zna-misliti",
+    title: "AI u obrazovanju: Kako stvaramo generaciju koja ne zna misliti",
+    description: "Kratki komentar koji objašnjava zašto integracija AI alata u učionice ne demokratizira znanje, već stvara sustav u kojem učenici trajno delegiraju vlastiti kognitivni napor strojevima.",
+    publishedOn: "2026-05-08",
+    category: ANALYSIS,
+    readTime: 3,
+    featured: false,
+    imageAlt: "Ilustracija učenika koji prepušta učenje i razmišljanje strojevima",
+  }),
 ];
 
 const assertUniqueField = (
