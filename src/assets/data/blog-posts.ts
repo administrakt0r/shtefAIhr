@@ -1191,6 +1191,17 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     imageAlt: "Ilustracija pametnih AI igračaka oko djeteta",
   }),
+  createPost({
+    id: 100,
+    slug: "autonomni-agenti-su-daleko-od-pouzdanosti",
+    title: "Autonomni agenti su daleko od pouzdanosti",
+    description: "Kratki komentar koji objašnjava zašto autonomni AI agenti još uvijek ne mogu pouzdano zamijeniti ljudski rad u složenim poslovnim zadacima.",
+    publishedOn: "2026-05-08",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+    imageAlt: "Ilustracija nezavršene i nepouzdane konstrukcije robota u poslovnom okruženju",
+  }),
 ];
 
 const assertUniqueField = (
