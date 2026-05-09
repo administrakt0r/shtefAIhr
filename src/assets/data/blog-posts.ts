@@ -1224,6 +1224,17 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     imageAlt: "Ilustracija starog, zapetljanog koda na kojem radi programer",
   }),
+  createPost({
+    id: 103,
+    slug: "zasto-chat-sucelja-nisu-buducnost-interakcije",
+    title: "Zašto chat sučelja nisu budućnost interakcije",
+    description: "Kratki komentar koji objašnjava zašto je forsiranje tekstualnog chata kao primarnog sučelja korak unatrag za većinu korisničkih zadataka u usporedbi s dobrim grafičkim alatima.",
+    publishedOn: "2026-05-09",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+    imageAlt: "Ilustracija osobe koja umorno tipka u chat sučelje",
+  }),
 ];
 
 const assertUniqueField = (
