@@ -1202,6 +1202,17 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     imageAlt: "Ilustracija nezavršene i nepouzdane konstrukcije robota u poslovnom okruženju",
   }),
+  createPost({
+    id: 101,
+    slug: "mozilla-mythos-ai-vulnerabilities",
+    title: "Mozilla koristi AI za otkrivanje ranjivosti u Firefoxu",
+    description: "Korištenjem Anthropic Mythos modela, Mozilla je uspjela otkriti preko 200 sigurnosnih grešaka u pregledniku Firefox uz gotovo potpunu eliminaciju lažno pozitivnih prijava.",
+    publishedOn: "2026-05-09",
+    category: NEWS,
+    readTime: 4,
+    featured: false,
+    imageAlt: "Ilustracija integracije AI agencija u provjeri sigurnosti softvera",
+  }),
 ];
 
 const assertUniqueField = (

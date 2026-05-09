@@ -1,0 +1,34 @@
+## Mozilla koristi AI za otkrivanje ranjivosti u Firefoxu
+
+### Otkrivena 271 ranjivost koristeći model Mythos s gotovo nula lažno pozitivnih rezultata
+
+Mozilla je objavila kako je koristeći AI model Mythos tvrtke Anthropic uspjela pronaći 271 sigurnosnu ranjivost u izvornom kodu svog preglednika Firefox. Ovaj proboj u AI potpomognutom otkrivanju grešaka pruža značajnu prednost obrani i ubrzava rješavanje sigurnosnih problema na velikoj skali.
+
+## Ključni detalji
+
+Kroz posljednja dva mjeseca, Mozillini inženjeri su iskoristili Mythos za analizu i pronalazak sigurnosnih ranjivosti. Od 271 otkrivene greške, čak 180 ih je označeno kao "sec-high" (visoki rizik), što znači da se mogu iskoristiti normalnim korisničkim ponašanjem, poput pregledavanja web stranica. Ostale su uključivale 80 grešaka umjerenog rizika i 11 niskog rizika. Posebno je impresivan podatak da su rezultati sadržavali gotovo "nula lažno pozitivnih" prijava, što je ogroman napredak u odnosu na prijašnje pokušaje s AI alatima.
+
+### Zašto je to važno
+
+Iako su mnogi bili skeptični prema tvrdnjama o AI rješavanju sigurnosnih problema, ovo otkriće pokazuje da su modeli sada dovoljno zreli za stvarnu i korisnu primjenu. Uspjeh nije samo u brzini pronalaska grešaka, već u točnosti, koja developerima pruža sigurnost i štedi vrijeme jer ne moraju provjeravati stotine haluciniranih izvještaja, takozvanog "slopa".
+
+### Tehnička pozadina
+
+Glavni razlog za ovaj uspjeh bila je izrada prilagođenog "agenta", odnosno koda (harness) koji modelira tijek rada.
+
+- Taj kod usmjerava model (LLM) kako bi postigao točan cilj (npr. "pronađi grešku u ovoj datoteci").
+- Agent ima pristup istim alatima i sustavima koje koriste Mozillini programeri, što mu omogućuje izvođenje testova.
+- Drugi, zasebni LLM ocjenjuje izlaz prvog, dodatno potvrđujući rezultate prije nego se obavijeste developeri.
+
+## Širi kontekst
+
+Primjena AI modela u provjeri složenih baza koda poput Firefoxa znači značajno smanjenje tehničkog duga i veću razinu zaštite za krajnje korisnike. Ova inovacija sugerira da će i ostale tehnološke kompanije vjerojatno uskoro ubrzati integraciju sličnih agentičkih sustava za sigurnosne provjere u svojim procesima razvoja.
+
+## Što slijedi
+
+Očekuje se da će Mozilla i dalje raditi na poboljšanju i proširenju ovih alata. Otvaranje dijela izvještaja o ovim greškama javnosti moglo bi potaknuti daljnje rasprave o korisnosti AI-ja u cyber sigurnosti te pokazati da ovo nije samo još jedna runda tehnološkog obećanja.
+
+---
+
+*Izvor: [Ars Technica](https://arstechnica.com/information-technology/2026/05/mozilla-says-271-vulnerabilities-found-by-mythos-have-almost-no-false-positives/)*
+*Objavljeno na portalu Umjetna Inteligencija Blog by ShtefAI, autor: Shtef*
