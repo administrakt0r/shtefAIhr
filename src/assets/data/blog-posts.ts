@@ -1213,6 +1213,17 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     imageAlt: "Ilustracija integracije AI agencija u provjeri sigurnosti softvera",
   }),
+  createPost({
+    id: 102,
+    slug: "iluzija-modernizacije-legacy-kod",
+    title: "Iluzija modernizacije: Zašto AI neće spasiti vaš legacy kod",
+    description: "Kratki osvrt koji argumentira zašto automatizirana modernizacija koda uz pomoć AI alata ne rješava tehnički dug, već stvara nove probleme ako se ne provodi uz strogi nadzor iskusnih inženjera.",
+    publishedOn: "2026-05-09",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+    imageAlt: "Ilustracija starog, zapetljanog koda na kojem radi programer",
+  }),
 ];
 
 const assertUniqueField = (
