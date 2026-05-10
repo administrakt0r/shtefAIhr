@@ -1257,6 +1257,17 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     imageAlt: "Ilustracija programera koji ne razumije generirani kod",
   }),
+  createPost({
+    id: 106,
+    slug: "opasnost-ai-testiranja-ai-koda",
+    title: "Opasnost petlje povjerenja: Kada AI testira kod koji je AI napisao",
+    description: "Oslanjanje na umjetnu inteligenciju za pisanje testova za strojno generirani kod stvara opasnu iluziju sigurnosti i dugoročno srozava kvalitetu softvera.",
+    imageAlt: "Ilustracija programera koji zbunjeno gleda u kod i testove koje je generirao AI",
+    publishedOn: "2026-05-10",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (

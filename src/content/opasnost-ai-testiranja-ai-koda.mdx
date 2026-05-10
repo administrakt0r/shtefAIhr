@@ -1,0 +1,27 @@
+## Opasnost petlje povjerenja: Kada AI testira kod koji je AI napisao
+
+### Oslanjanje na umjetnu inteligenciju za pisanje testova stvara iluziju sigurnosti
+
+Danas je postalo uobičajeno da inženjeri koriste alate umjetne inteligencije za generiranje koda, no sve češće tim istim alatima prepuštaju i pisanje testova za taj kod. Takva praksa stvara zatvorenu petlju povjerenja u kojoj nitko doista ne zna je li softver ispravan.
+
+## Prevladavajuća priča
+
+Industrija razvoja softvera oduševljeno je prihvatila alate poput Copilota, Claudea i ChatGPT-ja. Prevladavajuća priča glasi da će nam umjetna inteligencija omogućiti deset puta brži razvoj. U tom optimističnom scenariju, developer jednostavno opiše željenu funkcionalnost, umjetna inteligencija generira kod, a zatim generira i testove koji dokazuju da taj kod radi. Na papiru, dobivamo savršenu pokrivenost testovima uz minimalan ljudski trud, a razvojni proces teče nevjerojatnom brzinom.
+
+### Zašto je ta priča pogrešna ili nepotpuna
+
+Problem nastaje jer testovi nemaju svrhu samo potvrditi da se kod izvršava, već i osigurati da kod ispunjava specifične poslovne zahtjeve na ispravan način. Kada isti jezični model koji je stvorio logičku pogrešku u kodu dobije zadatak napisati test za taj kod, vrlo je vjerojatno da će stvoriti test koji prolazi usprkos toj pogrešci.
+
+Umjetna inteligencija ne razumije stvarnu domenu problema. Ona predviđa najvjerojatniji nastavak teksta na temelju uzoraka. Ako generirani kod sadrži rubni slučaj koji nije pokriven, generirani test također će zaobići taj isti rubni slučaj. Rezultat je zelena kvačica na CI/CD cjevovodu koja developerima i menadžerima daje lažan osjećaj sigurnosti, dok se stvarni defekti skrivaju ispod površine.
+
+## Posljedice u stvarnom svijetu
+
+Kratkoročno, tvrtke slave ubrzanje razvoja i visoku pokrivenost koda testovima. Dugoročno, međutim, stvaraju golemi tehnički dug. Kada generirani softver konačno zakaže u produkciji, nitko u timu ne posjeduje duboko razumijevanje sustava potrebno za brzo rješavanje problema. Umjesto pravih inženjera koji razumiju arhitekturu i rubne slučajeve, dobivamo operatere alata koji slijepo vjeruju stroju. Ceh naposljetku plaćaju krajnji korisnici kroz nestabilan softver i tvrtke kroz skupe i spore popravke sustava koji su postali previše složeni za ljudsko razumijevanje.
+
+## Završni stav
+
+Umjetna inteligencija može biti koristan alat za ubrzavanje tipkanja poznatih uzoraka, ali ne smije postati arbitar ispravnosti vlastitog koda. Pisanje testova je intelektualni čin propitkivanja i razumijevanja sustava koji se gradi. Prepuštanje tog zadatka stroju nije optimizacija, već odricanje od inženjerske odgovornosti.
+
+---
+
+*Komentar objavljen na portalu Umjetna Inteligencija Blog by ShtefAI, autor: Shtef*
