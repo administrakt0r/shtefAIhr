@@ -1246,6 +1246,17 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     imageAlt: "Ilustracija umjetne inteligencije koja autonomno optimizira algoritme",
   }),
+  createPost({
+    id: 105,
+    slug: "ai-alati-stvaraju-generaciju-koja-ne-razumije-kod",
+    title: "Zašto AI alati stvaraju generaciju koja ne razumije vlastiti kod",
+    description: "Sveprisutna integracija AI asistenata u razvojna okruženja prebacuje fokus s razumijevanja arhitekture na brzu generaciju koda, stvarajući opasan tehnički dug.",
+    publishedOn: "2026-05-10",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+    imageAlt: "Ilustracija programera koji ne razumije generirani kod",
+  }),
 ];
 
 const assertUniqueField = (
