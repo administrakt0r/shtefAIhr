@@ -1235,6 +1235,17 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     imageAlt: "Ilustracija osobe koja umorno tipka u chat sučelje",
   }),
+  createPost({
+    id: 104,
+    slug: "alphaevolve-ai-sustav-google-deepmind",
+    title: "Google DeepMind predstavlja AlphaEvolve sustav",
+    description: "Novi AI sustav sposoban za autonomno otkrivanje i optimizaciju algoritama koji već ubrzava istraživanja u različitim znanstvenim i inženjerskim područjima.",
+    publishedOn: "2026-05-10",
+    category: NEWS,
+    readTime: 4,
+    featured: false,
+    imageAlt: "Ilustracija umjetne inteligencije koja autonomno optimizira algoritme",
+  }),
 ];
 
 const assertUniqueField = (
