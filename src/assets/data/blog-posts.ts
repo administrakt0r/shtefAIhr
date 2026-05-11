@@ -1279,6 +1279,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false,
   }),
+  createPost({
+    id: 108,
+    slug: "zabluda-o-produktivnosti-vise-koda-nije-bolji-softver",
+    title: "Zabluda o produktivnosti: Više koda nije bolji softver",
+    description: "Kratki komentar koji objašnjava zašto umjetna inteligencija koja brže piše kod zapravo stvara više tehničkog duga i usporava dugoročni razvoj softvera.",
+    imageAlt: "Ilustracija koja prikazuje programera zatrpanog lošim strojno generiranim kodom",
+    publishedOn: "2026-05-11",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
