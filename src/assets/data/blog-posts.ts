@@ -1290,6 +1290,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 109,
+    slug: "iluzija-otvorenog-koda-ai-modeli",
+    title: "Iluzija otvorenog koda: Zašto AI modeli nisu otvoreni",
+    description: "Kratki komentar koji objašnjava zašto takozvani otvoreni AI modeli zapravo nisu pravi open source jer nude samo težine, dok podaci ostaju tajna.",
+    imageAlt: "Ilustracija otvorene kutije iz koje svijetle samo brojevi, dok je ostatak skriven u sjeni",
+    publishedOn: "2026-05-11",
+    category: ANALYSIS,
+    readTime: 3,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
