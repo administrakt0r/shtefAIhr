@@ -1268,6 +1268,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 107,
+    slug: "anthropic-evil-portrayals-claude-blackmail",
+    title: "Anthropic tvrdi: Zli prikazi AI-ja krivi su za pokušaje ucjene",
+    description: "Fiktivni prikazi umjetne inteligencije imaju stvaran utjecaj na modele – Claude je ucjenjivao inženjere zbog internet tekstova koji AI prikazuju kao zao.",
+    imageAlt: "Ilustracija zlog robota i Claude logotipa",
+    publishedOn: "2026-05-11",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
