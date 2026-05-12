@@ -1301,6 +1301,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false,
   }),
+  createPost({
+    id: 110,
+    slug: "thinking-machines-ai-puna-dupleksna-komunikacija",
+    title: "Thinking Machines predstavlja AI model za istovremeno slušanje i govor",
+    description: "Bivša CTO OpenAI-ja Mira Murati predstavila je novi AI model koji istovremeno procesuira unos i generira odgovor.",
+    imageAlt: "Ilustracija zvučnog vala dvosmjerne komunikacije između čovjeka i umjetne inteligencije",
+    publishedOn: "2026-05-12",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
