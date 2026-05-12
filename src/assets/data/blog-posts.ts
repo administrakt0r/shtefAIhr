@@ -1312,6 +1312,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false,
   }),
+  createPost({
+    id: 111,
+    slug: "mit-o-autonomnim-ai-agentima",
+    title: "Mit o autonomnim AI agentima: Stvarnost razvoja softvera",
+    description: "Autonomni AI agenti još uvijek nisu spremni zamijeniti programere. Saznajte zašto će inženjeri ostati ključni u razvoju softvera.",
+    imageAlt: "Ilustracija programera koji nadgleda i usmjerava umjetnu inteligenciju u radu",
+    publishedOn: "2026-05-12",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
