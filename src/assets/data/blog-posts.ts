@@ -1301,6 +1301,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false,
   }),
+  createPost({
+    id: 110,
+    slug: "ai-alati-za-programere-hype-vs-stvarnost",
+    title: "AI alati za programere: Je li hype konačno udario u zid stvarnosti?",
+    description: "Kratki komentar koji objašnjava trenutno stanje AI alata za programere, raskorak između marketinških obećanja o potpunoj zamjeni developera i stvarne korisnosti tih alata.",
+    imageAlt: "Ilustracija koja prikazuje raskorak između očekivanja i stvarnosti korištenja AI alata",
+    publishedOn: "2026-05-12",
+    category: ANALYSIS,
+    readTime: 3,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
