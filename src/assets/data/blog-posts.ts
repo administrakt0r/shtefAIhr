@@ -1334,6 +1334,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 2,
     featured: false,
   }),
+  createPost({
+    id: 113,
+    slug: "ai-nece-zamijeniti-programere-samo-kodiranje",
+    title: "AI alati neće zamijeniti programere, već samo repetitivno kodiranje",
+    description: "Umjetna inteligencija ne ukida potrebu za softverskim inženjerima, već automatizira repetitivni dio pisanja koda. Programeri postaju arhitekti i revizori sustava.",
+    imageAlt: "Ilustracija softverskog inženjera koji pregledava kod s AI asistentom",
+    publishedOn: "2026-05-13",
+    category: ANALYSIS,
+    readTime: 3,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
