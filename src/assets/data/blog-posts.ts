@@ -1323,6 +1323,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 112,
+    slug: "meta-ai-threads-account-block",
+    title: "Meta blokirala opciju skrivanja AI računa na Threadsu",
+    description: "Korisnici platforme Threads izrazili nezadovoljstvo jer Meta ne dopušta blokiranje novog AI asistenta unutar aplikacije.",
+    imageAlt: "Ilustracija Meta AI logotipa i mobilne aplikacije Threads",
+    publishedOn: "2026-05-13",
+    category: NEWS,
+    readTime: 2,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
