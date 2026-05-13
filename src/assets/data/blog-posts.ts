@@ -1345,6 +1345,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false,
   }),
+  createPost({
+    id: 114,
+    slug: "hype-oko-agi-ja-opasna-distrakcija",
+    title: "Hype oko AGI-ja: Zašto je lov na opću umjetnu inteligenciju opasna distrakcija",
+    description: "Kratki komentar koji objašnjava zašto je opsesija općom umjetnom inteligencijom (AGI) opasna distrakcija koja industriju udaljava od rješavanja stvarnih, trenutnih problema.",
+    imageAlt: "Ilustracija osobe koja gleda u magloviti vrh planine dok zanemaruje probleme ispred sebe",
+    publishedOn: "2026-05-13",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
