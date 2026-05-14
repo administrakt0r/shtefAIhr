@@ -1368,6 +1368,18 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false,
   }),
+  createPost({
+    id: 116,
+    slug: "kraj-ai-turizma",
+    title: "Kraj AI turizma: Zašto uvođenje umjetne inteligencije nije magija",
+    description:
+      "Analiza zašto se završava era površnog entuzijazma oko umjetne inteligencije i zašto se fokus industrije vraća na ozbiljan softverski inženjering i stvarnu poslovnu vrijednost.",
+    imageAlt: "Ilustracija prelaska s umjetne inteligencije na čvrsti inženjering",
+    publishedOn: "2026-05-14",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
