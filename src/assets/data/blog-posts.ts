@@ -1356,6 +1356,18 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 115,
+    slug: "whatsapp-incognito-meta-ai",
+    title: "WhatsApp uvodi anonimni način rada za Meta AI",
+    description:
+      "WhatsApp i Meta lansiraju novu 'incognito' značajku za Meta AI koja omogućuje privatne razgovore koji se ne spremaju i ne dijele s drugima.",
+    imageAlt: "WhatsApp logotip i koncept anonimne poruke na pametnom telefonu",
+    publishedOn: "2026-05-14",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
