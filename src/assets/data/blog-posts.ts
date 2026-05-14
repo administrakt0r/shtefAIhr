@@ -1380,6 +1380,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 117,
+    slug: "zasto-nas-opsesija-agi-jem-udaljava-od-pravih-inovacija",
+    title: "Zašto nas opsesija s AGI-jem udaljava od pravih inovacija",
+    description: "Analiza kako lov na opću umjetnu inteligenciju skreće pažnju s rješavanja stvarnih, praktičnih problema današnjice.",
+    imageAlt: "Ilustracija skretanja pažnje s pravih inovacija zbog AGI-ja",
+    publishedOn: "2026-05-14",
+    category: ANALYSIS,
+    readTime: 3,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
