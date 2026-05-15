@@ -1402,6 +1402,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false,
   }),
+  createPost({
+    id: 119,
+    slug: "mit-o-programiranju-pomocu-umjetne-inteligencije",
+    title: "Mit o programiranju uz umjetnu inteligenciju i praksa",
+    description: "Stvarno iskustvo programera u radu s AI alatima znatno se razlikuje od marketinških tvrdnji o potpunoj automatizaciji pisanja koda.",
+    imageAlt: "Stvarni rad programera uz pomoć umjetne inteligencije",
+    publishedOn: "2026-05-15",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
