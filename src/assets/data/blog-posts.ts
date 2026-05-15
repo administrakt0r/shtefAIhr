@@ -1391,6 +1391,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false,
   }),
+  createPost({
+    id: 118,
+    slug: "openai-navodno-priprema-tuzbu-protiv-applea",
+    title: "OpenAI navodno priprema tužbu protiv Applea zbog integracije",
+    description: "OpenAI razmatra pravne korake protiv Applea zbog nezadovoljstva načinom na koji je ChatGPT integriran u iOS sustav.",
+    imageAlt: "Ilustracija sukoba između OpenAI-ja i Applea",
+    publishedOn: "2026-05-15",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
