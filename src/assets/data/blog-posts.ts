@@ -1424,6 +1424,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false,
   }),
+  createPost({
+    id: 121,
+    slug: "ai-alati-za-kodiranje-obecanje-vs-stvarnost",
+    title: "AI alati za kodiranje: Od velikih obećanja do stvarnosti",
+    description: "Analiza stvarne korisnosti AI alata za kodiranje, njihovih ograničenja i utjecaja na svakodnevni rad developera.",
+    imageAlt: "AI alati za kodiranje i njihov utjecaj",
+    publishedOn: "2026-05-16",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
