@@ -1413,6 +1413,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 120,
+    slug: "openai-launches-chatgpt-for-personal-finance",
+    title: "OpenAI lansira alate za osobne financije unutar ChatGPT-a",
+    description: "Korisnici ChatGPT-a mogu povezati bankovne račune za praćenje potrošnje zahvaljujući novoj integraciji.",
+    imageAlt: "Nova ChatGPT značajka za analizu osobnih financija",
+    publishedOn: "2026-05-16",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
