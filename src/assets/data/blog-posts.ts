@@ -1435,6 +1435,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 122,
+    slug: "iluzija-ai-podrske-zasto-chatbotovi-frustriraju",
+    title: "Iluzija AI podrške: Zašto nas chatbotovi i dalje samo frustriraju",
+    description: "Analiza raskoraka između obećanja umjetne inteligencije u korisničkoj podršci i stvarne frustracije korisnika koji gube vrijeme na beskorisne chatbotove.",
+    imageAlt: "Frustrirani korisnik u razgovoru s beskorisnim AI chatbotom",
+    publishedOn: "2026-05-16",
+    category: ANALYSIS,
+    readTime: 3,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
