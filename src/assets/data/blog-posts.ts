@@ -1446,6 +1446,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false,
   }),
+  createPost({
+    id: 123,
+    slug: "openai-greg-brockman-produkt-strategija",
+    title: "OpenAI-jev suosnivač Greg Brockman preuzima strategiju proizvoda",
+    description: "Nakon pauziranja sporednih projekata, OpenAI konsolidira ChatGPT i Codex u jedan tim.",
+    imageAlt: "Greg Brockman iz OpenAI-ja",
+    publishedOn: "2026-05-17",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
