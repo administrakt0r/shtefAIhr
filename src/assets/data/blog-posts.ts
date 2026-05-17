@@ -1457,6 +1457,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false,
   }),
+  createPost({
+    id: 124,
+    slug: "zasto-nas-ai-agenti-nece-zamijeniti",
+    title: "Mit o potpuno autonomnim AI agentima",
+    description: "Analiza rastućeg mita o AI agentima koji u potpunosti mogu zamijeniti programere, objašnjavajući zašto je uloga ljudskog nadzora i inženjeringa i dalje presudna.",
+    imageAlt: "AI asistent za kodiranje naspram softverskog inženjera",
+    publishedOn: "2026-05-17",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
