@@ -1468,6 +1468,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 125,
+    slug: "ai-alati-pretvaraju-seniore-u-recenzente",
+    title: "AI alati za kodiranje: Kako su seniori postali recenzenti",
+    description: "Marketing obećava brzo pisanje koda, no u stvarnosti AI alati pretvaraju iskusne developere u recenzente beskonačnih linija nesavršenog koda.",
+    imageAlt: "Ilustracija developera koji provjerava kod umjesto da ga piše",
+    publishedOn: "2026-05-17",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
