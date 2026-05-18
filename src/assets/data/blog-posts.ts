@@ -1479,6 +1479,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 126,
+    slug: "apple-siri-redizajn-automatsko-brisanje-chatova",
+    title: "Nova verzija Siri mogla bi automatski brisati AI razgovore",
+    description: "Apple planira uvesti opciju automatskog brisanja razgovora sa Siri kako bi naglasio zaštitu privatnosti korisnika u odnosu na druge AI tvrtke.",
+    imageAlt: "Ilustracija pametnog telefona sa Siri i zaštite privatnosti",
+    publishedOn: "2026-05-18",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
