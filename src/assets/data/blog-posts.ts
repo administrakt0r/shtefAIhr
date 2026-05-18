@@ -1501,6 +1501,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 128,
+    slug: "zasto-je-opsesija-agi-distrakcija",
+    title: "Zašto je opsesija AGI-jem najveća distrakcija u AI industriji",
+    description: "Svi pričaju o AGI-ju, no ta opsesija nije samo neproduktivna – ona aktivno šteti razvoju korisnih i pouzdanih AI alata.",
+    imageAlt: "Ilustracija osobe koja gleda u maglovitu daljinu",
+    publishedOn: "2026-05-18",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
