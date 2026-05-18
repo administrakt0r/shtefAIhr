@@ -1490,6 +1490,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false,
   }),
+  createPost({
+    id: 127,
+    slug: "zabluda-o-produktivnosti-ai-alata",
+    title: "Zabluda o produktivnosti: AI alati ne donose brzinu",
+    description: "Opsesija brzinom pisanja koda stvara više problema nego što ih rješava te skriva stvarna uska grla u razvoju softvera.",
+    imageAlt: "Ilustracija programera i AI alata koji piše kod",
+    publishedOn: "2026-05-18",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
