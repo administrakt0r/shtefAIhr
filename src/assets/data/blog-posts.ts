@@ -1534,6 +1534,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 131,
+    slug: "skrivena-cijena-besplatnog-ai-ja",
+    title: "Skrivena cijena besplatnog AI-ja: Vaši podaci postaju proizvod",
+    description: "Kratki osvrt na to kako korištenje besplatnih AI alata u korporativnom okruženju zapravo znači plaćanje vlastitim poslovnim tajnama i intelektualnim vlasništvom.",
+    imageAlt: "Ilustracija skrivenih troškova besplatnih AI alata i zaštite podataka",
+    publishedOn: "2026-05-19",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
