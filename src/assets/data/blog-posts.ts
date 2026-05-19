@@ -1512,6 +1512,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 129,
+    slug: "elon-musk-izgubio-tuzbu-openai",
+    title: "Elon Musk izgubio sudsku tužbu protiv Altmana i OpenAI-ja",
+    description: "Porota je jednoglasno presudila da je Elon Musk zakasnio s podnošenjem tužbe protiv Sama Altmana i OpenAI-ja zbog zakona o zastari.",
+    imageAlt: "Ilustracija sudske zgrade uz logotipove Elona Muska i OpenAI-ja",
+    publishedOn: "2026-05-19",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
