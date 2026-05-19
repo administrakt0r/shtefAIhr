@@ -1523,6 +1523,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false,
   }),
+  createPost({
+    id: 130,
+    slug: "kraj-zlatne-groznice-ai-startupa",
+    title: "Kraj zlatne groznice AI startupa: Surova realnost tržišta",
+    description: "Analiza otrežnjenja na tržištu AI startupa i zašto većina njih neće preživjeti zbog nedostatka stvarnog proizvoda i konkurentske prednosti.",
+    imageAlt: "Ilustracija propadanja umjetno stvorenih AI startupa naspram onih sa stvarnom vrijednošću",
+    publishedOn: "2026-05-19",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
