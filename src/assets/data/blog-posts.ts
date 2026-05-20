@@ -1545,6 +1545,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 132,
+    slug: "google-search-ai-agents",
+    title: "Google na I/O 2026 uvodi autonomne AI agente u tražilicu",
+    description: "Na I/O konferenciji, Google je predstavio informacijske agente koji kontinuirano prate teme i pružaju sažetke umjesto samo liste linkova.",
+    imageAlt: "Ilustracija Google tražilice i novih autonomnih AI agenata",
+    publishedOn: "2026-05-20",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
