@@ -1567,6 +1567,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 5,
     featured: false,
   }),
+  createPost({
+    id: 134,
+    slug: "umjetna-inteligencija-nikada-nece-razumjeti-poslovni-kontekst",
+    title: "Umjetna inteligencija nikada neće razumjeti poslovni kontekst",
+    description: "AI brzo piše kod, ali razvoj softvera zahtijeva razumijevanje poslovnih problema. Zbog toga programeri ostaju nezamjenjivi.",
+    imageAlt: "Prikaz koda i poslovnih procesa",
+    publishedOn: "2026-05-20",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
