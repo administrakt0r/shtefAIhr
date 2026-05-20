@@ -1556,6 +1556,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false,
   }),
+  createPost({
+    id: 133,
+    slug: "hype-oko-ai-alata-skriva-pravi-problem-arhitekturu",
+    title: "Hype oko AI alata skriva pravi problem: Arhitekturu",
+    description: "Svi pričaju o tome koliko brzo AI piše kod, ali ignoriraju činjenicu da nam nedostaje razumijevanje šireg sustava.",
+    imageAlt: "Ilustracija AI alata i složene softverske arhitekture",
+    publishedOn: "2026-05-20",
+    category: ANALYSIS,
+    readTime: 5,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
