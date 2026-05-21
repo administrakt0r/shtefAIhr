@@ -1600,6 +1600,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 137,
+    slug: "otvoreni-kod-u-ai-ju-je-iluzija",
+    title: "Otvoreni kod u AI industriji zapravo je velika marketinška iluzija",
+    description: "Zatvoreni modeli koji se u medijima agresivno reklamiraju kao potpuno otvoreni nisu pobjeda zajednice, već samo suptilnija i modernija vrsta korporativne kontrole.",
+    imageAlt: "Ilustracija razbijanja iluzije o otvorenom kodu u umjetnoj inteligenciji",
+    publishedOn: "2026-05-21",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
