@@ -1589,6 +1589,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false,
   }),
+  createPost({
+    id: 136,
+    slug: "ai-ubija-prosjecnost",
+    title: "AI ne oduzima poslove programerima, već uništava prosječnost",
+    description: "Umjetna inteligencija ne zamjenjuje programere, nego podiže letvicu. Pisanje osnovnog koda više nije dovoljno, fokus se seli na rješavanje kompleksnih problema i arhitekturu sustava.",
+    imageAlt: "Ilustracija utjecaja umjetne inteligencije na programiranje",
+    publishedOn: "2026-05-21",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
