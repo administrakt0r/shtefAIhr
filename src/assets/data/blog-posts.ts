@@ -1578,6 +1578,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 135,
+    slug: "anthropic-prvi-profitabilni-kvartal",
+    title: "Anthropic prijavio prvi profitabilni kvartal i brzi rast",
+    description: "Anthropic očekuje svoj prvi operativni profit u drugom kvartalu uz prihod od oko 10,9 milijardi dolara, iako rast troškova infrastrukture ostaje izazov.",
+    imageAlt: "Znak rasta profita uz tehnološke elemente",
+    publishedOn: "2026-05-21",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
