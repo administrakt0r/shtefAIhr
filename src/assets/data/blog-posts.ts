@@ -1611,6 +1611,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 138,
+    slug: "project-genie-street-view",
+    title: "Google DeepMind povezuje Project Genie i Street View za učenje AI modela u stvarnom svijetu",
+    description: "DeepMind integrira slike sa Street Viewa u Project Genie, stvarajući tako realistične virtualne svjetove za treniranje AI agenata na temelju stvarnih lokacija.",
+    imageAlt: "Kolaž koji prikazuje prelazak iz stvarne fotografije Street Viewa u generirani 3D maštoviti svijet",
+    publishedOn: "2026-05-22",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
