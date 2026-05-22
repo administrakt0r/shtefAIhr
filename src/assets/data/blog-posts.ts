@@ -1633,6 +1633,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 140,
+    slug: "ai-u-programiranju-prava-istina-iza-obecanja",
+    title: "AI u programiranju: Prava istina iza marketinških obećanja",
+    description: "Analiza razlike između marketinških obećanja o AI alatima za programiranje i stvarne produktivnosti u praksi.",
+    imageAlt: "AI u programiranju i stvarni rad",
+    publishedOn: "2026-05-22",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
