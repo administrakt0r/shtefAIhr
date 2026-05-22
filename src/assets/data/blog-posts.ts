@@ -1622,6 +1622,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false,
   }),
+  createPost({
+    id: 139,
+    slug: "zid-podataka-usporavanje-ai-modela",
+    title: "Zid podataka: Zašto umjetna inteligencija uskoro usporava",
+    description: "Analiza problema zida podataka u AI industriji i zašto ponestaje kvalitetnog ljudskog sadržaja za treniranje naprednih modela.",
+    imageAlt: "Zid podataka pred umjetnom inteligencijom",
+    publishedOn: "2026-05-22",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
