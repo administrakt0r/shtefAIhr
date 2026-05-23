@@ -1644,6 +1644,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 141,
+    slug: "spotify-umg-ai-remix-deal",
+    title: "Spotify i UMG omogućuju AI obrade i remikseve omiljenih pjesama",
+    description: "Spotify je dogovorio suradnju s Universal Music Group za legalno stvaranje AI obrada i remikseva.",
+    imageAlt: "Spotify aplikacija s AI funkcijama",
+    publishedOn: "2026-05-23",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
