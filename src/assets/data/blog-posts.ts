@@ -1655,6 +1655,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false,
   }),
+  createPost({
+    id: 142,
+    slug: "zabluda-o-ai-inzenjerima",
+    title: "Zabluda o AI inženjerima: Tko rješava prave probleme?",
+    description: "Industrija promovira ideju o 'AI inženjerima' koji će zamijeniti klasične developere, ali stvarnost razvoja softvera pokazuje da je domensko znanje i dalje nezamjenjivo.",
+    imageAlt: "Softverski inženjer i AI asistent u radu",
+    publishedOn: "2026-05-23",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
