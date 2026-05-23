@@ -1666,6 +1666,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 143,
+    slug: "zasto-ai-nece-zamijeniti-programere",
+    title: "Stvarnost razvoja: Zašto AI alati neće zamijeniti programere",
+    description: "Umjetna inteligencija drastično mijenja način na koji pišemo kod, ali neće tako skoro preuzeti ulogu softverskih inženjera. Saznajte zašto je razvoj softvera mnogo više od same sintakse.",
+    imageAlt: "Programer gleda u ekran s kodom dok koristi AI asistenta",
+    publishedOn: "2026-05-23",
+    category: ANALYSIS,
+    readTime: 6,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
