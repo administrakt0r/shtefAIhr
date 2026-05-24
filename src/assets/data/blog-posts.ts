@@ -1699,6 +1699,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 5,
     featured: false,
   }),
+  createPost({
+    id: 146,
+    slug: 'programeri-i-ai-alati-stvarnost-iza-velikih-obecanja',
+    title: 'Programeri i AI alati: Stvarnost iza velikih obećanja',
+    description: 'Stvarno iskustvo razvoja s AI alatima često je u neskladu s onim što nam govore marketinški timovi velikih tvrtki.',
+    imageAlt: 'Programer na radnom mjestu s AI alatima',
+    publishedOn: '2026-05-24',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
