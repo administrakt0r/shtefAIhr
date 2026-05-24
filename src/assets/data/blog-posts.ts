@@ -1677,6 +1677,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 6,
     featured: false,
   }),
+  createPost({
+    id: 144,
+    slug: "ferrari-ibm-ai-f1",
+    title: "Ferrari i IBM koriste AI za transformaciju navijačkog iskustva",
+    description: "Scuderia Ferrari u suradnji s IBM-om koristi naprednu umjetnu inteligenciju za personalizaciju i unapređenje iskustva Formule 1.",
+    imageAlt: "Ferrarijev bolid na stazi",
+    publishedOn: "2026-05-24",
+    category: NEWS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
