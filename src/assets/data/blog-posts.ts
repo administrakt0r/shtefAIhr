@@ -1688,6 +1688,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 145,
+    slug: "kraj-ai-iluzije-skaliranje-nije-dovoljno",
+    title: "Kraj AI iluzije: Skaliranje modela više nije dovoljno za revoluciju",
+    description: "Nakon godina strelovitog uspona, suočavamo se s realnošću: samo dodavanje više podataka i računarske moći neće nas dovesti do opće umjetne inteligencije.",
+    imageAlt: "Grafikon koji usporava s robotom koji gleda u njega",
+    publishedOn: "2026-05-24",
+    category: ANALYSIS,
+    readTime: 5,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
