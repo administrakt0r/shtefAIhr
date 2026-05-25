@@ -1710,6 +1710,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 147,
+    slug: 'iluzija-brzog-kodiranja-ai',
+    title: 'Iluzija brzog kodiranja s umjetnom inteligencijom',
+    description: 'AI alati obećavaju neviđeno ubrzanje pisanja koda, ali dugoročno stvaraju ogromne količine tehničkog duga koji će netko morati platiti.',
+    imageAlt: 'Ilustracija programera i umjetne inteligencije',
+    publishedOn: '2026-05-25',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
