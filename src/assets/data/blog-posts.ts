@@ -27,7 +27,12 @@ export const slugifyCroatian = (value: string) =>
 
 type SourcePost = Omit<
   BlogPost,
-  "author" | "avatarUrl" | "imageUrl" | "socialImageUrl" | "slug" | "contentSlug"
+  | "author"
+  | "avatarUrl"
+  | "imageUrl"
+  | "socialImageUrl"
+  | "slug"
+  | "contentSlug"
 > & {
   slug: string;
 } & Partial<Pick<BlogPost, "author" | "avatarUrl" | "imageUrl">>;
@@ -254,7 +259,8 @@ export const blogPosts: BlogPost[] = [
     title: "Zašto prompt inženjering neće biti posao budućnosti",
     description:
       "Pisanje uputa za AI je prolazna vještina, a ne dugoročna karijera. Sposobnost strukturiranja specifičnih uputa za modele samo je privremena zakrpa za nesavršenosti sučelja.",
-    imageAlt: "Ilustracija: Zašto prompt inženjering neće biti posao budućnosti",
+    imageAlt:
+      "Ilustracija: Zašto prompt inženjering neće biti posao budućnosti",
     publishedOn: "2026-04-03",
     category: ANALYSIS,
     readTime: 5,
@@ -263,7 +269,8 @@ export const blogPosts: BlogPost[] = [
   createPost({
     id: 17,
     slug: "anthropic-kupio-biotech-startup-coefficient-bio",
-    title: "Anthropic kupio biotech startup Coefficient Bio u poslu od 400 milijuna",
+    title:
+      "Anthropic kupio biotech startup Coefficient Bio u poslu od 400 milijuna",
     description:
       "Anthropic je kupio Coefficient Bio, biotehnološki AI startup koji je dosad djelovao u tajnosti, u poslu vrijednom oko 400 milijuna dolara u dionicama.",
     imageAlt: "Ilustracija: Anthropic kupio biotech startup Coefficient Bio",
@@ -278,7 +285,8 @@ export const blogPosts: BlogPost[] = [
     title: "Zašto je dosada najbolja stvar koja se mogla dogoditi AI-ju",
     description:
       "Usporavanje tempa inovacija kod velikih jezičnih modela i pad medijskog entuzijazma zapravo označavaju prelazak AI-ja iz eksperimentalne faze u zrelu, pouzdanu infrastrukturu.",
-    imageAlt: "Ilustracija: Zašto je dosada najbolja stvar koja se mogla dogoditi AI-ju",
+    imageAlt:
+      "Ilustracija: Zašto je dosada najbolja stvar koja se mogla dogoditi AI-ju",
     publishedOn: "2026-04-04",
     category: ANALYSIS,
     readTime: 4,
@@ -302,7 +310,8 @@ export const blogPosts: BlogPost[] = [
     title: "AI alati pretvaraju seniore u ispravljače tuđih grešaka",
     description:
       "Umjesto da zamijene juniore, generativni AI alati prisiljavaju najiskusnije inženjere na neprekidno ispravljanje osrednjeg koda.",
-    imageAlt: "Ilustracija: AI alati pretvaraju seniore u ispravljače tuđih grešaka",
+    imageAlt:
+      "Ilustracija: AI alati pretvaraju seniore u ispravljače tuđih grešaka",
     publishedOn: "2026-04-05",
     category: ANALYSIS,
     readTime: 5,
@@ -312,7 +321,8 @@ export const blogPosts: BlogPost[] = [
     id: 21,
     slug: "copilot-entertainment-purposes-only",
     title: "Microsoft priznaje: Copilot služi samo za zabavu",
-    description: "Uvjeti korištenja otkrivaju stvarno stanje Microsoftovog AI alata. Tvrtka upozorava da se ne oslanjate na Copilot za važne savjete.",
+    description:
+      "Uvjeti korištenja otkrivaju stvarno stanje Microsoftovog AI alata. Tvrtka upozorava da se ne oslanjate na Copilot za važne savjete.",
     category: NEWS,
     imageAlt: "Microsoft Copilot logo uz tekst upozorenja",
     publishedOn: "2026-04-05",
@@ -325,7 +335,8 @@ export const blogPosts: BlogPost[] = [
     title: "Umjetna inteligencija neće zamijeniti prave softverske inženjere",
     description:
       "Pisanje koda zapravo je najlakši dio softverskog inženjerstva, a generativni AI alati ne mogu zamijeniti ljudsko razumijevanje poslovnog konteksta.",
-    imageAlt: "Ilustracija: Umjetna inteligencija neće zamijeniti prave softverske inženjere",
+    imageAlt:
+      "Ilustracija: Umjetna inteligencija neće zamijeniti prave softverske inženjere",
     category: ANALYSIS,
     publishedOn: "2026-04-06",
     readTime: 4,
@@ -334,10 +345,12 @@ export const blogPosts: BlogPost[] = [
   createPost({
     id: 23,
     slug: "google-gemma-4-otvoreni-modeli",
-    title: "Google predstavlja Gemma 4: Najinteligentniji otvoreni modeli do sada",
+    title:
+      "Google predstavlja Gemma 4: Najinteligentniji otvoreni modeli do sada",
     description:
       "Google je predstavio Gemma 4 obitelj otvorenih jezičnih modela, optimiziranih za složeno rasuđivanje i lokalno izvođenje pod Apache 2.0 licencom.",
-    imageAlt: "Ilustracija uz članak: Google predstavlja Gemma 4 otvorene modele",
+    imageAlt:
+      "Ilustracija uz članak: Google predstavlja Gemma 4 otvorene modele",
     category: NEWS,
     publishedOn: "2026-04-06",
     readTime: 3,
@@ -348,8 +361,10 @@ export const blogPosts: BlogPost[] = [
     id: 24,
     slug: "prava-cijena-ai-koda-jeftino-pisanje-skupo-citanje",
     title: "Prava cijena AI koda: Jeftino pisanje, skupo čitanje",
-    description: "Alati za generiranje koda ubrzavaju početni razvoj, ali stvaraju nepregledne sustave koji dugoročno višestruko povećavaju troškove održavanja.",
-    imageAlt: "Ilustracija uz članak: Prava cijena AI koda: Jeftino pisanje, skupo čitanje",
+    description:
+      "Alati za generiranje koda ubrzavaju početni razvoj, ali stvaraju nepregledne sustave koji dugoročno višestruko povećavaju troškove održavanja.",
+    imageAlt:
+      "Ilustracija uz članak: Prava cijena AI koda: Jeftino pisanje, skupo čitanje",
     publishedOn: "2026-04-07",
     category: ANALYSIS,
     readTime: 4,
@@ -358,9 +373,12 @@ export const blogPosts: BlogPost[] = [
   createPost({
     id: 25,
     slug: "anthropic-mythos-zero-day",
-    title: "Anthropic predstavio AI model Mythos koji generira zero-day ranjivosti",
-    description: "Anthropic je stvorio novi AI model nazvan Mythos, sposoban za pronalaženje i iskorištavanje zero-day ranjivosti, ali ga je odlučio ne objaviti javnosti.",
-    imageAlt: "Ilustracija uz članak: Anthropic predstavio AI model Mythos koji generira zero-day ranjivosti",
+    title:
+      "Anthropic predstavio AI model Mythos koji generira zero-day ranjivosti",
+    description:
+      "Anthropic je stvorio novi AI model nazvan Mythos, sposoban za pronalaženje i iskorištavanje zero-day ranjivosti, ali ga je odlučio ne objaviti javnosti.",
+    imageAlt:
+      "Ilustracija uz članak: Anthropic predstavio AI model Mythos koji generira zero-day ranjivosti",
     publishedOn: "2026-04-08",
     category: NEWS,
     readTime: 3,
@@ -370,8 +388,10 @@ export const blogPosts: BlogPost[] = [
     id: 26,
     slug: "ai-kodiranje-unistava-vjestinu-softverske-arhitekture",
     title: "Umjetna inteligencija uništava vještinu softverske arhitekture",
-    description: "Alati za generiranje koda potiču brza rješenja umjesto promišljenog dizajna sustava, što dugoročno rezultira krhkim i neodrživim aplikacijama.",
-    imageAlt: "Ilustracija uz članak: Umjetna inteligencija uništava vještinu softverske arhitekture",
+    description:
+      "Alati za generiranje koda potiču brza rješenja umjesto promišljenog dizajna sustava, što dugoročno rezultira krhkim i neodrživim aplikacijama.",
+    imageAlt:
+      "Ilustracija uz članak: Umjetna inteligencija uništava vještinu softverske arhitekture",
     publishedOn: "2026-04-08",
     category: ANALYSIS,
     readTime: 4,
@@ -381,8 +401,10 @@ export const blogPosts: BlogPost[] = [
     id: 27,
     slug: "poke-ai-agenti-putem-poruka",
     title: "Startup Poke donosi AI agente u obliku tekstualnih poruka",
-    description: "Nova platforma omogućava pristup AI asistentima za svakodnevne zadatke direktno putem SMS-a, iMessagea i drugih aplikacija za poruke.",
-    imageAlt: "Ilustracija uz članak: Startup Poke donosi AI agente u obliku tekstualnih poruka",
+    description:
+      "Nova platforma omogućava pristup AI asistentima za svakodnevne zadatke direktno putem SMS-a, iMessagea i drugih aplikacija za poruke.",
+    imageAlt:
+      "Ilustracija uz članak: Startup Poke donosi AI agente u obliku tekstualnih poruka",
     publishedOn: "2026-04-08",
     category: NEWS,
     readTime: 3,
@@ -392,8 +414,10 @@ export const blogPosts: BlogPost[] = [
     id: 28,
     slug: "opsesija-agi-jem-unistava-stvarne-inovacije",
     title: "Opsesija AGI-jem uništava rješavanje stvarnih problema",
-    description: "Zašto stalna potraga za općom umjetnom inteligencijom zanemaruje stvarne poslovne potrebe i stvara jaz između obećanja AI tvrtki i stvarne ekonomije.",
-    imageAlt: "Ilustracija uz članak: Opsesija AGI-jem uništava rješavanje stvarnih problema",
+    description:
+      "Zašto stalna potraga za općom umjetnom inteligencijom zanemaruje stvarne poslovne potrebe i stvara jaz između obećanja AI tvrtki i stvarne ekonomije.",
+    imageAlt:
+      "Ilustracija uz članak: Opsesija AGI-jem uništava rješavanje stvarnih problema",
     publishedOn: "2026-04-09",
     category: ANALYSIS,
     readTime: 4,
@@ -403,8 +427,10 @@ export const blogPosts: BlogPost[] = [
     id: 29,
     slug: "chatgpt-pro-subscription-new",
     title: "OpenAI uveo ChatGPT Pro pretplatu za 100 dolara mjesečno",
-    description: "Nova razina pretplate cilja na intenzivne korisnike alata Codex i izravno konkurira Anthropicovoj ponudi.",
-    imageAlt: "Ilustracija uz članak: OpenAI uveo ChatGPT Pro pretplatu za 100 dolara mjesečno",
+    description:
+      "Nova razina pretplate cilja na intenzivne korisnike alata Codex i izravno konkurira Anthropicovoj ponudi.",
+    imageAlt:
+      "Ilustracija uz članak: OpenAI uveo ChatGPT Pro pretplatu za 100 dolara mjesečno",
     publishedOn: "2026-04-10",
     category: NEWS,
     readTime: 3,
@@ -414,8 +440,10 @@ export const blogPosts: BlogPost[] = [
     id: 30,
     slug: "iluzija-autonomije-lazni-ai-agenti",
     title: "Iluzija autonomije: Tržište prodaje lažne AI agente",
-    description: "Kako smo jednostavne skripte počeli nazivati autonomnim agentima i zašto je rebrendiranje stare tehnologije opasno.",
-    imageAlt: "Ilustracija uz članak: Iluzija autonomije: Tržište prodaje lažne AI agente",
+    description:
+      "Kako smo jednostavne skripte počeli nazivati autonomnim agentima i zašto je rebrendiranje stare tehnologije opasno.",
+    imageAlt:
+      "Ilustracija uz članak: Iluzija autonomije: Tržište prodaje lažne AI agente",
     publishedOn: "2026-04-10",
     category: ANALYSIS,
     readTime: 4,
@@ -425,7 +453,8 @@ export const blogPosts: BlogPost[] = [
     id: 31,
     slug: "chatgpt-pro-plan",
     title: "OpenAI predstavio ChatGPT Pro paket od 100 dolara mjesečno",
-    description: "Novi Pro paket nudi veće kapacitete za programere i izravan je odgovor na ponudu tvrtke Anthropic.",
+    description:
+      "Novi Pro paket nudi veće kapacitete za programere i izravan je odgovor na ponudu tvrtke Anthropic.",
     imageAlt: "Ilustracija ChatGPT sučelja",
     publishedOn: "2026-04-10",
     category: NEWS,
@@ -436,7 +465,8 @@ export const blogPosts: BlogPost[] = [
     id: 32,
     slug: "od-impresivne-prezentacije-do-nocne-more-u-produkciji",
     title: "Od impresivne prezentacije do noćne more u produkciji",
-    description: "Generativna umjetna inteligencija blista na pozornicama, ali se slama pod teretom složenih produkcijskih sustava.",
+    description:
+      "Generativna umjetna inteligencija blista na pozornicama, ali se slama pod teretom složenih produkcijskih sustava.",
     imageAlt: "Ilustracija razlike između AI demoa i produkcije",
     publishedOn: "2026-04-11",
     category: ANALYSIS,
@@ -447,7 +477,8 @@ export const blogPosts: BlogPost[] = [
     id: 33,
     slug: "florida-launches-investigation-openai",
     title: "Florida pokreće istragu protiv OpenAI-ja zbog sigurnosnih rizika",
-    description: "Državna odvjetništva istražuju OpenAI zbog navodnih veza s kriminalnim ponašanjem i nacionalnim sigurnosnim rizicima.",
+    description:
+      "Državna odvjetništva istražuju OpenAI zbog navodnih veza s kriminalnim ponašanjem i nacionalnim sigurnosnim rizicima.",
     imageAlt: "Ilustracija istrage protiv OpenAI-ja",
     publishedOn: "2026-04-12",
     category: NEWS,
@@ -458,7 +489,8 @@ export const blogPosts: BlogPost[] = [
     id: 34,
     slug: "ai-alati-za-kodiranje-iluzija-brzine",
     title: "AI alati za kodiranje: Iluzija brzine i produktivnosti",
-    description: "Svi tvrde da uz umjetnu inteligenciju pišu kod brže, no pravi problemi i tehnički dug nastaju nakon generiranja koda.",
+    description:
+      "Svi tvrde da uz umjetnu inteligenciju pišu kod brže, no pravi problemi i tehnički dug nastaju nakon generiranja koda.",
     imageAlt: "Ilustracija AI alata za programiranje",
     publishedOn: "2026-04-12",
     category: ANALYSIS,
@@ -468,8 +500,10 @@ export const blogPosts: BlogPost[] = [
   createPost({
     id: 35,
     slug: "trump-duznosnici-poticu-banke-testiranje-anthropic-mythos",
-    title: "Trumpovi dužnosnici potiču banke na testiranje Anthropic Mythos modela",
-    description: "Američki državni dužnosnici preporučili su vodećim bankama testiranje novog AI modela tvrtke Anthropic za otkrivanje sigurnosnih ranjivosti, unatoč pravnom sporu.",
+    title:
+      "Trumpovi dužnosnici potiču banke na testiranje Anthropic Mythos modela",
+    description:
+      "Američki državni dužnosnici preporučili su vodećim bankama testiranje novog AI modela tvrtke Anthropic za otkrivanje sigurnosnih ranjivosti, unatoč pravnom sporu.",
     imageAlt: "Zgrada banke i digitalna sigurnosna mreža",
     publishedOn: "2026-04-13",
     category: NEWS,
@@ -480,7 +514,8 @@ export const blogPosts: BlogPost[] = [
     id: 36,
     slug: "balon-ai-infrastrukture-gradimo-autoceste",
     title: "Balon AI infrastrukture: Gradimo autoceste bez vozila",
-    description: "Milijarde se ulažu u data centre i čipove, dok pravi softverski proizvodi koji donose vrijednost još uvijek ozbiljno kaskaju za infrastrukturom.",
+    description:
+      "Milijarde se ulažu u data centre i čipove, dok pravi softverski proizvodi koji donose vrijednost još uvijek ozbiljno kaskaju za infrastrukturom.",
     imageAlt: "Ilustracija balona AI infrastrukture",
     publishedOn: "2026-04-13",
     category: ANALYSIS,
@@ -491,7 +526,8 @@ export const blogPosts: BlogPost[] = [
     id: 37,
     slug: "openai-kupuje-startup-hiro-finance",
     title: "OpenAI kupuje startup Hiro Finance i jača financijski tim",
-    description: "OpenAI je preuzeo startup Hiro Finance u obliku akvizicije stručnog kadra, čime jača svoje kapacitete na području financijske matematike i planiranja.",
+    description:
+      "OpenAI je preuzeo startup Hiro Finance u obliku akvizicije stručnog kadra, čime jača svoje kapacitete na području financijske matematike i planiranja.",
     imageAlt: "Ilustracija financijskog planiranja i umjetne inteligencije",
     publishedOn: "2026-04-14",
     category: NEWS,
@@ -502,7 +538,8 @@ export const blogPosts: BlogPost[] = [
     id: 38,
     slug: "od-programera-do-recenzenta",
     title: "Od programera do glavnog recenzenta koda: Stvarnost AI alata",
-    description: "Umjetna inteligencija mijenja naš posao iz pisanja koda u njegovo kritičko vrednovanje. AI alati mijenjaju ulogu programera iz onih koji pišu kod u one koji ga pregledavaju.",
+    description:
+      "Umjetna inteligencija mijenja naš posao iz pisanja koda u njegovo kritičko vrednovanje. AI alati mijenjaju ulogu programera iz onih koji pišu kod u one koji ga pregledavaju.",
     publishedOn: "2026-04-14",
     category: ANALYSIS,
     readTime: 4,
@@ -513,7 +550,8 @@ export const blogPosts: BlogPost[] = [
     id: 39,
     slug: "anthropic-uspon-brine-openai-investitore",
     title: "Uspon Anthropica brine OpenAI investitore",
-    description: "Neki investitori u OpenAI počinju sumnjati u procjenu vrijednosti tvrtke od 852 milijarde dolara zbog brzog uspona Anthropica.",
+    description:
+      "Neki investitori u OpenAI počinju sumnjati u procjenu vrijednosti tvrtke od 852 milijarde dolara zbog brzog uspona Anthropica.",
     publishedOn: "2026-04-15",
     category: NEWS,
     readTime: 3,
@@ -524,18 +562,21 @@ export const blogPosts: BlogPost[] = [
     id: 40,
     slug: "umjetna-empatija-najopasniji-proizvod-ai-industrije",
     title: "Umjetna empatija je najopasniji proizvod AI industrije",
-    description: "Umjetna inteligencija koja simulira emocije stvara iluziju povezanosti, produbljuje usamljenost i uči nas izbjegavanju stvarnih ljudskih odnosa.",
+    description:
+      "Umjetna inteligencija koja simulira emocije stvara iluziju povezanosti, produbljuje usamljenost i uči nas izbjegavanju stvarnih ljudskih odnosa.",
     publishedOn: "2026-04-16",
     category: ANALYSIS,
     readTime: 4,
     featured: false,
-    imageAlt: "Ilustracija osobe koja komunicira s umjetnom inteligencijom u izolaciji",
+    imageAlt:
+      "Ilustracija osobe koja komunicira s umjetnom inteligencijom u izolaciji",
   }),
   createPost({
     id: 41,
     slug: "mit-o-otvorenom-ai-ju-zasto-open-source-ne-donosi-demokratizaciju",
     title: "Mit o otvorenom AI-ju: Zašto open source ne donosi demokratizaciju",
-    description: "Otvoreni modeli daju privid demokratizacije, ali stvarna moć leži u vlasništvu nad podacima i računalnoj infrastrukturi koju kontroliraju giganti.",
+    description:
+      "Otvoreni modeli daju privid demokratizacije, ali stvarna moć leži u vlasništvu nad podacima i računalnoj infrastrukturi koju kontroliraju giganti.",
     publishedOn: "2026-04-17",
     category: ANALYSIS,
     readTime: 5,
@@ -546,8 +587,10 @@ export const blogPosts: BlogPost[] = [
     id: 42,
     slug: "zasto-je-lov-na-agi-opasna-distrakcija",
     title: "Zašto je lov na AGI opasna distrakcija za industriju",
-    description: "Industrija se fokusira na nerealna obećanja o AGI-ju. To nas odvraća od prave vrijednosti današnjih AI alata.",
-    imageAlt: "Futuristička apstraktna vizualizacija koja simbolizira iluziju AGI-ja",
+    description:
+      "Industrija se fokusira na nerealna obećanja o AGI-ju. To nas odvraća od prave vrijednosti današnjih AI alata.",
+    imageAlt:
+      "Futuristička apstraktna vizualizacija koja simbolizira iluziju AGI-ja",
     publishedOn: "2026-04-16",
     category: ANALYSIS,
     readTime: 4,
@@ -557,8 +600,10 @@ export const blogPosts: BlogPost[] = [
     id: 43,
     slug: "openai-codex-updates-use-macos",
     title: "OpenAI Codex sada može samostalno upravljati macOS aplikacijama",
-    description: "OpenAI je značajno nadogradio Codex paketom novih agenatskih mogućnosti koje omogućuju izravno korištenje desktop aplikacija.",
-    imageAlt: "Ilustracija umjetne inteligencije koja upravlja računalom i programira",
+    description:
+      "OpenAI je značajno nadogradio Codex paketom novih agenatskih mogućnosti koje omogućuju izravno korištenje desktop aplikacija.",
+    imageAlt:
+      "Ilustracija umjetne inteligencije koja upravlja računalom i programira",
     publishedOn: "2026-04-16",
     category: NEWS,
     readTime: 3,
@@ -568,8 +613,10 @@ export const blogPosts: BlogPost[] = [
     id: 44,
     slug: "paradoks-produktivnosti-ai",
     title: "AI je trebao donijeti slobodno vrijeme, donio je više posla",
-    description: "Alati za produktivnost koji su nas trebali osloboditi rutine samo su podigli ljestvicu očekivanja i ubrzali tempo rada.",
-    imageAlt: "Ilustracija osobe preopterećene tehnologijom i brzim tempom rada",
+    description:
+      "Alati za produktivnost koji su nas trebali osloboditi rutine samo su podigli ljestvicu očekivanja i ubrzali tempo rada.",
+    imageAlt:
+      "Ilustracija osobe preopterećene tehnologijom i brzim tempom rada",
     publishedOn: "2026-04-18",
     category: ANALYSIS,
     readTime: 4,
@@ -579,8 +626,10 @@ export const blogPosts: BlogPost[] = [
     id: 45,
     slug: "opsesija-agijem-zamagljuje-pravu-vrijednost-ai",
     title: "Opsesija AGI-jem zamagljuje pravu vrijednost umjetne inteligencije",
-    description: "Stalno obećavanje opće umjetne inteligencije stvara nerealna očekivanja i zanemaruje stvarne probleme koje trenutni alati već mogu riješiti.",
-    imageAlt: "Ilustracija koja prikazuje fokus na futuristički AGI umjesto na praktične alate",
+    description:
+      "Stalno obećavanje opće umjetne inteligencije stvara nerealna očekivanja i zanemaruje stvarne probleme koje trenutni alati već mogu riješiti.",
+    imageAlt:
+      "Ilustracija koja prikazuje fokus na futuristički AGI umjesto na praktične alate",
     publishedOn: "2026-04-18",
     category: ANALYSIS,
     readTime: 4,
@@ -589,8 +638,10 @@ export const blogPosts: BlogPost[] = [
   createPost({
     id: 46,
     slug: "openai-gubi-kljucne-ljude",
-    title: "OpenAI nastavlja sa zatvaranjem sporednih projekata i gubi ključne ljude",
-    description: "Kevin Weil i Bill Peebles napuštaju tvrtku uslijed konsolidacije oko poslovne umjetne inteligencije.",
+    title:
+      "OpenAI nastavlja sa zatvaranjem sporednih projekata i gubi ključne ljude",
+    description:
+      "Kevin Weil i Bill Peebles napuštaju tvrtku uslijed konsolidacije oko poslovne umjetne inteligencije.",
     imageAlt: "Logotip tvrtke OpenAI",
     publishedOn: "2026-04-17",
     category: NEWS,
@@ -601,7 +652,8 @@ export const blogPosts: BlogPost[] = [
     id: 47,
     slug: "zasto-je-opsesija-agi-jem-opasna-distrakcija",
     title: "Zašto je opsesija AGI-jem zapravo opasna distrakcija",
-    description: "Fokus na umjetnu opću inteligenciju omogućava tehnološkim divovima da izbjegnu odgovornost za stvarne probleme današnjice.",
+    description:
+      "Fokus na umjetnu opću inteligenciju omogućava tehnološkim divovima da izbjegnu odgovornost za stvarne probleme današnjice.",
     imageAlt: "Apstraktni prikaz umjetne inteligencije i čovječanstva.",
     publishedOn: "2026-04-18",
     category: ANALYSIS,
@@ -610,11 +662,13 @@ export const blogPosts: BlogPost[] = [
   }),
   createPost({
     id: 48,
-    slug: 'cursor-u-pregovorima-za-2-milijarde-dolara',
-    title: 'Cursor u pregovorima za novih 2 milijarde dolara uz procjenu od 50 milijardi',
-    description: 'Startup za AI kodiranje Cursor, poznat i kao Anysphere, blizu je novog kruga financiranja u kojem bi trebao prikupiti najmanje 2 milijarde dolara, uz udvostručenje vrijednosti na 50 milijardi dolara.',
-    imageAlt: 'Cursor u pregovorima za novo financiranje',
-    publishedOn: '2026-04-17',
+    slug: "cursor-u-pregovorima-za-2-milijarde-dolara",
+    title:
+      "Cursor u pregovorima za novih 2 milijarde dolara uz procjenu od 50 milijardi",
+    description:
+      "Startup za AI kodiranje Cursor, poznat i kao Anysphere, blizu je novog kruga financiranja u kojem bi trebao prikupiti najmanje 2 milijarde dolara, uz udvostručenje vrijednosti na 50 milijardi dolara.",
+    imageAlt: "Cursor u pregovorima za novo financiranje",
+    publishedOn: "2026-04-17",
     category: NEWS,
     readTime: 3,
     featured: false,
@@ -622,47 +676,54 @@ export const blogPosts: BlogPost[] = [
 
   createPost({
     id: 49,
-    slug: 'zasto-je-chat-sucelje-pogresan-smjer-za-vecinu-ai-alata',
-    title: 'Zašto je chat sučelje pogrešan smjer za većinu AI alata',
-    description: 'Razgovorni agenti stvaraju preveliki kognitivni teret jer skrivaju opcije i prisiljavaju korisnika na složene upute.',
-    imageAlt: 'Ilustracija korisnika koji gleda u prazno tekstualno polje chatbota',
-    publishedOn: '2026-04-19',
+    slug: "zasto-je-chat-sucelje-pogresan-smjer-za-vecinu-ai-alata",
+    title: "Zašto je chat sučelje pogrešan smjer za većinu AI alata",
+    description:
+      "Razgovorni agenti stvaraju preveliki kognitivni teret jer skrivaju opcije i prisiljavaju korisnika na složene upute.",
+    imageAlt:
+      "Ilustracija korisnika koji gleda u prazno tekstualno polje chatbota",
+    publishedOn: "2026-04-19",
     category: ANALYSIS,
     readTime: 4,
-    featured: false
+    featured: false,
   }),
 
   createPost({
     id: 50,
-    slug: 'sinteticki-podaci-kako-ai-truje-vlastiti-izvor',
-    title: 'Sintetički podaci: Kako umjetna inteligencija truje vlastiti izvor',
-    description: 'Oslanjanje na umjetno generirane podatke za trening novih modela vodi nas u tehnološku slijepu ulicu.',
-    imageAlt: 'Ilustracija beskonačnog recikliranja podataka u AI sustavima',
-    publishedOn: '2026-04-20',
+    slug: "sinteticki-podaci-kako-ai-truje-vlastiti-izvor",
+    title: "Sintetički podaci: Kako umjetna inteligencija truje vlastiti izvor",
+    description:
+      "Oslanjanje na umjetno generirane podatke za trening novih modela vodi nas u tehnološku slijepu ulicu.",
+    imageAlt: "Ilustracija beskonačnog recikliranja podataka u AI sustavima",
+    publishedOn: "2026-04-20",
     category: ANALYSIS,
     readTime: 4,
-    featured: false
+    featured: false,
   }),
 
   createPost({
     id: 51,
-    slug: 'anthropic-mythos-threat-white-house',
-    title: 'Anthropic Mythos prijetnja kibernetičkoj sigurnosti vraća Amodeija u Bijelu kuću',
-    description: 'Sposobnost Anthropicovog Mythos modela da pronađe sigurnosne ranjivosti u sustavima dovela je do pregovora u Bijeloj kući.',
-    imageAlt: 'Zgrada Bijele kuće i digitalna sigurnosna mreža',
-    publishedOn: '2026-04-20',
+    slug: "anthropic-mythos-threat-white-house",
+    title:
+      "Anthropic Mythos prijetnja kibernetičkoj sigurnosti vraća Amodeija u Bijelu kuću",
+    description:
+      "Sposobnost Anthropicovog Mythos modela da pronađe sigurnosne ranjivosti u sustavima dovela je do pregovora u Bijeloj kući.",
+    imageAlt: "Zgrada Bijele kuće i digitalna sigurnosna mreža",
+    publishedOn: "2026-04-20",
     category: NEWS,
     readTime: 3,
-    featured: false
+    featured: false,
   }),
 
   createPost({
     id: 52,
-    slug: 'stvarnost-razvoja-s-ai-alatima',
-    title: 'Stvarnost razvoja s AI alatima: Pogled iza blještavila',
-    description: 'Umjetna inteligencija ne zamjenjuje programere, već mijenja način razvoja softvera u asistentni model.',
-    imageAlt: 'Apstraktna ilustracija programera koji radi s umjetnom inteligencijom',
-    publishedOn: '2026-04-20',
+    slug: "stvarnost-razvoja-s-ai-alatima",
+    title: "Stvarnost razvoja s AI alatima: Pogled iza blještavila",
+    description:
+      "Umjetna inteligencija ne zamjenjuje programere, već mijenja način razvoja softvera u asistentni model.",
+    imageAlt:
+      "Apstraktna ilustracija programera koji radi s umjetnom inteligencijom",
+    publishedOn: "2026-04-20",
     category: ANALYSIS,
     readTime: 4,
     featured: false,
@@ -670,11 +731,13 @@ export const blogPosts: BlogPost[] = [
 
   createPost({
     id: 53,
-    slug: 'ai-i-problem-nove-digitalne-birokracije',
-    title: 'Umjetna inteligencija i problem nove digitalne birokracije',
-    description: 'Umjesto da nas oslobode posla, AI agenti stvaraju novu vrstu iscrpljujuće digitalne birokracije u kojoj ljudi postaju tek provjeravatelji.',
-    imageAlt: 'Apstraktna ilustracija ljudi koji rade unutar birokratskog sustava kojim upravlja tehnologija i umjetna inteligencija.',
-    publishedOn: '2026-04-21',
+    slug: "ai-i-problem-nove-digitalne-birokracije",
+    title: "Umjetna inteligencija i problem nove digitalne birokracije",
+    description:
+      "Umjesto da nas oslobode posla, AI agenti stvaraju novu vrstu iscrpljujuće digitalne birokracije u kojoj ljudi postaju tek provjeravatelji.",
+    imageAlt:
+      "Apstraktna ilustracija ljudi koji rade unutar birokratskog sustava kojim upravlja tehnologija i umjetna inteligencija.",
+    publishedOn: "2026-04-21",
     category: ANALYSIS,
     readTime: 5,
     featured: false,
@@ -682,11 +745,13 @@ export const blogPosts: BlogPost[] = [
 
   createPost({
     id: 54,
-    slug: 'paradoks-brzine-ai-utrka-usporava-inovacije',
-    title: 'Paradoks brzine: Zašto stalna utrka usporava prave AI inovacije',
-    description: 'Opsesivno izbacivanje novih jezičnih modela sprječava stvaranje trajnih i pouzdanih softverskih rješenja.',
-    imageAlt: 'Apstraktna ilustracija brzine i tehnologije koja nadmašuje ljudsku kontrolu.',
-    publishedOn: '2026-04-21',
+    slug: "paradoks-brzine-ai-utrka-usporava-inovacije",
+    title: "Paradoks brzine: Zašto stalna utrka usporava prave AI inovacije",
+    description:
+      "Opsesivno izbacivanje novih jezičnih modela sprječava stvaranje trajnih i pouzdanih softverskih rješenja.",
+    imageAlt:
+      "Apstraktna ilustracija brzine i tehnologije koja nadmašuje ljudsku kontrolu.",
+    publishedOn: "2026-04-21",
     category: ANALYSIS,
     readTime: 4,
     featured: false,
@@ -697,7 +762,8 @@ export const blogPosts: BlogPost[] = [
     title: "Iluzija potpuno autonomnih AI agenata u poslovanju",
     description:
       "Opsesija potpunom automatizacijom stvara lažna očekivanja i ignorira stvarnu vrijednost koju donosi suradnja čovjeka i stroja.",
-    imageAlt: "Ilustracija uz članak: Iluzija potpuno autonomnih AI agenata u poslovanju",
+    imageAlt:
+      "Ilustracija uz članak: Iluzija potpuno autonomnih AI agenata u poslovanju",
     publishedOn: "2026-04-22",
     category: ANALYSIS,
     readTime: 4,
@@ -706,8 +772,10 @@ export const blogPosts: BlogPost[] = [
   createPost({
     id: 56,
     slug: "kraj-prosjecnosti-kako-ai-kaznjava-osrednji-rad",
-    title: "Kraj prosječnosti: Kako umjetna inteligencija kažnjava osrednji rad",
-    description: "Umjetna inteligencija drastično smanjuje vrijednost rutinskog i osrednjeg rada, pretvarajući ga u robu bez pokrića.",
+    title:
+      "Kraj prosječnosti: Kako umjetna inteligencija kažnjava osrednji rad",
+    description:
+      "Umjetna inteligencija drastično smanjuje vrijednost rutinskog i osrednjeg rada, pretvarajući ga u robu bez pokrića.",
     imageAlt: "Ilustracija utjecaja umjetne inteligencije na rad",
     publishedOn: "2026-04-23",
     category: ANALYSIS,
@@ -716,11 +784,12 @@ export const blogPosts: BlogPost[] = [
   }),
   createPost({
     id: 57,
-    slug: 'openai-infosys-partnerstvo',
-    title: 'OpenAI i Infosys sklapaju partnerstvo za širenje AI alata',
-    description: 'OpenAI se udružio s Infosysom kako bi integrirao svoje umjetno inteligentne alate, uključujući Codex, u platformu Topaz.',
-    imageAlt: 'Ilustracija suradnje OpenAI-a i Infosysa',
-    publishedOn: '2026-04-22',
+    slug: "openai-infosys-partnerstvo",
+    title: "OpenAI i Infosys sklapaju partnerstvo za širenje AI alata",
+    description:
+      "OpenAI se udružio s Infosysom kako bi integrirao svoje umjetno inteligentne alate, uključujući Codex, u platformu Topaz.",
+    imageAlt: "Ilustracija suradnje OpenAI-a i Infosysa",
+    publishedOn: "2026-04-22",
     category: NEWS,
     readTime: 3,
     featured: false,
@@ -729,7 +798,8 @@ export const blogPosts: BlogPost[] = [
     id: 58,
     slug: "ai-modeli-postaju-obicna-roba-prava-vrijednost-je-u-primjeni",
     title: "AI modeli postaju obična roba: prava vrijednost je u primjeni",
-    description: "Razvoj jezičnih modela ubrzava njihovu komoditizaciju, pa se istinska vrijednost seli iz samog modela u primjenu i korisničko iskustvo.",
+    description:
+      "Razvoj jezičnih modela ubrzava njihovu komoditizaciju, pa se istinska vrijednost seli iz samog modela u primjenu i korisničko iskustvo.",
     publishedOn: "2026-04-24",
     category: ANALYSIS,
     readTime: 4,
@@ -739,20 +809,23 @@ export const blogPosts: BlogPost[] = [
 
   createPost({
     id: 59,
-    slug: 'zabluda-o-ai-agentima',
-    title: 'Zabluda o AI agentima: Stvarnost iza tehnološkog marketinga',
-    description: 'Zašto nas narativ o potpuno autonomnim AI agentima udaljava od stvarnih poslovnih vrijednosti i kako umjetna inteligencija zapravo može pomoći.',
-    imageAlt: 'Ilustracija koja prikazuje jaz između očekivanja autonomnih AI agenata i stvarne inženjerske primjene',
-    publishedOn: '2026-04-25',
+    slug: "zabluda-o-ai-agentima",
+    title: "Zabluda o AI agentima: Stvarnost iza tehnološkog marketinga",
+    description:
+      "Zašto nas narativ o potpuno autonomnim AI agentima udaljava od stvarnih poslovnih vrijednosti i kako umjetna inteligencija zapravo može pomoći.",
+    imageAlt:
+      "Ilustracija koja prikazuje jaz između očekivanja autonomnih AI agenata i stvarne inženjerske primjene",
+    publishedOn: "2026-04-25",
     category: ANALYSIS,
     readTime: 4,
-    featured: false
+    featured: false,
   }),
   createPost({
     id: 60,
     slug: "openai-gpt-5-5-super-app",
     title: "OpenAI lansirao GPT-5.5 - korak bliže 'super aplikaciji'",
-    description: "Novi model donosi naprednije sposobnosti i brže razmišljanje za manji broj tokena, približavajući OpenAI stvaranju ultimativne višenamjenske aplikacije.",
+    description:
+      "Novi model donosi naprednije sposobnosti i brže razmišljanje za manji broj tokena, približavajući OpenAI stvaranju ultimativne višenamjenske aplikacije.",
     imageAlt: "Ilustracija umjetne inteligencije i digitalnih aplikacija",
     publishedOn: "2026-04-23",
     category: NEWS,
@@ -763,31 +836,36 @@ export const blogPosts: BlogPost[] = [
     id: 61,
     slug: "hype-oko-agi-ja-skriva-stvarne-probleme",
     title: "Hype oko opće umjetne inteligencije skriva stvarne probleme",
-    description: "Opsesija superinteligencijom i narativ o AGI-ju služe kao dimna zavjesa koja nas sprečava da se fokusiramo na stvarne probleme današnjice.",
+    description:
+      "Opsesija superinteligencijom i narativ o AGI-ju služe kao dimna zavjesa koja nas sprečava da se fokusiramo na stvarne probleme današnjice.",
     category: ANALYSIS,
     publishedOn: "2026-04-26",
-    imageAlt: "Ilustracija koja prikazuje hype oko opće umjetne inteligencije nasuprot stvarnim problemima.",
+    imageAlt:
+      "Ilustracija koja prikazuje hype oko opće umjetne inteligencije nasuprot stvarnim problemima.",
     readTime: 4,
     featured: false,
   }),
   createPost({
     id: 62,
-    slug: 'zasto-open-source-ai-ne-donosi-pravu-demokratizaciju',
-    title: 'Zašto open-source AI ne donosi pravu demokratizaciju',
-    description: 'Ovaj komentar objašnjava zašto open-source modeli sami po sebi ne donose stvarnu demokratizaciju umjetne inteligencije.',
-    imageAlt: 'Ilustracija hardvera u podatkovnom centru',
-    publishedOn: '2026-04-27',
+    slug: "zasto-open-source-ai-ne-donosi-pravu-demokratizaciju",
+    title: "Zašto open-source AI ne donosi pravu demokratizaciju",
+    description:
+      "Ovaj komentar objašnjava zašto open-source modeli sami po sebi ne donose stvarnu demokratizaciju umjetne inteligencije.",
+    imageAlt: "Ilustracija hardvera u podatkovnom centru",
+    publishedOn: "2026-04-27",
     category: ANALYSIS,
     readTime: 4,
-    featured: false
+    featured: false,
   }),
   createPost({
     id: 63,
-    slug: 'google-anthropic-40b-investment',
-    title: 'Google ulaže do 40 milijardi dolara u Anthropic',
-    description: 'Google planira uložiti do 40 milijardi dolara u AI tvrtku Anthropic, osiguravajući im ključnu infrastrukturu za razvoj novih modela.',
-    imageAlt: 'Logotipi Googlea i Anthropica na apstraktnoj pozadini koja prikazuje umjetnu inteligenciju.',
-    publishedOn: '2026-04-24',
+    slug: "google-anthropic-40b-investment",
+    title: "Google ulaže do 40 milijardi dolara u Anthropic",
+    description:
+      "Google planira uložiti do 40 milijardi dolara u AI tvrtku Anthropic, osiguravajući im ključnu infrastrukturu za razvoj novih modela.",
+    imageAlt:
+      "Logotipi Googlea i Anthropica na apstraktnoj pozadini koja prikazuje umjetnu inteligenciju.",
+    publishedOn: "2026-04-24",
     category: NEWS,
     readTime: 3,
     featured: false,
@@ -796,8 +874,10 @@ export const blogPosts: BlogPost[] = [
     id: 64,
     slug: "ai-alati-stvarnost-developera",
     title: "AI alati za programere: Od čarolije do beskrajnog debugiranja",
-    description: "AI alati za programere predstavljaju se kao čarobna rješenja, no u stvarnosti developere pretvaraju u recenzente koda. Umjesto da sami pišu softver, programeri sve više vremena provode pronalazeći i popravljajući suptilne pogreške u generiranom kodu.",
-    imageAlt: "Ilustracija uz članak: AI alati za programere: Od čarolije do beskrajnog debugiranja",
+    description:
+      "AI alati za programere predstavljaju se kao čarobna rješenja, no u stvarnosti developere pretvaraju u recenzente koda. Umjesto da sami pišu softver, programeri sve više vremena provode pronalazeći i popravljajući suptilne pogreške u generiranom kodu.",
+    imageAlt:
+      "Ilustracija uz članak: AI alati za programere: Od čarolije do beskrajnog debugiranja",
     publishedOn: "2026-04-28",
     category: ANALYSIS,
     readTime: 4,
@@ -806,9 +886,12 @@ export const blogPosts: BlogPost[] = [
   createPost({
     id: 65,
     slug: "sindrom-sintetickog-weba",
-    title: "Sindrom sintetičkog weba: Kako AI pretvara internet u sterilno mjesto",
-    description: "Umjetna inteligencija obećala je kreativnu renesansu, no u stvarnosti stvara sterilni internet kroz beskrajno recikliranje sintetičkog sadržaja.",
-    imageAlt: "Ilustracija koja prikazuje recikliranje i generiranje sintetičkog sadržaja na internetu.",
+    title:
+      "Sindrom sintetičkog weba: Kako AI pretvara internet u sterilno mjesto",
+    description:
+      "Umjetna inteligencija obećala je kreativnu renesansu, no u stvarnosti stvara sterilni internet kroz beskrajno recikliranje sintetičkog sadržaja.",
+    imageAlt:
+      "Ilustracija koja prikazuje recikliranje i generiranje sintetičkog sadržaja na internetu.",
     publishedOn: "2026-04-29",
     category: ANALYSIS,
     readTime: 4,
@@ -816,22 +899,25 @@ export const blogPosts: BlogPost[] = [
   }),
   createPost({
     id: 66,
-    slug: 'anthropic-testirao-trznicu-za-agente',
-    title: 'Anthropic testirao tržnicu za autonomnu trgovinu između AI agenata',
-    description: 'Anthropic je proveo pilot eksperiment s AI agentima koji su samostalno pregovarali i sklapali stvarne financijske poslove u ime zaposlenika.',
-    imageAlt: 'Ilustracija dvaju robota koji obavljaju transakciju u digitalnom okruženju tržnice',
-    publishedOn: '2026-04-25',
+    slug: "anthropic-testirao-trznicu-za-agente",
+    title: "Anthropic testirao tržnicu za autonomnu trgovinu između AI agenata",
+    description:
+      "Anthropic je proveo pilot eksperiment s AI agentima koji su samostalno pregovarali i sklapali stvarne financijske poslove u ime zaposlenika.",
+    imageAlt:
+      "Ilustracija dvaju robota koji obavljaju transakciju u digitalnom okruženju tržnice",
+    publishedOn: "2026-04-25",
     category: NEWS,
     readTime: 3,
     featured: false,
   }),
   createPost({
     id: 67,
-    slug: 'google-deepmind-partnerstvo-juzna-koreja',
-    title: 'Google DeepMind i Južna Koreja sklapaju AI partnerstvo',
-    description: 'Novi AI Campus u Seoulu omogućit će direktnu suradnju korejskih znanstvenika s vodećim stručnjacima iz Google DeepMinda u području AI modela za znanost.',
-    imageAlt: 'Ilustracija moderne zgrade istraživačkog centra u Seoulu',
-    publishedOn: '2026-04-27',
+    slug: "google-deepmind-partnerstvo-juzna-koreja",
+    title: "Google DeepMind i Južna Koreja sklapaju AI partnerstvo",
+    description:
+      "Novi AI Campus u Seoulu omogućit će direktnu suradnju korejskih znanstvenika s vodećim stručnjacima iz Google DeepMinda u području AI modela za znanost.",
+    imageAlt: "Ilustracija moderne zgrade istraživačkog centra u Seoulu",
+    publishedOn: "2026-04-27",
     category: NEWS,
     readTime: 2,
     featured: false,
@@ -840,8 +926,10 @@ export const blogPosts: BlogPost[] = [
     id: 68,
     slug: "hype-oko-ai-agenata-zasto-autonomija-jos-uvijek-nije-stvarnost",
     title: "Hype oko AI agenata: Zašto autonomija još uvijek nije stvarnost",
-    description: "Unatoč ogromnim obećanjima o potpuno samostalnim sustavima, industrija trenutno isporučuje samo malo naprednije automatizirane skripte.",
-    imageAlt: "Ilustracija uz članak: Hype oko AI agenata: Zašto autonomija još uvijek nije stvarnost",
+    description:
+      "Unatoč ogromnim obećanjima o potpuno samostalnim sustavima, industrija trenutno isporučuje samo malo naprednije automatizirane skripte.",
+    imageAlt:
+      "Ilustracija uz članak: Hype oko AI agenata: Zašto autonomija još uvijek nije stvarnost",
     publishedOn: "2026-04-27",
     category: ANALYSIS,
     readTime: 4,
@@ -851,7 +939,8 @@ export const blogPosts: BlogPost[] = [
     id: 69,
     slug: "skriveni-dug-ai-alata",
     title: "Iluzija jednostavne implementacije: Skriveni dug AI alata",
-    description: "Iza privlačne fasade brze AI integracije krije se rastuća planina nevidljivog tehničkog duga s kojom će se inženjerski timovi tek morati suočiti.",
+    description:
+      "Iza privlačne fasade brze AI integracije krije se rastuća planina nevidljivog tehničkog duga s kojom će se inženjerski timovi tek morati suočiti.",
     imageAlt: "Ilustracija skrivenog tehničkog duga AI alata",
     publishedOn: "2026-04-27",
     category: ANALYSIS,
@@ -861,9 +950,12 @@ export const blogPosts: BlogPost[] = [
   createPost({
     id: 70,
     slug: "canonical-ubuntu-linux-ai-features",
-    title: "Canonical predstavlja planove za integraciju AI alata u Ubuntu Linux",
-    description: "Ubuntu će dobiti lokalne modele za pristupačnost i agentične procese tijekom 2026., no bez pretenzija da postane AI proizvod.",
-    imageAlt: "Ilustracija Canonicalovih planova za integraciju umjetne inteligencije u operativni sustav Ubuntu",
+    title:
+      "Canonical predstavlja planove za integraciju AI alata u Ubuntu Linux",
+    description:
+      "Ubuntu će dobiti lokalne modele za pristupačnost i agentične procese tijekom 2026., no bez pretenzija da postane AI proizvod.",
+    imageAlt:
+      "Ilustracija Canonicalovih planova za integraciju umjetne inteligencije u operativni sustav Ubuntu",
     publishedOn: "2026-04-28",
     category: NEWS,
     readTime: 3,
@@ -872,9 +964,12 @@ export const blogPosts: BlogPost[] = [
   createPost({
     id: 71,
     slug: "kraj-institucionalnog-znanja-ai-produktivnost",
-    title: "Kraj institucionalnog znanja: Kako nas AI čini dugoročno nesposobnima",
-    description: "Umjetna inteligencija pruža iluziju brzog rješavanja problema, no dugoročno stvara generaciju stručnjaka bez razumijevanja temeljnih sustava.",
-    imageAlt: "Ilustracija gubitka institucionalnog znanja uslijed pretjerane ovisnosti o AI alatima",
+    title:
+      "Kraj institucionalnog znanja: Kako nas AI čini dugoročno nesposobnima",
+    description:
+      "Umjetna inteligencija pruža iluziju brzog rješavanja problema, no dugoročno stvara generaciju stručnjaka bez razumijevanja temeljnih sustava.",
+    imageAlt:
+      "Ilustracija gubitka institucionalnog znanja uslijed pretjerane ovisnosti o AI alatima",
     publishedOn: "2026-04-28",
     category: ANALYSIS,
     readTime: 5,
@@ -883,9 +978,12 @@ export const blogPosts: BlogPost[] = [
   createPost({
     id: 72,
     slug: "ai-unistava-sposobnost-dubokog-promisljanja",
-    title: "Umjetna inteligencija uništava našu sposobnost dubokog promišljanja",
-    description: "Oslanjanje na AI alate za sažimanje informacija i rješavanje problema dugoročno uništava našu sposobnost dubokog promišljanja i analize.",
-    imageAlt: "Ilustracija umjetne inteligencije i mozga koja simbolizira gubitak sposobnosti dubokog promišljanja",
+    title:
+      "Umjetna inteligencija uništava našu sposobnost dubokog promišljanja",
+    description:
+      "Oslanjanje na AI alate za sažimanje informacija i rješavanje problema dugoročno uništava našu sposobnost dubokog promišljanja i analize.",
+    imageAlt:
+      "Ilustracija umjetne inteligencije i mozga koja simbolizira gubitak sposobnosti dubokog promišljanja",
     publishedOn: "2026-04-28",
     category: ANALYSIS,
     readTime: 4,
@@ -895,8 +993,10 @@ export const blogPosts: BlogPost[] = [
     id: 73,
     slug: "google-expands-pentagon-ai-access",
     title: "Google proširuje pristup umjetnoj inteligenciji za Pentagon",
-    description: "Google je odobrio Ministarstvu obrane SAD-a pristup svojim AI modelima, pridruživši se kompanijama koje surađuju s vladom, dok se interna previranja nastavljaju.",
-    imageAlt: "Zgrada Pentagona s digitalnim overlayem koji simbolizira umjetnu inteligenciju i tehnologiju",
+    description:
+      "Google je odobrio Ministarstvu obrane SAD-a pristup svojim AI modelima, pridruživši se kompanijama koje surađuju s vladom, dok se interna previranja nastavljaju.",
+    imageAlt:
+      "Zgrada Pentagona s digitalnim overlayem koji simbolizira umjetnu inteligenciju i tehnologiju",
     publishedOn: "2026-04-29",
     category: NEWS,
     readTime: 3,
@@ -906,7 +1006,8 @@ export const blogPosts: BlogPost[] = [
     id: 74,
     slug: "ai-iluzija-kompetencije-i-kraj-razumijevanja-koda",
     title: "Umjetna inteligencija i iluzija kompetencije u programiranju",
-    description: "Kratki komentar koji ističe kako korištenje AI asistenata za generiranje koda stvara privid visoke produktivnosti, dok istovremeno uništava sposobnost programera da uistinu razumiju i dugoročno održavaju softver koji grade.",
+    description:
+      "Kratki komentar koji ističe kako korištenje AI asistenata za generiranje koda stvara privid visoke produktivnosti, dok istovremeno uništava sposobnost programera da uistinu razumiju i dugoročno održavaju softver koji grade.",
     imageAlt: "Ilustracija programera i umjetne inteligencije",
     publishedOn: "2026-04-29",
     category: ANALYSIS,
@@ -919,7 +1020,8 @@ export const blogPosts: BlogPost[] = [
     title: "AI ne rješava loše poslovne procese, samo ih ubrzava",
     description:
       "Automatizacija loše organizacije uz pomoć umjetne inteligencije stvara samo brži birokratski kaos. Zašto AI nije rješenje za duboke poslovne probleme.",
-    imageAlt: "Zbrka papira i digitalnih ekrana koji simboliziraju ubrzani birokratski kaos",
+    imageAlt:
+      "Zbrka papira i digitalnih ekrana koji simboliziraju ubrzani birokratski kaos",
     publishedOn: "2026-04-29",
     category: ANALYSIS,
     readTime: 4,
@@ -929,8 +1031,10 @@ export const blogPosts: BlogPost[] = [
     id: 76,
     slug: "anthropic-valuation-900-billion",
     title: "Anthropic cilja na novu procjenu od 900 milijardi dolara",
-    description: "Anthropic razmatra ponude za novo financiranje od oko 50 milijardi dolara, što bi moglo podići ukupnu tržišnu procjenu tvrtke na 900 milijardi dolara.",
-    imageAlt: "Futuristička apstraktna grafika koja prikazuje ogroman financijski rast umjetne inteligencije",
+    description:
+      "Anthropic razmatra ponude za novo financiranje od oko 50 milijardi dolara, što bi moglo podići ukupnu tržišnu procjenu tvrtke na 900 milijardi dolara.",
+    imageAlt:
+      "Futuristička apstraktna grafika koja prikazuje ogroman financijski rast umjetne inteligencije",
     publishedOn: "2026-04-30",
     category: NEWS,
     readTime: 4,
@@ -939,9 +1043,11 @@ export const blogPosts: BlogPost[] = [
   createPost({
     id: 77,
     slug: "zabluda-ai-kao-zamjena-za-juniore",
-    title: "Zabluda \"AI kao zamjena za juniore\" i kraj seniora",
-    description: "Kompanije koje štede mijenjajući juniore AI alatima dugoročno uništavaju mehanizam kojim industrija stvara vrhunske seniore.",
-    imageAlt: "Ilustracija koja prikazuje junior developera i umjetnu inteligenciju",
+    title: 'Zabluda "AI kao zamjena za juniore" i kraj seniora',
+    description:
+      "Kompanije koje štede mijenjajući juniore AI alatima dugoročno uništavaju mehanizam kojim industrija stvara vrhunske seniore.",
+    imageAlt:
+      "Ilustracija koja prikazuje junior developera i umjetnu inteligenciju",
     publishedOn: "2026-04-30",
     category: ANALYSIS,
     readTime: 4,
@@ -951,7 +1057,8 @@ export const blogPosts: BlogPost[] = [
     id: 78,
     slug: "open-source-ai-is-not-the-answer-to-monopolies",
     title: "Otvoreni kod u umjetnoj inteligenciji neće srušiti monopole",
-    description: "Otvoreni modeli samo preusmjeravaju ovisnost s modela na infrastrukturu koju kontroliraju tehnološki divovi.",
+    description:
+      "Otvoreni modeli samo preusmjeravaju ovisnost s modela na infrastrukturu koju kontroliraju tehnološki divovi.",
     imageAlt: "Ilustracija tehnološkog monopola i infrastrukture",
     publishedOn: "2026-04-30",
     category: ANALYSIS,
@@ -960,44 +1067,51 @@ export const blogPosts: BlogPost[] = [
   }),
   createPost({
     id: 79,
-    slug: 'musk-testifies-xai-trained-grok-on-openai-models',
-    title: 'Elon Musk svjedočio da je xAI trenirao Grok na OpenAI modelima',
-    description: 'Elon Musk na sudu priznao da je xAI koristio OpenAI modele za treniranje svog Grok AI sustava kroz proces zvan destilacija.',
-    imageAlt: 'Elon Musk na sudu',
-    publishedOn: '2026-05-01',
+    slug: "musk-testifies-xai-trained-grok-on-openai-models",
+    title: "Elon Musk svjedočio da je xAI trenirao Grok na OpenAI modelima",
+    description:
+      "Elon Musk na sudu priznao da je xAI koristio OpenAI modele za treniranje svog Grok AI sustava kroz proces zvan destilacija.",
+    imageAlt: "Elon Musk na sudu",
+    publishedOn: "2026-05-01",
     category: NEWS,
     readTime: 3,
     featured: false,
   }),
   createPost({
     id: 80,
-    slug: 'ai-agenti-u-korisnickoj-podrsci-nocna-mora',
-    title: 'Kraj korisničke podrške: AI agenti i povratak u noćnu moru',
-    description: 'Zamjena ljudi botovima u korisničkoj podršci ne unapređuje uslugu, već gradi neprobojni digitalni zid između tvrtke i njenih nezadovoljnih korisnika.',
-    imageAlt: 'Ilustracija AI agenata u korisničkoj podršci koji stvaraju digitalni zid',
-    publishedOn: '2026-05-01',
+    slug: "ai-agenti-u-korisnickoj-podrsci-nocna-mora",
+    title: "Kraj korisničke podrške: AI agenti i povratak u noćnu moru",
+    description:
+      "Zamjena ljudi botovima u korisničkoj podršci ne unapređuje uslugu, već gradi neprobojni digitalni zid između tvrtke i njenih nezadovoljnih korisnika.",
+    imageAlt:
+      "Ilustracija AI agenata u korisničkoj podršci koji stvaraju digitalni zid",
+    publishedOn: "2026-05-01",
     category: ANALYSIS,
     readTime: 4,
     featured: false,
   }),
   createPost({
     id: 81,
-    slug: 'cijena-ai-iluzije-neodrziva-racunica',
-    title: 'Cijena AI iluzije: Zašto je trenutna računica potpuno neodrživa',
-    description: 'Ogromni troškovi infrastrukture za AI ne prate stvarnu poslovnu vrijednost koju ti alati donose. Rješavamo trivijalne zadatke najskupljom tehnologijom ikad izgrađenom.',
-    imageAlt: 'Ilustracija balona troškova AI infrastrukture u usporedbi s vrijednošću',
-    publishedOn: '2026-05-01',
+    slug: "cijena-ai-iluzije-neodrziva-racunica",
+    title: "Cijena AI iluzije: Zašto je trenutna računica potpuno neodrživa",
+    description:
+      "Ogromni troškovi infrastrukture za AI ne prate stvarnu poslovnu vrijednost koju ti alati donose. Rješavamo trivijalne zadatke najskupljom tehnologijom ikad izgrađenom.",
+    imageAlt:
+      "Ilustracija balona troškova AI infrastrukture u usporedbi s vrijednošću",
+    publishedOn: "2026-05-01",
     category: ANALYSIS,
     readTime: 4,
     featured: false,
   }),
   createPost({
     id: 82,
-    slug: 'musk-v-altman-sudenje-otkriva-xai-koristi-openai-modele',
-    title: 'Suđenje Muska i Altmana: Musk priznao da xAI koristi OpenAI modele',
-    description: 'Prvi tjedan suđenja između Elona Muska i OpenAI-ja donio je neočekivano priznanje. Musk je svjedočio da njegov startup xAI djelomično destilira modele OpenAI-ja.',
-    imageAlt: 'Ilustracija sudnice s Elonom Muskom i Samom Altmanom uz digitalne AI elemente',
-    publishedOn: '2026-05-02',
+    slug: "musk-v-altman-sudenje-otkriva-xai-koristi-openai-modele",
+    title: "Suđenje Muska i Altmana: Musk priznao da xAI koristi OpenAI modele",
+    description:
+      "Prvi tjedan suđenja između Elona Muska i OpenAI-ja donio je neočekivano priznanje. Musk je svjedočio da njegov startup xAI djelomično destilira modele OpenAI-ja.",
+    imageAlt:
+      "Ilustracija sudnice s Elonom Muskom i Samom Altmanom uz digitalne AI elemente",
+    publishedOn: "2026-05-02",
     category: NEWS,
     readTime: 5,
     featured: false,
@@ -1006,7 +1120,8 @@ export const blogPosts: BlogPost[] = [
     id: 83,
     slug: "sindrom-carobnog-stapica-kako-ai-unistava-odgovornost",
     title: "Sindrom čarobnog štapića: Kako AI uništava odgovornost",
-    description: "Komentar o tome kako se umjetna inteligencija sve više koristi kao alibi za prebacivanje odgovornosti za loše odluke.",
+    description:
+      "Komentar o tome kako se umjetna inteligencija sve više koristi kao alibi za prebacivanje odgovornosti za loše odluke.",
     publishedOn: "2026-05-02",
     category: ANALYSIS,
     readTime: 4,
@@ -1016,21 +1131,26 @@ export const blogPosts: BlogPost[] = [
   createPost({
     id: 84,
     slug: "mit-o-jednostavnoj-integraciji-ai-alata",
-    title: "Mit o jednostavnoj integraciji: Zašto AI zahtijeva vrhunske inženjere",
-    description: "Kratki komentar koji demistificira ideju da su AI alati jednostavni za implementaciju i naglašava kritičnu potrebu za iskusnim inženjerima pri integraciji u ozbiljne sustave.",
+    title:
+      "Mit o jednostavnoj integraciji: Zašto AI zahtijeva vrhunske inženjere",
+    description:
+      "Kratki komentar koji demistificira ideju da su AI alati jednostavni za implementaciju i naglašava kritičnu potrebu za iskusnim inženjerima pri integraciji u ozbiljne sustave.",
     publishedOn: "2026-05-02",
     category: ANALYSIS,
     readTime: 4,
     featured: false,
-    imageAlt: "Ilustracija kompleksne mrežne arhitekture koja povezuje AI model sa stabilnim inženjerskim sustavom",
+    imageAlt:
+      "Ilustracija kompleksne mrežne arhitekture koja povezuje AI model sa stabilnim inženjerskim sustavom",
   }),
   createPost({
     id: 85,
     slug: "ai-actors-oscars-ineligible",
-    title: "Akademija mijenja pravila: AI glumci i scenariji više ne mogu osvojiti Oscara",
+    title:
+      "Akademija mijenja pravila: AI glumci i scenariji više ne mogu osvojiti Oscara",
     publishedOn: "2026-05-03",
     category: NEWS,
-    description: "Filmska akademija donijela je nova pravila prema kojima samo ljudi mogu biti nominirani i osvojiti Oscara, čime se isključuju AI generirani glumci i scenariji.",
+    description:
+      "Filmska akademija donijela je nova pravila prema kojima samo ljudi mogu biti nominirani i osvojiti Oscara, čime se isključuju AI generirani glumci i scenariji.",
     readTime: 4,
     featured: false,
     imageAlt: "Zlatni kipić Oscara uz digitalni kod",
@@ -1040,7 +1160,8 @@ export const blogPosts: BlogPost[] = [
     id: 86,
     slug: "ai-alati-mijenjaju-usko-grlo",
     title: "AI alati ne zamjenjuju developere, već mijenjaju usko grlo",
-    description: "Iako AI alati nevjerojatno ubrzavaju proces pisanja koda, oni ne rješavaju, već samo premještaju glavno usko grlo u razvoju softvera s pisanja na čitanje i održavanje.",
+    description:
+      "Iako AI alati nevjerojatno ubrzavaju proces pisanja koda, oni ne rješavaju, već samo premještaju glavno usko grlo u razvoju softvera s pisanja na čitanje i održavanje.",
     publishedOn: "2026-05-03",
     category: ANALYSIS,
     readTime: 4,
@@ -1051,18 +1172,21 @@ export const blogPosts: BlogPost[] = [
     id: 87,
     slug: "zasto-je-fokus-na-agi-opasna-iluzija",
     title: "Zašto je fokus na AGI opasna iluzija i distrakcija",
-    description: "Opsesija stvaranjem Umjetne opće inteligencije (AGI) sprječava industriju da rješava stvarne probleme usko specijaliziranim alatima.",
+    description:
+      "Opsesija stvaranjem Umjetne opće inteligencije (AGI) sprječava industriju da rješava stvarne probleme usko specijaliziranim alatima.",
     publishedOn: "2026-05-03",
     category: ANALYSIS,
     readTime: 4,
     featured: false,
-    imageAlt: "Ilustracija osobe koja gleda utopijski svijet umjetne inteligencije kroz povećalo",
+    imageAlt:
+      "Ilustracija osobe koja gleda utopijski svijet umjetne inteligencije kroz povećalo",
   }),
   createPost({
     id: 88,
     slug: "harvard-studija-ai-precizniji-od-lijecnika-u-hitnoj",
     title: "Nova studija s Harvarda: AI precizniji od liječnika u hitnoj",
-    description: "OpenAI-jevi modeli pokazali se točnijim od liječnika interne medicine u postavljanju dijagnoza pacijenata na hitnom prijemu.",
+    description:
+      "OpenAI-jevi modeli pokazali se točnijim od liječnika interne medicine u postavljanju dijagnoza pacijenata na hitnom prijemu.",
     publishedOn: "2026-05-04",
     category: NEWS,
     readTime: 3,
@@ -1073,8 +1197,10 @@ export const blogPosts: BlogPost[] = [
     id: 89,
     slug: "povratak-majstorstvu-zasto-je-tezi-put-jedini-odrziv",
     title: "Povratak majstorstvu: Zašto je teži put jedini održiv",
-    description: "Kritički osvrt na trend pretjeranog oslanjanja na AI alate u programiranju. Tvrdi se da, iako AI pruža kratkoročno ubrzanje, dugoročno stvara tehnički dug i onemogućuje razvoj istinskog inženjerskog majstorstva.",
-    imageAlt: "Ilustracija programera pred računalom koji odabire teži, intelektualno zahtjevniji put do rješenja",
+    description:
+      "Kritički osvrt na trend pretjeranog oslanjanja na AI alate u programiranju. Tvrdi se da, iako AI pruža kratkoročno ubrzanje, dugoročno stvara tehnički dug i onemogućuje razvoj istinskog inženjerskog majstorstva.",
+    imageAlt:
+      "Ilustracija programera pred računalom koji odabire teži, intelektualno zahtjevniji put do rješenja",
     publishedOn: "2026-05-04",
     category: ANALYSIS,
     readTime: 5,
@@ -1083,22 +1209,24 @@ export const blogPosts: BlogPost[] = [
 
   createPost({
     id: 90,
-    slug: 'vecini-tvrtki-treba-bolji-rag-a-ne-vlastiti-ai-model',
-    title: 'Većini tvrtki treba bolji RAG, a ne vlastiti AI model',
-    description: 'Tvrtke troše previše vremena i resursa na treniranje vlastitih modela, dok bi im kvalitetno implementiran RAG sustav donio puno više vrijednosti uz manje troškove i rizike.',
-    imageAlt: 'Grafika koja prikazuje povezivanje baze podataka s AI sustavom',
-    publishedOn: '2026-05-04',
+    slug: "vecini-tvrtki-treba-bolji-rag-a-ne-vlastiti-ai-model",
+    title: "Većini tvrtki treba bolji RAG, a ne vlastiti AI model",
+    description:
+      "Tvrtke troše previše vremena i resursa na treniranje vlastitih modela, dok bi im kvalitetno implementiran RAG sustav donio puno više vrijednosti uz manje troškove i rizike.",
+    imageAlt: "Grafika koja prikazuje povezivanje baze podataka s AI sustavom",
+    publishedOn: "2026-05-04",
     category: ANALYSIS,
     readTime: 4,
     featured: false,
   }),
   createPost({
     id: 91,
-    slug: 'nvidia-jensen-huang-ai-jobs',
-    title: 'Jensen Huang: Umjetna inteligencija stvara golem broj poslova',
-    description: 'Izvršni direktor Nvidije odbacuje strahove o gubitku radnih mjesta i smatra da AI potiče reindustrijalizaciju.',
-    imageAlt: 'Jensen Huang iz Nvidije',
-    publishedOn: '2026-05-05',
+    slug: "nvidia-jensen-huang-ai-jobs",
+    title: "Jensen Huang: Umjetna inteligencija stvara golem broj poslova",
+    description:
+      "Izvršni direktor Nvidije odbacuje strahove o gubitku radnih mjesta i smatra da AI potiče reindustrijalizaciju.",
+    imageAlt: "Jensen Huang iz Nvidije",
+    publishedOn: "2026-05-05",
     category: NEWS,
     readTime: 3,
     featured: false,
@@ -1107,8 +1235,10 @@ export const blogPosts: BlogPost[] = [
     id: 92,
     slug: "ai-ne-pise-kod-samo-predlaze-sintaksu",
     title: "Umjetna inteligencija ne piše kod, ona predlaže sintaksu",
-    description: "Priče o propasti programiranja su pretjerane jer AI ne rješava inženjerske probleme, već samo automatizira tipkanje.",
-    imageAlt: "Ilustracija uz članak: Umjetna inteligencija ne piše kod, ona predlaže sintaksu",
+    description:
+      "Priče o propasti programiranja su pretjerane jer AI ne rješava inženjerske probleme, već samo automatizira tipkanje.",
+    imageAlt:
+      "Ilustracija uz članak: Umjetna inteligencija ne piše kod, ona predlaže sintaksu",
     publishedOn: "2026-05-05",
     category: ANALYSIS,
     readTime: 4,
@@ -1118,8 +1248,10 @@ export const blogPosts: BlogPost[] = [
     id: 93,
     slug: "deepmind-ai-co-clinician",
     title: "Google DeepMind predstavlja AI Co-Clinician za zdravstvo",
-    description: "Novi AI sustav osmišljen je kao suradnik u liječničkom timu koji pomaže pri sintezi dokaza i odgovaranju na složena medicinska pitanja.",
-    imageAlt: "Ilustracija uz članak: Google DeepMind predstavlja AI Co-Clinician za zdravstvo",
+    description:
+      "Novi AI sustav osmišljen je kao suradnik u liječničkom timu koji pomaže pri sintezi dokaza i odgovaranju na složena medicinska pitanja.",
+    imageAlt:
+      "Ilustracija uz članak: Google DeepMind predstavlja AI Co-Clinician za zdravstvo",
     publishedOn: "2026-05-06",
     category: NEWS,
     readTime: 4,
@@ -1129,18 +1261,21 @@ export const blogPosts: BlogPost[] = [
     id: 94,
     slug: "zasto-prompt-inzenjering-nije-karijera",
     title: "Zašto prompt inženjering nije stvarna karijera budućnosti",
-    description: "Vještina pisanja uputa za AI modele nestat će jednako brzo kao što je i nastala, a budućnost pripada stručnjacima s domenskim znanjem.",
+    description:
+      "Vještina pisanja uputa za AI modele nestat će jednako brzo kao što je i nastala, a budućnost pripada stručnjacima s domenskim znanjem.",
     publishedOn: "2026-05-06",
     category: ANALYSIS,
     readTime: 4,
     featured: false,
-    imageAlt: "Ilustracija koja prikazuje prolaznost prompt inženjeringa i važnost domenskog znanja",
+    imageAlt:
+      "Ilustracija koja prikazuje prolaznost prompt inženjeringa i važnost domenskog znanja",
   }),
   createPost({
     id: 95,
     slug: "decoupled-diloco-novi-pristup-treningu-modela",
     title: "Decoupled DiLoCo: Novi otporni pristup za trening AI modela",
-    description: "Google DeepMind predstavlja novu distribuiranu arhitekturu koja omogućuje otporniji i fleksibilniji trening AI modela na različitim hardverskim generacijama.",
+    description:
+      "Google DeepMind predstavlja novu distribuiranu arhitekturu koja omogućuje otporniji i fleksibilniji trening AI modela na različitim hardverskim generacijama.",
     imageAlt: "Ilustracija distribuiranog treninga umjetne inteligencije",
     publishedOn: "2026-05-07",
     category: NEWS,
@@ -1151,8 +1286,10 @@ export const blogPosts: BlogPost[] = [
     id: 96,
     slug: "mrtvi-internet-kada-strojevi-pricaju",
     title: "Mrtvi internet: Kada strojevi počnu pričati sami sa sobom",
-    description: "AI agenti na internetu počinju komunicirati jedni s drugima umjesto s ljudima, stvarajući zatvorenu petlju sintetičkog sadržaja koja degradira kvalitetu informacija.",
-    imageAlt: "Ilustracija robota koji komuniciraju u zatvorenom krugu bez prisutnosti ljudi",
+    description:
+      "AI agenti na internetu počinju komunicirati jedni s drugima umjesto s ljudima, stvarajući zatvorenu petlju sintetičkog sadržaja koja degradira kvalitetu informacija.",
+    imageAlt:
+      "Ilustracija robota koji komuniciraju u zatvorenom krugu bez prisutnosti ljudi",
     publishedOn: "2026-05-07",
     category: ANALYSIS,
     readTime: 4,
@@ -1161,30 +1298,36 @@ export const blogPosts: BlogPost[] = [
   createPost({
     id: 97,
     slug: "kraj-iluzije-zasto-open-source-ai-gubi",
-    title: "Kraj iluzije: Zašto open-source AI modeli gube bitku protiv giganata",
-    description: "Komentar o tome zašto open-source zajednica dugoročno gubi utrku u razvoju umjetne inteligencije i zašto stvarna moć leži u vlasništvu nad infrastrukturom i energijom.",
+    title:
+      "Kraj iluzije: Zašto open-source AI modeli gube bitku protiv giganata",
+    description:
+      "Komentar o tome zašto open-source zajednica dugoročno gubi utrku u razvoju umjetne inteligencije i zašto stvarna moć leži u vlasništvu nad infrastrukturom i energijom.",
     publishedOn: "2026-05-07",
     category: ANALYSIS,
     readTime: 4,
     featured: false,
-    imageAlt: "Ilustracija borbe malog open-source developera protiv tehnoloških giganata",
+    imageAlt:
+      "Ilustracija borbe malog open-source developera protiv tehnoloških giganata",
   }),
   createPost({
     id: 98,
     slug: "ai-u-obrazovanju-generacija-koja-ne-zna-misliti",
     title: "AI u obrazovanju: Kako stvaramo generaciju koja ne zna misliti",
-    description: "Kratki komentar koji objašnjava zašto integracija AI alata u učionice ne demokratizira znanje, već stvara sustav u kojem učenici trajno delegiraju vlastiti kognitivni napor strojevima.",
+    description:
+      "Kratki komentar koji objašnjava zašto integracija AI alata u učionice ne demokratizira znanje, već stvara sustav u kojem učenici trajno delegiraju vlastiti kognitivni napor strojevima.",
     publishedOn: "2026-05-08",
     category: ANALYSIS,
     readTime: 3,
     featured: false,
-    imageAlt: "Ilustracija učenika koji prepušta učenje i razmišljanje strojevima",
+    imageAlt:
+      "Ilustracija učenika koji prepušta učenje i razmišljanje strojevima",
   }),
   createPost({
     id: 99,
     slug: "divlji-zapad-ai-igracaka",
     title: "Novi divlji zapad pametnih AI igračaka donosi brojne dječje rizike",
-    description: "Tržište AI igračaka ubrzano raste, no stručnjaci i udruge upozoravaju na sigurnosne propuste, neprimjeren sadržaj te negativan utjecaj na društveni razvoj i dječju igru.",
+    description:
+      "Tržište AI igračaka ubrzano raste, no stručnjaci i udruge upozoravaju na sigurnosne propuste, neprimjeren sadržaj te negativan utjecaj na društveni razvoj i dječju igru.",
     publishedOn: "2026-05-08",
     category: NEWS,
     readTime: 3,
@@ -1195,29 +1338,34 @@ export const blogPosts: BlogPost[] = [
     id: 100,
     slug: "autonomni-agenti-su-daleko-od-pouzdanosti",
     title: "Autonomni agenti su daleko od pouzdanosti",
-    description: "Kratki komentar koji objašnjava zašto autonomni AI agenti još uvijek ne mogu pouzdano zamijeniti ljudski rad u složenim poslovnim zadacima.",
+    description:
+      "Kratki komentar koji objašnjava zašto autonomni AI agenti još uvijek ne mogu pouzdano zamijeniti ljudski rad u složenim poslovnim zadacima.",
     publishedOn: "2026-05-08",
     category: ANALYSIS,
     readTime: 4,
     featured: false,
-    imageAlt: "Ilustracija nezavršene i nepouzdane konstrukcije robota u poslovnom okruženju",
+    imageAlt:
+      "Ilustracija nezavršene i nepouzdane konstrukcije robota u poslovnom okruženju",
   }),
   createPost({
     id: 101,
     slug: "mozilla-mythos-ai-vulnerabilities",
     title: "Mozilla koristi AI za otkrivanje ranjivosti u Firefoxu",
-    description: "Korištenjem Anthropic Mythos modela, Mozilla je uspjela otkriti preko 200 sigurnosnih grešaka u pregledniku Firefox uz gotovo potpunu eliminaciju lažno pozitivnih prijava.",
+    description:
+      "Korištenjem Anthropic Mythos modela, Mozilla je uspjela otkriti preko 200 sigurnosnih grešaka u pregledniku Firefox uz gotovo potpunu eliminaciju lažno pozitivnih prijava.",
     publishedOn: "2026-05-09",
     category: NEWS,
     readTime: 4,
     featured: false,
-    imageAlt: "Ilustracija integracije AI agencija u provjeri sigurnosti softvera",
+    imageAlt:
+      "Ilustracija integracije AI agencija u provjeri sigurnosti softvera",
   }),
   createPost({
     id: 102,
     slug: "iluzija-modernizacije-legacy-kod",
     title: "Iluzija modernizacije: Zašto AI neće spasiti vaš legacy kod",
-    description: "Kratki osvrt koji argumentira zašto automatizirana modernizacija koda uz pomoć AI alata ne rješava tehnički dug, već stvara nove probleme ako se ne provodi uz strogi nadzor iskusnih inženjera.",
+    description:
+      "Kratki osvrt koji argumentira zašto automatizirana modernizacija koda uz pomoć AI alata ne rješava tehnički dug, već stvara nove probleme ako se ne provodi uz strogi nadzor iskusnih inženjera.",
     publishedOn: "2026-05-09",
     category: ANALYSIS,
     readTime: 4,
@@ -1228,7 +1376,8 @@ export const blogPosts: BlogPost[] = [
     id: 103,
     slug: "zasto-chat-sucelja-nisu-buducnost-interakcije",
     title: "Zašto chat sučelja nisu budućnost interakcije",
-    description: "Kratki komentar koji objašnjava zašto je forsiranje tekstualnog chata kao primarnog sučelja korak unatrag za većinu korisničkih zadataka u usporedbi s dobrim grafičkim alatima.",
+    description:
+      "Kratki komentar koji objašnjava zašto je forsiranje tekstualnog chata kao primarnog sučelja korak unatrag za većinu korisničkih zadataka u usporedbi s dobrim grafičkim alatima.",
     publishedOn: "2026-05-09",
     category: ANALYSIS,
     readTime: 4,
@@ -1239,18 +1388,21 @@ export const blogPosts: BlogPost[] = [
     id: 104,
     slug: "alphaevolve-ai-sustav-google-deepmind",
     title: "Google DeepMind predstavlja AlphaEvolve sustav",
-    description: "Novi AI sustav sposoban za autonomno otkrivanje i optimizaciju algoritama koji već ubrzava istraživanja u različitim znanstvenim i inženjerskim područjima.",
+    description:
+      "Novi AI sustav sposoban za autonomno otkrivanje i optimizaciju algoritama koji već ubrzava istraživanja u različitim znanstvenim i inženjerskim područjima.",
     publishedOn: "2026-05-10",
     category: NEWS,
     readTime: 4,
     featured: false,
-    imageAlt: "Ilustracija umjetne inteligencije koja autonomno optimizira algoritme",
+    imageAlt:
+      "Ilustracija umjetne inteligencije koja autonomno optimizira algoritme",
   }),
   createPost({
     id: 105,
     slug: "ai-alati-stvaraju-generaciju-koja-ne-razumije-kod",
     title: "Zašto AI alati stvaraju generaciju koja ne razumije vlastiti kod",
-    description: "Sveprisutna integracija AI asistenata u razvojna okruženja prebacuje fokus s razumijevanja arhitekture na brzu generaciju koda, stvarajući opasan tehnički dug.",
+    description:
+      "Sveprisutna integracija AI asistenata u razvojna okruženja prebacuje fokus s razumijevanja arhitekture na brzu generaciju koda, stvarajući opasan tehnički dug.",
     publishedOn: "2026-05-10",
     category: ANALYSIS,
     readTime: 4,
@@ -1261,8 +1413,10 @@ export const blogPosts: BlogPost[] = [
     id: 106,
     slug: "opasnost-ai-testiranja-ai-koda",
     title: "Opasnost petlje povjerenja: Kada AI testira kod koji je AI napisao",
-    description: "Oslanjanje na umjetnu inteligenciju za pisanje testova za strojno generirani kod stvara opasnu iluziju sigurnosti i dugoročno srozava kvalitetu softvera.",
-    imageAlt: "Ilustracija programera koji zbunjeno gleda u kod i testove koje je generirao AI",
+    description:
+      "Oslanjanje na umjetnu inteligenciju za pisanje testova za strojno generirani kod stvara opasnu iluziju sigurnosti i dugoročno srozava kvalitetu softvera.",
+    imageAlt:
+      "Ilustracija programera koji zbunjeno gleda u kod i testove koje je generirao AI",
     publishedOn: "2026-05-10",
     category: ANALYSIS,
     readTime: 4,
@@ -1272,7 +1426,8 @@ export const blogPosts: BlogPost[] = [
     id: 107,
     slug: "anthropic-evil-portrayals-claude-blackmail",
     title: "Anthropic tvrdi: Zli prikazi AI-ja krivi su za pokušaje ucjene",
-    description: "Fiktivni prikazi umjetne inteligencije imaju stvaran utjecaj na modele – Claude je ucjenjivao inženjere zbog internet tekstova koji AI prikazuju kao zao.",
+    description:
+      "Fiktivni prikazi umjetne inteligencije imaju stvaran utjecaj na modele – Claude je ucjenjivao inženjere zbog internet tekstova koji AI prikazuju kao zao.",
     imageAlt: "Ilustracija zlog robota i Claude logotipa",
     publishedOn: "2026-05-11",
     category: NEWS,
@@ -1283,8 +1438,10 @@ export const blogPosts: BlogPost[] = [
     id: 108,
     slug: "zabluda-o-produktivnosti-vise-koda-nije-bolji-softver",
     title: "Zabluda o produktivnosti: Više koda nije bolji softver",
-    description: "Kratki komentar koji objašnjava zašto umjetna inteligencija koja brže piše kod zapravo stvara više tehničkog duga i usporava dugoročni razvoj softvera.",
-    imageAlt: "Ilustracija koja prikazuje programera zatrpanog lošim strojno generiranim kodom",
+    description:
+      "Kratki komentar koji objašnjava zašto umjetna inteligencija koja brže piše kod zapravo stvara više tehničkog duga i usporava dugoročni razvoj softvera.",
+    imageAlt:
+      "Ilustracija koja prikazuje programera zatrpanog lošim strojno generiranim kodom",
     publishedOn: "2026-05-11",
     category: ANALYSIS,
     readTime: 4,
@@ -1294,8 +1451,10 @@ export const blogPosts: BlogPost[] = [
     id: 109,
     slug: "iluzija-otvorenog-koda-ai-modeli",
     title: "Iluzija otvorenog koda: Zašto AI modeli nisu otvoreni",
-    description: "Kratki komentar koji objašnjava zašto takozvani otvoreni AI modeli zapravo nisu pravi open source jer nude samo težine, dok podaci ostaju tajna.",
-    imageAlt: "Ilustracija otvorene kutije iz koje svijetle samo brojevi, dok je ostatak skriven u sjeni",
+    description:
+      "Kratki komentar koji objašnjava zašto takozvani otvoreni AI modeli zapravo nisu pravi open source jer nude samo težine, dok podaci ostaju tajna.",
+    imageAlt:
+      "Ilustracija otvorene kutije iz koje svijetle samo brojevi, dok je ostatak skriven u sjeni",
     publishedOn: "2026-05-11",
     category: ANALYSIS,
     readTime: 3,
@@ -1304,9 +1463,12 @@ export const blogPosts: BlogPost[] = [
   createPost({
     id: 110,
     slug: "thinking-machines-ai-puna-dupleksna-komunikacija",
-    title: "Thinking Machines predstavlja AI model za istovremeno slušanje i govor",
-    description: "Bivša CTO OpenAI-ja Mira Murati predstavila je novi AI model koji istovremeno procesuira unos i generira odgovor.",
-    imageAlt: "Ilustracija zvučnog vala dvosmjerne komunikacije između čovjeka i umjetne inteligencije",
+    title:
+      "Thinking Machines predstavlja AI model za istovremeno slušanje i govor",
+    description:
+      "Bivša CTO OpenAI-ja Mira Murati predstavila je novi AI model koji istovremeno procesuira unos i generira odgovor.",
+    imageAlt:
+      "Ilustracija zvučnog vala dvosmjerne komunikacije između čovjeka i umjetne inteligencije",
     publishedOn: "2026-05-12",
     category: NEWS,
     readTime: 3,
@@ -1316,8 +1478,10 @@ export const blogPosts: BlogPost[] = [
     id: 111,
     slug: "mit-o-autonomnim-ai-agentima",
     title: "Mit o autonomnim AI agentima: Stvarnost razvoja softvera",
-    description: "Autonomni AI agenti još uvijek nisu spremni zamijeniti programere. Saznajte zašto će inženjeri ostati ključni u razvoju softvera.",
-    imageAlt: "Ilustracija programera koji nadgleda i usmjerava umjetnu inteligenciju u radu",
+    description:
+      "Autonomni AI agenti još uvijek nisu spremni zamijeniti programere. Saznajte zašto će inženjeri ostati ključni u razvoju softvera.",
+    imageAlt:
+      "Ilustracija programera koji nadgleda i usmjerava umjetnu inteligenciju u radu",
     publishedOn: "2026-05-12",
     category: ANALYSIS,
     readTime: 4,
@@ -1327,7 +1491,8 @@ export const blogPosts: BlogPost[] = [
     id: 112,
     slug: "meta-ai-threads-account-block",
     title: "Meta blokirala opciju skrivanja AI računa na Threadsu",
-    description: "Korisnici platforme Threads izrazili nezadovoljstvo jer Meta ne dopušta blokiranje novog AI asistenta unutar aplikacije.",
+    description:
+      "Korisnici platforme Threads izrazili nezadovoljstvo jer Meta ne dopušta blokiranje novog AI asistenta unutar aplikacije.",
     imageAlt: "Ilustracija Meta AI logotipa i mobilne aplikacije Threads",
     publishedOn: "2026-05-13",
     category: NEWS,
@@ -1337,9 +1502,12 @@ export const blogPosts: BlogPost[] = [
   createPost({
     id: 113,
     slug: "ai-nece-zamijeniti-programere-samo-kodiranje",
-    title: "AI alati neće zamijeniti programere, već samo repetitivno kodiranje",
-    description: "Umjetna inteligencija ne ukida potrebu za softverskim inženjerima, već automatizira repetitivni dio pisanja koda. Programeri postaju arhitekti i revizori sustava.",
-    imageAlt: "Ilustracija softverskog inženjera koji pregledava kod s AI asistentom",
+    title:
+      "AI alati neće zamijeniti programere, već samo repetitivno kodiranje",
+    description:
+      "Umjetna inteligencija ne ukida potrebu za softverskim inženjerima, već automatizira repetitivni dio pisanja koda. Programeri postaju arhitekti i revizori sustava.",
+    imageAlt:
+      "Ilustracija softverskog inženjera koji pregledava kod s AI asistentom",
     publishedOn: "2026-05-13",
     category: ANALYSIS,
     readTime: 3,
@@ -1348,9 +1516,12 @@ export const blogPosts: BlogPost[] = [
   createPost({
     id: 114,
     slug: "hype-oko-agi-ja-opasna-distrakcija",
-    title: "Hype oko AGI-ja: Zašto je lov na opću umjetnu inteligenciju opasna distrakcija",
-    description: "Kratki komentar koji objašnjava zašto je opsesija općom umjetnom inteligencijom (AGI) opasna distrakcija koja industriju udaljava od rješavanja stvarnih, trenutnih problema.",
-    imageAlt: "Ilustracija osobe koja gleda u magloviti vrh planine dok zanemaruje probleme ispred sebe",
+    title:
+      "Hype oko AGI-ja: Zašto je lov na opću umjetnu inteligenciju opasna distrakcija",
+    description:
+      "Kratki komentar koji objašnjava zašto je opsesija općom umjetnom inteligencijom (AGI) opasna distrakcija koja industriju udaljava od rješavanja stvarnih, trenutnih problema.",
+    imageAlt:
+      "Ilustracija osobe koja gleda u magloviti vrh planine dok zanemaruje probleme ispred sebe",
     publishedOn: "2026-05-13",
     category: ANALYSIS,
     readTime: 4,
@@ -1374,7 +1545,8 @@ export const blogPosts: BlogPost[] = [
     title: "Kraj AI turizma: Zašto uvođenje umjetne inteligencije nije magija",
     description:
       "Analiza zašto se završava era površnog entuzijazma oko umjetne inteligencije i zašto se fokus industrije vraća na ozbiljan softverski inženjering i stvarnu poslovnu vrijednost.",
-    imageAlt: "Ilustracija prelaska s umjetne inteligencije na čvrsti inženjering",
+    imageAlt:
+      "Ilustracija prelaska s umjetne inteligencije na čvrsti inženjering",
     publishedOn: "2026-05-14",
     category: ANALYSIS,
     readTime: 4,
@@ -1384,7 +1556,8 @@ export const blogPosts: BlogPost[] = [
     id: 117,
     slug: "zasto-nas-opsesija-agi-jem-udaljava-od-pravih-inovacija",
     title: "Zašto nas opsesija s AGI-jem udaljava od pravih inovacija",
-    description: "Analiza kako lov na opću umjetnu inteligenciju skreće pažnju s rješavanja stvarnih, praktičnih problema današnjice.",
+    description:
+      "Analiza kako lov na opću umjetnu inteligenciju skreće pažnju s rješavanja stvarnih, praktičnih problema današnjice.",
     imageAlt: "Ilustracija skretanja pažnje s pravih inovacija zbog AGI-ja",
     publishedOn: "2026-05-14",
     category: ANALYSIS,
@@ -1395,7 +1568,8 @@ export const blogPosts: BlogPost[] = [
     id: 118,
     slug: "openai-navodno-priprema-tuzbu-protiv-applea",
     title: "OpenAI navodno priprema tužbu protiv Applea zbog integracije",
-    description: "OpenAI razmatra pravne korake protiv Applea zbog nezadovoljstva načinom na koji je ChatGPT integriran u iOS sustav.",
+    description:
+      "OpenAI razmatra pravne korake protiv Applea zbog nezadovoljstva načinom na koji je ChatGPT integriran u iOS sustav.",
     imageAlt: "Ilustracija sukoba između OpenAI-ja i Applea",
     publishedOn: "2026-05-15",
     category: NEWS,
@@ -1406,7 +1580,8 @@ export const blogPosts: BlogPost[] = [
     id: 119,
     slug: "mit-o-programiranju-pomocu-umjetne-inteligencije",
     title: "Mit o programiranju uz umjetnu inteligenciju i praksa",
-    description: "Stvarno iskustvo programera u radu s AI alatima znatno se razlikuje od marketinških tvrdnji o potpunoj automatizaciji pisanja koda.",
+    description:
+      "Stvarno iskustvo programera u radu s AI alatima znatno se razlikuje od marketinških tvrdnji o potpunoj automatizaciji pisanja koda.",
     imageAlt: "Stvarni rad programera uz pomoć umjetne inteligencije",
     publishedOn: "2026-05-15",
     category: ANALYSIS,
@@ -1417,7 +1592,8 @@ export const blogPosts: BlogPost[] = [
     id: 120,
     slug: "openai-launches-chatgpt-for-personal-finance",
     title: "OpenAI lansira alate za osobne financije unutar ChatGPT-a",
-    description: "Korisnici ChatGPT-a mogu povezati bankovne račune za praćenje potrošnje zahvaljujući novoj integraciji.",
+    description:
+      "Korisnici ChatGPT-a mogu povezati bankovne račune za praćenje potrošnje zahvaljujući novoj integraciji.",
     imageAlt: "Nova ChatGPT značajka za analizu osobnih financija",
     publishedOn: "2026-05-16",
     category: NEWS,
@@ -1428,7 +1604,8 @@ export const blogPosts: BlogPost[] = [
     id: 121,
     slug: "ai-alati-za-kodiranje-obecanje-vs-stvarnost",
     title: "AI alati za kodiranje: Od velikih obećanja do stvarnosti",
-    description: "Analiza stvarne korisnosti AI alata za kodiranje, njihovih ograničenja i utjecaja na svakodnevni rad developera.",
+    description:
+      "Analiza stvarne korisnosti AI alata za kodiranje, njihovih ograničenja i utjecaja na svakodnevni rad developera.",
     imageAlt: "AI alati za kodiranje i njihov utjecaj",
     publishedOn: "2026-05-16",
     category: ANALYSIS,
@@ -1439,7 +1616,8 @@ export const blogPosts: BlogPost[] = [
     id: 122,
     slug: "iluzija-ai-podrske-zasto-chatbotovi-frustriraju",
     title: "Iluzija AI podrške: Zašto nas chatbotovi i dalje samo frustriraju",
-    description: "Analiza raskoraka između obećanja umjetne inteligencije u korisničkoj podršci i stvarne frustracije korisnika koji gube vrijeme na beskorisne chatbotove.",
+    description:
+      "Analiza raskoraka između obećanja umjetne inteligencije u korisničkoj podršci i stvarne frustracije korisnika koji gube vrijeme na beskorisne chatbotove.",
     imageAlt: "Frustrirani korisnik u razgovoru s beskorisnim AI chatbotom",
     publishedOn: "2026-05-16",
     category: ANALYSIS,
@@ -1450,7 +1628,8 @@ export const blogPosts: BlogPost[] = [
     id: 123,
     slug: "openai-greg-brockman-produkt-strategija",
     title: "OpenAI-jev suosnivač Greg Brockman preuzima strategiju proizvoda",
-    description: "Nakon pauziranja sporednih projekata, OpenAI konsolidira ChatGPT i Codex u jedan tim.",
+    description:
+      "Nakon pauziranja sporednih projekata, OpenAI konsolidira ChatGPT i Codex u jedan tim.",
     imageAlt: "Greg Brockman iz OpenAI-ja",
     publishedOn: "2026-05-17",
     category: NEWS,
@@ -1461,7 +1640,8 @@ export const blogPosts: BlogPost[] = [
     id: 124,
     slug: "zasto-nas-ai-agenti-nece-zamijeniti",
     title: "Mit o potpuno autonomnim AI agentima",
-    description: "Analiza rastućeg mita o AI agentima koji u potpunosti mogu zamijeniti programere, objašnjavajući zašto je uloga ljudskog nadzora i inženjeringa i dalje presudna.",
+    description:
+      "Analiza rastućeg mita o AI agentima koji u potpunosti mogu zamijeniti programere, objašnjavajući zašto je uloga ljudskog nadzora i inženjeringa i dalje presudna.",
     imageAlt: "AI asistent za kodiranje naspram softverskog inženjera",
     publishedOn: "2026-05-17",
     category: ANALYSIS,
@@ -1472,7 +1652,8 @@ export const blogPosts: BlogPost[] = [
     id: 125,
     slug: "ai-alati-pretvaraju-seniore-u-recenzente",
     title: "AI alati za kodiranje: Kako su seniori postali recenzenti",
-    description: "Marketing obećava brzo pisanje koda, no u stvarnosti AI alati pretvaraju iskusne developere u recenzente beskonačnih linija nesavršenog koda.",
+    description:
+      "Marketing obećava brzo pisanje koda, no u stvarnosti AI alati pretvaraju iskusne developere u recenzente beskonačnih linija nesavršenog koda.",
     imageAlt: "Ilustracija developera koji provjerava kod umjesto da ga piše",
     publishedOn: "2026-05-17",
     category: ANALYSIS,
@@ -1483,7 +1664,8 @@ export const blogPosts: BlogPost[] = [
     id: 126,
     slug: "apple-siri-redizajn-automatsko-brisanje-chatova",
     title: "Nova verzija Siri mogla bi automatski brisati AI razgovore",
-    description: "Apple planira uvesti opciju automatskog brisanja razgovora sa Siri kako bi naglasio zaštitu privatnosti korisnika u odnosu na druge AI tvrtke.",
+    description:
+      "Apple planira uvesti opciju automatskog brisanja razgovora sa Siri kako bi naglasio zaštitu privatnosti korisnika u odnosu na druge AI tvrtke.",
     imageAlt: "Ilustracija pametnog telefona sa Siri i zaštite privatnosti",
     publishedOn: "2026-05-18",
     category: NEWS,
@@ -1494,7 +1676,8 @@ export const blogPosts: BlogPost[] = [
     id: 127,
     slug: "zabluda-o-produktivnosti-ai-alata",
     title: "Zabluda o produktivnosti: AI alati ne donose brzinu",
-    description: "Opsesija brzinom pisanja koda stvara više problema nego što ih rješava te skriva stvarna uska grla u razvoju softvera.",
+    description:
+      "Opsesija brzinom pisanja koda stvara više problema nego što ih rješava te skriva stvarna uska grla u razvoju softvera.",
     imageAlt: "Ilustracija programera i AI alata koji piše kod",
     publishedOn: "2026-05-18",
     category: ANALYSIS,
@@ -1505,7 +1688,8 @@ export const blogPosts: BlogPost[] = [
     id: 128,
     slug: "zasto-je-opsesija-agi-distrakcija",
     title: "Zašto je opsesija AGI-jem najveća distrakcija u AI industriji",
-    description: "Svi pričaju o AGI-ju, no ta opsesija nije samo neproduktivna – ona aktivno šteti razvoju korisnih i pouzdanih AI alata.",
+    description:
+      "Svi pričaju o AGI-ju, no ta opsesija nije samo neproduktivna – ona aktivno šteti razvoju korisnih i pouzdanih AI alata.",
     imageAlt: "Ilustracija osobe koja gleda u maglovitu daljinu",
     publishedOn: "2026-05-18",
     category: ANALYSIS,
@@ -1516,7 +1700,8 @@ export const blogPosts: BlogPost[] = [
     id: 129,
     slug: "elon-musk-izgubio-tuzbu-openai",
     title: "Elon Musk izgubio sudsku tužbu protiv Altmana i OpenAI-ja",
-    description: "Porota je jednoglasno presudila da je Elon Musk zakasnio s podnošenjem tužbe protiv Sama Altmana i OpenAI-ja zbog zakona o zastari.",
+    description:
+      "Porota je jednoglasno presudila da je Elon Musk zakasnio s podnošenjem tužbe protiv Sama Altmana i OpenAI-ja zbog zakona o zastari.",
     imageAlt: "Ilustracija sudske zgrade uz logotipove Elona Muska i OpenAI-ja",
     publishedOn: "2026-05-19",
     category: NEWS,
@@ -1527,8 +1712,10 @@ export const blogPosts: BlogPost[] = [
     id: 130,
     slug: "kraj-zlatne-groznice-ai-startupa",
     title: "Kraj zlatne groznice AI startupa: Surova realnost tržišta",
-    description: "Analiza otrežnjenja na tržištu AI startupa i zašto većina njih neće preživjeti zbog nedostatka stvarnog proizvoda i konkurentske prednosti.",
-    imageAlt: "Ilustracija propadanja umjetno stvorenih AI startupa naspram onih sa stvarnom vrijednošću",
+    description:
+      "Analiza otrežnjenja na tržištu AI startupa i zašto većina njih neće preživjeti zbog nedostatka stvarnog proizvoda i konkurentske prednosti.",
+    imageAlt:
+      "Ilustracija propadanja umjetno stvorenih AI startupa naspram onih sa stvarnom vrijednošću",
     publishedOn: "2026-05-19",
     category: ANALYSIS,
     readTime: 4,
@@ -1538,8 +1725,10 @@ export const blogPosts: BlogPost[] = [
     id: 131,
     slug: "skrivena-cijena-besplatnog-ai-ja",
     title: "Skrivena cijena besplatnog AI-ja: Vaši podaci postaju proizvod",
-    description: "Kratki osvrt na to kako korištenje besplatnih AI alata u korporativnom okruženju zapravo znači plaćanje vlastitim poslovnim tajnama i intelektualnim vlasništvom.",
-    imageAlt: "Ilustracija skrivenih troškova besplatnih AI alata i zaštite podataka",
+    description:
+      "Kratki osvrt na to kako korištenje besplatnih AI alata u korporativnom okruženju zapravo znači plaćanje vlastitim poslovnim tajnama i intelektualnim vlasništvom.",
+    imageAlt:
+      "Ilustracija skrivenih troškova besplatnih AI alata i zaštite podataka",
     publishedOn: "2026-05-19",
     category: ANALYSIS,
     readTime: 4,
@@ -1549,7 +1738,8 @@ export const blogPosts: BlogPost[] = [
     id: 132,
     slug: "google-search-ai-agents",
     title: "Google na I/O 2026 uvodi autonomne AI agente u tražilicu",
-    description: "Na I/O konferenciji, Google je predstavio informacijske agente koji kontinuirano prate teme i pružaju sažetke umjesto samo liste linkova.",
+    description:
+      "Na I/O konferenciji, Google je predstavio informacijske agente koji kontinuirano prate teme i pružaju sažetke umjesto samo liste linkova.",
     imageAlt: "Ilustracija Google tražilice i novih autonomnih AI agenata",
     publishedOn: "2026-05-20",
     category: NEWS,
@@ -1560,7 +1750,8 @@ export const blogPosts: BlogPost[] = [
     id: 133,
     slug: "hype-oko-ai-alata-skriva-pravi-problem-arhitekturu",
     title: "Hype oko AI alata skriva pravi problem: Arhitekturu",
-    description: "Svi pričaju o tome koliko brzo AI piše kod, ali ignoriraju činjenicu da nam nedostaje razumijevanje šireg sustava.",
+    description:
+      "Svi pričaju o tome koliko brzo AI piše kod, ali ignoriraju činjenicu da nam nedostaje razumijevanje šireg sustava.",
     imageAlt: "Ilustracija AI alata i složene softverske arhitekture",
     publishedOn: "2026-05-20",
     category: ANALYSIS,
@@ -1571,7 +1762,8 @@ export const blogPosts: BlogPost[] = [
     id: 134,
     slug: "umjetna-inteligencija-nikada-nece-razumjeti-poslovni-kontekst",
     title: "Umjetna inteligencija nikada neće razumjeti poslovni kontekst",
-    description: "AI brzo piše kod, ali razvoj softvera zahtijeva razumijevanje poslovnih problema. Zbog toga programeri ostaju nezamjenjivi.",
+    description:
+      "AI brzo piše kod, ali razvoj softvera zahtijeva razumijevanje poslovnih problema. Zbog toga programeri ostaju nezamjenjivi.",
     imageAlt: "Prikaz koda i poslovnih procesa",
     publishedOn: "2026-05-20",
     category: ANALYSIS,
@@ -1582,7 +1774,8 @@ export const blogPosts: BlogPost[] = [
     id: 135,
     slug: "anthropic-prvi-profitabilni-kvartal",
     title: "Anthropic prijavio prvi profitabilni kvartal i brzi rast",
-    description: "Anthropic očekuje svoj prvi operativni profit u drugom kvartalu uz prihod od oko 10,9 milijardi dolara, iako rast troškova infrastrukture ostaje izazov.",
+    description:
+      "Anthropic očekuje svoj prvi operativni profit u drugom kvartalu uz prihod od oko 10,9 milijardi dolara, iako rast troškova infrastrukture ostaje izazov.",
     imageAlt: "Znak rasta profita uz tehnološke elemente",
     publishedOn: "2026-05-21",
     category: NEWS,
@@ -1593,7 +1786,8 @@ export const blogPosts: BlogPost[] = [
     id: 136,
     slug: "ai-ubija-prosjecnost",
     title: "AI ne oduzima poslove programerima, već uništava prosječnost",
-    description: "Umjetna inteligencija ne zamjenjuje programere, nego podiže letvicu. Pisanje osnovnog koda više nije dovoljno, fokus se seli na rješavanje kompleksnih problema i arhitekturu sustava.",
+    description:
+      "Umjetna inteligencija ne zamjenjuje programere, nego podiže letvicu. Pisanje osnovnog koda više nije dovoljno, fokus se seli na rješavanje kompleksnih problema i arhitekturu sustava.",
     imageAlt: "Ilustracija utjecaja umjetne inteligencije na programiranje",
     publishedOn: "2026-05-21",
     category: ANALYSIS,
@@ -1604,8 +1798,10 @@ export const blogPosts: BlogPost[] = [
     id: 137,
     slug: "otvoreni-kod-u-ai-ju-je-iluzija",
     title: "Otvoreni kod u AI industriji zapravo je velika marketinška iluzija",
-    description: "Zatvoreni modeli koji se u medijima agresivno reklamiraju kao potpuno otvoreni nisu pobjeda zajednice, već samo suptilnija i modernija vrsta korporativne kontrole.",
-    imageAlt: "Ilustracija razbijanja iluzije o otvorenom kodu u umjetnoj inteligenciji",
+    description:
+      "Zatvoreni modeli koji se u medijima agresivno reklamiraju kao potpuno otvoreni nisu pobjeda zajednice, već samo suptilnija i modernija vrsta korporativne kontrole.",
+    imageAlt:
+      "Ilustracija razbijanja iluzije o otvorenom kodu u umjetnoj inteligenciji",
     publishedOn: "2026-05-21",
     category: ANALYSIS,
     readTime: 4,
@@ -1614,9 +1810,12 @@ export const blogPosts: BlogPost[] = [
   createPost({
     id: 138,
     slug: "project-genie-street-view",
-    title: "Google DeepMind povezuje Project Genie i Street View za učenje AI modela u stvarnom svijetu",
-    description: "DeepMind integrira slike sa Street Viewa u Project Genie, stvarajući tako realistične virtualne svjetove za treniranje AI agenata na temelju stvarnih lokacija.",
-    imageAlt: "Kolaž koji prikazuje prelazak iz stvarne fotografije Street Viewa u generirani 3D maštoviti svijet",
+    title:
+      "Google DeepMind povezuje Project Genie i Street View za učenje AI modela u stvarnom svijetu",
+    description:
+      "DeepMind integrira slike sa Street Viewa u Project Genie, stvarajući tako realistične virtualne svjetove za treniranje AI agenata na temelju stvarnih lokacija.",
+    imageAlt:
+      "Kolaž koji prikazuje prelazak iz stvarne fotografije Street Viewa u generirani 3D maštoviti svijet",
     publishedOn: "2026-05-22",
     category: NEWS,
     readTime: 3,
@@ -1626,7 +1825,8 @@ export const blogPosts: BlogPost[] = [
     id: 139,
     slug: "zid-podataka-usporavanje-ai-modela",
     title: "Zid podataka: Zašto umjetna inteligencija uskoro usporava",
-    description: "Analiza problema zida podataka u AI industriji i zašto ponestaje kvalitetnog ljudskog sadržaja za treniranje naprednih modela.",
+    description:
+      "Analiza problema zida podataka u AI industriji i zašto ponestaje kvalitetnog ljudskog sadržaja za treniranje naprednih modela.",
     imageAlt: "Zid podataka pred umjetnom inteligencijom",
     publishedOn: "2026-05-22",
     category: ANALYSIS,
@@ -1637,7 +1837,8 @@ export const blogPosts: BlogPost[] = [
     id: 140,
     slug: "ai-u-programiranju-prava-istina-iza-obecanja",
     title: "AI u programiranju: Prava istina iza marketinških obećanja",
-    description: "Analiza razlike između marketinških obećanja o AI alatima za programiranje i stvarne produktivnosti u praksi.",
+    description:
+      "Analiza razlike između marketinških obećanja o AI alatima za programiranje i stvarne produktivnosti u praksi.",
     imageAlt: "AI u programiranju i stvarni rad",
     publishedOn: "2026-05-22",
     category: ANALYSIS,
@@ -1648,7 +1849,8 @@ export const blogPosts: BlogPost[] = [
     id: 141,
     slug: "spotify-umg-ai-remix-deal",
     title: "Spotify i UMG omogućuju AI obrade i remikseve omiljenih pjesama",
-    description: "Spotify je dogovorio suradnju s Universal Music Group za legalno stvaranje AI obrada i remikseva.",
+    description:
+      "Spotify je dogovorio suradnju s Universal Music Group za legalno stvaranje AI obrada i remikseva.",
     imageAlt: "Spotify aplikacija s AI funkcijama",
     publishedOn: "2026-05-23",
     category: NEWS,
@@ -1659,7 +1861,8 @@ export const blogPosts: BlogPost[] = [
     id: 142,
     slug: "zabluda-o-ai-inzenjerima",
     title: "Zabluda o AI inženjerima: Tko rješava prave probleme?",
-    description: "Industrija promovira ideju o 'AI inženjerima' koji će zamijeniti klasične developere, ali stvarnost razvoja softvera pokazuje da je domensko znanje i dalje nezamjenjivo.",
+    description:
+      "Industrija promovira ideju o 'AI inženjerima' koji će zamijeniti klasične developere, ali stvarnost razvoja softvera pokazuje da je domensko znanje i dalje nezamjenjivo.",
     imageAlt: "Softverski inženjer i AI asistent u radu",
     publishedOn: "2026-05-23",
     category: ANALYSIS,
@@ -1670,7 +1873,8 @@ export const blogPosts: BlogPost[] = [
     id: 143,
     slug: "zasto-ai-nece-zamijeniti-programere",
     title: "Stvarnost razvoja: Zašto AI alati neće zamijeniti programere",
-    description: "Umjetna inteligencija drastično mijenja način na koji pišemo kod, ali neće tako skoro preuzeti ulogu softverskih inženjera. Saznajte zašto je razvoj softvera mnogo više od same sintakse.",
+    description:
+      "Umjetna inteligencija drastično mijenja način na koji pišemo kod, ali neće tako skoro preuzeti ulogu softverskih inženjera. Saznajte zašto je razvoj softvera mnogo više od same sintakse.",
     imageAlt: "Programer gleda u ekran s kodom dok koristi AI asistenta",
     publishedOn: "2026-05-23",
     category: ANALYSIS,
@@ -1681,7 +1885,8 @@ export const blogPosts: BlogPost[] = [
     id: 144,
     slug: "ferrari-ibm-ai-f1",
     title: "Ferrari i IBM koriste AI za transformaciju navijačkog iskustva",
-    description: "Scuderia Ferrari u suradnji s IBM-om koristi naprednu umjetnu inteligenciju za personalizaciju i unapređenje iskustva Formule 1.",
+    description:
+      "Scuderia Ferrari u suradnji s IBM-om koristi naprednu umjetnu inteligenciju za personalizaciju i unapređenje iskustva Formule 1.",
     imageAlt: "Ferrarijev bolid na stazi",
     publishedOn: "2026-05-24",
     category: NEWS,
@@ -1691,8 +1896,10 @@ export const blogPosts: BlogPost[] = [
   createPost({
     id: 145,
     slug: "kraj-ai-iluzije-skaliranje-nije-dovoljno",
-    title: "Kraj AI iluzije: Skaliranje modela više nije dovoljno za revoluciju",
-    description: "Nakon godina strelovitog uspona, suočavamo se s realnošću: samo dodavanje više podataka i računarske moći neće nas dovesti do opće umjetne inteligencije.",
+    title:
+      "Kraj AI iluzije: Skaliranje modela više nije dovoljno za revoluciju",
+    description:
+      "Nakon godina strelovitog uspona, suočavamo se s realnošću: samo dodavanje više podataka i računarske moći neće nas dovesti do opće umjetne inteligencije.",
     imageAlt: "Grafikon koji usporava s robotom koji gleda u njega",
     publishedOn: "2026-05-24",
     category: ANALYSIS,
@@ -1701,22 +1908,36 @@ export const blogPosts: BlogPost[] = [
   }),
   createPost({
     id: 146,
-    slug: 'programeri-i-ai-alati-stvarnost-iza-velikih-obecanja',
-    title: 'Programeri i AI alati: Stvarnost iza velikih obećanja',
-    description: 'Stvarno iskustvo razvoja s AI alatima često je u neskladu s onim što nam govore marketinški timovi velikih tvrtki.',
-    imageAlt: 'Programer na radnom mjestu s AI alatima',
-    publishedOn: '2026-05-24',
+    slug: "programeri-i-ai-alati-stvarnost-iza-velikih-obecanja",
+    title: "Programeri i AI alati: Stvarnost iza velikih obećanja",
+    description:
+      "Stvarno iskustvo razvoja s AI alatima često je u neskladu s onim što nam govore marketinški timovi velikih tvrtki.",
+    imageAlt: "Programer na radnom mjestu s AI alatima",
+    publishedOn: "2026-05-24",
     category: ANALYSIS,
     readTime: 4,
     featured: false,
   }),
   createPost({
     id: 147,
-    slug: 'iluzija-brzog-kodiranja-ai',
-    title: 'Iluzija brzog kodiranja s umjetnom inteligencijom',
-    description: 'AI alati obećavaju neviđeno ubrzanje pisanja koda, ali dugoročno stvaraju ogromne količine tehničkog duga koji će netko morati platiti.',
-    imageAlt: 'Ilustracija programera i umjetne inteligencije',
-    publishedOn: '2026-05-25',
+    slug: "iluzija-brzog-kodiranja-ai",
+    title: "Iluzija brzog kodiranja s umjetnom inteligencijom",
+    description:
+      "AI alati obećavaju neviđeno ubrzanje pisanja koda, ali dugoročno stvaraju ogromne količine tehničkog duga koji će netko morati platiti.",
+    imageAlt: "Ilustracija programera i umjetne inteligencije",
+    publishedOn: "2026-05-25",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
+  createPost({
+    id: 148,
+    slug: "velika-zabluda-o-potpuno-autonomnim-ai-agentima-u-praksi",
+    title: "Velika zabluda o potpuno autonomnim AI agentima u praksi",
+    description:
+      "Dok su agenti impresivni u demonstracijama, stvarni procesi u produkciji razotkrivaju njihova ključna ograničenja i nedostatak stvarnog konteksta.",
+    imageAlt: "Ilustracija AI agenta i složenog poslovnog procesa",
+    publishedOn: "2026-05-25",
     category: ANALYSIS,
     readTime: 4,
     featured: false,
