@@ -1942,6 +1942,18 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 149,
+    slug: "what-clickups-mass-layoff-tells-us-about-the-future-of-work",
+    title: "ClickUp otpušta 22% radnika zbog prelaska na AI",
+    description:
+      "Tvrtka ClickUp otpustila je 22% svoje radne snage s ciljem transformacije poslovanja pomoću AI agenata.",
+    imageAlt: "Prikaz utjecaja umjetne inteligencije na zapošljavanje",
+    publishedOn: "2026-05-26",
+    category: NEWS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
