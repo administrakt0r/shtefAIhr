@@ -1954,6 +1954,18 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 150,
+    slug: "prava-opasnost-sinteticki-internet",
+    title: "Prava opasnost AI-ja je zapravo sintetički internet",
+    description:
+      "Umjesto pobune robota, stvarna prijetnja umjetne inteligencije je preplavljivanje interneta sintetičkim sadržajem u kojem se gubi povjerenje.",
+    imageAlt: "Prikaz digitalnog šuma i gubitka povjerenja u online sadržaj",
+    publishedOn: "2026-05-26",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
