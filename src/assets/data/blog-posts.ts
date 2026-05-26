@@ -1966,6 +1966,18 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 151,
+    slug: "jezicni-modeli-ne-razmisljaju-oni-samo-pogadjaju",
+    title: "Jezični modeli ne razmišljaju, oni samo pogađaju riječi",
+    description:
+      "Veliki jezični modeli fasciniraju elokvencijom, ali ispod površine nema razuma. Vrijeme je da prestanemo miješati statističko predviđanje teksta s pravom logikom.",
+    imageAlt: "Ilustracija jezičnog modela kao kalkulatora riječi",
+    publishedOn: "2026-05-26",
+    category: ANALYSIS,
+    readTime: 5,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
