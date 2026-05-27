@@ -1990,6 +1990,18 @@ export const blogPosts: BlogPost[] = [
     readTime: 5,
     featured: false,
   }),
+  createPost({
+    id: 153,
+    slug: "zasto-je-agi-distrakcija",
+    title: "Zašto je AGI opasna distrakcija za današnje poslovanje",
+    description:
+      "Analiza o tome zašto nas opsesija stvaranjem opće umjetne inteligencije udaljava od stvarnih prednosti koje AI alati nude danas.",
+    imageAlt: "Futuristički mozak zasjenjuje stvarne poslovne prilike",
+    category: ANALYSIS,
+    publishedOn: "2026-05-27",
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
