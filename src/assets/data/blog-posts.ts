@@ -1978,6 +1978,18 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 152,
+    slug: "zabluda-o-kraju-programera",
+    title: "Zabluda o kraju programera: Zašto AI neće zamijeniti vaš posao",
+    description:
+      "Analiza o tome zašto AI alati poput Copilota neće zamijeniti softverske inženjere, već će ih samo osloboditi rutinskih zadataka.",
+    imageAlt: "Programer radi zajedno s umjetnom inteligencijom",
+    category: ANALYSIS,
+    publishedOn: "2026-05-27",
+    readTime: 5,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
