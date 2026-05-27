@@ -1966,6 +1966,18 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 151,
+    slug: "kriticna-ranjivost-u-starlette-paketu-ugrozava-milijune-ai-agenata",
+    title: "Kritična ranjivost u Starlette paketu ugrožava milijune AI agenata",
+    description:
+      "Otkrivena je kritična ranjivost nazvana BadHost u popularnom Python okviru Starlette koja omogućuje hakerima neovlašteni pristup osjetljivim podacima i vjerodajnicama AI agenata.",
+    imageAlt: "Hakerski napad na AI sustave",
+    category: NEWS,
+    publishedOn: "2026-05-27",
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (

@@ -1,0 +1,34 @@
+## Kritična ranjivost u Starlette paketu ugrožava milijune AI agenata
+
+### Ozbiljan sigurnosni propust u popularnom Python okviru otvara vrata hakerima.
+
+Otkrivena je kritična ranjivost u Starlette okviru otvorenog koda koja potencijalno omogućuje hakerima pristup osjetljivim podacima. Ovaj propust direktno ugrožava milijune AI agenata i alata koji se oslanjaju na navedenu tehnologiju za obradu zahtjeva.
+
+## Ključni detalji
+
+Ranjivost poznata pod nazivom BadHost (CVE-2026-48710) pogađa verzije Starlette paketa starije od 1.0.1. Zbog nedostatka provjere vrijednosti u HTTP Host zaglavlju, hakerima je omogućeno zaobilaženje autentifikacije. Ovaj okvir bilježi preko 325 milijuna preuzimanja tjedno i temelj je za FastAPI te mnoge druge servise.
+
+### Zašto je to važno
+
+Starlette služi kao osnova za poslužitelje koji pokreću Model Context Protocol (MCP), omogućavajući AI agentima povezivanje s vanjskim bazama podataka, e-poštom i drugim resursima. Kroz ovaj propust, napadači mogu doći do pohranjenih vjerodajnica za pristup trećim sustavima. Ovo ugrožava veliki dio Python ekosustava za razvoj umjetne inteligencije.
+
+### Tehnička pozadina
+
+Ranjivost proizlazi iz načina na koji Starlette interpretira HTTP zahtjeve.
+
+- Starlette rekonstruira traženi URL na temelju HTTP Host zaglavlja bez dodatne provjere.
+- Hakeri mogu ubaciti proizvoljne putanje u host dio, dok se usmjeravanje i dalje temelji na stvarnoj putanji zahtjeva.
+- Neusklađenost dovodi do zaobilaženja autentifikacije, a u nekim slučajevima i do izvršavanja koda na poslužitelju.
+
+## Širi kontekst
+
+Ovaj incident naglašava koliko je krhka sigurnost infrastrukture na koju se oslanjaju moderni AI sustavi. S obzirom na to da su paketi otvorenog koda poput Starlette duboko integrirani u alate kao što su vLLM i LiteLLM, jedan propust može imati dalekosežne posljedice na globalnoj razini.
+
+## Što slijedi
+
+Korisnicima aplikacija i alata koji ovise o Starlette paketu preporučuje se hitna provjera sustava pomoću dostupnih online skenera. Ažuriranje na najnoviju verziju (1.0.1 ili noviju) ključno je za zaštitu poslužitelja, dok sigurnosni stručnjaci nastavljaju pratiti situaciju i razmjere moguće kompromitacije podataka.
+
+---
+
+*Izvor: [Ars Technica](https://arstechnica.com/information-technology/2026/05/millions-of-ai-agents-imperiled-by-critical-vulnerability-in-open-source-package/)*
+*Objavljeno na portalu Umjetna Inteligencija Blog by ShtefAI, autor: Shtef*
