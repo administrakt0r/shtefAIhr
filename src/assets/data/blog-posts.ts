@@ -2002,6 +2002,18 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 154,
+    slug: "zabluda-o-generativnom-ai-roiu",
+    title: "Velika zabluda o povratu investicije u generativni AI",
+    description:
+      "Mnoge kompanije ulažu milijune u generativnu umjetnu inteligenciju očekujući brzi povrat investicije. No, stvarnost je daleko od očekivanja.",
+    imageAlt: "Poslovni čovjek gleda u grafikon s padom investicija",
+    category: ANALYSIS,
+    publishedOn: "2026-05-28",
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
