@@ -2014,6 +2014,19 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 155,
+    slug: "zasto-ai-ne-moze-spasiti-losu-arhitekturu",
+    title: "Zašto AI alati ne mogu spasiti lošu arhitekturu vašeg softvera",
+    description:
+      "AI alati obećavaju ubrzanje razvoja softvera, ali bez dobrih temelja dugoročno stvaraju još veći tehnički dug.",
+    imageAlt:
+      "Programer pokušava popraviti loš kod uz pomoć umjetne inteligencije",
+    publishedOn: "2026-05-28",
+    category: ANALYSIS,
+    readTime: 5,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
