@@ -2039,6 +2039,18 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false,
   }),
+  createPost({
+    id: 157,
+    slug: "ai-kodiranje-od-pisanja-koda-do-vjecnog-debagiranja",
+    title: "AI kodiranje: Od pisanja koda do vječnog debagiranja",
+    description:
+      "Umjesto ubrzanja razvoja, pretjerano oslanjanje na AI alate pretvara inženjere u vječne čitače i popravljače tuđeg koda.",
+    imageAlt: "Programer ispred ekrana pokušava shvatiti tuđi kod",
+    publishedOn: "2026-05-29",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
