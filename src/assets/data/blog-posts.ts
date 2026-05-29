@@ -2027,6 +2027,18 @@ export const blogPosts: BlogPost[] = [
     readTime: 5,
     featured: false,
   }),
+  createPost({
+    id: 156,
+    slug: "anthropic-raises-65-billion",
+    title: "Anthropic prikupio 65 milijardi dolara prije izlaska na burzu",
+    description:
+      "Anthropic je osigurao 65 milijardi dolara investicija, dostižući valuaciju od 965 milijardi dolara uoči izlaska na burzu.",
+    imageAlt: "Apstraktni prikaz financijskog rasta tvrtke Anthropic",
+    publishedOn: "2026-05-29",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
