@@ -2051,6 +2051,18 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 158,
+    slug: "kraj-iluzije-zasto-su-ai-wrapperi-osudeni-na-propast",
+    title: "Kraj iluzije: Zašto su AI wrapperi osuđeni na propast",
+    description:
+      "Većina startupa koji su samo tanka ljuska oko tuđih jezičnih modela neće preživjeti.",
+    imageAlt: "Prikaz tanke ljuske koda iznad jezičnog modela.",
+    publishedOn: "2026-05-29",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
