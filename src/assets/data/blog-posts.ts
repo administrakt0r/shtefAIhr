@@ -2063,6 +2063,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 159,
+    slug: "ai-companies-will-pay-for-robot-training-data",
+    title: "Startup Shift nudi besplatno čišćenje domova za podatke o robotima",
+    description: "Startup Shift sakuplja podatke iz domova ljudi u zamjenu za čišćenje.",
+    imageAlt: "Robot koji usisava pod",
+    publishedOn: "2026-05-30",
+    category: NEWS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
