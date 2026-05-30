@@ -2088,6 +2088,18 @@ export const blogPosts: BlogPost[] = [
     readTime: 6,
     featured: false,
   }),
+  createPost({
+    id: 161,
+    slug: "iluzija-autonomije-zasto-ai-agenti-jos-uvijek-trebaju-ljude",
+    title: "Iluzija autonomije: Zašto AI agenti još uvijek trebaju ljude",
+    description:
+      "Iako se industrija fokusira na potpuno samostalne sustave, stvarna vrijednost umjetne inteligencije leži u nadopunjavanju ljudskog rada.",
+    imageAlt: "Grafički prikaz čovjeka i robota koji surađuju.",
+    publishedOn: "2026-05-30",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
