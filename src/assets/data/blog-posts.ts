@@ -2067,11 +2067,25 @@ export const blogPosts: BlogPost[] = [
     id: 159,
     slug: "ai-companies-will-pay-for-robot-training-data",
     title: "Startup Shift nudi besplatno čišćenje domova za podatke o robotima",
-    description: "Startup Shift sakuplja podatke iz domova ljudi u zamjenu za čišćenje.",
+    description:
+      "Startup Shift sakuplja podatke iz domova ljudi u zamjenu za čišćenje.",
     imageAlt: "Robot koji usisava pod",
     publishedOn: "2026-05-30",
     category: NEWS,
     readTime: 4,
+    featured: false,
+  }),
+  createPost({
+    id: 160,
+    slug: "iluzija-ai-programera-i-stvarna-buducnost-razvoja-softvera",
+    title: "Iluzija AI programera: Zašto inženjeri nisu postali višak",
+    description:
+      "Umjetna inteligencija ne zamjenjuje programere, već mijenja njihov posao iz pisanja koda u upravljanje kompleksnim sustavima.",
+    imageAlt:
+      "Ilustracija programera koji usmjerava umjetnu inteligenciju u složenom softverskom sustavu.",
+    publishedOn: "2026-05-30",
+    category: ANALYSIS,
+    readTime: 6,
     featured: false,
   }),
 ];
