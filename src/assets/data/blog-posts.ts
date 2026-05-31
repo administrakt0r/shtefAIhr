@@ -2100,6 +2100,18 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 162,
+    slug: "iluzija-skore-umjetne-opce-inteligencije",
+    title: "Iluzija skore AGI: Zašto je opća umjetna inteligencija i dalje mit",
+    description:
+      "Opća umjetna inteligencija se često najavljuje, ali to zamagljuje prave i korisne primjene postojećih tehnologija.",
+    imageAlt: "Futuristički prikaz umjetne inteligencije.",
+    publishedOn: "2026-05-31",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
