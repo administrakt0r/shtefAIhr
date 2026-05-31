@@ -2100,6 +2100,19 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 162,
+    slug: "openai-okviri-upravljanja-sigurna-ai-implementacija",
+    title:
+      "OpenAI predstavio okvire upravljanja za sigurnu poslovnu AI implementaciju",
+    description:
+      "Novi Frontier Governance Framework tvrtke OpenAI nudi strukturirani nacrt za sigurno i usklađeno skaliranje naprednih AI modela u korporativnim okruženjima.",
+    imageAlt: "Digitalni štit koji štiti poslužitelje s podacima",
+    publishedOn: "2026-05-31",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
