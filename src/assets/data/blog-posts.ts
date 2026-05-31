@@ -2112,6 +2112,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 163,
+    slug: 'iluzija-brze-integracije-ai-alata',
+    title: 'Iluzija brze integracije: Zašto AI alati nisu rješenje ključ u ruke',
+    description: 'Mnoge tvrtke vjeruju da je integracija AI alata jednostavan proces. U stvarnosti, to zahtijeva duboke arhitektonske promjene i prilagodbu podataka.',
+    imageAlt: 'Apstraktni prikaz složene integracije sustava i umjetne inteligencije',
+    publishedOn: '2025-05-31',
+    category: ANALYSIS,
+    readTime: 5,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
