@@ -2114,11 +2114,26 @@ export const blogPosts: BlogPost[] = [
   }),
   createPost({
     id: 163,
-    slug: 'iluzija-brze-integracije-ai-alata',
-    title: 'Iluzija brze integracije: Zašto AI alati nisu rješenje ključ u ruke',
-    description: 'Mnoge tvrtke vjeruju da je integracija AI alata jednostavan proces. U stvarnosti, to zahtijeva duboke arhitektonske promjene i prilagodbu podataka.',
-    imageAlt: 'Apstraktni prikaz složene integracije sustava i umjetne inteligencije',
-    publishedOn: '2025-05-31',
+    slug: "iluzija-brze-integracije-ai-alata",
+    title:
+      "Iluzija brze integracije: Zašto AI alati nisu rješenje ključ u ruke",
+    description:
+      "Mnoge tvrtke vjeruju da je integracija AI alata jednostavan proces. U stvarnosti, to zahtijeva duboke arhitektonske promjene i prilagodbu podataka.",
+    imageAlt:
+      "Apstraktni prikaz složene integracije sustava i umjetne inteligencije",
+    publishedOn: "2025-05-31",
+    category: ANALYSIS,
+    readTime: 5,
+    featured: false,
+  }),
+  createPost({
+    id: 164,
+    slug: "ai-alati-i-lavina-tehnickog-duga",
+    title: "AI alati za kodiranje i lavina tehničkog duga",
+    description:
+      "Generiranje ogromnih količina osrednjeg koda dugoročno usporava inženjerske timove, pretvarajući AI alate u tvornice tehničkog duga.",
+    imageAlt: "Ilustracija tehničkog duga i neurednog koda",
+    publishedOn: "2026-06-01",
     category: ANALYSIS,
     readTime: 5,
     featured: false,
