@@ -2134,6 +2134,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false,
   }),
+  createPost({
+    id: 165,
+    slug: 'stvarni-razvoj-softvera-uz-ai-alate',
+    title: 'Stvarni razvoj softvera uz AI alate: Marketing i praksa',
+    description: 'Očekivanja od umjetne inteligencije u programiranju često se razilaze sa stvarnošću. Saznajte zašto vas AI alati neće u potpunosti zamijeniti i što se zapravo događa.',
+    imageAlt: 'Ilustracija programera koji radi s AI alatima',
+    publishedOn: '2026-06-01',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
