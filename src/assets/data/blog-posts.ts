@@ -2123,6 +2123,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 5,
     featured: false,
   }),
+  createPost({
+    id: 164,
+    slug: "nvidia-cosmos-3",
+    title: "NVIDIA lansirala Cosmos 3: Prvi otvoreni omni-model",
+    description: "NVIDIA je predstavila Cosmos 3, revolucionarni objedinjeni model za vizualno razumijevanje i generiranje.",
+    imageAlt: "Nvidia logotip uz apstraktni prikaz umjetne inteligencije",
+    publishedOn: "2026-06-01",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
