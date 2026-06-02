@@ -2168,6 +2168,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 168,
+    slug: "iluzija-brzine-kako-ai-unistava-duboki-rad",
+    title: "Iluzija brzine: Kako AI alati uništavaju duboki rad",
+    description: "Brzina koju nam donose AI alati stvara lažan osjećaj napretka i smanjuje sposobnost fokusiranog rada.",
+    imageAlt: "Ilustracija gubitka fokusa u digitalnom svijetu",
+    publishedOn: "2026-06-02",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
