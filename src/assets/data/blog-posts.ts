@@ -2157,6 +2157,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false,
   }),
+  createPost({
+    id: 167,
+    slug: "ai-alati-za-kodiranje-stvaraju-copy-paste-generaciju",
+    title: "AI alati za kodiranje stvaraju generaciju 'copy-paste' programera",
+    description: "Umjesto da dubinski razumiju arhitekturu, mladi inženjeri sve više se oslanjaju na generirani kod koji jedva razumiju.",
+    imageAlt: "Programer u tamnoj sobi gleda u kod generiran umjetnom inteligencijom",
+    publishedOn: "2026-06-02",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
