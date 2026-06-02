@@ -2145,6 +2145,18 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 166,
+    slug: "anthropic-izlazak-na-burzu",
+    title: "Anthropic podnio povjerljiv zahtjev za izlazak na burzu",
+    description:
+      "Kreator Claudea priprema se za potencijalno povijesni IPO s procijenjenom vrijednosti od gotovo bilijun dolara.",
+    imageAlt: "Zgrada burze i Anthropic logotip",
+    publishedOn: "2026-06-02",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
