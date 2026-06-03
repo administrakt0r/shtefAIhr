@@ -2201,6 +2201,18 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 171,
+    slug: "zamka-beskonacnog-refaktoriranja",
+    title: "Zamka beskonačnog refaktoriranja: AI kao neprijatelj arhitekture",
+    description:
+      "AI alati stvaraju privid brzine i produktivnosti. Umjesto kvalitetne arhitekture, dobivamo krhke sustave i vječno refaktoriranje.",
+    imageAlt: "Zamka beskonačnog refaktoriranja",
+    publishedOn: "2026-06-03",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
