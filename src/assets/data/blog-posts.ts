@@ -2179,6 +2179,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 169,
+    slug: "anthropic-prosiruje-claude-mythos",
+    title: "Anthropic proširuje Claude Mythos na kritičnu infrastrukturu u preko 15 zemalja",
+    description: "Anthropic proširuje pristup svom Claude Mythos modelu i Projektu Glasswing organizacijama koje upravljaju kritičnom infrastrukturom diljem svijeta.",
+    imageAlt: "Sigurnosna infrastruktura i globalna mreža",
+    publishedOn: "2026-06-03",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
