@@ -2190,6 +2190,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false,
   }),
+  createPost({
+    id: 170,
+    slug: "opsesija-agijem-steti-stvarnim-problemima",
+    title: "Opsesija AGI-jem koči stvarni napredak industrije",
+    description: "Fokusiranje na hipotetsku superinteligenciju odvraća pažnju od rješavanja konkretnih poslovnih i tehničkih problema s današnjim AI alatima.",
+    imageAlt: "Fokus na AGI umjesto stvarnih problema",
+    publishedOn: "2026-06-03",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
