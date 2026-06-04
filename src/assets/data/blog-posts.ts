@@ -2249,6 +2249,19 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 174,
+    slug: "zasto-opsesija-agi-jem-steti-stvarnom-napretku",
+    title: "Zašto opsesija AGI-jem šteti stvarnom napretku i primjeni AI-ja",
+    description:
+      "Dok tehnološki divovi obećavaju skoru pojavu umjetne opće inteligencije (AGI), stvarne i korisne AI inovacije ostaju u sjeni. Zbog čega lov na AGI postaje štetna distrakcija?",
+    imageAlt:
+      "Ilustracija koja prikazuje raskorak između AGI obećanja i stvarne primjene",
+    publishedOn: "2026-06-04",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
