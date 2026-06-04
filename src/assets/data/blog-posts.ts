@@ -2213,6 +2213,18 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 172,
+    slug: "meta-ai-agent-whatsapp-business",
+    title: "Meta globalno lansirala AI agenta za WhatsApp Business",
+    description:
+      "Meta donosi svog AI asistenta u WhatsApp Business diljem svijeta, omogućujući tvrtkama automatizaciju korisničke podrške i prodaje.",
+    imageAlt: "Meta AI agent u WhatsApp Business aplikaciji",
+    publishedOn: "2026-06-04",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
