@@ -2114,11 +2114,14 @@ export const blogPosts: BlogPost[] = [
   }),
   createPost({
     id: 163,
-    slug: 'iluzija-brze-integracije-ai-alata',
-    title: 'Iluzija brze integracije: Zašto AI alati nisu rješenje ključ u ruke',
-    description: 'Mnoge tvrtke vjeruju da je integracija AI alata jednostavan proces. U stvarnosti, to zahtijeva duboke arhitektonske promjene i prilagodbu podataka.',
-    imageAlt: 'Apstraktni prikaz složene integracije sustava i umjetne inteligencije',
-    publishedOn: '2025-05-31',
+    slug: "iluzija-brze-integracije-ai-alata",
+    title:
+      "Iluzija brze integracije: Zašto AI alati nisu rješenje ključ u ruke",
+    description:
+      "Mnoge tvrtke vjeruju da je integracija AI alata jednostavan proces. U stvarnosti, to zahtijeva duboke arhitektonske promjene i prilagodbu podataka.",
+    imageAlt:
+      "Apstraktni prikaz složene integracije sustava i umjetne inteligencije",
+    publishedOn: "2025-05-31",
     category: ANALYSIS,
     readTime: 5,
     featured: false,
@@ -2127,7 +2130,8 @@ export const blogPosts: BlogPost[] = [
     id: 164,
     slug: "nvidia-cosmos-3",
     title: "NVIDIA lansirala Cosmos 3: Prvi otvoreni omni-model",
-    description: "NVIDIA je predstavila Cosmos 3, revolucionarni objedinjeni model za vizualno razumijevanje i generiranje.",
+    description:
+      "NVIDIA je predstavila Cosmos 3, revolucionarni objedinjeni model za vizualno razumijevanje i generiranje.",
     imageAlt: "Nvidia logotip uz apstraktni prikaz umjetne inteligencije",
     publishedOn: "2026-06-01",
     category: NEWS,
@@ -2136,11 +2140,12 @@ export const blogPosts: BlogPost[] = [
   }),
   createPost({
     id: 165,
-    slug: 'stvarni-razvoj-softvera-uz-ai-alate',
-    title: 'Stvarni razvoj softvera uz AI alate: Marketing i praksa',
-    description: 'Očekivanja od umjetne inteligencije u programiranju često se razilaze sa stvarnošću. Saznajte zašto vas AI alati neće u potpunosti zamijeniti i što se zapravo događa.',
-    imageAlt: 'Ilustracija programera koji radi s AI alatima',
-    publishedOn: '2026-06-01',
+    slug: "stvarni-razvoj-softvera-uz-ai-alate",
+    title: "Stvarni razvoj softvera uz AI alate: Marketing i praksa",
+    description:
+      "Očekivanja od umjetne inteligencije u programiranju često se razilaze sa stvarnošću. Saznajte zašto vas AI alati neće u potpunosti zamijeniti i što se zapravo događa.",
+    imageAlt: "Ilustracija programera koji radi s AI alatima",
+    publishedOn: "2026-06-01",
     category: ANALYSIS,
     readTime: 4,
     featured: false,
@@ -2161,8 +2166,10 @@ export const blogPosts: BlogPost[] = [
     id: 167,
     slug: "ai-alati-za-kodiranje-stvaraju-copy-paste-generaciju",
     title: "AI alati za kodiranje stvaraju generaciju 'copy-paste' programera",
-    description: "Umjesto da dubinski razumiju arhitekturu, mladi inženjeri sve više se oslanjaju na generirani kod koji jedva razumiju.",
-    imageAlt: "Programer u tamnoj sobi gleda u kod generiran umjetnom inteligencijom",
+    description:
+      "Umjesto da dubinski razumiju arhitekturu, mladi inženjeri sve više se oslanjaju na generirani kod koji jedva razumiju.",
+    imageAlt:
+      "Programer u tamnoj sobi gleda u kod generiran umjetnom inteligencijom",
     publishedOn: "2026-06-02",
     category: ANALYSIS,
     readTime: 4,
@@ -2172,7 +2179,8 @@ export const blogPosts: BlogPost[] = [
     id: 168,
     slug: "iluzija-brzine-kako-ai-unistava-duboki-rad",
     title: "Iluzija brzine: Kako AI alati uništavaju duboki rad",
-    description: "Brzina koju nam donose AI alati stvara lažan osjećaj napretka i smanjuje sposobnost fokusiranog rada.",
+    description:
+      "Brzina koju nam donose AI alati stvara lažan osjećaj napretka i smanjuje sposobnost fokusiranog rada.",
     imageAlt: "Ilustracija gubitka fokusa u digitalnom svijetu",
     publishedOn: "2026-06-02",
     category: ANALYSIS,
@@ -2182,8 +2190,10 @@ export const blogPosts: BlogPost[] = [
   createPost({
     id: 169,
     slug: "anthropic-prosiruje-claude-mythos",
-    title: "Anthropic proširuje Claude Mythos na kritičnu infrastrukturu u preko 15 zemalja",
-    description: "Anthropic proširuje pristup svom Claude Mythos modelu i Projektu Glasswing organizacijama koje upravljaju kritičnom infrastrukturom diljem svijeta.",
+    title:
+      "Anthropic proširuje Claude Mythos na kritičnu infrastrukturu u preko 15 zemalja",
+    description:
+      "Anthropic proširuje pristup svom Claude Mythos modelu i Projektu Glasswing organizacijama koje upravljaju kritičnom infrastrukturom diljem svijeta.",
     imageAlt: "Sigurnosna infrastruktura i globalna mreža",
     publishedOn: "2026-06-03",
     category: NEWS,
@@ -2194,7 +2204,8 @@ export const blogPosts: BlogPost[] = [
     id: 170,
     slug: "opsesija-agijem-steti-stvarnim-problemima",
     title: "Opsesija AGI-jem koči stvarni napredak industrije",
-    description: "Fokusiranje na hipotetsku superinteligenciju odvraća pažnju od rješavanja konkretnih poslovnih i tehničkih problema s današnjim AI alatima.",
+    description:
+      "Fokusiranje na hipotetsku superinteligenciju odvraća pažnju od rješavanja konkretnih poslovnih i tehničkih problema s današnjim AI alatima.",
     imageAlt: "Fokus na AGI umjesto stvarnih problema",
     publishedOn: "2026-06-03",
     category: ANALYSIS,
@@ -2223,6 +2234,19 @@ export const blogPosts: BlogPost[] = [
     publishedOn: "2026-06-04",
     category: NEWS,
     readTime: 3,
+    featured: false,
+  }),
+  createPost({
+    id: 173,
+    slug: "ai-ne-spasava-los-menadzment",
+    title: "AI ne spašava loš menadžment, samo ga čini vidljivijim",
+    description:
+      "Umjetna inteligencija može ubrzati pisanje koda, ali ne može popraviti loše poslovne procese, nejasne zahtjeve i nedostatak tehničke vizije u timu.",
+    imageAlt:
+      "Ilustracija uz članak: AI ne spašava loš menadžment, samo ga čini vidljivijim",
+    publishedOn: "2026-06-04",
+    category: ANALYSIS,
+    readTime: 4,
     featured: false,
   }),
 ];
