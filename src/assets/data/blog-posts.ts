@@ -2262,6 +2262,19 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 175,
+    slug: "tsmc-potraznja",
+    title: "TSMC se bori sa zadovoljavanjem velike potražnje za AI čipovima",
+    description:
+      "Najveći svjetski proizvođač čipova TSMC navodi kako zbog ogromne potražnje povezane s umjetnom inteligencijom ne može pratiti narudžbe unatoč širenju u SAD-u.",
+    imageAlt:
+      "Ilustracija uz članak: TSMC se bori sa zadovoljavanjem velike potražnje za AI čipovima",
+    publishedOn: "2026-06-05",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
