@@ -2275,6 +2275,18 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false,
   }),
+  createPost({
+    id: 176,
+    slug: "zasto-umjetna-inteligencija-nece-rijesiti-vas-tehnicki-dug",
+    title: "Zašto umjetna inteligencija neće riješiti vaš tehnički dug",
+    description:
+      "Alati za generiranje koda i umjetna inteligencija ne rješavaju lošu arhitekturu, već često samo maskiraju temeljni problem dugoročnog tehničkog duga.",
+    imageAlt: "Ilustracija tehničkog duga i umjetne inteligencije",
+    publishedOn: "2026-06-05",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
