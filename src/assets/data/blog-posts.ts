@@ -2287,6 +2287,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 177,
+    slug: "apple-approves-poke-ai-agent-imessage",
+    title: "Apple odobrio prvog AI agenta za Messages for Business platformu",
+    description: "Startup Poke postao je prvi AI agent odobren na Appleovoj Messages for Business platformi.",
+    imageAlt: "Ilustracija AI agenta na pametnom telefonu",
+    publishedOn: "2026-06-06",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
