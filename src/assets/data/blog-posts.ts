@@ -2298,6 +2298,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false,
   }),
+  createPost({
+    id: 178,
+    slug: "ai-kraj-programiranja-mit-ili-stvarnost",
+    title: "Je li umjetna inteligencija doista kraj programiranja?",
+    description: "Analiza stvarnog utjecaja umjetne inteligencije na posao softverskih inženjera i zašto narativ o kraju programiranja promašuje bit.",
+    imageAlt: "Ilustracija programera i umjetne inteligencije",
+    publishedOn: "2026-06-06",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
