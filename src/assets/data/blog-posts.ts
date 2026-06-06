@@ -2309,6 +2309,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 179,
+    slug: "mit-o-demokratizaciji-ai-kroz-otvoreni-kod",
+    title: "Mit o demokratizaciji umjetne inteligencije kroz otvoreni kod",
+    description: "Otvoreni kod u umjetnoj inteligenciji često se slavi kao demokratizacija, no stvarna moć ostaje u rukama onih koji kontroliraju računalnu snagu.",
+    imageAlt: "Ilustracija poslužitelja i tehnologije otvorenog koda",
+    publishedOn: "2026-06-06",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
