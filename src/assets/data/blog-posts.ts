@@ -2347,6 +2347,19 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     publishedOn: "2026-06-07",
   }),
+  createPost({
+    id: 182,
+    slug: "mit-o-opcoj-umjetnoj-inteligenciji-zasto-nas-agi-usporava",
+    title: "Mit o općoj umjetnoj inteligenciji: Zašto nas AGI usporava",
+    description:
+      "Opsesija stvaranjem opće umjetne inteligencije oduzima nam dragocjeni fokus s rješavanja stvarnih problema uskim AI alatima.",
+    imageAlt:
+      "Ilustracija razdvajanja znanstvene fantastike o AGI od stvarnosti",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+    publishedOn: "2026-06-07",
+  }),
 ];
 
 const assertUniqueField = (
