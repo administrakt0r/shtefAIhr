@@ -2291,7 +2291,8 @@ export const blogPosts: BlogPost[] = [
     id: 177,
     slug: "apple-approves-poke-ai-agent-imessage",
     title: "Apple odobrio prvog AI agenta za Messages for Business platformu",
-    description: "Startup Poke postao je prvi AI agent odobren na Appleovoj Messages for Business platformi.",
+    description:
+      "Startup Poke postao je prvi AI agent odobren na Appleovoj Messages for Business platformi.",
     imageAlt: "Ilustracija AI agenta na pametnom telefonu",
     publishedOn: "2026-06-06",
     category: NEWS,
@@ -2302,7 +2303,8 @@ export const blogPosts: BlogPost[] = [
     id: 178,
     slug: "ai-kraj-programiranja-mit-ili-stvarnost",
     title: "Je li umjetna inteligencija doista kraj programiranja?",
-    description: "Analiza stvarnog utjecaja umjetne inteligencije na posao softverskih inženjera i zašto narativ o kraju programiranja promašuje bit.",
+    description:
+      "Analiza stvarnog utjecaja umjetne inteligencije na posao softverskih inženjera i zašto narativ o kraju programiranja promašuje bit.",
     imageAlt: "Ilustracija programera i umjetne inteligencije",
     publishedOn: "2026-06-06",
     category: ANALYSIS,
@@ -2313,7 +2315,8 @@ export const blogPosts: BlogPost[] = [
     id: 179,
     slug: "mit-o-demokratizaciji-ai-kroz-otvoreni-kod",
     title: "Mit o demokratizaciji umjetne inteligencije kroz otvoreni kod",
-    description: "Otvoreni kod u umjetnoj inteligenciji često se slavi kao demokratizacija, no stvarna moć ostaje u rukama onih koji kontroliraju računalnu snagu.",
+    description:
+      "Otvoreni kod u umjetnoj inteligenciji često se slavi kao demokratizacija, no stvarna moć ostaje u rukama onih koji kontroliraju računalnu snagu.",
     imageAlt: "Ilustracija poslužitelja i tehnologije otvorenog koda",
     publishedOn: "2026-06-06",
     category: ANALYSIS,
@@ -2324,12 +2327,25 @@ export const blogPosts: BlogPost[] = [
     id: 180,
     slug: "openai-unveils-lockdown-mode",
     title: "OpenAI predstavlja Lockdown Mode za ChatGPT",
-    description: "Nova sigurnosna značajka štiti osjetljive podatke od napada putem umetanja naredbi.",
+    description:
+      "Nova sigurnosna značajka štiti osjetljive podatke od napada putem umetanja naredbi.",
     imageAlt: "Katanac i štit kao simbol sigurnosti u digitalnom svijetu",
     publishedOn: "2026-06-07",
     category: NEWS,
     readTime: 3,
     featured: false,
+  }),
+  createPost({
+    id: 181,
+    slug: "iluzija-skorog-agi-ja",
+    title: "Iluzija skorog AGI-ja: Zašto hype skriva prave probleme industrije",
+    description:
+      "Opsesija stvaranjem opće umjetne inteligencije zamagljuje trenutne tehničke i društvene izazove koje moramo rješavati danas.",
+    imageAlt: "Iluzija skorog AGI-ja",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+    publishedOn: "2026-06-07",
   }),
 ];
 
