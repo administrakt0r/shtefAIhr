@@ -2320,6 +2320,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 180,
+    slug: "openai-unveils-lockdown-mode",
+    title: "OpenAI predstavlja Lockdown Mode za ChatGPT",
+    description: "Nova sigurnosna značajka štiti osjetljive podatke od napada putem umetanja naredbi.",
+    imageAlt: "Katanac i štit kao simbol sigurnosti u digitalnom svijetu",
+    publishedOn: "2026-06-07",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
