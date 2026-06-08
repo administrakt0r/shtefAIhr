@@ -2360,6 +2360,19 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     publishedOn: "2026-06-07",
   }),
+  createPost({
+    id: 183,
+    slug: "openai-radi-na-super-aplikaciji",
+    title: "OpenAI još uvijek radi na svojoj super aplikaciji",
+    description:
+      "OpenAI planira lansirati novu verziju ChatGPT-a u obliku 'super aplikacije' usmjerene na poslovne korisnike, s alatima poput Codexa i AI agentima.",
+    imageAlt:
+      "Ilustracija uz članak: OpenAI još uvijek radi na svojoj super aplikaciji",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+    publishedOn: "2026-06-08",
+  }),
 ];
 
 const assertUniqueField = (
