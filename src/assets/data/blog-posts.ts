@@ -2373,6 +2373,18 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     publishedOn: "2026-06-08",
   }),
+  createPost({
+    id: 184,
+    slug: "stvarnost-rada-s-ai-alatima",
+    title: "Stvarnost rada s AI alatima: Puno obećanja, malo konteksta",
+    description:
+      "Analiza pravog stanja rada s AI alatima na stvarnim projektima i zašto oni još uvijek ne mogu zamijeniti ljudsko arhitektonsko razumijevanje i nadzor.",
+    imageAlt: "Programer frustriran ispravljanjem grešaka AI koda",
+    category: ANALYSIS,
+    publishedOn: "2026-06-08",
+    readTime: 5,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
