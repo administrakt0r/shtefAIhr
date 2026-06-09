@@ -2385,6 +2385,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 5,
     featured: false,
   }),
+  createPost({
+    id: 185,
+    title: "OpenAI povjerljivo predao dokumentaciju za inicijalnu javnu ponudu",
+    slug: "openai-ipo-s-1-confidential",
+    description: "OpenAI je povjerljivo predao S-1 obrazac za izlazak na burzu, prateći poteze konkurencije u utrci za dominaciju na tržištu umjetne inteligencije.",
+    imageAlt: "Zgrada burze s digitalnim grafovima rasta",
+    category: NEWS,
+    publishedOn: "2026-06-08",
+    readTime: 3,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
