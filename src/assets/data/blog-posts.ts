@@ -2407,6 +2407,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 187,
+    slug: "razvoj-s-ai-alatima-stvarnost-protiv-marketinga",
+    title: "Razvoj s AI alatima: Stvarnost protiv marketinga",
+    description: "Marketing prodaje priču o brzom kodiranju bez truda, no stvarnost je znatno složenija. Alati donose brzinu, ali i nove izazove u održavanju.",
+    imageAlt: "Ilustracija programera koji se bori s umjetnom inteligencijom",
+    category: ANALYSIS,
+    publishedOn: "2026-06-09",
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
