@@ -2396,6 +2396,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false,
   }),
+  createPost({
+    id: 186,
+    slug: "ai-ne-uklanja-usko-grlo",
+    title: "Pravi problem više nije kako brzo napisati kod, već kako ga pročitati",
+    description: "AI alati nisu uklonili usko grlo u razvoju softvera, već su ga samo preselili iz mehaničkog pisanja u kognitivno procesiranje i razumijevanje koda.",
+    imageAlt: "Programer koji pokušava dešifrirati veliku količinu koda",
+    category: ANALYSIS,
+    publishedOn: "2026-06-09",
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
