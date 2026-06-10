@@ -2418,6 +2418,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 188,
+    slug: "openai-confidentially-files-for-ipo",
+    title: "OpenAI predao tajnu dokumentaciju za izlazak na burzu",
+    description: "OpenAI je povjerljivo predao S-1 obrazac za izlazak na burzu, čime započinje proces koji bi tvrtku mogao procijeniti na više od bilijun dolara.",
+    imageAlt: "Zgrada burze s digitalnim grafovima rasta",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+    publishedOn: "2026-06-10",
+  }),
 ];
 
 const assertUniqueField = (
