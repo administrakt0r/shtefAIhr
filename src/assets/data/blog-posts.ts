@@ -2429,6 +2429,17 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     publishedOn: "2026-06-10",
   }),
+  createPost({
+    id: 189,
+    slug: "iluzija-potpuno-autonomnog-programiranja",
+    title: "Iluzija potpuno autonomnog programiranja",
+    description: "Svi govore da će AI zamijeniti programere, ali realnost je potpuno drugačija. Evo zašto umjetna inteligencija ostaje samo napredni asistent.",
+    imageAlt: "Ilustracija programera i umjetne inteligencije",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+    publishedOn: "2026-06-10",
+  }),
 ];
 
 const assertUniqueField = (
