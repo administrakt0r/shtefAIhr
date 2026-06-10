@@ -2389,7 +2389,8 @@ export const blogPosts: BlogPost[] = [
     id: 185,
     title: "OpenAI povjerljivo predao dokumentaciju za inicijalnu javnu ponudu",
     slug: "openai-ipo-s-1-confidential",
-    description: "OpenAI je povjerljivo predao S-1 obrazac za izlazak na burzu, prateći poteze konkurencije u utrci za dominaciju na tržištu umjetne inteligencije.",
+    description:
+      "OpenAI je povjerljivo predao S-1 obrazac za izlazak na burzu, prateći poteze konkurencije u utrci za dominaciju na tržištu umjetne inteligencije.",
     imageAlt: "Zgrada burze s digitalnim grafovima rasta",
     category: NEWS,
     publishedOn: "2026-06-08",
@@ -2399,8 +2400,10 @@ export const blogPosts: BlogPost[] = [
   createPost({
     id: 186,
     slug: "ai-ne-uklanja-usko-grlo",
-    title: "Pravi problem više nije kako brzo napisati kod, već kako ga pročitati",
-    description: "AI alati nisu uklonili usko grlo u razvoju softvera, već su ga samo preselili iz mehaničkog pisanja u kognitivno procesiranje i razumijevanje koda.",
+    title:
+      "Pravi problem više nije kako brzo napisati kod, već kako ga pročitati",
+    description:
+      "AI alati nisu uklonili usko grlo u razvoju softvera, već su ga samo preselili iz mehaničkog pisanja u kognitivno procesiranje i razumijevanje koda.",
     imageAlt: "Programer koji pokušava dešifrirati veliku količinu koda",
     category: ANALYSIS,
     publishedOn: "2026-06-09",
@@ -2411,7 +2414,8 @@ export const blogPosts: BlogPost[] = [
     id: 187,
     slug: "razvoj-s-ai-alatima-stvarnost-protiv-marketinga",
     title: "Razvoj s AI alatima: Stvarnost protiv marketinga",
-    description: "Marketing prodaje priču o brzom kodiranju bez truda, no stvarnost je znatno složenija. Alati donose brzinu, ali i nove izazove u održavanju.",
+    description:
+      "Marketing prodaje priču o brzom kodiranju bez truda, no stvarnost je znatno složenija. Alati donose brzinu, ali i nove izazove u održavanju.",
     imageAlt: "Ilustracija programera koji se bori s umjetnom inteligencijom",
     category: ANALYSIS,
     publishedOn: "2026-06-09",
@@ -2422,7 +2426,8 @@ export const blogPosts: BlogPost[] = [
     id: 188,
     slug: "openai-confidentially-files-for-ipo",
     title: "OpenAI predao tajnu dokumentaciju za izlazak na burzu",
-    description: "OpenAI je povjerljivo predao S-1 obrazac za izlazak na burzu, čime započinje proces koji bi tvrtku mogao procijeniti na više od bilijun dolara.",
+    description:
+      "OpenAI je povjerljivo predao S-1 obrazac za izlazak na burzu, čime započinje proces koji bi tvrtku mogao procijeniti na više od bilijun dolara.",
     imageAlt: "Zgrada burze s digitalnim grafovima rasta",
     category: NEWS,
     readTime: 3,
@@ -2433,8 +2438,21 @@ export const blogPosts: BlogPost[] = [
     id: 189,
     slug: "iluzija-potpuno-autonomnog-programiranja",
     title: "Iluzija potpuno autonomnog programiranja",
-    description: "Svi govore da će AI zamijeniti programere, ali realnost je potpuno drugačija. Evo zašto umjetna inteligencija ostaje samo napredni asistent.",
+    description:
+      "Svi govore da će AI zamijeniti programere, ali realnost je potpuno drugačija. Evo zašto umjetna inteligencija ostaje samo napredni asistent.",
     imageAlt: "Ilustracija programera i umjetne inteligencije",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+    publishedOn: "2026-06-10",
+  }),
+  createPost({
+    id: 190,
+    slug: "mit-o-brzom-dolasku-agi-ja",
+    title: "Mit o brzom dolasku AGI-ja: Zašto smo još daleko od cilja",
+    description:
+      "Tehnološki divovi najavljuju skori dolazak opće umjetne inteligencije. Međutim, tehnička stvarnost i fundamentalna ograničenja modela pokazuju potpuno drugačiju sliku.",
+    imageAlt: "Ilustracija složenosti umjetne inteligencije",
     category: ANALYSIS,
     readTime: 4,
     featured: false,
