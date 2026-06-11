@@ -2458,6 +2458,18 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     publishedOn: "2026-06-10",
   }),
+  createPost({
+    id: 191,
+    slug: "llm-modeli-postaju-roba",
+    title: "Iluzija monopola: Zašto AI modeli brzo postaju obična roba",
+    description:
+      "Svi očekuju da će nekoliko velikih kompanija držati monopol nad umjetnom inteligencijom, ali stvarnost pokazuje suprotno. Modeli postaju roba široke potrošnje.",
+    imageAlt: "Iluzija monopola i umjetna inteligencija",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+    publishedOn: "2026-06-11",
+  }),
 ];
 
 const assertUniqueField = (
