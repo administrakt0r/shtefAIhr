@@ -2469,6 +2469,17 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     publishedOn: "2026-06-11",
   }),
+  createPost({
+    id: 192,
+    slug: "mit-o-agi",
+    title: "Mit o AGI: Zašto je lov na opću inteligenciju distrakcija",
+    description: "Umjesto sanjarenja o strojevima koji misle kao ljudi, trebamo se fokusirati na stvarne alate koji danas rješavaju konkretne probleme.",
+    imageAlt: "Apstraktni prikaz prekomjernog fokusa na umjetnu opću inteligenciju",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+    publishedOn: "2026-06-11",
+  }),
 ];
 
 const assertUniqueField = (
