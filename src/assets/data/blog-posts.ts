@@ -2458,6 +2458,17 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     publishedOn: "2026-06-10",
   }),
+  createPost({
+    id: 191,
+    slug: "gemma-4-12b",
+    title: "Google predstavlja Gemma 4 12B multimodalni model",
+    description: "Novi kompaktni model donosi napredne multimodalne mogućnosti i podršku za audio na vaša prijenosna računala.",
+    imageAlt: "Ilustracija uz članak o Google Gemma 4 12B modelu",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+    publishedOn: "2026-06-11",
+  }),
 ];
 
 const assertUniqueField = (
