@@ -2462,7 +2462,8 @@ export const blogPosts: BlogPost[] = [
     id: 191,
     slug: "gemma-4-12b",
     title: "Google predstavlja Gemma 4 12B multimodalni model",
-    description: "Novi kompaktni model donosi napredne multimodalne mogućnosti i podršku za audio na vaša prijenosna računala.",
+    description:
+      "Novi kompaktni model donosi napredne multimodalne mogućnosti i podršku za audio na vaša prijenosna računala.",
     imageAlt: "Ilustracija uz članak o Google Gemma 4 12B modelu",
     category: NEWS,
     readTime: 3,
@@ -2473,8 +2474,10 @@ export const blogPosts: BlogPost[] = [
     id: 192,
     slug: "mit-o-agi",
     title: "Mit o AGI: Zašto je lov na opću inteligenciju distrakcija",
-    description: "Umjesto sanjarenja o strojevima koji misle kao ljudi, trebamo se fokusirati na stvarne alate koji danas rješavaju konkretne probleme.",
-    imageAlt: "Apstraktni prikaz prekomjernog fokusa na umjetnu opću inteligenciju",
+    description:
+      "Umjesto sanjarenja o strojevima koji misle kao ljudi, trebamo se fokusirati na stvarne alate koji danas rješavaju konkretne probleme.",
+    imageAlt:
+      "Apstraktni prikaz prekomjernog fokusa na umjetnu opću inteligenciju",
     category: ANALYSIS,
     readTime: 4,
     featured: false,
@@ -2484,8 +2487,22 @@ export const blogPosts: BlogPost[] = [
     id: 193,
     slug: "iluzija-produktivnosti-ai-alati",
     title: "Iluzija produktivnosti: Pišemo brže, razumijemo manje",
-    description: "AI alati omogućuju brže pisanje koda, ali smanjuju dubinsko razumijevanje, što dovodi do dužeg vremena otklanjanja pogrešaka.",
+    description:
+      "AI alati omogućuju brže pisanje koda, ali smanjuju dubinsko razumijevanje, što dovodi do dužeg vremena otklanjanja pogrešaka.",
     imageAlt: "Programer gleda u ekran s kodom.",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+    publishedOn: "2026-06-12",
+  }),
+  createPost({
+    id: 194,
+    slug: "zamka-sintetickog-weba",
+    title: "Zamka sintetičkog weba: Zašto internet gubi ljudski glas",
+    description:
+      "Generativna umjetna inteligencija omogućila je masovnu produkciju sadržaja, ali cijena koju plaćamo je gubitak autentičnosti na otvorenom webu.",
+    imageAlt:
+      "Apstraktni prikaz utapanja ljudskog glasa u moru digitalnog i sintetičkog sadržaja",
     category: ANALYSIS,
     readTime: 4,
     featured: false,
