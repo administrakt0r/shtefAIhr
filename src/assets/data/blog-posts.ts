@@ -2480,6 +2480,17 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     publishedOn: "2026-06-11",
   }),
+  createPost({
+    id: 193,
+    slug: "iluzija-produktivnosti-ai-alati",
+    title: "Iluzija produktivnosti: Pišemo brže, razumijemo manje",
+    description: "AI alati omogućuju brže pisanje koda, ali smanjuju dubinsko razumijevanje, što dovodi do dužeg vremena otklanjanja pogrešaka.",
+    imageAlt: "Programer gleda u ekran s kodom.",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+    publishedOn: "2026-06-12",
+  }),
 ];
 
 const assertUniqueField = (
