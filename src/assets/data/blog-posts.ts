@@ -2508,6 +2508,17 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     publishedOn: "2026-06-12",
   }),
+  createPost({
+    id: 195,
+    slug: "istina-o-ai-agentima",
+    title: "Istina o AI agentima: Stvarnost nasuprot ogromnim očekivanjima",
+    description: "Analiza trenutnog stanja AI agenata i zašto potpuna autonomija još uvijek nije realna u poslovnom svijetu.",
+    imageAlt: "Istina o AI agentima",
+    category: ANALYSIS,
+    readTime: 3,
+    featured: false,
+    publishedOn: "2026-06-13",
+  }),
 ];
 
 const assertUniqueField = (
