@@ -2520,6 +2520,18 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     publishedOn: "2026-06-12",
   }),
+  createPost({
+    id: 196,
+    slug: "iluzija-brzog-kodiranja-uz-ai",
+    title: "Iluzija brzog kodiranja: Zašto AI alati stvaraju tehnički dug",
+    description:
+      "Umjetna inteligencija omogućuje brzo pisanje koda, ali dugoročno stvara sustave koje nitko ne razumije i povećava tehnički dug.",
+    imageAlt: "Prikaz programskog koda s greškama na zaslonu",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+    publishedOn: "2026-06-13",
+  }),
 ];
 
 const assertUniqueField = (
