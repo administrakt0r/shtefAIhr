@@ -2508,6 +2508,18 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     publishedOn: "2026-06-12",
   }),
+  createPost({
+    id: 195,
+    slug: "anthropic-vlada-sad-blokirala",
+    title: "Vlada SAD-a blokirala Anthropicove najmoćnije AI modele",
+    description:
+      "Američka vlada naredila je tvrtki Anthropic trenutno gašenje pristupa modelima Claude Fable 5 i Mythos 5, navodeći zabrinutost za nacionalnu sigurnost.",
+    imageAlt: "Apstraktni prikaz vladine intervencije u rad umjetne inteligencije",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+    publishedOn: "2026-06-12",
+  }),
 ];
 
 const assertUniqueField = (
