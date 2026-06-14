@@ -2514,7 +2514,8 @@ export const blogPosts: BlogPost[] = [
     title: "Vlada SAD-a blokirala Anthropicove najmoćnije AI modele",
     description:
       "Američka vlada naredila je tvrtki Anthropic trenutno gašenje pristupa modelima Claude Fable 5 i Mythos 5, navodeći zabrinutost za nacionalnu sigurnost.",
-    imageAlt: "Apstraktni prikaz vladine intervencije u rad umjetne inteligencije",
+    imageAlt:
+      "Apstraktni prikaz vladine intervencije u rad umjetne inteligencije",
     category: NEWS,
     readTime: 3,
     featured: false,
@@ -2536,12 +2537,26 @@ export const blogPosts: BlogPost[] = [
     id: 197,
     slug: "anthropic-fable-5-mythos-5-government-national-security",
     title: "Anthropic ukida pristup modelima Fable i Mythos zbog vlade SAD-a",
-    description: "Američka vlada naredila je tvrtki Anthropic prekid pristupa AI modelima Fable 5 i Mythos 5 uslijed zabrinutosti za nacionalnu sigurnost.",
+    description:
+      "Američka vlada naredila je tvrtki Anthropic prekid pristupa AI modelima Fable 5 i Mythos 5 uslijed zabrinutosti za nacionalnu sigurnost.",
     imageAlt: "Ilustracija vladine zabrane AI modela",
     category: NEWS,
     readTime: 3,
     featured: false,
     publishedOn: "2026-06-13",
+  }),
+  createPost({
+    id: 198,
+    slug: "zasto-ai-ne-donosi-kraj-programiranja",
+    title: "Zašto umjetna inteligencija ne donosi kraj programiranja",
+    description:
+      "Suprotno popularnim predviđanjima, AI alati neće zamijeniti softverske inženjere. Evo zašto će kodiranje postati važnije nego ikada.",
+    imageAlt:
+      "Ilustracija odnosa čovjeka i umjetne inteligencije u programiranju",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+    publishedOn: "2026-06-14",
   }),
 ];
 
