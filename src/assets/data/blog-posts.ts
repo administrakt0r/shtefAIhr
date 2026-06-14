@@ -2558,6 +2558,18 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     publishedOn: "2026-06-14",
   }),
+  createPost({
+    id: 199,
+    slug: "ai-alati-za-programiranje-stvarnost",
+    title: "AI alati za programiranje: Stvarnost iza marketinških obećanja",
+    description:
+      "Umjetna inteligencija ubrzava pisanje koda, ali donosi nove izazove. Umjesto jednostavnog rješenja, dobili smo asistenta kojeg inženjeri moraju pažljivo nadzirati.",
+    imageAlt: "AI asistent pomaže programeru",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+    publishedOn: "2026-06-14",
+  }),
 ];
 
 const assertUniqueField = (
