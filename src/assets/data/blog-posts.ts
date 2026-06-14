@@ -2532,6 +2532,17 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     publishedOn: "2026-06-13",
   }),
+  createPost({
+    id: 197,
+    slug: "anthropic-fable-5-mythos-5-government-national-security",
+    title: "Anthropic ukida pristup modelima Fable i Mythos zbog vlade SAD-a",
+    description: "Američka vlada naredila je tvrtki Anthropic prekid pristupa AI modelima Fable 5 i Mythos 5 uslijed zabrinutosti za nacionalnu sigurnost.",
+    imageAlt: "Ilustracija vladine zabrane AI modela",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+    publishedOn: "2026-06-13",
+  }),
 ];
 
 const assertUniqueField = (
