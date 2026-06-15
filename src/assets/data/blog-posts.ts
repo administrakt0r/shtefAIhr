@@ -2570,6 +2570,18 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     publishedOn: "2026-06-14",
   }),
+  createPost({
+    id: 200,
+    slug: "amazon-anthropic-fable-mythos-government-ban",
+    title: "Istraživanje Amazona dovelo do zabrane Anthropicovih modela",
+    description:
+      "Izvješće tvrtke Amazon o kibernetičkoj sigurnosti i razgovori s Bijelom kućom navodno su potaknuli zabranu modela Fable 5 i Mythos 5.",
+    imageAlt: "Zabrana umjetne inteligencije",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+    publishedOn: "2026-06-16",
+  }),
 ];
 
 const assertUniqueField = (
