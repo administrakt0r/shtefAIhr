@@ -2570,6 +2570,18 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     publishedOn: "2026-06-14",
   }),
+  createPost({
+    id: 200,
+    slug: "kraj-ere-besplatnih-ai-alata",
+    title: "Kraj ere besplatnih AI alata: Što nas zaista čeka na tržištu?",
+    description:
+      "Kako kompanije prelaze s besplatnih modela na plaćene pretplate, korisnici se suočavaju s novom realnošću tržišta.",
+    imageAlt: "Zlatni kavez besplatnog pristupa",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+    publishedOn: "2026-06-15",
+  }),
 ];
 
 const assertUniqueField = (
