@@ -2582,6 +2582,19 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     publishedOn: "2026-06-15",
   }),
+  createPost({
+    id: 201,
+    slug: "zabluda-o-ai-kao-kreativnom-asistentu",
+    title: "Velika zabluda o umjetnoj inteligenciji kao kreativnom asistentu",
+    description:
+      "Generativna umjetna inteligencija često se prodaje kao novi kreativni suradnik. No, stvarni proces pokazuje da to nije partnerstvo, već samo napredna interpolacija postojećih podataka.",
+    imageAlt:
+      "Apstraktna ilustracija čovjeka i računala koji stvaraju umjetnost",
+    publishedOn: "2026-06-15",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
