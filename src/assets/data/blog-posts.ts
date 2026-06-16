@@ -2607,6 +2607,18 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     publishedOn: "2026-06-16",
   }),
+  createPost({
+    id: 203,
+    slug: "mit-o-skoroj-zamjeni-programera",
+    title: "Mit o skoroj zamjeni programera: Što nam donose umjetni agenti",
+    description:
+      "Unatoč bombastičnim najavama, AI agenti još uvijek nisu spremni preuzeti cjelokupan razvoj softvera.",
+    imageAlt: "Programer radi za računalom dok AI sustav pomaže u pozadini",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+    publishedOn: "2026-06-16",
+  }),
 ];
 
 const assertUniqueField = (
