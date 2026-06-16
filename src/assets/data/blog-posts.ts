@@ -2619,6 +2619,18 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     publishedOn: "2026-06-16",
   }),
+  createPost({
+    id: 204,
+    slug: "otvoreni-kod-nece-automatski-pobijediti",
+    title: "Otvoreni kod neće automatski pobijediti u utrci za AI",
+    description:
+      "Iako svi navijaju za otvorene modele, stvarna moć leži u infrastrukturi i ogromnom kapitalu koji oblikuju budućnost umjetne inteligencije.",
+    imageAlt: "Digitalna ilustracija koja prikazuje kod i poslužitelje",
+    category: ANALYSIS,
+    readTime: 5,
+    featured: false,
+    publishedOn: "2026-06-16",
+  }),
 ];
 
 const assertUniqueField = (
