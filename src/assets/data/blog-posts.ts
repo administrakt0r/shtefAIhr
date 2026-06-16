@@ -2595,6 +2595,18 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 202,
+    slug: "anthropic-bijela-kuca-claude-fable-5",
+    title: "Bijela kuća i Anthropic i dalje u sukobu oko modela Claude Fable 5",
+    description:
+      "Pregovori Trumpove administracije i tvrtke Anthropic završili su bez ukidanja izvoznih ograničenja za Claude Fable 5 zbog zabrinutosti oko sigurnosti.",
+    imageAlt: "Zgrada Bijele kuće i AI tehnologija",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+    publishedOn: "2026-06-16",
+  }),
 ];
 
 const assertUniqueField = (
