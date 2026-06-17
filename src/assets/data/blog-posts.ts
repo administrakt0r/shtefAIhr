@@ -2631,6 +2631,18 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     publishedOn: "2026-06-16",
   }),
+  createPost({
+    id: 205,
+    slug: "investing-in-multi-agent-ai-safety-research",
+    title: "Google pokrenuo fond od 10 milijuna dolara za sigurnost AI agenata",
+    description:
+      "Google DeepMind i partneri najavili su 10 milijuna dolara za istraživanje sigurnosti multi-agentskih sustava.",
+    imageAlt: "Apstraktna ilustracija umjetne inteligencije",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+    publishedOn: "2026-06-17",
+  }),
 ];
 
 const assertUniqueField = (
