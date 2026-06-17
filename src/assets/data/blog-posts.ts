@@ -2643,6 +2643,18 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     publishedOn: "2026-06-17",
   }),
+  createPost({
+    id: 206,
+    slug: "pravi-problem-ai-alata-tko-ce-odgajati-buduce-seniore",
+    title: "Pravi problem AI alata: Tko će odgajati buduće seniore?",
+    description:
+      "Kratkoročna efikasnost AI alata u programiranju prijeti dugoročnom razvoju pravih stručnjaka i senior inženjera.",
+    imageAlt: "Apstraktna ilustracija umjetne inteligencije",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+    publishedOn: "2026-06-17",
+  }),
 ];
 
 const assertUniqueField = (
