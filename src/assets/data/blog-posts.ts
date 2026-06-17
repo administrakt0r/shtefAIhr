@@ -2655,6 +2655,18 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     publishedOn: "2026-06-17",
   }),
+  createPost({
+    id: 207,
+    slug: "mit-o-autonomnim-agentima",
+    title: "Mit o autonomnim agentima: Stvarnost razvoja UI alata",
+    description:
+      "Stvarnost razvoja i implementacije autonomnih agenata često se razlikuje od marketinških obećanja.",
+    imageAlt: "Ilustracija programskog koda",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+    publishedOn: "2026-06-17",
+  }),
 ];
 
 const assertUniqueField = (
