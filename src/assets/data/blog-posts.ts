@@ -2692,6 +2692,19 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     publishedOn: "2026-06-18",
   }),
+  createPost({
+    id: 210,
+    slug: "mit-o-ai-alatima-za-razvoj-softvera",
+    title: "Mit o AI alatima za razvoj softvera: Realnost iza marketinga",
+    description:
+      "Marketing tehnoloških kompanija predstavlja AI asistente kao magično rješenje za svaki problem u kodu, ali svakodnevna upotreba otkriva drugačiju sliku.",
+    imageAlt:
+      "Ilustracija uz članak: Mit o AI alatima za razvoj softvera: Realnost iza marketinga",
+    publishedOn: "2026-06-18",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
