@@ -2680,6 +2680,18 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     publishedOn: "2026-06-18",
   }),
+  createPost({
+    id: 209,
+    slug: "iluzija-ai-asistenata-i-legacy-kod",
+    title: "Iluzija AI asistenata: Zašto stari kod ostaje problem",
+    description:
+      "Umjetna inteligencija briljira u pisanju novog koda, ali posrće tamo gdje je najpotrebnija: u održavanju složenih i nedokumentiranih sustava.",
+    imageAlt: "Zapetljani kablovi i stari kod",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+    publishedOn: "2026-06-18",
+  }),
 ];
 
 const assertUniqueField = (
