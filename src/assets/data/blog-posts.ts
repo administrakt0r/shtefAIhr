@@ -2667,6 +2667,19 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     publishedOn: "2026-06-17",
   }),
+  createPost({
+    id: 208,
+    slug: "midjourney-medical-ultrazvuk",
+    title:
+      "Midjourney ulazi u medicinu s inovativnim ultrazvukom za cijelo tijelo",
+    description:
+      "Midjourney CEO David Holz najavio je prvi hardverski proizvod tvrtke: The Midjourney Scanner, ultrazvuk za cijelo tijelo koji koristi 40 ultrazvučnih čipova tvrtke Butterfly Network.",
+    imageAlt: "Osoba prolazi kroz napredni medicinski uređaj za skeniranje.",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+    publishedOn: "2026-06-18",
+  }),
 ];
 
 const assertUniqueField = (
