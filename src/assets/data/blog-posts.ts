@@ -2718,6 +2718,19 @@ export const blogPosts: BlogPost[] = [
     readTime: 2,
     featured: false,
   }),
+  createPost({
+    id: 212,
+    slug: "zasto-umjetna-inteligencija-nece-tako-skoro-zamijeniti-programere",
+    title: "Zašto umjetna inteligencija neće skoro zamijeniti programere",
+    description:
+      "Softversko inženjerstvo puno je složenije od pukog pisanja linija koda. AI alati pomažu, ali su daleko od potpune autonomije.",
+    imageAlt:
+      "Ilustracija uz članak: Zašto umjetna inteligencija neće skoro zamijeniti programere",
+    category: ANALYSIS,
+    publishedOn: "2026-06-19",
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
