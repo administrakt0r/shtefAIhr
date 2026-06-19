@@ -2731,6 +2731,19 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 213,
+    slug: "agenti-umjetne-inteligencije-velika-obecanja-i-surova-stvarnost",
+    title: "Agenti umjetne inteligencije: Velika obećanja i surova stvarnost",
+    description:
+      "Autonomni AI agenti obećavaju revoluciju, no u stvarnosti zahtijevaju stalan nadzor. Otkrijte zašto je vizija potpune neovisnosti danas samo iluzija.",
+    imageAlt:
+      "Ilustracija uz članak: Agenti umjetne inteligencije: Velika obećanja i surova stvarnost",
+    category: ANALYSIS,
+    publishedOn: "2026-06-19",
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
