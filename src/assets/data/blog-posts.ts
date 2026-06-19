@@ -2705,6 +2705,19 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 211,
+    slug: "barret-zoph-napusta-openai",
+    title: "Barret Zoph ponovno napušta OpenAI nakon samo pet mjeseci",
+    description:
+      "Barret Zoph ponovno je napustio OpenAI nakon samo pet mjeseci, ranije se vrativši iz tvrtke Thinking Machines Lab.",
+    imageAlt:
+      "Ilustracija uz članak: Barret Zoph ponovno napušta OpenAI nakon samo pet mjeseci",
+    publishedOn: "2026-06-19",
+    category: NEWS,
+    readTime: 2,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
