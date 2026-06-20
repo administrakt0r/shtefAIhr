@@ -2744,6 +2744,19 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 214,
+    slug: "mit-o-gigantskim-modelima-zasto-su-mali-ai-modeli-prava-buducnost",
+    title: "Mit o gigantskim modelima: Zašto su mali AI modeli prava budućnost",
+    description:
+      "Industrija je opsjednuta veličinom, no prava revolucija umjetne inteligencije krije se u efikasnim i malim modelima.",
+    imageAlt:
+      "Ilustracija uz članak: Mit o gigantskim modelima: Zašto su mali AI modeli prava budućnost",
+    category: ANALYSIS,
+    publishedOn: "2026-06-20",
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
