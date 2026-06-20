@@ -2757,6 +2757,19 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 215,
+    slug: "stvarnost-ai-alata-za-programere",
+    title: "Stvarnost AI alata: Od blještavog marketinga do pravog koda",
+    description:
+      "AI alati za programere nisu čarobni štapići koji sami pišu aplikacije. Otkrivamo pravo stanje stvari u svakodnevnom razvoju softvera.",
+    imageAlt:
+      "Ilustracija uz članak: Stvarnost AI alata: Od blještavog marketinga do pravog koda",
+    category: ANALYSIS,
+    publishedOn: "2026-06-20",
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
