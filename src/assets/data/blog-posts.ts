@@ -2795,6 +2795,19 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false,
   }),
+  createPost({
+    id: 218,
+    slug: "zasto-je-potraga-za-agi-jem-zapravo-opasna-distrakcija",
+    title: "Zašto je potraga za AGI-jem zapravo opasna distrakcija",
+    description:
+      "Opsesija industrije umjetnom općom inteligencijom (AGI) odvlači pozornost od rješavanja stvarnih problema današnjice pomoću postojećih alata.",
+    imageAlt:
+      "Ilustracija uz članak: Zašto je potraga za AGI-jem zapravo opasna distrakcija",
+    category: ANALYSIS,
+    publishedOn: "2026-06-21",
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
