@@ -2782,6 +2782,19 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false,
   }),
+  createPost({
+    id: 217,
+    slug: "autonomni-ai-agenti-mit-o-potpunoj-zamjeni-ljudskog-rada",
+    title: "Autonomni AI agenti: Veliki mit o potpunoj zamjeni ljudskog rada",
+    description:
+      "Razotkrivamo zašto AI agenti neće tako skoro potpuno zamijeniti ljudske stručnjake i zašto je prava moć u simbiozi.",
+    imageAlt:
+      "Ilustracija uz članak: Autonomni AI agenti: Veliki mit o potpunoj zamjeni ljudskog rada",
+    category: ANALYSIS,
+    publishedOn: "2026-06-21",
+    readTime: 3,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
