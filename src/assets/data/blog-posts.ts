@@ -2770,6 +2770,18 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 216,
+    slug: "john-jumper-odlazi-iz-deepminda-u-anthropic",
+    title: "Nobelovac John Jumper napušta DeepMind i prelazi u Anthropic",
+    description:
+      "Dobitnik Nobelove nagrade i ključni čovjek iza AlphaFolda, John Jumper, prelazi iz Google DeepMinda u konkurentski Anthropic nakon gotovo deset godina.",
+    imageAlt: "Nobelovac John Jumper napušta DeepMind i prelazi u Anthropic",
+    category: NEWS,
+    publishedOn: "2026-06-21",
+    readTime: 3,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
