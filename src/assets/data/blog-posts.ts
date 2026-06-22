@@ -2808,6 +2808,19 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 219,
+    slug: "zabluda-o-ai-agentima-koji-ce-zamijeniti-programere",
+    title: "Zabluda o AI agentima koji će zamijeniti programere",
+    description:
+      "Zašto trenutni jezični modeli ne mogu zamijeniti softverske inženjere i zašto je hype oko AI agenata opasan za kompleksne sustave.",
+    imageAlt:
+      "Ilustracija uz članak: Zabluda o AI agentima koji će zamijeniti programere",
+    category: ANALYSIS,
+    publishedOn: "2026-06-22",
+    readTime: 3,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
