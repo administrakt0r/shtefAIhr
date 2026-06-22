@@ -2808,6 +2808,18 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 219,
+    slug: "americka-zabrana-novih-anthropic-modela",
+    title: "Američka zabrana novih Anthropic modela: Tko zapravo profitira?",
+    description:
+      "Američka administracija prisilila je Anthropic da povuče najnovije modele, pokrećući debate o AI politici.",
+    imageAlt: "Ilustracija uz članak o zabrani najnovijih Anthropic modela",
+    category: NEWS,
+    readTime: 2,
+    featured: false,
+    publishedOn: "2026-06-22",
+  }),
 ];
 
 const assertUniqueField = (
