@@ -2820,6 +2820,18 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     publishedOn: "2026-06-22",
   }),
+  createPost({
+    id: 220,
+    slug: "zasto-potpuno-autonomni-ai-agenti-jos-uvijek-nisu-spremni",
+    title: "Zašto potpuno autonomni AI agenti još uvijek nisu spremni",
+    description:
+      "Unatoč velikim obećanjima o agentima koji samostalno rješavaju probleme, stvarnost u produkciji je daleko od savršene.",
+    imageAlt: "Ilustracija uz članak o izazovima implementacije AI agenata",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+    publishedOn: "2026-06-22",
+  }),
 ];
 
 const assertUniqueField = (
