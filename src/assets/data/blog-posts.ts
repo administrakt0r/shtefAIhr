@@ -2832,6 +2832,18 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     publishedOn: "2026-06-22",
   }),
+  createPost({
+    id: 221,
+    slug: "zasto-nam-ne-treba-jos-jedan-chatbot",
+    title: "Zašto nam ne treba još jedan prosječan korporativni chatbot",
+    description:
+      "Tvrtke masovno uvode AI chatbotove umjesto da rješavaju prave probleme u svojim proizvodima i uslugama.",
+    imageAlt: "Ilustracija uz članak o problemima s korporativnim chatbotovima",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+    publishedOn: "2026-06-23",
+  }),
 ];
 
 const assertUniqueField = (
