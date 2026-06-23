@@ -2845,6 +2845,19 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     publishedOn: "2026-06-23",
   }),
+  createPost({
+    id: 222,
+    slug: "zasto-ai-alati-ne-rade-kao-u-reklamama",
+    title: "Zašto AI alati u stvarnom radu ne rade kao u reklamama",
+    description:
+      "Unatoč savršenim demo snimkama, umjetna inteligencija u produkciji još uvijek zahtijeva puno ljudske intervencije i pažljivog vođenja.",
+    imageAlt:
+      "Ilustracija razlike između očekivanja i stvarnosti u razvoju softvera s AI alatima",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+    publishedOn: "2026-06-23",
+  }),
 ];
 
 const assertUniqueField = (
