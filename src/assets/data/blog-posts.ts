@@ -2832,6 +2832,19 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     publishedOn: "2026-06-22",
   }),
+  createPost({
+    id: 221,
+    slug: "startup-subquadratic-rjesava-usko-grlo",
+    title: "Startup Subquadratic rješava usko grlo jezičnih modela",
+    description:
+      "Startup iz Miamija najavio je model SubQ koji rješava matematičko usko grlo pomoću rijetke pažnje.",
+    imageAlt:
+      "Apstraktna ilustracija matematičkih inovacija u jezičnim modelima",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+    publishedOn: "2026-06-23",
+  }),
 ];
 
 const assertUniqueField = (
