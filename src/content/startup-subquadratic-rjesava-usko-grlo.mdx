@@ -1,0 +1,36 @@
+## Startup Subquadratic rješava usko grlo jezičnih modela
+
+### Novi model SubQ pokazao je obećavajuće rezultate pomoću rijetke pažnje.
+
+AI startup Subquadratic, sa sjedištem u Miamiju, nedavno je najavio da je riješio matematičko usko grlo koje je godinama kočilo velike jezične modele. Njihov novi model SubQ predstavlja veliki iskorak u rješavanju problema kvadratne ekspanzije, nudeći bržu i jeftiniju obradu podataka uz znatno manju potrošnju energije.
+
+## Ključni detalji
+
+Subquadratic je razvio model pod nazivom SubQ, koji se oslanja na inovativni pristup poznat kao rijetka pažnja ("sparse attention"). Prema tvrtki, SubQ procesira do 12 puta više teksta odjednom u usporedbi s većinom drugih modela. Nedavna nezavisna testiranja koja je provela tvrtka Appen potvrdila su arhitekturu modela.
+
+U testovima brzine, Appen je utvrdio da je SubQ 56 puta brži od modela koji koriste FlashAttention tehniku. Na LiveCodeBench testiranju model je ostvario rezultat od 89,7%, što ga svrstava uz bok drugim vrhunskim modelima za kodiranje.
+
+### Zašto je to važno
+
+Većina današnjih LLM-ova koristi "gustu pažnju" (dense attention), proces unutar neuralnih mreža zvanih transformeri. Gustom pažnjom model uspoređuje svaki token (dio riječi) sa svim ostalim tokenima u tekstu. To dovodi do kvadratne ekspanzije – kada udvostručite broj riječi, broj računanja se učetverostruči, što zahtijeva golemu procesorsku moć.
+
+### Tehnička pozadina
+
+Rijetka pažnja rješava ovaj problem tako što selektivno bira koje će brojeve (tokene) množiti.
+
+- Umjesto uspoređivanja svakog tokena sa svakim drugim, model dinamički bira važne odnose između riječi.
+- SubQ može obraditi ogroman kontekstualni prozor od 6 do 12 milijuna tokena.
+- Prilikom testiranja, model je gotovo savršeno uspješno pronalazio specifične informacije unutar 12 milijuna tokena na "Needle-in-a-Haystack" testu.
+
+## Širi kontekst
+
+Ako Subquadratic doista uspije dokazati dugoročnu održivost ovog modela, to bi moglo u potpunosti promijeniti način na koji se izrađuju veliki jezični modeli. Prelazak s transformera i guste pažnje na modele poput SubQ-a omogućio bi obradu ogromnih baza podataka uz znatno niže troškove, smanjujući tehnološku i financijsku barijeru za napredne AI aplikacije.
+
+## Što slijedi
+
+Trenutno je pristup SubQ modelu ograničen, a deseci tisuća potencijalnih korisnika čekaju u redu. Budući razvoj ovisit će o tome hoće li model uspjeti zadržati ovakve performanse kada postane široko dostupan i kada se suoči s kompleksnim problemima u stvarnom svijetu izvan izoliranih testova.
+
+---
+
+*Izvor: [MIT Technology Review](https://www.technologyreview.com/2026/06/19/1139313/a-startup-claims-it-broke-through-a-bottleneck-thats-holding-back-llms/)*
+*Objavljeno na portalu Umjetna Inteligencija Blog by ShtefAI, autor: Shtef*
