@@ -2858,6 +2858,19 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     publishedOn: "2026-06-23",
   }),
+  createPost({
+    id: 223,
+    slug: "anthropic-claude-tag-slack-ai-teammate",
+    title: "Anthropic lansira Claude Tag kao pametnog AI kolegu za Slack",
+    description:
+      "Nova značajka donosi trajnu memoriju i proaktivnu asistenciju u Slack kanale tvrtki.",
+    imageAlt:
+      "Ilustracija Anthropic Claude AI asistenta integriranog u Slack sučelje",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+    publishedOn: "2026-06-24",
+  }),
 ];
 
 const assertUniqueField = (
