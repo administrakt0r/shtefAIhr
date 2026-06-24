@@ -2871,6 +2871,19 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     publishedOn: "2026-06-24",
   }),
+  createPost({
+    id: 224,
+    slug: "lokalni-ai-modeli-revolucija-privatnosti",
+    title: "Lokalni AI modeli donose pravu revoluciju privatnosti",
+    description:
+      "Dok se industrija fokusira na oblak, prava promjena događa se na našim uređajima gdje korisnici napokon preuzimaju kontrolu nad podacima.",
+    imageAlt:
+      "Ilustracija uz članak: Lokalni AI modeli donose pravu revoluciju privatnosti",
+    category: ANALYSIS,
+    readTime: 3,
+    featured: false,
+    publishedOn: "2026-06-24",
+  }),
 ];
 
 const assertUniqueField = (
