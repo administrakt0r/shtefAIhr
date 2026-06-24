@@ -2884,6 +2884,18 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     publishedOn: "2026-06-24",
   }),
+  createPost({
+    id: 225,
+    slug: "zasto-ai-alati-nece-tako-skoro-zamijeniti-programere",
+    title: "Zašto AI alati neće tako skoro zamijeniti programere",
+    description:
+      "Zašto moderna umjetna inteligencija ne može zamijeniti ljudske softverske inženjere. Analiza razlike između generiranja koda i izgradnje složenih sustava.",
+    imageAlt: "AI robot koji sjedi za računalom pokraj programera",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+    publishedOn: "2026-06-24",
+  }),
 ];
 
 const assertUniqueField = (
