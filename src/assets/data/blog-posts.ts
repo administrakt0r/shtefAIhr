@@ -2896,6 +2896,18 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     publishedOn: "2026-06-24",
   }),
+  createPost({
+    id: 226,
+    slug: "figma-ai-novosti-config-2026",
+    title: "Figma najavila nove AI alate i opcije kodiranja na Configu 2026",
+    description:
+      "Figma predstavlja niz novih AI značajki za lakši rad s kodom i dizajnom na Config 2026 konferenciji.",
+    imageAlt: "Figma Config 2026 prezentacija s fokusom na AI značajke",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+    publishedOn: "2026-06-25",
+  }),
 ];
 
 const assertUniqueField = (
