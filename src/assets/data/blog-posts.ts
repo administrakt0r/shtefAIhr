@@ -2908,6 +2908,18 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     publishedOn: "2026-06-25",
   }),
+  createPost({
+    id: 227,
+    slug: "iluzija-produktivnosti-prava-cijena-ai",
+    title: "Iluzija produktivnosti: Prava cijena umjetne inteligencije u poslu",
+    description:
+      "Analiza kako prekomjerno oslanjanje na AI alate za generiranje koda može stvoriti dugoročni tehnički dug umjesto stvarne produktivnosti.",
+    imageAlt: "Osoba za računalom okružena ekranima punim grešaka u kodu",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+    publishedOn: "2026-06-25",
+  }),
 ];
 
 const assertUniqueField = (
