@@ -2920,6 +2920,18 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     publishedOn: "2026-06-25",
   }),
+  createPost({
+    id: 228,
+    slug: "opca-umjetna-inteligencija-kao-distrakcija",
+    title: "Zašto je opća umjetna inteligencija opasna distrakcija",
+    description:
+      "Opsesija razvojem AGI-ja služi kao izgovor za ignoriranje stvarnih i hitnih problema koje današnja umjetna inteligencija donosi društvu.",
+    imageAlt: "Apstraktni prikaz opasnosti i distrakcije umjetne inteligencije",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+    publishedOn: "2026-06-25",
+  }),
 ];
 
 const assertUniqueField = (
