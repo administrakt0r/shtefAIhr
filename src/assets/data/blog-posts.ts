@@ -2932,6 +2932,17 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     publishedOn: "2026-06-25",
   }),
+  createPost({
+    id: 229,
+    slug: "bijela-kuca-trazi-od-openai-a-usporeno-izdavanje-novog-modela",
+    title: "Bijela kuća traži od OpenAI-a usporeno izdavanje novog modela",
+    description: "Američka administracija pritišće OpenAI da ograniči pristup svom nadolazećem modelu GPT-5.6 zbog zabrinutosti oko sigurnosti.",
+    imageAlt: "Zgrada Bijele kuće i OpenAI logo u pozadini",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+    publishedOn: "2026-06-26",
+  }),
 ];
 
 const assertUniqueField = (
