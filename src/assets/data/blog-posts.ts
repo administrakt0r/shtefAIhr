@@ -2956,6 +2956,19 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     publishedOn: "2026-06-26",
   }),
+  createPost({
+    id: 231,
+    slug: "mit-o-otvorenom-kodu-kako-tehnoloski-divovi-kontroliraju-ai",
+    title: "Mit o otvorenom kodu: Kako tehnološki divovi kontroliraju AI",
+    description:
+      "Analiziramo zašto trenutni open-source AI modeli nisu stvarna demokratizacija tehnologije, već alat za učvršćivanje monopola najvećih korporacija.",
+    imageAlt:
+      "Ilustracija tehnoloških divova koji kontroliraju umjetnu inteligenciju",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+    publishedOn: "2026-06-26",
+  }),
 ];
 
 const assertUniqueField = (
