@@ -2994,6 +2994,18 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     publishedOn: "2026-06-27",
   }),
+  createPost({
+    id: 234,
+    slug: "developer-reality-ai-coding-assistants",
+    title: "Stvarnost AI programiranja: Razbijanje velikih mitova",
+    description:
+      "Marketing obećava da će umjetna inteligencija sama pisati kod. Stvarnost na terenu otkriva drugačiju priču o razvoju softvera.",
+    imageAlt: "AI programiranje mitovi i stvarnost",
+    publishedOn: "2026-06-27",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
