@@ -2969,6 +2969,18 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     publishedOn: "2026-06-26",
   }),
+  createPost({
+    id: 232,
+    slug: "anthropic-mythos-djelomicno-odobren",
+    title: "Američka vlada djelomično ublažila restrikcije za Anthropic Mythos",
+    description:
+      "Anthropicu je ponovno omogućeno pružanje pristupa naprednom AI modelu Mythos 5 za odabrane američke organizacije, no model Fable 5 ostaje nedostupan.",
+    imageAlt: "Ilustracija ublažavanja restrikcija za umjetnu inteligenciju",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+    publishedOn: "2026-06-27",
+  }),
 ];
 
 const assertUniqueField = (
