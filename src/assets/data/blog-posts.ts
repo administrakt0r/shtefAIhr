@@ -2981,6 +2981,19 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     publishedOn: "2026-06-27",
   }),
+  createPost({
+    id: 233,
+    slug: "mit-o-neutralnom-ai-ju",
+    title: "Mit o neutralnom AI-ju: Zašto algoritmi uvijek imaju skriveni cilj",
+    description:
+      "Umjetna inteligencija nije objektivno ogledalo stvarnosti, već sustav vrijednosti onoga tko ju je trenirao. Neutralnost je samo korporativni privid.",
+    imageAlt:
+      "Ilustracija koja prikazuje ljudske ruke kako upravljaju umjetnom inteligencijom",
+    category: ANALYSIS,
+    readTime: 3,
+    featured: false,
+    publishedOn: "2026-06-27",
+  }),
 ];
 
 const assertUniqueField = (
