@@ -3018,6 +3018,18 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     publishedOn: "2026-06-28",
   }),
+  createPost({
+    id: 236,
+    slug: "iluzija-autonomnih-agenata",
+    title: "Velika iluzija autonomnih AI agenata u modernom poslovanju",
+    description:
+      "Marketing obećava radnike bez umora, no stvarni projekti otkrivaju krhke sustave koji zahtijevaju stalni ljudski nadzor.",
+    imageAlt: "Iluzija autonomnih AI agenata",
+    publishedOn: "2026-06-28",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
