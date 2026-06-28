@@ -3006,6 +3006,18 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 235,
+    slug: "openai-limits-gpt-5-6-rollout",
+    title: "OpenAI ograničava pristup GPT-5.6 zbog američke vlade",
+    description:
+      "OpenAI djelomično blokira izdavanje naprednih AI modela na zahtjev američke vlade i uvodi mjere obrane u kibernetičkom prostoru.",
+    imageAlt: "Ilustracija ograničenja pristupa umjetnoj inteligenciji",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+    publishedOn: "2026-06-28",
+  }),
 ];
 
 const assertUniqueField = (
