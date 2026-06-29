@@ -3030,6 +3030,19 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 237,
+    slug: "hp-openai-frontier-partnerstvo",
+    title: "HP i OpenAI sklapaju strateško partnerstvo za AI Frontier",
+    description:
+      "HP proširuje suradnju s OpenAI-jem za implementaciju platforme Frontier diljem kompanije radi optimizacije poslovanja i razvoja softvera.",
+    imageAlt:
+      "Ilustracija strateškog partnerstva između tehnoloških kompanija HP i OpenAI",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+    publishedOn: "2026-06-29",
+  }),
 ];
 
 const assertUniqueField = (
