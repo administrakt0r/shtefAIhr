@@ -3055,6 +3055,18 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 239,
+    slug: "zasto-ai-alati-jos-ne-mogu-zamijeniti-senior-programere",
+    title: "Zašto AI alati još ne mogu zamijeniti senior programere",
+    description:
+      "Analiza zašto umjetna inteligencija ubrzava kodiranje, ali ne može zamijeniti duboko poslovno i inženjersko znanje senior programera.",
+    imageAlt: "AI vs Senior programeri",
+    publishedOn: "2026-06-29",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
