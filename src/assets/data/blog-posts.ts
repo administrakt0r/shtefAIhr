@@ -3043,6 +3043,18 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     publishedOn: "2026-06-29",
   }),
+  createPost({
+    id: 238,
+    slug: "kraj-zlatne-groznice-generativnog-ai-ja",
+    title: "Kraj zlatne groznice generativne umjetne inteligencije",
+    description:
+      "Analiza otrežnjenja na tržištu generativne umjetne inteligencije i prelasku fokusa s razvoja jezičnih modela na integraciju u stvarne poslovne procese.",
+    imageAlt: "Kraj zlatne groznice generativnog AI-ja",
+    publishedOn: "2026-06-29",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
