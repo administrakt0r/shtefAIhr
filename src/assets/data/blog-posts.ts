@@ -3067,6 +3067,18 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 240,
+    slug: "zabluda-o-ai-programerima",
+    title: "Velika zabluda o AI programerima: Tko piše vaš kod?",
+    description:
+      "Mnogi misle da AI samostalno piše kod, no stvarnost je znatno drugačija.",
+    imageAlt: "AI programer zabluda",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+    publishedOn: "2026-06-30",
+  }),
 ];
 
 const assertUniqueField = (
