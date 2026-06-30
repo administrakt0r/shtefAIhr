@@ -3079,6 +3079,18 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     publishedOn: "2026-06-30",
   }),
+  createPost({
+    id: 241,
+    slug: "zasto-nas-san-o-agi-ju-ometa",
+    title: "Zašto nas san o AGI-ju ometa u rješavanju stvarnih problema",
+    description:
+      "Opsesija umjetnom općom inteligencijom skriva pravu vrijednost današnjih usko specijaliziranih AI sustava i ometa nas u rješavanju stvarnih problema.",
+    imageAlt: "AGI distrakcija",
+    publishedOn: "2026-06-30",
+    category: ANALYSIS,
+    readTime: 5,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
