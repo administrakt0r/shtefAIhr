@@ -3103,6 +3103,18 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     publishedOn: "2026-07-01",
   }),
+  createPost({
+    id: 243,
+    slug: "kraj-opsesije-parametrima",
+    title: "Kraj opsesije parametrima: Zašto veći AI modeli nisu uvijek bolji",
+    description:
+      "Utrka u broju parametara gubi na važnosti. Manji, specijalizirani AI modeli trenirani na vrhunskim podacima sve češće nadmašuju opće gigante u stvarnim primjenama.",
+    imageAlt: "AI arhitektura i optimizacija modela",
+    category: ANALYSIS,
+    readTime: 3,
+    featured: false,
+    publishedOn: "2026-07-01",
+  }),
 ];
 
 const assertUniqueField = (
