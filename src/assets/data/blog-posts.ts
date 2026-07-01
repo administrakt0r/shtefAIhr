@@ -3091,6 +3091,18 @@ export const blogPosts: BlogPost[] = [
     readTime: 5,
     featured: false,
   }),
+  createPost({
+    id: 242,
+    slug: "anthropic-claude-fable-5-se-vraca",
+    title: "Anthropicov model Claude Fable 5 ponovno dostupan korisnicima",
+    description:
+      "Nakon pregovora s Trumpovom administracijom, ukinuta su izvozna ograničenja i Anthropic vraća Fable 5 u javnu upotrebu s boljim sigurnosnim mjerama.",
+    imageAlt: "Anthropic Claude AI model",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+    publishedOn: "2026-07-01",
+  }),
 ];
 
 const assertUniqueField = (
