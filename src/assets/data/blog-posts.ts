@@ -3115,6 +3115,18 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     publishedOn: "2026-07-01",
   }),
+  createPost({
+    id: 244,
+    slug: "istina-o-ai-kodiranju",
+    title: "Stvarnost razvoja: Zašto AI alati još ne pišu kod sami",
+    description:
+      "Umjetna inteligencija drastično mijenja način na koji pišemo kod, ali alati i dalje ne mogu zamijeniti ljudsko razumijevanje složenih sustava.",
+    imageAlt: "Programer koji analizira kod uz pomoć umjetne inteligencije",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+    publishedOn: "2026-07-01",
+  }),
 ];
 
 const assertUniqueField = (
