@@ -3127,6 +3127,17 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     publishedOn: "2026-07-01",
   }),
+  createPost({
+    id: 245,
+    slug: "gemini-spark-mac",
+    title: "Googleov AI agent Gemini Spark stigao na Mac",
+    description: "Google je lansirao svoj AI agent Gemini Spark za Mac, donoseći podršku za lokalne datoteke i integraciju s alatima poput Tasks i Keep.",
+    imageAlt: "Google Gemini Spark na Mac računalu",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+    publishedOn: "2026-07-02",
+  }),
 ];
 
 const assertUniqueField = (
