@@ -3127,6 +3127,18 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     publishedOn: "2026-07-01",
   }),
+  createPost({
+    id: 245,
+    slug: "iluzija-produktivnosti-ai-koda",
+    title: "Iluzija produktivnosti: Više AI koda ne znači i bolji softver",
+    description:
+      "Alati za generiranje koda ubrzavaju pisanje, ali dugoročno stvaraju tehnički dug. Zašto brzina stvaranja problema sada nadmašuje brzinu njihovog razumijevanja.",
+    imageAlt: "Kompleksna mreža koda koja ilustrira tehnički dug",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+    publishedOn: "2026-07-02",
+  }),
 ];
 
 const assertUniqueField = (
