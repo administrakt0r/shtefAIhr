@@ -3139,6 +3139,19 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     publishedOn: "2026-07-02",
   }),
+  createPost({
+    id: 246,
+    slug: "agi-zabluda-opasna-distrakcija",
+    title: "AGI zabluda: Zašto je opća inteligencija danas opasna distrakcija",
+    description:
+      "Opsesija umjetnom općom inteligencijom (AGI) skreće pozornost sa stvarnih izazova i rizika današnje AI tehnologije.",
+    imageAlt:
+      "Apstraktna ilustracija koja prikazuje kompleksnost AI tehnologije nasuprot iluziji AGI-ja",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+    publishedOn: "2026-07-02",
+  }),
 ];
 
 const assertUniqueField = (
