@@ -3152,6 +3152,19 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     publishedOn: "2026-07-02",
   }),
+  createPost({
+    id: 247,
+    slug: "ai-agenti-nova-birokracija",
+    title: "Iluzija efikasnosti: AI agenti kao nova birokracija",
+    description:
+      "Autonomni AI agenti obećavali su nam slobodu od repetitivnih zadataka, no u stvarnosti su stvorili novi sloj kompleksnosti koji zahtijeva konstantan nadzor i održavanje.",
+    imageAlt:
+      "Apstraktni prikaz AI agenata kao beskonačnog niza zupčanika u birokratskom stroju",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+    publishedOn: "2026-07-03",
+  }),
 ];
 
 const assertUniqueField = (
