@@ -3165,6 +3165,18 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     publishedOn: "2026-07-03",
   }),
+  createPost({
+    id: 248,
+    slug: "istina-o-ai-programiranju",
+    title: "Istina o AI programiranju: Marketing nasuprot stvarnosti",
+    description:
+      "Zašto AI alati za generiranje koda neće tako skoro zamijeniti prave softverske inženjere i koje su opasnosti slijepog vjerovanja marketingu.",
+    imageAlt: "Ilustracija programera i umjetne inteligencije",
+    publishedOn: "2026-07-03",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
