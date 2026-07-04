@@ -3177,6 +3177,19 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 249,
+    slug: "google-deepmind-i-a24-najavili-partnerstvo",
+    title: "Google DeepMind i A24 najavili su suradnju",
+    description:
+      "Google DeepMind i filmski studio A24 pokreću dugoročnu istraživačku suradnju za razvoj novih tehnologija u industriji zabave.",
+    imageAlt:
+      "Ilustracija uz članak: Google DeepMind i A24 najavili su suradnju u istraživanju",
+    category: NEWS,
+    readTime: 2,
+    featured: false,
+    publishedOn: "2026-07-04",
+  }),
 ];
 
 const assertUniqueField = (
