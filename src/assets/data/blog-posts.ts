@@ -3190,6 +3190,19 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     publishedOn: "2026-07-04",
   }),
+  createPost({
+    id: 250,
+    title: "Zašto AI modeli ne mogu magično popraviti vaše loše podatke",
+    slug: "zasto-ai-modeli-ne-mogu-popraviti-lose-podatke",
+    description:
+      "AI modeli ne mogu popraviti loše i neuredne podatke, stoga se tvrtke trebaju prvo posvetiti osiguravanju kvalitetnih baza podataka prije investiranja u skupe algoritme.",
+    imageAlt:
+      "Ilustracija uz članak: Zašto AI modeli ne mogu magično popraviti vaše loše podatke",
+    publishedOn: "2026-07-04",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
