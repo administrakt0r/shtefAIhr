@@ -3203,6 +3203,19 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+
+  createPost({
+    id: 251,
+    slug: "ai-alati-za-programere-stvarnost",
+    title: "AI alati u programiranju: Puno buke, premalo pravih rješenja",
+    description:
+      "Analiza raskoraka između marketinških obećanja AI alata i stvarne prakse programiranja.",
+    imageAlt: "Ilustracija uz članak o AI alatima za programere",
+    publishedOn: "2026-07-04",
+    category: ANALYSIS,
+    readTime: 5,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
