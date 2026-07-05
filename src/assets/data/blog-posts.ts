@@ -3224,8 +3224,20 @@ export const blogPosts: BlogPost[] = [
       "Kineski tehnološki gigant Alibaba zabranjuje zaposlenicima korištenje Anthropicovog alata Claude Code od 10. srpnja.",
     imageAlt: "Ilustracija zabrane alata Claude Code",
     category: NEWS,
-    publishedOn: '2026-07-05',
+    publishedOn: "2026-07-05",
     readTime: 3,
+    featured: false,
+  }),
+  createPost({
+    id: 253,
+    slug: "kraj-vrtoglavog-rasta-llm-ova-najbolja-vijest",
+    title: "Kraj vrtoglavog rasta LLM-ova je zapravo dobra stvar",
+    description:
+      "Usporavanje u razvoju velikih jezičnih modela prisiljava industriju da se okrene optimizaciji, pouzdanosti i pronalaženju prave vrijednosti umjesto utrke za parametrima.",
+    imageAlt: "Ilustracija usporavanja rasta LLM-ova",
+    category: ANALYSIS,
+    publishedOn: "2026-07-05",
+    readTime: 4,
     featured: false,
   }),
 ];
