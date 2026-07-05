@@ -3240,6 +3240,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 254,
+    slug: "zasto-ai-alati-ne-mogu-popraviti-los-proces-razvoja",
+    title: "Zašto AI alati ne mogu popraviti loš proces razvoja",
+    description: "Umjetna inteligencija može brzo generirati kod, ali ne može riješiti problem loše komunikacije i nejasnih zahtjeva u razvoju softvera.",
+    imageAlt: "Ilustracija kaotičnog procesa razvoja softvera",
+    category: ANALYSIS,
+    publishedOn: "2026-07-05",
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
