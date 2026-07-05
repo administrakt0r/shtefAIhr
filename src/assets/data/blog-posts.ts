@@ -3216,6 +3216,18 @@ export const blogPosts: BlogPost[] = [
     readTime: 5,
     featured: false,
   }),
+  createPost({
+    id: 252,
+    slug: "alibaba-bans-claude-code",
+    title: "Alibaba zabranila zaposlenicima korištenje alata Claude Code",
+    description:
+      "Kineski tehnološki gigant Alibaba zabranjuje zaposlenicima korištenje Anthropicovog alata Claude Code od 10. srpnja.",
+    imageAlt: "Ilustracija zabrane alata Claude Code",
+    category: NEWS,
+    publishedOn: '2026-07-05',
+    readTime: 3,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
