@@ -3276,6 +3276,18 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 257,
+    slug: "ai-alati-nisu-junior-inzenjeri",
+    title: "AI alati za programiranje nisu vaši novi junior inženjeri",
+    description:
+      "Iako AI ubrzava pisanje koda, on ne može zamijeniti razumijevanje poslovnog konteksta i sposobnost rješavanja pravih inženjerskih problema.",
+    imageAlt: "Prikaz koda s oznakama grešaka",
+    category: ANALYSIS,
+    publishedOn: "2026-07-06",
+    readTime: 3,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
