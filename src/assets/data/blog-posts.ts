@@ -3244,7 +3244,8 @@ export const blogPosts: BlogPost[] = [
     id: 254,
     slug: "zasto-ai-alati-ne-mogu-popraviti-los-proces-razvoja",
     title: "Zašto AI alati ne mogu popraviti loš proces razvoja",
-    description: "Umjetna inteligencija može brzo generirati kod, ali ne može riješiti problem loše komunikacije i nejasnih zahtjeva u razvoju softvera.",
+    description:
+      "Umjetna inteligencija može brzo generirati kod, ali ne može riješiti problem loše komunikacije i nejasnih zahtjeva u razvoju softvera.",
     imageAlt: "Ilustracija kaotičnog procesa razvoja softvera",
     category: ANALYSIS,
     publishedOn: "2026-07-05",
@@ -3255,11 +3256,24 @@ export const blogPosts: BlogPost[] = [
     id: 255,
     slug: "midjourney-trazi-od-hollywooda-detalje-o-koristenju-ai-ja",
     title: "Midjourney traži od Hollywooda detalje o korištenju AI-ja",
-    description: "Kao dio tekućeg pravnog spora, Midjourney zahtijeva od velikih filmskih studija da otkriju kako interno koriste umjetnu inteligenciju.",
+    description:
+      "Kao dio tekućeg pravnog spora, Midjourney zahtijeva od velikih filmskih studija da otkriju kako interno koriste umjetnu inteligenciju.",
     imageAlt: "Ilustracija Midjourneyja i Hollywoodskih studija",
     category: NEWS,
     publishedOn: "2026-07-06",
     readTime: 3,
+    featured: false,
+  }),
+  createPost({
+    id: 256,
+    slug: "umjetna-inteligencija-ne-moze-zamijeniti-arhitekte-softvera",
+    title: "Umjetna inteligencija ne može zamijeniti arhitekte softvera",
+    description:
+      "Dok AI alati ubrzavaju pisanje izoliranog koda, sposobnost dizajniranja i razumijevanja složenih arhitektura ostaje isključivo ljudska domena.",
+    imageAlt: "Apstraktni prikaz softverske arhitekture naspram linija koda",
+    category: ANALYSIS,
+    publishedOn: "2026-07-06",
+    readTime: 4,
     featured: false,
   }),
 ];
