@@ -3251,6 +3251,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 255,
+    slug: "midjourney-trazi-od-hollywooda-detalje-o-koristenju-ai-ja",
+    title: "Midjourney traži od Hollywooda detalje o korištenju AI-ja",
+    description: "Kao dio tekućeg pravnog spora, Midjourney zahtijeva od velikih filmskih studija da otkriju kako interno koriste umjetnu inteligenciju.",
+    imageAlt: "Ilustracija Midjourneyja i Hollywoodskih studija",
+    category: NEWS,
+    publishedOn: "2026-07-06",
+    readTime: 3,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
