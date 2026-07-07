@@ -3300,6 +3300,19 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false,
   }),
+  createPost({
+    id: 259,
+    slug: "iluzija-ai-produktivnosti",
+    title: "Iluzija AI produktivnosti: Zašto zapravo gubimo vrijeme",
+    description:
+      "Analiza kako su alati koji su trebali ubrzati rad inženjerima stvorili nove slojeve kompleksnosti. Otkrijte zašto brzina generiranja koda ne znači pravu produktivnost.",
+    imageAlt:
+      "Ilustracija programera koji analizira kompleksni AI generirani kod",
+    publishedOn: "2026-07-07",
+    category: ANALYSIS,
+    readTime: 5,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
