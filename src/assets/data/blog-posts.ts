@@ -3288,6 +3288,18 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false,
   }),
+  createPost({
+    id: 258,
+    slug: "microsoft-layoffs-xbox-sales",
+    title: "Microsoft otpušta 4.800 radnika zbog promjena koje donosi AI",
+    description:
+      "Microsoft najavljuje nova otpuštanja u odjelima prodaje i Xboxa uslijed restrukturiranja i prilagodbe poslovanja utjecaju umjetne inteligencije.",
+    imageAlt: "Zgrada sjedišta tvrtke Microsoft s logotipom",
+    category: NEWS,
+    publishedOn: "2026-07-07",
+    readTime: 3,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
