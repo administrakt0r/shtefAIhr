@@ -3288,6 +3288,19 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false,
   }),
+  createPost({
+    id: 258,
+    title: "AI alati za programiranje stvaraju privid autonomije",
+    slug: "ai-alati-za-programiranje-stvaraju-privid-autonomije",
+    description:
+      "Iako ubrzavaju rutinske zadatke, moderni AI asistenti zapravo povećavaju našu ovisnost o tuđem kodu i skrivenim odlukama modela.",
+    imageAlt:
+      "Ilustracija uz članak: AI alati za programiranje stvaraju privid autonomije",
+    publishedOn: "2026-07-07",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
