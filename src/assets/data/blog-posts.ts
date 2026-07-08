@@ -3313,6 +3313,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 5,
     featured: false,
   }),
+  createPost({
+    id: 260,
+    slug: "meta-predstavila-muse-image-ai-generator",
+    title: "Meta predstavila Muse Image AI generator s kontroverznom značajkom",
+    description: "Novi Metin AI alat Muse Image omogućuje korisnicima stvaranje slika od fotografija drugih ljudi bez njihovog znanja, što izaziva veliku zabrinutost za privatnost.",
+    imageAlt: "Logotip Mete ispred apstraktne pozadine",
+    category: NEWS,
+    publishedOn: "2026-07-08",
+    readTime: 3,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
