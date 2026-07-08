@@ -3324,6 +3324,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false,
   }),
+  createPost({
+    id: 261,
+    slug: "mit-o-skorom-dolasku-agi-ja",
+    title: "Mit o skorom dolasku AGI-ja: Zašto smo još uvijek jako daleko",
+    description: "Analiza prevladavajućeg narativa o skorom dolasku opće umjetne inteligencije i zašto je stvarni AGI i dalje jako daleko od realizacije.",
+    imageAlt: "Apstraktna ilustracija umjetne inteligencije i ljudskog mozga",
+    publishedOn: "2026-07-08",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
