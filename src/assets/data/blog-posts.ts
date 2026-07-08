@@ -3317,7 +3317,8 @@ export const blogPosts: BlogPost[] = [
     id: 260,
     slug: "meta-predstavila-muse-image-ai-generator",
     title: "Meta predstavila Muse Image AI generator s kontroverznom značajkom",
-    description: "Novi Metin AI alat Muse Image omogućuje korisnicima stvaranje slika od fotografija drugih ljudi bez njihovog znanja, što izaziva veliku zabrinutost za privatnost.",
+    description:
+      "Novi Metin AI alat Muse Image omogućuje korisnicima stvaranje slika od fotografija drugih ljudi bez njihovog znanja, što izaziva veliku zabrinutost za privatnost.",
     imageAlt: "Logotip Mete ispred apstraktne pozadine",
     category: NEWS,
     publishedOn: "2026-07-08",
@@ -3328,8 +3329,21 @@ export const blogPosts: BlogPost[] = [
     id: 261,
     slug: "mit-o-skorom-dolasku-agi-ja",
     title: "Mit o skorom dolasku AGI-ja: Zašto smo još uvijek jako daleko",
-    description: "Analiza prevladavajućeg narativa o skorom dolasku opće umjetne inteligencije i zašto je stvarni AGI i dalje jako daleko od realizacije.",
+    description:
+      "Analiza prevladavajućeg narativa o skorom dolasku opće umjetne inteligencije i zašto je stvarni AGI i dalje jako daleko od realizacije.",
     imageAlt: "Apstraktna ilustracija umjetne inteligencije i ljudskog mozga",
+    publishedOn: "2026-07-08",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
+  createPost({
+    id: 262,
+    slug: "zasto-ai-jos-uvijek-nece-zamijeniti-programere",
+    title: "Zašto AI još uvijek neće u potpunosti zamijeniti programere",
+    description:
+      "Realnost pisanja koda s umjetnom inteligencijom daleko je od marketinških obećanja. AI je koristan alat, ali nije spreman preuzeti upravljač.",
+    imageAlt: "Programer radi za računalom dok AI asistent pomaže",
     publishedOn: "2026-07-08",
     category: ANALYSIS,
     readTime: 4,
