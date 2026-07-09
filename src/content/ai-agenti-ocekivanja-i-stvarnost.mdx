@@ -1,0 +1,29 @@
+## Autonomni AI agenti: Očekivanja naspram surove stvarnosti
+
+### Zašto marketing obećava magiju, a developeri svakodnevno rješavaju halucinacije i beskonačne petlje.
+
+Kada slušamo najave velikih tehnoloških tvrtki i gledamo pomno režirane prezentacije, budućnost zvuči jednostavno i primamljivo: autonomni AI agenti će sami obavljati naše svakodnevne zadatke. Obećava nam se svijet u kojem će ti virtualni suradnici rezervirati letove, voditi složene poslovne projekte, pisati produkcijski kod i pregovarati s dobavljačima dok mi mirno spavamo ili se bavimo "kreativnijim" radom. Zvuči kao čista magija, rješenje za sve naše probleme s produktivnošću. Međutim, ako pitate bilo kojeg softverskog inženjera koji zapravo pokušava izgraditi takve sustave i staviti ih u funkciju, priča je znatno, znatno drugačija. Između impresivnog demo prikaza na pozornici u kontroliranim uvjetima i stabilnog, pouzdanog sustava u stvarnoj produkciji zjapi ogroman inženjerski jaz koji se ne može premostiti samo dodavanjem veće računalne moći.
+
+## Prevladavajuća priča
+
+Glavna priča koja prevladava u tehnološkim medijima, na društvenim mrežama i u blještavim korporativnim prezentacijama jest da su potpuno autonomni agenti već tu, spremni za rad, i da su sposobni za samostalno rješavanje kompleksnih problema s minimalnim ili nikakvim ljudskim nadzorom. Obećava se da će jedan jednostavan, dobro napisan "prompt" na prirodnom jeziku biti sasvim dovoljan da agent samostalno istraži nepoznatu temu na internetu, sintetizira ogromne količine podataka, napiše detaljan i točan izvještaj, komunicira s kolegama putem e-mailova i na kraju bez greške ažurira centralnu bazu podataka tvrtke. Prema tom optimističnom narativu, jedino što nas trenutno dijeli od te utopijske potpune automatizacije je samo malo brži hardver, mrvicu bolja optimizacija i, naravno, iduća verzija temeljnog modela koja izlazi za nekoliko mjeseci.
+
+### Zašto je ta priča pogrešna ili nepotpuna
+
+Ova nevjerojatno pojednostavljena priča potpuno zanemaruje ključni, temeljni problem današnjih velikih jezičnih modela (LLM-ova) na kojima se ti agenti grade: oni su po svojoj prirodi stohastički sustavi, a ne strogo deterministički. To jednostavno znači da potpuno isti ulaz (prompt) neće uvijek i nužno dati isti izlaz (odgovor ili akciju). Kada gradite složen sustav koji zahtijeva dug lanac od deset, dvadeset ili više uzastopnih i međusobno ovisnih odluka (što je sasvim uobičajeno za autonomnog agenta koji rješava stvarni problem), i ako je preciznost svakog pojedinog koraka čak i vrlo visokih 95%, ukupna matematička šansa za uspješan i besprijekoran prolaz kroz cijeli zadatak drastično pada. Greške se akumuliraju i kaskadno šire kroz sustav.
+
+U stvarnosti razvojnog okruženja, autonomni agenti vrlo često i lako ulaze u beskonačne petlje iz kojih se ne znaju izvući. Oni nerijetko haluciniraju i izmišljaju pozive prema vanjskim alatima i programskim sučeljima (API-jima) koji uopće ne postoje, ili se jednostavno "izgube" u vlastitom kontekstu nakon previše odrađenih koraka i zaborave koji je uopće bio početni cilj. Oporavak od takve greške zahtijeva iznimno kompleksan, ručno pisan zaštitni kod i robusne "human-in-the-loop" mehanizme. U tim sustavima, čovjek mora pregledati, odobriti ili ispraviti akciju prije nego što ona prouzroči trajnu štetu. Pravi, svakodnevni inženjering AI agenata trenutno se neusporedivo više bavi kontroliranjem potencijalne štete, obuzdavanjem halucinacija i strogim ograničavanjem slobode modela, nego njegovim oslobađanjem i prepuštanjem donošenja odluka.
+
+## Posljedice u stvarnom svijetu
+
+Posljedice ovog očitog jaza između napuhanog hypea i surove inženjerske stvarnosti već se jasno vide na tržištu. Mnogi startupi koji su prije samo godinu dana glasno obećavali potpunu i bezuvjetnu autonomiju sada vrlo tiho i bez mnogo pompe prelaze na sigurnije "kopilot" i "asistent" modele. U tim modelima, umjetna inteligencija samo sugerira i asistira, a čovjek i dalje čvrsto drži volan i preuzima konačnu odgovornost. Velike kompanije koje su hrabro investirale milijune dolara u potpuno autonomne sustave korisničke podrške ili interne procese sada bolno shvaćaju da su im troškovi održavanja, nadzora i ispravljanja grešaka takvih sustava, zbog njihove nepredvidljive prirode, često viši od tradicionalnih rješenja.
+
+Stvarni dobitnici u ovoj trenutnoj fazi tehnološkog razvoja nisu oni koji i dalje uporno prodaju magiju i nemoguća obećanja. Dobitnici su oni pragmatični inženjeri i tvrtke koji grade pouzdane, robusne "zaštitne ograde" (guardrails) oko AI sustava. Napredni alati za precizno praćenje, dubinsko debagiranje, testiranje i strogu kontrolu izlaza modela postaju apsolutno najvredniji i najvažniji dio moderne softverske infrastrukture. Gubitnici su, s druge strane, svi oni menadžeri i tvrtke koji su naivno povjerovali da već danas mogu otpustiti svoje radnike i zamijeniti njihovo znanje i iskustvo s nekoliko brzopletih skripti koje u pozadini samo pozivaju GPT-4.
+
+## Završni stav
+
+Autonomni AI agenti su nesumnjivo fascinantan koncept koji nosi ogroman potencijal za budućnost, ali trenutačno ova tehnologija jednostavno nije dovoljno zrela, stabilna ni pouzdana da bi je se moglo ostaviti bez strogog ljudskog nadzora u bilo kakvim kritičnim, osjetljivim ili poslovno važnim procesima. Do prave, sigurne autonomije nećemo doći samo pukim skaliranjem postojećih modela i dodavanjem milijardi novih parametara. Trebaju nam fundamentalno novi znanstveni pristupi pouzdanosti, verifikaciji izlaza i logičkom zaključivanju strojeva. Do tada, pristup u kojem je čovjek ključni dio procesa ("human-in-the-loop") nije samo neka privremena, neugodna mjera koju moramo trpjeti – to je trenutno jedini stvarni način na koji ova tehnologija danas zapravo i sigurno radi u praksi.
+
+---
+
+*Komentar objavljen na portalu Umjetna Inteligencija Blog by ShtefAI, autor: Shtef*
