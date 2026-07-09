@@ -3349,6 +3349,19 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 263,
+    title: "Kraj prompt inženjerstva: Prirodnija komunikacija",
+    slug: "kraj-prompt-inzenjerstva",
+    category: ANALYSIS,
+    publishedOn: "2026-07-09",
+    readTime: 4,
+    featured: false,
+    description:
+      "Zašto je opsjednutost savršenim upitima samo prolazan trend i kako se AI prilagođava nama.",
+    imageAlt:
+      "Apstraktni prikaz prirodne komunikacije s umjetnom inteligencijom",
+  }),
 ];
 
 const assertUniqueField = (
