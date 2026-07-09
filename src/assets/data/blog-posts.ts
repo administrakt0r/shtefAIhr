@@ -3349,6 +3349,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 263,
+    slug: 'ai-agenti-ocekivanja-i-stvarnost',
+    title: 'Autonomni AI agenti: Očekivanja naspram surove stvarnosti',
+    description: 'Razmak između marketinških obećanja o potpuno autonomnim AI agentima i stvarne inženjerske borbe s halucinacijama.',
+    imageAlt: 'Ilustracija AI robota zapletenog u kod naspram savršene projekcije',
+    publishedOn: '2026-07-09',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
+  }),
 ];
 
 const assertUniqueField = (
