@@ -3373,6 +3373,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 265,
+    slug: 'stvarnost-iza-ai-alata',
+    title: 'Stvarnost iza AI alata za programere: Manje magije, više posla',
+    description: 'Umjetna inteligencija ne piše gotov softver, nego zahtijeva novu razinu inženjerske discipline. Saznajte zašto AI asistenti ne smanjuju potrebu za znanjem.',
+    imageAlt: 'Ilustracija programera koji radi s AI asistentom',
+    publishedOn: '2026-07-10',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
+  }),
 ];
 
 const assertUniqueField = (
