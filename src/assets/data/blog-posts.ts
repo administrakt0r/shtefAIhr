@@ -3361,6 +3361,18 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     slug: "openai-predstavio-gpt-5-6-modele",
   }),
+  createPost({
+    id: 264,
+    slug: "generativna-ai-alat-svrha",
+    title: "Generativna AI: Alat u potrazi za svrhom",
+    description:
+      "Tvrtke masovno integriraju AI u svaki mogući proizvod, zaboravljajući ključno pitanje: rješava li to uopće stvarni problem korisnika?",
+    imageAlt: "Pametni hladnjak s AI asistentom i frustrirani korisnik",
+    publishedOn: "2026-07-10",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
