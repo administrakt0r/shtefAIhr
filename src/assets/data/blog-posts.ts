@@ -3349,6 +3349,18 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 263,
+    title: "OpenAI predstavio novu obitelj modela GPT-5.6",
+    description:
+      "OpenAI lansira GPT-5.6 obitelj modela koja uključuje Sol, Terra i Luna varijante.",
+    imageAlt: "Ilustracija umjetne inteligencije i OpenAI logotipa",
+    publishedOn: "2026-07-10",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+    slug: "openai-predstavio-gpt-5-6-modele",
+  }),
 ];
 
 const assertUniqueField = (
