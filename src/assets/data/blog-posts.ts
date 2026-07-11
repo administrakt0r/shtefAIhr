@@ -3395,6 +3395,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false,
   }),
+  createPost({
+    id: 267,
+    slug: 'ai-agenti-stvarnost-ili-iluzija',
+    title: 'Suočavanje sa stvarnošću: Iluzija autonomnih agenata u praksi',
+    description: 'Iako nam obećavaju digitalne radnike, AI agenti su danas tek krhke skripte.',
+    imageAlt: 'Ilustracija AI agenata',
+    category: ANALYSIS,
+    publishedOn: '2026-07-11',
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
