@@ -3384,6 +3384,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false
   }),
+  createPost({
+    id: 266,
+    slug: 'apple-tuzi-openai-zbog-krade-poslovnih-tajni',
+    title: 'Apple tuži OpenAI zbog navodne krađe poslovnih tajni',
+    description: 'Apple je podnio tužbu protiv OpenAI-ja, optužujući tvrtku i bivše zaposlenike za krađu povjerljivih informacija i tehnologije.',
+    imageAlt: 'Ilustracija koja simbolizira pravni spor Applea i OpenAI-ja',
+    category: NEWS,
+    publishedOn: '2026-07-11',
+    readTime: 3,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
