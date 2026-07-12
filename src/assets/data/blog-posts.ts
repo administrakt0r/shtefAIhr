@@ -3406,6 +3406,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 268,
+    slug: 'iluzija-brzine-ai-alati-i-juniori',
+    title: 'Iluzija brzine: Kako AI alati maskiraju nedostatak osnova kod juniora',
+    description: 'Oslanjanje mlađih programera na alate za generiranje koda stvara privid produktivnosti i skriva opasan dugoročni tehnički dug.',
+    imageAlt: 'Ilustracija programera i umjetne inteligencije',
+    category: ANALYSIS,
+    readTime: 5,
+    featured: false,
+    publishedOn: '2026-07-12',
+  }),
 ];
 
 const assertUniqueField = (
