@@ -3417,6 +3417,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false,
   }),
+  createPost({
+    id: 269,
+    slug: 'zasto-je-agi-odvracanje-paznje',
+    title: 'Zašto je fiksacija na AGI opasno odvraćanje pažnje',
+    description: 'Slijepa težnja prema umjetnoj općoj inteligenciji zamagljuje stvarne probleme i prilike današnjice. Analiza trenutnih prioriteta.',
+    category: ANALYSIS,
+    imageAlt: 'Umjetna inteligencija iluzija',
+    publishedOn: '2026-07-12',
+    readTime: 3,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
