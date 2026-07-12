@@ -3406,6 +3406,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 268,
+    slug: 'openai-ulazi-u-kucanstva-fokus-na-obitelji',
+    title: 'OpenAI širi ChatGPT na obitelji i kućanstva',
+    description: 'OpenAI zapošljava produkt menadžera za kreiranje iskustava prilagođenih obiteljima i starijim osobama, signalizirajući širenje izvan individualnih korisnika.',
+    category: NEWS,
+    imageAlt: 'OpenAI ChatGPT obitelj',
+    publishedOn: '2026-07-12',
+    readTime: 3,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
