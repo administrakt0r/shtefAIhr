@@ -3428,6 +3428,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false,
   }),
+  createPost({
+    id: 270,
+    slug: 'apple-m7-ultra-ai-cipovi',
+    title: 'Appleov napušteni auto projekt iznjedrio je moćne AI čipove',
+    description: 'Razvoj Appleovog programa autonomne vožnje postavio je temelje za napredni Neural Engine i nadolazeći M7 Ultra čip.',
+    imageAlt: 'Apstraktni prikaz Apple AI procesora',
+    category: NEWS,
+    publishedOn: '2026-07-13',
+    readTime: 3,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
