@@ -3428,6 +3428,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false,
   }),
+  createPost({
+    id: 270,
+    slug: 'ai-alati-za-programiranje-iluzija-brzine',
+    title: 'AI alati za programiranje i iluzija brzine',
+    description: 'Povećana količina koda ne znači nužno i bolji softver, već često donosi znatno veći tehnički dug.',
+    category: ANALYSIS,
+    publishedOn: '2026-07-13',
+    readTime: 4,
+    featured: false,
+    imageAlt: 'AI alati za programiranje i iluzija brzine',
+  }),
 ];
 
 const assertUniqueField = (
