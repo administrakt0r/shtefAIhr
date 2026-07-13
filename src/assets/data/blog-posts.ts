@@ -3439,6 +3439,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false,
   }),
+  createPost({
+    id: 271,
+    slug: 'stvarnost-programiranja-s-ai-alatima',
+    title: 'Stvarnost programiranja s AI alatima: Marketing nasuprot praksi',
+    description: 'Kratki osvrt na to kako se stvarni proces razvoja softvera uz pomoć AI alata razlikuje od marketinških obećanja o potpunoj automatizaciji.',
+    imageAlt: 'Programer gleda u kod uz pomoć umjetne inteligencije',
+    category: ANALYSIS,
+    publishedOn: '2026-07-13',
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
