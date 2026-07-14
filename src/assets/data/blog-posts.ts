@@ -3472,6 +3472,17 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     publishedOn: "2026-07-14",
   }),
+  createPost({
+    id: 274,
+    slug: 'zaboravite-agi-stvarna-vrijednost-uske-primjene',
+    title: 'Zaboravite AGI: Stvarna vrijednost leži u uskoj primjeni',
+    description: 'Opsesija općom umjetnom inteligencijom nas sprječava da prepoznamo potencijal uskih rješenja. Prava vrijednost umjetne inteligencije već se ostvaruje kroz usku specijalizaciju.',
+    imageAlt: 'Umjetna inteligencija kroz usku primjenu u poslovanju i industriji',
+    publishedOn: '2026-07-14',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
+  }),
 ];
 
 const assertUniqueField = (
