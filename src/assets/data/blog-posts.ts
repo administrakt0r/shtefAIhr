@@ -3450,6 +3450,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 272,
+    slug: 'pixverse-serija-c-439-milijuna',
+    title: 'PixVerse prikupio 439 milijuna dolara i premašio valuaciju od 2 milijarde',
+    description: 'Singapurski startup za generiranje videa osigurao je novu rundu financiranja za širenje svojih modela na globalnom tržištu.',
+    imageAlt: 'Ilustracija AI generiranja videa za PixVerse',
+    category: NEWS,
+    publishedOn: '2026-07-14',
+    readTime: 3,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
