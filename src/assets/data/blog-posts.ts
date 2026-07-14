@@ -3461,6 +3461,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false,
   }),
+  createPost({
+    id: 273,
+    slug: "generiranje-koda-nije-inzenjering",
+    title: "AI generiranje koda nije softverski inženjering",
+    description: "Analiza prevladavajućeg narativa da AI alati za pisanje koda mogu zamijeniti prave softverske inženjere i stvarne opasnosti takvog pristupa.",
+    imageAlt: "Generiranje koda i umjetna inteligencija",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+    publishedOn: "2026-07-14",
+  }),
 ];
 
 const assertUniqueField = (
