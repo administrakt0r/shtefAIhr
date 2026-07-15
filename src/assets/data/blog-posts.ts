@@ -3494,6 +3494,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false,
   }),
+  createPost({
+    id: 276,
+    slug: "iluzija-razmisljanja-llm",
+    title: "Iluzija razmišljanja: Zašto jezični modeli zapravo ne misle",
+    description: "Unatoč impresivnim rezultatima, LLM-ovi samo predviđaju sljedeću riječ, bez stvarnog razumijevanja i sposobnosti kognitivne obrade.",
+    imageAlt: "Ilustracija iluzije razmišljanja kod LLM-ova",
+    category: ANALYSIS,
+    publishedOn: "2026-07-15",
+    readTime: 5,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
