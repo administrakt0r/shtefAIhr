@@ -3505,6 +3505,18 @@ export const blogPosts: BlogPost[] = [
     readTime: 5,
     featured: false,
   }),
+  createPost({
+    id: 277,
+    slug: "zasto-je-agi-ometanje",
+    title: "Zašto je priča o općoj umjetnoj inteligenciji samo ometanje",
+    description:
+      "Opsesija budućnošću omogućuje ignoriranje štete koja nastaje danas. Prava opasnost nije u strojevima koji misle, već u onima koji automatiziraju greške.",
+    imageAlt: "Ilustracija utjecaja priče o općoj umjetnoj inteligenciji",
+    publishedOn: "2026-07-15",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
