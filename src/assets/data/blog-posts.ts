@@ -3483,6 +3483,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false
   }),
+  createPost({
+    id: 275,
+    slug: "openais-first-hardware-device",
+    title: "OpenAI-ev prvi hardverski uređaj navodno je pametni zvučnik",
+    description: "OpenAI navodno razvija pametni zvučnik bez ekrana s integriranim AI mogućnostima koji bi trebao postati poput pravog kućnog suputnika.",
+    imageAlt: "Ilustracija uz članak: OpenAI-ev prvi hardverski uređaj navodno je pametni zvučnik",
+    publishedOn: "2026-07-15",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
