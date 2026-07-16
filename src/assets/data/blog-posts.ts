@@ -3528,6 +3528,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false
   }),
+  createPost({
+    id: 279,
+    slug: 'agi-distrakcija-stvarni-problemi',
+    title: 'AGI distrakcija: Zašto propuštamo prave probleme',
+    description: 'Opsesija hipotetskim egzistencijalnim rizicima AGI-ja služi kao štit korporacijama od odgovornosti za stvarnu štetu koju trenutni AI sustavi danas uzrokuju.',
+    imageAlt: 'Apstraktna ilustracija koja prikazuje AGI tehnologiju i distrakciju od stvarnih problema',
+    category: ANALYSIS,
+    publishedOn: '2026-07-16',
+    readTime: 5,
+    featured: false
+  }),
 ];
 
 const assertUniqueField = (
