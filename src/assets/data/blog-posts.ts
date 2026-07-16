@@ -3517,6 +3517,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false,
   }),
+  createPost({
+    id: 278,
+    slug: 'openai-gpt-red',
+    title: 'OpenAI predstavlja GPT-Red za kibernetičku sigurnost',
+    description: 'Novi model djeluje kao super-haker za automatizirano pronalaženje sigurnosnih propusta i obranu drugih AI sustava.',
+    imageAlt: 'Ilustracija kibernetičke sigurnosti i umjetne inteligencije',
+    publishedOn: '2026-07-16',
+    category: NEWS,
+    readTime: 4,
+    featured: false
+  }),
 ];
 
 const assertUniqueField = (
