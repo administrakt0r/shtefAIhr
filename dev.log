@@ -1,0 +1,11 @@
+
+> umjetnainteligencijablog@1.1.0 predev /app
+> pnpm generate:derived
+
+
+> umjetnainteligencijablog@1.1.0 generate:derived /app
+> pnpm generate:post-images && pnpm generate:rss
+
+
+> umjetnainteligencijablog@1.1.0 generate:post-images /app
+> node scripts/generate-post-images.mjs

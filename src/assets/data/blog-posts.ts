@@ -3539,6 +3539,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 5,
     featured: false
   }),
+  createPost({
+    id: 280,
+    slug: 'stvarna-cijena-ai-razvoja',
+    title: 'Stvarnost razvoja: Razlika između AI marketinga i koda',
+    description: 'Marketinške kampanje obećavaju čuda, ali stvarni razvoj umjetne inteligencije je sporiji, skuplji i složeniji.',
+    imageAlt: 'Programer koji radi na složenom kodu za umjetnu inteligenciju',
+    publishedOn: '2026-07-16',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
+  }),
 ];
 
 const assertUniqueField = (
