@@ -3561,6 +3561,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false
   }),
+  createPost({
+    id: 282,
+    slug: 'zasto-ai-nece-pretvoriti-svakoga-u-programera',
+    title: 'Zašto AI neće pretvoriti svakoga u programera',
+    description: 'Umjetna inteligencija olakšava pisanje koda, ali pravi softverski inženjering zahtijeva duboko razumijevanje arhitekture i rješavanja problema.',
+    imageAlt: 'Programer radi na kompleksnoj arhitekturi sustava',
+    publishedOn: '2026-07-17',
+    category: ANALYSIS,
+    readTime: 3,
+    featured: false
+  }),
 ];
 
 const assertUniqueField = (
