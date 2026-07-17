@@ -3550,6 +3550,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false,
   }),
+  createPost({
+    id: 281,
+    title: "AGI: Mit o skoroj svemoći i stvarnost uskih modela",
+    slug: "agi-mit-vs-stvarnost-specijaliziranih-modela",
+    description: "Zašto nas opsesija Općom umjetnom inteligencijom zasljepljuje pred onim što je već tu",
+    category: ANALYSIS,
+    publishedOn: '2026-07-17',
+    imageAlt: "AGI mit i stvarnost uskih modela",
+    readTime: 4,
+    featured: false
+  }),
 ];
 
 const assertUniqueField = (
