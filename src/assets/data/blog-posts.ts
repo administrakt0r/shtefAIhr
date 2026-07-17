@@ -3539,6 +3539,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 5,
     featured: false
   }),
+  createPost({
+    id: 280,
+    title: 'Google Vids uvodi personalizirane AI avatare u Workspace',
+    slug: 'google-vids-now-lets-you-star-in-your-own-ai-videos',
+    description: 'Google je najavio novo ažuriranje za Vids, omogućujući korisnicima izradu vlastitih digitalnih avatara i videozapisa uz pomoć Gemini Omni modela.',
+    imageAlt: 'Google Vids personalizirani AI avatar',
+    category: NEWS,
+    publishedOn: '2026-07-16',
+    readTime: 3,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
