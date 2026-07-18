@@ -3583,6 +3583,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false,
   }),
+  createPost({
+    id: 284,
+    slug: 'ai-agenti-obecanja-naspram-stvarnosti',
+    title: 'AI agenti: Obećanja naspram stvarnosti u tehnološkom svijetu',
+    description: 'Tržište nam obećava potpuno autonomne radnike, no trenutna tehnologija je i dalje daleko od onoga što se prezentira.',
+    imageAlt: 'AI agenti konceptualna ilustracija',
+    publishedOn: '2025-01-26',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
+  }),
 ];
 
 const assertUniqueField = (
