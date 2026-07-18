@@ -3594,6 +3594,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     featured: false
   }),
+  createPost({
+    id: 285,
+    slug: 'ai-alati-za-programere-stvarnost-i-marketing',
+    title: 'AI alati za programere: Između marketinga i stvarne produktivnosti',
+    description: 'Stvarna vrijednost AI pomoćnika leži u rješavanju monotonih zadataka, a ne u potpunoj zamjeni ljudskog inženjerstva.',
+    imageAlt: 'Ilustracija programera i umjetne inteligencije.',
+    publishedOn: '2026-07-18',
+    category: ANALYSIS,
+    readTime: 6,
+    featured: false
+  })
 ];
 
 const assertUniqueField = (
