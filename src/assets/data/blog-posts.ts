@@ -3572,6 +3572,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false
   }),
+  createPost({
+    id: 283,
+    slug: 'tiktok-ai-likeness-detection-tool',
+    title: 'TikTok testira alat za detekciju AI kopija lica',
+    description: 'Nova opcija kreatorima omogućuje otkrivanje i prijavljivanje neovlaštenih deepfake objava na platformi.',
+    imageAlt: 'AI skeniranje lica na telefonu',
+    category: NEWS,
+    publishedOn: '2026-07-17',
+    readTime: 3,
+    featured: false,
+  }),
 ];
 
 const assertUniqueField = (
