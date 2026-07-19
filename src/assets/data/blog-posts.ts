@@ -3626,6 +3626,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 288,
+    slug: 'ai-alati-u-praksi-marketing-protiv-stvarnosti',
+    title: 'AI alati u praksi: Marketing protiv stvarnosti',
+    description: 'Analiziramo stvarno iskustvo razvoja softvera uz pomoć umjetne inteligencije i zašto se marketinška obećanja ne podudaraju sa stvarnošću.',
+    imageAlt: 'Programer radi za računalom okružen hologramima koda i umjetne inteligencije',
+    publishedOn: '2026-07-19',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
