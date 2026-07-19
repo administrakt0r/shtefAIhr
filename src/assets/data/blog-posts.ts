@@ -3615,6 +3615,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 287,
+    slug: 'umjetna-inteligencija-i-kraj-juniora-kakve-poznajemo',
+    title: 'Umjetna inteligencija i stvarni kraj juniora kakve poznajemo',
+    description: 'Generativni modeli ne kradu poslove, već potpuno mijenjaju definiciju početnih pozicija u IT industriji.',
+    imageAlt: 'Ilustracija junior programera i umjetne inteligencije',
+    publishedOn: '2026-07-19',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
