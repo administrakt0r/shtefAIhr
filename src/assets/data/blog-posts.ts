@@ -3604,6 +3604,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 6,
     featured: false
+  }),
+  createPost({
+    id: 286,
+    slug: 'kimi-nova-verzija-ai-modela-iz-kine',
+    title: 'Kineska tvrtka Moonshot AI izbacila novu verziju Kimi modela',
+    description: 'Nova verzija otvorenog koda ponovno potiče rasprave o globalnoj AI utrci i regulacijama.',
+    imageAlt: 'Ilustracija umjetne inteligencije',
+    publishedOn: '2026-07-18',
+    category: NEWS,
+    readTime: 3,
+    featured: false
   })
 ];
 
