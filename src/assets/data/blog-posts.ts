@@ -3637,6 +3637,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 289,
+    slug: 'apple-lawsuit-openai-hardware',
+    title: 'Appleova tužba zbog poslovnih tajni mogla bi odgoditi OpenAI-jeve hardverske planove',
+    description: 'Apple optužuje OpenAI za krađu zaposlenika i povjerljivih informacija, što bi moglo usporiti planove za novi AI hardver.',
+    imageAlt: 'Sudski čekić i logotipi Applea i OpenAI-ja',
+    publishedOn: '2026-07-20',
+    category: NEWS,
+    readTime: 3,
+    featured: false
   })
 ];
 
