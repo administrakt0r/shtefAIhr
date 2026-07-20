@@ -3659,6 +3659,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 291,
+    slug: 'mit-o-autonomnom-programiranju',
+    title: 'Mit o autonomnom programiranju: Stvarnost iza AI alata',
+    description: 'Marketing obećava čaroliju, ali umjetna inteligencija ne može samostalno razumjeti poslovni kontekst i arhitekturu. Pravi inženjerski rad tek počinje.',
+    imageAlt: 'Ilustracija programera i umjetne inteligencije',
+    publishedOn: '2026-07-20',
+    category: ANALYSIS,
+    readTime: 5,
+    featured: false
   })
 ];
 
