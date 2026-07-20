@@ -3648,6 +3648,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 290,
+    slug: 'generativna-ai-i-stvarna-produktivnost',
+    title: 'Generativna umjetna inteligencija i stvarna produktivnost: Kraj osrednjosti',
+    description: 'Alati temeljeni na velikim jezičnim modelima obećavaju eksponencijalni rast produktivnosti, no stvarni rezultati pokazuju drugačiju sliku gdje površno znanje postaje najveći teret.',
+    imageAlt: 'Apstraktni prikaz suradnje ljudskog uma i umjetne inteligencije',
+    publishedOn: '2026-07-20',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
