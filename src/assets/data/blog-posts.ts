@@ -3681,6 +3681,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 293,
+    slug: 'mit-o-zamjeni-programera',
+    title: 'Razotkrivanje mita o AI zamjeni programera',
+    description: 'Zašto veliki jezični modeli neće tako skoro zamijeniti prave inženjere.',
+    imageAlt: 'Ilustracija koja prikazuje odnos između umjetne inteligencije i inženjera u razvoju softvera',
+    publishedOn: '2026-07-21',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
