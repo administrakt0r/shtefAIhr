@@ -3670,6 +3670,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 5,
     featured: false
+  }),
+  createPost({
+    id: 292,
+    slug: 'anthropic-odobrena-nagodba',
+    title: 'Odobrena povijesna nagodba Anthropica od 1,5 milijardi dolara',
+    description: 'Savezni sudac dao je konačno odobrenje za nagodbu u tužbi zbog kršenja autorskih prava u kojoj sudjeluju Anthropic, autori i izdavači.',
+    imageAlt: 'Ilustracija nagodbe i autorskih prava',
+    publishedOn: '2026-07-20',
+    category: NEWS,
+    readTime: 3,
+    featured: false
   })
 ];
 
