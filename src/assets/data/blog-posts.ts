@@ -3692,6 +3692,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 294,
+    slug: 'istina-o-ai-alatima-za-programiranje',
+    title: 'Prava istina o AI alatima u svakodnevnom programiranju',
+    description: 'Umjetna inteligencija ne zamjenjuje programere, već iz temelja mijenja način na koji razvijaju i održavaju softver.',
+    imageAlt: 'Ilustracija programera koji radi u suradnji s umjetnom inteligencijom',
+    publishedOn: '2026-07-21',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
