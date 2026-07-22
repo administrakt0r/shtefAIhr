@@ -3703,6 +3703,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 295,
+    slug: 'zabluda-o-autonomnim-ai-agentima',
+    title: 'Zabluda o autonomnim AI agentima: Zašto je prava autonomija daleko',
+    description: 'Zašto je obećanje o potpunoj samostalnosti AI agenata trenutno neostvariva marketinška iluzija koja ignorira tehničku stvarnost.',
+    imageAlt: 'Ilustracija koja prikazuje odnos između AI agenata i njihovih ljudskih nadzornika',
+    publishedOn: '2026-07-22',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
