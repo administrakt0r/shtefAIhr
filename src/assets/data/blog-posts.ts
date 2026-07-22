@@ -3703,6 +3703,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 295,
+    slug: 'veliki-kontekst-nije-razumijevanje',
+    title: 'Iluzija razumijevanja: Veliki kontekst nije znanje',
+    description: 'Sposobnost modela da primi milijune tokena ne znači razumijevanje, već stvara iluziju inteligencije koja skriva temeljna ograničenja.',
+    imageAlt: 'Ilustracija koja prikazuje apstraktan prikaz ograničenja umjetne inteligencije',
+    publishedOn: '2026-07-22',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
