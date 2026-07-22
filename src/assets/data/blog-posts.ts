@@ -3703,6 +3703,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 295,
+    title: 'Glasine o preuzimanju Physical Intelligencea od strane Anthropica',
+    slug: 'anthropic-physical-intelligence-akvizicija',
+    description: 'Glasine o Anthropicovom preuzimanju startupa Physical Intelligence uzburkale su AI zajednicu, unatoč demantijima.',
+    imageAlt: 'Ilustracija robota s logotipima Anthropica i Physical Intelligencea',
+    category: NEWS,
+    publishedOn: '2026-07-22',
+    readTime: 3,
+    featured: false
   })
 ];
 
