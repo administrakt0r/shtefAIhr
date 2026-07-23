@@ -3725,6 +3725,17 @@ export const blogPosts: BlogPost[] = [
     publishedOn: '2026-07-23',
     readTime: 2,
     featured: false
+  }),
+  createPost({
+    id: 297,
+    slug: 'why-agi-is-a-distraction',
+    title: 'Zašto je AGI zapravo veliko odvlačenje pažnje',
+    description: 'Fiksacija na opću umjetnu inteligenciju skriva stvarne probleme.',
+    imageAlt: 'Apstraktna ilustracija umjetne inteligencije',
+    publishedOn: '2026-07-23',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
