@@ -3714,6 +3714,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 296,
+    slug: 'google-predstavio-nove-gemini-modele-3-6-flash',
+    title: 'Google predstavio nove Gemini modele 3.6 Flash i 3.5 Flash-Lite',
+    description: 'Novi Googleovi modeli donose veću učinkovitost, manju latenciju i niže troškove za razvoj autonomnih AI agenata.',
+    imageAlt: 'Grafički prikaz performansi i brzine novih Gemini AI modela',
+    category: NEWS,
+    publishedOn: '2026-07-23',
+    readTime: 2,
+    featured: false
   })
 ];
 
