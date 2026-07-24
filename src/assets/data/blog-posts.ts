@@ -3747,6 +3747,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 299,
+    slug: 'generativna-ai-kraj-balona-ili-novi-pocetak',
+    title: 'Generativna umjetna inteligencija: Kraj balona ili novi početak?',
+    description: 'Zašto je trenutno usporavanje AI industrije zapravo najbolja stvar koja se mogla dogoditi tržištu i korisnicima.',
+    imageAlt: 'Ilustracija tehnološkog balona i stabilizacije industrije umjetne inteligencije',
+    publishedOn: '2026-07-24',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
