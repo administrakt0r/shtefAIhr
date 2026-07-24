@@ -3758,6 +3758,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 300,
+    slug: 'ai-agenti-u-2026-od-obecanja-do-stvarne-primjene',
+    title: 'AI agenti u 2026. godini: Od velikih obećanja do stvarne primjene',
+    description: 'Analiza zašto općenamjenski AI agenti još uvijek nisu spremni za poslovnu primjenu. Prava vrijednost dolazi iz usko specijaliziranih alata pod ljudskim nadzorom.',
+    imageAlt: 'Ilustracija AI agenata i poslovne primjene',
+    publishedOn: '2026-07-24',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
