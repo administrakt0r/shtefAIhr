@@ -3736,6 +3736,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 298,
+    slug: 'openai-lansirao-health-in-chatgpt',
+    title: 'OpenAI lansirao Health integraciju unutar ChatGPT-a',
+    description: 'OpenAI je za korisnike u SAD-u uveo značajku Health u ChatGPT koja omogućuje sigurno povezivanje Apple Healtha i medicinskih kartona za personalizirane savjete.',
+    imageAlt: 'Ilustracija zdravstvenih podataka integriranih u ChatGPT sučelje',
+    publishedOn: '2026-07-24',
+    category: NEWS,
+    readTime: 3,
+    featured: false
   })
 ];
 
