@@ -3791,6 +3791,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 303,
+    slug: 'ai-alati-ubrzavaju-pisanje-koda-ali-otezavaju-odrzavanje',
+    title: 'AI alati ubrzavaju pisanje koda, ali otežavaju održavanje',
+    description: 'Generativni modeli optimiziraju pisanje novog koda, dok dugoročno održavanje sustava postaje sve veći izazov za inženjere.',
+    imageAlt: 'Ilustracija tehničkog duga i umjetne inteligencije u programiranju',
+    publishedOn: '2026-07-25',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
