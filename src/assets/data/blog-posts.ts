@@ -3780,6 +3780,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 2,
     featured: false
+  }),
+  createPost({
+    id: 302,
+    slug: 'kraj-ere-izoliranih-kodera-komunikacija-kao-glavni-alat',
+    title: 'Kraj ere izoliranih kodera: Komunikacija kao glavni alat programera',
+    description: 'Generativna umjetna inteligencija mijenja prirodu inženjeringa, prebacujući fokus sa sintakse na ljudsku komunikaciju i razumijevanje domene.',
+    imageAlt: 'Ilustracija softverskog inženjera koji komunicira s timom',
+    publishedOn: '2026-07-25',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
