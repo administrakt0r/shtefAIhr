@@ -3769,6 +3769,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 301,
+    slug: 'anthropic-lansirao-opus-5',
+    title: 'Anthropic lansirao Opus 5',
+    description: 'Anthropic je predstavio Opus 5, jeftiniji i manje restriktivan model koji nadmašuje Fable 5 na nizu testova.',
+    imageAlt: 'Apstraktna ilustracija umjetne inteligencije i Anthropic modela',
+    publishedOn: '2026-07-25',
+    category: NEWS,
+    readTime: 2,
+    featured: false
   })
 ];
 
