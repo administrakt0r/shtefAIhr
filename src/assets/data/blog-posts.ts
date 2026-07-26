@@ -3813,6 +3813,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 305,
+    slug: 'ai-generirani-kod-cijena-tehnickog-duga',
+    title: 'AI kodiranje: Iluzija brzine i stvarna cijena tehničkog duga',
+    description: 'Umjetna inteligencija ubrzava pisanje koda, ali stvara neviđenu lavinu dupliciranja koja će dugoročno paralizirati održavanje sustava.',
+    imageAlt: 'AI kodiranje',
+    publishedOn: '2026-07-26',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
