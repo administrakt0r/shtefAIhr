@@ -3824,6 +3824,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 306,
+    slug: 'otvoreni-kod-infrastruktura',
+    title: 'Razvoj AI-ja: Zašto otvoreni kod ne garantira pobjedu',
+    description: 'Dok svi slave otvorene modele, stvarna bitka za umjetnu inteligenciju vodi se oko skupe hardverske infrastrukture.',
+    imageAlt: 'Otvoreni kod i infrastruktura',
+    publishedOn: '2026-07-26',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
