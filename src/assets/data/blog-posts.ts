@@ -3802,6 +3802,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 304,
+    slug: 'ai-data-center-power-problem',
+    title: 'Prekid napajanja razotkrio problem rastućih AI centara',
+    description: 'Pad dalekovoda u blizini Washingtona pokazao je neočekivane učinke rastućih AI podatkovnih centara na električnu mrežu.',
+    imageAlt: 'Električna mreža',
+    publishedOn: '2026-07-26',
+    category: NEWS,
+    readTime: 3,
+    featured: false
   })
 ];
 
