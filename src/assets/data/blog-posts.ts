@@ -3857,6 +3857,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 309,
+    slug: 'ai-alati-odlicni-za-pocetak-losi-za-slozene-probleme',
+    title: 'AI alati su odlični za početak, ali loši za složene probleme',
+    description: 'Zašto je stvarnost programiranja s umjetnom inteligencijom znatno drugačija od marketinških obećanja.',
+    imageAlt: 'Ilustracija programiranja i umjetne inteligencije',
+    publishedOn: '2026-07-27',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
