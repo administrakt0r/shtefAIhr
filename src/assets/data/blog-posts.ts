@@ -3835,6 +3835,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 307,
+    slug: 'hugging-face-ceo-radical-transparency',
+    title: 'Hugging Face traži radikalnu transparentnost od OpenAI-ja',
+    description: 'CEO Hugging Facea traži da OpenAI objavi detalje napada njihovog autonomnog agenta.',
+    imageAlt: 'Ilustracija kibernetičke sigurnosti i umjetne inteligencije',
+    publishedOn: '2026-07-27',
+    category: NEWS,
+    readTime: 3,
+    featured: false
   })
 ];
 
