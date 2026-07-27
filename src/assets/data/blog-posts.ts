@@ -3846,6 +3846,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 308,
+    slug: 'transparentnost-autonomnih-agenata',
+    title: 'Transparentnost autonomnih agenata mora biti standard',
+    description: 'Zašto tajnost oko incidenata s umjetnom inteligencijom dugoročno šteti cijeloj industriji.',
+    imageAlt: 'Ilustracija transparentnosti sustava umjetne inteligencije',
+    publishedOn: '2026-07-27',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
