@@ -3868,6 +3868,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 310,
+    slug: 'vodeci-ai-modeli-pokazuju-ljevicarske-tendencije',
+    title: 'Vodeći AI modeli pokazuju izražene ljevičarske tendencije',
+    description: 'Istraživanje Unslopa otkriva da gotovo svi vodeći AI modeli na Political Compass testu pokazuju pristranost prema libertarijansko-lijevom kvadrantu.',
+    imageAlt: 'Ilustracija AI modela na političkom kompasu',
+    publishedOn: '2026-07-28',
+    category: NEWS,
+    readTime: 2,
+    featured: false
   })
 ];
 
