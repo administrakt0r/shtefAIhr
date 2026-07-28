@@ -3890,6 +3890,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 5,
     featured: false
+  }),
+  createPost({
+    id: 312,
+    slug: 'zabluda-o-kreativnosti-zasto-generativni-modeli-poticu-prosjecnost',
+    title: 'Zabluda o kreativnosti: Zašto generativni modeli potiču prosječnost',
+    description: 'Umjetna inteligencija analizira postojeće uzorke i nudi statistički prosjek. Zato njena masovna primjena u pisanju i dizajnu vodi do homogene prosječnosti.',
+    imageAlt: 'Ilustracija uniformiranog digitalnog sadržaja i autentične ljudske kreativnosti',
+    publishedOn: '2026-07-28',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
