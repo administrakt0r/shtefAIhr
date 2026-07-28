@@ -3879,6 +3879,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 2,
     featured: false
+  }),
+  createPost({
+    id: 311,
+    slug: 'generiranje-koda-pretvara-programere-u-revizore',
+    title: 'Generiranje koda pretvara programere u revizore tuđeg koda',
+    description: 'Umjesto da rješavamo složene arhitektonske probleme, sve više vremena provodimo ispravljajući sitne greške koje stvaraju alati temeljeni na jezičnim modelima.',
+    imageAlt: 'Ilustracija programera koji analizira generirani kod',
+    publishedOn: '2026-07-28',
+    category: ANALYSIS,
+    readTime: 5,
+    featured: false
   })
 ];
 
