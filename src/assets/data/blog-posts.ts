@@ -3923,6 +3923,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 315,
+    slug: 'zasto-je-integracija-generativnih-modela-teska',
+    title: 'Zašto je integracija generativnih modela toliko teška',
+    description: 'Pravi troškovi i skriveni inženjerski izazovi dodavanja generativne umjetne inteligencije u postojeće sustave koje marketinške priče rijetko spominju.',
+    imageAlt: 'Ilustracija složenih inženjerskih sustava',
+    publishedOn: '2026-07-29',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
