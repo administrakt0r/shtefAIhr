@@ -3912,6 +3912,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 314,
+    slug: 'balon-umjetne-inteligencije-i-problem-isplativosti',
+    title: 'Balon umjetne inteligencije i problem isplativosti',
+    description: 'Zašto masovna infrastrukturna ulaganja u generativne modele dugoročno nisu ekonomski održiva bez jasnog povrata investicije.',
+    imageAlt: 'Ilustracija balona i financijskih grafova povezanih s tehnologijom',
+    publishedOn: '2026-07-29',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
