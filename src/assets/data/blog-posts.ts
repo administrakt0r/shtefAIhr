@@ -3901,6 +3901,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 313,
+    slug: 'sam-altman-usporavanje-ai-razvoja',
+    title: 'Sam Altman smatra da je vrijeme za usporavanje AI razvoja',
+    description: 'Izvršni direktor tvrtke OpenAI izjavio je da bi se tempo razvoja umjetne inteligencije trebao usporiti kako bi se društvo pripremilo.',
+    imageAlt: 'Sam Altman govori o razvoju umjetne inteligencije',
+    publishedOn: '2026-07-29',
+    category: NEWS,
+    readTime: 3,
+    featured: false
   })
 ];
 
