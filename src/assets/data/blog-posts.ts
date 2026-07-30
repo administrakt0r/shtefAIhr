@@ -3945,6 +3945,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 317,
+    slug: 'generativni-ai-i-eksplozija-tehnickog-duga',
+    title: 'Generativni AI i eksplozija nevidljivog tehničkog duga',
+    description: 'Zašto masovno korištenje AI alata za programiranje stvara ogromne količine teško popravljivog koda.',
+    imageAlt: 'Ilustracija kompleksnog softverskog koda i umjetne inteligencije',
+    publishedOn: '2026-07-30',
+    category: ANALYSIS,
+    readTime: 3,
+    featured: false
   })
 ];
 
