@@ -3934,6 +3934,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 316,
+    slug: 'meta-osobni-ai-agenti',
+    title: 'Mark Zuckerberg predviđa milijarde osobnih AI agenata',
+    description: 'Osnivač Mete uvjerava investitore u isplativost ogromnih ulaganja u infrastrukturu kroz osobne AI agente.',
+    imageAlt: 'Ilustracija umjetne inteligencije',
+    publishedOn: '2026-07-30',
+    category: NEWS,
+    readTime: 3,
+    featured: false
   })
 ];
 
