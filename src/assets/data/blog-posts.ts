@@ -3956,6 +3956,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 318,
+    slug: 'zabluda-o-milijardama-osobnih-agenata',
+    title: 'Zabluda o milijardama osobnih agenata: Obećanja nasuprot stvarnosti',
+    description: 'Zašto je vizija o sveprisutnim AI asistentima samo izgovor za opravdavanje masovnih ulaganja u infrastrukturu.',
+    imageAlt: 'Ilustracija AI agenata i infrastrukture',
+    publishedOn: '2026-07-30',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
