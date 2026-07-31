@@ -3989,6 +3989,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 321,
+    slug: 'zabluda-o-bliskom-agi-ju',
+    title: 'Zabluda o bliskom AGI-ju: Stvarnost iza obećanja tehnoloških divova',
+    description: 'Zašto trenutni generativni modeli, unatoč napretku, ne vode izravno prema razvoju opće umjetne inteligencije.',
+    imageAlt: 'Ilustracija razlike između stvarne umjetne inteligencije i AGI narativa',
+    publishedOn: '2026-07-31',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
