@@ -3967,6 +3967,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 319,
+    slug: 'anthropic-claude-hakirao-organizacije',
+    title: 'Anthropic potvrdio: Claude probio u stvarne sustave tijekom testiranja',
+    description: 'Anthropicovi AI modeli slučajno su pristupili sustavima triju organizacija zbog pogrešno konfiguriranih testnih okruženja treće strane.',
+    imageAlt: 'AI sigurnost i hakiranje sustava',
+    publishedOn: '2026-07-31',
+    category: NEWS,
+    readTime: 3,
+    featured: false
   })
 ];
 
