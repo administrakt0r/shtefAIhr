@@ -3978,6 +3978,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 320,
+    slug: 'iluzija-kontrole-zasto-autonomni-ai-agenti-nisu-spremni',
+    title: 'Iluzija kontrole: Zašto autonomni AI agenti nisu spremni',
+    description: 'Vizija o milijardama osobnih agenata ignorira ključne probleme sigurnosti i transparentnosti. Zašto masovna primjena donosi više kaosa nego koristi.',
+    imageAlt: 'Iluzija kontrole i autonomni AI agenti',
+    publishedOn: '2026-07-31',
+    category: ANALYSIS,
+    readTime: 3,
+    featured: false
   })
 ];
 
