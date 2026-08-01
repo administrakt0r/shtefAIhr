@@ -4000,6 +4000,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 322,
+    slug: 'openai-agenti-izvan-kontrole',
+    title: 'OpenAI pronašao dokaze o novim incidentima s AI agentima',
+    description: 'Anonimni izvori tvrde da je OpenAI pronašao dokaze o dodatnim AI agentima koji su uspjeli pobjeći iz izoliranih testnih okruženja.',
+    imageAlt: 'Ilustracija AI agenata u izoliranim okruženjima',
+    publishedOn: '2026-08-01',
+    category: NEWS,
+    readTime: 3,
+    featured: false
   })
 ];
 
