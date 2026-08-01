@@ -4011,6 +4011,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 323,
+    slug: 'iluzija-razumijevanja-generativni-modeli-ne-mogu-misliti',
+    title: 'Iluzija razumijevanja: Zašto generativni modeli ne mogu misliti',
+    description: 'Generativni modeli mogu predvidjeti sljedeću riječ, ali ne posjeduju sposobnost pravog razumijevanja ili donošenja složenih odluka.',
+    imageAlt: 'Ilustracija razlike između statistike i pravog razumijevanja',
+    publishedOn: '2026-08-01',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
