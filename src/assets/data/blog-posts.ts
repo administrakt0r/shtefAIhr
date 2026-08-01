@@ -4022,6 +4022,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 324,
+    slug: 'zasto-umjetna-inteligencija-jos-uvijek-podbacuje-u-praksi',
+    title: 'Hype i stvarnost: Zašto AI alati podbacuju u praksi',
+    description: 'Tržišni narativ obećava savršenu automatizaciju, ali stvarnost rada s AI alatima pokazuje njihova brojna ograničenja u praksi.',
+    imageAlt: 'Ilustracija razlike između očekivanja i stvarnosti rada s umjetnom inteligencijom',
+    publishedOn: '2026-08-01',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
