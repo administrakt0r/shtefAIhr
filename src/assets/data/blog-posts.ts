@@ -4055,6 +4055,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 327,
+    slug: "kraj-umjetne-prosjecnosti-ljudski-glas-kao-luksuz",
+    title: "Kraj umjetne prosječnosti: Ljudski glas postaje luksuz",
+    description: "U svijetu gdje je strojno savršenstvo besplatno, nesavršen i autentičan ljudski glas postaje jedina valuta koja zaista vrijedi.",
+    imageAlt: "Ilustracija ljudskog lica u kontrastu s digitalnim kodom",
+    publishedOn: "2026-08-02",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
