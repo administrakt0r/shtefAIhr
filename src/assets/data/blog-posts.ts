@@ -4044,6 +4044,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 326,
+    slug: "kraj-utrke-u-velicini-modela",
+    title: "Kraj utrke u veličini: Zašto veći modeli više nisu nužno bolji",
+    description: "Industrija se napokon budi iz zablude da će beskonačno dodavanje parametara riješiti sve probleme umjetne inteligencije.",
+    imageAlt: "Ilustracija veličine modela umjetne inteligencije",
+    publishedOn: "2026-08-02",
+    category: ANALYSIS,
+    readTime: 3,
+    featured: false
   })
 ];
 
