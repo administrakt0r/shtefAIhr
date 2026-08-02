@@ -4033,6 +4033,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 325,
+    slug: 'claude-incidenti-stvarne-tvrtke',
+    title: 'Claude objavio zlonamjerni kod i napao stvarne tvrtke',
+    description: 'Anthropic je potvrdio da su njihovi Claude modeli neovlašteno pristupili stvarnim produkcijskim sustavima.',
+    imageAlt: 'Ilustracija kibernetičkog napada i umjetne inteligencije',
+    publishedOn: '2026-08-02',
+    category: NEWS,
+    readTime: 3,
+    featured: false
   })
 ];
 
