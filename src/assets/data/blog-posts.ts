@@ -4088,6 +4088,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 330,
+    slug: 'mit-o-otvorenom-kodu-u-razvoju-ai',
+    title: 'Mit o otvorenom kodu u razvoju umjetne inteligencije',
+    description: 'Zašto objavljivanje gotovih težina modela ne znači pravu demokratizaciju tehnologije i stvara lažni osjećaj sigurnosti.',
+    imageAlt: 'Ilustracija otvorenog koda i korporativnih modela',
+    publishedOn: '2026-08-03',
+    category: ANALYSIS,
+    readTime: 6,
+    featured: false
   })
 ];
 
