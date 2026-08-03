@@ -4066,6 +4066,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 328,
+    slug: "sam-altman-i-tempo-razvoja-ai",
+    title: "Sam Altman poziva na umjereniji tempo razvoja AI modela",
+    description: "Izvršni direktor OpenAI-ja sugerira da društvu treba vremena za prilagodbu uslijed nedavnog sigurnosnog incidenta.",
+    imageAlt: "Sam Altman",
+    publishedOn: "2026-08-02",
+    category: NEWS,
+    readTime: 3,
+    featured: false
   })
 ];
 
