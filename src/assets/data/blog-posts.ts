@@ -4077,6 +4077,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 329,
+    slug: 'zabluda-o-ai-alatima-kraj-dubokog-razumijevanja-koda',
+    title: 'Zabluda o AI alatima: Kraj dubokog razumijevanja koda',
+    description: 'Korištenje umjetne inteligencije za pisanje koda stvara inženjere koji ne razumiju sustave koje grade.',
+    imageAlt: 'Ilustracija programera koji zbunjeno gleda u kod',
+    publishedOn: '2026-08-03',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
