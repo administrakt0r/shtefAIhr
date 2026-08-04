@@ -4110,6 +4110,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 332,
+    slug: 'programeri-postaju-lektori-kako-nam-ai-krade-radost-stvaranja',
+    title: 'Programeri postaju lektori: Kako nam AI krade radost stvaranja',
+    description: 'Umjetna inteligencija ubrzava pisanje koda, ali pretvara inženjere u pasivne recenzente. Kako je automatizacija uništila kreativni aspekt razvoja softvera.',
+    imageAlt: 'Ilustracija umornog programera koji pregledava kod',
+    publishedOn: '2026-08-04',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
