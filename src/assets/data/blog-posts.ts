@@ -4099,6 +4099,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 6,
     featured: false
+  }),
+  createPost({
+    id: 331,
+    slug: 'palantir-ceo-alex-karp-ai-industry-marxist',
+    title: 'Alex Karp iz Palantira nazvao AI industriju marksističkom',
+    description: 'Izvršni direktor Palantira kritizira AI laboratorije zbog preuzimanja kontrole nad podacima poduzeća, uz rekordan kvartal za svoju tvrtku.',
+    imageAlt: 'Alex Karp upozorava na marksistički pristup AI kompanija',
+    publishedOn: '2026-08-04',
+    category: NEWS,
+    readTime: 4,
+    featured: false
   })
 ];
 
