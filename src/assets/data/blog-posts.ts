@@ -4121,6 +4121,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 333,
+    slug: 'iluzija-ai-produktivnosti-alati-ne-rjesavaju-losu-organizaciju',
+    title: 'Iluzija AI produktivnosti: Alati ne rješavaju lošu organizaciju',
+    description: 'Tvrtke masovno kupuju licence za generativne modele očekujući revoluciju, ali tehnologija ne može popraviti disfunkcionalne poslovne procese.',
+    imageAlt: 'Ilustracija kaotičnog ureda s modernom AI tehnologijom',
+    publishedOn: '2026-08-04',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
