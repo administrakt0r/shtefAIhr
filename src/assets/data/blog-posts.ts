@@ -4154,6 +4154,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 336,
+    slug: 'kraj-apokalipse-ai-postaje-dosadan',
+    title: 'Kraj drame: Zašto će umjetna inteligencija postati potpuno dosadna',
+    description: 'Umjesto superinteligencije i apokaliptičnih scenarija, prava budućnost umjetne inteligencije je nevidljiva i dosadna infrastruktura.',
+    imageAlt: 'Ilustracija dosadne i nevidljive digitalne infrastrukture',
+    publishedOn: '2026-08-05',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
