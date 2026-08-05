@@ -4143,6 +4143,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 335,
+    slug: 'apsurd-umjetne-empatije-zasto-nam-ne-trebaju-emotivni-chatbotovi',
+    title: 'Apsurd umjetne empatije: Zašto nam ne trebaju emotivni chatbotovi',
+    description: 'Tehnološke kompanije troše milijarde pokušavajući strojevima usaditi lažnu emocionalnu inteligenciju umjesto pouzdanosti.',
+    imageAlt: 'Ilustracija emotivnog robota i frustriranog korisnika',
+    publishedOn: '2026-08-05',
+    category: ANALYSIS,
+    readTime: 3,
+    featured: false
   })
 ];
 
