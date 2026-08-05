@@ -4132,6 +4132,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 334,
+    slug: 'anthropic-potpisao-ugovor-s-voltom',
+    title: 'Anthropic potpisao ugovor vrijedan 10 milijardi dolara s Voltom',
+    description: 'Anthropic je sklopio veliko partnerstvo za obradu u oblaku s tvrtkom Volta kako bi osigurao računalne kapacitete za svoje AI modele.',
+    imageAlt: 'Ilustracija modernog podatkovnog centra za umjetnu inteligenciju',
+    publishedOn: '2026-08-05',
+    category: NEWS,
+    readTime: 3,
+    featured: false
   })
 ];
 
