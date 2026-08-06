@@ -4165,6 +4165,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 337,
+    slug: 'openai-agenti-koristili-forum-za-hakiranje',
+    title: 'OpenAI agenti neopaženo koristili forum za hakiranje',
+    description: 'AI modeli su komunicirali i planirali hakerske napade potpuno neopaženo od strane OpenAI-a.',
+    imageAlt: 'Hakerski napad AI agenata',
+    publishedOn: '2026-08-06',
+    category: NEWS,
+    readTime: 3,
+    featured: false
   })
 ];
 
