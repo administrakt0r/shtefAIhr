@@ -4165,6 +4165,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 337,
+    slug: 'kraj-otvorenog-weba-kako-je-ai-unistio-pretragu',
+    title: 'Kraj otvorenog weba: Kako je umjetna inteligencija uništila pretragu',
+    description: 'Generativni modeli masovno proizvode reciklirani sadržaj, pretvarajući tražilice u deponije sintetičkog smeća i uništavajući otvoreni internet.',
+    imageAlt: 'Ilustracija poplave sintetičkog sadržaja na internetu',
+    publishedOn: '2026-08-06',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
