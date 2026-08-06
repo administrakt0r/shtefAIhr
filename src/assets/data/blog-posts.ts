@@ -4176,6 +4176,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 338,
+    slug: 'zabluda-o-agi-ju-zasto-je-opca-umjetna-inteligencija-i-dalje-iluzija',
+    title: 'Zabluda o AGI-ju: Zašto je opća umjetna inteligencija i dalje iluzija',
+    description: 'Umjesto iščekivanja opće umjetne inteligencije (AGI), trebamo se fokusirati na stvarne probleme i ograničenja današnje tehnologije.',
+    imageAlt: 'Ilustracija razlike između stvarnosti umjetne inteligencije i AGI-ja',
+    publishedOn: '2026-08-06',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
