@@ -4209,6 +4209,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 341,
+    slug: 'zamor-od-tehnologije-zasto-korisnici-ignoriraju-nove-ai-znacajke',
+    title: 'Zamor od tehnologije: Zašto korisnici ignoriraju nove AI značajke',
+    description: 'Tvrtke nasilno guraju umjetnu inteligenciju u svaki proizvod, no korisnici su umorni od rješenja za probleme koji ne postoje.',
+    imageAlt: 'Ilustracija korisnika koji ignorira napadne AI značajke na zaslonu računala',
+    publishedOn: '2026-08-07',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
