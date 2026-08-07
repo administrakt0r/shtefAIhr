@@ -4187,6 +4187,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 339,
+    slug: 'weathernext-ai-model-prognostika-ciklona',
+    title: 'Googleov WeatherNext AI model donosi revoluciju u prognoziranju ciklona',
+    description: 'Novi AI model tvrtke Google DeepMind poboljšava prognozu ciklona i osigurava 24 sata dodatnog vremena za pripremu na ekstremne uvjete.',
+    imageAlt: 'Prikaz satelitske snimke ciklona i naprednih meteoroloških podataka',
+    publishedOn: '2026-08-07',
+    category: NEWS,
+    readTime: 3,
+    featured: false
   })
 ];
 
