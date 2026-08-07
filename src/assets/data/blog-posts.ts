@@ -4198,6 +4198,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 340,
+    slug: 'zamka-delegiranja-zasto-ai-ne-smije-donositi-strateske-odluke',
+    title: 'Zamka delegiranja: Zašto AI ne smije donositi strateške odluke',
+    description: 'Prepuštanje odgovornosti algoritmima vodi do gubitka vizije i stvara lidere koji bježe od odgovornosti za svoje poteze.',
+    imageAlt: 'Ilustracija razlike između ljudskog vodstva i algoritamske analize',
+    publishedOn: '2026-08-07',
+    category: ANALYSIS,
+    readTime: 3,
+    featured: false
   })
 ];
 
