@@ -4220,6 +4220,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 342,
+    slug: "openai-usporava-astra-model",
+    title: "OpenAI usporio razvoj modela Astra zbog sigurnosti",
+    description: "OpenAI je obustavio rad na određenim aspektima svog nadolazećeg modela Astra nakon interne revizije o kibernetičkoj sigurnosti i agentnom programiranju.",
+    imageAlt: "Kibernetička sigurnost i umjetna inteligencija",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+    publishedOn: "2026-08-08"
   })
 ];
 
