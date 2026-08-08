@@ -4242,6 +4242,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 344,
+    slug: 'mit-o-besprijekornoj-automatizaciji-zasto-ai-stvara-vise-posla',
+    title: 'Mit o besprijekornoj automatizaciji: Zašto AI stvara više posla',
+    description: 'Generativna umjetna inteligencija trebala nas je osloboditi rutine, ali nas je pretvorila u mikromenadžere algoritama i kontrolore kvalitete.',
+    imageAlt: 'Ilustracija umornog radnika koji popravlja greške algoritma',
+    publishedOn: '2026-08-08',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
