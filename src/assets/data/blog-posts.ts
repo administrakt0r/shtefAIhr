@@ -4231,6 +4231,17 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false,
     publishedOn: "2026-08-08"
+  }),
+  createPost({
+    id: 343,
+    slug: 'ai-kao-novi-tehnicki-dug',
+    title: 'AI kao novi tehnički dug: Zašto ćemo mrziti kod koji nismo napisali',
+    description: 'Generativna umjetna inteligencija omogućuje brzo pisanje koda, ali stvara planinu tehničkog duga koji nitko ne razumije.',
+    imageAlt: 'Ilustracija složenog programskog koda i tehničkog duga',
+    publishedOn: '2026-08-08',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
