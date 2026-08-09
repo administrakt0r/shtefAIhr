@@ -4264,6 +4264,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 2,
     featured: false
+  }),
+  createPost({
+    id: 346,
+    slug: 'kraj-dubokog-razmisljanja-kako-nas-ai-pretvara-u-povrsne-mislioce',
+    title: 'Kraj dubokog razmišljanja: Kako nas AI pretvara u površne mislioce',
+    description: 'Oslanjanje na algoritme za rješavanje problema dugoročno nagriza našu kognitivnu neovisnost i stvara površne stručnjake.',
+    imageAlt: 'Ilustracija razlike između ljudskog razmišljanja i brzih odgovora algoritama',
+    publishedOn: '2026-08-09',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
