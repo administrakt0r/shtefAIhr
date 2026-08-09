@@ -4253,6 +4253,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 345,
+    slug: 'openai-acquires-nextslide',
+    title: 'OpenAI preuzeo startup NextSlide za prezentacije',
+    description: 'Tim startupa NextSlide pridružuje se OpenAI-ju kako bi radili na razvoju ChatGPT-a i alata za vizualnu komunikaciju.',
+    imageAlt: 'Logotipi OpenAI-ja i NextSlidea',
+    publishedOn: '2026-08-09',
+    category: NEWS,
+    readTime: 2,
+    featured: false
   })
 ];
 
