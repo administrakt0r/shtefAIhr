@@ -4275,6 +4275,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 347,
+    slug: 'opsesija-testovima-zasto-ai-pada-u-stvarnom-svijetu',
+    title: 'Opsesija testovima: Zašto AI pada u stvarnom svijetu',
+    description: 'Impresivni rezultati u laboratoriju često ne znače apsolutno ništa kada se umjetna inteligencija susretne s pravim korisnicima.',
+    imageAlt: 'Ilustracija razlike između laboratorijskih AI testova i kaosa stvarnog svijeta',
+    publishedOn: '2026-08-09',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
