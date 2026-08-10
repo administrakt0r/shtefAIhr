@@ -4308,6 +4308,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 350,
+    slug: 'zabluda-o-suceljima-zasto-chat-nije-buducnost-interakcije',
+    title: 'Zabluda o sučeljima: Zašto chat nije budućnost interakcije',
+    description: 'Beskonačno dopisivanje s chatbotovima nije vrhunac korisničkog iskustva. Zašto za ozbiljan rad trebamo precizne grafičke alate.',
+    imageAlt: 'Ilustracija razlike između tekstualnog sučelja i grafičkih alata',
+    publishedOn: '2026-08-10',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
