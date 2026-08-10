@@ -4286,6 +4286,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 348,
+    slug: "anthropic-claude-code-auto-mode",
+    title: "Anthropic uvodi automatski način rada za Claude Code",
+    description: "Automatski način rada postat će zadan za Pro, Max i Team korisnike od 14. kolovoza, omogućujući brže programiranje s manje nadzora.",
+    imageAlt: "Claude Code",
+    publishedOn: "2026-08-10",
+    category: NEWS,
+    readTime: 3,
+    featured: false
   })
 ];
 
