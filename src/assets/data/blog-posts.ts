@@ -4297,6 +4297,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 349,
+    slug: 'zamka-brzine-ai-pretvara-programere-u-recenzente-loseg-koda',
+    title: 'Zamka brzine: AI pretvara programere u recenzente lošeg koda',
+    description: 'Umjesto obećane brzine i efikasnosti, sve više vremena provodimo ispravljajući suptilne greške koje stroj generira.',
+    imageAlt: 'Ilustracija programera koji pregledava AI generirani kod',
+    publishedOn: '2026-08-10',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
