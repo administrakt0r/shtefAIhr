@@ -4319,6 +4319,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 351,
+    slug: 'openai-lansira-novi-kiberneticki-model',
+    title: 'OpenAI lansira novi kibernetički model uslijed porasta napada',
+    description: 'OpenAI proširuje svoju uslugu kibernetičke obrane Daybreak i predstavlja novi specijalizirani model GPT-5.6-Cyber.',
+    imageAlt: 'Kibernetička sigurnost i umjetna inteligencija',
+    publishedOn: '2026-08-11',
+    category: NEWS,
+    readTime: 3,
+    featured: false
   })
 ];
 
