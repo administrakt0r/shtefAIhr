@@ -4341,6 +4341,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 353,
+    slug: 'kraj-autenticnosti-zasto-nam-ai-pise-poruke-koje-nitko-ne-cita',
+    title: 'Kraj autentičnosti: Zašto nam AI piše poruke koje nitko ne čita',
+    description: 'Korištenje umjetne inteligencije za poslovnu komunikaciju stvorilo je apsurdan krug u kojem strojevi pišu tekst koji drugi strojevi sažimaju.',
+    imageAlt: 'Ilustracija razmjene besmislenih poruka između strojeva',
+    publishedOn: '2026-08-11',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
