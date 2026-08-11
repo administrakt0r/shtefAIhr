@@ -4330,6 +4330,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 352,
+    slug: 'ai-alati-ubrzavaju-stvaranje-tehnickog-duga',
+    title: 'AI alati u lošem procesu samo ubrzavaju stvaranje tehničkog duga',
+    description: 'Zašto dodavanje generativne umjetne inteligencije u neorganizirane razvojne timove ne rješava probleme, već stvara nove.',
+    imageAlt: 'Programer koji gleda u zapetljan kod',
+    publishedOn: '2026-08-11',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
