@@ -4363,6 +4363,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 355,
+    slug: 'problem-s-ai-asistentima-je-sto-ne-znaju-reci-ne-znam',
+    title: 'Problem s AI asistentima je što ne znaju reći \'ne znam\'',
+    description: 'Samouvjerenost jezičnih modela u davanju netočnih odgovora stvara ozbiljne probleme u stvarnoj primjeni.',
+    imageAlt: 'Ilustracija umjetne inteligencije koja daje pogrešan odgovor',
+    publishedOn: '2026-08-12',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
