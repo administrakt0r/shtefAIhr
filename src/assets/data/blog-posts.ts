@@ -4352,6 +4352,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 354,
+    slug: 'anthropic-uvodi-vodene-zigove',
+    title: 'Anthropic uvodi vodene žigove za tekst i slike generirane Claudeom',
+    description: 'Odgovor na europska pravila o transparentnosti umjetne inteligencije i AI Act.',
+    imageAlt: 'Ilustracija označavanja i prepoznavanja teksta kojeg je generirala umjetna inteligencija',
+    publishedOn: '2026-08-12',
+    category: NEWS,
+    readTime: 3,
+    featured: false
   })
 ];
 
