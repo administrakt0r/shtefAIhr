@@ -4374,6 +4374,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 356,
+    slug: 'zasto-korporativni-ai-projekti-umiru-prije-produkcije',
+    title: 'Smrt AI pilota: Zašto korporativni AI projekti umiru prije produkcije',
+    description: 'Svi testiraju umjetnu inteligenciju, ali rijetki je integriraju. Problem nije u tehnologiji, već u nerealnim očekivanjima i skrivenim troškovima.',
+    imageAlt: 'Ilustracija korporativnog AI projekta koji propada prije produkcije',
+    publishedOn: '2026-08-13',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
