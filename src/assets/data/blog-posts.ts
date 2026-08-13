@@ -4385,6 +4385,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 357,
+    slug: 'hype-vs-stvarnost-gdje-su-pravi-rezultati',
+    title: 'Hype vs. stvarnost: Gdje su opipljivi rezultati umjetne inteligencije?',
+    description: 'Nesrazmjer između obećanja o AI revoluciji i stvarne tehničke implementacije stvara zamor i opasna očekivanja.',
+    imageAlt: 'Ilustracija razlike između očekivanja i stvarnosti umjetne inteligencije',
+    publishedOn: '2026-08-13',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
