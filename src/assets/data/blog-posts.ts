@@ -4374,6 +4374,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 356,
+    slug: 'twitch-ai-trening-amazon',
+    title: 'Twitch koristi sadržaj streamera za trening Amazonovih AI modela',
+    description: 'Streameri su automatski uključeni u opciju korištenja njihovog sadržaja za AI trening osim ako se sami ne isključe.',
+    imageAlt: 'Ilustracija Twitch streamera i logotipa umjetne inteligencije',
+    publishedOn: '2026-08-13',
+    category: NEWS,
+    readTime: 3,
+    featured: false
   })
 ];
 
