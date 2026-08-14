@@ -4407,6 +4407,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 2,
     featured: false
+  }),
+  createPost({
+    id: 359,
+    slug: "zasto-je-opsesija-agijem-opasna-distrakcija",
+    title: "Zašto je opsesija AGI-jem danas zapravo opasna distrakcija",
+    description: "Dok svi sanjaju o superinteligenciji, propuštamo stvarnu vrijednost alata koji već postoje. Vrijeme je za povratak u stvarnost.",
+    imageAlt: "Futuristička ilustracija koja prikazuje raskrižje između stvarnih AI alata i iluzije o AGI-ju",
+    publishedOn: "2026-08-14",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
