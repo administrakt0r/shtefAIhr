@@ -4396,6 +4396,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 358,
+    slug: "openai-ultrafast-gpt-5-6-sol",
+    title: "OpenAI predstavlja 'Ultrafast' način rada za GPT-5.6 Sol",
+    description: "Novi Ultrafast način rada ubrzava GPT-5.6 Sol do 14 puta, isporučujući 750 tokena u sekundi.",
+    imageAlt: "Ilustracija brzine umjetne inteligencije",
+    publishedOn: "2026-08-14",
+    category: NEWS,
+    readTime: 2,
+    featured: false
   })
 ];
 
