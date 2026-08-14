@@ -4396,6 +4396,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 358,
+    slug: 'kraj-juniorskih-pozicija-ai-prijeti-razvoju-strucnjaka',
+    title: 'Kraj juniorskih pozicija: AI prijeti razvoju stručnjaka',
+    description: 'Generativna umjetna inteligencija ukida početničke zadatke, no time narušava prirodan proces učenja i stjecanja iskustva.',
+    imageAlt: 'Ilustracija utjecaja umjetne inteligencije na juniore i proces učenja',
+    publishedOn: '2026-08-14',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
