@@ -4429,6 +4429,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 361,
+    slug: "mit-o-prompt-inzenjerstvu",
+    title: "Mit o prompt inženjerstvu: Kraj najkraćeg zanimanja u povijesti",
+    description: "Prompt inženjerstvo se prodaje kao posao budućnosti, ali je zapravo samo privremena zakrpa za trenutne nesavršene jezične modele koja će ubrzo nestati.",
+    imageAlt: "Ilustracija osobe koja tipka složene upute za umjetnu inteligenciju",
+    publishedOn: "2026-08-15",
+    category: ANALYSIS,
+    readTime: 3,
+    featured: false
   })
 ];
 
