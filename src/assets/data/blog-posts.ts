@@ -4418,6 +4418,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 360,
+    slug: "gemini-3-7-flash",
+    title: "Google predstavio Gemini 3.7 Flash za naprednije AI agente",
+    description: "Samo tri tjedna nakon prošle verzije, Google predstavlja novi model optimiziran za programiranje i upravljanje agentima uz znatno manju cijenu.",
+    imageAlt: "Futuristička ilustracija mikročipa i linija koda koji simboliziraju brzi Gemini 3.7 Flash model",
+    publishedOn: "2026-08-15",
+    category: NEWS,
+    readTime: 3,
+    featured: false
   })
 ];
 
