@@ -4440,6 +4440,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 362,
+    slug: "ai-kopiloti-unistavaju-ucenje",
+    title: "AI kopiloti uništavaju učenje: Zašto junior programeri postaju sve lošiji",
+    description: "Oslanjanje na generativne alate stvara generaciju programera koji znaju složiti kod, ali ne razumiju kako on zapravo radi.",
+    imageAlt: "Ilustracija programera koji slijepo kopira generirani kod",
+    publishedOn: "2026-08-15",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
