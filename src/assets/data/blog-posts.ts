@@ -4451,6 +4451,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 363,
+    slug: "spacex-cursor-acquisition",
+    title: "SpaceX službeno zaključio akviziciju AI startupa Cursor",
+    description: "AI startup Cursor službeno postaje dio SpaceX-a, dobivajući pristup najvećoj floti GPU-ova na svijetu za daljnji razvoj svojih alata.",
+    imageAlt: "Ilustracija integracije Cursora i SpaceX-a",
+    publishedOn: "2026-08-16",
+    category: NEWS,
+    readTime: 3,
+    featured: false
   })
 ];
 
