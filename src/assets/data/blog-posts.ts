@@ -4473,6 +4473,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 365,
+    slug: "mit-o-skoroj-umjetnoj-opcoj-inteligenciji",
+    title: "Mit o skoroj umjetnoj općoj inteligenciji i zašto nas zavarava",
+    description: "Najave o skorom dolasku AGI-ja služe za privlačenje kapitala, dok stvarni napredak usporava zbog tehničkih ograničenja i nedostatka novih podataka.",
+    imageAlt: "Futuristički prikaz tehnologije koji ilustrira ograničenja umjetne inteligencije",
+    publishedOn: "2026-08-16",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
