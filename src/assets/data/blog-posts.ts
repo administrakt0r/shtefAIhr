@@ -4462,6 +4462,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 364,
+    slug: "ai-pise-kod-ne-rjesava-inzenjerstvo",
+    title: "Generativni AI piše kod, ali ne rješava srž softverskog inženjerstva",
+    description: "Alati poput Cursora i Copilota ubrzavaju tipkanje, ali razumijevanje poslovnog problema ostaje isključivo ljudska domena.",
+    imageAlt: "Ilustracija programera i AI sustava",
+    publishedOn: "2026-08-16",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
