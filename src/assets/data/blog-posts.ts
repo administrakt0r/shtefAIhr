@@ -4495,6 +4495,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 2,
     featured: false
+  }),
+  createPost({
+    id: 367,
+    slug: "mit-o-ai-inzenjeru",
+    title: "Mit o \"AI inženjeru\": Zašto nas AI ne može zamijeniti",
+    description: "Analiza popularnog mita o umjetnoj inteligenciji koja će zamijeniti softverske inženjere i stvarne uloge AI alata u razvoju.",
+    imageAlt: "Ilustracija programera koji koristi AI alate u radu",
+    publishedOn: "2026-08-17",
+    category: ANALYSIS,
+    readTime: 3,
+    featured: false
   })
 ];
 
