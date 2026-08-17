@@ -4506,6 +4506,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 368,
+    slug: "zabluda-o-dolasku-agi-ja",
+    title: "Zabluda o dolasku AGI-ja: Zašto je opća inteligencija distrakcija",
+    description: "Fokusiranje na umjetnu opću inteligenciju skreće pažnju s konkretnih prednosti specijaliziranih alata koje imamo danas.",
+    imageAlt: "Ilustracija razlike između današnjih AI alata i nerealnih očekivanja od AGI-ja",
+    publishedOn: "2024-10-24",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
