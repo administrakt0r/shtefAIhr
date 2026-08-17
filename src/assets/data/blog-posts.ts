@@ -4484,6 +4484,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 366,
+    slug: "stripe-kupuje-openrouter",
+    title: "Stripe navodno kupuje AI startup OpenRouter za više od 7 milijardi dolara",
+    description: "Stripe je u pregovorima o akviziciji platforme OpenRouter koja omogućuje pristup stotinama AI modela za više od 7 milijardi dolara.",
+    imageAlt: "Apstraktni prikaz financijske integracije umjetne inteligencije",
+    publishedOn: "2026-08-17",
+    category: NEWS,
+    readTime: 2,
+    featured: false
   })
 ];
 
