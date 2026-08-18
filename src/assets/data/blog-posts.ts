@@ -4539,6 +4539,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 371,
+    slug: "iluzija-personalizacije-kako-nas-ai-ukalupljuje",
+    title: "Iluzija personalizacije: Kako nas umjetna inteligencija zapravo ukalupljuje",
+    description: "Algoritmi nam obećavaju sadržaj krojen po našoj mjeri, ali u stvarnosti izglađuju naše razlike i pretvaraju naš ukus u predvidljive kategorije.",
+    imageAlt: "Ilustracija algoritma koji ljude stavlja u identične kalupe",
+    publishedOn: "2026-08-18",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
