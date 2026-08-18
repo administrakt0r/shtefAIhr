@@ -4517,6 +4517,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 369,
+    slug: "prihodi-anthropica-dosegnuli-65-milijardi-dolara",
+    title: "Prihodi Anthropica dosegnuli nevjerojatnih 65 milijardi dolara",
+    description: "Godišnja stopa prihoda tvrtke Anthropic premašila je 65 milijardi dolara krajem srpnja, pripremajući teren za rekordan IPO.",
+    imageAlt: "Financijski rast i strelovit uspon AI tvrtke",
+    publishedOn: "2026-08-18",
+    category: NEWS,
+    readTime: 3,
+    featured: false
   })
 ];
 
