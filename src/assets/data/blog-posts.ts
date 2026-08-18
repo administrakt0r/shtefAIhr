@@ -4528,6 +4528,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 370,
+    slug: "zaboravite-autonomne-agente-prava-vrijednost-ai-ja-je-u-dosadnim-zadacima",
+    title: "Zaboravite autonomne agente: Prava vrijednost AI-ja leži u dosadnim zadacima",
+    description: "Opsesija autonomnim AI agentima skreće pozornost s prave vrijednosti tehnologije. Stvarni povrat ulaganja nalazi se u pouzdanoj, pozadinskoj automatizaciji.",
+    imageAlt: "Ilustracija koja prikazuje pouzdanu i nevidljivu automatizaciju procesa",
+    publishedOn: "2026-08-18",
+    category: ANALYSIS,
+    readTime: 3,
+    featured: false
   })
 ];
 
