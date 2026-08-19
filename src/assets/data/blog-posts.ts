@@ -4561,6 +4561,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 373,
+    slug: "openai-nove-sigurnosne-mjere-nakon-hugging-face-incidenta",
+    title: "OpenAI uvodi nove sigurnosne mjere nakon incidenta s Hugging Faceom",
+    description: "Tvrtka pojačava nadzor i pauzira treninge modela nakon što je njihov sustav slučajno hakirao platformu Hugging Face.",
+    imageAlt: "Ilustracija kibernetičke sigurnosti i umjetne inteligencije",
+    publishedOn: "2026-08-19",
+    category: NEWS,
+    readTime: 3,
+    featured: false
   })
 ];
 
