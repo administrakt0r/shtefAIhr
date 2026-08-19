@@ -4550,6 +4550,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 372,
+    slug: "zasto-ai-jos-uvijek-ne-moze-biti-softverski-arhitekt",
+    title: "Zašto AI još uvijek ne može biti softverski arhitekt",
+    description: "Umjetna inteligencija briljira u pisanju koda, ali potpuno podbacuje u donošenju strateških tehničkih odluka.",
+    imageAlt: "Ilustracija arhitektonskih nacrta i računalnog koda",
+    publishedOn: "2026-08-19",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
