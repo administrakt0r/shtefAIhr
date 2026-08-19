@@ -4572,6 +4572,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 374,
+    slug: "zasto-je-razvoj-s-ai-alatima-tezi-nego-sto-marketing-tvrdi",
+    title: "Zašto je razvoj s AI alatima teži nego što marketing tvrdi",
+    description: "AI alati obećavaju brzo programiranje i gotove aplikacije, no stvarni produkcijski razvoj skriva složene izazove i tehnički dug.",
+    imageAlt: "Ilustracija programera koji radi u kompleksnom kodu s AI alatima",
+    publishedOn: "2026-08-19",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
