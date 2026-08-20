@@ -4594,6 +4594,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 376,
+    slug: "stvarna-cijena-koda-ai",
+    title: "Stvarna cijena koda koji piše umjetna inteligencija",
+    description: "Umjetna inteligencija ne zamjenjuje programere, već ih pretvara u revizore lošeg koda, što dugoročno stvara tehnički dug.",
+    imageAlt: "Ilustracija programera koji pregledava složen kod generiran umjetnom inteligencijom",
+    publishedOn: "2026-08-20",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
