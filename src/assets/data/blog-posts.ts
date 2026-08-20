@@ -4583,6 +4583,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 375,
+    slug: "openai-private-safety-processing",
+    title: "OpenAI predstavlja tehnologiju za privatnost korisnika",
+    description: "OpenAI je predstavio Private Safety Processing, sustav koji nadzire sigurnost poslovnih korisnika kroz više sesija bez zadržavanja podataka.",
+    imageAlt: "Ilustracija sigurnosnog štita koji štiti podatke poslovnih korisnika umjetne inteligencije",
+    publishedOn: "2026-08-20",
+    category: NEWS,
+    readTime: 3,
+    featured: false
   })
 ];
 
