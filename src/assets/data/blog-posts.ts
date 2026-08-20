@@ -4605,6 +4605,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 377,
+    slug: 'kraj-autenticne-komunikacije-ai-i-odnosi',
+    title: 'Kraj autentične komunikacije: Kako AI uništava naše odnose',
+    description: 'Prepuštanje svakodnevne komunikacije umjetnoj inteligenciji štedi vrijeme, ali pretvara naše razgovore u hladne transakcije i uništava povjerenje.',
+    imageAlt: 'Ilustracija dvije osobe koje komuniciraju preko robotskog posrednika',
+    publishedOn: '2026-08-20',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
