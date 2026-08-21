@@ -4627,6 +4627,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 379,
+    slug: "ai-agenti-vise-buke-nego-vrijednosti",
+    title: "AI agenti: Više buke nego stvarne vrijednosti u 2026.",
+    description: "Iako industrija najavljuje revoluciju samostalnih AI agenata, stvarna pouzdanost i troškovi nadzora pokazuju drugačiju sliku.",
+    imageAlt: "Ilustracija očekivanja od AI agenata",
+    publishedOn: "2026-08-21",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
