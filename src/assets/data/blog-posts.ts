@@ -4638,6 +4638,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 380,
+    slug: "ai-alati-i-lazna-sigurnost-u-programiranju",
+    title: "AI alati stvaraju lažnu sigurnost u programiranju",
+    description: "Umjetna inteligencija ubrzava pisanje koda, ali dugoročno smanjuje naše razumijevanje složenih softverskih sustava.",
+    imageAlt: "Ilustracija programera koji se oslanja na AI alate",
+    publishedOn: "2026-08-21",
+    category: ANALYSIS,
+    readTime: 3,
+    featured: false
   })
 ];
 
