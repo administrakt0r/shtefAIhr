@@ -4616,6 +4616,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 378,
+    slug: "openai-is-gaining-on-anthropic",
+    title: "OpenAI smanjuje zaostatak za Anthropicom među poslovnim korisnicima",
+    description: "Novi podaci pokazuju da OpenAI raste brže od Anthropica među poslovnim korisnicima, unatoč Anthropicovom trenutnom vodstvu na tržištu.",
+    imageAlt: "Grafikon rasta korištenja umjetne inteligencije u poslovnom sektoru",
+    publishedOn: "2026-08-21",
+    category: NEWS,
+    readTime: 3,
+    featured: false
   })
 ];
 
