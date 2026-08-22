@@ -4649,6 +4649,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 381,
+    slug: "greg-brockman-preuzima-operativno-vodstvo-u-openai",
+    title: "Greg Brockman preuzima operativno vodstvo u OpenAI-ju",
+    description: "Nakon niza odlazaka izvršnih direktora, suosnivač Greg Brockman preuzima kontrolu nad svakodnevnim operacijama i razvojem proizvoda u OpenAI-ju.",
+    imageAlt: "Ilustracija operativnog vodstva i reorganizacije poslovanja",
+    publishedOn: "2026-08-22",
+    category: NEWS,
+    readTime: 3,
+    featured: false
   })
 ];
 
