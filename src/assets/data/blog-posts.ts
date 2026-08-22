@@ -4660,6 +4660,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 382,
+    slug: "zasto-je-agi-opasna-distrakcija",
+    title: "Zašto je umjetna opća inteligencija (AGI) opasna distrakcija",
+    description: "Opsesija stvaranjem superinteligencije odvraća nas od rješavanja stvarnih problema i usavršavanja današnjih AI alata.",
+    imageAlt: "Ilustracija osobe koja gleda u daleku budućnost, ignorirajući trenutne tehnološke alate",
+    publishedOn: "2026-08-22",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
