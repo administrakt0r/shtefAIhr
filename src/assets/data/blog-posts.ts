@@ -4649,6 +4649,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 381,
+    slug: "generativni-ai-nije-kreativan-on-je-kompilator",
+    title: "Generativni AI nije kreativan, on je samo kompilator",
+    description: "Generativni AI ne stvara ništa novo; on reciklira i kombinira obrasce. Prava kreativnost zahtijeva ljudsku namjeru.",
+    imageAlt: "Ilustracija razlike između ljudske kreativnosti i AI kompilacije",
+    publishedOn: "2026-08-22",
+    category: ANALYSIS,
+    readTime: 3,
+    featured: false
   })
 ];
 
