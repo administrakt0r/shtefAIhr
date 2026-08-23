@@ -4671,6 +4671,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 383,
+    slug: "inherent-ai-agent-outperforms-anthropic-openai",
+    title: "AI agent startupa Inherent nadmašio Anthropic i OpenAI u replikaciji istraživanja",
+    description: "Novi AI agent Faraday, kojeg je razvio londonski startup Inherent, uspješno je nadmašio mnogo veće modele u zadatku repliciranja znanstvenih radova.",
+    imageAlt: "Ilustracija umjetne inteligencije u znanstvenom istraživanju",
+    category: NEWS,
+    publishedOn: "2026-08-23",
+    readTime: 4,
+    featured: false
   })
 ];
 
