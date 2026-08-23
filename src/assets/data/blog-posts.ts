@@ -4693,6 +4693,17 @@ export const blogPosts: BlogPost[] = [
     publishedOn: "2026-08-23",
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 385,
+    slug: "paradoks-produktivnosti-kako-ai-alati-trose-vrijeme",
+    title: "Paradoks produktivnosti: Kako nam AI alati zapravo troše vrijeme",
+    description: "Iako umjetna inteligencija obećava ubrzanje rada, neprekidna potreba za ispravljanjem rezultata često usporava cijeli proces.",
+    imageAlt: "Ilustracija uz članak: Paradoks produktivnosti: Kako nam AI alati zapravo troše vrijeme",
+    category: ANALYSIS,
+    publishedOn: "2026-08-23",
+    readTime: 3,
+    featured: false
   })
 ];
 
