@@ -4682,6 +4682,17 @@ export const blogPosts: BlogPost[] = [
     publishedOn: "2026-08-23",
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 384,
+    slug: "zasto-ai-alati-za-kodiranje-tiho-unistavaju-kvalitetu-softvera",
+    title: "Zašto AI alati za kodiranje tiho uništavaju kvalitetu softvera",
+    description: "AI generatori koda stvaraju iluziju brzine, no zapravo masovno gomilaju tehnički dug koji će se godinama otplaćivati.",
+    imageAlt: "Ilustracija uz članak: Zašto AI alati za kodiranje tiho uništavaju kvalitetu softvera",
+    category: ANALYSIS,
+    publishedOn: "2026-08-23",
+    readTime: 4,
+    featured: false
   })
 ];
 
