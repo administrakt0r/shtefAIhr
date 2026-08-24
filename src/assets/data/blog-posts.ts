@@ -4726,6 +4726,17 @@ export const blogPosts: BlogPost[] = [
     publishedOn: "2026-08-24",
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 388,
+    slug: "zasto-je-agi-distrakcija-od-stvarnosti",
+    title: "Zašto je AGI odvraćanje pažnje od stvarnih inovacija",
+    description: "Opsesija umjetnom općom inteligencijom (AGI) skriva prave prilike. Dok sanjamo o superinteligenciji, propuštamo korisne alate.",
+    imageAlt: "Ilustracija uz članak: Zašto je AGI odvraćanje pažnje od stvarnih inovacija",
+    category: ANALYSIS,
+    publishedOn: "2026-08-24",
+    readTime: 3,
+    featured: false
   })
 ];
 
