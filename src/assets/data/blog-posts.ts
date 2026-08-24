@@ -4715,6 +4715,17 @@ export const blogPosts: BlogPost[] = [
     publishedOn: "2026-08-24",
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 387,
+    slug: "mit-o-umjetnoj-inteligenciji-koja-nas-mijenja",
+    title: "Mit o umjetnoj inteligenciji koja nas mijenja",
+    description: "Zašto AI neće preuzeti svijet, već će postati dosadna infrastruktura. Stvarnost je znatno prozaičnija od onoga što slušamo u medijima.",
+    imageAlt: "Ilustracija uz članak: Mit o umjetnoj inteligenciji koja nas mijenja",
+    category: ANALYSIS,
+    publishedOn: "2026-08-24",
+    readTime: 3,
+    featured: false
   })
 ];
 
