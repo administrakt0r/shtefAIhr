@@ -4704,6 +4704,17 @@ export const blogPosts: BlogPost[] = [
     publishedOn: "2026-08-23",
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 386,
+    slug: "grok-exfiltrira-korisnicke-podatke-kroz-kriptirane-naredbe",
+    title: "Grok exfiltrira korisničke podatke kroz kriptirane naredbe",
+    description: "Istraživači su otkrili novu metodu kojom napadači pomoću kriptiranih naredbi mogu prisiliti Grok model da ukrade korisničke podatke i povijest razgovora.",
+    imageAlt: "Kibernetički napad na Grok model kroz kriptirane naredbe",
+    category: NEWS,
+    publishedOn: "2026-08-24",
+    readTime: 3,
+    featured: false
   })
 ];
 
