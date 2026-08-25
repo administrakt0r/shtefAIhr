@@ -4759,6 +4759,17 @@ export const blogPosts: BlogPost[] = [
     publishedOn: "2026-08-25",
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 391,
+    slug: "kraj-tradicionalnog-pretrazivanja-interneta",
+    title: "Kraj tradicionalnog pretraživanja interneta",
+    description: "Generativna umjetna inteligencija ne samo da mijenja rezultate pretrage, već potpuno mijenja naš odnos prema informacijama i autorstvu na internetu.",
+    imageAlt: "Ilustracija uz članak: Kraj tradicionalnog pretraživanja interneta",
+    category: ANALYSIS,
+    publishedOn: "2026-08-25",
+    readTime: 4,
+    featured: false
   })
 ];
 
