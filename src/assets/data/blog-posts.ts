@@ -4737,6 +4737,17 @@ export const blogPosts: BlogPost[] = [
     publishedOn: "2026-08-24",
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 389,
+    slug: "situational-awareness-sec-probe",
+    title: "SEC pokrenuo istragu o poznatom AI hedge fondu Situational Awareness",
+    description: "Nakon pada vrijednosti AI dionica koji je izbrisao milijarde dolara vrijednosti, SEC izdaje sudske naloge bankama povezanim s fondom Situational Awareness.",
+    imageAlt: "Ilustracija uz članak: SEC pokrenuo istragu o poznatom AI hedge fondu Situational Awareness",
+    category: NEWS,
+    publishedOn: "2026-08-25",
+    readTime: 3,
+    featured: false
   })
 ];
 
