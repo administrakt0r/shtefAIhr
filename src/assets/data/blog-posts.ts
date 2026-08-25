@@ -4748,6 +4748,17 @@ export const blogPosts: BlogPost[] = [
     publishedOn: "2026-08-25",
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 390,
+    slug: "zasto-eksponencijalni-rast-ai-modela-postaje-obican-mit",
+    title: "Zašto eksponencijalni rast AI modela postaje običan mit",
+    description: "Industrija umjetne inteligencije opsjednuta je ogromnim modelima, ali stvarna vrijednost leži u uskim, specijaliziranim sustavima i integraciji.",
+    imageAlt: "Ilustracija uz članak: Zašto eksponencijalni rast AI modela postaje običan mit",
+    category: ANALYSIS,
+    publishedOn: "2026-08-25",
+    readTime: 3,
+    featured: false
   })
 ];
 
