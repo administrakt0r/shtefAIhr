@@ -4781,6 +4781,17 @@ export const blogPosts: BlogPost[] = [
     publishedOn: "2026-08-26",
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 393,
+    slug: 'zasto-open-source-ai-nije-zlatni-metak',
+    title: 'Zašto "Open Source" umjetna inteligencija nije zlatni metak',
+    description: 'Dok svi slave otvorene AI modele, prava cijena i kontrola ostaju skrivene.',
+    imageAlt: 'Ilustracija uz članak: Zašto Open Source umjetna inteligencija nije zlatni metak za sve probleme',
+    publishedOn: '2026-08-26',
+    category: ANALYSIS,
+    readTime: 3,
+    featured: false
   })
 ];
 
