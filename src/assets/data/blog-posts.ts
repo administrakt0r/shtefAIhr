@@ -4770,6 +4770,17 @@ export const blogPosts: BlogPost[] = [
     publishedOn: "2026-08-25",
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 392,
+    slug: "robotics-startup-generalist-reaches-3b-valuation",
+    title: "Generalist dosegnuo procjenu od 3 milijarde dolara u novoj rundi",
+    description: "Startup za robotiku prikupio dodatnih 200 milijuna dolara za razvoj univerzalnog AI modela za robote.",
+    imageAlt: "Ilustracija uz članak: Generalist dosegnuo procjenu od 3 milijarde dolara u novoj rundi",
+    category: NEWS,
+    publishedOn: "2026-08-26",
+    readTime: 3,
+    featured: false
   })
 ];
 
