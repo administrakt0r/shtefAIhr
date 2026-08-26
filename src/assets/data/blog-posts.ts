@@ -4770,6 +4770,17 @@ export const blogPosts: BlogPost[] = [
     publishedOn: "2026-08-25",
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 392,
+    slug: "mjehuric-se-ispuhao-zasto-su-llm-udarili-u-zid",
+    title: "Mjehurić se ispuhao: Zašto su veliki jezični modeli udarili u zid",
+    description: "Entuzijazam oko velikih jezičnih modela splašnjava jer strategija pukog dodavanja podataka i procesorske moći pokazuje jasne znakove usporavanja.",
+    imageAlt: "Ilustracija uz članak: Mjehurić se ispuhao: Zašto su veliki jezični modeli udarili u zid",
+    category: ANALYSIS,
+    publishedOn: "2026-08-26",
+    readTime: 4,
+    featured: false
   })
 ];
 
