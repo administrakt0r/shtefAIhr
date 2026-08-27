@@ -4803,6 +4803,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 395,
+    slug: 'mit-o-agi-ju',
+    title: 'Mit o AGI-ju: Zašto previše očekujemo od umjetne inteligencije',
+    description: 'Opsesija općom umjetnom inteligencijom zamagljuje stvarne probleme i mogućnosti koje današnji AI sustavi donose.',
+    imageAlt: 'Ilustracija uz članak: Mit o AGI-ju',
+    publishedOn: '2026-08-27',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
