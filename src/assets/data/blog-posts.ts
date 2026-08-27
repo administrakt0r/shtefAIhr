@@ -4814,6 +4814,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 396,
+    slug: 'stvarna-slika-razvoja-s-ai-alatima',
+    title: 'Stvarna slika razvoja s AI alatima: Iza marketinških obećanja',
+    description: 'Dok marketinške prezentacije obećavaju čarobna rješenja, stvarni razvoj s umjetnom inteligencijom zahtijeva suočavanje s nepredvidljivosti sustava i visokim troškovima.',
+    imageAlt: 'Ilustracija uz članak: Stvarna slika razvoja s AI alatima: Iza marketinških obećanja',
+    publishedOn: '2026-08-27',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
