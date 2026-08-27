@@ -4792,6 +4792,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 394,
+    slug: 'nvidia-kupuje-hugging-face-za-12-9-milijardi-dolara',
+    title: 'Nvidia kupuje Hugging Face za 12,9 milijardi dolara',
+    description: 'Nvidia je u pregovorima o preuzimanju platforme Hugging Face u poslu vrijednom 12,9 milijardi dolara.',
+    imageAlt: 'Ilustracija uz članak: Nvidia kupuje Hugging Face',
+    publishedOn: '2026-08-27',
+    category: NEWS,
+    readTime: 3,
+    featured: false
   })
 ];
 
