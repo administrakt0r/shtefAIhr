@@ -4847,6 +4847,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 399,
+    slug: 'kraj-juniorskih-programera-je-opasna-iluzija',
+    title: 'Mit o nepotrebnosti juniora: Opasna iluzija IT industrije',
+    description: 'Vjerovanje da AI alati mogu u potpunosti zamijeniti junior programere je kratkovidna greška koja ugrožava budućnost struke.',
+    imageAlt: 'Ilustracija uz članak: Mit o nepotrebnosti juniora u programiranju',
+    publishedOn: '2026-08-28',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
