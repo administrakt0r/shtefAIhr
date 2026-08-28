@@ -4825,6 +4825,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 397,
+    slug: 'anthropic-dobio-sudski-spor-protiv-pentagona',
+    title: 'Sud srušio Pentagonovu crnu listu: Anthropic dobio spor',
+    description: 'Američki sud proglasio je blokadu Anthropica protuustavnom i nezakonitom odmazdom, poništivši odluku Trumpove administracije.',
+    imageAlt: 'Sudski čekić na pozadini digitalnog koda',
+    publishedOn: '2026-08-28',
+    category: NEWS,
+    readTime: 3,
+    featured: false
   })
 ];
 
