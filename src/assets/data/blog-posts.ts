@@ -4836,6 +4836,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 398,
+    slug: 'zasto-tvrtke-ne-trebaju-vlastiti-ai-model',
+    title: 'Skupa zabluda: Zašto većina tvrtki ne treba vlastiti AI model',
+    description: 'Opsesija treniranjem prilagođenih jezičnih modela stvara ogromne troškove bez stvarne poslovne vrijednosti. Zašto je RAG pametniji izbor.',
+    imageAlt: 'Ilustracija uz članak: Skupa zabluda o vlastitim AI modelima',
+    publishedOn: '2026-08-28',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
