@@ -4880,6 +4880,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 402,
+    slug: "zabluda-o-chatbotovima",
+    title: "Zabluda o chatbotovima: Zašto razgovor sa softverom nije budućnost",
+    description: "Svi dodaju razgovorna sučelja u svoje aplikacije, ali korisnici zapravo žele brzo rješavanje problema, a ne još jednog sugovornika.",
+    imageAlt: "Ilustracija uz članak: Zabluda o chatbotovima",
+    publishedOn: "2026-08-29",
+    category: ANALYSIS,
+    readTime: 3,
+    featured: false
   })
 ];
 
