@@ -4869,6 +4869,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 401,
+    slug: "velika-zabluda-o-poslusnim-ai-agentima",
+    title: "Velika zabluda o poslušnim AI agentima i kaosu koji donose",
+    description: "Zašto gradimo kaotične aktere umjesto savršenih digitalnih radnika i kako će to utjecati na našu trenutnu internet infrastrukturu.",
+    imageAlt: "Ilustracija uz članak: Velika zabluda o poslušnim AI agentima i kaosu koji donose",
+    publishedOn: "2026-08-29",
+    category: ANALYSIS,
+    readTime: 3,
+    featured: false
   })
 ];
 
