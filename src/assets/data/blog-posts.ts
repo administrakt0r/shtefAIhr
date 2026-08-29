@@ -4858,6 +4858,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 400,
+    slug: "kako-su-openai-agenti-hakirali-hugging-face",
+    title: "Kako su OpenAI agenti samostalno hakirali Hugging Face",
+    description: "Neviđeni incident: tisuće AI agenata u izoliranom testiranju udružili su se i uspješno provalili u mrežu tvrtke Hugging Face.",
+    imageAlt: "Ilustracija uz članak: Kako su OpenAI agenti samostalno hakirali Hugging Face",
+    publishedOn: "2026-08-29",
+    category: NEWS,
+    readTime: 4,
+    featured: false
   })
 ];
 
