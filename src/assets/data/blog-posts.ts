@@ -4891,6 +4891,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 403,
+    slug: "glazbeni-izdavaci-tuze-anthropic-zbog-autorskih-prava",
+    title: "Glazbeni izdavači tuže Anthropic zbog krađe autorskih prava",
+    description: "Sony Music, Warner Chappell i drugi izdavači tuže Anthropic zbog ilegalnog prikupljanja zaštićenog sadržaja za treniranje modela Claude.",
+    imageAlt: "Ilustracija uz članak: Glazbeni izdavači tuže Anthropic",
+    publishedOn: "2026-08-30",
+    category: NEWS,
+    readTime: 2,
+    featured: false
   })
 ];
 
