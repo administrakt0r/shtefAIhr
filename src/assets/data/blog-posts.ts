@@ -4891,6 +4891,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 403,
+    slug: "mit-o-prompt-inzenjeringu",
+    title: "Mit o prompt inženjeringu: Zašto to nije posao budućnosti",
+    description: "Trenutna opsesija takozvanim prompt inženjeringom stvara iluziju o novoj i visoko plaćenoj karijeri, dok zapravo rješava samo privremene nedostatke AI modela.",
+    imageAlt: "Ilustracija uz članak: Mit o prompt inženjeringu",
+    publishedOn: "2026-08-30",
+    category: ANALYSIS,
+    readTime: 3,
+    featured: false
   })
 ];
 
