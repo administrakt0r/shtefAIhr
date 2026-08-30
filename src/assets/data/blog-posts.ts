@@ -4902,6 +4902,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 2,
     featured: false
+  }),
+  createPost({
+    id: 404,
+    slug: "zasto-otvoreni-kod-nece-automatski-pobijediti",
+    title: "Zašto otvoreni kod neće automatski pobijediti u AI utrci",
+    description: "Iako su modeli otvorenog koda sve bolji, stvarna prednost u AI industriji ostaje na strani onih koji kontroliraju infrastrukturu i ekosustav.",
+    imageAlt: "Ilustracija uz članak: Zašto otvoreni kod neće automatski pobijediti",
+    publishedOn: "2026-08-30",
+    category: ANALYSIS,
+    readTime: 3,
+    featured: false
   })
 ];
 
