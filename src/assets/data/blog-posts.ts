@@ -4935,6 +4935,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 407,
+    slug: "ai-unistava-osrednjost-a-ne-kreativnost",
+    title: "AI ne uništava kreativnost, nego osrednjost",
+    description: "Umjetna inteligencija ne predstavlja prijetnju istinskoj kreativnosti, već automatizira samo prosječan, šablonski rad.",
+    imageAlt: "Ilustracija uz članak: AI ne uništava kreativnost, nego osrednjost",
+    publishedOn: "2026-08-31",
+    category: ANALYSIS,
+    readTime: 3,
+    featured: false
   })
 ];
 
