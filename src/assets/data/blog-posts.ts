@@ -4913,6 +4913,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 405,
+    slug: "meta-potajno-testira-robote-u-podatkovnim-centrima",
+    title: "Meta potajno testira robote u podatkovnim centrima",
+    description: "Meta je počela testirati robote u svojim podatkovnim centrima za obavljanje fizičkih zadataka.",
+    imageAlt: "Ilustracija uz članak: Meta potajno testira robote u podatkovnim centrima",
+    publishedOn: "2026-08-31",
+    category: NEWS,
+    readTime: 3,
+    featured: false
   })
 ];
 
