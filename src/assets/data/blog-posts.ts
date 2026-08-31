@@ -4924,6 +4924,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 406,
+    slug: "ai-alati-ne-pisu-kod-nego-ga-nadziru",
+    title: "AI alati ne kradu posao, nego ga pretvaraju u nadzor",
+    description: "Zaboravite na zamjenu programera, prava promjena je prelazak s pisanja na upravljanje kodom i arhitekturu.",
+    imageAlt: "Ilustracija uz članak: AI alati ne kradu posao, nego ga pretvaraju u nadzor",
+    publishedOn: "2026-08-31",
+    category: ANALYSIS,
+    readTime: 3,
+    featured: false
   })
 ];
 
