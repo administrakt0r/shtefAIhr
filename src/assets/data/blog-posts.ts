@@ -4946,6 +4946,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 408,
+    slug: "chatgpt-eu-dsa-regulacija",
+    title: "ChatGPT podliježe strožim regulativama u Europskoj uniji",
+    description: "Europska unija označila je ChatGPT kao 'vrlo veliki' alat prema Aktu o digitalnim uslugama.",
+    imageAlt: "Ilustracija uz članak: ChatGPT podliježe strožim regulativama u Europskoj uniji",
+    publishedOn: "2026-09-01",
+    category: NEWS,
+    readTime: 2,
+    featured: false
   })
 ];
 
