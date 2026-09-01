@@ -4968,6 +4968,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 410,
+    slug: "zasto-open-source-ai-nije-rjesenje",
+    title: "Zašto open source AI nije automatsko rješenje",
+    description: "Otvoreni kod neće sam po sebi demokratizirati umjetnu inteligenciju jer zanemaruje ključni faktor: hardver i podatke.",
+    imageAlt: "Ilustracija uz članak: Zašto open source AI nije automatsko rješenje",
+    publishedOn: "2026-09-01",
+    category: ANALYSIS,
+    readTime: 3,
+    featured: false
   })
 ];
 
