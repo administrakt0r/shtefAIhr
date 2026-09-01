@@ -4957,6 +4957,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 2,
     featured: false
+  }),
+  createPost({
+    id: 409,
+    slug: "zasto-integracija-ai-alata-zapinje",
+    title: "Pravi problem AI alata: Zašto integracija u procese zapinje",
+    description: "Svi obećavaju revoluciju, ali implementacija umjetne inteligencije u stvarne poslovne procese pokazuje ozbiljna ograničenja trenutne tehnologije.",
+    imageAlt: "Ilustracija uz članak: Pravi problem AI alata: Zašto integracija u procese zapinje",
+    publishedOn: "2026-09-01",
+    category: ANALYSIS,
+    readTime: 3,
+    featured: false
   })
 ];
 
