@@ -4979,6 +4979,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 411,
+    slug: "openai-astra-model-cybersecurity",
+    title: "OpenAI najavljuje Astra model s fokusom na kibernetičku sigurnost",
+    description: "OpenAI je podijelio detalje o nadolazećem Astra modelu koji samostalno pronalazi sigurnosne propuste u računalnim sustavima.",
+    imageAlt: "Ilustracija uz članak: OpenAI najavljuje Astra model s fokusom na kibernetičku sigurnost",
+    category: NEWS,
+    publishedOn: "2026-09-02",
+    readTime: 3,
+    featured: false
   })
 ];
 
