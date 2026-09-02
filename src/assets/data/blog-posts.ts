@@ -5001,6 +5001,17 @@ export const blogPosts: BlogPost[] = [
     publishedOn: "2026-09-02",
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 413,
+    slug: 'istina-o-razvoju-ai-alata-put-do-produkcije',
+    title: 'Istina o razvoju s AI alatima: Zašto je put do produkcije tako težak',
+    description: 'Dok je izrada AI prototipa brza i laka, izgradnja stabilne i sigurne aplikacije zahtijeva mjesece inženjerskog rada koji se često podcjenjuje.',
+    imageAlt: 'Grafički prikaz tranzicije od jednostavnog AI prototipa do složene produkcijske arhitekture',
+    publishedOn: '2026-09-02',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
