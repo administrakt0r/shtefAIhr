@@ -4990,6 +4990,17 @@ export const blogPosts: BlogPost[] = [
     publishedOn: "2026-09-02",
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 412,
+    slug: "ai-alati-programiranje-pomoc-ili-iluzija",
+    title: "AI alati za programiranje: Pomoć ili iluzija produktivnosti",
+    description: "Generativna umjetna inteligencija mijenja način na koji pišemo kod, no prava vrijednost nije u brzini, već u rješavanju kompleksnih problema.",
+    imageAlt: "Ilustracija uz članak: AI alati za programiranje",
+    category: ANALYSIS,
+    publishedOn: "2026-09-02",
+    readTime: 4,
+    featured: false
   })
 ];
 
