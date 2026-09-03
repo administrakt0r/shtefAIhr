@@ -5023,6 +5023,17 @@ export const blogPosts: BlogPost[] = [
     publishedOn: "2026-09-03",
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 415,
+    slug: 'zasto-je-agi-opasna-distrakcija-za-it',
+    title: 'Zašto je potraga za AGI-jem opasna distrakcija za IT industriju',
+    description: 'Opsesija stvaranjem opće umjetne inteligencije skreće pozornost s rješavanja stvarnih, svakodnevnih problema pomoću postojećih alata.',
+    imageAlt: 'Ilustracija uz članak: Zašto je potraga za AGI-jem opasna distrakcija',
+    category: ANALYSIS,
+    publishedOn: '2026-09-03',
+    readTime: 3,
+    featured: false
   })
 ];
 
