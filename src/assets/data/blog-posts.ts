@@ -5012,6 +5012,17 @@ export const blogPosts: BlogPost[] = [
     publishedOn: "2026-09-03",
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 414,
+    slug: "prava-cijena-ai-programiranja-tko-ce-odrzavati-kod",
+    title: "Prava cijena AI programiranja: Tko će održavati taj kod?",
+    description: "Generativna umjetna inteligencija ubrzava pisanje koda, ali stvara tehnički dug koji će se godinama naplaćivati u održavanju sustava.",
+    imageAlt: "Ilustracija uz članak: Prava cijena AI programiranja: Tko će održavati taj kod?",
+    category: ANALYSIS,
+    publishedOn: "2026-09-03",
+    readTime: 4,
+    featured: false
   })
 ];
 
