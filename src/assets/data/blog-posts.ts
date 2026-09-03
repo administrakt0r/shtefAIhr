@@ -5001,6 +5001,17 @@ export const blogPosts: BlogPost[] = [
     publishedOn: "2026-09-02",
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 413,
+    slug: "us-vlada-stala-uz-openai-u-sporu-oko-autorskih-prava",
+    title: "Američka vlada stala uz OpenAI u sporu oko autorskih prava",
+    description: "Trumpova administracija objavila je dokument u kojem brani korištenje zaštićenog sadržaja za treniranje AI modela, ističući važnost globalnog vodstva u umjetnoj inteligenciji.",
+    imageAlt: "Ilustracija uz članak: Američka vlada stala uz OpenAI u sporu oko autorskih prava",
+    category: NEWS,
+    publishedOn: "2026-09-03",
+    readTime: 3,
+    featured: false
   })
 ];
 
