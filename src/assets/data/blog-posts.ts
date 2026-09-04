@@ -5034,6 +5034,17 @@ export const blogPosts: BlogPost[] = [
     publishedOn: '2026-09-03',
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 416,
+    slug: "nvidia-kupuje-hugging-face",
+    title: "Nvidia kupuje platformu Hugging Face za 12,9 milijardi dolara",
+    description: "Nvidia je preuzela open-source AI repozitorij Hugging Face, spajajući hardversku dominaciju s ogromnim ekosustavom za developere.",
+    imageAlt: "Ilustracija uz članak: Nvidia kupuje platformu Hugging Face za 12,9 milijardi dolara",
+    publishedOn: "2026-09-04",
+    category: NEWS,
+    readTime: 3,
+    featured: false
   })
 ];
 
