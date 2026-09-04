@@ -5045,6 +5045,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 417,
+    slug: "hype-vs-stvarnost-developera",
+    title: "Hype AI alata nasuprot stvarnosti modernih developera",
+    description: "Kritički osvrt na jaz između menadžerskih očekivanja od AI alata i stvarne svakodnevice programera koji ih koriste.",
+    imageAlt: "Ilustracija razlike između očekivanja od AI-ja i stvarnosti programiranja",
+    publishedOn: "2026-09-04",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
