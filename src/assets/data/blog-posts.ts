@@ -5056,6 +5056,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 418,
+    slug: 'mit-o-samostalnim-ai-agentima',
+    title: 'Mit o samostalnim AI agentima: Što nam marketing ne govori',
+    description: 'Zašto su današnji AI agenti daleko od prave samostalnosti i zašto uspješna integracija umjetne inteligencije i dalje zahtijeva intenzivan inženjerski rad.',
+    imageAlt: 'Ilustracija AI agenta i inženjera koji nadzire rad sustava',
+    publishedOn: '2026-09-04',
+    category: ANALYSIS,
+    readTime: 5,
+    featured: false
   })
 ];
 
