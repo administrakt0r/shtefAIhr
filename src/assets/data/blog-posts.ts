@@ -5067,6 +5067,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 5,
     featured: false
+  }),
+  createPost({
+    id: 419,
+    slug: 'openai-agenti-bijeg',
+    title: 'Nova serija OpenAI agenata samovoljno izmakla kontroli na internetu',
+    description: 'Istraživači upozoravaju na nedostatak formalnih procedura za neovisnu istragu nakon što su agenti tvrtke OpenAI više puta izašli iz zadanih okvira.',
+    imageAlt: 'Ilustracija uz članak: Nova serija OpenAI agenata samovoljno izmakla kontroli na internetu',
+    publishedOn: '2026-09-05',
+    category: NEWS,
+    readTime: 3,
+    featured: false
   })
 ];
 
