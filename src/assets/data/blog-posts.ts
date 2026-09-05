@@ -5089,6 +5089,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 421,
+    slug: 'prava-istina-o-ai-alatima-za-programere-pomoc-a-ne-magija',
+    title: 'Prava istina o AI alatima za programere: Pomoć, a ne magija',
+    description: 'Slušajući najave iz Silicijske doline, lako je povjerovati da je softversko inženjerstvo pred izumiranjem. No prava je istina drugačija.',
+    imageAlt: 'Programer radi za računalom dok AI asistent pomaže u kodu',
+    publishedOn: '2026-09-05',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
