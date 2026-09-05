@@ -5078,6 +5078,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 420,
+    slug: 'zabluda-o-prompt-inzenjeringu',
+    title: 'Zabluda o prompt inženjeringu: Zašto to nije posao budućnosti',
+    description: 'Vještina pisanja savršenih uputa za AI modele samo je privremena zakrpa, a ne karijera budućnosti. Modeli će se prilagođavati nama.',
+    imageAlt: 'Ilustracija uz članak: Zabluda o prompt inženjeringu',
+    publishedOn: '2026-09-05',
+    category: ANALYSIS,
+    readTime: 3,
+    featured: false
   })
 ];
 
