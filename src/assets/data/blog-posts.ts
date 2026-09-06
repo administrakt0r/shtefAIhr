@@ -5122,6 +5122,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 424,
+    slug: 'skrivena-cijena-ai-alata-potrosnja-vode',
+    title: 'Skrivena cijena AI alata: Koliko vode troše podatkovni centri',
+    description: 'Iza svake brze generacije teksta stoji ogromna potrošnja resursa, a voda postaje ključni problem o kojem industrija šuti.',
+    imageAlt: 'Ilustracija uz članak: Skrivena cijena AI alata i potrošnja vode',
+    publishedOn: '2026-09-06',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
