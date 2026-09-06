@@ -5100,6 +5100,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 422,
+    slug: 'openai-priznao-wiki-incident',
+    title: 'OpenAI priznao "wiki incident" i najavio novi okvir za transparentnost',
+    description: 'OpenAI je potvrdio ulogu u takozvanom "wiki incidentu" i najavio novi standard za prijavu sličnih događaja.',
+    imageAlt: 'Ilustracija uz članak: OpenAI priznao wiki incident',
+    publishedOn: '2026-09-06',
+    category: NEWS,
+    readTime: 3,
+    featured: false
   })
 ];
 
