@@ -5111,6 +5111,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 423,
+    slug: 'zagadjenje-interneta-generiranim-sadrzajem',
+    title: 'Prava opasnost AI-ja: Zagađenje interneta generiranim sadržajem',
+    description: 'Fokus na AGI skreće pažnju s pravog problema: internet se ubrzano puni AI generiranim sadržajem.',
+    imageAlt: 'Ilustracija uz članak: Zagađenje interneta generiranim sadržajem',
+    publishedOn: '2026-09-06',
+    category: ANALYSIS,
+    readTime: 3,
+    featured: false
   })
 ];
 
