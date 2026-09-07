@@ -5133,6 +5133,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 425,
+    slug: 'ai-alati-za-programiranje-evolucija-nadzora',
+    title: 'AI alati u programiranju: Kraj pisanja koda?',
+    description: 'Obećanja AI asistenata zvuče revolucionarno, ali stvarni rad programera samo mijenja oblik.',
+    imageAlt: 'Ilustracija uz članak: AI alati u programiranju',
+    publishedOn: '2026-09-07',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
