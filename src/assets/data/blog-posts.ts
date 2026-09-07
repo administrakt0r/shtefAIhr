@@ -5144,6 +5144,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 426,
+    slug: 'zabluda-o-potpuno-autonomnim-ai-agentima',
+    title: 'Zabluda o potpuno autonomnim AI agentima: Ljudi su i dalje ključni',
+    description: 'Zašto je ideja o umjetnoj inteligenciji koja radi potpuno sama još uvijek daleko od stvarnosti u poslovnom svijetu.',
+    imageAlt: 'Ilustracija uz članak: Zabluda o potpuno autonomnim AI agentima',
+    publishedOn: '2026-09-07',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
