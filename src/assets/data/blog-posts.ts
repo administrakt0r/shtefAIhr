@@ -5155,6 +5155,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 427,
+    slug: 'zasto-je-ideja-o-10x-ai-programeru-opasan-mit',
+    title: 'Zašto je ideja o 10x AI programeru zapravo opasan mit',
+    description: 'Obećanje o brzini rasta produktivnosti zanemaruje činjenicu da je tipkanje najlakši dio posla.',
+    imageAlt: 'Ilustracija uz članak: Zašto je ideja o 10x AI programeru zapravo opasan mit',
+    publishedOn: '2026-09-08',
+    category: ANALYSIS,
+    readTime: 3,
+    featured: false
   })
 ];
 
