@@ -5166,6 +5166,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 428,
+    slug: 'ai-u-pravosudu-opasna-igra-s-laznim-presedanima',
+    title: 'Umjetna inteligencija u pravosuđu: Opasna igra s lažnim presedanima',
+    description: 'Dok odvjetnici predaju nepostojeće slučajeve zbog AI halucinacija, velika odvjetnička industrija ignorira probleme i udvostručava svoja ulaganja.',
+    imageAlt: 'Ilustracija uz komentar: Umjetna inteligencija u pravosuđu',
+    publishedOn: '2026-09-08',
+    category: ANALYSIS,
+    readTime: 3,
+    featured: false
   })
 ];
 
