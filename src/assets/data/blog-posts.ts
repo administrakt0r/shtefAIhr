@@ -5155,6 +5155,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 427,
+    slug: 'seattle-times-newsday-lawsuit-openai-microsoft',
+    title: 'The Seattle Times i Newsday tuže OpenAI i Microsoft',
+    description: 'Novi val tužbi zbog autorskih prava pogađa OpenAI i Microsoft, a izdavači traže uništenje AI modela i trening setova.',
+    imageAlt: 'Ilustracija uz članak: The Seattle Times i Newsday tuže OpenAI i Microsoft',
+    publishedOn: '2026-09-08',
+    category: NEWS,
+    readTime: 3,
+    featured: false
   })
 ];
 
