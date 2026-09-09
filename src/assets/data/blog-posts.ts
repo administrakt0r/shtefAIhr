@@ -5188,6 +5188,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 430,
+    slug: 'chatgpt-search-centralizacija-interneta',
+    title: 'ChatGPT Search i centralizacija interneta: Kome vjerujemo',
+    description: 'Zašto oslanjanje na ChatGPT Search za pretraživanje weba donosi rizik centralizacije pristupa informacijama za stotine milijuna korisnika.',
+    imageAlt: 'Ilustracija uz članak: ChatGPT Search i centralizacija interneta',
+    publishedOn: '2026-09-09',
+    category: ANALYSIS,
+    readTime: 3,
+    featured: false
   })
 ];
 
