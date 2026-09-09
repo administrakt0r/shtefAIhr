@@ -5188,6 +5188,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 430,
+    slug: 'umjetna-inteligencija-u-programiranju-stvarna-slika',
+    title: 'Umjetna inteligencija u programiranju: Stvarna slika',
+    description: 'Iako marketing tvrdi da AI može samostalno pisati aplikacije, stvarna praksa pokazuje da su to tek korisni alati koji zahtijevaju stalni nadzor.',
+    imageAlt: 'Ilustracija uz komentar: Stvarna slika AI alata za programiranje',
+    publishedOn: '2026-09-09',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
