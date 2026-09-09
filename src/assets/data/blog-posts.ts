@@ -5177,6 +5177,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 429,
+    slug: 'openai-navier-stokes-solution',
+    title: 'OpenAI riješio problem Navier-Stokes uz kontroverze oko autorskih prava',
+    description: 'OpenAI tvrdi da je riješio 90 godina star matematički problem, no suočavaju se s optužbama istraživača zbog mogućeg korištenja njihovih podataka iz Codexa.',
+    imageAlt: 'Ilustracija uz članak: OpenAI riješio problem Navier-Stokes',
+    publishedOn: '2026-09-08',
+    category: NEWS,
+    readTime: 3,
+    featured: false
   })
 ];
 
