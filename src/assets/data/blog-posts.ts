@@ -5221,6 +5221,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 433,
+    slug: 'iluzija-open-source-ai-modela',
+    title: 'Iluzija open source AI modela i ovisnost o infrastrukturi',
+    description: 'Zašto dostupnost kodova modela ne znači demokratizaciju umjetne inteligencije i kako to jača moć pružatelja infrastrukture.',
+    imageAlt: 'Ilustracija uz komentar: Iluzija open source AI modela i ovisnost o infrastrukturi',
+    publishedOn: '2026-09-10',
+    category: ANALYSIS,
+    readTime: 3,
+    featured: false
   })
 ];
 
