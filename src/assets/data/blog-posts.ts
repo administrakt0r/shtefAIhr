@@ -5199,6 +5199,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 431,
+    slug: 'openai-dodaje-kriticara-u-upravni-odbor',
+    title: 'OpenAI u upravni odbor imenuje istaknutog kritičara',
+    description: 'Istraživač Paul Christiano pridružuje se OpenAI-ju u trenutku pojačanog nadzora sigurnosnih procedura.',
+    imageAlt: 'Ilustracija uz vijest: OpenAI u upravni odbor imenuje istaknutog kritičara',
+    publishedOn: '2026-09-10',
+    category: NEWS,
+    readTime: 3,
+    featured: false
   })
 ];
 
