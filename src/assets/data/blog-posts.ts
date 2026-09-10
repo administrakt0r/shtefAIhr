@@ -5210,6 +5210,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 432,
+    slug: 'ai-infrastrukturni-mjehur',
+    title: 'Umjetna inteligencija i infrastrukturni mjehur od trilijun dolara',
+    description: 'Obećanje generativne tehnologije pretvorilo se u utrku kapitalnih ulaganja s vrlo malo opipljivih rezultata.',
+    imageAlt: 'Ilustracija infrastrukturnog mjehura umjetne inteligencije',
+    publishedOn: '2026-09-10',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
