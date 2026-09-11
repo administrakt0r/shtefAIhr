@@ -5232,6 +5232,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 434,
+    slug: 'stvarnost-ai-programiranja',
+    title: 'Stvarnost AI programiranja: Od pisanja do pregledavanja koda',
+    description: 'Umjetna inteligencija prebacila je najteži dio posla s pisanja na pregledavanje koda, što donosi nova kognitivna opterećenja.',
+    imageAlt: 'Ilustracija uz komentar: Stvarnost AI programiranja',
+    publishedOn: '2026-09-11',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
