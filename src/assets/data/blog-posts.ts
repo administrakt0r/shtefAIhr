@@ -5232,6 +5232,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 434,
+    slug: 'openai-puts-pro-subscriptions-on-hold-due-to-astra-demand',
+    title: 'OpenAI pauzira Pro pretplate zbog potražnje za Astrom',
+    description: 'Velika potražnja za novim AI modelom Astra izazvala je infrastrukturno opterećenje, zbog čega je OpenAI privremeno pauzirao nove prijave za Pro plan.',
+    imageAlt: 'Ilustracija uz vijest: OpenAI pauzira Pro pretplate zbog potražnje za Astrom',
+    publishedOn: '2026-09-10',
+    category: NEWS,
+    readTime: 3,
+    featured: false
   })
 ];
 
