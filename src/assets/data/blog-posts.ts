@@ -5243,6 +5243,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 435,
+    slug: 'openai-pauzira-pro-pretplate',
+    title: 'OpenAI pauzira Pro pretplate zbog neviđene potražnje za Astra modelom',
+    description: 'Neviđena potražnja za najnovijim modelom Astra prisilila je OpenAI da privremeno onemogući nove Pro pretplate.',
+    imageAlt: 'Ilustracija uz članak: OpenAI pauzira Pro pretplate zbog modela Astra',
+    publishedOn: '2026-09-12',
+    category: NEWS,
+    readTime: 3,
+    featured: false
   })
 ];
 
