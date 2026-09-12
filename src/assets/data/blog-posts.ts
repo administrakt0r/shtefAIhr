@@ -5265,6 +5265,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 437,
+    slug: 'zamka-brzih-prototipova',
+    title: 'Zamka brzih prototipova: Zašto su AI agenti teški za produkciju',
+    description: 'Lako je napraviti demo u jednom vikendu, ali stvarni izazov leži u pretvaranju nepredvidivih modela u pouzdane sustave.',
+    imageAlt: 'Ilustracija uz članak: Zamka brzih prototipova',
+    publishedOn: '2026-09-12',
+    category: ANALYSIS,
+    readTime: 3,
+    featured: false
   })
 ];
 
