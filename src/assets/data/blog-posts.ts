@@ -5254,6 +5254,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 436,
+    slug: 'infrastrukturni-zid-sto-nam-govori-pauziranje-openai-pretplata',
+    title: 'Infrastrukturni zid: Što nam govori pauziranje OpenAI pretplata',
+    description: 'Pauziranje OpenAI Pro pretplata ukazuje na to da su infrastrukturna ograničenja, poput procesorske snage i energije, stvarni problem AI industrije.',
+    imageAlt: 'Ilustracija uz članak: Infrastrukturni zid: Što nam govori pauziranje OpenAI pretplata',
+    publishedOn: '2026-09-12',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
