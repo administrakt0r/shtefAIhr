@@ -5276,6 +5276,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 438,
+    slug: 'anthropic-plan-to-pace-the-frontier',
+    title: 'Anthropicov plan usporavanja razvoja AI-a uz podršku OpenAI-a',
+    description: 'Dario Amodei, izvršni direktor Anthropica, izložio je tri strategije za sigurniji razvoj AI-a, a Sam Altman potvrdio je sudjelovanje OpenAI-a.',
+    imageAlt: 'Ilustracija uz članak: Anthropicov plan usporavanja razvoja AI-a uz podršku OpenAI-a',
+    publishedOn: '2026-09-12',
+    category: NEWS,
+    readTime: 4,
+    featured: false
   })
 ];
 
