@@ -5287,6 +5287,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 439,
+    slug: 'zabluda-otvorenog-koda-ai-modeli',
+    title: 'Zabluda otvorenog koda u AI svijetu: Tko zapravo pobjeđuje?',
+    description: 'Dok otvoreni kod donosi ubrzanu inovaciju u razvoju AI rješenja, stvarna moć ipak ostaje u rukama tehnoloških divova zbog ogromnih troškova infrastrukture.',
+    imageAlt: 'Ilustracija uz članak: Zabluda otvorenog koda u AI svijetu',
+    publishedOn: '2026-09-13',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
