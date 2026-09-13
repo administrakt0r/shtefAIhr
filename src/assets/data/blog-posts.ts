@@ -5276,6 +5276,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 438,
+    slug: 'halucinacije-u-visokorizicnim-sektorima',
+    title: 'Halucinacije: Stvarni problem u visokorizičnim sektorima',
+    description: 'Otkrivanje i ublažavanje AI halucinacija predstavljaju značajne izazove u kritičnim scenarijima poput medicinske dijagnostike i logistike.',
+    imageAlt: 'Ilustracija uz članak: Halucinacije: Stvarni problem u visokorizičnim sektorima',
+    publishedOn: '2026-09-13',
+    category: ANALYSIS,
+    readTime: 3,
+    featured: false
   })
 ];
 
