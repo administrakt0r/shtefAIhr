@@ -5298,6 +5298,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 440,
+    slug: 'anthropic-ceo-outlines-plan-to-pace-the-frontier',
+    title: 'Anthropic predlaže usporavanje razvoja umjetne inteligencije',
+    description: 'Direktor Anthropica Dario Amodei predložio je strategije za sigurniji razvoj AI modela, uključujući ugrađene procjenjivače.',
+    imageAlt: 'Ilustracija uz članak: Anthropic predlaže usporavanje razvoja umjetne inteligencije',
+    publishedOn: '2026-09-14',
+    category: NEWS,
+    readTime: 3,
+    featured: false
   })
 ];
 
