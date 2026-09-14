@@ -5309,6 +5309,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 441,
+    slug: 'ai-pretvara-programere-u-recenzente',
+    title: 'AI ne zamjenjuje programere, već ih pretvara u recenzente',
+    description: 'Umjetna inteligencija mijenja prirodu razvoja softvera, od pisanja koda prema njegovoj provjeri i validaciji.',
+    imageAlt: 'Ilustracija uz članak: AI ne zamjenjuje programere, već ih pretvara u recenzente',
+    publishedOn: '2026-09-14',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
