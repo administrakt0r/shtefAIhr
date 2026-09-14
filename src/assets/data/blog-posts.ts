@@ -5320,6 +5320,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 442,
+    slug: 'zasto-je-agi-samo-distrakcija',
+    title: 'Zašto je umjetna opća inteligencija (AGI) samo distrakcija',
+    description: 'Opsesija stvaranjem sustava pametnijeg od čovjeka skreće pažnju s konkretnih problema koje AI danas može riješiti.',
+    imageAlt: 'Ilustracija uz članak: Zašto je umjetna opća inteligencija (AGI) samo distrakcija',
+    publishedOn: '2026-09-14',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
