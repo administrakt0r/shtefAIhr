@@ -5331,6 +5331,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 443,
+    slug: 'openai-kupio-glass-imaging',
+    title: 'OpenAI kupio proizvođača kamera Glass Imaging za 300 milijuna dolara',
+    description: 'Akvizicija tima zaslužnog za Appleov Portrait Mode za naprednu AI obradu fotografija na mobilnim uređajima.',
+    imageAlt: 'Ilustracija uz članak: OpenAI kupio proizvođača kamera Glass Imaging za 300 milijuna dolara',
+    publishedOn: '2026-09-15',
+    category: NEWS,
+    readTime: 3,
+    featured: false
   })
 ];
 
