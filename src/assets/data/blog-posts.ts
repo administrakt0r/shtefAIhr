@@ -5342,6 +5342,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 444,
+    slug: 'cijena-ai-produktivnosti',
+    title: 'Brzina ispred kvalitete: Prava cijena AI produktivnosti',
+    description: 'Generativni alati ubrzavaju rad, ali hiper-produktivnost skriva pad temeljne kvalitete i kritičkog razmišljanja.',
+    imageAlt: 'Ilustracija uz članak: Brzina ispred kvalitete: Prava cijena AI produktivnosti',
+    publishedOn: '2026-09-15',
+    category: ANALYSIS,
+    readTime: 3,
+    featured: false
   })
 ];
 
