@@ -5353,6 +5353,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 445,
+    slug: 'privid-znanja-umjetna-inteligencija',
+    title: 'Privid znanja: Kako umjetna inteligencija mijenja naše razumijevanje',
+    description: 'Generativni alati ubrzavaju rad, ali oslanjanje na njih može dovesti do opadanja temeljnih vještina i kritičkog promišljanja.',
+    imageAlt: 'Ilustracija uz članak: Privid znanja: Kako umjetna inteligencija mijenja naše razumijevanje',
+    publishedOn: '2026-09-15',
+    category: ANALYSIS,
+    readTime: 3,
+    featured: false
   })
 ];
 
