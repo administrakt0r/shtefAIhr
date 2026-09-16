@@ -5364,6 +5364,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 446,
+    slug: 'zamka-automatizacije-umjetna-inteligencija',
+    title: 'Zamka automatizacije: Zašto nam umjetna inteligencija ne štedi vrijeme',
+    description: 'Umjesto obećanog oslobađanja od rada, umjetna inteligencija prebacuje teret na složeni proces nadzora i verifikacije strojno generiranog sadržaja.',
+    imageAlt: 'Ilustracija uz članak: Zamka automatizacije: Zašto nam umjetna inteligencija ne štedi vrijeme',
+    publishedOn: '2026-09-16',
+    category: ANALYSIS,
+    readTime: 3,
+    featured: false
   })
 ];
 
