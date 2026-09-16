@@ -5375,6 +5375,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 447,
+    slug: 'zabluda-o-opcoj-umjetnoj-inteligenciji',
+    title: 'Zabluda o AGI-ju: Zašto je opća umjetna inteligencija samo distrakcija',
+    description: 'Opsesija tehnološke industrije općom umjetnom inteligencijom usporava rješavanje stvarnih, svakodnevnih problema u primjeni današnjih modela.',
+    imageAlt: 'Ilustracija uz članak: Zabluda o općoj umjetnoj inteligenciji',
+    publishedOn: '2026-09-16',
+    category: ANALYSIS,
+    readTime: 3,
+    featured: false
   })
 ];
 
