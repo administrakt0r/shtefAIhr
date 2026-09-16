@@ -5364,6 +5364,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 446,
+    slug: 'jensen-huang-nvidia-protiv-regulacije-umjetne-inteligencije',
+    title: 'Jensen Huang iz Nvidije tvrdi da AI ne treba nove zakone',
+    description: 'Izvršni direktor Nvidije smatra da je sigurnost umjetne inteligencije inženjerski, a ne pravni problem.',
+    imageAlt: 'Ilustracija uz članak: Jensen Huang iz Nvidije tvrdi da AI ne treba nove zakone',
+    publishedOn: '2026-09-16',
+    category: NEWS,
+    readTime: 2,
+    featured: false
   })
 ];
 
