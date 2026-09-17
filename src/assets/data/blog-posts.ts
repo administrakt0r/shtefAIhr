@@ -5408,6 +5408,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 450,
+    slug: 'mit-o-zamjeni-junior-programera',
+    title: 'Mit o zamjeni junior programera: AI alati donose nove probleme',
+    description: 'Umjesto da eliminiraju potrebu za početnicima, alati za generiranje koda samo mijenjaju usko grlo u razvoju softvera, zahtijevajući više kritičkog razmišljanja.',
+    imageAlt: 'Ilustracija uz članak: Mit o zamjeni junior programera',
+    publishedOn: '2026-09-17',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
