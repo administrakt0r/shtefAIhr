@@ -5397,6 +5397,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 449,
+    slug: 'kraj-chat-sucelja-zasto-ai-alati-trebaju-gumbe-a-ne-razgovor',
+    title: 'Kraj chat sučelja: Zašto AI alati trebaju gumbe, a ne razgovor',
+    description: 'Opsesija konverzacijskim sučeljima zanemaruje osnovne principe dobrog dizajna i efikasnosti. Saznajte zašto je tradicionalni GUI bolji za produktivnost.',
+    imageAlt: 'Ilustracija uz članak: Kraj chat sučelja: Zašto AI alati trebaju gumbe, a ne razgovor',
+    publishedOn: '2026-09-17',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
