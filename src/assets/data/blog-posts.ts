@@ -5386,6 +5386,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 448,
+    slug: 'anthropic-merges-claude-chat-and-cowork',
+    title: 'Anthropic spaja Claude chat i Cowork u jedno jedinstveno sučelje',
+    description: 'Nova nadogradnja sučelja omogućuje pristup chatu, Coworku i Artifactsima unutar jednog prozora za lakše korištenje.',
+    imageAlt: 'Ilustracija uz članak: Anthropic spaja Claude chat i Cowork u jedno jedinstveno sučelje',
+    publishedOn: '2026-09-17',
+    category: NEWS,
+    readTime: 3,
+    featured: false
   })
 ];
 
