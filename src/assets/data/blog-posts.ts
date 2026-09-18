@@ -5419,6 +5419,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 451,
+    slug: 'crusoe-raises-3-9b-ai-factories',
+    title: 'Crusoe prikupio 3.9 milijardi dolara za izgradnju modularnih AI tvornica',
+    description: 'Tvrtka za razvoj podatkovnih centara Crusoe prikupila je 3.9 milijardi dolara za financiranje modularnih Spark centara i postojećih projekata.',
+    imageAlt: 'Ilustracija uz članak: Crusoe prikupio 3.9 milijardi dolara',
+    publishedOn: '2026-09-17',
+    category: NEWS,
+    readTime: 3,
+    featured: false
   })
 ];
 
