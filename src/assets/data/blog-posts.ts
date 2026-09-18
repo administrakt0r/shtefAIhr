@@ -5430,6 +5430,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 452,
+    slug: 'ai-alati-mijenjaju-vrstu-bugova',
+    title: 'Umjetna inteligencija potpuno mijenja prirodu bugova',
+    description: 'Umjetna inteligencija ne smanjuje broj grešaka, već samo mijenja njihovu prirodu iz sintaktičkih u složene arhitektonske i logičke pogreške.',
+    imageAlt: 'Ilustracija uz članak: Umjetna inteligencija potpuno mijenja prirodu bugova',
+    publishedOn: '2026-09-18',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
