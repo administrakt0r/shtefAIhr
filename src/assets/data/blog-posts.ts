@@ -5441,6 +5441,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 453,
+    slug: 'zasto-je-opca-umjetna-inteligencija-samo-marketinski-trik',
+    title: 'Zašto je opća umjetna inteligencija samo marketinški trik',
+    description: 'Opća umjetna inteligencija trenutno je više znanstvena fantastika i korporativni marketing nego neposredna tehnološka stvarnost.',
+    imageAlt: 'Ilustracija uz članak: Zašto je opća umjetna inteligencija samo marketinški trik',
+    publishedOn: '2026-09-18',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
