@@ -5441,6 +5441,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 453,
+    slug: 'introducing-gemini-3-8-live-and-3-8-live-extended-thinking',
+    title: 'Google predstavio Gemini 3.8 Live i Extended Thinking modele',
+    description: 'Google je lansirao nove AI modele koji donose napredno glasovno zaključivanje u stvarnom vremenu i pozadinsko rješavanje složenih zadataka.',
+    imageAlt: 'Ilustracija uz članak: Google predstavio Gemini 3.8 Live',
+    publishedOn: '2026-09-19',
+    category: NEWS,
+    readTime: 3,
+    featured: false
   })
 ];
 
