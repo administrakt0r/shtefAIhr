@@ -5452,6 +5452,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 454,
+    slug: 'kraj-iluzije-o-autopilotu',
+    title: 'Kraj iluzije o autopilotu: Umjetna inteligencija treba stručnjake',
+    description: 'Modeli produženog razmišljanja neće nas zamijeniti, već će nesrazmjerno nagraditi one koji ih znaju usmjeriti.',
+    imageAlt: 'Ilustracija uz članak: Kraj iluzije o autopilotu',
+    publishedOn: '2026-09-19',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
