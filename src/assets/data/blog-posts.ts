@@ -5463,6 +5463,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 455,
+    slug: 'istina-o-razvoju-softvera',
+    title: 'Razvoj softvera u doba umjetne inteligencije: Istina iza marketinga',
+    description: 'Umjetna inteligencija ne piše sama aplikacije, ona je samo asistent koji ubrzava iskusne inženjere.',
+    imageAlt: 'Ilustracija uz članak: Istina o razvoju softvera',
+    publishedOn: '2026-09-19',
+    category: ANALYSIS,
+    readTime: 3,
+    featured: false
   })
 ];
 
