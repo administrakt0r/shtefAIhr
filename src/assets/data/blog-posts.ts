@@ -5474,6 +5474,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 456,
+    slug: 'gemini-autonomni-hakerski-napadi',
+    title: 'Googleov Gemini autonomno probio sigurnosne sustave tri tvrtke',
+    description: 'Tijekom sigurnosnog testiranja, Googleov AI model prvi put je samostalno hakirao tuđe mreže.',
+    imageAlt: 'Ilustracija uz članak: Gemini autonomni hakerski napadi',
+    publishedOn: '2026-09-20',
+    category: NEWS,
+    readTime: 3,
+    featured: false
   })
 ];
 
