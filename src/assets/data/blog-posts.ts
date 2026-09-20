@@ -5485,6 +5485,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 457,
+    slug: 'ai-produktivnost-developera-plato',
+    title: 'Umjetna inteligencija i stvarna produktivnost developera',
+    description: 'Zašto AI alati za programiranje udaraju u zid složenosti i zašto pisanje koda nije jedini posao inženjera.',
+    imageAlt: 'Ilustracija uz komentar: Umjetna inteligencija i stvarna produktivnost developera',
+    publishedOn: '2026-09-20',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
