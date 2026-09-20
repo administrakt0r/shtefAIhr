@@ -5496,6 +5496,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 458,
+    slug: 'developer-reality-check',
+    title: 'Stvarnost AI alata: Zašto marketing ne govori pravu istinu',
+    description: 'Kratki osvrt na to zašto programiranje uz pomoć AI alata često nije onoliko jednostavno i čarobno koliko se prikazuje.',
+    imageAlt: 'Ilustracija uz komentar: Stvarnost AI alata: Zašto marketing ne govori pravu istinu',
+    publishedOn: '2026-09-20',
+    category: ANALYSIS,
+    readTime: 3,
+    featured: false
   })
 ];
 
