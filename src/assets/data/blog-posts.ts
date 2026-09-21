@@ -5508,6 +5508,18 @@ export const blogPosts: BlogPost[] = [
     readTime: 3,
     featured: false
   })
+,
+  createPost({
+    id: 459,
+    slug: 'zasto-agi-nije-blizu',
+    title: 'Zašto AGI nije ni blizu usprkos obećanjima tehnoloških divova',
+    description: 'Hype oko opće umjetne inteligencije zamagljuje stvarna ograničenja današnjih jezičnih modela.',
+    imageAlt: 'Ilustracija razlike između današnjih AI alata i opće umjetne inteligencije',
+    publishedOn: '2026-09-21',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
+  })
 ];
 
 const assertUniqueField = (
