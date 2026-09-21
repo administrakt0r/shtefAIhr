@@ -5496,6 +5496,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 458,
+    slug: 'zabluda-o-ai-agentima-koji-rade-samostalno',
+    title: 'Zabluda o \'AI agentima\' koji rade potpuno samostalno',
+    description: 'Zašto je vizija autonomnih agenata koji samostalno rješavaju složene probleme i dalje samo marketinški trik.',
+    imageAlt: 'Ilustracija uz komentar: Zabluda o \'AI agentima\' koji rade potpuno samostalno',
+    publishedOn: '2026-09-21',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
