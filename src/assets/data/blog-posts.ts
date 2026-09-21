@@ -5496,6 +5496,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 458,
+    slug: 'alphagenome-atlas-dna-mutacije',
+    title: 'DeepMind predstavio moćni AlphaGenome Atlas',
+    description: 'Nova baza podataka koja sadrži predviđanja za 9 milijardi mogućih jednoslovnih mutacija u ljudskom genomu.',
+    imageAlt: 'Ilustracija uz vijest o AlphaGenome Atlasu',
+    publishedOn: '2026-09-20',
+    category: NEWS,
+    readTime: 3,
+    featured: false
   })
 ];
 
