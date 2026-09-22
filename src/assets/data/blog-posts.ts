@@ -5530,6 +5530,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 461,
+    slug: 'skrivena-cijena-oslanjanja-na-generirani-kod',
+    title: 'Skrivena cijena oslanjanja na generirani kod u razvoju',
+    description: 'Umjetna inteligencija donosi brzinu, ali dugoročno oduzima duboko arhitektonsko razumijevanje.',
+    imageAlt: 'Ilustracija uz članak: Skrivena cijena oslanjanja na generirani kod u razvoju',
+    publishedOn: '2026-09-22',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
