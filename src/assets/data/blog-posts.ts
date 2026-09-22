@@ -5519,6 +5519,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 460,
+    slug: 'openai-osniva-savjetodavnu-skupinu-za-matematiku',
+    title: 'OpenAI osniva savjetodavnu skupinu za matematiku',
+    description: 'Nova savjetodavna skupina za matematiku uspostavljena je nakon što je AI riješio više od 100 otvorenih problema.',
+    imageAlt: 'Ilustracija uz članak: OpenAI osniva savjetodavnu skupinu za matematiku',
+    publishedOn: '2026-09-22',
+    category: NEWS,
+    readTime: 3,
+    featured: false
   })
 ];
 
