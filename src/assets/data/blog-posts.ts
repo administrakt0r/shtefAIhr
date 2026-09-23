@@ -5563,6 +5563,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 464,
+    slug: 'iluzija-ai-asistenata-vise-ispravljamo-nego-sto-programiramo',
+    title: 'Iluzija AI asistenata: Više ispravljamo nego što programiramo',
+    description: 'Marketinška obećanja o autonomnom programiranju sudaraju se sa stvarnošću u kojoj inženjeri postaju lektori za kod.',
+    imageAlt: 'Ilustracija uz članak: Iluzija AI asistenata: Više ispravljamo nego što programiramo',
+    publishedOn: '2026-09-23',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
