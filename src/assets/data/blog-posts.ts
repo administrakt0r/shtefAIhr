@@ -5541,6 +5541,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 462,
+    slug: 'openai-formira-savjetodavni-panel-matematicara',
+    title: 'OpenAI formira nezavisni savjetodavni panel vrhunskih matematičara',
+    description: 'Tvrtka okuplja devet elitnih stručnjaka kako bi unaprijedila svoja matematička istraživanja i komunikaciju s akademskom zajednicom.',
+    imageAlt: 'Ilustracija uz članak: OpenAI formira nezavisni savjetodavni panel vrhunskih matematičara',
+    publishedOn: '2026-09-23',
+    category: NEWS,
+    readTime: 3,
+    featured: false
   })
 ];
 
