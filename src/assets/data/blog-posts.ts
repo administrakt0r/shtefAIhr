@@ -5552,6 +5552,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 463,
+    slug: 'opsesija-ai-alatima-unistava-digitalnu-pismenost',
+    title: 'Opsesija AI alatima neprimjetno uništava digitalnu pismenost',
+    description: 'Prekomjerno oslanjanje na generativne modele pretvara nas u pasivne korisnike i slabi vještinu kritičkog razmišljanja.',
+    imageAlt: 'Ilustracija uz članak: Opsesija AI alatima neprimjetno uništava digitalnu pismenost',
+    publishedOn: '2026-09-23',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
