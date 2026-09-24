@@ -5574,6 +5574,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 465,
+    slug: 'meta-muse-ai-agent-updates',
+    title: 'Meta donosi svog AI agenta Muse na Mac',
+    description: 'Meta je na Connect događaju najavila dolazak agenta Muse na Mac računala gdje će obavljati zadatke u pozadini.',
+    imageAlt: 'Ilustracija Meta Muse AI agenta',
+    publishedOn: '2026-09-24',
+    category: NEWS,
+    readTime: 4,
+    featured: false
   })
 ];
 
