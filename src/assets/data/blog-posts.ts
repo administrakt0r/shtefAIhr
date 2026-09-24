@@ -5596,6 +5596,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 5,
     featured: false
+  }),
+  createPost({
+    id: 467,
+    slug: 'zasto-dodavanje-ai-ja-nece-spasiti-vas-proizvod',
+    title: 'Zašto "dodavanje AI-ja" neće spasiti vaš proizvod od propasti',
+    description: 'Integracija jezičnih modela bez rješavanja stvarnih problema stvara samo privid inovacije i ne donosi dugoročnu poslovnu vrijednost.',
+    imageAlt: 'Ilustracija uz komentar: Zašto dodavanje AI-ja nije dovoljno',
+    publishedOn: '2026-09-24',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
