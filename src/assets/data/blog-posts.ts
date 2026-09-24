@@ -5585,6 +5585,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 466,
+    slug: 'kraj-ai-euforije-pocetak-stvarne-primjene',
+    title: 'Kraj AI euforije: Počinje era stvarnog dokazivanja i primjene',
+    description: 'Početni šok i opće oduševljenje revolucionarnim mogućnostima umjetne inteligencije polako blijede, a zamjenjuje ih faza stvarne implementacije i dokazivanja vrijednosti.',
+    imageAlt: 'Ilustracija uz komentar: Kraj AI euforije i početak stvarne primjene',
+    publishedOn: '2026-09-24',
+    category: ANALYSIS,
+    readTime: 5,
+    featured: false
   })
 ];
 
