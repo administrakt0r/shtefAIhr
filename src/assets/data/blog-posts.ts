@@ -5618,6 +5618,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 2,
     featured: false
+  }),
+  createPost({
+    id: 469,
+    slug: 'ai-produkcija-stvarnost',
+    title: 'Od demoa do stvarnosti: Zašto AI projekti često zapinju u produkciji',
+    description: 'Impresivne prezentacije skrivaju surovu istinu o tome koliko je teško integrirati i održavati sustave temeljene na umjetnoj inteligenciji u stvarnom svijetu.',
+    imageAlt: 'Ilustracija uz komentar: Jaz između demonstracija i stvarne primjene umjetne inteligencije',
+    publishedOn: '2026-09-25',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
