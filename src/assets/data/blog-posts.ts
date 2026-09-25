@@ -5629,6 +5629,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 470,
+    slug: 'zabluda-o-pobjedi-otvorenog-koda',
+    title: 'Zabluda o neizbježnoj pobjedi otvorenog koda u umjetnoj inteligenciji',
+    description: 'Zašto entuzijazam zajednice nije dovoljan za pobjedu u utrci za najbolje AI modele.',
+    imageAlt: 'Ilustracija uz komentar: Zabluda o pobjedi otvorenog koda u AI',
+    publishedOn: '2026-09-25',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
