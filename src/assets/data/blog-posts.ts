@@ -5607,6 +5607,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 468,
+    slug: 'gemini-call-for-me-pixel',
+    title: 'Googleov Gemini sada može telefonirati umjesto vas na Pixel mobitelima',
+    description: 'Nova eksperimentalna značajka na Pixel 11 uređajima omogućuje AI asistentu da obavlja pozive prema poslovnim subjektima u vaše ime.',
+    imageAlt: 'Ilustracija uz vijest: Google Gemini i automatski telefonski pozivi',
+    publishedOn: '2026-09-25',
+    category: NEWS,
+    readTime: 2,
+    featured: false
   })
 ];
 
