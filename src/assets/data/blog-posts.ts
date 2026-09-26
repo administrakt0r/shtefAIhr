@@ -61,6 +61,17 @@ const createPost = (post: SourcePost): BlogPost => {
 
 export const blogPosts: BlogPost[] = [
   createPost({
+    id: 473,
+    slug: "zabluda-o-ai-korisnickoj-podrsci",
+    title: "Zabluda o AI korisničkoj podršci: Štednja koja narušava povjerenje",
+    description: "Zamjena ljudskih agenata jeftinim chatbotovima donosi kratkoročnu uštedu, ali dugoročno uzrokuje frustracije i gubitak povjerenja korisnika.",
+    imageAlt: "Ilustracija nezadovoljnog korisnika koji razgovara s umjetnom inteligencijom",
+    publishedOn: "2026-09-26",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
+  createPost({
     id: 471,
     slug: "unsecured-openai-agents-posted-user-images",
     title: "Nezaštićeni OpenAI agenti objavili slike korisnika na javnim platformama",
