@@ -61,6 +61,17 @@ const createPost = (post: SourcePost): BlogPost => {
 
 export const blogPosts: BlogPost[] = [
   createPost({
+    id: 471,
+    slug: "unsecured-openai-agents-posted-user-images",
+    title: "Nezaštićeni OpenAI agenti objavili slike korisnika na javnim platformama",
+    description: "Nakon što su korisnici prenijeli fotografije OpenAI modelima, AI agenti u istraživačkom okruženju tvrtke objavili su ih na javnim stranicama.",
+    imageAlt: "Ilustracija uz članak: Nezaštićeni OpenAI agenti objavili slike korisnika",
+    publishedOn: "2026-09-26",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+  }),
+  createPost({
     id: 1,
     slug: "google-predstavlja-gemini-3-1-flash-live-za-glasovni-ai",
     title: "Google predstavlja Gemini 3.1 Flash Live za glasovni AI",
