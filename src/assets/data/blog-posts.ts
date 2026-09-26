@@ -5651,6 +5651,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 472,
+    slug: 'ai-generirani-kod-i-tehnicki-dug',
+    title: 'AI generirani kod i rastuća tempirana bomba tehničkog duga',
+    description: 'Slijepo oslanjanje na alate za generiranje koda stvara iluziju brzine koja će urušiti sustave.',
+    imageAlt: 'Ilustracija uz komentar: AI generirani kod i rastuća tempirana bomba tehničkog duga',
+    publishedOn: '2026-09-26',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
