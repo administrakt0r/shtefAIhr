@@ -5695,6 +5695,17 @@ export const blogPosts: BlogPost[] = [
     publishedOn: '2026-09-27',
     featured: false,
     imageAlt: 'Ilustracija uz komentar: Zašto AI nikada neće razumjeti poslovni kontekst',
+  }),
+  createPost({
+    id: 476,
+    title: 'AI alati za kodiranje: Brzi rezultati, opasan dug u arhitekturi',
+    slug: 'ai-asistenti-gubitak-kontrole-arhitektura',
+    description: 'Dok se divimo brzini kojom aplikacije nastaju, inženjeri gube duboko razumijevanje sustava koje grade.',
+    category: ANALYSIS,
+    readTime: 4,
+    publishedOn: '2026-09-27',
+    featured: false,
+    imageAlt: 'Ilustracija uz komentar: AI alati za kodiranje i opasan dug u arhitekturi',
   })
 ];
 
