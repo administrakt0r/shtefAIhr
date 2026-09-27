@@ -5684,6 +5684,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 475,
+    title: 'Zašto AI nikada neće razumjeti poslovni kontekst',
+    slug: 'zasto-ai-nikada-nece-razumjeti-poslovni-kontekst',
+    description: 'Modeli pišu kod, ali inženjerstvo se svodi na neizrečene kompromise koje nijedan LLM ne može pročitati između redaka.',
+    category: ANALYSIS,
+    readTime: 3,
+    publishedOn: '2026-09-27',
+    featured: false,
+    imageAlt: 'Ilustracija uz komentar: Zašto AI nikada neće razumjeti poslovni kontekst',
   })
 ];
 
