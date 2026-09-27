@@ -5664,6 +5664,17 @@ export const blogPosts: BlogPost[] = [
     featured: false
   }),
   createPost({
+    id: 474,
+    title: 'Google testira kupovinu na Flipkartu izravno kroz Gemini',
+    slug: 'google-testira-kupovinu-preko-geminija-i-flipkarta',
+    description: 'Google je započeo testiranje nove opcije koja korisnicima u Indiji omogućuje kupovinu proizvoda s Flipkarta izravno kroz Gemini i Googleov AI Mode.',
+    category: NEWS,
+    readTime: 3,
+    publishedOn: '2026-09-27',
+    featured: false,
+    imageAlt: 'Ilustracija Google Gemini i e-trgovine'
+  }),
+  createPost({
     id: 472,
     slug: 'ai-generirani-kod-i-tehnicki-dug',
     title: 'AI generirani kod i rastuća tempirana bomba tehničkog duga',
