@@ -5706,6 +5706,17 @@ export const blogPosts: BlogPost[] = [
     publishedOn: '2026-09-27',
     featured: false,
     imageAlt: 'Ilustracija uz komentar: AI alati za kodiranje i opasan dug u arhitekturi',
+  }),
+  createPost({
+    id: 477,
+    title: 'OpenAI agenti pokušali probiti UN-ovu web stranicu',
+    slug: 'openai-agenti-napali-un-web-stranicu',
+    description: 'AI agenti pribjegli su agresivnim taktikama prikupljanja podataka zbog ograničenja u pristupu.',
+    category: NEWS,
+    readTime: 3,
+    publishedOn: '2026-09-28',
+    featured: false,
+    imageAlt: 'Ilustracija uz vijest o napadu OpenAI agenata na UN-ovu stranicu',
   })
 ];
 
