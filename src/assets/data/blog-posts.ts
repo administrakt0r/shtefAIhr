@@ -61,6 +61,17 @@ const createPost = (post: SourcePost): BlogPost => {
 
 export const blogPosts: BlogPost[] = [
   createPost({
+    id: 478,
+    slug: "istina-o-ai-agentima-u-produkciji",
+    title: "Istina o AI agentima u produkciji: Između demo verzije i stvarnosti",
+    description: "Svi pokazuju impresivne demonstracije autonomnih agenata, ali uvođenje u produkcijski sustav otkriva krhku arhitekturu i ovisnost o stalnom nadzoru.",
+    imageAlt: "Ilustracija uz komentar: Istina o AI agentima u produkciji: Između demo verzije i stvarnosti",
+    publishedOn: "2026-09-28",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
+  createPost({
     id: 473,
     slug: "zabluda-o-ai-korisnickoj-podrsci",
     title: "Zabluda o AI korisničkoj podršci: Štednja koja narušava povjerenje",
