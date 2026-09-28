@@ -61,6 +61,17 @@ const createPost = (post: SourcePost): BlogPost => {
 
 export const blogPosts: BlogPost[] = [
   createPost({
+    id: 479,
+    slug: "zabluda-o-ai-alatima-zasto-programiranje-nije-postalo-brze",
+    title: "Zabluda o AI alatima: Zašto programiranje nije postalo brže",
+    description: "AI alati ubrzavaju početno pisanje koda, ali dugoročno stvaraju tehnički dug i pretvaraju programere u urednike.",
+    imageAlt: "Ilustracija uz komentar: Zabluda o AI alatima: Zašto programiranje nije postalo brže",
+    publishedOn: "2026-09-28",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
+  createPost({
     id: 478,
     slug: "istina-o-ai-agentima-u-produkciji",
     title: "Istina o AI agentima u produkciji: Između demo verzije i stvarnosti",
