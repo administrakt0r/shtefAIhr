@@ -5750,6 +5750,17 @@ export const blogPosts: BlogPost[] = [
     publishedOn: '2026-09-28',
     featured: false,
     imageAlt: 'Ilustracija uz vijest o napadu OpenAI agenata na UN-ovu stranicu',
+  }),
+  createPost({
+    id: 481,
+    title: 'Zašto autonomni AI agenti stvaraju više posla nego što ga rješavaju',
+    slug: 'iluzija-autonomnih-ai-agenata',
+    description: 'San o sustavima koji samostalno rješavaju probleme sudara se sa stvarnošću u kojoj ljudski nadzor postaje složeniji od samog zadatka.',
+    category: ANALYSIS,
+    readTime: 4,
+    publishedOn: '2026-09-29',
+    featured: false,
+    imageAlt: 'Ilustracija uz komentar: Zašto autonomni AI agenti stvaraju više posla nego što ga rješavaju'
   })
 ];
 
