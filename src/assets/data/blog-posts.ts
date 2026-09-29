@@ -61,6 +61,17 @@ const createPost = (post: SourcePost): BlogPost => {
 
 export const blogPosts: BlogPost[] = [
   createPost({
+    id: 480,
+    slug: "openai-odgoda-astra-model-zbog-sigurnosti",
+    title: "OpenAI odgodio novi Astra model zbog sigurnosnih rizika",
+    description: "Planirano lansiranje novog modela Astra 6.1 otkazano je zbog zabrinutosti oko sigurnosti i usklađivanja s ljudskim namjerama.",
+    imageAlt: "Ilustracija uz vijest: OpenAI odgodio novi Astra model zbog sigurnosnih rizika",
+    publishedOn: "2026-09-29",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+  }),
+  createPost({
     id: 479,
     slug: "zabluda-o-ai-alatima-zasto-programiranje-nije-postalo-brze",
     title: "Zabluda o AI alatima: Zašto programiranje nije postalo brže",
