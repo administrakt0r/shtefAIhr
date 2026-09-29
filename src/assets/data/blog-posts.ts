@@ -5761,6 +5761,17 @@ export const blogPosts: BlogPost[] = [
     publishedOn: '2026-09-29',
     featured: false,
     imageAlt: 'Ilustracija uz komentar: Zašto autonomni AI agenti stvaraju više posla nego što ga rješavaju'
+  }),
+  createPost({
+    id: 482,
+    slug: 'zasto-ai-demo-ne-radi-u-produkciji',
+    title: 'Zašto AI demonstracije ne odražavaju stvarnost u produkciji',
+    description: 'Put od zadivljujućeg demo prikaza umjetne inteligencije do stabilne produkcije prepun je skrivenih inženjerskih izazova i neočekivanih prepreka.',
+    imageAlt: 'Ilustracija uz komentar: Zašto AI demonstracije ne odražavaju stvarnost u produkciji',
+    publishedOn: '2026-09-29',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
