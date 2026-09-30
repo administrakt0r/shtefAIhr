@@ -61,6 +61,17 @@ const createPost = (post: SourcePost): BlogPost => {
 
 export const blogPosts: BlogPost[] = [
   createPost({
+    id: 485,
+    slug: "stvarni-problemi-razvoja-ai-aplikacija",
+    title: "Stvarni problemi razvoja AI aplikacija: Mitovi i praksa",
+    description: "Svi smo vidjeli impresivne prezentacije, no stvarni razvoj AI proizvoda zahtijeva mnogo više od pukog spajanja API-ja.",
+    imageAlt: "Ilustracija uz komentar: Stvarni problemi razvoja AI aplikacija: Mitovi i praksa",
+    publishedOn: "2026-09-30",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
+  }),
+  createPost({
     id: 480,
     slug: "openai-odgoda-astra-model-zbog-sigurnosti",
     title: "OpenAI odgodio novi Astra model zbog sigurnosnih rizika",
