@@ -5783,6 +5783,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 484,
+    slug: 'zamka-jezicnih-modela-iluzija-razumijevanja',
+    title: 'Zamka jezičnih modela: Iluzija dubokog razumijevanja',
+    description: 'Sposobnost oponašanja ljudskog govora nije isto što i sposobnost razmišljanja.',
+    imageAlt: 'Ilustracija uz komentar: Zamka jezičnih modela: Iluzija dubokog razumijevanja',
+    publishedOn: '2026-09-30',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
