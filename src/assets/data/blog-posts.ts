@@ -5772,6 +5772,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 483,
+    slug: 'sam-altman-openai-ipo-odgoda',
+    title: 'Sam Altman odgodio OpenAI IPO dok modeli ne budu sigurni',
+    description: 'Sam Altman potvrdio je da OpenAI neće uskoro na burzu jer tvrtka mora moći jamčiti sigurnost svojih sve naprednijih AI modela.',
+    imageAlt: 'Ilustracija uz vijest: Sam Altman odgodio OpenAI IPO dok modeli ne budu sigurni',
+    publishedOn: '2026-09-30',
+    category: NEWS,
+    readTime: 3,
+    featured: false
   })
 ];
 
