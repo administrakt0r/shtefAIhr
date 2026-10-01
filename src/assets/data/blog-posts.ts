@@ -5816,6 +5816,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 487,
+    slug: 'opsesija-agi-opasna-distrakcija',
+    title: 'Opsesija AGI-jem: Opasna distrakcija od stvarnih AI problema',
+    description: 'Dok tehnološka industrija sanja o umjetnoj općoj inteligenciji, konkretne mane i rizici današnjih sustava ostaju neriješeni.',
+    imageAlt: 'Ilustracija uz komentar: Opsesija AGI-jem: Opasna distrakcija od stvarnih AI problema',
+    publishedOn: '2026-10-01',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
