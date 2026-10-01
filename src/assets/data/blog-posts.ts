@@ -5827,6 +5827,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 488,
+    slug: 'od-kreatora-do-lektora',
+    title: 'Od kreatora do lektora: Prava cijena umjetne inteligencije',
+    description: 'Marketing AI alata obećava ubrzanje, no stvarnost pretvara developere u lektore generiranog koda koji unosi suptilne greške.',
+    imageAlt: 'Ilustracija uz komentar: Od kreatora do lektora: Prava cijena umjetne inteligencije',
+    publishedOn: '2026-10-01',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
