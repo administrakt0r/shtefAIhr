@@ -72,6 +72,17 @@ export const blogPosts: BlogPost[] = [
     featured: false,
   }),
   createPost({
+    id: 486,
+    slug: "google-predstavio-novi-gemini-4-argon",
+    title: "Google predstavio Gemini 4 Argon, svoj najmoćniji AI model dosad",
+    description: "Novi model donosi napredne performanse za složene profesionalne zadatke, razvoj softvera i kibernetičku sigurnost.",
+    imageAlt: "Ilustracija uz vijest: Google predstavio Gemini 4 Argon, svoj najmoćniji AI model dosad",
+    publishedOn: "2026-10-01",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
+  }),
+  createPost({
     id: 480,
     slug: "openai-odgoda-astra-model-zbog-sigurnosti",
     title: "OpenAI odgodio novi Astra model zbog sigurnosnih rizika",
