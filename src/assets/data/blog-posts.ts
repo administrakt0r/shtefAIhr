@@ -5849,6 +5849,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 3,
     featured: false,
+  }),
+  createPost({
+    id: 490,
+    slug: "agi-je-jos-uvijek-samo-marketinski-trik",
+    title: "Umjetna opća inteligencija (AGI) je još uvijek samo marketinški trik",
+    description: "Iako nas uvjeravaju da je AGI iza ugla, trenutni veliki jezični modeli udaraju u zid i ne pokazuju znakove pravog razumijevanja.",
+    imageAlt: "Ilustracija uz komentar: Umjetna opća inteligencija (AGI) je još uvijek samo marketinški trik",
+    publishedOn: "2026-10-02",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
   })
 ];
 
