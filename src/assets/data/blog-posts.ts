@@ -5860,6 +5860,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false,
+  }),
+  createPost({
+    id: 491,
+    slug: "open-source-ai-iluzija-pobjede",
+    title: "Zašto open-source umjetna inteligencija ne pobjeđuje automatski",
+    description: "Iako se čini da je otvoren kod budućnost razvoja, zatvoreni sustavi i dalje drže glavnu prednost zbog enormnih resursa.",
+    imageAlt: "Ilustracija uz komentar: Zašto open-source umjetna inteligencija ne pobjeđuje automatski",
+    publishedOn: "2026-10-02",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
   })
 ];
 
