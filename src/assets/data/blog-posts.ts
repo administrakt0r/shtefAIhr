@@ -5838,6 +5838,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 489,
+    slug: "openai-otpusta-tri-istrazivaca-za-sigurnost",
+    title: "OpenAI otpušta tri istraživača za sigurnost",
+    description: "Prema pisanju The Wall Street Journala, istraživači su podijelili povjerljive informacije s vanjskom organizacijom.",
+    imageAlt: "Ilustracija uz vijest: OpenAI otpušta tri istraživača za sigurnost",
+    publishedOn: "2026-10-01",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
   })
 ];
 
