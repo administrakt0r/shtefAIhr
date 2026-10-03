@@ -5882,6 +5882,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false,
+  }),
+  createPost({
+    id: 493,
+    slug: "stvarnost-iza-pompe-zasto-ai-ne-moze-zamijeniti-ljudsko-razmisljanje",
+    title: "Stvarnost iza pompe: Zašto AI ne može zamijeniti ljudsko razmišljanje",
+    description: "Generativna umjetna inteligencija briljira u prepoznavanju uzoraka, ali i dalje pada na osnovnim testovima logike i planiranja. Zašto je priča o AGI pogrešna?",
+    imageAlt: "Ilustracija uz komentar: Stvarnost iza pompe: Zašto AI ne može zamijeniti ljudsko razmišljanje",
+    publishedOn: "2026-10-03",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
   })
 ];
 
