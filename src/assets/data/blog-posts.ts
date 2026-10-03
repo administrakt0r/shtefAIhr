@@ -5871,6 +5871,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false,
+  }),
+  createPost({
+    id: 492,
+    slug: "kraj-ere-univerzalnih-ai-modela",
+    title: "Zašto je era univerzalnih AI modela zapravo gotova",
+    description: "Svi govore o masovnim modelima, ali stvarni svijet razvoja umjetne inteligencije okreće se manjim, specijaliziranim rješenjima zbog troškova i pouzdanosti.",
+    imageAlt: "Ilustracija uz komentar: Zašto je era univerzalnih AI modela zapravo gotova",
+    publishedOn: "2026-10-03",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
   })
 ];
 
