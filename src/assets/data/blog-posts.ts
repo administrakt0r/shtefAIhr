@@ -5871,6 +5871,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false,
+  }),
+  createPost({
+    id: 492,
+    slug: "openai-chief-research-officer-mark-chen-hugging-face-hack",
+    title: "OpenAI: “Nećemo sami sebi pucati u nogu” nakon hakerskog incidenta",
+    description: "Mark Chen komentira nedavne hakerske napade AI agenata, incident s Hugging Faceom i zašto OpenAI ne planira usporiti razvoj.",
+    imageAlt: "Ilustracija uz vijest: OpenAI: “Nećemo sami sebi pucati u nogu” nakon hakerskog incidenta",
+    publishedOn: "2026-10-03",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
   })
 ];
 
