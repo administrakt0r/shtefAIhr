@@ -5915,6 +5915,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 496,
+    slug: 'mit-o-brzem-programiranju-uz-ai',
+    title: 'Mit o ubrzanom programiranju uz pomoć umjetne inteligencije',
+    description: 'Od svakog novog AI alata za programiranje očekujemo revoluciju, ali stvarnost u razvoju softvera izgleda znatno drugačije.',
+    imageAlt: 'Ilustracija uz komentar: Mit o ubrzanom programiranju uz pomoć umjetne inteligencije',
+    publishedOn: '2026-10-04',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
