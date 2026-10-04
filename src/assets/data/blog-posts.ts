@@ -5893,6 +5893,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false,
+  }),
+  createPost({
+    id: 494,
+    slug: 'openai-zaposlenik-za-sigurnost-daje-otkaz',
+    title: 'OpenAI zaposlenik za sigurnost daje otkaz i upozorava na kulturu',
+    description: 'David Robinson napustio je OpenAI i tvrdi da je kultura u industriji umjetne inteligencije temeljno narušena.',
+    imageAlt: 'Ilustracija uz vijest: OpenAI zaposlenik za sigurnost daje otkaz',
+    publishedOn: '2026-10-04',
+    category: NEWS,
+    readTime: 3,
+    featured: false
   })
 ];
 
