@@ -5904,6 +5904,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 495,
+    slug: 'umjetna-glupost-opasnija-od-agi-ja',
+    title: 'Zašto nas umjetna glupost treba brinuti više nego dolazak AGI-ja',
+    description: 'Fokus na mitski AGI skriva opasnost umjetne gluposti, a sustavima prepuštamo važne odluke usprkos kardinalnim pogreškama.',
+    imageAlt: 'Ilustracija uz komentar: Zašto nas umjetna glupost treba brinuti više nego dolazak AGI-ja',
+    publishedOn: '2026-10-04',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
