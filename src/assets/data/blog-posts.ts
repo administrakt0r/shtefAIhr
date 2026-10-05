@@ -5937,6 +5937,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 498,
+    slug: "opsesija-agi-jem-steti-stvarnoj-primjeni",
+    title: "Opsesija AGI-jem šteti stvarnoj primjeni umjetne inteligencije",
+    description: "Zašto nas obećanja o superinteligenciji odvraćaju od rješavanja konkretnih problema.",
+    imageAlt: "Ilustracija uz komentar: Opsesija AGI-jem šteti stvarnoj primjeni umjetne inteligencije",
+    publishedOn: "2026-10-05",
+    category: ANALYSIS,
+    readTime: 3,
+    featured: false
   })
 ];
 
