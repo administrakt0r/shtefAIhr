@@ -5948,6 +5948,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 499,
+    slug: "zasto-je-prica-o-brzom-dolasku-agi-ja-samo-skupa-iluzija",
+    title: "Zašto je priča o brzom dolasku AGI-ja samo skupa iluzija",
+    description: "Dok investitori obećavaju opću inteligenciju, stvarni napredak usporava i udara u zid tehničkih i fizičkih ograničenja.",
+    imageAlt: "Ilustracija uz komentar: Zašto je priča o brzom dolasku AGI-ja samo skupa iluzija",
+    publishedOn: "2026-10-05",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
