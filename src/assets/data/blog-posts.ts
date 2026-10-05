@@ -5926,6 +5926,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 497,
+    slug: "google-zamrznuo-bug-bounty-program",
+    title: "Google zamrznuo bug bounty program zbog poplave AI prijava",
+    description: "Navala nevažećih automatiziranih izvještaja opteretila je Googleove inženjere, prisiljavajući tvrtku na pauziranje programa.",
+    imageAlt: "Ilustracija uz vijest: Google zamrznuo bug bounty program zbog poplave AI prijava",
+    publishedOn: "2026-10-05",
+    category: NEWS,
+    readTime: 3,
+    featured: false
   })
 ];
 
