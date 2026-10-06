@@ -5959,6 +5959,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 500,
+    slug: "openai-vodeni-zig-chatgpt-eu",
+    title: "OpenAI uvodi vodeni žig za ChatGPT tekst u EU",
+    description: "Novi sustav usmjerava modele pri generiranju teksta ostavljajući nevidljivi trag koji detektori mogu prepoznati.",
+    imageAlt: "Ilustracija uz vijest: OpenAI uvodi vodeni žig za ChatGPT tekst u EU",
+    publishedOn: "2026-10-06",
+    category: NEWS,
+    readTime: 2,
+    featured: false
   })
 ];
 
