@@ -5970,6 +5970,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 2,
     featured: false
+  }),
+  createPost({
+    id: 501,
+    slug: "skriveni-troskovi-ai-ja",
+    title: "Skriveni troškovi AI-ja: Zašto integracija nije brza niti jeftina",
+    description: "Svi govore o brzini implementacije umjetne inteligencije, no pravi inženjerski izazovi i financijski troškovi tek slijede nakon prve linije koda.",
+    imageAlt: "Ilustracija uz komentar: Skriveni troškovi AI-ja: Zašto integracija nije brza niti jeftina",
+    publishedOn: "2026-10-06",
+    category: ANALYSIS,
+    readTime: 5,
+    featured: false,
   })
 ];
 
