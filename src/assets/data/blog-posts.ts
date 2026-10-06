@@ -5970,6 +5970,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 2,
     featured: false
+  }),
+  createPost({
+    id: 501,
+    slug: "zasto-ai-ne-moze-zamijeniti-domensko-znanje",
+    title: "Zašto umjetna inteligencija ne može zamijeniti domensko znanje",
+    description: "Alati postaju napredniji, ali bez stručnog znanja o industriji, oni samo brže stvaraju prosječnost.",
+    imageAlt: "Ilustracija uz komentar: Zašto umjetna inteligencija ne može zamijeniti domensko znanje",
+    publishedOn: "2026-10-06",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
