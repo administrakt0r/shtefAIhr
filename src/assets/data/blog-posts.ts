@@ -5981,6 +5981,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 502,
+    slug: "openai-objavio-rjesenja-matematickih-problema",
+    title: "OpenAI objavio rješenja matematičkih problema",
+    description: "OpenAI je objavio stotine dokumenata koji navodno rješavaju niz dugotrajnih otvorenih pitanja u matematici.",
+    imageAlt: "OpenAI matematička rješenja",
+    publishedOn: "2026-10-07",
+    category: NEWS,
+    readTime: 2,
+    featured: false
   })
 ];
 
