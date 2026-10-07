@@ -5992,6 +5992,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 2,
     featured: false
+  }),
+  createPost({
+    id: 503,
+    slug: "ai-mijenja-profesiju-programera",
+    title: "AI alati ne zamjenjuju programere, već mijenjaju profesiju",
+    description: "Uloga softverskog inženjera evoluira od mehaničkog pisanja koda prema sustavnom dizajnu i analitici.",
+    imageAlt: "Ilustracija uz komentar: AI alati ne zamjenjuju programere, već mijenjaju profesiju",
+    publishedOn: "2026-10-07",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
