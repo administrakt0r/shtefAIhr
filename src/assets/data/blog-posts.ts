@@ -5992,6 +5992,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 2,
     featured: false
+  }),
+  createPost({
+    id: 503,
+    slug: 'cijena-generiranog-koda-programeri-postaju-revizori',
+    title: 'Iluzija o brzini: Zašto generirani kod pretvara inženjere u revizore',
+    description: 'AI alati obećavaju deset puta brži rad, ali stvarnost pokazuje da inženjeri sve više vremena provode čitajući i ispravljajući tuđe greške.',
+    imageAlt: 'Ilustracija uz komentar: Iluzija o brzini',
+    publishedOn: '2026-10-07',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
