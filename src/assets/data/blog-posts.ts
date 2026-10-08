@@ -6003,6 +6003,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 504,
+    slug: 'chatgpt-novo-vizualno-sucelje-intelligent-ui',
+    title: 'ChatGPT dobiva interaktivno vizualno sučelje "Intelligent UI"',
+    description: 'OpenAI je predstavio Intelligent UI, novu značajku koja ChatGPT-u omogućuje generiranje interaktivnih dijagrama, gumba i kalkulatora unutar razgovora.',
+    imageAlt: 'Ilustracija uz vijest: ChatGPT Intelligent UI',
+    publishedOn: '2026-10-08',
+    category: NEWS,
+    readTime: 3,
+    featured: false
   })
 ];
 
