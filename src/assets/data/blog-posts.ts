@@ -6014,6 +6014,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 505,
+    slug: 'kraj-ere-wrapper-startupa',
+    title: 'Kraj ere "wrapper" startupa: Zašto golo prepakiravanje ChatGPT-a više ne prolazi',
+    description: 'Tržište umjetne inteligencije sazrijeva: investitori se hlade prema tvrtkama koje samo umataju tuđe API-je, dok korisnici traže specifična i duboka tehnološka rješenja.',
+    imageAlt: 'Ilustracija uz komentar: Kraj ere "wrapper" startupa',
+    publishedOn: '2026-10-08',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
