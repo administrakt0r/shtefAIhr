@@ -6025,6 +6025,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 506,
+    slug: 'iluzija-o-autonomiji-zasto-ai-agenti-trebaju-dadilje',
+    title: 'Mit o potpunoj autonomiji: Zašto AI agenti trebaju ljudske dadilje',
+    description: 'Vizija u kojoj softver samostalno odrađuje složene zadatke raspada se pri prvom susretu s nepredvidivom svakodnevicom.',
+    imageAlt: 'Ilustracija uz komentar: Mit o potpunoj autonomiji: Zašto AI agenti trebaju ljudske dadilje',
+    publishedOn: '2026-10-08',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
