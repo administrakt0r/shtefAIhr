@@ -6047,6 +6047,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 508,
+    slug: 'ai-kodiranje-marketing-i-stvarnost',
+    title: 'AI kodiranje: Između obećanja i stvarnosti',
+    description: 'Umjesto da eliminiraju potrebu za inženjerima, AI alati zapravo mijenjaju prirodu njihovog posla, zahtijevajući dublje razumijevanje sustava.',
+    imageAlt: 'Ilustracija uz komentar: AI kodiranje: Između obećanja i stvarnosti',
+    publishedOn: '2026-10-09',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
