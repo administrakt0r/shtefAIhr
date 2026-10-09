@@ -6036,6 +6036,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 507,
+    slug: 'iluzija-razumijevanja-ai-u-produkciji',
+    title: 'Iluzija razumijevanja: Zašto AI u produkciji zahtijeva ljudski nadzor',
+    description: 'Dok jezični modeli impresivno simuliraju logiku, njihova primjena u stvarnom svijetu otkriva nedostatke koji zahtijevaju ljudski nadzor.',
+    imageAlt: 'Ilustracija uz komentar: Iluzija razumijevanja: Zašto AI u produkciji zahtijeva ljudski nadzor',
+    publishedOn: '2026-10-09',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
