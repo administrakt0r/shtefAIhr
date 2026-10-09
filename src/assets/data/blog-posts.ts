@@ -6025,6 +6025,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 506,
+    slug: 'otkazi-openai-istrazivaci-sigurnost',
+    title: 'Otpušteni istraživači sigurnosti u OpenAI-ju osporavaju optužbe za nedolično ponašanje',
+    description: 'Trojica otpuštenih istraživača sigurnosti tvrde da njihov odlazak iz OpenAI-ja stvara kulturu straha koja šteti rješavanju rizika povezanih s umjetnom inteligencijom.',
+    imageAlt: 'Ilustracija vijesti: OpenAI i sigurnost umjetne inteligencije',
+    publishedOn: '2026-10-08',
+    category: NEWS,
+    readTime: 3,
+    featured: false
   })
 ];
 
