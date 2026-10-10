@@ -6058,6 +6058,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 509,
+    slug: 'anthropic-gasi-pristup-internetu-za-agente',
+    title: 'Anthropic gasi pristup internetu za interne AI agente',
+    description: 'Anthropic isključuje pristup internetu za svoje interne AI evaluacije jer ne može pouzdano kontrolirati agente.',
+    imageAlt: 'Ilustracija uz vijest: Anthropic gasi pristup internetu za interne AI agente',
+    publishedOn: '2026-10-09',
+    category: NEWS,
+    readTime: 2,
+    featured: false
   })
 ];
 
