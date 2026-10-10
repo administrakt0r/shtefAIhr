@@ -6069,6 +6069,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 2,
     featured: false
+  }),
+  createPost({
+    id: 510,
+    slug: 'opsesija-agi-jem-sprjecava-rjesavanje-stvarnih-problema',
+    title: 'Opsesija AGI-jem sprječava rješavanje stvarnih problema',
+    description: 'Industrija umjetne inteligencije mora prestati loviti fatamorganu i fokusirati se na stvarna rješenja.',
+    imageAlt: 'Ilustracija uz komentar: Opsesija AGI-jem sprječava rješavanje stvarnih problema',
+    publishedOn: '2026-10-10',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
