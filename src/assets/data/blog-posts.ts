@@ -6080,6 +6080,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 511,
+    slug: 'zasto-ai-demo-ne-radi-u-produkciji-problem-zadnje-milje',
+    title: 'Zašto AI demo ne radi u produkciji: Problem zadnje milje',
+    description: 'Marketing nam prodaje gotova rješenja, ali stvarni inženjering počinje tek kada pokušamo integrirati AI u postojeće sustave.',
+    imageAlt: 'Ilustracija uz komentar: Zašto AI demo ne radi u produkciji: Problem zadnje milje',
+    publishedOn: '2026-10-10',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
