@@ -6102,6 +6102,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 2,
     featured: false
+  }),
+  createPost({
+    id: 513,
+    slug: 'zasto-su-autonomni-ai-agenti-trenutno-neupotrebljivi',
+    title: 'Zašto su autonomni AI agenti trenutno neupotrebljivi',
+    description: 'Dok nam prezentacije prodaju neovisne digitalne radnike, stvarni inženjering otkriva sustave kojima ne možemo vjerovati. Analiza zašto je autonomija i dalje opasna iluzija u produkciji.',
+    imageAlt: 'Ilustracija uz komentar: Zašto su autonomni AI agenti trenutno neupotrebljivi',
+    publishedOn: '2026-10-11',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
