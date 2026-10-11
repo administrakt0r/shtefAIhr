@@ -6113,6 +6113,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 514,
+    slug: 'zasto-je-agi-odvlacenje-paznje',
+    title: 'Zašto je opsesija AGI-jem zapravo opasno odvlačenje pažnje',
+    description: 'Umjesto rješavanja stvarnih problema s postojećim sustavima, industrija se fokusira na neuhvatljivu opću inteligenciju. Analiza zašto nam nerealna obećanja štete.',
+    imageAlt: 'Ilustracija uz komentar: Zašto je opsesija AGI-jem zapravo opasno odvlačenje pažnje',
+    publishedOn: '2026-10-11',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
