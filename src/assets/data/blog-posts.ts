@@ -6091,6 +6091,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 512,
+    slug: 'microsoftov-satya-nadella-ai-modelima-je-potrebna-kocnica',
+    title: 'Microsoftov Satya Nadella: AI modelima je potrebna kočnica',
+    description: 'Izvršni direktor Microsofta upozorava na važnost sigurnosnih mehanizama u razvoju umjetne inteligencije.',
+    imageAlt: 'Ilustracija uz vijest: Microsoftov Satya Nadella: AI modelima je potrebna kočnica',
+    publishedOn: '2026-10-10',
+    category: NEWS,
+    readTime: 2,
+    featured: false
   })
 ];
 
