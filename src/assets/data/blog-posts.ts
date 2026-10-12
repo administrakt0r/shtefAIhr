@@ -6146,6 +6146,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 517,
+    slug: "zabluda-o-potpuno-autonomnoj-umjetnoj-inteligenciji",
+    title: "Zabluda o potpuno autonomnoj umjetnoj inteligenciji",
+    description: "Zašto ljudski nadzor ostaje neophodan u dobu naprednih modela usprkos narativima o potpunoj neovisnosti.",
+    imageAlt: "Ilustracija uz komentar: Zabluda o potpuno autonomnoj umjetnoj inteligenciji",
+    publishedOn: "2026-10-12",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
