@@ -6124,6 +6124,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 515,
+    slug: 'industrija-ai-ja-zeli-ukloniti-nda-ugovore',
+    title: 'Umjetna inteligencija bez tajni: Hoće li ukidanje NDA ugovora umiriti protivnike podatkovnih centara?',
+    description: 'Amazon i Microsoft najavili su ukidanje ugovora o tajnosti tijekom pregovora o podatkovnim centrima.',
+    imageAlt: 'Ilustracija uz vijest: Umjetna inteligencija bez tajni: Hoće li ukidanje NDA ugovora umiriti protivnike podatkovnih centara?',
+    publishedOn: '2026-10-12',
+    category: NEWS,
+    readTime: 3,
+    featured: false
   })
 ];
 
