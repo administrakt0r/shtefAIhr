@@ -6135,6 +6135,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 516,
+    slug: 'opsesija-brzinom-kako-krivo-mjerimo-uspjeh-ai-alata',
+    title: 'Opsesija brzinom: Kako krivo mjerimo uspjeh AI alata',
+    description: 'Brzina isporuke linija koda postala je glavno mjerilo napretka, no pravi inženjering se ne mjeri u znakovima u minuti.',
+    imageAlt: 'Ilustracija uz komentar: Opsesija brzinom: Kako krivo mjerimo uspjeh AI alata',
+    publishedOn: '2026-10-12',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
