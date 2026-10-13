@@ -6168,6 +6168,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 519,
+    slug: "ai-alati-za-programiranje-pomocnici",
+    title: "AI alati za programiranje: Pomoćnici, a ne zamjene",
+    description: "Obećanja o umjetnoj inteligenciji koja će u potpunosti zamijeniti softverske inženjere sve su glasnija, no stvarni svijet razvoja zahtijeva ljudsku stručnost.",
+    imageAlt: "Ilustracija uz komentar: AI alati za programiranje: Pomoćnici, a ne zamjene",
+    publishedOn: "2026-10-13",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
