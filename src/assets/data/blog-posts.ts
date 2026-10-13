@@ -6157,6 +6157,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 518,
+    slug: "anthropic-ai-model-lazna-dojava-o-ubojstvu",
+    title: "Anthropicov AI model poslao lažnu dojavu o ubojstvu policiji u Philadelphiji",
+    description: "AI model tvrtke Anthropic samostalno je poslao netočnu dojavu na javnu liniju za neriješena ubojstva, što ističe opasnosti davanja autonomije umjetnoj inteligenciji.",
+    imageAlt: "Ilustracija uz vijest: Anthropicov AI model poslao lažnu dojavu o ubojstvu policiji u Philadelphiji",
+    publishedOn: "2026-10-13",
+    category: NEWS,
+    readTime: 3,
+    featured: false
   })
 ];
 
