@@ -6179,6 +6179,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 520,
+    slug: "mit-o-ai-alatima-za-programiranje",
+    title: "Mit o AI alatima za programiranje: Zašto nas još ne mijenjaju",
+    description: "Svi obećavaju da će AI uskoro samostalno pisati aplikacije, ali stvarni programeri znaju da je priča bitno drugačija i složenija.",
+    imageAlt: "Ilustracija uz komentar: Mit o AI alatima za programiranje: Zašto nas još ne mijenjaju",
+    publishedOn: "2026-10-13",
+    category: ANALYSIS,
+    readTime: 5,
+    featured: false,
   })
 ];
 
