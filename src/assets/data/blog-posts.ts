@@ -6190,6 +6190,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 5,
     featured: false,
+  }),
+  createPost({
+    id: 521,
+    slug: "zasto-je-potraga-za-agi-jem-stetna-distrakcija",
+    title: "Zašto je potraga za AGI-jem štetna distrakcija",
+    description: "Svijet tehnologije troši milijarde jureći za mitom o općoj umjetnoj inteligenciji. Vrijeme je da se posvetimo stvarnim problemima.",
+    imageAlt: "Ilustracija uz komentar: Zašto je potraga za AGI-jem štetna distrakcija",
+    publishedOn: "2026-10-14",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
