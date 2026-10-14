@@ -6190,6 +6190,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 5,
     featured: false,
+  }),
+  createPost({
+    id: 521,
+    slug: "iluzija-agi-ja",
+    title: "Iluzija AGI-ja: Zašto smo još uvijek daleko od prave inteligencije",
+    description: "Obećanja o skorašnjem dolasku opće umjetne inteligencije zanemaruju temeljna ograničenja današnjih modela i skreću pozornost sa stvarnih problema.",
+    imageAlt: "Ilustracija uz komentar: Iluzija AGI-ja",
+    publishedOn: "2026-10-14",
+    category: ANALYSIS,
+    readTime: 5,
+    featured: false,
   })
 ];
 
