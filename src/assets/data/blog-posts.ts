@@ -6190,6 +6190,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 5,
     featured: false,
+  }),
+  createPost({
+    id: 521,
+    slug: "openai-employee-arrested-recording-device",
+    title: "Zaposlenik OpenAI-ja uhićen zbog postavljanja prisluškivača",
+    description: "Inženjer u OpenAI-ju navodno je sakrio uređaj za snimanje zvuka u konferencijskoj sali na jednoj od lokacija tvrtke u San Franciscu.",
+    imageAlt: "Ilustracija uz vijest: Zaposlenik OpenAI-ja uhićen zbog postavljanja prisluškivača",
+    publishedOn: "2026-10-14",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
   })
 ];
 
