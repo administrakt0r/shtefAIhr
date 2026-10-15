@@ -6223,6 +6223,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 5,
     featured: false
+  }),
+  createPost({
+    id: 524,
+    slug: "zasto-je-opsesija-s-agi-stetna-za-stvarni-napredak",
+    title: "Zašto je opsesija s AGI-jem štetna za stvarni napredak",
+    description: "Umjetna opća inteligencija je sjajna priča za investitore, ali opsesija njezinim postizanjem usporava rješavanje stvarnih problema.",
+    imageAlt: "Ilustracija uz komentar: Zašto je opsesija s AGI-jem štetna za stvarni napredak",
+    publishedOn: "2026-10-15",
+    category: ANALYSIS,
+    readTime: 3,
+    featured: false
   })
 ];
 
