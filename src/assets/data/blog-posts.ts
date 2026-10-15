@@ -6212,6 +6212,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 523,
+    slug: "zabluda-o-ai-rjesavanju-tehnickog-duga",
+    title: "Zabluda o AI rješavanju tehničkog duga",
+    description: "Umjetna inteligencija trenutačno ne rješava tehnički dug, ona ga, bez pažljivog nadzora, eksponencijalno ubrzava i prikriva.",
+    imageAlt: "Ilustracija uz komentar: Zabluda o AI rješavanju tehničkog duga",
+    publishedOn: "2026-10-15",
+    category: ANALYSIS,
+    readTime: 5,
+    featured: false
   })
 ];
 
