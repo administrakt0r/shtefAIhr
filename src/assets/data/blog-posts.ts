@@ -6201,6 +6201,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 522,
+    slug: "ai-modeli-preuzimaju-znanost",
+    title: "AI modeli uskoro bi mogli preuzeti rješavanje problema u znanosti",
+    description: "Studija s MIT-a pokazuje da AI modeli bilježe eksponencijalni rast u rješavanju složenih teorijskih problema u znanosti.",
+    imageAlt: "Ilustracija uz vijest: AI modeli uskoro bi mogli preuzeti rješavanje problema u znanosti",
+    publishedOn: "2026-10-15",
+    category: NEWS,
+    readTime: 3,
+    featured: false
   })
 ];
 
