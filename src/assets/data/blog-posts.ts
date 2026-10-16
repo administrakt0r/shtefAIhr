@@ -6234,6 +6234,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 525,
+    slug: "ai-agenti-stizu-u-rivianova-vozila",
+    title: "AI agenti uskoro stižu u Rivianova električna vozila",
+    description: "Rivian razvija sustav koji će omogućiti pokretanje naprednih AI agenata iz tvrtki poput Anthropica izravno u njihovim vozilima.",
+    imageAlt: "Ilustracija uz vijest: AI agenti uskoro stižu u Rivianova električna vozila",
+    publishedOn: "2026-10-16",
+    category: NEWS,
+    readTime: 3,
+    featured: false
   })
 ];
 
