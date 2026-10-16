@@ -6245,6 +6245,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 526,
+    slug: "iluzija-o-potpunoj-automatizaciji",
+    title: "Iluzija o potpunoj automatizaciji: Zašto umjetna inteligencija neće zamijeniti programere",
+    description: "Svi govore o alatima koji pišu kod, no stvarna vrijednost inženjera leži u razumijevanju konteksta, a ne u pukom tipkanju.",
+    imageAlt: "Ilustracija uz komentar: Iluzija o potpunoj automatizaciji: Zašto umjetna inteligencija neće zamijeniti programere",
+    publishedOn: "2026-10-16",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
