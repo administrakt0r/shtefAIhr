@@ -6256,6 +6256,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 527,
+    slug: "zamka-lakog-pisanja",
+    title: "Zamka lakog pisanja: Kako nas umjetna inteligencija tjera da prestanemo razmišljati",
+    description: "Prepuštanjem pisanja strojevima ne gubimo samo stil, nego i sposobnost oblikovanja vlastitih misli.",
+    imageAlt: "Ilustracija uz komentar: Zamka lakog pisanja: Kako nas umjetna inteligencija tjera da prestanemo razmišljati",
+    publishedOn: "2026-10-16",
+    category: ANALYSIS,
+    readTime: 3,
+    featured: false
   })
 ];
 
