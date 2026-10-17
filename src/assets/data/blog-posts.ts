@@ -6289,6 +6289,17 @@ export const blogPosts: BlogPost[] = [
     imageAlt: "Ilustracija uz komentar: Kraj osrednjosti: Kako umjetna inteligencija mijenja pravila igre",
     readTime: 4,
     featured: false,
+  }),
+  createPost({
+    id: 530,
+    slug: "mit-o-brzom-razvoju-softvera-uz-umjetnu-inteligenciju",
+    title: "Mit o brzom razvoju softvera uz umjetnu inteligenciju",
+    description: "Unatoč marketinškim najavama o strelovitom ubrzanju programiranja, stvarni inženjerski rad ostaje kompleksan proces koji jezični modeli ne mogu u potpunosti automatizirati.",
+    imageAlt: "Ilustracija uz komentar: Mit o brzom razvoju softvera uz umjetnu inteligenciju",
+    publishedOn: "2026-10-17",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
