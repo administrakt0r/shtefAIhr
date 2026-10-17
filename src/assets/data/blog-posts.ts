@@ -6278,6 +6278,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 2,
     featured: false
+  }),
+  createPost({
+    id: 529,
+    slug: "kraj-osrednjosti-kako-ai-mijenja-pravila-igre",
+    title: "Kraj osrednjosti: Kako umjetna inteligencija mijenja pravila igre",
+    description: "Umjetna inteligencija ne predstavlja kraj ljudskog rada. Ona predstavlja kraj osrednjosti. Ušli smo u eru u kojoj prosječnost više nije dovoljna za opstanak na tržištu.",
+    publishedOn: "2026-10-17",
+    category: ANALYSIS,
+    imageAlt: "Ilustracija uz komentar: Kraj osrednjosti: Kako umjetna inteligencija mijenja pravila igre",
+    readTime: 4,
+    featured: false,
   })
 ];
 
