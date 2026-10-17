@@ -6267,6 +6267,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 528,
+    slug: "replit-prekida-suradnju-s-anthropicom",
+    title: "Replit prekida suradnju s Anthropicom zbog troškova i performansi",
+    description: "CEO Replita Amjad Masad najavio je prekid partnerstva s Anthropicom, ističući OpenAI-jev ChatGPT kao bolje rješenje za njihovu platformu.",
+    imageAlt: "Ilustracija uz vijest: Replit prekida suradnju s Anthropicom",
+    publishedOn: "2026-10-17",
+    category: NEWS,
+    readTime: 2,
+    featured: false
   })
 ];
 
