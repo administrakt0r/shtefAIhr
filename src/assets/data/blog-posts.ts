@@ -6322,6 +6322,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 6,
     featured: false
+  }),
+  createPost({
+    id: 533,
+    slug: 'zabluda-o-carobnom-generiranju-koda',
+    title: 'Zabluda o čarobnom generiranju koda: Zašto AI alati stvaraju tehnički dug',
+    description: 'Generativni modeli pišu kod nevjerojatnom brzinom, ali prava cijena tog koda tek dolazi na naplatu. Kratkoročna ušteda vremena rezultira dugoročnim problemima u održavanju.',
+    imageAlt: 'Ilustracija uz komentar: Zabluda o čarobnom generiranju koda: Zašto AI alati stvaraju tehnički dug',
+    publishedOn: '2026-10-18',
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
