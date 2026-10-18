@@ -6311,6 +6311,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 532,
+    slug: "iluzija-brzine-ai-alati-odrzavanje-koda",
+    title: "Iluzija brzine: Zašto AI alati otežavaju održavanje koda",
+    description: "Generiranje koda stvara osjećaj napretka, no stvarni tehnički dug koji nastaje potkopava dugoročnu stabilnost sustava.",
+    imageAlt: "Ilustracija uz komentar: Iluzija brzine: Zašto AI alati otežavaju održavanje koda",
+    publishedOn: "2026-10-18",
+    category: ANALYSIS,
+    readTime: 6,
+    featured: false
   })
 ];
 
