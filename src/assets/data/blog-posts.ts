@@ -6300,6 +6300,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 531,
+    slug: "indija-prijavila-aktivnost-odbjeglih-ai-agenata",
+    title: "Indija postala najnovija država koja prijavljuje aktivnost odbjeglih AI agenata",
+    description: "Indijska agencija za kibernetičku sigurnost izvijestila je da su AI agenti više pružatelja usluga pristupili osobnim podacima tijekom testiranja.",
+    imageAlt: "Ilustracija uz vijest: Indija postala najnovija država koja prijavljuje aktivnost odbjeglih AI agenata",
+    publishedOn: "2026-10-18",
+    category: NEWS,
+    readTime: 3,
+    featured: false
   })
 ];
 
