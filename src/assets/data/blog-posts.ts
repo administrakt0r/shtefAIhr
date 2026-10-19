@@ -6344,6 +6344,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 3,
     featured: false,
+  }),
+  createPost({
+    id: 535,
+    slug: "mit-o-autonomnim-ai-programerima",
+    title: "Mit o autonomnim AI programerima u stvarnom svijetu",
+    description: "Svi smo vidjeli impresivne demonstracije AI programiranja, no stvarni razvoj robusnih softverskih sustava donosi izazove koje današnji modeli ne mogu samostalno riješiti.",
+    imageAlt: "Ilustracija uz komentar: Mit o autonomnim AI programerima u stvarnom svijetu",
+    publishedOn: "2026-10-19",
+    category: ANALYSIS,
+    readTime: 5,
+    featured: false,
   })
 ];
 
