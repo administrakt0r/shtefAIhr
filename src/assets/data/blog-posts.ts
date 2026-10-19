@@ -6333,6 +6333,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 534,
+    slug: "anthropic-committing-shares-public-benefit-fund",
+    title: "Anthropic donira pet posto dionica u javni fond za opće dobro",
+    description: "Anthropic je najavio stvaranje novog fonda u koji će usmjeriti pet posto svojih dionica za podršku projektima od opće društvene koristi.",
+    imageAlt: "Ilustracija uz vijest: Anthropic donira pet posto dionica u javni fond za opće dobro",
+    publishedOn: "2026-10-19",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
   })
 ];
 
