@@ -6355,6 +6355,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 5,
     featured: false,
+  }),
+  createPost({
+    id: 536,
+    slug: "agi-je-distrakcija",
+    title: "AGI je distrakcija od stvarnih problema umjetne inteligencije",
+    description: "Dok svi pričaju o općoj umjetnoj inteligenciji, gubimo iz vida prave izazove današnjice.",
+    imageAlt: "Ilustracija uz komentar: AGI je distrakcija od stvarnih problema umjetne inteligencije",
+    publishedOn: "2026-10-19",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
   })
 ];
 
