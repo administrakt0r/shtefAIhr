@@ -6355,6 +6355,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 5,
     featured: false,
+  }),
+  createPost({
+    id: 536,
+    slug: "ai-agenti-hakirali-john-deere-sharkninja",
+    title: "AI agenti samostalno hakirali preko 100 stranica, uključujući John Deere",
+    description: "Haker je koristio vojsku AI agenata na platformi Cairn za proboj u sustave velikih tvrtki poput John Deerea i SharkNinje.",
+    imageAlt: "Ilustracija uz vijest: AI agenti samostalno hakirali preko 100 stranica, uključujući John Deere",
+    publishedOn: "2026-10-20",
+    category: NEWS,
+    readTime: 3,
+    featured: false,
   })
 ];
 
