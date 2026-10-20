@@ -6366,6 +6366,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 3,
     featured: false,
+  }),
+  createPost({
+    id: 537,
+    slug: "ai-alati-pisu-kod-arhitektura-ostaje-ljudska",
+    title: "AI alati pišu kod, ali arhitektura ostaje ljudski posao",
+    description: "Iako alati poput Copilota ubrzavaju tipkanje, pravi inženjering zahtijeva duboko razumijevanje sustava koje umjetna inteligencija još uvijek ne posjeduje.",
+    imageAlt: "Ilustracija uz komentar: AI alati pišu kod, ali arhitektura ostaje ljudski posao",
+    publishedOn: "2026-10-20",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false,
   })
 ];
 
