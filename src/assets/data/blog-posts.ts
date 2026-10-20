@@ -6377,6 +6377,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false,
+  }),
+  createPost({
+    id: 538,
+    slug: "zamka-automatski-generiranih-testova",
+    title: "Zamka automatski generiranih testova: Lažna sigurnost",
+    description: "Oslanjanje na umjetnu inteligenciju za pisanje testova stvara lažan osjećaj sigurnosti i opasan tehnički dug, pretvarajući softver u nepredvidljiv sustav.",
+    imageAlt: "Ilustracija uz komentar: Zamka automatski generiranih testova: Lažna sigurnost",
+    publishedOn: "2026-10-20",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 

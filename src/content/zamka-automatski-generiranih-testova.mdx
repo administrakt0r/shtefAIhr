@@ -1,0 +1,35 @@
+## Zamka automatski generiranih testova: Lažna sigurnost
+
+### Zašto prepuštanje testiranja umjetnoj inteligenciji stvara opasan tehnički dug.
+
+Svi volimo vidjeti zelene kvačice u našem sustavu za kontinuiranu integraciju. U svijetu razvoja softvera, visoka pokrivenost koda testovima dugo se smatrala svetim gralom kvalitete i stabilnosti. Danas, umjetna inteligencija može u svega nekoliko sekundi generirati stotine, pa čak i tisuće jediničnih testova, podižući tu istu pokrivenost na impresivnih devedeset ili više posto. Na prvi pogled, ovo izgleda kao ostvarenje sna svakog inženjerskog tima. No, ispod površine te naizgled savršene statistike i besprijekornih izvještaja, polako se stvara izuzetno opasna zamka koja može ugroziti stabilnost cijelih sustava. Oslanjanje na umjetnu inteligenciju za pisanje testova donosi nam brzinu, ali nam istovremeno oduzima ono najvažnije u inženjerstvu – kritičko promišljanje o rubnim slučajevima i stvarnim poslovnim zahtjevima.
+
+## Prevladavajuća priča
+
+Prevladavajuća priča u industriji trenutno zvuči nevjerojatno privlačno. Alati poput GitHub Copilota, ChatGPT-a i raznih drugih asistenata temeljenih na velikim jezičnim modelima agresivno se predstavljaju kao ultimativno rješenje za vjerojatno najomraženiji dio programiranja – pisanje testova. Argumenti zagovornika su jasni i naizgled logični: prepustite stroju da napiše dosadne, repetitivne testove za vaš kod, a vi kao inženjeri svoje dragocjeno vrijeme i mentalnu energiju posvetite arhitekturi, optimizaciji i razvoju novih, inovativnih značajki koje donose stvarnu poslovnu vrijednost.
+
+Menadžment je, očekivano, potpuno oduševljen ovom idejom. Pokrivenost koda raste nevjerojatnom brzinom, izvještaji o kvaliteti nikad nisu izgledali bolje, a sve to bez dodatnog utroška vremena ili povećanja troškova razvoja. S druge strane, mnogi inženjeri također pozdravljaju ovaj trend jer uspješno izbjegavaju monoton i često frustrirajuć posao pisanja jediničnih testova. Stvara se narativ u kojem su svi na dobitku – softver se isporučuje brže, metrike su zadovoljene, a razvojni timovi prijavljuju manju razinu stresa. Umjetna inteligencija se u ovoj priči pojavljuje kao savršen asistent koji preuzima sav teret osiguravanja kvalitete.
+
+### Zašto je ta priča pogrešna ili nepotpuna
+
+Problem nastaje onog trenutka kada zastanemo i zaista shvatimo što ti alati zapravo rade u pozadini. Veliki jezični modeli, bez obzira na njihovu naprednost, ne posjeduju nikakvo stvarno razumijevanje poslovne logike vašeg sustava. Oni isključivo prepoznaju sintaksu i oslanjaju se na statističke uzorke u kodu koji im je pružen kao kontekst. Kada zatražite od umjetne inteligencije da napiše test za određenu funkciju, ona će generirati kod koji jednostavno potvrđuje ono što vaša funkcija trenutno radi, a ne ono što bi ta funkcija zapravo trebala raditi prema poslovnim zahtjevima.
+
+Ovo je ključna i često fatalna razlika. Ako ste u implementaciji napravili logičku pogrešku, na primjer, pogrešno ste izračunali porez ili ste propustili provjeriti stanje na računu korisnika prije transakcije, jezični model neće prepoznati tu grešku. Umjesto toga, on će najčešće napisati savršen, zeleni test koji tu istu pogrešku besprijekorno pokriva i cementira u vašoj bazi koda. Test će proći, sustav će prijaviti da je sve u redu, ali vaša aplikacija će u stvarnosti biti neispravna.
+
+Umjesto stvarne provjere ispravnosti i robusnosti sustava, mi zapravo dobivamo samo automatiziranu, slijepu potvrdu trenutnog stanja koda. Pisanje testova nikada nije bilo isključivo usmjereno na postizanje visokog postotka pokrivenosti. Pravi smisao testiranja leži u procesu razmišljanja koji prethodi samom pisanju koda. Kada inženjer ručno piše test, on aktivno razmišlja o tome što se događa ako mreža padne, ako korisnik unese nevaljane podatke ili ako vanjski API vrati neočekivani format. Umjetna inteligencija taj kognitivni proces u potpunosti preskače, generirajući testove za "sretan put" koji najčešće padaju na prvom stvarnom izazovu u produkcijskom okruženju.
+
+## Posljedice u stvarnom svijetu
+
+Kada se inženjerski timovi počnu u potpunosti oslanjati na automatski generirane testove, oni zapravo stvaraju novu, izuzetno opasnu vrstu tehničkog duga koji je gotovo nemoguće otkriti statičkom analizom. Zelene kvačice na ekranu daju inženjerima, voditeljima projekata i cijelom menadžmentu potpuno lažni osjećaj sigurnosti. Ta iluzija stabilnosti izravno dovodi do bržih, ali neusporedivo rizičnijih implementacija u produkcijsko okruženje.
+
+Kada stvarni korisnici konačno naiđu na grešku – a to se neizbježno događa – proces otklanjanja problema pretvara se u pravu noćnu moru. Timovi se odjednom suočavaju sa stotinama linija koda u testovima za koje nitko ne zna kako točno rade niti što bi točno trebali provjeravati. Tisuće generiranih, krhkih testova samo otežavaju pronalazak stvarnog uzroka problema.
+
+Dodatno, održavanje takve baze testova postaje enorman teret. Svaka manja promjena u strukturi koda uzrokovat će pad desetaka generiranih testova koji su bili previše vezani uz samu implementaciju, a ne uz ponašanje sustava. Umjesto da testovi budu sigurnosna mreža koja omogućava brzo i sigurno refaktoriranje, oni postaju sidro koje usporava svaki daljnji razvoj. Inženjeri tada provode više vremena popravljajući besmislene generirane testove nego što bi ikada potrošili da su odmah na početku pažljivo napisali nekoliko kvalitetnih, smislenih provjera. U konačnici, cijena ovakvog pristupa plaća se gubitkom povjerenja korisnika i drastičnim padom stvarne produktivnosti razvojnog tima.
+
+## Završni stav
+
+Testiranje softvera nikada nije bilo i nikada ne smije postati puka provjera postotka pokrivenosti koda. To je fundamentalni inženjerski proces dubokog promišljanja o sustavu, predviđanja neočekivanih ponašanja i osiguravanja usklađenosti s kompleksnim poslovnim pravilima. Umjetna inteligencija nam svakako može i treba pomoći pri postavljanju osnovne infrastrukture za testiranje ili pri generiranju jednostavnih podataka za testove, ali kognitivni proces – definiranje onoga što uopće treba testirati i zašto – mora ostati isključivo u domeni ljudskog uma. Prepustimo li strojevima da provjeravaju sami sebe, ne gradimo pouzdaniji softver, već samo automatiziramo vlastite pogreške na nezapamćenoj skali.
+
+---
+
+*Komentar objavljen na portalu Umjetna Inteligencija Blog by ShtefAI, autor: Shtef*
