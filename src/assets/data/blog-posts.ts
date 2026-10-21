@@ -6410,6 +6410,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 5,
     featured: false
+  }),
+  createPost({
+    id: 541,
+    slug: "zabluda-o-otvorenom-kodu",
+    title: "Zabluda o otvorenom kodu: Zašto open source neće spasiti umjetnu inteligenciju",
+    description: "Slijepa vjera da će rješenja otvorenog koda razbiti tehnološke monopole i stvoriti pravedno tržište ignorira stvarnost razvoja modernih AI sustava.",
+    imageAlt: "Ilustracija uz komentar: Zabluda o otvorenom kodu: Zašto open source neće spasiti umjetnu inteligenciju",
+    publishedOn: "2026-10-21",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
