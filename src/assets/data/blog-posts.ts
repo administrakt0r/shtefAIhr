@@ -6399,6 +6399,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 540,
+    slug: "ai-ne-moze-popraviti-lose-procese",
+    title: "Balon produktivnosti: Zašto AI alati ne mogu popraviti loše poslovne procese",
+    description: "Zavedeni obećanjima o rastu produktivnosti, menadžeri zaboravljaju da umjetna inteligencija ne može čudesno uspostaviti nepostojeće poslovne procese.",
+    imageAlt: "Ilustracija uz komentar: Balon produktivnosti: Zašto AI alati ne mogu popraviti loše poslovne procese",
+    publishedOn: "2026-10-21",
+    category: ANALYSIS,
+    readTime: 5,
+    featured: false
   })
 ];
 
