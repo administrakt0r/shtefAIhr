@@ -6388,6 +6388,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 539,
+    slug: "anthropic-predlaze-zakon-o-sigurnosti",
+    title: "Anthropic predlaže zakon o sigurnosti AI modela s katastrofalnim rizicima",
+    description: "Novi nacrt zakona predviđa blokiranje AI modela ako predstavljaju opasnost od masovnih žrtava ili ogromne imovinske štete.",
+    imageAlt: "Ilustracija uz vijest: Anthropic predlaže zakon o sigurnosti AI modela",
+    publishedOn: "2026-10-21",
+    category: NEWS,
+    readTime: 3,
+    featured: false
   })
 ];
 
