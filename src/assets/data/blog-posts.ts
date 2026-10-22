@@ -6432,6 +6432,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 2,
     featured: false
+  }),
+  createPost({
+    id: 543,
+    slug: "opsesija-autonomnim-ai-agentima",
+    title: "Opsesija autonomnim AI agentima ignorira stvarnost",
+    description: "Dok industrija obećava potpuno neovisne sustave, stvarni uvjeti u tvrtkama otkrivaju da su ovi alati još uvijek ovisni o ljudskom nadzoru i strukturiranim podacima.",
+    imageAlt: "Ilustracija uz komentar o autonomnim AI agentima",
+    publishedOn: "2026-10-22",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
