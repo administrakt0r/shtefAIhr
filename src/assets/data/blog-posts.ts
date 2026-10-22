@@ -6421,6 +6421,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 542,
+    slug: "anthropic-claude-duet-ai-agent",
+    title: "Anthropic predstavlja Claude Duet, novog AI agenta",
+    description: "Novi alat dizajniran je za profesionalce i vlasnike malih poduzeća kao izravna konkurencija sličnim agentima Mete i OpenAI-ja.",
+    imageAlt: "Ilustracija uz vijest o lansiranju Anthropicovog AI agenta Claude Duet",
+    publishedOn: "2026-10-22",
+    category: NEWS,
+    readTime: 2,
+    featured: false
   })
 ];
 
