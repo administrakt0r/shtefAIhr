@@ -6443,6 +6443,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 544,
+    slug: "ai-alati-za-programiranje-mitovi",
+    title: "AI alati za programiranje: Mitovi i stvarni izazovi",
+    description: "Oslanjanje na AI alate bez stručnog inženjerskog nadzora donosi tehnički dug i kompleksnije probleme nego što se čini na prvi pogled.",
+    imageAlt: "Ilustracija uz komentar o izazovima AI alata za programiranje",
+    publishedOn: "2026-10-22",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
