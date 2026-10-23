@@ -6465,6 +6465,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 546,
+    slug: "mit-o-zamjeni-programera-umjetnom-inteligencijom",
+    title: "Mit o brzoj zamjeni programera umjetnom inteligencijom",
+    description: "Zašto moderni alati umjetne inteligencije i dalje ne mogu u potpunosti zamijeniti inženjere.",
+    imageAlt: "Ilustracija uz komentar: Mit o brzoj zamjeni programera umjetnom inteligencijom",
+    publishedOn: "2026-10-23",
+    category: ANALYSIS,
+    readTime: 5,
+    featured: false
   })
 ];
 
