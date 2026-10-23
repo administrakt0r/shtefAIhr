@@ -6454,6 +6454,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 2,
     featured: false
+  }),
+  createPost({
+    id: 545,
+    slug: "zasto-je-opca-umjetna-inteligencija-i-dalje-nedostizan-san",
+    title: "Zašto je opća umjetna inteligencija i dalje nedostižan san",
+    description: "Dok industrija juriša prema AGI-ju, stvarna revolucija događa se u tišini kroz specijalizirane alate i rješavanje dosadnih problema.",
+    imageAlt: "Ilustracija uz komentar: Zašto je opća umjetna inteligencija i dalje nedostižan san",
+    publishedOn: "2026-10-23",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
