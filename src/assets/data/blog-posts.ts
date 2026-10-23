@@ -6443,6 +6443,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 544,
+    slug: "openai-rad-na-novoj-investiciji-30-milijardi",
+    title: "OpenAI radi na novoj investiciji od 30 milijardi dolara",
+    description: "Laboratorij za umjetnu inteligenciju OpenAI radi na prikupljanju do 30 milijardi dolara uz procjenu vrijednosti od 1,25 bilijuna dolara umjesto potencijalnog izlaska na burzu.",
+    imageAlt: "Ilustracija vijesti o OpenAI investiciji od 30 milijardi dolara",
+    publishedOn: "2026-10-23",
+    category: NEWS,
+    readTime: 2,
+    featured: false
   })
 ];
 
