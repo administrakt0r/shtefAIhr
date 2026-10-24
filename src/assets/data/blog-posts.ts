@@ -6487,6 +6487,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 2,
     featured: false
+  }),
+  createPost({
+    id: 548,
+    slug: "zamor-umjetnom-inteligencijom",
+    title: "Zamor umjetnom inteligencijom: Povratak jednostavnim aplikacijama",
+    description: "Prisilno guranje generativnih modela u svaki softverski proizvod narušava osnovno korisničko iskustvo i stvara nepotreban zamor.",
+    imageAlt: "Ilustracija uz komentar: Zamor umjetnom inteligencijom",
+    publishedOn: "2026-10-24",
+    category: ANALYSIS,
+    readTime: 5,
+    featured: false
   })
 ];
 
