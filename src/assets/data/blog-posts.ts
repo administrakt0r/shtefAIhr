@@ -6476,6 +6476,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 5,
     featured: false
+  }),
+  createPost({
+    id: 547,
+    slug: "openai-prestaje-trenirati-modele-na-internetu",
+    title: "OpenAI prestaje trenirati modele na internetu",
+    description: "OpenAI prekida treniranje naprednih modela na internetu zbog sigurnosnih incidenata i neočekivanih ponašanja AI agenata.",
+    imageAlt: "Ilustracija vijesti o prestanku treniranja OpenAI modela na internetu",
+    publishedOn: "2026-10-23",
+    category: NEWS,
+    readTime: 2,
+    featured: false
   })
 ];
 
