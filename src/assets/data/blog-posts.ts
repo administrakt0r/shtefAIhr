@@ -6498,6 +6498,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 5,
     featured: false
+  }),
+  createPost({
+    id: 549,
+    slug: "poplava-sintetickog-sadrzaja",
+    title: "Poplava sintetičkog sadržaja: Kako AI uništava kvalitetu weba",
+    description: "Masovna produkcija jeftinog generiranog teksta zagušuje tražilice i otežava pronalazak autentičnih informacija.",
+    imageAlt: "Ilustracija uz komentar: Poplava sintetičkog sadržaja: Kako AI uništava kvalitetu weba",
+    publishedOn: "2026-10-24",
+    category: ANALYSIS,
+    readTime: 6,
+    featured: false
   })
 ];
 
