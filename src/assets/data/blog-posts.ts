@@ -6520,6 +6520,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 5,
     featured: false
+  }),
+  createPost({
+    id: 551,
+    slug: "kraj-osrednjosti-ai",
+    title: "Kraj osrednjosti: Kako je AI ubio prosječan sadržaj",
+    description: "Umjetna inteligencija nije izbrisala potrebu za kreativnošću, ali je trajno obezvrijedila osrednjost i prosječnost na tržištu rada.",
+    imageAlt: "Ilustracija uz komentar: Kraj osrednjosti: Kako je AI ubio prosječan sadržaj",
+    publishedOn: "2026-10-25",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
