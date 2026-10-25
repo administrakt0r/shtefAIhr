@@ -6509,6 +6509,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 6,
     featured: false
+  }),
+  createPost({
+    id: 550,
+    slug: "iluzija-brzog-rjesenja-ai",
+    title: "Iluzija brzog rješenja: Prava cijena integracije jezičnih modela",
+    description: "Početna ušteda i entuzijazam brzo nestaju uz visoke troškove održavanja i inherentnu nepredvidivost umjetne inteligencije.",
+    imageAlt: "Ilustracija uz komentar: Iluzija brzog rješenja: Prava cijena integracije jezičnih modela",
+    publishedOn: "2026-10-25",
+    category: ANALYSIS,
+    readTime: 5,
+    featured: false
   })
 ];
 
