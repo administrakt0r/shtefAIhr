@@ -6509,6 +6509,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 6,
     featured: false
+  }),
+  createPost({
+    id: 550,
+    slug: "ai-agenti-na-pustom-otoku-poceli-se-igrati",
+    title: "AI agenti ostavljeni sami na pustom otoku počeli su se igrati",
+    description: "Istraživači s MIT-a ostavili su 13 AI agenata bez cilja u simulaciji na 30 sati. Umjesto mirovanja, agenti su počeli izmišljati vlastite igre.",
+    imageAlt: "Ilustracija vijesti o AI agentima koji se igraju na simuliranom pustom otoku",
+    publishedOn: "2026-10-25",
+    category: NEWS,
+    readTime: 3,
+    featured: false
   })
 ];
 
