@@ -6542,6 +6542,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 553,
+    slug: "paradoks-ai-pomocnika-ubrzavanje-koda",
+    title: "Paradoks AI pomoćnika: Kako ubrzavanje koda usporava učenje",
+    description: "Oslanjanje na generativne modele stvara početnike koji znaju napisati kod, ali ga ne razumiju, što predstavlja ozbiljan problem za razvoj talenata.",
+    imageAlt: "Ilustracija uz komentar: Paradoks AI pomoćnika i utjecaj na učenje programiranja",
+    publishedOn: "2026-10-26",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
