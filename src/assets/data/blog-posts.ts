@@ -6531,6 +6531,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 552,
+    slug: "zabluda-o-prompt-inzenjeringu-kao-poslu",
+    title: "Zabluda o prompt inženjeringu kao poslu budućnosti",
+    description: "Prompt inženjering je privremeni fenomen, a prava vrijednost u korištenju umjetne inteligencije i dalje leži u dubokom domenskom znanju.",
+    imageAlt: "Ilustracija uz komentar: Zabluda o prompt inženjeringu kao poslu budućnosti",
+    publishedOn: "2026-10-26",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
