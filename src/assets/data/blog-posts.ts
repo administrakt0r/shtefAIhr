@@ -6520,6 +6520,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 5,
     featured: false
+  }),
+  createPost({
+    id: 551,
+    slug: "top-ai-agenti-u-porukama",
+    title: "Najbolji AI agenti koji žive u vašim SMS i chat porukama",
+    description: "Sve veći broj AI agenata više ne zahtijeva preuzimanje aplikacija, već im se pristupa i upravlja izravno putem poruka.",
+    imageAlt: "Ilustracija uz vijest: Najbolji AI agenti koji žive u vašim SMS i chat porukama",
+    publishedOn: "2026-10-26",
+    category: NEWS,
+    readTime: 3,
+    featured: false
   })
 ];
 
