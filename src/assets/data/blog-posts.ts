@@ -6553,6 +6553,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 554,
+    slug: "buducnost-pripada-specijalizaciji",
+    title: "Iluzija univerzalnih modela: Zašto budućnost pripada specijalizaciji",
+    description: "Opsesija gigantskim jezičnim modelima zamagljuje pravu vrijednost usko specijaliziranih alata.",
+    imageAlt: "Ilustracija uz komentar: Iluzija univerzalnih modela: Zašto budućnost pripada specijalizaciji",
+    publishedOn: "2026-10-27",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
