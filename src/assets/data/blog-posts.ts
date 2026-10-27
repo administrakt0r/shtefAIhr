@@ -6564,6 +6564,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 555,
+    slug: "mit-o-autonomnim-agentima-opca-inteligencija",
+    title: "Mit o autonomnim agentima: Zašto nismo ni blizu općoj inteligenciji",
+    description: "Slijepo vjerovanje u potpunu autonomiju agenata zanemaruje njihovu krhkost, čineći ljudski nadzor i dalje ključnim.",
+    imageAlt: "Ilustracija uz komentar: Mit o autonomnim agentima: Zašto nismo ni blizu općoj inteligenciji",
+    publishedOn: "2026-10-27",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
