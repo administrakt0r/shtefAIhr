@@ -6553,6 +6553,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 554,
+    slug: "anthropic-ipo-prijava",
+    title: "Anthropic službeno predao papire za izlazak na burzu",
+    description: "Nakon tjedana nagađanja, Anthropic je službeno podnio prijavu za inicijalnu javnu ponudu dionica (IPO), otkrivši impresivne prihode i velike gubitke.",
+    imageAlt: "Ilustracija uz vijest: Anthropic službeno predao papire za izlazak na burzu",
+    publishedOn: "2026-10-27",
+    category: NEWS,
+    readTime: 3,
+    featured: false
   })
 ];
 
