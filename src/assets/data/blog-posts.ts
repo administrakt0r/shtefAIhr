@@ -6586,6 +6586,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 2,
     featured: false
+  }),
+  createPost({
+    id: 557,
+    slug: "zasto-open-source-ai-nece-pobijediti",
+    title: "Zašto open-source AI modeli neće automatski pobijediti",
+    description: "Entuzijazam zajednice oko open-source AI modela često zanemaruje stvarne i visoke troškove infrastrukture, te kompleksnost njihove primjene u poslovnom svijetu.",
+    imageAlt: "Ilustracija uz komentar: Zašto open-source AI modeli neće automatski pobijediti",
+    publishedOn: "2026-10-28",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
