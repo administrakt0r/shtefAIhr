@@ -6575,6 +6575,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 556,
+    slug: "iluzija-benchmark-testova",
+    title: "Iluzija benchmark testova: Zašto rezultati ne znače inteligenciju",
+    description: "Opsesija obaranjem rekorda na standardiziranim testovima stvara modele koji briljiraju u laboratoriju, ali padaju u stvarnom svijetu.",
+    imageAlt: "Ilustracija uz komentar: Iluzija benchmark testova",
+    publishedOn: "2026-10-28",
+    category: ANALYSIS,
+    readTime: 5,
+    featured: false
   })
 ];
 
