@@ -6575,6 +6575,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 556,
+    slug: "openai-ogranicava-pristup-novim-otkricima",
+    title: "Znanstvenici frustrirani OpenAI-jevim ograničavanjem otkrića",
+    description: "OpenAI-jev pristup komuniciranju znanstvenih otkrića kroz male grupe stručnjaka izaziva nezadovoljstvo šire znanstvene zajednice.",
+    imageAlt: "Ilustracija uz vijest: Znanstvenici frustrirani OpenAI-jevim ograničavanjem otkrića",
+    publishedOn: "2026-10-28",
+    category: NEWS,
+    readTime: 2,
+    featured: false
   })
 ];
 
