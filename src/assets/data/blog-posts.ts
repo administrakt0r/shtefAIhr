@@ -6608,6 +6608,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 559,
+    slug: "opasnost-od-potpuno-autonomnih-ai-agenata",
+    title: "Opasnost od potpuno autonomnih AI agenata",
+    description: "Zašto je vizija AI agenata koji rade potpuno samostalno opasna iluzija i zašto je ljudski nadzor jedini održivi put naprijed.",
+    imageAlt: "Ilustracija uz komentar: Opasnost od potpuno autonomnih AI agenata",
+    publishedOn: "2026-10-29",
+    category: ANALYSIS,
+    readTime: 5,
+    featured: false
   })
 ];
 
