@@ -6619,6 +6619,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 5,
     featured: false
+  }),
+  createPost({
+    id: 560,
+    slug: "mit-o-trenutnom-roiu-ai-projekata",
+    title: "Mit o trenutnom povratu investicije u AI projekte",
+    description: "Kompanije očekuju brze uštede od umjetne inteligencije, ali stvarni podaci otkrivaju složenu sliku skrivenih troškova i dugotrajnih integracija.",
+    imageAlt: "Ilustracija uz komentar: Mit o trenutnom povratu investicije u AI projekte",
+    publishedOn: "2026-10-29",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
