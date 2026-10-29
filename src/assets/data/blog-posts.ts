@@ -6597,6 +6597,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 558,
+    slug: "google-gemini-4-argon",
+    title: "Google predstavio Gemini 4 Argon za najteže inženjerske probleme",
+    description: "Novi model nudi izvanredne sposobnosti u optimizaciji koda, brzoj obradi višestrukih promjena i rješavanju kompleksnih zadataka iz stvarnog svijeta.",
+    imageAlt: "Ilustracija uz vijest: Google predstavio Gemini 4 Argon",
+    publishedOn: "2026-10-29",
+    category: NEWS,
+    readTime: 3,
+    featured: false
   })
 ];
 
