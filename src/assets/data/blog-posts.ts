@@ -6652,6 +6652,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 563,
+    slug: "iluzija-razumijevanja-konteksta-kod-ai",
+    title: "Iluzija razumijevanja: Zašto AI modeli zapravo ne misle",
+    description: "Svi smo vidjeli kako umjetna inteligencija danas impresivno sažima složene tekstove, no prava je istina da modeli ne posjeduju logiku.",
+    imageAlt: "Ilustracija uz komentar: Iluzija razumijevanja: Zašto AI modeli zapravo ne misle",
+    publishedOn: "2026-10-30",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
