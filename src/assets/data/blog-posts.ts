@@ -6641,6 +6641,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 562,
+    slug: "mit-o-ai-programerima-brze-pisanje-loseg-koda",
+    title: "Mit o AI programerima: Brže pisanje lošeg koda",
+    description: "Umjetna inteligencija u programiranju ne zamjenjuje inženjere, već samo ubrzava stvaranje tehničkog duga ako se koristi bez dubokog domenskog znanja.",
+    imageAlt: "Ilustracija uz komentar: Mit o AI programerima: Brže pisanje lošeg koda",
+    publishedOn: "2026-10-30",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
