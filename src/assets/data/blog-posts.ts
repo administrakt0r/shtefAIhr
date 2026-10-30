@@ -6630,6 +6630,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 561,
+    slug: "mistral-objavio-open-source-model-ml4",
+    title: "Mistral objavio weights za ML4, svoj model s bilijun parametara",
+    description: "Francuska AI tvrtka Mistral objavila je weights za svoj najnoviji open-source model usmjeren na kibernetičku sigurnost.",
+    imageAlt: "Ilustracija uz vijest: Mistral objavio weights za ML4, svoj model s bilijun parametara",
+    publishedOn: "2026-10-30",
+    category: NEWS,
+    readTime: 3,
+    featured: false
   })
 ];
 
