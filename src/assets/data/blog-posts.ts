@@ -6674,6 +6674,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 2,
     featured: false
+  }),
+  createPost({
+    id: 565,
+    slug: "opasni-mit-o-skorom-dolasku-opce-umjetne-inteligencije",
+    title: "Opasni mit o skorom dolasku opće umjetne inteligencije",
+    description: "Dok industrija mašta o strojevima koji misle kao ljudi, propuštamo riješiti stvarne probleme današnjice pomoću umjetne inteligencije.",
+    imageAlt: "Ilustracija uz komentar: Opasni mit o skorom dolasku opće umjetne inteligencije",
+    publishedOn: "2026-10-31",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
