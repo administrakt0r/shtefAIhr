@@ -6674,6 +6674,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 2,
     featured: false
+  }),
+  createPost({
+    id: 565,
+    slug: "iluzija-ai-produktivnosti-radimo-vise",
+    title: "Iluzija AI produktivnosti: Zašto zapravo radimo više",
+    description: "Alati umjetne inteligencije trebali su osloboditi vrijeme, ali podižu ljestvicu i ubrzavaju rad.",
+    imageAlt: "Ilustracija uz komentar: Iluzija AI produktivnosti",
+    publishedOn: "2026-10-31",
+    category: ANALYSIS,
+    readTime: 5,
+    featured: false
   })
 ];
 
