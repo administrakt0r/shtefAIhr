@@ -6663,6 +6663,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 564,
+    slug: "ai-tvrtke-novi-standard-opt-out",
+    title: "Vodeće AI tvrtke podržale novi standard za sprečavanje rudarenja weba",
+    description: "OpenAI, Google, Microsoft i Anthropic usvajaju jedinstveni signal u robots.txt za upravljanje preferencijama izdavača.",
+    imageAlt: "Ilustracija uz vijest: AI tvrtke podržavaju novi standard za opt-out",
+    publishedOn: "2026-10-31",
+    category: NEWS,
+    readTime: 2,
+    featured: false
   })
 ];
 
