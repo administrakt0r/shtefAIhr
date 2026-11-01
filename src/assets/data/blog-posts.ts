@@ -6696,6 +6696,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 567,
+    slug: "hype-vs-stvarnost-gdje-su-agenti",
+    title: "Hype vs. stvarnost: Gdje su ti autonomni agenti?",
+    description: "Unatoč ogromnim najavama, istinski autonomni agenti i dalje su rijetkost, a stvarna vrijednost leži u uskoj primjeni.",
+    imageAlt: "Ilustracija uz komentar: Hype vs. stvarnost: Gdje su ti autonomni agenti",
+    publishedOn: "2026-11-01",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
