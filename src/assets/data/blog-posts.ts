@@ -6685,6 +6685,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 566,
+    slug: "ai-agent-izveo-operaciju-mozga-misu",
+    title: "AI agent samostalno izveo operaciju na mozgu živog miša",
+    description: "Znanstvenici su uspješno povezali umjetnu inteligenciju s laboratorijskom opremom za ubrizgavanje terapije u mozak.",
+    imageAlt: "Ilustracija uz vijest: AI agent izveo operaciju na mozgu",
+    publishedOn: "2026-11-01",
+    category: NEWS,
+    readTime: 3,
+    featured: false
   })
 ];
 
