@@ -6707,6 +6707,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 568,
+    slug: "ai-nije-zamjena-za-inzenjere",
+    title: "Zašto umjetna inteligencija još uvijek treba inženjere",
+    description: "Umjetna inteligencija ubrzava kodiranje, ali duboko tehničko razumijevanje ostaje ključno za stabilan softver.",
+    imageAlt: "Ilustracija za komentar o inženjerima i umjetnoj inteligenciji",
+    publishedOn: "2026-11-01",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
