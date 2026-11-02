@@ -6718,6 +6718,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 569,
+    slug: "ai-ce-unistiti-prosjecnost",
+    title: "Umjetna inteligencija neće uništiti poslove, nego prosječnost",
+    description: "Glavni utjecaj AI alata nije masovna nezaposlenost, već podizanje minimalnog standarda prihvatljive kvalitete rada u svim industrijama.",
+    imageAlt: "Ilustracija za komentar o umjetnoj inteligenciji i standardima rada",
+    publishedOn: "2026-11-02",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
