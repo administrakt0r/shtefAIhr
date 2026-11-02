@@ -6718,6 +6718,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 569,
+    slug: "google-predstavlja-playground",
+    title: "Google predstavlja Playground: Kreirajte i igrajte vlastite igre",
+    description: "Nova eksperimentalna platforma Playground omogućuje kreiranje i dijeljenje videoigara putem tekstualnih naredbi, bez programiranja.",
+    imageAlt: "Ilustracija za Google Playground platformu",
+    publishedOn: "2026-11-02",
+    category: NEWS,
+    readTime: 3,
+    featured: false
   })
 ];
 
