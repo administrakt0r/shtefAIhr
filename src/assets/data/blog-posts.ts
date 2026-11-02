@@ -6729,6 +6729,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 570,
+    slug: "istina-o-ai-programerima",
+    title: "Istina o AI programerima: Što vam oglasi ne govore",
+    description: "Marketinška obećanja o AI alatima koji sami pišu kod opasno zamagljuju inženjersku stvarnost i složenost izrade softvera.",
+    imageAlt: "Ilustracija za komentar o stvarnosti programiranja s umjetnom inteligencijom",
+    publishedOn: "2026-11-02",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
