@@ -6740,6 +6740,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 571,
+    slug: "google-dreambeans-indija",
+    title: "Google Dreambeans stigao u Indiju za personalizirane priče",
+    description: "Google je lansirao svoju AI aplikaciju za generiranje vizualnih priča na prvom tržištu izvan SAD-a uz podršku za 13 lokalnih jezika.",
+    imageAlt: "Ilustracija Google Dreambeans aplikacije u Indiji",
+    publishedOn: "2026-11-03",
+    category: NEWS,
+    readTime: 3,
+    featured: false
   })
 ];
 
