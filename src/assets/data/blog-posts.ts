@@ -6740,6 +6740,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 571,
+    slug: "zabluda-o-autonomnim-programerima",
+    title: "Zabluda o autonomnim AI programerima u praksi",
+    description: "Unatoč najavama o umjetnoj inteligenciji koja sama piše kod, stvarni razvoj softvera ostaje duboko ljudski izazov.",
+    imageAlt: "Ilustracija za komentar o stvarnosti AI programera",
+    publishedOn: "2026-11-03",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
