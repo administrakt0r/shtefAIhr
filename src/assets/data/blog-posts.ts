@@ -6751,6 +6751,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 3,
     featured: false
+  }),
+  createPost({
+    id: 572,
+    slug: "iluzija-zamjene-programera-ai-jem",
+    title: "Iluzija potpune zamjene programera umjetnom inteligencijom",
+    description: "Zašto su tvrdnje o potpunoj automatizaciji razvoja softvera u bliskoj budućnosti pretjerane.",
+    imageAlt: "Ilustracija programera s umjetnom inteligencijom",
+    publishedOn: "2026-11-03",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
