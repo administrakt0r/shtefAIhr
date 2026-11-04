@@ -1,0 +1,32 @@
+## Anthropic razvija sustav za dokazivanje identiteta AI modela
+
+### FlashProve želi spriječiti lažno predstavljanje modela
+
+Anthropic radi na sustavu koji će omogućiti dokazivanje iz kojeg točno AI modela dolazi određeni odgovor. Ovaj sustav, nazvan FlashProve, osmišljen je kako bi korisnici bili sigurni da odgovor koji dobiju zaista dolazi od modela za koji misle da ga koriste.
+
+## Ključni detalji
+
+Istraživači nazivaju ovaj pristup "dokazivim zaključivanjem" (provable inference). FlashProve pruža kriptografski dokaz, odnosno matematičko jamstvo, da je određeni izlaz stvorio specifični model. Sustav zahtijeva od AI laboratorija da objave "otisak" (fingerprint) svakog modela koji objave, a koji se kasnije može povezati sa specifičnim izlazima i kriptografski provjeriti.
+
+### Zašto je to važno
+
+Sustav poput FlashProvea bio bi otporan na prevarante koji pokušavaju predstaviti jedan model kao drugi. Posebice, sustav bi se mogao koristiti kako bi se spriječilo da AI tvrtke potajno koriste jeftinije modele kako bi smanjile troškove ili skuplje modele kako bi umjetno napuhale rezultate svojih performansi.
+
+### Tehnička pozadina
+
+- Sustav koristi kriptografske dokaze za potvrdu podrijetla odgovora, slično kriptografskim potpisima e-pošte.
+- "Otisci" modela ne otkrivaju težine (weights) modela, tako da tvrtke mogu objaviti otiske bez otkrivanja svoje intelektualne imovine, što omogućuje rad s komercijalnim modelima.
+- Sustav je dizajniran da bude lagan, pa bi se provjera mogla provoditi na lokalnom uređaju.
+
+## Širi kontekst
+
+Ovakav sustav također bi se mogao koristiti za provjeru tvrdnji trećih strana. Na primjer, programer bi mogao tvrditi da je njegov kod skeniran za ranjivosti pomoću naprednog modela za kibernetičku sigurnost, a ovaj sustav bi omogućio provjeru te tvrdnje. Istraživači su objavili detaljnu tehničku specifikaciju i radni kod za različite elemente sustava na GitHubu pod open source licencom.
+
+## Što slijedi
+
+Istraživanje na ovom sustavu još je u tijeku. Anthropic trenutno ne planira implementirati sustav u svoje proizvode, već su ga objavili kako bi drugi istraživači mogli analizirati rad, preuzeti ga i poboljšati.
+
+---
+
+*Izvor: [TechCrunch](https://techcrunch.com/2026/11/03/anthropic-is-working-on-a-system-to-prove-ai-models-identity/)*
+*Objavljeno na portalu Umjetna Inteligencija Blog by ShtefAI, autor: Shtef*
