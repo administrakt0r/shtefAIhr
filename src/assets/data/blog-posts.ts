@@ -6784,6 +6784,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 575,
+    slug: "zasto-jezicni-modeli-lose-rjesavaju-probleme",
+    title: "Zašto veliki jezični modeli još uvijek loše rješavaju probleme",
+    description: "Iako briljiraju u generiranju teksta, jezični sustavi padaju na zadacima pravog logičkog zaključivanja i rješavanja novih problema.",
+    imageAlt: "Ilustracija za komentar o problemima jezičnih modela u logičkom zaključivanju",
+    publishedOn: "2026-11-04",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
