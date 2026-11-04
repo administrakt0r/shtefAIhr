@@ -6773,6 +6773,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 2,
     featured: false
+  }),
+  createPost({
+    id: 574,
+    slug: "cijena-jeftine-inteligencije-ljudska-kuracija",
+    title: "Skrivena cijena jeftine inteligencije",
+    description: "Kako cijena generiranja teksta i slika teži nuli, ljudska kuracija i provjerena kvaliteta postaju najskuplji resurs.",
+    imageAlt: "Ilustracija za komentar o cijeni umjetne inteligencije i vrijednosti ljudske kuracije",
+    publishedOn: "2026-11-04",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
