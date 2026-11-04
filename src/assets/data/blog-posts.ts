@@ -6762,6 +6762,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 573,
+    slug: "anthropic-flashprove-identitet",
+    title: "Anthropic razvija sustav za dokazivanje identiteta AI modela",
+    description: "Sustav FlashProve pruža kriptografsko jamstvo da određeni izlaz dolazi od specifičnog AI modela.",
+    imageAlt: "Ilustracija Anthropic logotipa",
+    publishedOn: "2026-11-04",
+    category: NEWS,
+    readTime: 2,
+    featured: false
   })
 ];
 
