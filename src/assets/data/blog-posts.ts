@@ -6784,6 +6784,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 575,
+    slug: "apple-reze-budzete-za-internu-upotrebu-ai",
+    title: "Apple reže budžete za internu upotrebu umjetne inteligencije",
+    description: "Apple značajno smanjuje dnevni limit koji njegovi inženjerski timovi mogu potrošiti na alate bazirane na umjetnoj inteligenciji.",
+    imageAlt: "Ilustracija uz vijest: Apple reže budžete za internu upotrebu umjetne inteligencije",
+    publishedOn: "2026-11-05",
+    category: NEWS,
+    readTime: 2,
+    featured: false
   })
 ];
 
