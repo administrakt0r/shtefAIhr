@@ -6795,6 +6795,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 2,
     featured: false
+  }),
+  createPost({
+    id: 576,
+    slug: "iluzija-opce-inteligencije-u-svijetu-specijaliziranih-alata",
+    title: "Iluzija opće inteligencije u svijetu specijaliziranih alata",
+    description: "Pravi potencijal razvoja leži u uskim i prilagođenim primjenama, a ne u neprestanom iščekivanju svemoćnog stroja koji rješava sve.",
+    imageAlt: "Ilustracija za komentar o uskim i prilagođenim primjenama umjetne inteligencije",
+    publishedOn: "2026-11-05",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
