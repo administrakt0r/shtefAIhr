@@ -6806,6 +6806,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 577,
+    slug: "odrzavanje-ai-generiranog-koda",
+    title: "Održavanje AI generiranog koda: Skrivena cijena brze isporuke",
+    description: "Iako alati umjetne inteligencije ubrzavaju početni razvoj aplikacija, prava cijena dolazi na naplatu prilikom dugoročnog održavanja.",
+    imageAlt: "Ilustracija uz komentar o održavanju AI generiranog koda",
+    publishedOn: "2026-11-05",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
