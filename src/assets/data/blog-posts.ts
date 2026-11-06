@@ -6828,6 +6828,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 2,
     featured: false
+  }),
+  createPost({
+    id: 579,
+    slug: "privid-produktivnosti-ai-kodiranje",
+    title: "Privid produktivnosti: Kako nam AI alati za kodiranje dugoročno štete",
+    description: "Alati za generiranje koda ubrzavaju tipkanje, ali nas pretvaraju u pasivne recenzente bez dubokog razumijevanja sustava koji gradimo.",
+    imageAlt: "Ilustracija uz komentar o AI alatima za kodiranje",
+    publishedOn: "2026-11-06",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
