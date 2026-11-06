@@ -6817,6 +6817,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 578,
+    slug: "airbnb-ai-travel-agent-2027",
+    title: "Airbnb najavio AI putničkog agenta za prvu polovicu 2027.",
+    description: "Airbnb razvija vlastitog AI agenta s generativnim sučeljem koji će putnicima pomagati u planiranju i upravljanju putovanjem.",
+    imageAlt: "Ilustracija uz vijest o Airbnb AI putničkom agentu",
+    publishedOn: "2026-11-06",
+    category: NEWS,
+    readTime: 2,
+    featured: false
   })
 ];
 
