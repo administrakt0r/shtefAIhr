@@ -6839,6 +6839,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 580,
+    slug: "iluzija-agi-ja",
+    title: "Iluzija AGI-ja: Zašto nas fokus na opću inteligenciju usporava",
+    description: "Potjera za općom umjetnom inteligencijom skreće pažnju s rješavanja stvarnih, svakodnevnih problema u korist nedefiniranih ciljeva.",
+    imageAlt: "Ilustracija uz komentar o općoj umjetnoj inteligenciji i fokusiranju na nju",
+    publishedOn: "2026-11-06",
+    category: ANALYSIS,
+    readTime: 5,
+    featured: false
   })
 ];
 
