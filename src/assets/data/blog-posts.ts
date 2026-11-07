@@ -6850,6 +6850,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 2,
     featured: false
+  }),
+  createPost({
+    id: 581,
+    slug: "zabluda-o-agi-ju-kako-nas-potraga-za-superinteligencijom-usporava",
+    title: "Zabluda o AGI-ju: Kako nas potraga za superinteligencijom usporava",
+    description: "Opsesija umjetnom općom inteligencijom skreće resurse s rješavanja stvarnih problema korisnika.",
+    imageAlt: "Ilustracija uz komentar o umjetnoj općoj inteligenciji",
+    publishedOn: "2026-11-07",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
