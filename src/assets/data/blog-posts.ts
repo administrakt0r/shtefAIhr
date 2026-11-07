@@ -6839,6 +6839,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 580,
+    slug: "google-predstavlja-gemini-omni-1-2-flash",
+    title: "Google predstavlja Gemini Omni 1.2 Flash",
+    description: "Google je najavio dostupnost bržeg i povoljnijeg AI modela koji omogućuje generiranje videa do 15 sekundi.",
+    imageAlt: "Ilustracija uz vijest o Google Gemini Omni 1.2 Flash",
+    publishedOn: "2026-11-07",
+    category: NEWS,
+    readTime: 2,
+    featured: false
   })
 ];
 
