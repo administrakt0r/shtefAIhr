@@ -6839,6 +6839,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 580,
+    slug: "zabluda-o-demokratizaciji-kako-ai-zapravo-centralizira-moc",
+    title: "Zabluda o demokratizaciji: Kako AI zapravo centralizira moć",
+    description: "Dok se alati umjetne inteligencije predstavljaju kao snaga koja osnažuje pojedinca, prava kontrola i resursi nepovratno prelaze u ruke nekoliko korporacija.",
+    imageAlt: "Ilustracija uz komentar o centralizaciji moći kroz umjetnu inteligenciju",
+    publishedOn: "2026-11-07",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
