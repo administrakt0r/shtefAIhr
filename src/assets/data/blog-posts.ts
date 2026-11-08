@@ -6861,6 +6861,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 582,
+    slug: "kraj-juniora-kako-ai-stvara-krizu-nedostatka-seniora",
+    title: "Kraj juniora: Kako AI stvara dugoročnu krizu nedostatka seniora",
+    description: "Zanemarivanje zapošljavanja junior programera radi uštede pomoću AI alata uništava dugoročni razvoj stručnjaka i stvara buduću krizu senioriteta.",
+    imageAlt: "Ilustracija uz komentar o tome kako umjetna inteligencija utječe na manjak senior programera",
+    publishedOn: "2026-11-08",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
