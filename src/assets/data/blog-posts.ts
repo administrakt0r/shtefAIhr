@@ -6861,6 +6861,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 582,
+    slug: "kineski-ai-modeli-uspjesni-u-hakiranju",
+    title: "Besplatni kineski AI modeli postaju iznimno sposobni u hakiranju",
+    description: "Novo istraživanje pokazuje da besplatni open-weight modeli gotovo dostižu zatvorene sustave u izvođenju kibernetičkih napada.",
+    imageAlt: "Ilustracija uz vijest o napretku kineskih AI modela u hakiranju",
+    publishedOn: "2026-11-08",
+    category: NEWS,
+    readTime: 3,
+    featured: false
   })
 ];
 
