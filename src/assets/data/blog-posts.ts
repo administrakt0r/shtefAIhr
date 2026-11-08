@@ -6872,6 +6872,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 583,
+    slug: "zabluda-o-potpunoj-zamjeni-dizajnera-i-programera",
+    title: "Zabluda o potpunoj zamjeni dizajnera i programera",
+    description: "Zašto umjetna inteligencija ne može riješiti problem arhitekture i dizajna sustava.",
+    imageAlt: "Ilustracija uz komentar o zabludi potpune zamjene dizajnera i programera",
+    publishedOn: "2026-11-08",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
