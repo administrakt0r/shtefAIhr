@@ -6872,6 +6872,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 583,
+    slug: "nvidia-istrazuje-odnos-izvrsnog-direktora-s-navodnom-kineskom-spijunkom",
+    title: "Nvidia istražuje odnos izvršnog direktora s navodnom kineskom špijunkom",
+    description: "Odbor direktora tvrtke Nvidia pokrenuo je istragu o odnosu izvršnog direktora Jensena Huanga s izvršnom direktoricom Megaspeeda zbog optužbi za špijunažu.",
+    imageAlt: "Ilustracija uz vijest o istrazi u Nvidiji",
+    publishedOn: "2026-11-09",
+    category: NEWS,
+    readTime: 2,
+    featured: false
   })
 ];
 
