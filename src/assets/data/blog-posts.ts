@@ -6883,6 +6883,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 2,
     featured: false
+  }),
+  createPost({
+    id: 584,
+    slug: "ai-u-produkciji-demo-vs-stvarnost",
+    title: "AI u produkciji: Zašto 'demo' i stvarni svijet nemaju puno zajedničkog",
+    description: "Analiza raskoraka između impresivnih marketinških demonstracija umjetne inteligencije i stvarnih inženjerskih izazova implementacije.",
+    imageAlt: "Ilustracija razlike između AI demonstracija i stvarne produkcije",
+    publishedOn: "2026-11-09",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 

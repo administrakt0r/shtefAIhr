@@ -1,0 +1,41 @@
+## AI u produkciji: Zašto 'demo' i stvarni svijet nemaju puno zajedničkog
+
+### Raskorak između marketinških prezentacija i stvarne implementacije AI rješenja
+
+Kada gledamo tehnološke konferencije i marketinške materijale, umjetna inteligencija izgleda kao magija. Dovoljno je upisati nekoliko riječi u chat sučelje i sustav trenutačno generira savršen kod, besprijekoran tekst ili gotovu analizu ogromnog skupa podataka. Sve radi iz prvog pokušaja. Međutim, svaki inženjer koji je pokušao integrirati te iste modele u stvarni, produkcijski sustav zna bolnu istinu: impresivan demo je tek početak, a prava borba slijedi nakon toga.
+
+## Prevladavajuća priča
+
+Glavni narativ koji danas prevladava u tehnološkom svijetu je onaj o brzoj, gotovo instantnoj isplativosti i integraciji. Proizvođači jezičnih modela i AI alata uvjeravaju nas da su njihovi proizvodi spremni za ugradnju (eng. plug-and-play). Obećavaju da je potrebno samo spojiti njihov aplikacijski programsko sučelje (API) s vašom aplikacijom i magija će se dogoditi sama od sebe.
+
+Investitori i menadžeri, gledajući te prezentacije, očekuju da će razvojni timovi u nekoliko tjedana isporučiti revolucionarne značajke. Očekuje se da će integrirani AI chatbot bez greške rješavati složene korisničke upite, ili da će sustav za analizu automatski procesuirati nestrukturirane podatke i donositi točne poslovne odluke bez ikakvog ljudskog nadzora. Takva očekivanja stvaraju ogroman pritisak na inženjerske timove.
+
+### Zašto je ta priča pogrešna ili nepotpuna
+
+Problem s tim prevladavajućim narativom leži u zanemarivanju složenosti stvarnog svijeta i fundamentalnih ograničenja današnjih modela. Dok model na pozornici rješava savršeno formuliran zadatak unutar kontroliranih uvjeta, stvarni korisnici unose nepotpune, zbunjujuće ili kontradiktorne podatke.
+
+Prvi i najveći problem u produkciji je pouzdanost, odnosno takozvane halucinacije. Model koji u 95% slučajeva daje točan odgovor na demonstraciji, u produkciji može predstavljati ogroman rizik. Tih 5% grešaka u stvarnoj poslovnoj aplikaciji znači pogrešno savjetovane klijente, srušene procese ili čak pravne probleme. Da bi se to riješilo, inženjerski timovi moraju graditi složene sigurnosne mreže, sustave provjere i logiku za obradu grešaka.
+
+Drugi veliki problem je latencija, odnosno vrijeme odziva. U demou se generiranje teksta čini trenutnim, no u stvarnosti, pozivi prema velikim jezičnim modelima mogu trajati sekundama. U svijetu gdje korisnici očekuju odziv web aplikacije u milisekundama, čekanje od pet sekundi da model generira odgovor potpuno narušava korisničko iskustvo. Timovi moraju pribjegavati raznim trikovima, poput strujanja (eng. streaming) odgovora ili korištenja manjih, bržih modela koji su manje precizni, ali nude bolje vrijeme odziva.
+
+Treća, i često najskuplja prepreka su troškovi na razini skaliranja. Pozivanje moćnog API-ja za nekoliko upita tijekom testiranja je jeftino. Ali kada aplikaciju počne koristiti desetke tisuća korisnika, troškovi eksponencijalno rastu. Tada se inženjerski fokus prebacuje s "kako da ovo radi" na "kako da ovo radi jeftinije", što često znači napuštanje moćnih rješenja i prelazak na vlastite, specijalizirane i manje modele, što zahtijeva potpuno nove vještine i infrastrukturu.
+
+Na kraju, tu je i problem praćenja i održavanja (eng. observability). Klasičan softver je deterministički: ako unesete iste ulazne podatke, uvijek dobijete isti izlazni rezultat. AI modeli su probabilistički. Kada model u produkciji počne davati lošije odgovore, vrlo je teško otkriti zašto se to dogodilo. Postoji li promjena u API-ju pružatelja usluge? Jesu li se promijenili obrasci ponašanja korisnika? Alati za dijagnostiku su još uvijek u povojima, što otežava održavanje sustava stabilnim.
+
+## Posljedice u stvarnom svijetu
+
+Posljedice ovog raskoraka između očekivanja i stvarnosti već sada osjećaju i tvrtke i korisnici. Mnogi AI projekti nikada ne izađu iz faze dokaza koncepta (eng. Proof of Concept). Tvrtke potroše mjesece i značajna financijska sredstva pokušavajući pretvoriti demo u proizvod, samo da bi shvatili kako su rubni slučajevi previše kompleksni ili je rješenje jednostavno preskupo za održavanje.
+
+Istovremeno, inženjerski timovi doživljavaju izgaranje na poslu (eng. burnout). Od njih se očekuje da implementiraju nedovršenu, nestabilnu tehnologiju u kritične sustave i da pritom jamče stabilnost. Umjesto da se fokusiraju na rješavanje stvarnih korisničkih problema, programeri troše većinu svog vremena pokušavajući "ukrotiti" nepredvidivo ponašanje modela, pisati složene upute (eng. prompt engineering) koje prestanu raditi sa sljedećom verzijom modela, i graditi zaštitne slojeve oko API-ja.
+
+S druge strane, tvrtke koje razumiju ovu razliku stvaraju stvarnu vrijednost. Umjesto da pokušavaju automatizirati cijeli proces jednim ogromnim modelom, oni koriste AI kao mali, izolirani alat unutar većeg, klasičnog sustava. Oni ne očekuju savršenstvo, već grade korisnička sučelja koja potiču korisnika na provjeru rezultata. Takav, pragmatični pristup možda ne izgleda tako impresivno na pozornici, ali zapravo funkcionira u praksi i donosi povrat investicije.
+
+Gubitnici u ovoj situaciji bit će one organizacije koje slijepo vjeruju marketingu i ignoriraju inženjersku stvarnost. Ako menadžment ne shvati da je AI samo nova komponenta u već složenom sustavu, a ne magična kutija koja rješava sve probleme, suočit će se s neuspjelim projektima i razočaranim klijentima.
+
+## Završni stav
+
+Umjetna inteligencija nije čarolija koja će ukinuti potrebu za složenim inženjerstvom; ona je samo novi, nepredvidivi materijal od kojeg gradimo softver. Dok je demonstracija sposobnosti modela pitanje pažljivo odabranog primjera, prava produkcija je pitanje arhitekture, pouzdanosti, latencije i cijene. Uspjet će oni koji prestanu tretirati AI kao gotov proizvod i počnu ga tretirati kao sirovinu koja zahtijeva puno ozbiljnog rada da bi postala korisna.
+
+---
+
+*Komentar objavljen na portalu Umjetna Inteligencija Blog by ShtefAI, autor: Shtef*
