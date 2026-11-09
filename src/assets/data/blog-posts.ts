@@ -6872,6 +6872,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 583,
+    slug: "mit-o-autonomiji-zasto-ljudski-nadzor-ostaje-kljucan",
+    title: "Mit o autonomiji: Zašto ljudski nadzor ostaje ključan",
+    description: "Opsesija potpunom autonomijom AI sustava stvara opasne mrtve kutove u razvoju i primjeni.",
+    imageAlt: "Ilustracija uz komentar o umjetnoj inteligenciji i ljudskom nadzoru",
+    publishedOn: "2026-11-09",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
