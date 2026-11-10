@@ -6905,6 +6905,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 586,
+    slug: "prava-istina-o-razvoju-softvera-uz-ai",
+    title: "Prava istina o razvoju softvera s umjetnom inteligencijom",
+    description: "Marketing nam prodaje gotova rješenja, ali stvarni razvoj otkriva složenost i krhkost novih alata.",
+    imageAlt: "Ilustracija uz komentar: Prava istina o razvoju softvera",
+    publishedOn: "2026-11-10",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
