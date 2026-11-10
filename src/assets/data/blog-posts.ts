@@ -6894,6 +6894,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 2,
     featured: false
+  }),
+  createPost({
+    id: 585,
+    slug: "kraj-besplatnih-podataka-ai-materijal",
+    title: "Kraj besplatnih podataka: Zašto AI ostaje bez materijala",
+    description: "Sve manje izvornog ljudskog znanja na internetu ugrožava kvalitetu budućih modela.",
+    imageAlt: "Ilustracija uz komentar: Kraj besplatnih podataka",
+    publishedOn: "2026-11-10",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
