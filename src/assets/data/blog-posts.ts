@@ -6883,6 +6883,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 2,
     featured: false
+  }),
+  createPost({
+    id: 584,
+    slug: "deepmind-ai-alat-dokazao-sigurnost-signal-protokola",
+    title: "DeepMindov novi AI alat dokazao sigurnost Signal protokola",
+    description: "Istraživači Google DeepMinda iskoristili su umjetnu inteligenciju kako bi matematički potvrdili ključne kriptografske garancije Signal protokola.",
+    imageAlt: "Ilustracija uz vijest o DeepMind AI alatu",
+    publishedOn: "2026-11-10",
+    category: NEWS,
+    readTime: 2,
+    featured: false
   })
 ];
 
