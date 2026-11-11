@@ -6916,6 +6916,17 @@ export const blogPosts: BlogPost[] = [
     category: ANALYSIS,
     readTime: 4,
     featured: false
+  }),
+  createPost({
+    id: 587,
+    slug: "anthropic-claude-meetings",
+    title: "Anthropic predstavlja Claude Meetings koji se pridružuje video pozivima",
+    description: "Novi AI alat sudjeluje u sastancima i obavlja zadatke u stvarnom vremenu.",
+    imageAlt: "Ilustracija Anthropic Claude Meetings",
+    publishedOn: "2026-11-10",
+    category: NEWS,
+    readTime: 2,
+    featured: false
   })
 ];
 
