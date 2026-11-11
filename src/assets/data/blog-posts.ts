@@ -6927,6 +6927,17 @@ export const blogPosts: BlogPost[] = [
     category: NEWS,
     readTime: 2,
     featured: false
+  }),
+  createPost({
+    id: 588,
+    slug: "opsesija-agi-jem-je-distrakcija",
+    title: "Opsesija općom umjetnom inteligencijom (AGI) velika je distrakcija",
+    description: "Dok se industrija fokusira na stvaranje nadljudske inteligencije, gubimo iz vida stvarne probleme i prilike koje današnja tehnologija nudi.",
+    imageAlt: "Ilustracija uz komentar: AGI kao distrakcija",
+    publishedOn: "2026-11-11",
+    category: ANALYSIS,
+    readTime: 4,
+    featured: false
   })
 ];
 
